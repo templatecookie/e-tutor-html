@@ -1,0 +1,100 @@
+.accordion {
+
+    margin: 10px 0 30px 0;
+    width: 100%;
+}
+
+.accordion-head {
+    cursor: pointer;
+    background-color: #fff;
+
+    overflow: hidden;
+    padding: 16px 20px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: inset 0px -1px 0px #E9EAF0;
+
+    a {
+        color: #6E7485;
+        font-size: 14px;
+        font-weight: 400;
+        font-family: 'Inter', sans-serif;
+        text-decoration: none;
+
+        svg {
+            margin-left: 11px;
+        }
+    }
+
+    p {
+        float: left;
+        color: #1D2026;
+        font-weight: 500;
+        font-family: 'Inter', sans-serif;
+        font-size: 16px;
+        text-decoration: none;
+        margin: 0;
+    }
+
+}
+
+.accordion-head * {
+    cursor: pointer;
+
+}
+
+.accordion-body.default {
+    display: block;
+    background: #FFFFFF;
+}
+
+.accordion-body {
+    display: none;
+    background: #FFFFFF;
+    height: auto;
+    padding: 10px;
+}
+
+.accordion-body {
+    ul {
+        padding: 0;
+        li {
+            list-style: none;
+            a {
+                color: #959696;
+                font-size: 14px;
+                text-decoration: none;
+            }
+        }
+    }
+
+}
+
+.arrow {
+    float: right;
+    width: 0px;
+    height: 0px;
+    margin-top: 5px;
+    border: 10px solid transparent;
+    border-left-color: #62bb46;
+}
+
+.arrow-close {
+    float: right;
+    width: 0px;
+    height: 0px;
+    margin-top: 5px;
+    border: 10px solid transparent;
+    border-left-color: #949494;
+}
+
+.arrow-open {
+    float: right;
+    width: 0px;
+    height: 0px;
+    margin-top: 8px;
+    margin-right: 5px;
+    border: 10px solid transparent;
+    border-top-color: #62bb46;
+}

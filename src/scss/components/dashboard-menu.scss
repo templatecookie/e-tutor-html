@@ -1,0 +1,85 @@
+.dashboard{
+    background-color: #fff;
+    &-content{
+        padding: 16px 0;
+        display: flex;
+        justify-content: space-between;
+        .dashboard-left{
+            span{
+                color:#6E7485;
+                font-size:14px;
+                font-family: 'Inter';
+                font-weight:400 ;
+            }
+            p{
+                color:#1D2026;
+                font-size:20px;
+                font-family: 'Inter';
+                font-weight:600;
+                margin: 0;
+            }
+        }
+        .dashboard-right{
+            display: flex;
+            justify-content: space-between;
+            .searchbox{
+                position: relative;
+                input{
+                    background-color: #F5F7FA;
+                    padding: 0px 0 0px 54px;
+                    border:0;
+                    height: 48px;
+                    width: 312px;
+                }
+                ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+                    color:#8C94A3;
+                    font-size:16px;
+                    font-family: 'Inter';
+                    font-weight:400;
+                  }
+                  ::-moz-placeholder { /* Firefox 19+ */
+                    color:#8C94A3;
+                    font-size:16px;
+                    font-family: 'Inter';
+                    font-weight:400;
+                  }
+                  :-ms-input-placeholder { /* IE 10+ */
+                    color:#8C94A3;
+                    font-size:16px;
+                    font-family: 'Inter';
+                    font-weight:400;
+                  }
+                  :-moz-placeholder { /* Firefox 18- */
+                    color:#8C94A3;
+                    font-size:16px;
+                    font-family: 'Inter';
+                    font-weight:400;
+                  }
+                .dashboard-search-icon{
+                    position: absolute;
+                    top:11px;
+                    left:21px;
+                   
+                }
+            }
+            .notification{
+                background: #F5F7FA;
+                padding:12px;
+                margin:0 16px;
+                cursor: pointer;
+            }
+            img{
+                height: 48px;
+                width: 48px;
+                border-radius: 50%;
+                cursor: pointer;
+            
+            } 
+            button{
+                border:0;
+                background-color: transparent;
+            }  
+        }
+    }
+}
+
