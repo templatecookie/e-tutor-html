@@ -1,26 +1,181 @@
 .edit-biography-content .edit-biography-right .edit-btn,
-.edit-biography-content .edit-biography-right .notification{
-    transition:.5s;
-}
-.edit-biography-content .edit-biography-right .notification:hover{
-    background-color: $primary-600;
-    svg{
-        path{
-            stroke: #fff;
-        }
-    }
-}
-.edit-biography-content .edit-biography-right .edit-btn:hover{
-    background-color: $primary-600;
-}
-.dashboard-content .dashboard-right .notification{
+.edit-biography-content .edit-biography-right .notification {
     transition: .5s;
 }
-.dashboard-content .dashboard-right .notification:hover{
+
+.edit-biography-content .edit-biography-right .notification:hover {
     background-color: $primary-600;
-    svg{
-        path{
+
+    svg {
+        path {
             stroke: #fff;
         }
     }
 }
+
+.edit-biography-content .edit-biography-right .edit-btn:hover {
+    background-color: $primary-600;
+}
+
+.dashboard-content .dashboard-right .notification {
+    transition: .5s;
+}
+
+.dashboard-content .dashboard-right .notification:hover {
+    background-color: $primary-600;
+
+    svg {
+        path {
+            stroke: #fff;
+        }
+    }
+}
+
+
+label {
+    width: 100%;
+    float: left;
+    
+    
+}
+
+.center {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+select {
+    z-index: 3;
+    float: left;
+}
+
+/** Custom Select **/
+.custom-select-wrapper {
+    position: relative;
+    display: inline-block;
+    user-select: none;
+    cursor: pointer;
+}
+
+.custom-select-wrapper select {
+    display: none;
+}
+
+.custom-select {
+    position: relative;
+    display: inline-block;
+    font: 13px/1.5 "Roboto", sans-serif;
+}
+
+.custom-select-trigger {
+    position: relative;
+    display: block;
+    min-width: 115px;
+    padding: 0;
+    font-weight: 400;
+    color: #6E7485;
+    background-color:transparent ;
+    border-radius: 3px;
+    cursor: pointer;
+    font-family: 'Inter';
+    font-size: 14px;
+    margin-left: 20px;
+    transition: all 0.2s ease-in-out;
+}
+
+
+
+.custom-select-trigger:after {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 10px;
+    height: 10px;
+    top: 50%;
+    right: 20px;
+    margin-top: -3px;
+    border-bottom: 2px solid #c7d1d6;
+    border-right: 2px solid #c7d1d6;
+    transform: rotate(45deg) translateY(-50%);
+    transition: all 0.35s ease-out;
+    transform-origin: 50% 0;
+}
+
+.custom-select.opened .custom-select-trigger:after {
+    margin-top: 3px;
+    transform: rotate(-135deg) translateY(-50%);
+}
+
+.custom-options {
+    position: absolute;
+    display: block;
+    top: 100%;
+    left: 0%;
+    right: 0;
+    width: 100%;
+    margin: 15px 0;
+    padding: 8px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background: #fff;
+    transition: all 0.2s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transform: translateY(-15px);
+    border: 0;
+    box-shadow: 1px 0px 8px #f1f1f1;
+    z-index: 99999;
+}
+
+.custom-select.opened .custom-options {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: all;
+    transform: translateY(-8px);
+}
+
+.option-hover:before {
+    background: #f9f9f9;
+}
+
+.custom-option {
+    position: relative;
+    display: block;
+    padding: 0 15px;
+    font: 13px/1.5 "Roboto", sans-serif;
+    font-weight: 400;
+    color: #b5b5b5;
+    line-height: 30px;
+    cursor: pointer;
+    transition: all 0.05s ease-in-out;
+}
+.custom-option:hover {
+    color:$primary-500 !important;
+    font-weight: 500;
+}
+
+.custom-option:first-of-type {
+    border-radius: 4px 4px 0 0;
+
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
+
+.custom-option:last-of-type {
+    border-bottom: 0;
+    border-radius: 0 0 4px 4px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.custom-option:hover,
+.custom-option.selection {
+    color: #b5b5b5;
+}
+
+
+

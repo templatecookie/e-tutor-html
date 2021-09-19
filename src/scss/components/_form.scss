@@ -4,10 +4,10 @@
     input {
         background-color: #F5F7FA;
         padding: 0px 0 0px 54px;
-        border: 0;
+        border: 1px solid transparent;
         height: 48px;
         width: 312px;
-        border: 3px solid #fff;
+
     }
 
     ::-webkit-input-placeholder {
@@ -51,9 +51,10 @@
     input:focus {
         border: 1px solid $primary-500;
     }
+    
 
     input:hover {
-        border: 3px solid #FFDDD1;
+        border: 1px solid #FFDDD1;
     }
 
 }

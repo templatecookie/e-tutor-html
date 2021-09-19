@@ -59,7 +59,8 @@
                 line-height: 20px;
                 letter-spacing: -0.01em;
                 color: #4E5566;
-                svg{
+
+                svg {
                     margin-right: 7px;
                 }
 
@@ -72,7 +73,8 @@
                 margin: 0;
                 letter-spacing: -0.01em;
                 color: #4E5566;
-                svg{
+
+                svg {
                     margin-left: 7px;
                 }
 
@@ -91,7 +93,8 @@
 .course-item-5 {
     width: 244px;
     max-width: 100%;
-    margin:8px 0;
+    margin: 8px 0;
+
     &-card {
         background-color: #fff;
         border: 1px solid #E9EAF0;
@@ -152,7 +155,8 @@
                 line-height: 20px;
                 letter-spacing: -0.01em;
                 color: #4E5566;
-                svg{
+
+                svg {
                     margin-right: 7px;
                 }
 
@@ -178,8 +182,105 @@
     }
 }
 
-.course-item-5-grid{
+.course-item-5-grid {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
+.feature-course {
+    display: flex;
+    &-info {
+        display: flex;
+        justify-content: space-between;
+
+        &-tag {
+            font-family: 'Inter';
+            font-weight: 500;
+            font-size: 10px;
+            line-height: 12px;
+            text-transform: uppercase;
+            color: #15711F;
+            padding: 4px 6px;
+            background: #E1F7E3;
+        }
+
+        &-price {
+            font-family: 'Inter';
+            font-size: 18px;
+            line-height: 24px;
+            letter-spacing: -0.015em;
+            color: #1D2026;
+
+            span {
+                font-family: 'Inter';
+                font-size: 14px;
+                line-height: 24px;
+                text-decoration-line: line-through;
+                color: #A1A5B3;
+            }
+        }
+    }
+
+    h4 {
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        color: #1D2026;
+    }
+
+    .feature-course-footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &-mid {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid red;
+
+        div {
+            display: flex;
+        }
+
+        img {
+            height: 28px;
+            width: 28px;
+            border-radius: 50%;
+        }
+
+        h5 {
+            font-family: 'Inter';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: -0.01em;
+            color: #4E5566;
+            align-self: center;
+
+        }
+
+        p {
+            font-family: 'Inter';
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: -0.01em;
+            color: #1D2026;
+
+            span {
+                font-family: 'Inter';
+                font-size: 14px;
+                line-height: 24px;
+                color: #A1A5B3;
+            }
+        }
+    }
+    &-footer{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+

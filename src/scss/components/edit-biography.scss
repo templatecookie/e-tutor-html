@@ -158,13 +158,14 @@
 
     &-right {
         &-content {
-            h4 {
+            a {
                 font-family: Inter;
                 font-style: normal;
                 font-weight: 500;
                 font-size: 18px;
                 line-height: 24px;
                 color: #FFFFFF;
+                text-decoration: none;
             }
             p {
                 font-family: Inter;
@@ -177,7 +178,7 @@
             
         }
         &-contents {
-            h4 {
+            a {
                 color: rgba(255, 255, 255, 0.5);
                 font-weight: 400;
             }
@@ -188,4 +189,8 @@
             
         }
     }
+}
+
+.heretheclass{
+    display: none;
 }
