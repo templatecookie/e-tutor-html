@@ -5,7 +5,7 @@
 .profile-view {
     display: flex;
     justify-content: space-between;
-    padding: 16px 40px 16px 20px;
+    padding: 16px 20px 16px 20px;
     background-color: #fff;
     border-bottom:1px solid #f1f1f1;
     position: relative;
@@ -14,14 +14,26 @@
         font-family: Inter;
         font-weight: 400;
         font-size: 14px;
+        scroll-behavior: smooth;
         text-align: right;
         letter-spacing: -0.01em;
         color: #6E7485;
         appearance: none;
+        background: url("/src/images/arrow.svg") 100% / 15% no-repeat;
         margin-left: 20px;
+        padding-right: 25px;
         option{
             padding: 3px 0;
+            background-color: #fff;
+            box-shadow: 2px 3px 5px #f1f1f1;
+            border:none!important;
+            line-height: 28px;
         }
+        select#xyz {
+            border:0px;
+            outline:0px !important;
+         }
+
        
     }
     p {

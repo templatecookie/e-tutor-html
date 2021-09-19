@@ -20,7 +20,14 @@
       <h3>Style Componant</h3>
     </div>
   </section>
-  <div class="space100"></div>
+  <div class="space50"></div>
+
+  <!-- profile View -->
+  <section>
+    <div class="container">
+      <h4 class="py-4">profile View</h4>
+    </div>
+  </section>
   <div class="container">
     <div class="row">
       <div class="col-lg-5">
@@ -28,56 +35,71 @@
           <div class="profile-view">
             <p>My Profile</p>
             <div class="select-box">
-              <select name="" id="">
-                <option value="">This Month</option>
-                <option value="">January</option>
-                <option value="">February</option>
-                <option value="">March</option>
-                <option value="">April</option>
-                <option value="">May</option>
-              
-              </select>
-              <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M11 1L6 6L1 1" stroke="#6E7485" stroke-width="1.2" stroke-linecap="round"
-                  stroke-linejoin="round" />
-              </svg>
-            </div>
-          </div>
-          <div class="profile-view">
-            <p>My Profile</p>
-            <div class="info-box">
-              <a  class="dot" href="#">Comments</a>
-              <a class="dots" href="#">View</a>
-              <div class="select-box">
-                <select name="" id="">
+              <label for="name4">
+                <select name="name4" id="name4">
                   <option value="">This Month</option>
                   <option value="">January</option>
                   <option value="">February</option>
                   <option value="">March</option>
                   <option value="">April</option>
                   <option value="">May</option>
-                
                 </select>
-                <svg width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M11 1L6 6L1 1" stroke="#6E7485" stroke-width="1.2" stroke-linecap="round"
-                    stroke-linejoin="round" />
-                </svg>
+              </label>
+            </div>
+          </div>
+          <div class="profile-view">
+            <p>My Profile</p>
+            <div class="info-box">
+              <a class="dot" href="#">Comments</a>
+              <a class="dots" href="#">View</a>
+              <div class="select-box">
+                <label for="name2">
+                  <select name="name2" id="name2">
+                    <option value="">This Month</option>
+                    <option value="">January</option>
+                    <option value="">February</option>
+                    <option value="">March</option>
+                    <option value="">April</option>
+                    <option value="">May</option>
+                  </select>
+                </label>
               </div>
             </div>
-            
           </div>
         </div>
-
       </div>
     </div>
-
   </div>
+  <div class="space20"></div>
 
+  <!-- form -->
   <section>
-    <div class="py-5 px-3 text-center">
-      <h3>Navbar</h3>
+    <div class="container">
+      <h4 class="py-4">Form</h4>
     </div>
-    <div class="space20"></div>
+  </section>
+  <section class="bg">
+    <div class="container">
+      <div class="searchbox">
+        <input type="text" placeholder="Search" class="searchbox-input">
+        <svg class="dashboard-search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+          xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M10.875 18.75C15.2242 18.75 18.75 15.2242 18.75 10.875C18.75 6.52576 15.2242 3 10.875 3C6.52576 3 3 6.52576 3 10.875C3 15.2242 6.52576 18.75 10.875 18.75Z"
+            stroke="#1D2026" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          <path d="M16.4431 16.4438L20.9994 21.0001" stroke="#1D2026" stroke-width="1.5" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </div>
+    </div>
+  </section>
+  <div class="space20"></div>
+
+  <!-- navbar -->
+  <section>
+    <div class="container ">
+      <h4 class="py-4">Navbar</h4>
+    </div>
     <div class="dashboard">
       <div class="container">
         <div class="dashboard-content">
@@ -96,10 +118,9 @@
                 <path d="M16.4431 16.4438L20.9994 21.0001" stroke="#1D2026" stroke-width="1.5" stroke-linecap="round"
                   stroke-linejoin="round" />
               </svg>
-
             </div>
             <div class="notification">
-              <button>
+              <button class="btn-hov">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M5.26904 9.75C5.2678 8.86051 5.44262 7.97957 5.78343 7.15796C6.12424 6.33635 6.6243 5.59031 7.25477 4.96286C7.88525 4.33541 8.63368 3.83895 9.45693 3.5021C10.2802 3.16525 11.1619 2.99467 12.0514 3.00019C15.763 3.02778 18.7317 6.11282 18.7317 9.83474V10.5C18.7317 13.8577 19.4342 15.8062 20.0529 16.8711C20.1196 16.9849 20.1551 17.1142 20.1558 17.2461C20.1565 17.378 20.1224 17.5077 20.0569 17.6222C19.9915 17.7367 19.8971 17.8319 19.7831 17.8982C19.6691 17.9646 19.5397 17.9997 19.4078 18H4.59222C4.46034 17.9997 4.33087 17.9645 4.21689 17.8982C4.1029 17.8318 4.00844 17.7366 3.94301 17.6221C3.87759 17.5076 3.84352 17.3778 3.84425 17.2459C3.84498 17.1141 3.88048 16.9847 3.94716 16.8709C4.56622 15.806 5.26904 13.8575 5.26904 10.5L5.26904 9.75Z"
@@ -121,6 +142,543 @@
       </div>
     </div>
   </section>
+  <div class="space10"></div>
+  <section>
+    <div class="container ">
+      <h4 class="py-4">Edit Biography</h4>
+    </div>
+    <div class="edit-biography">
+      <div class="container">
+        <div class="edit-biography-content">
+          <div class="edit-biography-left">
+            <button>
+              <img src="src/images/profile.png" alt="">
+            </button>
+            <div class="align-self-center">
+              <p>Vako Shvili</p>
+              <span>vako.shvili@gmail.com</span>
+            </div>
+
+
+          </div>
+          <div class="edit-biography-mid">
+            <span>1/4 Steps</span>
+            <progress id="file" max="100" value="25"> 70% </progress>
+            <p>25% Completed</p>
+          </div>
+          <div class="edit-biography-right">
+            <button class="edit-btn btn-hover">
+              Edit Biography
+            </button>
+            <div class="notification">
+              <button>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 3.75V20.25" stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M5.25 13.5L12 20.25L18.75 13.5" stroke="white" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="space20"></div>
+    <div class="edit-biography ">
+      <div class="container">
+        <div class="edit-biography-content">
+          <div class="edit-biography-left">
+            <button>
+              <img src="src/images/profile.png" alt="">
+            </button>
+            <div class="align-self-center">
+              <p>Vako Shvili</p>
+              <span>vako.shvili@gmail.com</span>
+            </div>
+          </div>
+          <div class="edit-biography-mid">
+            <span>1/4 Steps</span>
+            <progress id="file" max="100" value="25"> 70% </progress>
+            <p>25% Completed</p>
+          </div>
+          <div class="edit-biography-right">
+            <button class="edit-btn btn-hov">
+              Edit Biography
+            </button>
+            <div class="notification">
+              <button>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 20.25V3.75" stroke="#FF6636" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                  <path d="M5.25 10.5L12 3.75L18.75 10.5" stroke="#FF6636" stroke-width="2" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="edit-biography-content edit-biography-contents">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="edit-biography-content-all">
+              <div class="edit-biography-content-left">
+                <div class="edit-biography-content-left-icon edit-biography-content-left-icon-color">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.875 7.875L5.625 16.125L1.5 12.0002" stroke="white" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M22.5001 7.875L14.2501 16.125L12.0588 13.9339" stroke="white" stroke-width="2"
+                      stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+
+              </div>
+              <div class="edit-biography-content-right">
+                <div class="edit-biography-content-right-content edit-biography-content-right-contents">
+                  <h4>Verify your email & phone number</h4>
+                  <p>Vivamus sit amet eleifend nisi, id pretium dui. In sit amet gravida lacus. Pellentesque ultricies
+                    mi eget lorem varius, ac pharetra nisi eleifend. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="edit-biography-content-all">
+              <div class="edit-biography-content-left">
+                <div class="edit-biography-content-left-icon">
+                  2
+                </div>
+
+              </div>
+              <div class="edit-biography-content-right">
+                <div class="edit-biography-content-right-content">
+                  <h4>Add your biography & social proof</h4>
+                  <p>Donec laoreet dapibus lectus nec efficitur. Etiam tincidunt, ex nec euismod varius, libero lorem
+                    dictum diam.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="edit-biography-content-all">
+              <div class="edit-biography-content-left">
+                <div class="edit-biography-content-left-icon">
+                  3
+                </div>
+
+              </div>
+              <div class="edit-biography-content-right">
+                <div class="edit-biography-content-right-content">
+                  <h4>Add your education & experience</h4>
+                  <p>Donec laoreet dapibus lectus nec efficitur. Etiam tincidunt, ex nec euismod varius, libero lorem
+                    dictum diam.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="edit-biography-content-all">
+              <div class="edit-biography-content-left">
+                <div class="edit-biography-content-left-icon">
+                  4
+                </div>
+              </div>
+              <div class="edit-biography-content-right">
+                <div class="edit-biography-content-right-content">
+                  <h4>Create your first course</h4>
+                  <p>Vivamus et rhoncus lacus, nec cursus neque. Ut leo arcu, blandit non ligula sit amet, ullamcorper
+                    laoreet augue. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="space20"></div>
+
+  <!-- navbar -->
+  <section>
+    <div class="container">
+      <h4 class="py-4">Course Componant</h4>
+    </div>
+  </section>
+  <div class="container">
+    <h4 class="py-2">Four Grid card</h4>
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="course-item-4">
+          <div class="course-item-4-card">
+            <img src="src/images/course-tem.jpg" alt="">
+            <div class="course-item-4-card-info">
+              <a class="course-item-4-card-info-tag" href="#">Music</a>
+              <p class="course-item-4-card-info-price">$455</p>
+            </div>
+            <h4>The Complete Foundation Stock Trading Course</h4>
+            <div class="course-item-4-card-footer">
+              <a class="course-item-4-card-footer-review" href="#">
+                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.27569 10.9208L10.4279 12.9179C10.8308 13.1732 11.3311 12.7935 11.2115 12.3232L10.3008 8.74052C10.2752 8.64073 10.2782 8.53573 10.3096 8.4376C10.3409 8.33946 10.3994 8.25218 10.4781 8.18577L13.3049 5.83306C13.6763 5.52392 13.4846 4.90751 13.0074 4.87654L9.31588 4.63696C9.21645 4.62986 9.12109 4.59465 9.04089 4.53545C8.96069 4.47625 8.89896 4.39548 8.86289 4.30255L7.48612 0.835486C7.44869 0.736852 7.38215 0.651935 7.29532 0.592013C7.2085 0.532092 7.1055 0.5 7 0.5C6.89451 0.5 6.79151 0.532092 6.70468 0.592013C6.61786 0.651935 6.55131 0.736852 6.51389 0.835486L5.13712 4.30255C5.10104 4.39548 5.03932 4.47625 4.95912 4.53545C4.87892 4.59465 4.78355 4.62986 4.68412 4.63696L0.992627 4.87654C0.515435 4.90751 0.323731 5.52392 0.695149 5.83306L3.52186 8.18577C3.60063 8.25218 3.65907 8.33946 3.69044 8.4376C3.72181 8.53573 3.72485 8.64073 3.6992 8.74052L2.85459 12.063C2.71111 12.6274 3.31143 13.083 3.79495 12.7767L6.72431 10.9208C6.8067 10.8683 6.90234 10.8405 7 10.8405C7.09767 10.8405 7.19331 10.8683 7.27569 10.9208Z"
+                    fill="#FD8E1F" />
+                </svg> 5.0
+              </a>
+              <p class="course-item-4-card-footer-student">
+                <a href="#"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10 12.5C12.7614 12.5 15 10.2614 15 7.5C15 4.73858 12.7614 2.5 10 2.5C7.23858 2.5 5 4.73858 5 7.5C5 10.2614 7.23858 12.5 10 12.5Z"
+                      stroke="#564FFD" stroke-width="1.5" stroke-miterlimit="10" />
+                    <path
+                      d="M2.42114 16.8743C3.18955 15.5442 4.29443 14.4398 5.6248 13.672C6.95517 12.9042 8.46417 12.5 10.0002 12.5C11.5363 12.5 13.0453 12.9043 14.3756 13.6721C15.706 14.44 16.8108 15.5444 17.5792 16.8744"
+                      stroke="#564FFD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                  265.7K <span>students</span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-3">
+        <div class="course-item-4">
+          <div class="course-item-4-card">
+            <img src="src/images/course-tem.jpg" alt="">
+            <div class="course-item-4-card-info">
+              <a class="course-item-4-card-info-tag" href="#">Music</a>
+              <p class="course-item-4-card-info-price">$455</p>
+            </div>
+            <h4>The Complete Foundation Stock Trading Course</h4>
+            <div class="course-item-4-card-footer">
+              <a class="course-item-4-card-footer-review" href="#">
+                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.27569 10.9208L10.4279 12.9179C10.8308 13.1732 11.3311 12.7935 11.2115 12.3232L10.3008 8.74052C10.2752 8.64073 10.2782 8.53573 10.3096 8.4376C10.3409 8.33946 10.3994 8.25218 10.4781 8.18577L13.3049 5.83306C13.6763 5.52392 13.4846 4.90751 13.0074 4.87654L9.31588 4.63696C9.21645 4.62986 9.12109 4.59465 9.04089 4.53545C8.96069 4.47625 8.89896 4.39548 8.86289 4.30255L7.48612 0.835486C7.44869 0.736852 7.38215 0.651935 7.29532 0.592013C7.2085 0.532092 7.1055 0.5 7 0.5C6.89451 0.5 6.79151 0.532092 6.70468 0.592013C6.61786 0.651935 6.55131 0.736852 6.51389 0.835486L5.13712 4.30255C5.10104 4.39548 5.03932 4.47625 4.95912 4.53545C4.87892 4.59465 4.78355 4.62986 4.68412 4.63696L0.992627 4.87654C0.515435 4.90751 0.323731 5.52392 0.695149 5.83306L3.52186 8.18577C3.60063 8.25218 3.65907 8.33946 3.69044 8.4376C3.72181 8.53573 3.72485 8.64073 3.6992 8.74052L2.85459 12.063C2.71111 12.6274 3.31143 13.083 3.79495 12.7767L6.72431 10.9208C6.8067 10.8683 6.90234 10.8405 7 10.8405C7.09767 10.8405 7.19331 10.8683 7.27569 10.9208Z"
+                    fill="#FD8E1F" />
+                </svg> 5.0
+              </a>
+              <p class="course-item-4-card-footer-student">
+                <a href="#"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10 12.5C12.7614 12.5 15 10.2614 15 7.5C15 4.73858 12.7614 2.5 10 2.5C7.23858 2.5 5 4.73858 5 7.5C5 10.2614 7.23858 12.5 10 12.5Z"
+                      stroke="#564FFD" stroke-width="1.5" stroke-miterlimit="10" />
+                    <path
+                      d="M2.42114 16.8743C3.18955 15.5442 4.29443 14.4398 5.6248 13.672C6.95517 12.9042 8.46417 12.5 10.0002 12.5C11.5363 12.5 13.0453 12.9043 14.3756 13.6721C15.706 14.44 16.8108 15.5444 17.5792 16.8744"
+                      stroke="#564FFD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                  265.7K <span>students</span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-3">
+        <div class="course-item-4">
+          <div class="course-item-4-card">
+            <img src="src/images/course-tem.jpg" alt="">
+            <div class="course-item-4-card-info">
+              <a class="course-item-4-card-info-tag" href="#">Music</a>
+              <p class="course-item-4-card-info-price">$455</p>
+            </div>
+            <h4>The Complete Foundation Stock Trading Course</h4>
+            <div class="course-item-4-card-footer">
+              <a class="course-item-4-card-footer-review" href="#">
+                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.27569 10.9208L10.4279 12.9179C10.8308 13.1732 11.3311 12.7935 11.2115 12.3232L10.3008 8.74052C10.2752 8.64073 10.2782 8.53573 10.3096 8.4376C10.3409 8.33946 10.3994 8.25218 10.4781 8.18577L13.3049 5.83306C13.6763 5.52392 13.4846 4.90751 13.0074 4.87654L9.31588 4.63696C9.21645 4.62986 9.12109 4.59465 9.04089 4.53545C8.96069 4.47625 8.89896 4.39548 8.86289 4.30255L7.48612 0.835486C7.44869 0.736852 7.38215 0.651935 7.29532 0.592013C7.2085 0.532092 7.1055 0.5 7 0.5C6.89451 0.5 6.79151 0.532092 6.70468 0.592013C6.61786 0.651935 6.55131 0.736852 6.51389 0.835486L5.13712 4.30255C5.10104 4.39548 5.03932 4.47625 4.95912 4.53545C4.87892 4.59465 4.78355 4.62986 4.68412 4.63696L0.992627 4.87654C0.515435 4.90751 0.323731 5.52392 0.695149 5.83306L3.52186 8.18577C3.60063 8.25218 3.65907 8.33946 3.69044 8.4376C3.72181 8.53573 3.72485 8.64073 3.6992 8.74052L2.85459 12.063C2.71111 12.6274 3.31143 13.083 3.79495 12.7767L6.72431 10.9208C6.8067 10.8683 6.90234 10.8405 7 10.8405C7.09767 10.8405 7.19331 10.8683 7.27569 10.9208Z"
+                    fill="#FD8E1F" />
+                </svg> 5.0
+              </a>
+              <p class="course-item-4-card-footer-student">
+                <a href="#"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10 12.5C12.7614 12.5 15 10.2614 15 7.5C15 4.73858 12.7614 2.5 10 2.5C7.23858 2.5 5 4.73858 5 7.5C5 10.2614 7.23858 12.5 10 12.5Z"
+                      stroke="#564FFD" stroke-width="1.5" stroke-miterlimit="10" />
+                    <path
+                      d="M2.42114 16.8743C3.18955 15.5442 4.29443 14.4398 5.6248 13.672C6.95517 12.9042 8.46417 12.5 10.0002 12.5C11.5363 12.5 13.0453 12.9043 14.3756 13.6721C15.706 14.44 16.8108 15.5444 17.5792 16.8744"
+                      stroke="#564FFD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                  265.7K <span>students</span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="col-lg-3">
+        <div class="course-item-4">
+          <div class="course-item-4-card">
+            <img src="src/images/course-tem.jpg" alt="">
+            <div class="course-item-4-card-info">
+              <a class="course-item-4-card-info-tag" href="#">Music</a>
+              <p class="course-item-4-card-info-price">$455</p>
+            </div>
+            <h4>The Complete Foundation Stock Trading Course</h4>
+            <div class="course-item-4-card-footer">
+              <a class="course-item-4-card-footer-review" href="#">
+                <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.27569 10.9208L10.4279 12.9179C10.8308 13.1732 11.3311 12.7935 11.2115 12.3232L10.3008 8.74052C10.2752 8.64073 10.2782 8.53573 10.3096 8.4376C10.3409 8.33946 10.3994 8.25218 10.4781 8.18577L13.3049 5.83306C13.6763 5.52392 13.4846 4.90751 13.0074 4.87654L9.31588 4.63696C9.21645 4.62986 9.12109 4.59465 9.04089 4.53545C8.96069 4.47625 8.89896 4.39548 8.86289 4.30255L7.48612 0.835486C7.44869 0.736852 7.38215 0.651935 7.29532 0.592013C7.2085 0.532092 7.1055 0.5 7 0.5C6.89451 0.5 6.79151 0.532092 6.70468 0.592013C6.61786 0.651935 6.55131 0.736852 6.51389 0.835486L5.13712 4.30255C5.10104 4.39548 5.03932 4.47625 4.95912 4.53545C4.87892 4.59465 4.78355 4.62986 4.68412 4.63696L0.992627 4.87654C0.515435 4.90751 0.323731 5.52392 0.695149 5.83306L3.52186 8.18577C3.60063 8.25218 3.65907 8.33946 3.69044 8.4376C3.72181 8.53573 3.72485 8.64073 3.6992 8.74052L2.85459 12.063C2.71111 12.6274 3.31143 13.083 3.79495 12.7767L6.72431 10.9208C6.8067 10.8683 6.90234 10.8405 7 10.8405C7.09767 10.8405 7.19331 10.8683 7.27569 10.9208Z"
+                    fill="#FD8E1F" />
+                </svg> 5.0
+              </a>
+              <p class="course-item-4-card-footer-student">
+                <a href="#"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                      d="M10 12.5C12.7614 12.5 15 10.2614 15 7.5C15 4.73858 12.7614 2.5 10 2.5C7.23858 2.5 5 4.73858 5 7.5C5 10.2614 7.23858 12.5 10 12.5Z"
+                      stroke="#564FFD" stroke-width="1.5" stroke-miterlimit="10" />
+                    <path
+                      d="M2.42114 16.8743C3.18955 15.5442 4.29443 14.4398 5.6248 13.672C6.95517 12.9042 8.46417 12.5 10.0002 12.5C11.5363 12.5 13.0453 12.9043 14.3756 13.6721C15.706 14.44 16.8108 15.5444 17.5792 16.8744"
+                      stroke="#564FFD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                  265.7K <span>students</span></a>
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <h4 class="py-2">Five Grid card</h4>
+    
+    <div class="course-item-5-grid">
+      <div class="course-item-5">
+        <div class="course-item-5-card">
+          <img src="src/images/Course-item-2.jpg" alt="">
+          <div class="course-item-5-card-info">
+            <a class="course-item-5-card-info-tag" href="#">Music</a>
+            <p class="course-item-5-card-info-price">$455</p>
+          </div>
+          <h4>The Complete Digital Marketing Course</h4>
+          <div class="course-item-5-card-footer">
+            <a class="course-item-5-card-footer-review" href="#">
+              <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.27569 10.9208L10.4279 12.9179C10.8308 13.1732 11.3311 12.7935 11.2115 12.3232L10.3008 8.74052C10.2752 8.64073 10.2782 8.53573 10.3096 8.4376C10.3409 8.33946 10.3994 8.25218 10.4781 8.18577L13.3049 5.83306C13.6763 5.52392 13.4846 4.90751 13.0074 4.87654L9.31588 4.63696C9.21645 4.62986 9.12109 4.59465 9.04089 4.53545C8.96069 4.47625 8.89896 4.39548 8.86289 4.30255L7.48612 0.835486C7.44869 0.736852 7.38215 0.651935 7.29532 0.592013C7.2085 0.532092 7.1055 0.5 7 0.5C6.89451 0.5 6.79151 0.532092 6.70468 0.592013C6.61786 0.651935 6.55131 0.736852 6.51389 0.835486L5.13712 4.30255C5.10104 4.39548 5.03932 4.47625 4.95912 4.53545C4.87892 4.59465 4.78355 4.62986 4.68412 4.63696L0.992627 4.87654C0.515435 4.90751 0.323731 5.52392 0.695149 5.83306L3.52186 8.18577C3.60063 8.25218 3.65907 8.33946 3.69044 8.4376C3.72181 8.53573 3.72485 8.64073 3.6992 8.74052L2.85459 12.063C2.71111 12.6274 3.31143 13.083 3.79495 12.7767L6.72431 10.9208C6.8067 10.8683 6.90234 10.8405 7 10.8405C7.09767 10.8405 7.19331 10.8683 7.27569 10.9208Z"
+                  fill="#FD8E1F" />
+              </svg> 5.0
+            </a>
+            <p class="course-item-5-card-footer-student">
+              <a href="#">265.7K <span>students</span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="course-item-5">
+        <div class="course-item-5-card">
+          <img src="src/images/Course-item-2.jpg" alt="">
+          <div class="course-item-5-card-info">
+            <a class="course-item-5-card-info-tag" href="#">Music</a>
+            <p class="course-item-5-card-info-price">$455</p>
+          </div>
+          <h4>The Complete Digital Marketing Course</h4>
+          <div class="course-item-5-card-footer">
+            <a class="course-item-5-card-footer-review" href="#">
+              <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.27569 10.9208L10.4279 12.9179C10.8308 13.1732 11.3311 12.7935 11.2115 12.3232L10.3008 8.74052C10.2752 8.64073 10.2782 8.53573 10.3096 8.4376C10.3409 8.33946 10.3994 8.25218 10.4781 8.18577L13.3049 5.83306C13.6763 5.52392 13.4846 4.90751 13.0074 4.87654L9.31588 4.63696C9.21645 4.62986 9.12109 4.59465 9.04089 4.53545C8.96069 4.47625 8.89896 4.39548 8.86289 4.30255L7.48612 0.835486C7.44869 0.736852 7.38215 0.651935 7.29532 0.592013C7.2085 0.532092 7.1055 0.5 7 0.5C6.89451 0.5 6.79151 0.532092 6.70468 0.592013C6.61786 0.651935 6.55131 0.736852 6.51389 0.835486L5.13712 4.30255C5.10104 4.39548 5.03932 4.47625 4.95912 4.53545C4.87892 4.59465 4.78355 4.62986 4.68412 4.63696L0.992627 4.87654C0.515435 4.90751 0.323731 5.52392 0.695149 5.83306L3.52186 8.18577C3.60063 8.25218 3.65907 8.33946 3.69044 8.4376C3.72181 8.53573 3.72485 8.64073 3.6992 8.74052L2.85459 12.063C2.71111 12.6274 3.31143 13.083 3.79495 12.7767L6.72431 10.9208C6.8067 10.8683 6.90234 10.8405 7 10.8405C7.09767 10.8405 7.19331 10.8683 7.27569 10.9208Z"
+                  fill="#FD8E1F" />
+              </svg> 5.0
+            </a>
+            <p class="course-item-5-card-footer-student">
+              <a href="#">265.7K <span>students</span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="course-item-5">
+        <div class="course-item-5-card">
+          <img src="src/images/Course-item-2.jpg" alt="">
+          <div class="course-item-5-card-info">
+            <a class="course-item-5-card-info-tag" href="#">Music</a>
+            <p class="course-item-5-card-info-price">$455</p>
+          </div>
+          <h4>The Complete Digital Marketing Course</h4>
+          <div class="course-item-5-card-footer">
+            <a class="course-item-5-card-footer-review" href="#">
+              <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.27569 10.9208L10.4279 12.9179C10.8308 13.1732 11.3311 12.7935 11.2115 12.3232L10.3008 8.74052C10.2752 8.64073 10.2782 8.53573 10.3096 8.4376C10.3409 8.33946 10.3994 8.25218 10.4781 8.18577L13.3049 5.83306C13.6763 5.52392 13.4846 4.90751 13.0074 4.87654L9.31588 4.63696C9.21645 4.62986 9.12109 4.59465 9.04089 4.53545C8.96069 4.47625 8.89896 4.39548 8.86289 4.30255L7.48612 0.835486C7.44869 0.736852 7.38215 0.651935 7.29532 0.592013C7.2085 0.532092 7.1055 0.5 7 0.5C6.89451 0.5 6.79151 0.532092 6.70468 0.592013C6.61786 0.651935 6.55131 0.736852 6.51389 0.835486L5.13712 4.30255C5.10104 4.39548 5.03932 4.47625 4.95912 4.53545C4.87892 4.59465 4.78355 4.62986 4.68412 4.63696L0.992627 4.87654C0.515435 4.90751 0.323731 5.52392 0.695149 5.83306L3.52186 8.18577C3.60063 8.25218 3.65907 8.33946 3.69044 8.4376C3.72181 8.53573 3.72485 8.64073 3.6992 8.74052L2.85459 12.063C2.71111 12.6274 3.31143 13.083 3.79495 12.7767L6.72431 10.9208C6.8067 10.8683 6.90234 10.8405 7 10.8405C7.09767 10.8405 7.19331 10.8683 7.27569 10.9208Z"
+                  fill="#FD8E1F" />
+              </svg> 5.0
+            </a>
+            <p class="course-item-5-card-footer-student">
+              <a href="#">265.7K <span>students</span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="course-item-5">
+        <div class="course-item-5-card">
+          <img src="src/images/Course-item-2.jpg" alt="">
+          <div class="course-item-5-card-info">
+            <a class="course-item-5-card-info-tag" href="#">Music</a>
+            <p class="course-item-5-card-info-price">$455</p>
+          </div>
+          <h4>The Complete Digital Marketing Course</h4>
+          <div class="course-item-5-card-footer">
+            <a class="course-item-5-card-footer-review" href="#">
+              <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.27569 10.9208L10.4279 12.9179C10.8308 13.1732 11.3311 12.7935 11.2115 12.3232L10.3008 8.74052C10.2752 8.64073 10.2782 8.53573 10.3096 8.4376C10.3409 8.33946 10.3994 8.25218 10.4781 8.18577L13.3049 5.83306C13.6763 5.52392 13.4846 4.90751 13.0074 4.87654L9.31588 4.63696C9.21645 4.62986 9.12109 4.59465 9.04089 4.53545C8.96069 4.47625 8.89896 4.39548 8.86289 4.30255L7.48612 0.835486C7.44869 0.736852 7.38215 0.651935 7.29532 0.592013C7.2085 0.532092 7.1055 0.5 7 0.5C6.89451 0.5 6.79151 0.532092 6.70468 0.592013C6.61786 0.651935 6.55131 0.736852 6.51389 0.835486L5.13712 4.30255C5.10104 4.39548 5.03932 4.47625 4.95912 4.53545C4.87892 4.59465 4.78355 4.62986 4.68412 4.63696L0.992627 4.87654C0.515435 4.90751 0.323731 5.52392 0.695149 5.83306L3.52186 8.18577C3.60063 8.25218 3.65907 8.33946 3.69044 8.4376C3.72181 8.53573 3.72485 8.64073 3.6992 8.74052L2.85459 12.063C2.71111 12.6274 3.31143 13.083 3.79495 12.7767L6.72431 10.9208C6.8067 10.8683 6.90234 10.8405 7 10.8405C7.09767 10.8405 7.19331 10.8683 7.27569 10.9208Z"
+                  fill="#FD8E1F" />
+              </svg> 5.0
+            </a>
+            <p class="course-item-5-card-footer-student">
+              <a href="#">265.7K <span>students</span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="course-item-5">
+        <div class="course-item-5-card">
+          <img src="src/images/Course-item-2.jpg" alt="">
+          <div class="course-item-5-card-info">
+            <a class="course-item-5-card-info-tag" href="#">Music</a>
+            <p class="course-item-5-card-info-price">$455</p>
+          </div>
+          <h4>The Complete Digital Marketing Course</h4>
+          <div class="course-item-5-card-footer">
+            <a class="course-item-5-card-footer-review" href="#">
+              <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.27569 10.9208L10.4279 12.9179C10.8308 13.1732 11.3311 12.7935 11.2115 12.3232L10.3008 8.74052C10.2752 8.64073 10.2782 8.53573 10.3096 8.4376C10.3409 8.33946 10.3994 8.25218 10.4781 8.18577L13.3049 5.83306C13.6763 5.52392 13.4846 4.90751 13.0074 4.87654L9.31588 4.63696C9.21645 4.62986 9.12109 4.59465 9.04089 4.53545C8.96069 4.47625 8.89896 4.39548 8.86289 4.30255L7.48612 0.835486C7.44869 0.736852 7.38215 0.651935 7.29532 0.592013C7.2085 0.532092 7.1055 0.5 7 0.5C6.89451 0.5 6.79151 0.532092 6.70468 0.592013C6.61786 0.651935 6.55131 0.736852 6.51389 0.835486L5.13712 4.30255C5.10104 4.39548 5.03932 4.47625 4.95912 4.53545C4.87892 4.59465 4.78355 4.62986 4.68412 4.63696L0.992627 4.87654C0.515435 4.90751 0.323731 5.52392 0.695149 5.83306L3.52186 8.18577C3.60063 8.25218 3.65907 8.33946 3.69044 8.4376C3.72181 8.53573 3.72485 8.64073 3.6992 8.74052L2.85459 12.063C2.71111 12.6274 3.31143 13.083 3.79495 12.7767L6.72431 10.9208C6.8067 10.8683 6.90234 10.8405 7 10.8405C7.09767 10.8405 7.19331 10.8683 7.27569 10.9208Z"
+                  fill="#FD8E1F" />
+              </svg> 5.0
+            </a>
+            <p class="course-item-5-card-footer-student">
+              <a href="#">265.7K <span>students</span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="course-item-5">
+        <div class="course-item-5-card">
+          <img src="src/images/Course-item-2.jpg" alt="">
+          <div class="course-item-5-card-info">
+            <a class="course-item-5-card-info-tag" href="#">Music</a>
+            <p class="course-item-5-card-info-price">$455</p>
+          </div>
+          <h4>The Complete Digital Marketing Course</h4>
+          <div class="course-item-5-card-footer">
+            <a class="course-item-5-card-footer-review" href="#">
+              <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.27569 10.9208L10.4279 12.9179C10.8308 13.1732 11.3311 12.7935 11.2115 12.3232L10.3008 8.74052C10.2752 8.64073 10.2782 8.53573 10.3096 8.4376C10.3409 8.33946 10.3994 8.25218 10.4781 8.18577L13.3049 5.83306C13.6763 5.52392 13.4846 4.90751 13.0074 4.87654L9.31588 4.63696C9.21645 4.62986 9.12109 4.59465 9.04089 4.53545C8.96069 4.47625 8.89896 4.39548 8.86289 4.30255L7.48612 0.835486C7.44869 0.736852 7.38215 0.651935 7.29532 0.592013C7.2085 0.532092 7.1055 0.5 7 0.5C6.89451 0.5 6.79151 0.532092 6.70468 0.592013C6.61786 0.651935 6.55131 0.736852 6.51389 0.835486L5.13712 4.30255C5.10104 4.39548 5.03932 4.47625 4.95912 4.53545C4.87892 4.59465 4.78355 4.62986 4.68412 4.63696L0.992627 4.87654C0.515435 4.90751 0.323731 5.52392 0.695149 5.83306L3.52186 8.18577C3.60063 8.25218 3.65907 8.33946 3.69044 8.4376C3.72181 8.53573 3.72485 8.64073 3.6992 8.74052L2.85459 12.063C2.71111 12.6274 3.31143 13.083 3.79495 12.7767L6.72431 10.9208C6.8067 10.8683 6.90234 10.8405 7 10.8405C7.09767 10.8405 7.19331 10.8683 7.27569 10.9208Z"
+                  fill="#FD8E1F" />
+              </svg> 5.0
+            </a>
+            <p class="course-item-5-card-footer-student">
+              <a href="#">265.7K <span>students</span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="course-item-5">
+        <div class="course-item-5-card">
+          <img src="src/images/Course-item-2.jpg" alt="">
+          <div class="course-item-5-card-info">
+            <a class="course-item-5-card-info-tag" href="#">Music</a>
+            <p class="course-item-5-card-info-price">$455</p>
+          </div>
+          <h4>The Complete Digital Marketing Course</h4>
+          <div class="course-item-5-card-footer">
+            <a class="course-item-5-card-footer-review" href="#">
+              <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.27569 10.9208L10.4279 12.9179C10.8308 13.1732 11.3311 12.7935 11.2115 12.3232L10.3008 8.74052C10.2752 8.64073 10.2782 8.53573 10.3096 8.4376C10.3409 8.33946 10.3994 8.25218 10.4781 8.18577L13.3049 5.83306C13.6763 5.52392 13.4846 4.90751 13.0074 4.87654L9.31588 4.63696C9.21645 4.62986 9.12109 4.59465 9.04089 4.53545C8.96069 4.47625 8.89896 4.39548 8.86289 4.30255L7.48612 0.835486C7.44869 0.736852 7.38215 0.651935 7.29532 0.592013C7.2085 0.532092 7.1055 0.5 7 0.5C6.89451 0.5 6.79151 0.532092 6.70468 0.592013C6.61786 0.651935 6.55131 0.736852 6.51389 0.835486L5.13712 4.30255C5.10104 4.39548 5.03932 4.47625 4.95912 4.53545C4.87892 4.59465 4.78355 4.62986 4.68412 4.63696L0.992627 4.87654C0.515435 4.90751 0.323731 5.52392 0.695149 5.83306L3.52186 8.18577C3.60063 8.25218 3.65907 8.33946 3.69044 8.4376C3.72181 8.53573 3.72485 8.64073 3.6992 8.74052L2.85459 12.063C2.71111 12.6274 3.31143 13.083 3.79495 12.7767L6.72431 10.9208C6.8067 10.8683 6.90234 10.8405 7 10.8405C7.09767 10.8405 7.19331 10.8683 7.27569 10.9208Z"
+                  fill="#FD8E1F" />
+              </svg> 5.0
+            </a>
+            <p class="course-item-5-card-footer-student">
+              <a href="#">265.7K <span>students</span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="course-item-5">
+        <div class="course-item-5-card">
+          <img src="src/images/Course-item-2.jpg" alt="">
+          <div class="course-item-5-card-info">
+            <a class="course-item-5-card-info-tag" href="#">Music</a>
+            <p class="course-item-5-card-info-price">$455</p>
+          </div>
+          <h4>The Complete Digital Marketing Course</h4>
+          <div class="course-item-5-card-footer">
+            <a class="course-item-5-card-footer-review" href="#">
+              <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.27569 10.9208L10.4279 12.9179C10.8308 13.1732 11.3311 12.7935 11.2115 12.3232L10.3008 8.74052C10.2752 8.64073 10.2782 8.53573 10.3096 8.4376C10.3409 8.33946 10.3994 8.25218 10.4781 8.18577L13.3049 5.83306C13.6763 5.52392 13.4846 4.90751 13.0074 4.87654L9.31588 4.63696C9.21645 4.62986 9.12109 4.59465 9.04089 4.53545C8.96069 4.47625 8.89896 4.39548 8.86289 4.30255L7.48612 0.835486C7.44869 0.736852 7.38215 0.651935 7.29532 0.592013C7.2085 0.532092 7.1055 0.5 7 0.5C6.89451 0.5 6.79151 0.532092 6.70468 0.592013C6.61786 0.651935 6.55131 0.736852 6.51389 0.835486L5.13712 4.30255C5.10104 4.39548 5.03932 4.47625 4.95912 4.53545C4.87892 4.59465 4.78355 4.62986 4.68412 4.63696L0.992627 4.87654C0.515435 4.90751 0.323731 5.52392 0.695149 5.83306L3.52186 8.18577C3.60063 8.25218 3.65907 8.33946 3.69044 8.4376C3.72181 8.53573 3.72485 8.64073 3.6992 8.74052L2.85459 12.063C2.71111 12.6274 3.31143 13.083 3.79495 12.7767L6.72431 10.9208C6.8067 10.8683 6.90234 10.8405 7 10.8405C7.09767 10.8405 7.19331 10.8683 7.27569 10.9208Z"
+                  fill="#FD8E1F" />
+              </svg> 5.0
+            </a>
+            <p class="course-item-5-card-footer-student">
+              <a href="#">265.7K <span>students</span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="course-item-5">
+        <div class="course-item-5-card">
+          <img src="src/images/Course-item-2.jpg" alt="">
+          <div class="course-item-5-card-info">
+            <a class="course-item-5-card-info-tag" href="#">Music</a>
+            <p class="course-item-5-card-info-price">$455</p>
+          </div>
+          <h4>The Complete Digital Marketing Course</h4>
+          <div class="course-item-5-card-footer">
+            <a class="course-item-5-card-footer-review" href="#">
+              <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.27569 10.9208L10.4279 12.9179C10.8308 13.1732 11.3311 12.7935 11.2115 12.3232L10.3008 8.74052C10.2752 8.64073 10.2782 8.53573 10.3096 8.4376C10.3409 8.33946 10.3994 8.25218 10.4781 8.18577L13.3049 5.83306C13.6763 5.52392 13.4846 4.90751 13.0074 4.87654L9.31588 4.63696C9.21645 4.62986 9.12109 4.59465 9.04089 4.53545C8.96069 4.47625 8.89896 4.39548 8.86289 4.30255L7.48612 0.835486C7.44869 0.736852 7.38215 0.651935 7.29532 0.592013C7.2085 0.532092 7.1055 0.5 7 0.5C6.89451 0.5 6.79151 0.532092 6.70468 0.592013C6.61786 0.651935 6.55131 0.736852 6.51389 0.835486L5.13712 4.30255C5.10104 4.39548 5.03932 4.47625 4.95912 4.53545C4.87892 4.59465 4.78355 4.62986 4.68412 4.63696L0.992627 4.87654C0.515435 4.90751 0.323731 5.52392 0.695149 5.83306L3.52186 8.18577C3.60063 8.25218 3.65907 8.33946 3.69044 8.4376C3.72181 8.53573 3.72485 8.64073 3.6992 8.74052L2.85459 12.063C2.71111 12.6274 3.31143 13.083 3.79495 12.7767L6.72431 10.9208C6.8067 10.8683 6.90234 10.8405 7 10.8405C7.09767 10.8405 7.19331 10.8683 7.27569 10.9208Z"
+                  fill="#FD8E1F" />
+              </svg> 5.0
+            </a>
+            <p class="course-item-5-card-footer-student">
+              <a href="#">265.7K <span>students</span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="course-item-5">
+        <div class="course-item-5-card">
+          <img src="src/images/Course-item-2.jpg" alt="">
+          <div class="course-item-5-card-info">
+            <a class="course-item-5-card-info-tag" href="#">Music</a>
+            <p class="course-item-5-card-info-price">$455</p>
+          </div>
+          <h4>The Complete Digital Marketing Course</h4>
+          <div class="course-item-5-card-footer">
+            <a class="course-item-5-card-footer-review" href="#">
+              <svg width="14" height="13" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M7.27569 10.9208L10.4279 12.9179C10.8308 13.1732 11.3311 12.7935 11.2115 12.3232L10.3008 8.74052C10.2752 8.64073 10.2782 8.53573 10.3096 8.4376C10.3409 8.33946 10.3994 8.25218 10.4781 8.18577L13.3049 5.83306C13.6763 5.52392 13.4846 4.90751 13.0074 4.87654L9.31588 4.63696C9.21645 4.62986 9.12109 4.59465 9.04089 4.53545C8.96069 4.47625 8.89896 4.39548 8.86289 4.30255L7.48612 0.835486C7.44869 0.736852 7.38215 0.651935 7.29532 0.592013C7.2085 0.532092 7.1055 0.5 7 0.5C6.89451 0.5 6.79151 0.532092 6.70468 0.592013C6.61786 0.651935 6.55131 0.736852 6.51389 0.835486L5.13712 4.30255C5.10104 4.39548 5.03932 4.47625 4.95912 4.53545C4.87892 4.59465 4.78355 4.62986 4.68412 4.63696L0.992627 4.87654C0.515435 4.90751 0.323731 5.52392 0.695149 5.83306L3.52186 8.18577C3.60063 8.25218 3.65907 8.33946 3.69044 8.4376C3.72181 8.53573 3.72485 8.64073 3.6992 8.74052L2.85459 12.063C2.71111 12.6274 3.31143 13.083 3.79495 12.7767L6.72431 10.9208C6.8067 10.8683 6.90234 10.8405 7 10.8405C7.09767 10.8405 7.19331 10.8683 7.27569 10.9208Z"
+                  fill="#FD8E1F" />
+              </svg> 5.0
+            </a>
+            <p class="course-item-5-card-footer-student">
+              <a href="#">265.7K <span>students</span></a>
+            </p>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="space20"></div>
+
+
+
+
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"> </script>

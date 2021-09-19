@@ -1,0 +1,191 @@
+.edit-biography {
+    background-color: #111033;
+
+    &-content {
+        padding: 40px 0;
+        display: flex;
+        justify-content: space-between;
+
+        .edit-biography-left {
+            display: flex;
+
+            img {
+                height: 80px;
+                width: 80px;
+                border-radius: 50%;
+                cursor: pointer;
+                margin-right: 24px;
+            }
+
+            button {
+                border: 0;
+                background-color: transparent;
+            }
+
+            span {
+                color: rgb(255 255 255 / 50%);
+                font-size: 14px;
+                font-family: 'Inter';
+                font-weight: 300;
+                margin-top: 6px;
+                display: block;
+                line-height: 22px;
+            }
+
+            p {
+                color: #fff;
+                font-size: 20px;
+                font-family: 'Inter';
+                font-weight: 600;
+                margin: 0;
+                line-height: 26px;
+            }
+        }
+
+        .edit-biography-mid {
+            display: flex;
+
+            span {
+                color: rgb(255 255 255 / 50%);
+                font-size: 14px;
+                font-family: 'Inter';
+                font-weight: 300;
+                align-self: center;
+
+            }
+
+            p {
+                color: #fff;
+                font-size: 16px;
+                font-family: 'Inter';
+                font-weight: 600;
+                margin: 0;
+                align-self: center;
+            }
+
+            progress {
+                vertical-align: baseline;
+                height: 16px !important;
+                width: 312px;
+                border-radius: 0;
+                margin: 0 24px;
+                background: rgb(255 255 255 / 20%);
+                align-self: center;
+            }
+
+            /* For Chrome or Safari */
+            progress::-webkit-progress-bar {
+                background-color: rgba(17 16 51 / 20%);
+            }
+
+            progress::-webkit-progress-value {
+                background: #23BD33;
+            }
+
+            progress::-moz-progress-bar {
+                background: #23BD33;
+            }
+
+        }
+
+        .edit-biography-right {
+            display: flex;
+            align-self: center;
+
+            .edit-btn {
+                background: #FF6636;
+                padding: 0 24px 0 24px;
+                font-weight: 500;
+                font-size: 16px;
+                /* line-height: 48px; */
+                color: #FFFFFF;
+                font-family: "Inter";
+                height: 48px;
+                line-height: 48px;
+
+            }
+
+            .notification {
+                background: rgba(255, 255, 255, 0.05);
+                height: 48px;
+                width: 48px;
+                text-align: center;
+                line-height: 48px;
+                margin: 0 16px;
+                cursor: pointer;
+            }
+
+            button {
+                background-color: transparent;
+                border: 0;
+            }
+        }
+    }
+}
+.edit-biography-contents{
+    border-top: 1px solid rgb(255 255 255 / 10%);
+}
+
+.edit-biography-content {
+
+    background-color: #111033;
+    // border-top: 1px solid #f1f1f1;
+    display: flex;
+    &-all{
+        display: flex;
+        margin-bottom: 24px;
+        
+    }
+
+    &-left {
+        &-icon {
+            margin-right: 20px;
+            height: 56px;
+            width: 56px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 56px;
+            background-color: #23BD33;
+            color:#fff;
+            background-color: rgba(255, 255, 255, 0.05);
+        }
+        &-icon-color {
+            background-color: #23BD33;
+            
+           
+        }
+    }
+
+    &-right {
+        &-content {
+            h4 {
+                font-family: Inter;
+                font-style: normal;
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 24px;
+                color: #FFFFFF;
+            }
+            p {
+                font-family: Inter;
+                font-size: 14px;
+                line-height: 22px;
+                letter-spacing: -0.01em;
+                color: #6E7485;
+                margin:0;
+            }
+            
+        }
+        &-contents {
+            h4 {
+                color: rgba(255, 255, 255, 0.5);
+                font-weight: 400;
+            }
+            p {
+                color: rgba(110, 116, 133, 0.5);
+                margin:0;
+            }
+            
+        }
+    }
+}

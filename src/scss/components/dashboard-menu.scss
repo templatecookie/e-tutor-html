@@ -10,6 +10,8 @@
                 font-size:14px;
                 font-family: 'Inter';
                 font-weight:400 ;
+                margin-top: 6px;
+                line-height: 22px;
             }
             p{
                 color:#1D2026;
@@ -17,51 +19,13 @@
                 font-family: 'Inter';
                 font-weight:600;
                 margin: 0;
+                line-height: 26px;
             }
         }
         .dashboard-right{
             display: flex;
             justify-content: space-between;
-            .searchbox{
-                position: relative;
-                input{
-                    background-color: #F5F7FA;
-                    padding: 0px 0 0px 54px;
-                    border:0;
-                    height: 48px;
-                    width: 312px;
-                }
-                ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-                    color:#8C94A3;
-                    font-size:16px;
-                    font-family: 'Inter';
-                    font-weight:400;
-                  }
-                  ::-moz-placeholder { /* Firefox 19+ */
-                    color:#8C94A3;
-                    font-size:16px;
-                    font-family: 'Inter';
-                    font-weight:400;
-                  }
-                  :-ms-input-placeholder { /* IE 10+ */
-                    color:#8C94A3;
-                    font-size:16px;
-                    font-family: 'Inter';
-                    font-weight:400;
-                  }
-                  :-moz-placeholder { /* Firefox 18- */
-                    color:#8C94A3;
-                    font-size:16px;
-                    font-family: 'Inter';
-                    font-weight:400;
-                  }
-                .dashboard-search-icon{
-                    position: absolute;
-                    top:11px;
-                    left:21px;
-                   
-                }
-            }
+            
             .notification{
                 background: #F5F7FA;
                 padding:12px;
@@ -82,3 +46,7 @@
     }
 }
 
+.bg{
+    background-color: #ffff;
+    padding:50px;
+}

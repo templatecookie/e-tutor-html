@@ -1,0 +1,26 @@
+.edit-biography-content .edit-biography-right .edit-btn,
+.edit-biography-content .edit-biography-right .notification{
+    transition:.5s;
+}
+.edit-biography-content .edit-biography-right .notification:hover{
+    background-color: $primary-600;
+    svg{
+        path{
+            stroke: #fff;
+        }
+    }
+}
+.edit-biography-content .edit-biography-right .edit-btn:hover{
+    background-color: $primary-600;
+}
+.dashboard-content .dashboard-right .notification{
+    transition: .5s;
+}
+.dashboard-content .dashboard-right .notification:hover{
+    background-color: $primary-600;
+    svg{
+        path{
+            stroke: #fff;
+        }
+    }
+}

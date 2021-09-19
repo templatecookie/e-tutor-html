@@ -23,6 +23,7 @@ a {
     display: inline-block;
     color: $lightBlack;
     @include animate(.3s);
+    text-decoration: none;
 }
 
 li {
@@ -46,4 +47,7 @@ p {
 }
 .space20{
     padding: 20px;
+}
+.space10{
+    padding: 10px;
 }
