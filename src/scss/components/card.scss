@@ -3,11 +3,20 @@
         background-color: #fff;
         border: 1px solid #E9EAF0;
 
-        img {
-            height: 100%;
-            width: 100%;
-        }
+        .course-item-4-card-img {
+           transition: .5s;
+           overflow: hidden; 
+            img {
+                height: 100%;
+                width: 100%;
+                transition: .5s;
 
+            }
+        }
+        &:hover img{
+            transform: scale(1.08);
+        }
+        
         &-info {
             display: flex;
             justify-content: space-between;
@@ -98,10 +107,17 @@
     &-card {
         background-color: #fff;
         border: 1px solid #E9EAF0;
+        overflow: hidden;
 
         img {
             height: 100%;
             width: 100%;
+            transition: .5s;
+            
+        }
+        
+        &:hover img{
+            transform: scale(1.08);
         }
 
         &-info {
@@ -190,6 +206,7 @@
 
 .feature-course {
     display: flex;
+
     &-info {
         display: flex;
         justify-content: space-between;
@@ -277,10 +294,9 @@
             }
         }
     }
-    &-footer{
+
+    &-footer {
         display: flex;
         justify-content: space-between;
     }
 }
-
-
