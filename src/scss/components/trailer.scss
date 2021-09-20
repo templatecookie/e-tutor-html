@@ -1,0 +1,74 @@
+.trailer {
+    margin-bottom: 48px;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    h4 {
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        color: #1D2026;
+        margin-bottom: 10px;
+        
+
+    }
+}
+
+.trailer-box {
+    display: flex;
+    overflow: hidden;
+    transition: .5s;
+
+    img {
+        width: 228px;
+        height: 100%;
+        object-fit: cover;
+        margin-right: 24px;
+    }
+
+    &-content {
+        flex: 1;
+
+        p {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: -0.01em;
+            color: #6E7485;
+            padding-bottom: 32px;
+        }
+
+        button {
+            border: 0;
+            background-color: $primary-100;
+            color: $primary-500;
+            font-family: 'Inter';
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 48px;
+            letter-spacing: -0.008em;
+            text-transform: capitalize;
+            padding: 0 24px;
+            transition: .5s;
+            svg {
+                margin-left: 8px;
+            }
+        }
+        button:hover{
+            background-color: $primary-500;
+            color:#fff;
+            svg{
+                path{
+                    stroke: #fff;
+                }
+            }
+        }
+    }
+}
+.bg-light{
+    background-color: #fff!important;
+    padding: 50px;
+}

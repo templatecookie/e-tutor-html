@@ -24,6 +24,11 @@
             justify-content: space-between;
             padding: 16px 18px 0 18px;
 
+            button {
+                border: none;
+                background-color: none;
+            }
+
             &-tag {
                 font-family: 'Inter';
                 font-weight: 500;
@@ -44,7 +49,7 @@
             }
         }
 
-        h4 {
+        a {
             font-family: 'Inter';
             font-weight: 500;
             font-size: 16px;
@@ -60,7 +65,7 @@
             justify-content: space-between;
             padding-top: 16px;
             border-top: 1px solid #E9EAF0;
-            padding: 16px 18px 16px 18px;
+
 
 
             &-review {
@@ -95,6 +100,7 @@
                     line-height: 22px;
                     letter-spacing: -0.01em;
                     color: #8C94A3;
+                    font-weight: 400;
                 }
             }
         }
@@ -126,6 +132,11 @@
             justify-content: space-between;
             padding: 16px 14px 0 14px;
 
+            button {
+                border: none;
+                background-color: none;
+            }
+
             &-tag {
                 font-family: 'Inter';
                 font-weight: 500;
@@ -146,7 +157,7 @@
             }
         }
 
-        h4 {
+        a {
             font-family: 'Inter';
             font-weight: 500;
             font-size: 14px;
@@ -162,7 +173,6 @@
             justify-content: space-between;
             padding-top: 16px;
             border-top: 1px solid #E9EAF0;
-            padding: 16px 14px 16px 14px;
 
             &-review {
                 font-family: 'Inter';
@@ -188,6 +198,7 @@
                 span {
                     font-family: 'Inter';
                     font-size: 14px;
+                    font-weight: 400;
                     line-height: 22px;
                     letter-spacing: -0.01em;
                     color: #8C94A3;
@@ -206,11 +217,24 @@
 .feature-course {
     border: 1px solid #E9EAF0;
     display: flex;
+    overflow: hidden;
+    background-color: #fff;
+    transition: .5s;
 
     img {
         width: 220px;
         height: 100%;
         object-fit: cover;
+        transition: .5s;
+        overflow: hidden;
+    }
+
+    &:hover img {
+        transform: scale(1.08);
+    }
+
+    &:hover {
+        box-shadow: 0px 12px 32px rgba(29, 32, 38, 0.1);
     }
 
     &-right {
@@ -357,5 +381,28 @@
             letter-spacing: -0.01em;
             color: #4E5566;
         }
+    }
+}
+
+
+.course-searchbox-header {
+    display: flex;
+    justify-content: space-between;
+
+    h4 {
+        font-family: 'Inter';
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: -0.01em;
+        color: #1D2026;
+    }
+
+    a {
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: -0.01em;
+        color: #564FFD;
     }
 }

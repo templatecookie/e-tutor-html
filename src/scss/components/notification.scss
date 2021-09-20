@@ -1,0 +1,43 @@
+.notification-section-all {
+    padding: 20px;
+    background-color: #fff;
+
+    .notification-section {
+        display: flex;
+        padding-bottom: 12px;
+        background-color: #fff;
+
+        &-left {
+            &-icon {
+                height: 32px;
+                width: 32px;
+                border-radius: 50%;
+                line-height: 32px;
+                text-align: center;
+                background-color: $primary-500;
+                margin-right: 12px;
+                cursor: pointer;
+            }
+        }
+        &-right {
+            &-content {
+                a {
+                    margin: 0;
+                    font-family: 'Inter';
+                    font-size: 14px;
+                    line-height: 22px;
+                    letter-spacing: -0.01em;
+                    color: #4E5566;
+                }
+
+                span {
+                    font-family: 'Inter';
+                    font-size: 12px;
+                    line-height: 16px;
+                    color: #8C94A3;
+                    margin-top: 6px;
+                }
+            }
+        }
+    }
+}
