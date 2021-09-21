@@ -122,7 +122,8 @@
         }
     }
 }
-.edit-biography-contents{
+
+.edit-biography-contents {
     border-top: 1px solid rgb(255 255 255 / 10%);
 }
 
@@ -131,10 +132,11 @@
     background-color: #111033;
     // border-top: 1px solid #f1f1f1;
     display: flex;
-    &-all{
+
+    &-all {
         display: flex;
         margin-bottom: 24px;
-        
+
     }
 
     &-left {
@@ -146,16 +148,16 @@
             text-align: center;
             line-height: 56px;
             background-color: #23BD33;
-            color:#fff;
+            color: #fff;
             background-color: rgba(255, 255, 255, 0.05);
         }
+
         &-icon-color {
             background-color: #23BD33;
-            
-           
+
+
         }
     }
-
     &-right {
         &-content {
             a {
@@ -167,30 +169,34 @@
                 color: #FFFFFF;
                 text-decoration: none;
             }
+
             p {
                 font-family: Inter;
                 font-size: 14px;
                 line-height: 22px;
                 letter-spacing: -0.01em;
                 color: #6E7485;
-                margin:0;
+                margin: 0;
             }
-            
+
         }
+
         &-contents {
             a {
                 color: rgba(255, 255, 255, 0.5);
                 font-weight: 400;
+                pointer-events: none;
             }
+
             p {
                 color: rgba(110, 116, 133, 0.5);
-                margin:0;
+                margin: 0;
             }
-            
+
         }
     }
 }
 
-.heretheclass{
+.heretheclass {
     display: none;
 }
