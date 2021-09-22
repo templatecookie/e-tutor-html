@@ -1,0 +1,35 @@
+.bredadcrumb-section {
+    background-color: #F5F7FA;
+    padding: 40px 0;
+}
+
+.breadcrumb-menu {
+    text-align: center;
+    h3{
+        font-family: Inter;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+        letter-spacing: -0.01em;
+        color: #1D2026;
+        margin-bottom: 15px;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li{
+            color: #1D2026;
+            margin: 0 2px;
+            display: inline-block;
+            font-family: Inter;
+            a{
+                
+                font-weight: normal;
+                font-size: 14px;
+                letter-spacing: -0.01em;
+                color: #6E7485;
+            }
+        }
+    }
+}

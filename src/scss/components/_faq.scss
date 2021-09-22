@@ -1,0 +1,79 @@
+.accordion-section{
+    .accordion-item{
+        margin-bottom: 20px;
+        border: 1px solid #E9EAF0;
+    }
+    .accordion-button{
+        font-family: Inter;
+        font-weight: 500;
+        font-size: 16px;
+        padding: 20px 24px;
+        border-top-left-radius: 0!important;
+        border-top-right-radius: 0!important;
+        &:hover{
+            box-shadow: 0px 12px 32px rgba(29, 32, 38, 0.1)
+        }
+        &:focus{
+            box-shadow: none;
+        }
+        &:not(.collapsed){
+            color: #fff;
+            background-color: #1D2026;
+            box-shadow: none;
+        }
+        &:after{
+            background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 3.125V16.875' stroke='%231D2026' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M4.375 11.25L10 16.875L15.625 11.25' stroke='%231D2026' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+        }
+        &:not(.collapsed)::after{
+            transform: rotate(0deg);
+            background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M10 16.875V3.125' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M4.375 8.75L10 3.125L15.625 8.75' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+        }
+    }
+    .accordion-body{
+        padding: 24px;
+        box-shadow: 0px 12px 32px rgba(29, 32, 38, 0.1);
+        p{
+            font-family: Inter;
+            font-weight: normal;
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: -0.01em;
+            color: #4E5566;
+        }
+        .faq-description1, .faq-description2{
+            ul{
+                margin: 0;
+                padding: 20px 0;
+                list-style: none;
+                li{
+                    font-family: Inter;
+                    font-weight: normal;
+                    font-size: 14px;
+                    line-height: 22px;
+                    letter-spacing: -0.01em;
+                    color: #4E5566;
+                }
+            }
+        }
+        .faq-description2{
+            ul{
+                li{
+                    padding-left: 12px;
+                    position: relative;
+                    &:before{
+                        content: "";
+                        left: 0;
+                        top: 8px;
+                        width: 5px;
+                        height: 5px;
+                        border-radius: 50%;
+                        position: absolute;
+                        background-color: #4E5566;
+        
+                    }
+                }
+            }
+           
+        }
+    }
+}
