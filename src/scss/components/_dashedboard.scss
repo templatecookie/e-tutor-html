@@ -45,7 +45,9 @@
                         float: right;
                         text-align: center;
                     }
-                   
+                    &:hover span{
+                        background-color: #1D2026;
+                    }
                     &:hover{
                         color: #fff;
                         background-color: #FF6636;

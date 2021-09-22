@@ -1,0 +1,26 @@
+.checkbox-field{
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li{
+            position: relative;
+            padding-left: 35px;
+            font-family: Inter;
+            font-weight: normal;
+            font-size: 14px;
+            letter-spacing: -0.01em;
+            color: #4E5566;
+            margin-bottom: 20px;
+            line-height: 22px;
+            margin-right: 10px;
+            &:last-child{
+                margin-bottom: 0;
+            }
+            svg{
+                position: absolute;
+                left: 0;
+            }
+        }
+    }
+}
