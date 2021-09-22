@@ -177,9 +177,8 @@ input[type=checkbox]:checked {
 .create-course-label {
     display: flex;
     justify-content: space-between;
-    border-bottom: 1px solid $primary-500;
+    border-bottom: 2px solid $primary-500;
     padding: 21px;
-
     h4 {
         font-family: 'Inter';
         font-weight: 500;
@@ -187,6 +186,9 @@ input[type=checkbox]:checked {
         line-height: 22px;
         color: #1D2026;
         margin:0;
+        svg{
+            margin-right: 8px;
+        }
     }
 
     span {
@@ -197,5 +199,6 @@ input[type=checkbox]:checked {
         line-height: 16px;
         text-align: right;
         color: #23BD33;
+        align-self: center;
     }
 }

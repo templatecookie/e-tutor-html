@@ -182,7 +182,7 @@
           </div>
         </div>
       </form>
-      <div class="space10"></div>
+      <div class="space50"></div>
       <div class="container">
         <div class="row">
           <div class="col-lg-4">
@@ -199,6 +199,14 @@
                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault-1">
                 <label class="form-check-label-2" for="flexCheckDefault-1">
                   Click
+                </label>
+              </div>
+            </div>
+            <div class="container">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault-2">
+                <label class="form-check-label-2" for="flexCheckDefault-2">
+                  Condition
                 </label>
               </div>
             </div>
@@ -223,7 +231,54 @@
               <span>7/12</span>
             </div>
           </div>
-        </div> 
+
+          <div class="col-lg-4">
+            <div class="create-course-label">
+              <h4> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.2"
+                    d="M3.10386 6.99533C3.03584 7.1107 2.99998 7.24219 3 7.37612V16.6239C3 16.7569 3.03541 16.8876 3.10259 17.0025C3.16978 17.1174 3.26632 17.2123 3.3823 17.2775L11.6323 21.9182C11.7446 21.9813 11.8712 22.0145 12 22.0145L12.001 22.0145L12.089 12L3.10388 6.99534L3.10386 6.99533Z"
+                    fill="#FF6636" />
+                  <path
+                    d="M21 16.6238V7.37611C21 7.24303 20.9646 7.11235 20.8974 6.99748C20.8302 6.8826 20.7337 6.78767 20.6177 6.72243L12.3677 2.08181C12.2554 2.01866 12.1288 1.98549 12 1.98549C11.8712 1.98549 11.7446 2.01866 11.6323 2.08181L3.3823 6.72243C3.26632 6.78767 3.16978 6.8826 3.10259 6.99748C3.03541 7.11235 3 7.24303 3 7.37611V16.6238C3 16.7569 3.03541 16.8876 3.10259 17.0025C3.16978 17.1173 3.26632 17.2123 3.3823 17.2775L11.6323 21.9181C11.7446 21.9813 11.8712 22.0145 12 22.0145C12.1288 22.0145 12.2554 21.9813 12.3677 21.9181L20.6177 17.2775C20.7337 17.2123 20.8302 17.1173 20.8974 17.0025C20.9646 16.8876 21 16.7569 21 16.6238Z"
+                    stroke="#FF6636" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M16.5958 14.2979V9.42291L7.5 4.40625" stroke="#FF6636" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M20.8982 6.99627L12.0906 12L3.10547 6.99533" stroke="#FF6636" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M12.088 12L12 22.0145" stroke="#FF6636" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                Label</h4>
+              <span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.875 7.875L5.625 16.125L1.5 12.0002" stroke="#23BD33" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M22.4998 7.875L14.2498 16.125L12.0586 13.9339" stroke="#23BD33" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+              </span>
+            </div>
+          </div>
+          <div class="space0"></div>
+          <div class="space50"></div>
+          <div class="col-lg-4">
+            <div class="range-middle">
+              <div class="multi-range-slider">
+                <input type="range" id="input-left" min="0" max="100" value="25">
+                <input type="range" id="input-right" min="0" max="100" value="75">
+
+                <div class="slider">
+                  <div class="track"></div>
+                  <div class="range"></div>
+                  <div class="thumb left"></div>
+                  <div class="thumb right"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+        </div>
       </div>
     </div>
   </section>
@@ -1263,6 +1318,72 @@
       </div>
     </div>
   </div>
+
+  <script>
+    var inputLeft = document.getElementById("input-left");
+    var inputRight = document.getElementById("input-right");
+
+    var thumbLeft = document.querySelector(".slider > .thumb.left");
+    var thumbRight = document.querySelector(".slider > .thumb.right");
+    var range = document.querySelector(".slider > .range");
+
+    function setLeftValue() {
+      var _this = inputLeft,
+        min = parseInt(_this.min),
+        max = parseInt(_this.max);
+
+      _this.value = Math.min(parseInt(_this.value), parseInt(inputRight.value) - 1);
+
+      var percent = ((_this.value - min) / (max - min)) * 100;
+
+      thumbLeft.style.left = percent + "%";
+      range.style.left = percent + "%";
+    }
+    setLeftValue();
+
+    function setRightValue() {
+      var _this = inputRight,
+        min = parseInt(_this.min),
+        max = parseInt(_this.max);
+
+      _this.value = Math.max(parseInt(_this.value), parseInt(inputLeft.value) + 1);
+
+      var percent = ((_this.value - min) / (max - min)) * 100;
+
+      thumbRight.style.right = (100 - percent) + "%";
+      range.style.right = (100 - percent) + "%";
+    }
+    setRightValue();
+
+    inputLeft.addEventListener("input", setLeftValue);
+    inputRight.addEventListener("input", setRightValue);
+
+    inputLeft.addEventListener("mouseover", function () {
+      thumbLeft.classList.add("hover");
+    });
+    inputLeft.addEventListener("mouseout", function () {
+      thumbLeft.classList.remove("hover");
+    });
+    inputLeft.addEventListener("mousedown", function () {
+      thumbLeft.classList.add("active");
+    });
+    inputLeft.addEventListener("mouseup", function () {
+      thumbLeft.classList.remove("active");
+    });
+
+    inputRight.addEventListener("mouseover", function () {
+      thumbRight.classList.add("hover");
+    });
+    inputRight.addEventListener("mouseout", function () {
+      thumbRight.classList.remove("hover");
+    });
+    inputRight.addEventListener("mousedown", function () {
+      thumbRight.classList.add("active");
+    });
+    inputRight.addEventListener("mouseup", function () {
+      thumbRight.classList.remove("active");
+    });
+  </script>
 
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"> </script>
