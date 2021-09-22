@@ -20,6 +20,8 @@ $(".accordion .accordion-head").click(function () {
 
 
 
+//this month form
+
 $(".custom-select").each(function() {
   var classes = $(this).attr("class"),
     id = $(this).attr("id"),
@@ -123,8 +125,4 @@ animateDisplay = function(target, animationClass, displayType, timeout) {
   }
 };
 
-document.querySelector('.notttt')
- .addEventListener('click', function() {
- animateDisplay(document.querySelector('.heretheclass'), 'show', 'block', 600)
-});
 
