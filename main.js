@@ -18,8 +18,6 @@ $(".accordion .accordion-head").click(function () {
 });
 
 
-
-
 //this month form
 
 $(".custom-select").each(function() {
@@ -193,3 +191,8 @@ inputRight.addEventListener("mousedown", function() {
 inputRight.addEventListener("mouseup", function() {
 	thumbRight.classList.remove("active");
 });
+
+
+//faq js
+
+
