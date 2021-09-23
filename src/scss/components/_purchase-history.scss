@@ -63,36 +63,33 @@
     transition: all 0.4s;
 }
 
-.accordion-body-text{
-    .accrdion-body-text-header{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        border-bottom: 1px solid #E9EAF0;
-        padding: 24px;
-        .accordion-header-content{
-            color: #FF6636;
-        }
-        .accordion-svg{
-            cursor: pointer;
-            background-color: #FF6636;
-            svg{
-                -webkit-transform: rotate(180deg);
-                -moz-transform: rotate(180deg);
-                -ms-transform: rotate(180deg);
-                -o-transform: rotate(180deg);
-                transform: rotate(180deg);
-            }
-            path{
-                stroke: #fff;
-            }
-        }
-    }
-}
+// .accordion-body-text{
+//     .accrdion-body-text-header{
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-between;
+//         border-bottom: 1px solid #E9EAF0;
+//         padding: 24px;
+ 
+//         .accordion-svg{
+//             cursor: pointer;
+//             background-color: #FF6636;
+//             svg{
+//                 -webkit-transform: rotate(180deg);
+//                 -moz-transform: rotate(180deg);
+//                 -ms-transform: rotate(180deg);
+//                 -o-transform: rotate(180deg);
+//                 transform: rotate(180deg);
+//             }
+//             path{
+//                 stroke: #fff;
+//             }
+//         }
+//     }
+// }
 
 .accordion-body-text{
     .accrodion-body-bottom{
-        padding: 24px;
         .faq-review-wrap{
             .faq-review-item{
                 display: flex;
@@ -214,15 +211,22 @@
 .accordion-wrap-faq{
     .accordion__list2.open{
         .link{
-            background: #FFFFFF;
-            border: 1px solid transparent;
-            margin-bottom: 20px;
-            box-shadow: 0px 12px 48px rgba(29, 32, 38, 0.12);
-            .accordion-svg{
-                background: #1D2026;
-                box-shadow: 0px 6px 20px rgba(54, 59, 71, 0.5);
+            &:hover{
+                box-shadow: none;
+                border: 1px solid #E9EAF0;
             }
             .accordion-svg{
+                background: #FF6636;
+                box-shadow: none;
+            }
+            .accordion-svg{
+                svg{
+                    -webkit-transform: rotate(180deg);
+                    -moz-transform: rotate(180deg);
+                    -ms-transform: rotate(180deg);
+                    -o-transform: rotate(180deg);
+                    transform: rotate(180deg);
+                }
                 path{
                     stroke: #fff;
                 }
@@ -235,8 +239,8 @@
 .accordion-wrap-faq{
     .accordion-body-text{
         display: none;
-        padding: 0;
         border: 1px solid #E9EAF0;
+        border-top: none;
         box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.06);
     }
 }
