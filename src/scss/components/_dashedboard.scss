@@ -12,7 +12,7 @@
                 color: #fff;
                 font-weight: 600;
                 font-size: 23.9581px;
-                padding: 20px;
+                padding: 16px 27px;
                 font-family: 'Inter';
                 img{
                     margin-right: 8px;
@@ -31,7 +31,7 @@
                     font-weight: 500;
                     font-size: 14px;
                     color: #8C94A3;
-                    padding: 20px;
+                    padding: 16px 27px;
                     transition: 0.5s;
                     font-family: 'Inter';
                     span{
@@ -44,10 +44,13 @@
                         color: #fff;
                         float: right;
                         text-align: center;
+                        transition: all 0.4s;
                     }
                     &:hover span{
-                        background-color: #1D2026;
+                        color: #FF6636;
+                        background-color: #fff;
                     }
+                   
                     &:hover{
                         color: #fff;
                         background-color: #FF6636;
@@ -61,7 +64,11 @@
                 }
                 &:last-child a{
                     margin-top: 400px;
+                    padding: 27px;
+                    color: #8C94A3;
+                    background-color: #1D2026;
                 }
+                
             }
         }
         svg {
