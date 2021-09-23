@@ -130,6 +130,78 @@
         border: 1px solid #FFDDD1;
     }
 }
+.course-searchbox-input {
+    position: relative;
+    display: flex;
+
+    input {
+        padding: 0px 0 0px 54px;
+        border: 1px solid #E9EAF0;
+        height: 48px;
+        width: 100%;
+        transition: .5s;
+        margin-right:10px;
+    }
+
+    .course-search-icon-left {
+        position: absolute;
+        top: 13px;
+        left: 21px;
+
+    }
+
+    .course-search-icon-right {
+        position: absolute;
+        top: 11px;
+        right: 21px;
+        margin-top: 3px;
+        font-family: 'Inter';
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: -0.01em;
+        color: #4E5566;
+    }
+
+    ::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        color: #8C94A3;
+        font-size: 16px;
+        font-family: 'Inter';
+        font-weight: 400;
+    }
+
+    ::-moz-placeholder {
+        /* Firefox 19+ */
+        color: #8C94A3;
+        font-size: 16px;
+        font-family: 'Inter';
+        font-weight: 400;
+    }
+
+    :-ms-input-placeholder {
+        /* IE 10+ */
+        color: #8C94A3;
+        font-size: 16px;
+        font-family: 'Inter';
+        font-weight: 400;
+    }
+
+    :-moz-placeholder {
+        /* Firefox 18- */
+        color: #8C94A3;
+        font-size: 16px;
+        font-family: 'Inter';
+        font-weight: 400;
+    }
+
+    input:focus {
+        border: 1px solid $primary-500;
+    }
+
+    input:hover {
+        border: 1px solid #FFDDD1;
+    }
+}
 
 .searchbox-input-card {
     padding: 21px !important;
@@ -138,9 +210,7 @@
 .course-searchbox-label {
     position: relative;
 
-    .success {
-        
-    }
+    .success {}
 
     input {
         padding: 0px 0 0px 48px;
@@ -149,7 +219,7 @@
         width: 100%;
         transition: .5s;
         background: linear-gradient(0deg, rgba(223, 242, 225, 0.5), rgba(223, 242, 225, 0.5)), #FFFFFF;
-      
+
     }
 
     .course-search-icon-left {
@@ -211,8 +281,10 @@
         border: 1px solid #7BD785;
     }
 }
+
 .course-searchbox-label-warning {
     position: relative;
+
     input {
         padding: 0px 0 0px 48px;
         border: 1px solid #F9EAEA;
@@ -220,7 +292,7 @@
         width: 100%;
         transition: .5s;
         background: linear-gradient(0deg, rgba(249, 234, 234, 0.5), rgba(249, 234, 234, 0.5)), #FFFFFF;
-      
+
     }
 
     .course-search-icon-left {

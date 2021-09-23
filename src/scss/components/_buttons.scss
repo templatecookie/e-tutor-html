@@ -177,6 +177,19 @@ select {
 .custom-option.selection {
     color: #b5b5b5;
 }
-
-// btn
+.btn-parimary{
+    background-color: $primary-500;
+    border:0;
+    color:#fff;
+}
+.input-btn {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 48px;
+    letter-spacing: -0.008em;
+    height:48px;
+    width:130px;
+    text-align: center;
+}
 
