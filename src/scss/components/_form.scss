@@ -130,6 +130,7 @@
         border: 1px solid #FFDDD1;
     }
 }
+
 .course-searchbox-input {
     position: relative;
     display: flex;
@@ -140,7 +141,7 @@
         height: 48px;
         width: 100%;
         transition: .5s;
-        margin-right:10px;
+        margin-right: 10px;
     }
 
     .course-search-icon-left {
@@ -362,6 +363,28 @@ input[type="checkbox"]:focus {
     box-shadow: none;
     outline: 0 none;
 }
+
+input[type="checkbox"]:checked+.form-check-label {
+
+    color: $primary-500;
+}
+
+input[type="checkbox"]:checked+.checkbox-box.form-check-right {
+    color: #4E5566!important;
+}
+
+.checkbox-box {
+    display: flex;
+    justify-content: space-between;
+
+    .form-check-right {
+        font-family: 'Inter';
+        font-size: 12px;
+        line-height: 16px;
+        color: #8C94A3;
+    }
+}
+
 
 .form-check-input[type=checkbox] {
     border-radius: 0px;
