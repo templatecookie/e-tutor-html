@@ -121,12 +121,18 @@
     transition: .5s;
 }
 
+
 .course-lecture {
+    box-shadow: inset 0px -1px 0px #E9EAF0;
     background-color: #fff;
+    position: relative;
+    transition: .5s;
+
     &-img {
         a {
             height: 100%;
             width: 100%;
+
             img {
                 height: 100%;
                 width: 100%;
@@ -161,9 +167,95 @@
         border-top: 1px solid #E9EAF0;
         padding: 17px 18px;
 
+        .percent-complete {
+            font-family: 'Inter';
+            align-self: center;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: -0.01em;
+            color: #23BD33;
+        }
+        
 
     }
 
+}
+.course-lecture-watched {
+    box-shadow: inset 0px -1px 0px #E9EAF0;
+    background-color: #fff;
+    transition: 5s;
+    position: relative;
+
+    &-img {
+        a {
+            height: 100%;
+            width: 100%;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+
+        }
+    }
+
+    .all-title {
+        padding: 16px;
+    }
+
+    .title-link {
+        font-family: 'Inter';
+        font-size: 12px;
+        line-height: 16px;
+        color: #6E7485;
+    }
+
+    .title-link-no {
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: -0.01em;
+        color: #1D2026;
+    }
+
+    .course-lecture-footer {
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid #E9EAF0;
+        padding: 17px 18px;
+
+        .percent-complete {
+            font-family: 'Inter';
+            align-self: center;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: -0.01em;
+            color: #23BD33;
+        }
+        
+
+    }
+
+}
+
+.course-lecture:after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 61%;
+    background-color: $primary-500;
+}
+
+.course-lecture-watched:hover {
+    box-shadow: 0px 12px 48px rgba(29, 32, 38, 0.12);
+}
+.course-lecture:hover {
+    box-shadow: 0px 12px 48px rgba(29, 32, 38, 0.12);
 }
 
 .course-item-4-footer:hover {
