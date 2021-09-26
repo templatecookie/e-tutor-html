@@ -1,0 +1,51 @@
+.payment-method-item.item-one{
+    border: 1px solid #E9EAF0;
+}
+
+.payment-method-item{
+    margin-bottom: 24px;
+    padding: 13px 15px;
+    border: 1px solid #7BD785;
+   ul{
+       margin: 0;
+       padding: 0;
+       list-style: none;
+       li{
+           display: inline-block;
+           font-family: Inter;
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: -0.01em;
+            margin-right:48px;
+            color: #4E5566;
+            &:first-child{
+                margin-right: 13px;
+            }
+            &:last-child{
+                margin-right: 0px;
+            }
+       }
+   }
+    
+}
+
+.payment-method-item.item-three{
+    ul{
+        li{
+            color: #1D2026;
+            &:last-child{
+                float: right;
+            }
+        }
+    }
+}
+
+.payment-method-item.paypal{
+
+    border: 1px solid #E9EAF0;
+    ul{
+        li{
+            color: #8C94A3;
+        }
+    }
+}
