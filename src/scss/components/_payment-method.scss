@@ -11,9 +11,10 @@
   }
   .plan-content{
     display: flex;
+    height: 48px;
     border: 1px solid #E9EAF0;
     position: relative;
-    padding: 18px;
+    padding: 15px 18px;
     align-items: center;
     font-family: Inter;
     font-size: 14px;
@@ -55,7 +56,7 @@
         content: "";
         height: 25px;
         width: 25px;
-        top: 15px;
+        top: 10px;
         right: 15px;
         transition: all 0.4s;
         transform: scale(0);
