@@ -5,6 +5,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+        border-bottom: 1px solid #FFDDD1;
         .student-profile-left {
             display: flex;
             align-items: center;
@@ -20,6 +21,87 @@
                     object-fit: cover;
                 }
                 
+            }
+            .student-data{
+                h3{
+                    font-family: Inter;
+                    font-weight: 600;
+                    font-size: 24px;
+                    line-height: 32px;
+                    letter-spacing: -0.01em;
+                    color: #1D2026;
+                    margin-bottom: 14px;
+                }
+                p{
+                    font-family: Inter;
+                    font-size: 16px;
+                    line-height: 24px;
+                    color: #6E7485;
+                }
+            }
+        }
+        .student-profile-right{
+            a.become-instructor-btn{
+                background: #FFEEE8;
+                font-family: Inter;
+                font-weight: 600;
+                font-size: 18px;
+                line-height: 56px;
+                letter-spacing: -0.01em;
+                text-transform: capitalize;
+                color: #FF6636;
+                padding: 0 31px;
+                transition: all 0.4s;
+                &:hover{
+                    color: #fff;
+                    background-color: #FF6636;
+                }
+                svg{
+                    margin-left: 10px;
+                    transition: all 0.4s;
+                }
+                &:hover {
+                    path{
+                        stroke: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .student-profile-menu{
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            li{
+                display: inline-block;
+                a{
+                    font-family: Inter;
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: #4E5566;
+                    position: relative;
+                    transition: all 0.4s;
+                    padding: 20px 38px;
+                    &:hover{
+                        color: #1D2026;
+                    }
+                    &::before{
+                        content: "";
+                        left: 0;
+                        bottom: 0;
+                        width: 0;
+                        height: 3px;
+                        transition: all 0.4s;
+                        position: absolute;
+                        background-color: #FF6636;
+                    }
+                    &:hover::before{
+                        width: 100%;
+                    }
+                }
             }
         }
     }
