@@ -390,6 +390,7 @@
     overflow: hidden;
     background-color: #fff;
     transition: .5s;
+    flex-wrap: wrap;
 
     img {
         width: 220px;
@@ -678,6 +679,9 @@
         &-inner {
             display: flex;
             column-gap: 12px;
+            &-img-2{
+                margin-left: -30px;
+            }
         }
 
 
@@ -700,6 +704,7 @@
             transition: .5s;
             margin-bottom: 4px;
         }
+        
 
         .withdrew-money-card-profile-name {
             font-family: 'Inter';
@@ -714,6 +719,20 @@
                 margin-right: 0;
             }
 
+        }
+        .withdrew-money-card-profile-name-2{
+            position: relative;
+        }
+        .withdrew-money-card-profile-name-2:after{
+            position: absolute;
+            content: " ";
+            top:50%;
+            left:-12px;
+            height: 6px;
+            width: 6px;
+            border-radius: 50%;
+            background-color: #000;
+            transform: translate(-50%,-50%);
         }
 
         p {
@@ -744,6 +763,7 @@
         padding: 24px 0px  0px 0px;
         &-item{
             align-self: flex-end;
+         
         }
 
         a {
@@ -772,6 +792,10 @@
             display: flex;
 
             .item-box {
+                margin-right: 64px;
+                &:last-child{
+                    margin-right: 0px;
+                }
 
                 p {
                     font-family: 'Inter';
@@ -790,6 +814,18 @@
                     margin-top: 4px;
                 }
 
+            }
+            .item-box-line{
+                position: relative;
+            }
+            .item-box-line:after{
+                position: absolute;
+                content: " ";
+                top:15%;
+                left:-35px;
+                background-color: #E9EAF0;;
+                height: 70%;
+                width:1px;
             }
 
         }
