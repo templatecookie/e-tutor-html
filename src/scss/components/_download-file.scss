@@ -1,0 +1,48 @@
+.download-file {
+    display: flex;
+    justify-content: space-between;
+    padding: 24px;
+    background: #F5F7FA;
+
+    &-left {
+        display: flex;
+
+        h2 {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22px;
+            color: #1D2026;
+            margin: 0;
+        }
+
+        span {
+            font-family: 'Inter';
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: -0.01em;
+            color: #6E7485;
+
+        }
+
+        svg {
+            margin-right: 12px;
+        }
+    }
+
+    &-right {
+        a {
+            font-family: 'Inter';
+            padding: 0 24px;
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 48px;
+            letter-spacing: -0.008em;
+            text-transform: capitalize;
+            color: #FFFFFF;
+            background-color: $primary-500;
+
+        }
+    }
+}
