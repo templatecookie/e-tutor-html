@@ -9,14 +9,18 @@
         background-color: $primary-100;
         display: inline-block;
     }
-    .pag-arrow-right{
+
+    .pag-arrow-right {
         margin-left: 16px;
-    }
-    .pag-arrow-left{
-        margin-right: 16px;
+        cursor: pointer;
     }
 
-    .pag-content{
+    .pag-arrow-left {
+        margin-right: 16px;
+        cursor: pointer;
+    }
+
+    .pag-content {
         display: inline-block;
     }
 
@@ -30,22 +34,34 @@
             border-radius: 50%;
             text-align: center;
             line-height: 48px;
-            font-family: 'Inter';
-            font-weight: 500;
-            font-size: 14px;
-            color: #1D2026;
             transition: .5s;
-            cursor: pointer;
+
+            a {
+
+                font-family: 'Inter';
+                font-weight: 500;
+                font-size: 14px;
+                color: #1D2026;
+                transition: .5s;
+                cursor: pointer;
+            }
+
+        }
+
+        li:hover a {
+            color: $primary-500;
         }
 
         li:hover {
             background-color: $primary-100;
-            color: $primary-500;
         }
 
         .active {
             background-color: $primary-500;
-            color: #FFFFFF;
+
+            a {
+                color: #FFFFFF;
+            }
         }
     }
 }

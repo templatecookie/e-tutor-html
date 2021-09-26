@@ -121,10 +121,151 @@
     transition: .5s;
 }
 
+
+.course-lecture {
+    box-shadow: inset 0px -1px 0px #E9EAF0;
+    background-color: #fff;
+    position: relative;
+    transition: .5s;
+
+    &-img {
+        a {
+            height: 100%;
+            width: 100%;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+
+        }
+    }
+
+    .all-title {
+        padding: 16px;
+    }
+
+    .title-link {
+        font-family: 'Inter';
+        font-size: 12px;
+        line-height: 16px;
+        color: #6E7485;
+    }
+
+    .title-link-no {
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: -0.01em;
+        color: #1D2026;
+    }
+
+    .course-lecture-footer {
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid #E9EAF0;
+        padding: 17px 18px;
+
+        .percent-complete {
+            font-family: 'Inter';
+            align-self: center;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: -0.01em;
+            color: #23BD33;
+        }
+
+
+    }
+
+}
+
+.course-lecture-watched {
+    box-shadow: inset 0px -1px 0px #E9EAF0;
+    background-color: #fff;
+    transition: 5s;
+    position: relative;
+
+    &-img {
+        a {
+            height: 100%;
+            width: 100%;
+
+            img {
+                height: 100%;
+                width: 100%;
+            }
+
+        }
+    }
+
+    .all-title {
+        padding: 16px;
+    }
+
+    .title-link {
+        font-family: 'Inter';
+        font-size: 12px;
+        line-height: 16px;
+        color: #6E7485;
+    }
+
+    .title-link-no {
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: -0.01em;
+        color: #1D2026;
+    }
+
+    .course-lecture-footer {
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid #E9EAF0;
+        padding: 17px 18px;
+
+        .percent-complete {
+            font-family: 'Inter';
+            align-self: center;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: -0.01em;
+            color: #23BD33;
+        }
+
+
+    }
+
+}
+
+.course-lecture:after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 61%;
+    background-color: $primary-500;
+}
+
+.course-lecture-watched:hover {
+    box-shadow: 0px 12px 48px rgba(29, 32, 38, 0.12);
+}
+
+.course-lecture:hover {
+    box-shadow: 0px 12px 48px rgba(29, 32, 38, 0.12);
+}
+
 .course-item-4-footer:hover {
     background: #FFFFFF;
     box-shadow: 0px 12px 48px rgba(29, 32, 38, 0.12);
 }
+
+
 
 
 .course-item-4-a {
@@ -249,6 +390,7 @@
     overflow: hidden;
     background-color: #fff;
     transition: .5s;
+    flex-wrap: wrap;
 
     img {
         width: 220px;
@@ -430,6 +572,264 @@
             letter-spacing: -0.01em;
             color: #4E5566;
         }
+    }
+}
+
+.withdrew-money-card {
+    display: flex;
+    overflow: hidden;
+
+    img {
+        width: 220px;
+        height: 100%;
+        object-fit: cover;
+        transition: .5s;
+        overflow: hidden;
+    }
+
+    &:hover img {
+        transform: scale(1.08);
+    }
+
+
+
+    &:hover .feature-course-head {
+        color: $primary-500;
+    }
+
+    &:hover .feature-course-mid h5 {
+        color: #333;
+
+    }
+
+    &-left {
+        width: 352px;
+        height: 100%;
+        overflow: hidden;
+
+        .withdrew-money-card-img {
+            width: 100%;
+            height: 100%;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+    }
+
+    &-right {
+        flex: 1;
+
+        &-content-header {
+            padding: 0px 24px 0px 20px;
+        }
+    }
+
+    &-info {
+        display: flex;
+        column-gap: 16px;
+
+        p {
+            font-family: 'Inter';
+            font-size: 12px;
+            line-height: 16px;
+            color: #8C94A3;
+        }
+
+        span {
+            font-family: 'Inter';
+            font-size: 12px;
+            line-height: 16px;
+            color: #4E5566;
+        }
+    }
+
+    .withdrew-money-card-head {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        line-height: 26px;
+        color: #1D2026;
+        padding: 12px 0 8px 0;
+    }
+
+    .withdrew-money-card-p {
+        font-family: 'Inter';
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: -0.01em;
+        color: #6E7485;
+    }
+
+    .withdrew-money-card-footer {
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid #E9EAF0;
+        margin-left: 24px;
+    }
+
+    &-mid {
+        display: flex;
+        justify-content: space-between;
+        margin: 24px 0;
+
+        &-inner {
+            display: flex;
+            column-gap: 12px;
+            &-img-2{
+                margin-left: -30px;
+            }
+        }
+
+
+        img {
+            height: 50px;
+            width: 50px;
+            border-radius: 50%;
+            border: 2px solid #f1f1f1;
+        }
+
+        h5 {
+            font-family: 'Inter';
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: -0.01em;
+            color: #4E5566;
+            align-self: center;
+            margin: 0;
+            transition: .5s;
+            margin-bottom: 4px;
+        }
+        
+
+        .withdrew-money-card-profile-name {
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22px;
+            color: #1D2026;
+            margin-right: 21px;
+
+            :last-child {
+                margin-right: 0;
+            }
+
+        }
+        .withdrew-money-card-profile-name-2{
+            position: relative;
+        }
+        .withdrew-money-card-profile-name-2:after{
+            position: absolute;
+            content: " ";
+            top:50%;
+            left:-12px;
+            height: 6px;
+            width: 6px;
+            border-radius: 50%;
+            background-color: #000;
+            transform: translate(-50%,-50%);
+        }
+
+        p {
+            font-family: 'Inter';
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            letter-spacing: -0.01em;
+            color: #1D2026;
+            margin-left: 6px;
+            align-self: center;
+            display: inline-block;
+
+            span {
+                font-family: 'Inter';
+                font-size: 14px;
+                line-height: 24px;
+                color: #A1A5B3;
+                font-weight: 400;
+            }
+
+        }
+    }
+
+    &-footer {
+        display: flex;
+        justify-content: space-between;
+        padding: 24px 0px  0px 0px;
+        &-item{
+            align-self: flex-end;
+         
+        }
+
+        a {
+            font-family: 'Inter';
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 48px;
+            letter-spacing: -0.008em;
+            text-transform: capitalize;
+            background-color: $primary-500;
+            color: #FFFFFF;
+            padding: 0 24px;
+        }
+
+        button {
+            height: 48px;
+            width: 48px;
+            line-height: 47px;
+            text-align: center;
+            border: 0;
+            background-color: #F5F7FA;
+            margin-left: 12px;
+        }
+
+        .item-box-all {
+            display: flex;
+
+            .item-box {
+                margin-right: 64px;
+                &:last-child{
+                    margin-right: 0px;
+                }
+
+                p {
+                    font-family: 'Inter';
+                    font-size: 20px;
+                    line-height: 32px;
+                    color: #1D2026;
+                }
+
+                span {
+                    font-family: 'Inter';
+
+                    font-size: 14px;
+                    line-height: 22px;
+                    letter-spacing: -0.01em;
+                    color: #6E7485;
+                    margin-top: 4px;
+                }
+
+            }
+            .item-box-line{
+                position: relative;
+            }
+            .item-box-line:after{
+                position: absolute;
+                content: " ";
+                top:15%;
+                left:-35px;
+                background-color: #E9EAF0;;
+                height: 70%;
+                width:1px;
+            }
+
+        }
+
     }
 }
 

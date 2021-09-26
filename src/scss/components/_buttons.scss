@@ -197,3 +197,19 @@ select {
     background-color:transparent ;
     border:0;
 }
+.lecture-card-btn{
+    background-color:$primary-100;
+    color:$primary-500;
+    border:0;
+    line-height: 40px;
+    padding: 0 16px;
+    font-weight: 600;
+    transition: .5s;
+}
+.lecture-card-btn:hover{
+    background-color:$primary-500;
+    color:#fff;
+}
+.lecture-card-btn-watched{
+    width: 100%;
+}
