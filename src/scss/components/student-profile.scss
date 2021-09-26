@@ -1,0 +1,26 @@
+.student-profile-wrap {
+    border: 1px solid #FFDDD1;
+    .student-profile-header {
+        padding: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .student-profile-left {
+            display: flex;
+            align-items: center;
+            .student-thumb{
+                width: 110px;
+                height: 110px;
+                overflow: hidden;
+                border-radius: 100%;
+                margin-right: 24px;
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                
+            }
+        }
+    }
+}
