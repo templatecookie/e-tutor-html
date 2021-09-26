@@ -213,3 +213,25 @@ select {
 .lecture-card-btn-watched{
     width: 100%;
 }
+.visa-btn{
+    
+    color:#1D2026;
+    width:100%;
+    font-family: 'Inter';
+    text-align:center;
+    font-weight: 500;
+    padding:37px 0;
+    font-size: 16px;
+    line-height: 22px;
+    border: 1px dashed #E9EAF0;
+    transition: .5s;
+    svg{
+        margin-right:8px;
+    }
+
+}
+.visa-btn:hover{
+    background-color:$primary-100;
+    color:$primary-500;
+    border: 1px dashed transparent;
+}
