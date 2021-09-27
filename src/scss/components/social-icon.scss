@@ -1,0 +1,63 @@
+.social-icon{
+    margin-top: 15px;
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li{
+            margin: 0 2px;
+            display: inline-block;
+            &:first-child{
+                margin-left: 0;
+            }
+            &:last-child{
+                margin-right: 0;
+            }
+            a{
+                width: 48px;
+                height: 48px;
+                background: #F5F7FA;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                transition: all 0.4s;
+                &:hover{
+                    background-color: #FF6636;
+                }
+                
+            svg{
+                transition: all 0.4s;
+            }
+            path{
+                transition: all 0.4s;
+            }
+            &:hover{
+                  path{
+                      fill: #fff;
+                  }
+              }
+              &:hover{
+                  path.youtube{
+                      fill: #272B33;
+                  }
+              }
+            }
+        }
+    }
+}
+
+// footer social
+.footer-social{
+    margin-top: 24px;
+    ul{
+        display: flex;
+        li{
+            margin: 0 6px;
+            a{
+                width: 46px;
+                height: 46px;
+                background-color: #272B33;
+            }
+        }
+    }
+}
