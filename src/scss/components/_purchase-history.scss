@@ -231,15 +231,29 @@
                 align-items: center;
                 justify-content: space-between;
                 background-color: #fff;
+                transition: .5s;
+                padding: 24px 0;
+                // margin:0 26px;
+                border-bottom: 1px solid #E9EAF0;
+                &:last-child{
+                   
+                    border-bottom: 0px solid transparent;
+                }
 
                 // margin-bottom: 24px;
                 &:last-child {
                     margin-bottom: 0;
                 }
 
+                svg {
+                    path {
+                        transition: .5s;
+                    }
+                }
+
                 &-content {
                     display: flex;
-                    flex: 0 0 50%;
+                    flex: 0 0 57%;
 
                     svg {
                         margin-right: 23px;
@@ -279,6 +293,7 @@
                         span {
                             font-weight: normal;
                             color: #8C94A3;
+                            
                         }
 
                         svg {
@@ -299,10 +314,12 @@
 
                     p {
                         color: #A1A5B3;
+                        font-size: 14px;
 
                         span {
                             color: #4E5566;
                             margin-left: 7px;
+                            font-size: 14px;
                         }
                     }
                 }
@@ -338,7 +355,7 @@
 
                 }
 
-                .move-to-wishlist:hover {
+                .move-to-wishlist a:hover {
                     background-color: $primary-100;
                     color: $primary-600;
                 }
@@ -354,10 +371,17 @@
                 }
 
             }
-        }
 
+            .faq-review-item:hover .move-to-wishlist a {
+                background-color: $primary-100;
+                color: $primary-600;
+            }
+
+        }
     }
+
 }
+
 
 
 .accordion-wrap-faq {
