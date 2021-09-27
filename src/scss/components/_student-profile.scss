@@ -60,6 +60,9 @@
                     margin-left: 10px;
                     transition: all 0.4s;
                 }
+                path{
+                    transition: all 0.4s;
+                }
                 &:hover {
                     path{
                         stroke: #fff;
@@ -99,6 +102,14 @@
                         background-color: #FF6636;
                     }
                     &:hover::before{
+                        width: 100%;
+                    }
+                }
+                a.active{
+                    color: #1D2026;
+                }
+                a.active{
+                    &:before{
                         width: 100%;
                     }
                 }
