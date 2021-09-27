@@ -1,6 +1,7 @@
-.accordion-wrap-faq{
+.accordion-wrap-faq {
     .accordion__list2 {
         margin-bottom: 20px;
+
         .link {
             background: #FFFFFF;
             border: 1px solid #E9EAF0;
@@ -10,46 +11,52 @@
             align-items: center;
             justify-content: space-between;
             transition: all 0.5s;
-            &:hover{
+
+            &:hover {
                 border: 1px solid transparent;
                 box-shadow: 0px 12px 32px rgba(29, 32, 38, 0.1)
             }
-            &:hover .accordion-svg{
+
+            &:hover .accordion-svg {
                 background: #1D2026;
                 box-shadow: 0px 6px 20px rgba(54, 59, 71, 0.5);
             }
-            &:hover .accordion-svg{
-                path{
+
+            &:hover .accordion-svg {
+                path {
                     stroke: #fff;
                 }
             }
         }
-        
+
     }
 }
 
-.accordion-header-content{
-    font-family: Inter;
+.accordion-header-content {
+    font-family: 'Inter';
     font-size: 18px;
-    ul{
+
+    ul {
         margin: 8px 0 0;
         padding: 0;
         list-style: none;
         line-height: 1;
-        li{
+
+        li {
             display: inline-block;
-            font-family: Inter;
+            font-family: "Inter";
             font-size: 14px;
             letter-spacing: -0.01em;
             color: #4E5566;
             margin-right: 10px;
-            svg{
+
+            svg {
                 margin-right: 2px;
             }
-                               
+
         }
     }
-   
+
 }
 
 .accordion-svg {
@@ -63,73 +70,100 @@
     transition: all 0.4s;
 }
 
-.accordion-body-text{
-    .accrodion-body-bottom{
-        .faq-review-wrap{
-            .faq-review-item{
+.accordion-body-text {
+    .accrodion-body-bottom {
+        .faq-review-wrap {
+            .faq-review-item {
                 display: flex;
                 align-items: center;
                 margin-bottom: 24px;
-                &:last-child{
+
+                &:last-child {
                     margin-bottom: 0;
                 }
+
                 .faq-review-thumb {
                     flex: 0 0 27%;
                     margin-right: 24px;
-                    img{
+
+                    img {
                         width: 100%;
                         height: 100%;
                     }
                 }
-                .faq-review-data{
+
+                .faq-review-data {
                     min-height: 120px;
                     display: flex;
                     flex: 0 0 50%;
                     flex-direction: column;
                     justify-content: space-between;
-                    h5{
+
+                    h5 {
                         font-size: 14px;
                         font-weight: 500;
                         letter-spacing: -0.01em;
                         color: #1D2026;
-                        font-family: Inter;
+                        font-family: 'Inter';
                         margin-bottom: 8px;
-                        span{
+
+                        span {
                             font-weight: normal;
                             color: #8C94A3;
                         }
-                        svg{
+
+                        svg {
                             width: 17px;
                             height: 17px;
                             margin-right: 5px;
                         }
                     }
-                    h4{
-                        font-family: Inter;
+
+                    a {
+                        font-family: 'Inter';
                         font-weight: 500;
                         font-size: 16px;
                         line-height: 22px;
                         color: #1D2026;
 
                     }
-                    p{
+
+                    h4 {
+                        font-family: 'Inter';
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 22px;
+                        color: #1D2026;
+
+                    }
+
+                    p {
                         color: #A1A5B3;
-                        span{
+
+                        span {
                             color: #4E5566;
                             margin-left: 7px;
                         }
                     }
                 }
-                .amount{
-                    font-family: Inter;
+
+                .amount {
+                    font-family: 'Inter';
                     font-weight: 500;
                     font-size: 20px;
                     color: #FF6636;
                     flex: 0 0 19%;
                     text-align: right;
+
+                    a {
+                        text-decoration: line-through;
+                        color: #8C94A3;
+                        font-size: 18px;
+                    }
                 }
             }
         }
+
         .faq-body-right {
             width: 100%;
             border-left: 1px solid #E9EAF0;
@@ -138,39 +172,46 @@
             align-items: center;
             padding-left: 50px;
             margin-left: 100px;
-            .accrdion-body-text-header{
+
+            .accrdion-body-text-header {
                 padding: 0;
                 display: block;
                 border: none;
-                .accordion-header-content{
-                    font-family: Inter;
+
+                .accordion-header-content {
+                    font-family: "Inter";
                     font-weight: 600;
                     font-size: 24px;
                     letter-spacing: -0.01em;
                     color: #1D2026;
                     margin-bottom: 25px;
                 }
-                .payment-info{
-                    ul{
+
+                .payment-info {
+                    ul {
                         margin: 0;
                         padding: 0;
                         list-style: none;
-                        li{
+
+                        li {
                             display: inline-block;
-                            font-family: Inter;
+                            font-family: "inter";
                             font-weight: normal;
                             font-size: 14px;
                             letter-spacing: -0.01em;
                             color: #1D2026;
                             margin: 0 20px;
-                            &:first-child{
+
+                            &:first-child {
                                 margin-left: 0;
                             }
-                            &:last-child{
+
+                            &:last-child {
                                 margin-right: 0;
                                 margin-left: 105px;
                             }
-                            span{
+
+                            span {
                                 font-size: 18px;
                                 color: #1D2026;
                             }
@@ -182,27 +223,166 @@
     }
 }
 
+.shopping-body-text {
+    .shopping-body-bottom {
+        .faq-review-wrap {
+            .faq-review-item {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                background-color: #fff;
 
-.accordion-wrap-faq{
-    .accordion__list2.open{
-        .link{
-            &:hover{
+                // margin-bottom: 24px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+
+                &-content {
+                    display: flex;
+                    flex: 0 0 50%;
+
+                    svg {
+                        margin-right: 23px;
+                    }
+
+                    button {
+                        border: 0;
+                        background-color: transparent;
+                    }
+                }
+
+                .faq-review-thumb {
+                    // flex: 0 0 27%;
+                    margin-right: 20px;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                    }
+                }
+
+                .faq-review-data {
+                    min-height: 120px;
+                    display: flex;
+                    flex: 0 0 50%;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    h5 {
+                        font-size: 14px;
+                        font-weight: 500;
+                        letter-spacing: -0.01em;
+                        color: #1D2026;
+                        font-family: 'Inter';
+                        margin-bottom: 8px;
+
+                        span {
+                            font-weight: normal;
+                            color: #8C94A3;
+                        }
+
+                        svg {
+                            width: 17px;
+                            height: 17px;
+                            margin-right: 5px;
+                        }
+                    }
+
+                    a {
+                        font-family: 'Inter';
+                        font-weight: 500;
+                        font-size: 16px;
+                        line-height: 22px;
+                        color: #1D2026;
+
+                    }
+
+                    p {
+                        color: #A1A5B3;
+
+                        span {
+                            color: #4E5566;
+                            margin-left: 7px;
+                        }
+                    }
+                }
+
+                .amount {
+                    font-family: 'Inter';
+                    font-weight: 500;
+                    font-size: 20px;
+                    color: #FF6636;
+                    // flex: 0 0 19%;
+                    text-align: right;
+
+                    span {
+                        text-decoration: line-through;
+                        color: #8C94A3;
+                        font-size: 18px;
+                    }
+                }
+
+                .move-to-wishlist {
+                    a {
+                        font-family: "Inter";
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 40px;
+                        letter-spacing: -0.004em;
+                        text-transform: capitalize;
+                        color: $primary-500;
+                        padding: 0 16px;
+                        transition: .5s;
+                    }
+
+                }
+
+                .move-to-wishlist:hover {
+                    background-color: $primary-100;
+                    color: $primary-600;
+                }
+            }
+
+            .faq-review-item:hover {
+                button {
+                    svg {
+                        path {
+                            stroke: #333;
+                        }
+                    }
+                }
+
+            }
+        }
+
+    }
+}
+
+
+.accordion-wrap-faq {
+    .accordion__list2.open {
+        .link {
+            &:hover {
                 box-shadow: none;
                 border: 1px solid #E9EAF0;
             }
-            .accordion-svg{
+
+            .accordion-svg {
                 background: #FF6636;
                 box-shadow: none;
             }
-            .accordion-svg{
-                svg{
+
+            .accordion-svg {
+                svg {
                     -webkit-transform: rotate(180deg);
                     -moz-transform: rotate(180deg);
                     -ms-transform: rotate(180deg);
                     -o-transform: rotate(180deg);
                     transform: rotate(180deg);
                 }
-                path{
+
+                path {
                     stroke: #fff;
                 }
             }
@@ -211,12 +391,11 @@
 }
 
 
-.accordion-wrap-faq{
-    .accordion-body-text{
+.accordion-wrap-faq {
+    .accordion-body-text {
         display: none;
         border: 1px solid #E9EAF0;
         border-top: none;
         box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.06);
     }
 }
-
