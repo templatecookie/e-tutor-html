@@ -1869,8 +1869,8 @@
 
           </div>
           <div class="payment-card-visa-mid">
-            <input type="text" value="4855 **** **** ****" id="myInput">
-            <button onclick="copytext()" type="submit">
+            <input type="text" value="4855 **** **** ****" id="myInputs">
+            <button onclick="copytexts()" type="submit">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M15.75 15.7493H20.25V3.74934H8.25V8.24934" stroke="#ffffff73" stroke-width="1.5"
                   stroke-linecap="round" stroke-linejoin="round" />
@@ -3938,6 +3938,18 @@
 
       /* Copy the text inside the text field */
       navigator.clipboard.writeText(copyText.value);
+
+    }
+    function copytexts() {
+      /* Get the text field */
+      var copyText = document.getElementById("myInputs");
+
+      /* Select the text field */
+      copyText.select();
+      copyText.setSelectionRange(0, 99999); /* For mobile devices */
+
+      /* Copy the text inside the text field */
+      navigator.clipboard.writeText(copyTexts.value);
 
     }
   </script>
