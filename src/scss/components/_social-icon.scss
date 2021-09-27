@@ -61,3 +61,41 @@
         }
     }
 }
+
+.app-btn-column{
+    a.app-btn {
+        margin-bottom: 12px;
+        .app-btn-wrap {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 163px;
+            height: 58px;
+            background: #272B33;
+            .app-icon{
+                svg{
+                    margin-right: 15px;
+                }
+                img{
+                    margin-right: 15px;
+                }
+            }
+            .app-data{
+                p{
+                    font-family: "Inter";
+                    font-size: 10px;
+                    color: #B7BAC7;
+                    line-height: 1;
+                    margin-bottom: 4px;
+                }
+                h5{
+                    font-family: "Inter";
+                    font-weight: 500;
+                    font-size: 16px;
+                    color: #FFFFFF;
+                    margin: 0;
+                }
+            }
+        }
+    }
+}
