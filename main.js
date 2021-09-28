@@ -193,6 +193,12 @@ inputRight.addEventListener("mouseup", function() {
 });
 
 
-//faq js
+
+/* 
+    6. Menu 
+======================== */
+
+
+
 
 
