@@ -235,3 +235,18 @@ select {
     color:$primary-500;
     border: 1px dashed transparent;
 }
+
+.rotate {
+    -moz-transition: all .1s linear;
+    -webkit-transition: all .1s linear;
+    transition: all .1s linear;
+    path{
+        stroke: $primary-500;
+    }
+}
+.rotate.rotate-down {
+    -moz-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
+    transform:rotate(180deg);
+    
+}
