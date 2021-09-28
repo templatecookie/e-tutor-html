@@ -114,11 +114,14 @@
                 margin: 0 16px;
                 cursor: pointer;
             }
-
-            button {
-                background-color: transparent;
-                border: 0;
+            button{
+                border:0;
             }
+
+            svg {
+                cursor: pointer;
+            }
+            
         }
     }
 }
@@ -158,6 +161,7 @@
 
         }
     }
+
     &-right {
         &-content {
             a {
@@ -199,4 +203,31 @@
 
 .heretheclass {
     display: none;
+}
+
+
+.item-3 {
+    display: block;
+    margin: 20px 0 0;
+    border-bottom: 1px solid green;
+    cursor: pointer;
+}
+
+.edit-bio-btn input {
+    position: absolute;
+    left: -999em;
+}
+
+.edit-bio-content-change {
+    height: 100%;
+    opacity: 1;
+    overflow: hidden;
+    transition: all .5s linear, margin 0s linear 0s;
+}
+
+
+input[type="checkbox"]:checked+.edit-bio-content-change {
+    height: 0;
+    opacity: 0;
+    display: block;
 }
