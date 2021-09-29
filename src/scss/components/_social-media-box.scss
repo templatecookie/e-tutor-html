@@ -1,3 +1,8 @@
+.social-media-box-wrap{
+    @include mq('phone-wide', max) {
+        text-align: center;
+    } 
+}
 a.social-medaia-box-btn {
     border: 1px solid #E9EAF0;
     display: inline-block;
@@ -17,6 +22,14 @@ a.social-medaia-box-btn {
     &:last-child{
         margin-right: 0;
     }
+    @include mq('tablet-small', max) {
+        width: 170px;
+        margin-right: 10px;
+    } 
+    @include mq('phone-wide', max) {
+        margin: 0;
+        margin-bottom: 15px;
+    } 
 }
 
 a.social-medaia-box-btn.icon-common{

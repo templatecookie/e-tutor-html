@@ -22,8 +22,16 @@
     letter-spacing: -0.01em;
     color: #4E5566;
     transition: all 0.4s;
+    @include mq('phone-wide', max) {
+      display: block;
+      text-align: center;
+      height: auto;
+    } 
     svg{
         margin-right: 15px;
+        @include mq('phone-wide', max) {
+          margin: 0 0 15px;
+        }
     }
     &:hover{
         border: 1px solid #7BD785;
@@ -32,6 +40,9 @@
         line-height: 1;
         margin-right: 45px;
         font-family: Inter;
+        @include mq('phone-wide', max) {
+          margin: 0 0 15px;
+        }
     }
     h3{
         font-family: "Inter";

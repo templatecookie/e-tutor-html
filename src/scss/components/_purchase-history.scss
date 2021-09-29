@@ -11,6 +11,9 @@
             align-items: center;
             justify-content: space-between;
             transition: all 0.5s;
+            @include mq('tablet-small', max) {
+                padding: 15px;
+            } 
 
             &:hover {
                 border: 1px solid transparent;
@@ -68,6 +71,9 @@
     align-items: center;
     justify-content: center;
     transition: all 0.4s;
+    @include mq('phone-wide', max) {
+        height: 34px;
+    } 
 }
 
 .accordion-body-text {
@@ -77,18 +83,26 @@
                 display: flex;
                 align-items: center;
                 margin-bottom: 24px;
-
+                @include mq('phone-wide', max) {
+                    display: block;
+                    text-align: center;
+                } 
                 &:last-child {
                     margin-bottom: 0;
                 }
-
                 .faq-review-thumb {
-                    flex: 0 0 27%;
-                    margin-right: 24px;
-
+                    margin-right: 20px;
+                    flex: 0 0 auto;
+                    @include mq('tablet-small', max) {
+                        display: block;
+                    }
+                    @include mq('phone-wide', max) {
+                        margin-bottom: 15px;
+                    }  
                     img {
                         width: 100%;
                         height: 100%;
+                        object-fit: cover;
                     }
                 }
 
@@ -98,6 +112,13 @@
                     flex: 0 0 50%;
                     flex-direction: column;
                     justify-content: space-between;
+                    @include mq('desktop-wide', max) {
+                        flex: 0 0 42%;
+                    } 
+                    @include mq('phone-wide', max) {
+                        min-height: inherit;
+                        display: block;
+                    } 
 
                     h5 {
                         font-size: 14px;
@@ -154,6 +175,9 @@
                     color: #FF6636;
                     flex: 0 0 19%;
                     text-align: right;
+                    @include mq('phone-wide', max) {
+                        text-align: center;
+                    } 
 
                     a {
                         text-decoration: line-through;
@@ -172,6 +196,24 @@
             align-items: center;
             padding-left: 50px;
             margin-left: 100px;
+            @include mq('desktop-wide', max) {
+                padding-left: 30px;
+                margin-left: 30px;
+            }
+            @include mq('desktop', max) {
+                padding-left: 20px;
+                margin-left: 0;
+            } 
+            @include mq('tablet', max) {
+                padding: 0;
+                margin-left: 0;
+                margin-top: 20px;
+                border-left:  none;
+                display: block;
+            } 
+            @include mq('phone-wide', max) {
+                text-align: center;
+            } 
 
             .accrdion-body-text-header {
                 padding: 0;
@@ -185,6 +227,10 @@
                     letter-spacing: -0.01em;
                     color: #1D2026;
                     margin-bottom: 25px;
+                    @include mq('desktop', max) {
+                        font-size: 19px;
+                    } 
+
                 }
 
                 .payment-info {
@@ -201,7 +247,16 @@
                             letter-spacing: -0.01em;
                             color: #1D2026;
                             margin: 0 20px;
-
+                            @include mq('desktop', max) {
+                                margin: 0 10px;
+                            } 
+                            @include mq('desktop', max) {
+                                margin: 0 5px;
+                            }
+                            @include mq('phone-wide', max) {
+                                display: block;
+                                margin: 0 0 5px;
+                            }  
                             &:first-child {
                                 margin-left: 0;
                             }
@@ -209,11 +264,19 @@
                             &:last-child {
                                 margin-right: 0;
                                 margin-left: 105px;
+                                @include mq('desktop-wide', max) {
+                                    margin-left: 75px;
+                                } 
+                                @include mq('desktop', max) {
+                                    margin-left: 13px;
+                                } 
                             }
-
                             span {
                                 font-size: 18px;
                                 color: #1D2026;
+                                @include mq('desktop', max) {
+                                   font-size: 16px;
+                                } 
                             }
                         }
                     }
@@ -442,7 +505,6 @@
                 transition: .5s;
                 padding: 24px 0;
                 border-bottom: 1px solid #E9EAF0;
-
                 &:last-child {
 
                     border-bottom: 0px solid transparent;
@@ -644,11 +706,11 @@
 .accordion-wrap-faq {
     .accordion__list2.open {
         .link {
+            color: #FF6636;
             &:hover {
                 box-shadow: none;
                 border: 1px solid #E9EAF0;
             }
-
             .accordion-svg {
                 background: #FF6636;
                 box-shadow: none;

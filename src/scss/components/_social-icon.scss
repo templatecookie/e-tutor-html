@@ -21,6 +21,10 @@
                 align-items: center;
                 justify-content: center;
                 transition: all 0.4s;
+                @include mq('phone-wide', max) {
+                    width: 42px;
+                    height: 42px;
+                }
                 &:hover{
                     background-color: #FF6636;
                 }

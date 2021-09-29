@@ -13,6 +13,10 @@
         font-weight: 500;
         font-size: 16px;
         transition: all 0.5s;
+        @include mq('tablet-small', max) {
+            font-size: 15px;
+            padding: 10px 15px;
+        } 
         &:hover{
             border: 1px solid #E9EAF0;
             box-shadow: 0px 12px 32px rgba(29, 32, 38, 0.1)
@@ -28,6 +32,11 @@
             path{
                 stroke: #FF6636;
             }
+        }
+        span.link__title{
+            @include mq('phone-wide', max) {
+                flex: 0 0 85%;
+            } 
         }
     }
     
@@ -60,6 +69,9 @@
     display: none;
     padding: 24px;
     box-shadow: 0px 12px 32px rgba(29, 32, 38, 0.1);
+    @include mq('tablet-small', max) {
+        padding: 20px;
+    }
     p{
         font-family: "Inter";
         font-weight: normal;
@@ -68,7 +80,8 @@
         letter-spacing: -0.01em;
         color: #4E5566;
     }
-    .faq-description1, .faq-description2{
+    .faq-description1, 
+    .faq-description2{
         ul{
             margin: 0;
             padding: 20px 0;
