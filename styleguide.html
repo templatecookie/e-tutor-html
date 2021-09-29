@@ -36,7 +36,7 @@
       <div class="col-lg-5">
         <div class="profile-view-box">
           <div class="profile-view">
-            <p>My Profile</p>
+            <p class="align-self-center">My Profile</p>
             <div class="select-box">
               <label for="name4">
                 <select name="potencial" id="potencial" class="custom-select sources" placeholder="This Month">
@@ -47,8 +47,8 @@
               </label>
             </div>
           </div>
-          <div class="profile-view">
-            <p>My Profile</p>
+          <div class="profile-view profile-view-more">
+            <p class="align-self-center">My Profile</p>
             <div class="info-box">
               <a class="dot" href="#">Comments</a>
               <a class="dots" href="#">View</a>
@@ -1447,7 +1447,7 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6">
-          <div class="feature-course">
+          <div class="feature-course my-3">
             <div class="feature-course-left">
               <a href="#" class="feature-course-img"><img src="src/images/course-tem.jpg" alt=""></a>
             </div>
@@ -1517,7 +1517,7 @@
           </div>
         </div>
         <div class="col-lg-6">
-          <div class="feature-course">
+          <div class="feature-course my-3">
             <div class="feature-course-left">
               <a href="#" class="feature-course-img"><img src="src/images/course-tem.jpg" alt=""></a>
             </div>
@@ -1746,7 +1746,7 @@
                     <p>Uploaded:<span> Jan 21, 2020</span></p>
                     <p>Uploaded:<span> Jan 21, 2020</span></p>
                   </div>
-                  <a href="#" class="withdrew-money-card-head">2021 Complete Python Bootcamp From Zero to Hero in
+                  <a href="#" class="withdrew-money-card-head">2021 Complete From Zero to Hero in
                     Python</a>
                   <p class="withdrew-money-card-p">3 in 1 Course: Learn to design websites with Figma, build with
                     Webflow,
@@ -1845,7 +1845,7 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-4">
-        <div class="payment-card-visa">
+        <div class="payment-card-visa my-3">
           <div class="payment-card-visa-header">
             <svg width="84" height="28" viewBox="0 0 84 28" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path fill-rule="evenodd" clip-rule="evenodd"
@@ -1897,7 +1897,7 @@
         </div>
       </div>
       <div class="col-lg-4">
-        <div class="payment-card-visa-2">
+        <div class="payment-card-visa-2 my-3">
           <div class="payment-card-visa-2-header">
             <svg width="68" height="43" viewBox="0 0 68 43" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M43.1965 37.5492H24.8125V4.52767H43.1968L43.1965 37.5492Z" fill="white" />
@@ -3225,7 +3225,7 @@
             <div class="faq-review-wrap">
               <div class="faq-review-item">
                 <div class="faq-review-item-content">
-                  <button>
+                  <button class="cross-btn-shopping">
                     <svg class="align-self-center" width="25" height="24" viewBox="0 0 25 24" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -3266,7 +3266,7 @@
               </div>
               <div class="faq-review-item">
                 <div class="faq-review-item-content">
-                  <button>
+                  <button class="cross-btn-shopping">
                     <svg class="align-self-center" width="25" height="24" viewBox="0 0 25 24" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -3307,7 +3307,7 @@
               </div>
               <div class="faq-review-item">
                 <div class="faq-review-item-content">
-                  <button>
+                  <button class="cross-btn-shopping">
                     <svg class="align-self-center" width="25" height="24" viewBox="0 0 25 24" fill="none"
                       xmlns="http://www.w3.org/2000/svg">
                       <path
@@ -3726,8 +3726,8 @@
   <script type="module" src="/main.js"></script>
 
   
-          <!-- faq 1 -->
-  <script>
+   <!-- faq 1 -->
+   <script>
     var faq_init1 = function (el, multiple) {
       this.el = el || {};
       this.multiple = multiple || false;
@@ -3748,28 +3748,8 @@
       }
     }
     var faq_init1 = new faq_init1($('#faq_init1'), false);
-
-    var faq_init = function (el, multiple) {
-      this.el = el || {};
-      this.multiple = multiple || false;
-      var link = this.el.find('.link');
-      link.on('click', {
-        el: this.el,
-        multiple: this.multiple
-      }, this.dropdown)
-    }
-    faq_init.prototype.dropdown = function (e) {
-      var $el = e.data.el;
-      $this = $(this),
-        $next = $this.next();
-      $next.slideToggle();
-      $this.parent().toggleClass('open');
-      if (!e.data.multiple) {
-        $el.find('.accordion-body-text').not($next).slideUp().parent().removeClass('open');
-      }
-    }
-    var faq_init = new faq_init($('#faq_init'), false);
   </script>
+
 
   <!-- faq 2 -->
   <script>

@@ -428,7 +428,7 @@
             }
 
             .faq-review-item:hover {
-                button {
+                .cross-btn-shopping {
                     svg {
                         path {
                             stroke: #333;
@@ -522,8 +522,8 @@
                 }
 
                 &-content {
-                   display: flex;
-                   
+                    display: flex;
+
                     svg {
                         margin-right: 23px;
                     }
@@ -536,16 +536,15 @@
 
                 .faq-review-thumb {
                     margin-right: 20px;
-                  
+
                     img {
                         width: 100%;
                         height: 100%;
                     }
                 }
 
-                .faq-review-data{
-                  
-                }
+                .faq-review-data {}
+
                 .faq-review-data-inner {
                     min-height: 120px;
                     display: flex;
@@ -634,16 +633,7 @@
                 }
             }
 
-            .faq-review-item:hover {
-                button {
-                    svg {
-                        path {
-                            stroke: #333;
-                        }
-                    }
-                }
-
-            }
+           
 
             .faq-review-item:hover .move-to-wishlist a {
                 background-color: $primary-100;
@@ -661,25 +651,46 @@
                     width: 48px;
                     line-height: 48px;
                     text-align: center;
+
+                    svg {
+                        path {
+                            stroke: none;
+                        }
+                    }
+                }
+
+                button:hover {
+                    background-color: $primary-600;
+
+                    svg {
+                        path {
+                            stroke: none;
+                            fill: #fff;
+                        }
+                    }
                 }
 
                 .wishlist-btn {
-                    font-family: 'Inter';
-                    font-weight: 600;
-                    font-size: 16px;
-                    line-height: 48px;
-                    letter-spacing: -0.008em;
-                    text-transform: capitalize;
-                    color: #1D2026;
-                    width: 176px;
-                    line-height: 48px;
+                    a {
 
-                    text-align: center;
+                        font-family: 'Inter';
+                        font-weight: 600;
+                        font-size: 16px;
+                        line-height: 48px;
+                        letter-spacing: -0.008em;
+                        text-transform: capitalize;
+                        color: #1D2026;
+                        width: 176px;
+                        line-height: 48px;
+                        text-align: center;
+                        transition: .5s;
+                    }
                 }
 
                 .wishlist-buy {
 
                     background: #F5F7FA;
+                    transition: .5s;
 
                     a {
                         color: #1D2026;
@@ -689,11 +700,18 @@
 
                 .wishlist-add {
                     background-color: $primary-500;
+                    transition: .5s;
 
                     a {
                         color: #fff;
                     }
                 }
+
+                .wishlist-btn a:hover {
+                    background-color: $primary-600;
+                    color: #fff !important;
+                }
+
             }
 
         }

@@ -49,6 +49,37 @@
             background-color: $primary-600;
             color:#fff;
         }
+
+        a:hover {
+            background-color: $primary-600;
+            color: #fff;
+        }
+    }
+}
+
+@include mq('tablet-small', max) {
+    .download-file {
+        flex-wrap: wrap;
+
+        .download-file-right {
+            a {
+                padding: 0 15px;
+                font-size: 14px;
+                line-height: 40px;
+            }
+
+        }
+
+        &-left {
+            margin-bottom: 10px;
+
+            h3 {
+                font-size: 14px;
+                line-height: 15px;
+            }
+
+        }
         
     }
+
 }
