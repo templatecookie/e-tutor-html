@@ -690,7 +690,6 @@
             }
         }
 
-
         img {
             height: 50px;
             width: 50px;
@@ -770,32 +769,55 @@
         justify-content: space-between;
         padding: 24px 0px 0px 0px;
 
+        .item-box-all {
+            display: flex;
+
+            .item-box {
+                margin-right: 64px;
+
+                &:last-child {
+                    margin-right: 0px;
+                }
+
+                p {
+                    font-family: 'Inter';
+                    font-size: 20px;
+                    line-height: 32px;
+                    color: #1D2026;
+                }
+
+                span {
+                    font-family: 'Inter';
+
+                    font-size: 14px;
+                    line-height: 22px;
+                    letter-spacing: -0.01em;
+                    color: #6E7485;
+                    margin-top: 4px;
+                }
+
+            }
+
+            .item-box-line {
+                position: relative;
+            }
+
+            .item-box-line:after {
+                position: absolute;
+                content: " ";
+                top: 15%;
+                left: -35px;
+                background-color: #E9EAF0;
+                ;
+                height: 70%;
+                width: 1px;
+            }
+
+        }
+
+
         &-item {
             align-self: flex-end;
-
-        }
-
-        a {
-            font-family: 'Inter';
-            font-weight: 600;
-            font-size: 16px;
-            line-height: 48px;
-            letter-spacing: -0.008em;
-            text-transform: capitalize;
-            background-color: $primary-500;
-            color: #FFFFFF;
-            padding: 0 24px;
-            transition: .5s;
-        }
-
-        a:hover {
-            background-color: $primary-600;
-            color: #fff;
-
-            a:hover {
-                background-color: $primary-600;
-                color: #fff;
-            }
 
             button {
                 height: 48px;
@@ -829,52 +851,30 @@
                 }
             }
 
+        }
 
-            .item-box-all {
-                display: flex;
+        a {
+            font-family: 'Inter';
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 48px;
+            letter-spacing: -0.008em;
+            text-transform: capitalize;
+            background-color: $primary-500;
+            color: #FFFFFF;
+            padding: 0 24px;
+            transition: .5s;
+        }
 
-                .item-box {
-                    margin-right: 64px;
+        a:hover {
+            background-color: $primary-600;
+            color: #fff;
 
-                    &:last-child {
-                        margin-right: 0px;
-                    }
-
-                    p {
-                        font-family: 'Inter';
-                        font-size: 20px;
-                        line-height: 32px;
-                        color: #1D2026;
-                    }
-
-                    span {
-                        font-family: 'Inter';
-
-                        font-size: 14px;
-                        line-height: 22px;
-                        letter-spacing: -0.01em;
-                        color: #6E7485;
-                        margin-top: 4px;
-                    }
-
-                }
-
-                .item-box-line {
-                    position: relative;
-                }
-
-                .item-box-line:after {
-                    position: absolute;
-                    content: " ";
-                    top: 15%;
-                    left: -35px;
-                    background-color: #E9EAF0;
-                    ;
-                    height: 70%;
-                    width: 1px;
-                }
-
+            a:hover {
+                background-color: $primary-600;
+                color: #fff;
             }
+
 
         }
     }
@@ -900,123 +900,97 @@
             color: #564FFD;
         }
     }
+}
 
-    .feature-course-profile {
-        display: block;
+.feature-course-profile {
+    display: block;
+}
+
+
+@include mq('tablet-small', max) {
+    .feature-course img {
+        width: 100%;
+
     }
 
-    @include mq('phone', max) {}
+    .feature-course {
+        flex-direction: column;
 
-    @include mq('tablet-small', max) {
-        .feature-course img {
+        &-mid {
+            img {
+                height: 28px;
+                width: 28px;
+                border-radius: 50%;
+            }
+        }
+
+        &-head {
+            font-size: 14px;
+        }
+
+        &-mid {
+            h5 {
+                padding-left: 5px;
+            }
+
+            p {
+                font-size: 13px;
+            }
+        }
+
+        &-footer-item {
+            margin-bottom: 5px;
+
+            :last-child {
+                margin-bottom: 0;
+            }
+        }
+
+        &-right-content-header {
+            padding: 10px;
+        }
+
+        &-footer {
+            padding: 14px !important;
+        }
+
+    }
+
+}
+
+@include mq('tablet', max) {
+    .withdrew-money-card {
+        &-footer-item {
+            margin-top: 20px;
+        }
+
+        &-left {
             width: 100%;
-
         }
 
-        .feature-course {
-            flex-direction: column;
-
-            &-mid {
-                img {
-                    height: 28px;
-                    width: 28px;
-                    border-radius: 50%;
-                }
-            }
-
-            &-head {
-                font-size: 14px;
-            }
-
-            &-mid {
-                h5 {
-                    padding-left: 5px;
-                }
-
-                p {
-                    font-size: 13px;
-                }
-            }
-
-            &-footer-item {
-                margin-bottom: 5px;
-
-                :last-child {
-                    margin-bottom: 0;
-                }
-            }
-
-            &-right-content-header {
-                padding: 14px;
-            }
-
-            &-footer {
-                padding: 14px !important;
-            }
-
+        &-right-content-header {
+            margin-top: 20px;
+            padding: 0;
         }
 
-    }
 
-    @include mq('tablet', max) {
-        .withdrew-money-card {
-            .withdrew-money-card-footer-item {
-                margin-top: 20px;
-            }
-
-            .withdrew-money-card-left {
-                width: 100%;
-            }
-
-            .withdrew-money-card-right-content-header {
-                padding: 20px 0;
-            }
-
-            .withdrew-money-card .withdrew-money-card-head {
-                font-size: 16px;
-                line-height: 24px;
-                padding: 10px 0 5px 0;
-            }
-
-            .withdrew-money-card-mid-inner {
-                margin: 15px 0;
-            }
-
-            .withdrew-money-card-mid {
-
-                margin: 10px 0;
-            }
-
-            .withdrew-money-card-footer {
-                margin-left: 0px !important;
-                flex-wrap: wrap;
-                padding: 0;
-
-                a {
-
-                    line-height: 40px;
-                    padding: 0 15px;
-                    font-size: 14px;
-                }
-
-                button {
-                    height: 40px;
-                    width: 40px;
-                    line-height: 40px;
-
-                }
-
-                .item-box-all .item-box {
-                    margin-right: 40px;
-                }
-            }
-
+        .withdrew-money-card-head {
+            font-size: 16px;
+            line-height: 24px;
+            padding: 10px 0 5px 0;
         }
-    }
 
-    @media(min-width:992px) and (max-width:1199px) {
-        .withdrew-money-card-footer {
+        .withdrew-money-card-mid-inner {
+            margin: 15px 0;
+        }
 
+        .withdrew-money-card-mid {
+
+            margin: 10px 0;
+        }
+
+        &-footer {
+            margin-left: 0px !important;
             flex-wrap: wrap;
             padding: 0;
 
@@ -1039,41 +1013,136 @@
             }
         }
 
-        .withdrew-money-card .withdrew-money-card-head {
+    }
+}
 
-            font-size: 16px;
+
+@media(min-width:992px) and (max-width:1199px) {
+    .withdrew-money-card-footer {
+
+        flex-wrap: wrap;
+        padding: 0;
+
+        a {
+
+            line-height: 40px;
+            padding: 0 15px;
+            font-size: 14px;
+        }
+
+        button {
+            height: 40px;
+            width: 40px;
+            line-height: 40px;
+
+        }
+
+        .item-box-all .item-box {
+            margin-right: 40px;
+        }
+    }
+
+    .withdrew-money-card .withdrew-money-card-head {
+
+        font-size: 16px;
+        line-height: 22px;
+
+        padding: 8px 0 5px 0;
+    }
+
+    .withdrew-money-card-mid {
+
+        margin: 12px 0;
+
+    }
+
+    .withdrew-money-card-footer .item-box-all .item-box-line:after {
+
+        left: -25px;
+
+    }
+
+    .withdrew-money-card-footer .item-box-all .item-box {
+        p {
+            font-size: 15px;
             line-height: 22px;
-
-            padding: 8px 0 5px 0;
         }
 
-        .withdrew-money-card-mid {
+        span {
+            font-size: 12px;
+        }
+    }
 
-            margin: 12px 0;
+    .withdrew-money-card .withdrew-money-card-footer {
+        padding-top: 26px;
+    }
+}
+
+
+@include mq('tablet', max) {
+    .shopping-body-text .shopping-body-bottom .faq-review-wrap .faq-review-item-content svg {
+        margin-right: 0px !important;
+    }
+
+    .shopping-body-text .shopping-body-bottom .faq-review-wrap .faq-review-item {
+        flex-direction: column;
+
+        .faq-review-thumb {
+            margin-right: 0px !important;
+            margin-top: 20px;
+        }
+
+        .faq-review-item-content {
+            flex-direction: column;
+            text-align: center;
 
         }
 
-        .withdrew-money-card-footer .item-box-all .item-box-line:after {
-
-            left: -25px;
-
+        .faq-review-data {
+            padding-top: 20px;
         }
 
-        .withdrew-money-card-footer .item-box-all .item-box {
-            p {
-                font-size: 15px;
-                line-height: 22px;
+        .move-to-wishlist {
+            a {
+                margin-top: 20px;
             }
+        }
+    }
 
-            span {
-                font-size: 12px;
+
+
+    .wishlist-body-text .wishlist-body-bottom .faq-review-wrap .faq-review-item {
+        flex-direction: column;
+
+        .faq-review-thumb {
+            margin-right: 0px !important;
+            margin-top: 20px;
+        }
+
+        .faq-review-item-content {
+            flex-direction: column;
+            text-align: center;
+
+        }
+
+        .faq-review-data {
+            padding-top: 20px;
+        }
+
+        .move-to-wishlist {
+            a {
+                margin-top: 20px;
             }
         }
 
-        .withdrew-money-card .withdrew-money-card-footer {
+        .all-btn {
+            flex-wrap: wrap;
+            justify-content: center;
 
-            padding-top: 26px;
+            .wishlist-btn,
+            button {
+                margin: 10px 0;
+            }
         }
-
     }
 }

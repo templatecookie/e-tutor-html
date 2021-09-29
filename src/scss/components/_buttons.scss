@@ -192,6 +192,14 @@ select {
     width:143px;
     text-align: center;
 }
+@media(max-width:575px) {
+    .input-btn {
+       
+        font-size: 14px;
+       
+    }
+}
+
 
 .card-btn{
     background-color:transparent ;

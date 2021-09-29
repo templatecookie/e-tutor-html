@@ -1,8 +1,10 @@
 .trailer {
     margin-bottom: 48px;
-        &:last-child{
-            margin-bottom: 0;
-        }
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
     h4 {
         font-family: 'Inter';
         font-weight: 500;
@@ -10,7 +12,7 @@
         line-height: 24px;
         color: #1D2026;
         margin-bottom: 10px;
-        
+
 
     }
 }
@@ -19,6 +21,7 @@
     display: flex;
     overflow: hidden;
     transition: .5s;
+    flex-wrap: wrap;
 
     img {
         width: 228px;
@@ -53,23 +56,35 @@
             text-transform: capitalize;
             padding: 0 24px;
             transition: .5s;
+
             svg {
                 margin-left: 8px;
             }
         }
-        button:hover{
+
+        button:hover {
             background-color: $primary-500;
-            color:#fff;
-            svg{
-                path{
+            color: #fff;
+
+            svg {
+                path {
                     stroke: #fff;
                 }
             }
         }
     }
 }
-.bg-light{
-    background-color: #fff!important;
+
+.bg-light {
+    background-color: #fff !important;
     padding: 20px;
     margin: 20px 0;
+}
+
+@media(min-width:576px) and (max-width:767px) {
+    .trailer-box {
+    
+        flex-direction: column;
+    }
+
 }
