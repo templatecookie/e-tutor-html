@@ -397,10 +397,7 @@
 .offcanves-menu.active {
       margin-left: 0px;
       z-index: 1111;
-      width: 50%;
-      @include mq('tablet-small', max) {
-        width: 100%;
-      }
+      width: 340px;
 }
 .off-menu span.menubar {
       font-size: 28px;
