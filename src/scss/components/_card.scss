@@ -776,6 +776,11 @@
             background-color: $primary-500;
             color: #FFFFFF;
             padding: 0 24px;
+            transition: .5s;
+        }
+        a:hover{
+            background-color: $primary-600;
+            color:#fff;
         }
 
         button {

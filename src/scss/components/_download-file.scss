@@ -42,7 +42,13 @@
             text-transform: capitalize;
             color: #FFFFFF;
             background-color: $primary-500;
-
+            transition: .5s;
+            
         }
+        a:hover{
+            background-color: $primary-600;
+            color:#fff;
+        }
+        
     }
 }
