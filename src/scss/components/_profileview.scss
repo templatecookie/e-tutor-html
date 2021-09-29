@@ -1,14 +1,16 @@
-.profile-view-box{
+.profile-view-box {
     background-color: #fff;
     padding: 20px;
 }
+
 .profile-view {
     display: flex;
     justify-content: space-between;
     padding: 16px 0px 16px 20px;
     background-color: #fff;
-    border-bottom:1px solid #f1f1f1;
+    border-bottom: 1px solid #f1f1f1;
     position: relative;
+
     select {
         border: 0;
         font-family: "Inter";
@@ -22,20 +24,23 @@
         background: url("/src/images/arrow.svg") 100% / 15% no-repeat;
         margin-left: 20px;
         padding-right: 25px;
-        option{
+
+        option {
             padding: 3px 0;
             background-color: #fff;
             box-shadow: 2px 3px 5px #f1f1f1;
-            border:none!important;
+            border: none !important;
             line-height: 28px;
         }
-        select#xyz {
-            border:0px;
-            outline:0px !important;
-         }
 
-       
+        select#xyz {
+            border: 0px;
+            outline: 0px !important;
+        }
+
+
     }
+
     p {
         margin: 0;
         font-family: 'Inter';
@@ -43,48 +48,117 @@
         font-size: 16px;
         line-height: 22px;
         color: #1D2026;
-        margin:0;
+        margin: 0;
     }
-    svg{
+
+    svg {
         position: absolute;
-        top:25px;
-        right:20px;
+        top: 25px;
+        right: 20px;
     }
-    .info-box{
+
+    .info-box {
         display: flex;
     }
-    a{
+
+    a {
         text-decoration: none;
         padding-left: 34px;
-        &:last-child{
-            margin-left:0;
+
+        &:last-child {
+            margin-left: 0;
         }
     }
+
     .dots,
-    .dot{
+    .dot {
         position: relative;
     }
-    .dots:before{
+
+    .dots:before {
         position: absolute;
         content: '';
         height: 8px;
-        width:8px;
+        width: 8px;
         border-radius: 50%;
         background-color: #564FFD;
-        top:50%;
-        left:22px;
-        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 22px;
+        transform: translate(-50%, -50%);
     }
-    .dot:before{
+
+    .dot:before {
         position: absolute;
         content: '';
         height: 8px;
-        width:8px;
+        width: 8px;
         border-radius: 50%;
         background-color: #FF6636;
-        top:50%;
-        left:22px;
-        transform: translate(-50%,-50%);
+        top: 50%;
+        left: 22px;
+        transform: translate(-50%, -50%);
     }
 
 }
+
+@include mq('phone', max) {
+    .profile-view {
+        display: flex;
+        padding: 8px;
+        &-box {
+
+            padding: 8px;
+        }
+        &-more{
+            flex-wrap: wrap;
+           
+         }
+        .dot:before {
+            display: none;
+        }
+        .dots:before {
+            display: none;
+        }
+        a {
+            text-decoration: none;
+            padding-left:0px ;
+            padding-right:8px ;
+        }
+        .info-box {
+            padding-top: 8px;
+        }
+
+    }
+
+}
+@include mq('phone-wide', max) {
+    .profile-view {
+        display: flex;
+        padding: 10px;
+        &-box {
+
+            padding: 10px;
+        }
+        &-more{
+            flex-wrap: wrap;
+           
+         }
+        .dot:before {
+            display: none;
+        }
+        .dots:before {
+            display: none;
+        }
+        a {
+            text-decoration: none;
+            padding-left:0px ;
+            padding-right:12px ;
+        }
+        .info-box {
+            padding-top: 8px;
+        }
+
+    }
+
+}
+
