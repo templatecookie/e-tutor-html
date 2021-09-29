@@ -791,200 +791,232 @@
         a:hover {
             background-color: $primary-600;
             color: #fff;
-        }
 
-        button {
-            height: 48px;
-            width: 48px;
-            line-height: 47px;
-            text-align: center;
-            border: 0;
-            background-color: #F5F7FA;
-            margin-left: 12px;
-            transition: .5s;
+            a:hover {
+                background-color: $primary-600;
+                color: #fff;
+            }
 
-            svg {
+            button {
+                height: 48px;
+                width: 48px;
+                line-height: 47px;
+                text-align: center;
+                border: 0;
+                background-color: #F5F7FA;
+                margin-left: 12px;
                 transition: .5s;
 
-                path {
+                svg {
                     transition: .5s;
+
+                    path {
+                        transition: .5s;
+                    }
                 }
             }
-        }
 
-        button:hover {
-            background-color: $primary-600;
+            button:hover {
+                background-color: $primary-600;
 
-            svg {
-                path {
-                    stroke: #fff;
-                    fill: #fff;
+                svg {
+                    path {
+                        stroke: #fff;
+                        fill: #fff;
+                    }
+
+
+                }
+            }
+
+
+            .item-box-all {
+                display: flex;
+
+                .item-box {
+                    margin-right: 64px;
+
+                    &:last-child {
+                        margin-right: 0px;
+                    }
+
+                    p {
+                        font-family: 'Inter';
+                        font-size: 20px;
+                        line-height: 32px;
+                        color: #1D2026;
+                    }
+
+                    span {
+                        font-family: 'Inter';
+
+                        font-size: 14px;
+                        line-height: 22px;
+                        letter-spacing: -0.01em;
+                        color: #6E7485;
+                        margin-top: 4px;
+                    }
+
                 }
 
+                .item-box-line {
+                    position: relative;
+                }
+
+                .item-box-line:after {
+                    position: absolute;
+                    content: " ";
+                    top: 15%;
+                    left: -35px;
+                    background-color: #E9EAF0;
+                    ;
+                    height: 70%;
+                    width: 1px;
+                }
 
             }
+
+        }
+    }
+
+    .course-searchbox-header {
+        display: flex;
+        justify-content: space-between;
+
+        h4 {
+            font-family: 'Inter';
+            font-size: 14px;
+            line-height: 22px;
+            letter-spacing: -0.01em;
+            color: #1D2026;
         }
 
+        a {
+            font-family: 'Inter';
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 20px;
+            letter-spacing: -0.01em;
+            color: #564FFD;
+        }
+    }
 
-        .item-box-all {
-            display: flex;
+    .feature-course-profile {
+        display: block;
+    }
 
-            .item-box {
-                margin-right: 64px;
+    @include mq('phone', max) {}
 
-                &:last-child {
-                    margin-right: 0px;
+    @include mq('tablet-small', max) {
+        .feature-course img {
+            width: 100%;
+
+        }
+
+        .feature-course {
+            flex-direction: column;
+
+            &-mid {
+                img {
+                    height: 28px;
+                    width: 28px;
+                    border-radius: 50%;
+                }
+            }
+
+            &-head {
+                font-size: 14px;
+            }
+
+            &-mid {
+                h5 {
+                    padding-left: 5px;
                 }
 
                 p {
-                    font-family: 'Inter';
-                    font-size: 20px;
-                    line-height: 32px;
-                    color: #1D2026;
+                    font-size: 13px;
                 }
+            }
 
-                span {
-                    font-family: 'Inter';
+            &-footer-item {
+                margin-bottom: 5px;
 
+                :last-child {
+                    margin-bottom: 0;
+                }
+            }
+
+            &-right-content-header {
+                padding: 14px;
+            }
+
+            &-footer {
+                padding: 14px !important;
+            }
+
+        }
+
+    }
+
+    @include mq('tablet', max) {
+        .withdrew-money-card {
+            .withdrew-money-card-footer-item {
+                margin-top: 20px;
+            }
+
+            .withdrew-money-card-left {
+                width: 100%;
+            }
+
+            .withdrew-money-card-right-content-header {
+                padding: 20px 0;
+            }
+
+            .withdrew-money-card .withdrew-money-card-head {
+                font-size: 16px;
+                line-height: 24px;
+                padding: 10px 0 5px 0;
+            }
+
+            .withdrew-money-card-mid-inner {
+                margin: 15px 0;
+            }
+
+            .withdrew-money-card-mid {
+
+                margin: 10px 0;
+            }
+
+            .withdrew-money-card-footer {
+                margin-left: 0px !important;
+                flex-wrap: wrap;
+                padding: 0;
+
+                a {
+
+                    line-height: 40px;
+                    padding: 0 15px;
                     font-size: 14px;
-                    line-height: 22px;
-                    letter-spacing: -0.01em;
-                    color: #6E7485;
-                    margin-top: 4px;
                 }
 
-            }
+                button {
+                    height: 40px;
+                    width: 40px;
+                    line-height: 40px;
 
-            .item-box-line {
-                position: relative;
-            }
+                }
 
-            .item-box-line:after {
-                position: absolute;
-                content: " ";
-                top: 15%;
-                left: -35px;
-                background-color: #E9EAF0;
-                ;
-                height: 70%;
-                width: 1px;
+                .item-box-all .item-box {
+                    margin-right: 40px;
+                }
             }
 
         }
-
-    }
-}
-
-.course-searchbox-header {
-    display: flex;
-    justify-content: space-between;
-
-    h4 {
-        font-family: 'Inter';
-        font-size: 14px;
-        line-height: 22px;
-        letter-spacing: -0.01em;
-        color: #1D2026;
     }
 
-    a {
-        font-family: 'Inter';
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 20px;
-        letter-spacing: -0.01em;
-        color: #564FFD;
-    }
-}
-
-.feature-course-profile {
-    display: block;
-}
-
-@include mq('phone', max) {}
-
-@include mq('tablet-small', max) {
-    .feature-course img {
-        width: 100%;
-
-    }
-
-    .feature-course {
-        flex-direction: column;
-
-        &-mid {
-            img {
-                height: 28px;
-                width: 28px;
-                border-radius: 50%;
-            }
-        }
-
-        &-head {
-            font-size: 14px;
-        }
-
-        &-mid {
-            h5 {
-                padding-left: 5px;
-            }
-
-            p {
-                font-size: 13px;
-            }
-        }
-
-        &-footer-item {
-            margin-bottom: 5px;
-
-            :last-child {
-                margin-bottom: 0;
-            }
-        }
-
-        &-right-content-header {
-            padding: 14px;
-        }
-
-        &-footer {
-            padding: 14px !important;
-        }
-
-    }
-
-}
-
-@include mq('tablet', max) {
-    .withdrew-money-card {
-        .withdrew-money-card-footer-item {
-            margin-top: 20px;
-        }
-
-        .withdrew-money-card-left {
-            width: 100%;
-        }
-
-        .withdrew-money-card-right-content-header {
-            padding: 20px 0;
-        }
-
-        .withdrew-money-card .withdrew-money-card-head {
-            font-size: 16px;
-            line-height: 24px;
-            padding: 10px 0 5px 0;
-        }
-
-        .withdrew-money-card-mid-inner {
-            margin: 15px 0;
-        }
-
-        .withdrew-money-card-mid {
-
-            margin: 10px 0;
-        }
-
+    @media(min-width:992px) and (max-width:1199px) {
         .withdrew-money-card-footer {
-            margin-left: 0px !important;
+
             flex-wrap: wrap;
             padding: 0;
 
@@ -1007,67 +1039,41 @@
             }
         }
 
-    }
-}
+        .withdrew-money-card .withdrew-money-card-head {
 
-@media(min-width:992px) and (max-width:1199px) {
-    .withdrew-money-card-footer {
-
-        flex-wrap: wrap;
-        padding: 0;
-
-        a {
-
-            line-height: 40px;
-            padding: 0 15px;
-            font-size: 14px;
-        }
-
-        button {
-            height: 40px;
-            width: 40px;
-            line-height: 40px;
-
-        }
-
-        .item-box-all .item-box {
-            margin-right: 40px;
-        }
-    }
-
-    .withdrew-money-card .withdrew-money-card-head {
-
-        font-size: 16px;
-        line-height: 22px;
-
-        padding: 8px 0 5px 0;
-    }
-
-    .withdrew-money-card-mid {
-
-        margin: 12px 0;
-
-    }
-
-    .withdrew-money-card-footer .item-box-all .item-box-line:after {
-
-        left: -25px;
-
-    }
-    .withdrew-money-card-footer .item-box-all .item-box {
-        p{
-            font-size: 15px;
+            font-size: 16px;
             line-height: 22px;
-        }
-       
-        span{
-            font-size: 12px;
-        }
-    }
-    .withdrew-money-card .withdrew-money-card-footer {
-        
-        padding-top: 26px;
-    }
 
+            padding: 8px 0 5px 0;
+        }
 
+        .withdrew-money-card-mid {
+
+            margin: 12px 0;
+
+        }
+
+        .withdrew-money-card-footer .item-box-all .item-box-line:after {
+
+            left: -25px;
+
+        }
+
+        .withdrew-money-card-footer .item-box-all .item-box {
+            p {
+                font-size: 15px;
+                line-height: 22px;
+            }
+
+            span {
+                font-size: 12px;
+            }
+        }
+
+        .withdrew-money-card .withdrew-money-card-footer {
+
+            padding-top: 26px;
+        }
+
+    }
 }
