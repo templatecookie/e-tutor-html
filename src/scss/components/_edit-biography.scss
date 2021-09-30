@@ -239,19 +239,23 @@ input[type="checkbox"]:checked+.edit-bio-content-change {
 }
 
 
-@include mq('phone-wide', max) {
-    .edit-biography-content .edit-biography-mid {
-        padding: 20px 0;
-         progress {
-            height: 16px !important;
-            margin: 0 24px;
-         
-        }
-         span {
-          
-            margin-right:15px;
-        }
+@include mq('tablet', max) {
+    .edit-biography-content {
+        .edit-biography-mid {
+            padding: 20px 0;
 
+            progress {
+                height: 16px !important;
+                margin: 0 24px;
+
+            }
+
+            span {
+
+                margin-right: 15px;
+            }
+
+        }
     }
 
     .edit-biography-content .edit-biography-mid progress {
@@ -292,9 +296,9 @@ input[type="checkbox"]:checked+.edit-bio-content-change {
 
 @include mq('phone', max) {
     .edit-biography-content .edit-biography-mid {
-        // flex-wrap: wrap-reverse;
+        flex-wrap: wrap-reverse;
         padding: 20px 0;
-        // flex-direction: column-reverse;
+        flex-direction: column-reverse;
 
     }
 
@@ -333,4 +337,3 @@ input[type="checkbox"]:checked+.edit-bio-content-change {
 
     }
 }
-
