@@ -14,6 +14,9 @@
             @include mq('tablet-small', max) {
                 padding: 15px;
             } 
+            @include mq('phone-wide', max) {
+                display: block;
+            } 
 
             &:hover {
                 border: 1px solid transparent;
@@ -38,6 +41,9 @@
 .accordion-header-content {
     font-family: 'Inter';
     font-size: 18px;
+    @include mq('phone-wide', max) {
+        font-size: 16px;
+    } 
 
     ul {
         margin: 8px 0 0;
@@ -71,8 +77,14 @@
     align-items: center;
     justify-content: center;
     transition: all 0.4s;
+    @include mq('tablet-small', max) {
+        height: 40px;
+        width: 40px;
+    }
     @include mq('phone-wide', max) {
         height: 34px;
+        width: 34px;
+        margin-top: 20px;
     } 
 }
 
@@ -93,10 +105,14 @@
                 .faq-review-thumb {
                     margin-right: 20px;
                     flex: 0 0 auto;
+                    a{
+                        display: block;
+                    }
                     @include mq('tablet-small', max) {
                         display: block;
                     }
                     @include mq('phone-wide', max) {
+                        margin: 0;
                         margin-bottom: 15px;
                     }  
                     img {
@@ -187,7 +203,6 @@
                 }
             }
         }
-
         .faq-body-right {
             width: 100%;
             border-left: 1px solid #E9EAF0;
@@ -230,6 +245,7 @@
                     @include mq('desktop', max) {
                         font-size: 19px;
                     } 
+                    
 
                 }
 
@@ -332,6 +348,9 @@
                 .faq-review-thumb {
                     // flex: 0 0 27%;
                     margin-right: 20px;
+                    a{
+                        display: block;
+                    }
 
                     img {
                         width: 100%;
@@ -536,6 +555,9 @@
 
                 .faq-review-thumb {
                     margin-right: 20px;
+                    a{
+                        display: block;
+                    }
 
                     img {
                         width: 100%;
@@ -661,6 +683,10 @@
 
                 button:hover {
                     background-color: $primary-600;
+                    transition: all 0.4s;
+                    &:hover{
+                        background-color: #FF6636;
+                    }
 
                     svg {
                         path {
@@ -691,6 +717,9 @@
 
                     background: #F5F7FA;
                     transition: .5s;
+                    &:hover{
+                        background-color: #FF6636;
+                    }
 
                     a {
                         color: #1D2026;
@@ -701,6 +730,9 @@
                 .wishlist-add {
                     background-color: $primary-500;
                     transition: .5s;
+                    &:hover{
+                        background-color: $primary-600;
+                    }
 
                     a {
                         color: #fff;
@@ -708,7 +740,6 @@
                 }
 
                 .wishlist-btn a:hover {
-                    background-color: $primary-600;
                     color: #fff !important;
                 }
 

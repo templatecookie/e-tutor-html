@@ -228,11 +228,14 @@ select {
     font-family: 'Inter';
     text-align:center;
     font-weight: 500;
-    padding:37px 0;
+    padding:36px 0;
     font-size: 16px;
     line-height: 22px;
     border: 1px dashed #E9EAF0;
     transition: .5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     svg{
         margin-right:8px;
     }
@@ -258,3 +261,73 @@ select {
     transform:rotate(180deg);
     
 }
+// All Default btn
+
+.btn-wrap-column {
+    display: flex;
+    justify-content: center;
+}
+.btn-wrap{
+    text-align: center;
+    margin: 0 7px;
+}
+a.default-btn {
+    display: inline-block;
+    font-family: "Inter";
+    font-weight: 600;
+    letter-spacing: -0.004em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    margin: 0 0 20px;
+}
+a.default-btn.bg-orange{
+    background: #FF6636;
+}
+a.default-btn.btn-small{
+    padding: 0 16px;
+    font-size: 14px;
+    line-height: 40px;
+}
+a.default-btn.btn-medium{
+    padding: 0 24px;
+    font-size: 16px;
+    line-height: 48px;
+}
+a.default-btn.btn-large{
+    padding: 0 32px;
+    font-size: 18px;
+    line-height: 56px;
+}
+
+a.default-btn.bg-tuscany{
+    background: #CC522B;
+    box-shadow: 0px 6px 20px rgba(204, 82, 43, 0.5);
+}
+a.default-btn.bg-watusi{
+    background: #FFDDD1;
+}
+a.default-btn.bg-pink{
+    color: #FF6636;
+    background: #FFEEE8;
+}
+a.default-btn.bg-watusi2{
+    color: #CC522B;
+    background: #FFDDD1;
+}
+a.default-btn.bg-pink2{
+    color: #FFA386;
+    background: #FFEEE8;
+}
+
+a.default-btn.color-orange{
+    color: #FF6636;
+}
+
+a.default-btn.bg-pink3{
+    color: #CC522B;
+    background: #FFEEE8;
+}
+a.default-btn.color-pink{
+    color: #FFA386;
+}
+

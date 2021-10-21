@@ -1,0 +1,80 @@
+
+.calendar-wrapper {
+    width: 360px;
+    padding: 20px;
+    border: 1px solid #FF6636;
+    border-radius: 5px;
+    background: #fff;
+    position: absolute;
+    top:48px;
+    right: 0;
+    z-index: 1;
+    display: none;
+    @include mq('tablet-small', max) {
+        width: 100%;
+    } 
+    table {
+        clear: both;
+        width: 100%;
+        border: 1px solid #dcdcff;
+        border-radius: 3px;
+        border-collapse: collapse;
+        color: #444;
+        td {
+            height: 48px;
+            text-align: center;
+            vertical-align: middle;
+            border-right: 1px solid #dcdcff;
+            border-top: 1px solid #dcdcff;
+            width: 14.28571429%;
+            font-family: "Inter";
+          }
+      }
+}
+
+
+td.not-current {
+  color: #c0c0c0;
+}
+td.today {
+  font-weight: 700;
+  color: #28283b;
+  font-size: 1.5em;
+}
+thead td {
+    border: none;
+    color: #28283b;
+    text-transform: uppercase;
+    font-family: "Inter";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    color: #1D2026;
+}
+#btnPrev {
+  float: left;
+  margin-bottom: 20px;
+}
+#btnNext {
+  float: right;
+  margin-bottom: 20px;
+}
+#btnPrev,
+#btnNext {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #1D2026;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+}
+#btnPrev:hover,
+#btnNext:hover {
+  color: #FF6636;
+}

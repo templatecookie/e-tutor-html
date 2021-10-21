@@ -195,7 +195,7 @@ inputRight.addEventListener("mouseup", function() {
 
 
 /* 
-    6. Menu 
+    6. Calendar
 ======================== */
 
 

@@ -1,0 +1,129 @@
+
+.accordion-wrap-faq.lecture-wrap{
+    .accordion__list2{
+        margin-bottom: 0;
+        &:last-child .accordion-body-text{
+            border-bottom: 1px solid #E9EAF0;
+        }
+        &:last-child .link{
+            border-bottom: 1px solid #E9EAF0;
+        }
+    }
+    .accordion-header-content {
+        font-size: 16px;
+        color: #1D2026;
+        svg{
+            margin-right: 7px;
+            transition: all 0.4s;
+        }
+    }
+    .link {
+        padding: 20px;
+        border: 1px solid #E9EAF0;
+        border-bottom: 1px solid transparent;
+        &:hover{
+            border: 1px solid #E9EAF0;
+            box-shadow: none;
+        }
+        
+    }
+    .accordion__list2.open{
+        .link{
+            background-color: #F5F7FA;
+            border: 1px solid transparent;
+        }
+    }
+    .accordion__list2.open{
+        .accordion-header-content{
+            color: #FF6636;
+            svg{
+                transform: rotate(180deg);
+                path{
+                    stroke: #FF6636;
+                }
+            }
+        }
+    }
+    .accordion-body-text{
+        box-shadow: none;
+        border: 1px solid #E9EAF0;
+        border-top: none;
+        border-bottom: none;
+        padding: 0;
+        
+    }
+}
+
+.lectue-body-item {
+    display: flex;
+    padding: 14px 20px;
+    align-items: center;
+    transition: all 0.4s;
+    justify-content: space-between;
+    &.active{
+        background: #FFEEE8;
+        label.form-check-label {
+            color: #1D2026;
+        }
+        .form-check-input {
+            border: 1px solid #FF6636 !important;
+        }
+
+        .lecture-play{
+            path{
+                fill: #1D2026;
+            }
+        }
+    }
+    &:hover{
+        background-color: #F5F7FA;
+    }
+    .form-check-input {
+        width: 18px;
+        height: 18px;
+        margin-top: 2px;
+        border: 1px solid #CED1D9 !important;
+        input[type=checkbox]:checked {
+            border: 1px solid #FF6636!important;
+        }
+    }
+    label.form-check-label {
+        font-size: 14px;
+        letter-spacing: -0.01em;
+        color: #4E5566;
+    }
+    input[type=checkbox]:checked + .form-check-label {
+        color: #4E5566;
+    }
+    .lecture-play{
+        path{
+            fill: #A1A5B3;
+        }
+    }
+}
+
+.sub-heading-meta{
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li{
+            margin: 0 8px;
+            display: inline-block;
+            font-family: "Inter";
+                font-size: 14px;
+                letter-spacing: -0.01em;
+                color: #4E5566;
+                span{
+                    color: #8C94A3;
+                }
+            &:first-child{
+                margin-left: 0;
+            }
+            &:last-child{
+                margin-right: 0;
+            }
+           
+        }
+    }
+}

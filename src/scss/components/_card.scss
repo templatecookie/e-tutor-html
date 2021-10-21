@@ -117,6 +117,8 @@
     }
 }
 
+
+
 .course-item-4-footer {
     transition: .5s;
 }
@@ -719,6 +721,9 @@
             line-height: 22px;
             color: #1D2026;
             margin-right: 21px;
+            @include mq('phone-wide', max) {
+                display: block;
+            }
 
             :last-child {
                 margin-right: 0;
@@ -982,6 +987,7 @@
 
         .withdrew-money-card-mid-inner {
             margin: 15px 0;
+            flex: 0 0 auto;
         }
 
         .withdrew-money-card-mid {

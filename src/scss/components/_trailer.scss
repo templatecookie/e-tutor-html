@@ -44,7 +44,7 @@
             padding-bottom: 32px;
         }
 
-        button {
+        label[for="file-upload"] {
             border: 0;
             background-color: $primary-100;
             color: $primary-500;
@@ -56,22 +56,28 @@
             text-transform: capitalize;
             padding: 0 24px;
             transition: .5s;
+            width: 189px;
+            cursor: pointer;
+            position: relative;
+            &:hover {
+                background-color: $primary-500;
+                color: #fff;
+                svg {
+                    path {
+                        stroke: #fff;
+                    }
+                }
+            }
 
             svg {
                 margin-left: 8px;
-            }
-        }
-
-        button:hover {
-            background-color: $primary-500;
-            color: #fff;
-
-            svg {
-                path {
-                    stroke: #fff;
+                path{
+                    transition: all 0.4s;
                 }
             }
         }
+
+        
     }
 }
 
@@ -83,8 +89,11 @@
 
 @media(min-width:576px) and (max-width:767px) {
     .trailer-box {
-    
         flex-direction: column;
     }
 
+}
+#file-upload {
+    position: absolute;
+    left: -9999px;
 }

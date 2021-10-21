@@ -236,6 +236,11 @@
                 <path d="M3.75 8.25H20.25" stroke="#4E5566" stroke-width="1.5" stroke-linecap="round"
                   stroke-linejoin="round" />
               </svg>
+              <div class="calendar-wrapper">
+                <button id="btnPrev" type="button">Prev</button>
+                  <button id="btnNext" type="button">Next</button>
+                <div id="divCal"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -286,6 +291,42 @@
             </div>
           </div>
           <div class="col-lg-4">
+            <div class="create-course-label course-label-one">
+              <h4>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.2"
+                    d="M3.10386 6.99533C3.03584 7.1107 2.99998 7.24219 3 7.37612V16.6239C3 16.7569 3.03541 16.8876 3.10259 17.0025C3.16978 17.1174 3.26632 17.2123 3.3823 17.2775L11.6323 21.9182C11.7446 21.9813 11.8712 22.0145 12 22.0145L12.001 22.0145L12.089 12L3.10388 6.99534L3.10386 6.99533Z"
+                    class="gray-color" fill="#FF6636" />
+                  <path
+                    d="M21 16.6238V7.37611C21 7.24303 20.9646 7.11235 20.8974 6.99748C20.8302 6.8826 20.7337 6.78767 20.6177 6.72243L12.3677 2.08181C12.2554 2.01866 12.1288 1.98549 12 1.98549C11.8712 1.98549 11.7446 2.01866 11.6323 2.08181L3.3823 6.72243C3.26632 6.78767 3.16978 6.8826 3.10259 6.99748C3.03541 7.11235 3 7.24303 3 7.37611V16.6238C3 16.7569 3.03541 16.8876 3.10259 17.0025C3.16978 17.1173 3.26632 17.2123 3.3823 17.2775L11.6323 21.9181C11.7446 21.9813 11.8712 22.0145 12 22.0145C12.1288 22.0145 12.2554 21.9813 12.3677 21.9181L20.6177 17.2775C20.7337 17.2123 20.8302 17.1173 20.8974 17.0025C20.9646 16.8876 21 16.7569 21 16.6238Z"
+                    stroke="#FF6636" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M16.5958 14.2979V9.42291L7.5 4.40625" stroke="#FF6636" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M20.8982 6.99627L12.0906 12L3.10547 6.99533" stroke="#FF6636" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M12.088 12L12 22.0145" stroke="#FF6636" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                Label
+              </h4>
+            </div>
+            <div class="create-course-label course-label-two">
+              <h4> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.2"
+                    d="M3.10386 6.99533C3.03584 7.1107 2.99998 7.24219 3 7.37612V16.6239C3 16.7569 3.03541 16.8876 3.10259 17.0025C3.16978 17.1174 3.26632 17.2123 3.3823 17.2775L11.6323 21.9182C11.7446 21.9813 11.8712 22.0145 12 22.0145L12.001 22.0145L12.089 12L3.10388 6.99534L3.10386 6.99533Z"
+                    class="color-black" fill="#FF6636" />
+                  <path
+                    d="M21 16.6238V7.37611C21 7.24303 20.9646 7.11235 20.8974 6.99748C20.8302 6.8826 20.7337 6.78767 20.6177 6.72243L12.3677 2.08181C12.2554 2.01866 12.1288 1.98549 12 1.98549C11.8712 1.98549 11.7446 2.01866 11.6323 2.08181L3.3823 6.72243C3.26632 6.78767 3.16978 6.8826 3.10259 6.99748C3.03541 7.11235 3 7.24303 3 7.37611V16.6238C3 16.7569 3.03541 16.8876 3.10259 17.0025C3.16978 17.1173 3.26632 17.2123 3.3823 17.2775L11.6323 21.9181C11.7446 21.9813 11.8712 22.0145 12 22.0145C12.1288 22.0145 12.2554 21.9813 12.3677 21.9181L20.6177 17.2775C20.7337 17.2123 20.8302 17.1173 20.8974 17.0025C20.9646 16.8876 21 16.7569 21 16.6238Z"
+                    stroke="#FF6636" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M16.5958 14.2979V9.42291L7.5 4.40625" stroke="#FF6636" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M20.8982 6.99627L12.0906 12L3.10547 6.99533" stroke="#FF6636" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M12.088 12L12 22.0145" stroke="#FF6636" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                Label</h4>
+            </div>
             <div class="create-course-label">
               <h4> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path opacity="0.2"
@@ -307,6 +348,58 @@
           </div>
 
           <div class="col-lg-4">
+            <div class="create-course-label course-label-one">
+              <h4> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.2"
+                    d="M3.10386 6.99533C3.03584 7.1107 2.99998 7.24219 3 7.37612V16.6239C3 16.7569 3.03541 16.8876 3.10259 17.0025C3.16978 17.1174 3.26632 17.2123 3.3823 17.2775L11.6323 21.9182C11.7446 21.9813 11.8712 22.0145 12 22.0145L12.001 22.0145L12.089 12L3.10388 6.99534L3.10386 6.99533Z"
+                    class="gray-color" fill="#FF6636" />
+                  <path
+                    d="M21 16.6238V7.37611C21 7.24303 20.9646 7.11235 20.8974 6.99748C20.8302 6.8826 20.7337 6.78767 20.6177 6.72243L12.3677 2.08181C12.2554 2.01866 12.1288 1.98549 12 1.98549C11.8712 1.98549 11.7446 2.01866 11.6323 2.08181L3.3823 6.72243C3.26632 6.78767 3.16978 6.8826 3.10259 6.99748C3.03541 7.11235 3 7.24303 3 7.37611V16.6238C3 16.7569 3.03541 16.8876 3.10259 17.0025C3.16978 17.1173 3.26632 17.2123 3.3823 17.2775L11.6323 21.9181C11.7446 21.9813 11.8712 22.0145 12 22.0145C12.1288 22.0145 12.2554 21.9813 12.3677 21.9181L20.6177 17.2775C20.7337 17.2123 20.8302 17.1173 20.8974 17.0025C20.9646 16.8876 21 16.7569 21 16.6238Z"
+                    stroke="#FF6636" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M16.5958 14.2979V9.42291L7.5 4.40625" stroke="#FF6636" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M20.8982 6.99627L12.0906 12L3.10547 6.99533" stroke="#FF6636" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M12.088 12L12 22.0145" stroke="#FF6636" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                Label</h4>
+              <span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.875 7.875L5.625 16.125L1.5 12.0002" stroke="#23BD33" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M22.4998 7.875L14.2498 16.125L12.0586 13.9339" stroke="#23BD33" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+              </span>
+            </div>
+            <div class="create-course-label course-label-two">
+              <h4> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.2"
+                    d="M3.10386 6.99533C3.03584 7.1107 2.99998 7.24219 3 7.37612V16.6239C3 16.7569 3.03541 16.8876 3.10259 17.0025C3.16978 17.1174 3.26632 17.2123 3.3823 17.2775L11.6323 21.9182C11.7446 21.9813 11.8712 22.0145 12 22.0145L12.001 22.0145L12.089 12L3.10388 6.99534L3.10386 6.99533Z"
+                    class="color-black" fill="#FF6636" />
+                  <path
+                    d="M21 16.6238V7.37611C21 7.24303 20.9646 7.11235 20.8974 6.99748C20.8302 6.8826 20.7337 6.78767 20.6177 6.72243L12.3677 2.08181C12.2554 2.01866 12.1288 1.98549 12 1.98549C11.8712 1.98549 11.7446 2.01866 11.6323 2.08181L3.3823 6.72243C3.26632 6.78767 3.16978 6.8826 3.10259 6.99748C3.03541 7.11235 3 7.24303 3 7.37611V16.6238C3 16.7569 3.03541 16.8876 3.10259 17.0025C3.16978 17.1173 3.26632 17.2123 3.3823 17.2775L11.6323 21.9181C11.7446 21.9813 11.8712 22.0145 12 22.0145C12.1288 22.0145 12.2554 21.9813 12.3677 21.9181L20.6177 17.2775C20.7337 17.2123 20.8302 17.1173 20.8974 17.0025C20.9646 16.8876 21 16.7569 21 16.6238Z"
+                    stroke="#FF6636" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M16.5958 14.2979V9.42291L7.5 4.40625" stroke="#FF6636" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M20.8982 6.99627L12.0906 12L3.10547 6.99533" stroke="#FF6636" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M12.088 12L12 22.0145" stroke="#FF6636" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                Label</h4>
+              <span>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13.875 7.875L5.625 16.125L1.5 12.0002" stroke="#23BD33" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M22.4998 7.875L14.2498 16.125L12.0586 13.9339" stroke="#23BD33" stroke-width="1.5"
+                    stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+
+              </span>
+            </div>
             <div class="create-course-label">
               <h4> <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path opacity="0.2"
@@ -354,15 +447,11 @@
             <div class="course-searchbox-input ">
               <input type="text" placeholder="Write your reply" class="searchbox-input">
 
-              <svg class="course-search-icon-left" width="24" height="24" viewBox="0 0 24 24" fill="none"
-                xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M3.19421 13.1952C2.35557 11.7814 2.06187 10.1102 2.36826 8.49519C2.67466 6.88022 3.56007 5.43265 4.85823 4.42429C6.15639 3.41594 7.77801 2.91618 9.41858 3.01884C11.0591 3.1215 12.6058 3.81953 13.7681 4.98186C14.9305 6.14418 15.6285 7.69084 15.7312 9.33141C15.8338 10.972 15.3341 12.5936 14.3257 13.8918C13.3174 15.1899 11.8698 16.0754 10.2549 16.3818C8.63989 16.6882 6.96862 16.3945 5.55486 15.5558L5.55488 15.5558L3.22356 16.2219C3.1271 16.2494 3.02504 16.2507 2.92793 16.2255C2.83082 16.2003 2.74221 16.1497 2.67128 16.0787C2.60035 16.0078 2.54967 15.9192 2.52451 15.8221C2.49935 15.725 2.50061 15.6229 2.52817 15.5265L3.19426 13.1951L3.19421 13.1952Z"
-                  stroke="#1D2026" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                <path
-                  d="M8.63086 16.4899C8.96268 17.4319 9.49929 18.2886 10.202 18.9983C10.9048 19.7079 11.7561 20.2529 12.6948 20.594C13.6335 20.935 14.6362 21.0637 15.6306 20.9706C16.625 20.8776 17.5864 20.5651 18.4455 20.0558L18.4455 20.0557L20.7768 20.7218C20.8732 20.7494 20.9753 20.7507 21.0724 20.7255C21.1695 20.7003 21.2581 20.6497 21.3291 20.5787C21.4 20.5078 21.4507 20.4192 21.4758 20.3221C21.501 20.225 21.4997 20.1229 21.4722 20.0265L20.8061 17.6951L20.8061 17.6952C21.398 16.6971 21.7226 15.5633 21.7486 14.4032C21.7747 13.2431 21.5013 12.0959 20.9549 11.0722C20.4085 10.0485 19.6075 9.18291 18.6291 8.55894C17.6508 7.93497 16.5281 7.57368 15.3695 7.50992"
-                  stroke="#1D2026" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
+              <svg class="course-search-icon-left" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.19421 13.1952C2.35557 11.7814 2.06187 10.1102 2.36826 8.49519C2.67466 6.88022 3.56007 5.43265 4.85823 4.42429C6.15639 3.41594 7.77801 2.91618 9.41858 3.01884C11.0591 3.1215 12.6058 3.81953 13.7681 4.98186C14.9305 6.14418 15.6285 7.69084 15.7312 9.33141C15.8338 10.972 15.3341 12.5936 14.3257 13.8918C13.3174 15.1899 11.8698 16.0754 10.2549 16.3818C8.63989 16.6882 6.96862 16.3945 5.55486 15.5558L5.55488 15.5558L3.22356 16.2219C3.1271 16.2494 3.02504 16.2507 2.92793 16.2255C2.83082 16.2003 2.74221 16.1497 2.67128 16.0787C2.60035 16.0078 2.54967 15.9192 2.52451 15.8221C2.49935 15.725 2.50061 15.6229 2.52817 15.5265L3.19426 13.1951L3.19421 13.1952Z" stroke="#1D2026" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8.63086 16.4899C8.96268 17.4319 9.49929 18.2886 10.202 18.9983C10.9048 19.7079 11.7561 20.2529 12.6948 20.594C13.6335 20.935 14.6362 21.0637 15.6306 20.9706C16.625 20.8776 17.5864 20.5651 18.4455 20.0558L18.4455 20.0557L20.7768 20.7218C20.8732 20.7494 20.9753 20.7507 21.0724 20.7255C21.1695 20.7003 21.2581 20.6497 21.3291 20.5787C21.4 20.5078 21.4507 20.4192 21.4758 20.3221C21.501 20.225 21.4997 20.1229 21.4722 20.0265L20.8061 17.6951L20.8061 17.6952C21.398 16.6971 21.7226 15.5633 21.7486 14.4032C21.7747 13.2431 21.5013 12.0959 20.9549 11.0722C20.4085 10.0485 19.6075 9.18291 18.6291 8.55894C17.6508 7.93497 16.5281 7.57368 15.3695 7.50992" stroke="#1D2026" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                
               <button class="btn-parimary input-btn">Post reply</button>
             </div>
           </div>
@@ -773,9 +862,9 @@
             </div>
             <div class="course-item-4-card-footer">
               <p class="course-item-4-card-footer-review">
-                <span class="course-item-4-card-info-price">$99</span>
+                <span class="course-item-4-card-info-price">$57.00</span>
               </p>
-              <button class="course-item-4-card-footer-student card-btn">
+              <button class="course-item-4-card-footer-student card-btn" id="dropdownMenuButton1" data-bs-toggle="dropdown">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M12 13.525C12.8422 13.525 13.525 12.8422 13.525 12C13.525 11.1578 12.8422 10.475 12 10.475C11.1578 10.475 10.475 11.1578 10.475 12C10.475 12.8422 11.1578 13.525 12 13.525Z"
@@ -788,6 +877,11 @@
                     fill="#8C94A3" stroke="#8C94A3" stroke-width="0.8" />
                 </svg>
               </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">View Details</a></li>
+                <li><a class="dropdown-item" href="#">Edit Course</a></li>
+                <li><a class="dropdown-item" href="#">Delete Course</a></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -825,9 +919,9 @@
             </div>
             <div class="course-item-4-card-footer">
               <p class="course-item-4-card-footer-review">
-                <span class="course-item-4-card-info-price">$99</span>
+                <span class="course-item-4-card-info-price">$57.00 <del class="less-price ">$57.00</del></span>
               </p>
-              <button class="course-item-4-card-footer-student card-btn">
+              <button class="course-item-4-card-footer-student card-btn" id="dropdownMenuButton2" data-bs-toggle="dropdown">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M12 13.525C12.8422 13.525 13.525 12.8422 13.525 12C13.525 11.1578 12.8422 10.475 12 10.475C11.1578 10.475 10.475 11.1578 10.475 12C10.475 12.8422 11.1578 13.525 12 13.525Z"
@@ -840,6 +934,11 @@
                     fill="#8C94A3" stroke="#8C94A3" stroke-width="0.8" />
                 </svg>
               </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                <li><a class="dropdown-item" href="#">View Details</a></li>
+                <li><a class="dropdown-item" href="#">Edit Course</a></li>
+                <li><a class="dropdown-item" href="#">Delete Course</a></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -877,9 +976,9 @@
             </div>
             <div class="course-item-4-card-footer">
               <p class="course-item-4-card-footer-review">
-                <span class="course-item-4-card-info-price">$99</span>
+                <span class="course-item-4-card-info-price">$57.00 <del class="less-price">$57.00</del></span>
               </p>
-              <button class="course-item-4-card-footer-student card-btn">
+              <button class="course-item-4-card-footer-student card-btn" id="dropdownMenuButton1" data-bs-toggle="dropdown">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M12 13.525C12.8422 13.525 13.525 12.8422 13.525 12C13.525 11.1578 12.8422 10.475 12 10.475C11.1578 10.475 10.475 11.1578 10.475 12C10.475 12.8422 11.1578 13.525 12 13.525Z"
@@ -892,6 +991,11 @@
                     fill="#8C94A3" stroke="#8C94A3" stroke-width="0.8" />
                 </svg>
               </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                <li><a class="dropdown-item" href="#">View Details</a></li>
+                <li><a class="dropdown-item" href="#">Edit Course</a></li>
+                <li><a class="dropdown-item" href="#">Delete Course</a></li>
+              </ul>
             </div>
           </div>
         </div>
@@ -1714,7 +1818,7 @@
                   </div>
                   <div class="withdrew-money-card-footer-item">
                     <a href="#">withdrew money</a>
-                    <button> <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    <button id="dropdownMenuButton6" data-bs-toggle="dropdown"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M12 13.525C12.8422 13.525 13.525 12.8422 13.525 12C13.525 11.1578 12.8422 10.475 12 10.475C11.1578 10.475 10.475 11.1578 10.475 12C10.475 12.8422 11.1578 13.525 12 13.525Z"
@@ -1727,6 +1831,11 @@
                           fill="#1D2026" stroke="#1D2026" stroke-width="0.8" />
                       </svg>
                     </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton6">
+                      <li><a class="dropdown-item" href="#">View Details</a></li>
+                      <li><a class="dropdown-item" href="#">Edit Course</a></li>
+                      <li><a class="dropdown-item" href="#">Delete Course</a></li>
+                    </ul>
                   </div>
                 </div>
 
@@ -1811,7 +1920,7 @@
                   </div>
                   <div class="withdrew-money-card-footer-item">
                     <a href="#">withdrew money</a>
-                    <button> <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    <button id="dropdownMenuButton4" data-bs-toggle="dropdown"> <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <path
                           d="M12 13.525C12.8422 13.525 13.525 12.8422 13.525 12C13.525 11.1578 12.8422 10.475 12 10.475C11.1578 10.475 10.475 11.1578 10.475 12C10.475 12.8422 11.1578 13.525 12 13.525Z"
@@ -1824,6 +1933,11 @@
                           fill="#1D2026" stroke="#1D2026" stroke-width="0.8" />
                       </svg>
                     </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton6">
+                      <li><a class="dropdown-item" href="#">View Details</a></li>
+                      <li><a class="dropdown-item" href="#">Edit Course</a></li>
+                      <li><a class="dropdown-item" href="#">Delete Course</a></li>
+                    </ul>
                   </div>
                 </div>
 
@@ -1856,7 +1970,7 @@
                 fill="white" />
             </svg>
 
-            <button>
+            <button id="dropdownMenuButton5" data-bs-toggle="dropdown">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M12 13.525C12.8422 13.525 13.525 12.8422 13.525 12C13.525 11.1578 12.8422 10.475 12 10.475C11.1578 10.475 10.475 11.1578 10.475 12C10.475 12.8422 11.1578 13.525 12 13.525Z"
@@ -1869,6 +1983,11 @@
                   fill="#ffffff73" stroke="#ffffff73" stroke-width="0.8" />
               </svg>
             </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <li><a class="dropdown-item" href="#">View Details</a></li>
+              <li><a class="dropdown-item" href="#">Edit Course</a></li>
+              <li><a class="dropdown-item" href="#">Delete Course</a></li>
+            </ul>
 
           </div>
           <div class="payment-card-visa-mid">
@@ -1910,7 +2029,7 @@
             </svg>
 
 
-            <button>
+            <button id="dropdownMenuButton4" data-bs-toggle="dropdown">
               <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                   d="M12 13.525C12.8422 13.525 13.525 12.8422 13.525 12C13.525 11.1578 12.8422 10.475 12 10.475C11.1578 10.475 10.475 11.1578 10.475 12C10.475 12.8422 11.1578 13.525 12 13.525Z"
@@ -1923,6 +2042,11 @@
                   fill="#ffffff73" stroke="#ffffff73" stroke-width="0.8" />
               </svg>
             </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
+              <li><a class="dropdown-item" href="#">View Details</a></li>
+              <li><a class="dropdown-item" href="#">Edit Course</a></li>
+              <li><a class="dropdown-item" href="#">Delete Course</a></li>
+            </ul>
 
           </div>
           <div class="payment-card-visa-2-mid">
@@ -1973,10 +2097,10 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-4">
-        <div class="notification-section-all">
-          <div class="notification-section">
-            <div class="notification-section-left">
-              <div class="notification-section-left-icon">
+        <div class="notification-sections">
+          <div class="notification-item">
+            <div class="notification-item-left">
+              <div class="notification-item-left-icon">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M2.8393 11.0624C2.09384 9.80571 1.83277 8.32014 2.10512 6.88461C2.37747 5.44908 3.1645 4.16235 4.31843 3.26603C5.47235 2.36972 6.91379 1.92548 8.37207 2.01674C9.83036 2.10799 11.2052 2.72846 12.2384 3.76164C13.2715 4.79482 13.892 6.16963 13.9833 7.62791C14.0745 9.08619 13.6303 10.5276 12.734 11.6816C11.8377 12.8355 10.551 13.6225 9.11543 13.8949C7.67991 14.1672 6.19433 13.9062 4.93766 13.1607L4.93767 13.1607L2.86539 13.7527C2.77965 13.7772 2.68892 13.7784 2.6026 13.756C2.51629 13.7336 2.43752 13.6886 2.37447 13.6255C2.31142 13.5625 2.26637 13.4837 2.24401 13.3974C2.22164 13.3111 2.22276 13.2204 2.24726 13.1346L2.83934 11.0623L2.8393 11.0624Z"
@@ -1994,16 +2118,16 @@
 
               </div>
             </div>
-            <div class="notification-section-right">
-              <div class="notification-section-right-content">
+            <div class="notification-item-right">
+              <div class="notification-item-right-content">
                 <a href="">Kevin comments on your lecture “What is ux” in “2021 ui/ux design with figma.</a>
                 <span>6 mins ago</span>
               </div>
             </div>
           </div>
-          <div class="notification-section">
-            <div class="notification-section-left">
-              <div class="notification-section-left-icon">
+          <div class="notification-item">
+            <div class="notification-item-left">
+              <div class="notification-item-left-icon">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M8.27569 11.9208L11.4279 13.9179C11.8308 14.1732 12.3311 13.7935 12.2115 13.3232L11.3008 9.74052C11.2752 9.64074 11.2782 9.53574 11.3096 9.43761C11.3409 9.33947 11.3994 9.25218 11.4781 9.18578L14.3049 6.83307C14.6763 6.52393 14.4846 5.90752 14.0074 5.87655L10.3159 5.63697C10.2165 5.62986 10.1211 5.59466 10.0409 5.53546C9.96069 5.47625 9.89896 5.39548 9.86289 5.30256L8.48612 1.83549C8.44869 1.73686 8.38215 1.65194 8.29532 1.59202C8.2085 1.5321 8.1055 1.50001 8 1.50001C7.89451 1.50001 7.79151 1.5321 7.70468 1.59202C7.61786 1.65194 7.55131 1.73686 7.51389 1.83549L6.13712 5.30256C6.10104 5.39548 6.03932 5.47625 5.95912 5.53546C5.87892 5.59466 5.78355 5.62986 5.68412 5.63697L1.99263 5.87655C1.51544 5.90752 1.32373 6.52393 1.69515 6.83307L4.52186 9.18578C4.60063 9.25218 4.65907 9.33947 4.69044 9.43761C4.72181 9.53574 4.72485 9.64074 4.6992 9.74052L3.85459 13.063C3.71111 13.6274 4.31143 14.0831 4.79495 13.7767L7.72431 11.9208C7.8067 11.8684 7.90234 11.8405 8 11.8405C8.09767 11.8405 8.19331 11.8684 8.27569 11.9208Z"
@@ -2011,16 +2135,16 @@
                 </svg>
               </div>
             </div>
-            <div class="notification-section-right">
-              <div class="notification-section-right-content">
+            <div class="notification-item-right">
+              <div class="notification-item-right-content">
                 <a href="#">John give a 5 star rating on your course “2021 ui/ux design with figma</a>
                 <span>6 mins ago</span>
               </div>
             </div>
           </div>
-          <div class="notification-section">
-            <div class="notification-section-left">
-              <div class="notification-section-left-icon">
+          <div class="notification-item">
+            <div class="notification-item-left">
+              <div class="notification-item-left-icon">
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path opacity="0.2"
                     d="M11.5 5H2.5C2.22386 5 2 5.22386 2 5.5V12.5C2 12.7761 2.22386 13 2.5 13H11.5C11.7761 13 12 12.7761 12 12.5V5.5C12 5.22386 11.7761 5 11.5 5Z"
@@ -2031,12 +2155,10 @@
                   <path d="M4 3H13.5C13.6326 3 13.7598 3.05268 13.8536 3.14645C13.9473 3.24021 14 3.36739 14 3.5V11"
                     stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
-
-
               </div>
             </div>
-            <div class="notification-section-right">
-              <div class="notification-section-right-content">
+            <div class="notification-item-right">
+              <div class="notification-item-right-content">
                 <a href="">Kevin comments on your lecture “What is ux” in “2021 ui/ux design with figma.</a>
                 <span>6 mins ago</span>
               </div>
@@ -2103,17 +2225,22 @@
                 <p>Students who watch a well-made promo video are 5X more likely to enroll in your course. We've seen
                   that
                   statistic go up to 10X for exceptionally awesome videos.</p>
-                <button>Upload Video <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8.0625 7.68647L12 3.75L15.9375 7.68647" stroke="#FF6636" stroke-width="1.5"
-                      stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M12 14.25V3.75276" stroke="#FF6636" stroke-width="1.5" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                    <path
-                      d="M20.25 14.25V19.5C20.25 19.6989 20.171 19.8897 20.0303 20.0303C19.8897 20.171 19.6989 20.25 19.5 20.25H4.5C4.30109 20.25 4.11032 20.171 3.96967 20.0303C3.82902 19.8897 3.75 19.6989 3.75 19.5V14.25"
-                      stroke="#FF6636" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </button>
+                  <form action="#">
+                    <label for="file-upload">
+                      Upload Video 
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.0625 7.68647L12 3.75L15.9375 7.68647" stroke="#FF6636" stroke-width="1.5"
+                          stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M12 14.25V3.75276" stroke="#FF6636" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M20.25 14.25V19.5C20.25 19.6989 20.171 19.8897 20.0303 20.0303C19.8897 20.171 19.6989 20.25 19.5 20.25H4.5C4.30109 20.25 4.11032 20.171 3.96967 20.0303C3.82902 19.8897 3.75 19.6989 3.75 19.5V14.25"
+                          stroke="#FF6636" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      <input type="file" id="file-upload">
+                    </label>
+                  </form>
               </div>
             </div>
           </div>
@@ -2126,17 +2253,22 @@
               <div class="trailer-box-content">
                 <p>Upload your course Thumbnail here. Important guidelines: 1200x800 pixels or 12:8 Ratio. Supported
                   format: .jpg, .jpeg, or .png</p>
-                <button>Upload Video <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8.0625 7.68647L12 3.75L15.9375 7.68647" stroke="#FF6636" stroke-width="1.5"
-                      stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M12 14.25V3.75276" stroke="#FF6636" stroke-width="1.5" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                    <path
-                      d="M20.25 14.25V19.5C20.25 19.6989 20.171 19.8897 20.0303 20.0303C19.8897 20.171 19.6989 20.25 19.5 20.25H4.5C4.30109 20.25 4.11032 20.171 3.96967 20.0303C3.82902 19.8897 3.75 19.6989 3.75 19.5V14.25"
-                      stroke="#FF6636" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </button>
+                  <form action="#">
+                    <label for="file-upload">
+                      Upload image
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.0625 7.68647L12 3.75L15.9375 7.68647" stroke="#FF6636" stroke-width="1.5"
+                          stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M12 14.25V3.75276" stroke="#FF6636" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M20.25 14.25V19.5C20.25 19.6989 20.171 19.8897 20.0303 20.0303C19.8897 20.171 19.6989 20.25 19.5 20.25H4.5C4.30109 20.25 4.11032 20.171 3.96967 20.0303C3.82902 19.8897 3.75 19.6989 3.75 19.5V14.25"
+                          stroke="#FF6636" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      <input type="file" id="file-upload">
+                    </label>
+                  </form>
               </div>
             </div>
           </div>
@@ -2153,17 +2285,22 @@
                 <p>Students who watch a well-made promo video are 5X more likely to enroll in your course. We've seen
                   that
                   statistic go up to 10X for exceptionally awesome videos.</p>
-                <button>Upload Video <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8.0625 7.68647L12 3.75L15.9375 7.68647" stroke="#FF6636" stroke-width="1.5"
-                      stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M12 14.25V3.75276" stroke="#FF6636" stroke-width="1.5" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                    <path
-                      d="M20.25 14.25V19.5C20.25 19.6989 20.171 19.8897 20.0303 20.0303C19.8897 20.171 19.6989 20.25 19.5 20.25H4.5C4.30109 20.25 4.11032 20.171 3.96967 20.0303C3.82902 19.8897 3.75 19.6989 3.75 19.5V14.25"
-                      stroke="#FF6636" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </button>
+                  <form action="#">
+                    <label for="file-upload">
+                      Upload Video 
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.0625 7.68647L12 3.75L15.9375 7.68647" stroke="#FF6636" stroke-width="1.5"
+                          stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M12 14.25V3.75276" stroke="#FF6636" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M20.25 14.25V19.5C20.25 19.6989 20.171 19.8897 20.0303 20.0303C19.8897 20.171 19.6989 20.25 19.5 20.25H4.5C4.30109 20.25 4.11032 20.171 3.96967 20.0303C3.82902 19.8897 3.75 19.6989 3.75 19.5V14.25"
+                          stroke="#FF6636" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      <input type="file" id="file-upload">
+                    </label>
+                  </form>
               </div>
             </div>
           </div>
@@ -2176,17 +2313,22 @@
               <div class="trailer-box-content">
                 <p>Upload your course Thumbnail here. Important guidelines: 1200x800 pixels or 12:8 Ratio. Supported
                   format: .jpg, .jpeg, or .png</p>
-                <button>Upload Video <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
-                    xmlns="http://www.w3.org/2000/svg">
-                    <path d="M8.0625 7.68647L12 3.75L15.9375 7.68647" stroke="#FF6636" stroke-width="1.5"
-                      stroke-linecap="round" stroke-linejoin="round" />
-                    <path d="M12 14.25V3.75276" stroke="#FF6636" stroke-width="1.5" stroke-linecap="round"
-                      stroke-linejoin="round" />
-                    <path
-                      d="M20.25 14.25V19.5C20.25 19.6989 20.171 19.8897 20.0303 20.0303C19.8897 20.171 19.6989 20.25 19.5 20.25H4.5C4.30109 20.25 4.11032 20.171 3.96967 20.0303C3.82902 19.8897 3.75 19.6989 3.75 19.5V14.25"
-                      stroke="#FF6636" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                  </svg>
-                </button>
+                  <form action="#">
+                    <label for="file-upload">
+                      Upload image 
+                      <svg width="24" height="24" viewBox="0 0 24 24" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path d="M8.0625 7.68647L12 3.75L15.9375 7.68647" stroke="#FF6636" stroke-width="1.5"
+                          stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M12 14.25V3.75276" stroke="#FF6636" stroke-width="1.5" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M20.25 14.25V19.5C20.25 19.6989 20.171 19.8897 20.0303 20.0303C19.8897 20.171 19.6989 20.25 19.5 20.25H4.5C4.30109 20.25 4.11032 20.171 3.96967 20.0303C3.82902 19.8897 3.75 19.6989 3.75 19.5V14.25"
+                          stroke="#FF6636" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                      <input type="file" id="file-upload">
+                    </label>
+                  </form>
               </div>
             </div>
           </div>
@@ -3550,6 +3692,11 @@
   <!-- Profile -->
   <div class="space20"></div>
   <div class="bg-light">
+    <section>
+      <div class="container">
+        <h4 class="py-4">Profile</h4>
+      </div>
+    </section>
     <div class="container">
       <div class="profile-wrap">
         <div class="profile-left">
@@ -3702,8 +3849,783 @@
         </div>
       </div>
     </div>
-    <div class="space20"></div>
   </div>
+  <div class="space20"></div>
+
+  <!-- All Input field -->
+  <div class="space20"></div>
+  <div class="bg-light">
+    <section>
+      <div class="container">
+        <h4 class="py-4">All Input Field</h4>
+      </div>
+    </section>
+    <div class="container">
+      <div class="col-lg-4">
+        <form action="">
+          <div class="default-input-field mb-3">
+              <input type="text" placeholder="Label">
+          </div>
+          <div class="default-input-field mb-3">
+            <label>Labal</label>
+            <input type="text" placeholder="Label">
+          </div>
+          <div class="default-input-field mb-3">
+            <label>Labal</label>
+            <input type="text" placeholder="Label">
+            <span class="default-input-field-content">0/80</span>
+          </div>
+          <div class="default-input-field input-dropdown mb-3">
+            <label>Labal</label>
+            <input type="text" placeholder="Label">
+            <div class="select-box">
+              <label for="name4">
+                <select name="potencial" id="potencial" class="custom-select sources" placeholder="0/80">
+                  <option value="">0/60</option>
+                  <option value="">0/50</option>
+                  <option value="">0/40</option>
+                </select>
+              </label>
+            </div>
+          </div>
+          <div class="default-input-field icon-field mb-3">
+            <label>Labal</label>
+            <input type="text" placeholder="Label">
+            <span class="default-input-field-icon">
+              <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M18.2422 10.5859H12.3438C11.3745 10.5859 10.5859 11.3745 10.5859 12.3438C10.5859 13.313 11.3745 14.1016 12.3438 14.1016H18.2422C19.2114 14.1016 20 13.313 20 12.3438C20 11.3745 19.2114 10.5859 18.2422 10.5859Z" fill="#FF6636"/>
+                <path d="M7.65625 5.89844H1.75781C0.788555 5.89844 0 6.68699 0 7.65625C0 8.62551 0.788555 9.41406 1.75781 9.41406H7.65625C8.62551 9.41406 9.41406 8.62551 9.41406 7.65625C9.41406 6.68699 8.62551 5.89844 7.65625 5.89844Z" fill="#FF6636"/>
+                <path d="M12.3438 9.41406C13.313 9.41406 14.1016 8.62551 14.1016 7.65625V1.75781C14.1016 0.788555 13.313 0 12.3438 0C11.3745 0 10.5859 0.788555 10.5859 1.75781V7.65625C10.5859 8.62551 11.3745 9.41406 12.3438 9.41406Z" fill="#FF6636"/>
+                <path d="M7.65625 10.5859C6.68699 10.5859 5.89844 11.3745 5.89844 12.3438V18.2422C5.89844 19.2114 6.68699 20 7.65625 20C8.62551 20 9.41406 19.2114 9.41406 18.2422V12.3438C9.41406 11.3745 8.62551 10.5859 7.65625 10.5859Z" fill="#FF6636"/>
+                <path d="M15.8984 9.41406H17.6562C18.9486 9.41406 20 8.36266 20 7.07031C20 5.77797 18.9486 4.72656 17.6562 4.72656C16.3639 4.72656 15.3125 5.77797 15.3125 7.07031V8.82812C15.3125 9.15172 15.5748 9.41406 15.8984 9.41406Z" fill="#FF6636"/>
+                <path d="M4.10156 10.5859H2.34375C1.05141 10.5859 0 11.6373 0 12.9297C0 14.222 1.05141 15.2734 2.34375 15.2734C3.63609 15.2734 4.6875 14.222 4.6875 12.9297V11.1719C4.6875 10.8483 4.42516 10.5859 4.10156 10.5859Z" fill="#FF6636"/>
+                <path d="M7.07031 0C5.77797 0 4.72656 1.05141 4.72656 2.34375C4.72656 3.63609 5.77797 4.6875 7.07031 4.6875H8.82812C9.15172 4.6875 9.41406 4.42516 9.41406 4.10156V2.34375C9.41406 1.05141 8.36266 0 7.07031 0Z" fill="#FF6636"/>
+                <path d="M12.9297 15.3125H11.1719C10.8483 15.3125 10.5859 15.5748 10.5859 15.8984V17.6562C10.5859 18.9486 11.6373 20 12.9297 20C14.222 20 15.2734 18.9486 15.2734 17.6562C15.2734 16.3639 14.222 15.3125 12.9297 15.3125Z" fill="#FF6636"/>
+                </svg>                
+            </span>
+          </div>
+            <div class="searchbox searchbox-course default-field mb-3">
+              <label>Labal</label>
+              <input type="text" placeholder="Course price..." class="searchbox-input">
+              <svg class="course-search-icon-left" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M10 1.875V3.75" stroke="#FF6636" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M10 16.25V18.125" stroke="#FF6636" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M14.375 6.875C14.375 6.46462 14.2942 6.05826 14.1371 5.67911C13.9801 5.29997 13.7499 4.95547 13.4597 4.66529C13.1695 4.37511 12.825 4.14492 12.4459 3.98788C12.0667 3.83083 11.6604 3.75 11.25 3.75H8.4375C7.6087 3.75 6.81384 4.07924 6.22779 4.66529C5.64174 5.25134 5.3125 6.0462 5.3125 6.875C5.3125 7.7038 5.64174 8.49866 6.22779 9.08471C6.81384 9.67076 7.6087 10 8.4375 10H11.875C12.7038 10 13.4987 10.3292 14.0847 10.9153C14.6708 11.5013 15 12.2962 15 13.125C15 13.9538 14.6708 14.7487 14.0847 15.3347C13.4987 15.9208 12.7038 16.25 11.875 16.25H8.125C7.2962 16.25 6.50134 15.9208 5.91529 15.3347C5.32924 14.7487 5 13.9538 5 13.125" stroke="#FF6636" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+              </svg>
+              <span class="course-search-icon-right">USA</span>
+            </div>
+            <div class="default-input-field mb-3">
+              <label>Labal</label>
+              <input type="text" placeholder="Label">
+              <span class="default-input-field-content">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 4.24927C4.5 4.24927 1.5 12.0001 1.5 12.0001C1.5 12.0001 4.5 19.7493 12 19.7493C19.5 19.7493 22.5 12.0001 22.5 12.0001C22.5 12.0001 19.5 4.24927 12 4.24927Z" stroke="#4E5566" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12 15.7501C14.0711 15.7501 15.75 14.0711 15.75 12.0001C15.75 9.92899 14.0711 8.25006 12 8.25006C9.92893 8.25006 8.25 9.92899 8.25 12.0001C8.25 14.0711 9.92893 15.7501 12 15.7501Z" stroke="#4E5566" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>                  
+              </span>
+            </div>
+            <div class="course-searchbox-input mb-3">
+              <input type="text" placeholder="Write your reply" class="searchbox-input">
+
+              <svg class="course-search-icon-left" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3.19421 13.1952C2.35557 11.7814 2.06187 10.1102 2.36826 8.49519C2.67466 6.88022 3.56007 5.43265 4.85823 4.42429C6.15639 3.41594 7.77801 2.91618 9.41858 3.01884C11.0591 3.1215 12.6058 3.81953 13.7681 4.98186C14.9305 6.14418 15.6285 7.69084 15.7312 9.33141C15.8338 10.972 15.3341 12.5936 14.3257 13.8918C13.3174 15.1899 11.8698 16.0754 10.2549 16.3818C8.63989 16.6882 6.96862 16.3945 5.55486 15.5558L5.55488 15.5558L3.22356 16.2219C3.1271 16.2494 3.02504 16.2507 2.92793 16.2255C2.83082 16.2003 2.74221 16.1497 2.67128 16.0787C2.60035 16.0078 2.54967 15.9192 2.52451 15.8221C2.49935 15.725 2.50061 15.6229 2.52817 15.5265L3.19426 13.1951L3.19421 13.1952Z" stroke="#1D2026" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                <path d="M8.63086 16.4899C8.96268 17.4319 9.49929 18.2886 10.202 18.9983C10.9048 19.7079 11.7561 20.2529 12.6948 20.594C13.6335 20.935 14.6362 21.0637 15.6306 20.9706C16.625 20.8776 17.5864 20.5651 18.4455 20.0558L18.4455 20.0557L20.7768 20.7218C20.8732 20.7494 20.9753 20.7507 21.0724 20.7255C21.1695 20.7003 21.2581 20.6497 21.3291 20.5787C21.4 20.5078 21.4507 20.4192 21.4758 20.3221C21.501 20.225 21.4997 20.1229 21.4722 20.0265L20.8061 17.6951L20.8061 17.6952C21.398 16.6971 21.7226 15.5633 21.7486 14.4032C21.7747 13.2431 21.5013 12.0959 20.9549 11.0722C20.4085 10.0485 19.6075 9.18291 18.6291 8.55894C17.6508 7.93497 16.5281 7.57368 15.3695 7.50992" stroke="#1D2026" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+                
+              </div>
+              <div class="course-searchbox course-searchbox-success mb-3">
+                <input type="text" placeholder="label" class="searchbox-input searchbox-input-card success">
+  
+                <svg class="course-search-icon-right" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" fill="#23BD33" stroke="#23BD33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M16.125 9.75L10.625 15L7.875 12.375" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </div>
+              <div class="course-searchbox  course-searchbox-warning mb-3">
+                <input type="text" placeholder="label" class="searchbox-input searchbox-input-card waring">
+                <svg class="course-search-icon-right" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.7015 3.74857L2.45374 17.9978C2.32177 18.2259 2.25217 18.4846 2.25195 18.748C2.25174 19.0115 2.32091 19.2703 2.4525 19.4986C2.5841 19.7268 2.77348 19.9163 3.0016 20.0481C3.22971 20.1799 3.48851 20.2493 3.75196 20.2493H20.2475C20.511 20.2493 20.7697 20.1799 20.9979 20.0481C21.226 19.9163 21.4154 19.7268 21.547 19.4986C21.6786 19.2703 21.7477 19.0115 21.7475 18.748C21.7473 18.4846 21.6777 18.2258 21.5457 17.9978L13.2979 3.74857C13.1662 3.52093 12.9769 3.33193 12.749 3.20055C12.5212 3.06916 12.2628 3 11.9997 3C11.7367 3 11.4783 3.06916 11.2504 3.20055C11.0226 3.33193 10.8333 3.52093 10.7015 3.74857Z" fill="#E34444"></path>
+                  <path d="M12 10.5V13.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M10.7015 3.74857L2.45374 17.9978C2.32177 18.2258 2.25217 18.4846 2.25195 18.748C2.25174 19.0115 2.32091 19.2703 2.4525 19.4986C2.5841 19.7268 2.77348 19.9163 3.0016 20.0481C3.22971 20.1799 3.48851 20.2493 3.75196 20.2493H20.2475C20.5109 20.2493 20.7697 20.1799 20.9979 20.0481C21.226 19.9163 21.4154 19.7268 21.547 19.4986C21.6786 19.2703 21.7477 19.0115 21.7475 18.748C21.7473 18.4846 21.6777 18.2258 21.5457 17.9978L13.2979 3.74857C13.1662 3.52093 12.9769 3.33193 12.749 3.20055C12.5212 3.06916 12.2628 3 11.9997 3C11.7367 3 11.4783 3.06916 11.2504 3.20055C11.0226 3.33193 10.8333 3.52093 10.7015 3.74857V3.74857Z" stroke="#E34444" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                  <path d="M12.375 16.875C12.375 17.0821 12.2071 17.25 12 17.25C11.7929 17.25 11.625 17.0821 11.625 16.875C11.625 16.6679 11.7929 16.5 12 16.5C12.2071 16.5 12.375 16.6679 12.375 16.875Z" fill="white" stroke="white" stroke-width="1.5"></path>
+                </svg>
+  
+              </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="space20"></div>
+
+  <!-- Messgae -->
+  <div class="space20"></div>
+  <div class="bg-light">
+    <section>
+      <div class="container">
+        <h4 class="py-4">Message</h4>
+      </div>
+    </section>
+    <div class="container">
+      <div class="col-lg-6">
+        <div class="message-wrap">
+          <div class="message-item">
+            <div class="message-user-wrap">
+                <div class="message-user">
+                  <img src="src/images/photos.png" alt="">
+                </div>
+                <div class="message-data">
+                  <h6>Teacher name</h6>
+                  <p>new message</p>
+                </div>
+            </div>
+            <div class="message-data">
+              <p>time</p>
+            </div>
+          </div>
+          <div class="message-item">
+            <div class="message-user-wrap">
+                <div class="message-user">
+                  <img src="src/images/photos.png" alt="">
+                </div>
+                <div class="message-data">
+                  <h6>Teacher name</h6>
+                  <p>new message</p>
+                </div>
+            </div>
+            <div class="message-data">
+              <p>time</p>
+            </div>
+          </div>
+          <div class="message-item active">
+            <div class="message-user-wrap">
+                <div class="message-user">
+                  <img src="src/images/photos.png" alt="">
+                  <div class="user-online-status"></div>
+                </div>
+                <div class="message-data">
+                  <h6>Teacher name</h6>
+                  <p>new message</p>
+                </div>
+            </div>
+            <div class="message-data">
+              <p>time</p>
+            </div>
+          </div>
+          <div class="message-item">
+            <div class="message-user-wrap">
+                <div class="message-user">
+                  <img src="src/images/photos.png" alt="">
+                </div>
+                <div class="message-data">
+                  <h6>Teacher name</h6>
+                  <p>new message</p>
+                </div>
+            </div>
+            <div class="message-data">
+              <p>time</p>
+              <div class="active-status"></div>
+            </div>
+          </div>
+          <div class="message-item">
+            <div class="message-user-wrap">
+                <div class="message-user">
+                  <img src="src/images/photos.png" alt="">
+                  <div class="user-online-status"></div>
+                </div>
+                <div class="message-data">
+                  <h6>Teacher name</h6>
+                  <p>new message</p>
+                </div>
+            </div>
+            <div class="message-data">
+              <p>time</p>
+              <div class="active-status"></div>
+            </div>
+          </div>
+          <div class="message-item">
+            <div class="message-user-wrap">
+                <div class="message-user">
+                  <img src="src/images/photos.png" alt="">
+                  <div class="user-online-status"></div>
+                </div>
+                <div class="message-data">
+                  <h6>Teacher name</h6>
+                  <p>new message</p>
+                </div>
+            </div>
+            <div class="message-data">
+              <p>time</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="space20"></div>
+
+  <!-- Chat -->
+  <div class="space20"></div>
+  <div class="bg-light">
+    <section>
+      <div class="container">
+        <h4 class="py-4">Chat</h4>
+      </div>
+    </section>
+    <div class="container">
+      <div class="col-lg-8">
+        <div class="chat-box-card">
+          <div class="chat-item">
+            <p><img src="src/images/photos.png" alt=""> Time</p>
+            <div class="chat-data">
+              <p>Hello and thanks for signing up to the course. If you have any questions about<br/> the course or Adobe XD, feel free to get in touch and I'll be happy to help 😀</p>
+            </div>
+          </div>
+          <div class="chat-item">
+            <p>Time</p>
+            <div class="chat-data">
+              <p>Hello and thanks for signing up to the course. If you have any questions about<br/> the course or Adobe XD, feel free to get in touch and I'll be happy to help</p>
+            </div>
+          </div>
+          <div class="chat-item">
+            <p><img src="src/images/photos.png" alt=""> Time</p>
+            <div class="chat-data">
+              <p>Hello, Good Evening. Sani Brother</p>
+              <br/>
+              <p>Hello, Good Evening. Sani Brother</p>
+            </div>
+          </div>
+          <div class="chat-item">
+            <p>Time</p>
+            <div class="chat-data">
+              <p>Hello, Good Evening. My Awesome Greatest Mind_Blowing Students</p>
+            </div>
+          </div>
+          <div class="chat-item">
+            <div class="chat-data bg-orange">
+              <p>Hello, Good Evening. My Awesome Greatest Mind_Blowing Students</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="space20"></div>
+
+  <!-- Lecture -->
+  <div class="space20"></div>
+  <div class="bg-light">
+    <section>
+      <div class="container">
+        <h4 class="py-4">Lecture</h4>
+      </div>
+    </section>
+    <div class="container">
+      <div class="col-lg-6">
+        <div class="accordion-wrap-faq lecture-wrap" id="faq_init3">
+          <div class="accordion__list2">
+            <div class="link">
+              <div class="accordion-header-content">
+                <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.8332 1.08333L6.99984 6.91667L1.1665 1.08333" stroke="#6E7485" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Secret of Good Design
+                
+              </div>
+              <div class="sub-heading-meta">
+                <ul>
+                  <li>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z" stroke="#564FFD" stroke-width="1.3" stroke-miterlimit="10"/>
+                      <path d="M12.5 10L8.75 7.5V12.5L12.5 10Z" stroke="#564FFD" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    52 lectures                     
+                  </li>
+                  <li>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z" stroke="#FD8E1F" stroke-width="1.3" stroke-miterlimit="10"/>
+                      <path d="M10 5.625V10H14.375" stroke="#FD8E1F" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    5m 49m                      
+                  </li>
+                </ul>
+              </div>
+              
+            </div>
+            <div class="accordion-body-text">
+              <div class="lectue-body-item">
+                <div class="form-check checkbox">
+                  <input class="form-check-input" type="checkbox" value="" id="check1">
+                  <label class="form-check-label" for="check1">
+                    1. What is Webflow?
+                  </label>
+                </div>
+                <div class="lecture-play">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.5925 7.57338L4.59398 2.0741C4.51819 2.02778 4.43142 2.00248 4.34261 2.00082C4.2538 1.99916 4.16615 2.02118 4.08868 2.06463C4.0112 2.10808 3.9467 2.17139 3.90181 2.24803C3.85692 2.32468 3.83325 2.41191 3.83325 2.50073V13.4993C3.83325 13.5881 3.85692 13.6754 3.90181 13.752C3.9467 13.8287 4.0112 13.892 4.08868 13.9354C4.16615 13.9789 4.2538 14.0009 4.34261 13.9992C4.43142 13.9976 4.51819 13.9723 4.59398 13.9259L13.5925 8.42666C13.6656 8.38199 13.726 8.3193 13.7679 8.2446C13.8098 8.16989 13.8318 8.08567 13.8318 8.00002C13.8318 7.91437 13.8098 7.83015 13.7679 7.75545C13.726 7.68074 13.6656 7.61805 13.5925 7.57338Z" fill="#1D2026"/>
+                    </svg>
+                    07:31                    
+                </div>
+              </div>
+              <div class="lectue-body-item active">
+                <div class="form-check checkbox">
+                  <input class="form-check-input" type="checkbox" value="" id="check2">
+                  <label class="form-check-label" for="check2">
+                    1. What is Webflow?
+                  </label>
+                </div>
+                <div class="lecture-play">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.5 2.5H10.25C9.97386 2.5 9.75 2.72386 9.75 3V13C9.75 13.2761 9.97386 13.5 10.25 13.5H12.5C12.7761 13.5 13 13.2761 13 13V3C13 2.72386 12.7761 2.5 12.5 2.5Z" fill="#1D2026"/>
+                    <path d="M5.75 2.5H3.5C3.22386 2.5 3 2.72386 3 3V13C3 13.2761 3.22386 13.5 3.5 13.5H5.75C6.02614 13.5 6.25 13.2761 6.25 13V3C6.25 2.72386 6.02614 2.5 5.75 2.5Z" fill="#1D2026"/>
+                    </svg>
+                    
+                    07:31                    
+                </div>
+              </div>
+              <div class="lectue-body-item">
+                <div class="form-check checkbox">
+                  <input class="form-check-input" type="checkbox" value="" id="check3">
+                  <label class="form-check-label" for="check3">
+                    1. What is Webflow?
+                  </label>
+                </div>
+                <div class="lecture-play">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.5925 7.57338L4.59398 2.0741C4.51819 2.02778 4.43142 2.00248 4.34261 2.00082C4.2538 1.99916 4.16615 2.02118 4.08868 2.06463C4.0112 2.10808 3.9467 2.17139 3.90181 2.24803C3.85692 2.32468 3.83325 2.41191 3.83325 2.50073V13.4993C3.83325 13.5881 3.85692 13.6754 3.90181 13.752C3.9467 13.8287 4.0112 13.892 4.08868 13.9354C4.16615 13.9789 4.2538 14.0009 4.34261 13.9992C4.43142 13.9976 4.51819 13.9723 4.59398 13.9259L13.5925 8.42666C13.6656 8.38199 13.726 8.3193 13.7679 8.2446C13.8098 8.16989 13.8318 8.08567 13.8318 8.00002C13.8318 7.91437 13.8098 7.83015 13.7679 7.75545C13.726 7.68074 13.6656 7.61805 13.5925 7.57338Z" fill="#1D2026"/>
+                    </svg>
+                    07:31                    
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion__list2">
+            <div class="link">
+              <div class="accordion-header-content">
+                <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.8332 1.08333L6.99984 6.91667L1.1665 1.08333" stroke="#6E7485" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Secret of Good Design
+                
+              </div>
+              <div class="sub-heading-meta">
+                <ul>
+                  <li>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z" stroke="#564FFD" stroke-width="1.3" stroke-miterlimit="10"/>
+                      <path d="M12.5 10L8.75 7.5V12.5L12.5 10Z" stroke="#564FFD" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    52 lectures                     
+                  </li>
+                  <li>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z" stroke="#FD8E1F" stroke-width="1.3" stroke-miterlimit="10"/>
+                      <path d="M10 5.625V10H14.375" stroke="#FD8E1F" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    5m 49m                      
+                  </li>
+                </ul>
+              </div>
+              
+            </div>
+            <div class="accordion-body-text">
+              <div class="lectue-body-item">
+                <div class="form-check checkbox">
+                  <input class="form-check-input" type="checkbox" value="" id="check1">
+                  <label class="form-check-label" for="check1">
+                    1. What is Webflow?
+                  </label>
+                </div>
+                <div class="lecture-play">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.5925 7.57338L4.59398 2.0741C4.51819 2.02778 4.43142 2.00248 4.34261 2.00082C4.2538 1.99916 4.16615 2.02118 4.08868 2.06463C4.0112 2.10808 3.9467 2.17139 3.90181 2.24803C3.85692 2.32468 3.83325 2.41191 3.83325 2.50073V13.4993C3.83325 13.5881 3.85692 13.6754 3.90181 13.752C3.9467 13.8287 4.0112 13.892 4.08868 13.9354C4.16615 13.9789 4.2538 14.0009 4.34261 13.9992C4.43142 13.9976 4.51819 13.9723 4.59398 13.9259L13.5925 8.42666C13.6656 8.38199 13.726 8.3193 13.7679 8.2446C13.8098 8.16989 13.8318 8.08567 13.8318 8.00002C13.8318 7.91437 13.8098 7.83015 13.7679 7.75545C13.726 7.68074 13.6656 7.61805 13.5925 7.57338Z" fill="#1D2026"/>
+                    </svg>
+                    07:31                    
+                </div>
+              </div>
+              <div class="lectue-body-item active">
+                <div class="form-check checkbox">
+                  <input class="form-check-input" type="checkbox" value="" id="check2">
+                  <label class="form-check-label" for="check2">
+                    1. What is Webflow?
+                  </label>
+                </div>
+                <div class="lecture-play">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.5 2.5H10.25C9.97386 2.5 9.75 2.72386 9.75 3V13C9.75 13.2761 9.97386 13.5 10.25 13.5H12.5C12.7761 13.5 13 13.2761 13 13V3C13 2.72386 12.7761 2.5 12.5 2.5Z" fill="#1D2026"/>
+                    <path d="M5.75 2.5H3.5C3.22386 2.5 3 2.72386 3 3V13C3 13.2761 3.22386 13.5 3.5 13.5H5.75C6.02614 13.5 6.25 13.2761 6.25 13V3C6.25 2.72386 6.02614 2.5 5.75 2.5Z" fill="#1D2026"/>
+                    </svg>
+                    
+                    07:31                    
+                </div>
+              </div>
+              <div class="lectue-body-item">
+                <div class="form-check checkbox">
+                  <input class="form-check-input" type="checkbox" value="" id="check3">
+                  <label class="form-check-label" for="check3">
+                    1. What is Webflow?
+                  </label>
+                </div>
+                <div class="lecture-play">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.5925 7.57338L4.59398 2.0741C4.51819 2.02778 4.43142 2.00248 4.34261 2.00082C4.2538 1.99916 4.16615 2.02118 4.08868 2.06463C4.0112 2.10808 3.9467 2.17139 3.90181 2.24803C3.85692 2.32468 3.83325 2.41191 3.83325 2.50073V13.4993C3.83325 13.5881 3.85692 13.6754 3.90181 13.752C3.9467 13.8287 4.0112 13.892 4.08868 13.9354C4.16615 13.9789 4.2538 14.0009 4.34261 13.9992C4.43142 13.9976 4.51819 13.9723 4.59398 13.9259L13.5925 8.42666C13.6656 8.38199 13.726 8.3193 13.7679 8.2446C13.8098 8.16989 13.8318 8.08567 13.8318 8.00002C13.8318 7.91437 13.8098 7.83015 13.7679 7.75545C13.726 7.68074 13.6656 7.61805 13.5925 7.57338Z" fill="#1D2026"/>
+                    </svg>
+                    07:31                    
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion__list2 open">
+            <div class="link">
+              <div class="accordion-header-content">
+                <svg width="14" height="8" viewBox="0 0 14 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12.8332 1.08333L6.99984 6.91667L1.1665 1.08333" stroke="#6E7485" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                Secret of Good Design
+                
+              </div>
+              <div class="sub-heading-meta">
+                <ul>
+                  <li>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z" stroke="#564FFD" stroke-width="1.3" stroke-miterlimit="10"/>
+                      <path d="M12.5 10L8.75 7.5V12.5L12.5 10Z" stroke="#564FFD" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    52 lectures                     
+                  </li>
+                  <li>
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M10 17.5C14.1421 17.5 17.5 14.1421 17.5 10C17.5 5.85786 14.1421 2.5 10 2.5C5.85786 2.5 2.5 5.85786 2.5 10C2.5 14.1421 5.85786 17.5 10 17.5Z" stroke="#FD8E1F" stroke-width="1.3" stroke-miterlimit="10"/>
+                      <path d="M10 5.625V10H14.375" stroke="#FD8E1F" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                    </svg>
+                    5m 49m                      
+                  </li>
+                </ul>
+              </div>
+              
+            </div>
+            <div class="accordion-body-text" style="display: block;">
+              <div class="lectue-body-item">
+                <div class="form-check checkbox">
+                  <input class="form-check-input" type="checkbox" value="" id="check1">
+                  <label class="form-check-label" for="check1">
+                    1. What is Webflow?
+                  </label>
+                </div>
+                <div class="lecture-play">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.5925 7.57338L4.59398 2.0741C4.51819 2.02778 4.43142 2.00248 4.34261 2.00082C4.2538 1.99916 4.16615 2.02118 4.08868 2.06463C4.0112 2.10808 3.9467 2.17139 3.90181 2.24803C3.85692 2.32468 3.83325 2.41191 3.83325 2.50073V13.4993C3.83325 13.5881 3.85692 13.6754 3.90181 13.752C3.9467 13.8287 4.0112 13.892 4.08868 13.9354C4.16615 13.9789 4.2538 14.0009 4.34261 13.9992C4.43142 13.9976 4.51819 13.9723 4.59398 13.9259L13.5925 8.42666C13.6656 8.38199 13.726 8.3193 13.7679 8.2446C13.8098 8.16989 13.8318 8.08567 13.8318 8.00002C13.8318 7.91437 13.8098 7.83015 13.7679 7.75545C13.726 7.68074 13.6656 7.61805 13.5925 7.57338Z" fill="#1D2026"/>
+                    </svg>
+                    07:31                    
+                </div>
+              </div>
+              <div class="lectue-body-item active">
+                <div class="form-check checkbox">
+                  <input class="form-check-input" type="checkbox" value="" id="check2">
+                  <label class="form-check-label" for="check2">
+                    1. What is Webflow?
+                  </label>
+                </div>
+                <div class="lecture-play">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M12.5 2.5H10.25C9.97386 2.5 9.75 2.72386 9.75 3V13C9.75 13.2761 9.97386 13.5 10.25 13.5H12.5C12.7761 13.5 13 13.2761 13 13V3C13 2.72386 12.7761 2.5 12.5 2.5Z" fill="#1D2026"/>
+                    <path d="M5.75 2.5H3.5C3.22386 2.5 3 2.72386 3 3V13C3 13.2761 3.22386 13.5 3.5 13.5H5.75C6.02614 13.5 6.25 13.2761 6.25 13V3C6.25 2.72386 6.02614 2.5 5.75 2.5Z" fill="#1D2026"/>
+                    </svg>
+                    
+                    07:31                    
+                </div>
+              </div>
+              <div class="lectue-body-item">
+                <div class="form-check checkbox">
+                  <input class="form-check-input" type="checkbox" value="" id="check3">
+                  <label class="form-check-label" for="check3">
+                    1. What is Webflow?
+                  </label>
+                </div>
+                <div class="lecture-play">
+                  <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M13.5925 7.57338L4.59398 2.0741C4.51819 2.02778 4.43142 2.00248 4.34261 2.00082C4.2538 1.99916 4.16615 2.02118 4.08868 2.06463C4.0112 2.10808 3.9467 2.17139 3.90181 2.24803C3.85692 2.32468 3.83325 2.41191 3.83325 2.50073V13.4993C3.83325 13.5881 3.85692 13.6754 3.90181 13.752C3.9467 13.8287 4.0112 13.892 4.08868 13.9354C4.16615 13.9789 4.2538 14.0009 4.34261 13.9992C4.43142 13.9976 4.51819 13.9723 4.59398 13.9259L13.5925 8.42666C13.6656 8.38199 13.726 8.3193 13.7679 8.2446C13.8098 8.16989 13.8318 8.08567 13.8318 8.00002C13.8318 7.91437 13.8098 7.83015 13.7679 7.75545C13.726 7.68074 13.6656 7.61805 13.5925 7.57338Z" fill="#1D2026"/>
+                    </svg>
+                    07:31                    
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+
+  </div>
+
+
+  <!-- Course -->
+  <div class="space20"></div>
+  <section>
+    <div class="container">
+      <h4 class="py-4">Course</h4>
+    </div>
+  </section>
+  <div class="container">
+    <div class="course-wrap">
+      <h3>What you will learn in this course</h3>
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="checkbox-field">
+            <ul>
+              <li>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                    fill="#23BD33" stroke="#23BD33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M16.125 9.75L10.625 15L7.875 12.375" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                You will learn how to design beautiful websites using Figma, an interface design tool used by designers at Uber, Airbnb and Microsoft.
+              </li>
+              <li>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                    fill="#23BD33" stroke="#23BD33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M16.125 9.75L10.625 15L7.875 12.375" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                You will learn secret tips of Freelance Web Designers and how they make great money freelancing online.
+              </li>
+              <li>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                    fill="#23BD33" stroke="#23BD33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M16.125 9.75L10.625 15L7.875 12.375" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                Understand how to use both the Jupyter Notebook and create .py files
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="checkbox-field">
+            <ul>
+              <li>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                    fill="#23BD33" stroke="#23BD33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M16.125 9.75L10.625 15L7.875 12.375" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                You will learn how to take your designs and build them into powerful websites using Webflow, a state of the art site builder used by teams at Dell, NASA and more.
+              </li>
+              <li>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                    fill="#23BD33" stroke="#23BD33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M16.125 9.75L10.625 15L7.875 12.375" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                Learn to use Python professionally, learning both Python 2 and Python 3!
+              </li>
+              <li>
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z"
+                    fill="#23BD33" stroke="#23BD33" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M16.125 9.75L10.625 15L7.875 12.375" stroke="white" stroke-width="1.5" stroke-linecap="round"
+                    stroke-linejoin="round" />
+                </svg>
+                Get an understanding of how to create GUIs in the Jupyter Notebook system!
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+  <div class="space20"></div>
+
+  <!-- Alert -->
+  <div class="space20"></div>
+  <div class="bg-light">
+    <section>
+      <div class="container">
+        <h4 class="py-4">Alert</h4>
+      </div>
+    </section>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6">
+          <div class="alert-btn-wrap">
+            <div class="alert-btn-item info-alert mb-4">
+              <a class="alert-btn" href="">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" fill="#1D2026"/>
+                  <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#1D2026" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M11.25 11.25H12V16.5H12.75" stroke="#F5F7FA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12 9C12.6213 9 13.125 8.49632 13.125 7.875C13.125 7.25368 12.6213 6.75 12 6.75C11.3787 6.75 10.875 7.25368 10.875 7.875C10.875 8.49632 11.3787 9 12 9Z" fill="#F5F7FA"/>
+                </svg> 
+                Write your info Label               
+              </a>
+              <div class="close-btn-wrap">
+                <span class="label-content">Label</span>
+                <a class="close-btn" href="">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 6L18.7279 18.7279" stroke="#1D2026" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6.00006 19L18.728 6.27208" stroke="#1D2026" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                  
+                </a>
+              </div>
+            </div>
+            <div class="alert-btn-item check-alert mb-4">
+              <a class="alert-btn" href="">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" fill="#15711F" stroke="#15711F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M16.125 9.75L10.625 15L7.875 12.375" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                 
+                Write your success message Label              
+              </a>
+              <div class="close-btn-wrap">
+                <span class="label-content">Label</span>
+                <a class="close-btn" href="">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 6L18.7279 18.7279" stroke="#1D2026" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6.00006 19L18.728 6.27208" stroke="#1D2026" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                  
+                </a>
+              </div>
+            </div>
+            <div class="alert-btn-item warning-octagon-alert mb-4">
+              <a class="alert-btn" href="">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.4173 3H8.58274C8.48425 3 8.38672 3.0194 8.29573 3.05709C8.20473 3.09478 8.12205 3.15003 8.05241 3.21967L3.21967 8.05241C3.15003 8.12205 3.09478 8.20473 3.05709 8.29573C3.0194 8.38672 3 8.48425 3 8.58274V15.4173C3 15.5158 3.0194 15.6133 3.05709 15.7043C3.09478 15.7953 3.15003 15.8779 3.21967 15.9476L8.05241 20.7803C8.12205 20.85 8.20473 20.9052 8.29573 20.9429C8.38672 20.9806 8.48425 21 8.58274 21H15.4173C15.5158 21 15.6133 20.9806 15.7043 20.9429C15.7953 20.9052 15.8779 20.85 15.9476 20.7803L20.7803 15.9476C20.85 15.8779 20.9052 15.7953 20.9429 15.7043C20.9806 15.6133 21 15.5158 21 15.4173V8.58274C21 8.48425 20.9806 8.38672 20.9429 8.29573C20.9052 8.20473 20.85 8.12205 20.7803 8.05241L15.9476 3.21967C15.8779 3.15003 15.7953 3.09478 15.7043 3.05709C15.6133 3.0194 15.5158 3 15.4173 3Z" fill="#65390C"/>
+                  <path d="M12 7.5V12.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M15.4173 3H8.58274C8.48425 3 8.38672 3.0194 8.29573 3.05709C8.20473 3.09478 8.12205 3.15003 8.05241 3.21967L3.21967 8.05241C3.15003 8.12205 3.09478 8.20473 3.05709 8.29573C3.0194 8.38672 3 8.48425 3 8.58274V15.4173C3 15.5158 3.0194 15.6133 3.05709 15.7043C3.09478 15.7953 3.15003 15.8779 3.21967 15.9476L8.05241 20.7803C8.12205 20.85 8.20473 20.9052 8.29573 20.9429C8.38672 20.9806 8.48425 21 8.58274 21H15.4173C15.5158 21 15.6133 20.9806 15.7043 20.9429C15.7953 20.9052 15.8779 20.85 15.9476 20.7803L20.7803 15.9476C20.85 15.8779 20.9052 15.7953 20.9429 15.7043C20.9806 15.6133 21 15.5158 21 15.4173V8.58274C21 8.48425 20.9806 8.38672 20.9429 8.29573C20.9052 8.20473 20.85 8.12205 20.7803 8.05241L15.9476 3.21967C15.8779 3.15003 15.7953 3.09478 15.7043 3.05709C15.6133 3.0194 15.5158 3 15.4173 3Z" stroke="#65390C" stroke-width="1.5" stroke-miterlimit="10"/>
+                  <path d="M12 17.25C12.6213 17.25 13.125 16.7463 13.125 16.125C13.125 15.5037 12.6213 15 12 15C11.3787 15 10.875 15.5037 10.875 16.125C10.875 16.7463 11.3787 17.25 12 17.25Z" fill="white"/>
+                  </svg>
+                  Write your warning Label             
+              </a>
+              <div class="close-btn-wrap">
+                <span class="label-content">Label</span>
+                <a class="close-btn" href="">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 6L18.7279 18.7279" stroke="#1D2026" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6.00006 19L18.728 6.27208" stroke="#1D2026" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                  
+                </a>
+              </div>
+            </div>
+            <div class="alert-btn-item warning-alert mb-4">
+              <a class="alert-btn" href="">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.7015 3.74857L2.45374 17.9978C2.32177 18.2259 2.25217 18.4846 2.25195 18.748C2.25174 19.0115 2.32091 19.2703 2.4525 19.4986C2.5841 19.7268 2.77348 19.9163 3.0016 20.0481C3.22971 20.1799 3.48851 20.2493 3.75196 20.2493H20.2475C20.511 20.2493 20.7697 20.1799 20.9979 20.0481C21.226 19.9163 21.4154 19.7268 21.547 19.4986C21.6786 19.2703 21.7477 19.0115 21.7475 18.748C21.7473 18.4846 21.6777 18.2258 21.5457 17.9978L13.2979 3.74857C13.1662 3.52093 12.9769 3.33193 12.749 3.20055C12.5212 3.06916 12.2628 3 11.9997 3C11.7367 3 11.4783 3.06916 11.2504 3.20055C11.0226 3.33193 10.8333 3.52093 10.7015 3.74857Z" fill="#882929"/>
+                  <path d="M12 10.5V13.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10.7015 3.74857L2.45374 17.9978C2.32177 18.2258 2.25217 18.4846 2.25195 18.748C2.25174 19.0115 2.32091 19.2703 2.4525 19.4986C2.5841 19.7268 2.77348 19.9163 3.0016 20.0481C3.22971 20.1799 3.48851 20.2493 3.75196 20.2493H20.2475C20.5109 20.2493 20.7697 20.1799 20.9979 20.0481C21.226 19.9163 21.4154 19.7268 21.547 19.4986C21.6786 19.2703 21.7477 19.0115 21.7475 18.748C21.7473 18.4846 21.6777 18.2258 21.5457 17.9978L13.2979 3.74857C13.1662 3.52093 12.9769 3.33193 12.749 3.20055C12.5212 3.06916 12.2628 3 11.9997 3C11.7367 3 11.4783 3.06916 11.2504 3.20055C11.0226 3.33193 10.8333 3.52093 10.7015 3.74857V3.74857Z" stroke="#882929" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12 18C12.6213 18 13.125 17.4963 13.125 16.875C13.125 16.2537 12.6213 15.75 12 15.75C11.3787 15.75 10.875 16.2537 10.875 16.875C10.875 17.4963 11.3787 18 12 18Z" fill="white"/>
+                  </svg>                
+                  Write your erorr Label            
+              </a>
+              <div class="close-btn-wrap">
+                <span class="label-content">Label</span>
+                <a class="close-btn" href="">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 6L18.7279 18.7279" stroke="#1D2026" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6.00006 19L18.728 6.27208" stroke="#1D2026" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                  
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="alert-btn-wrap">
+            <div class="alert-btn-item info-alert midium-width mb-4">
+              <a class="alert-btn" href="">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" fill="#1D2026"/>
+                  <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="#1D2026" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M11.25 11.25H12V16.5H12.75" stroke="#F5F7FA" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12 9C12.6213 9 13.125 8.49632 13.125 7.875C13.125 7.25368 12.6213 6.75 12 6.75C11.3787 6.75 10.875 7.25368 10.875 7.875C10.875 8.49632 11.3787 9 12 9Z" fill="#F5F7FA"/>
+                </svg> 
+                Write your info Label               
+              </a>
+              <div class="close-btn-wrap">
+                <a class="close-btn" href="">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 6L18.7279 18.7279" stroke="#1D2026" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6.00006 19L18.728 6.27208" stroke="#1D2026" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                  
+                </a>
+              </div>
+            </div>
+            <div class="alert-btn-item check-alert midium-width mb-4">
+              <a class="alert-btn" href="">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" fill="#15711F" stroke="#15711F" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M16.125 9.75L10.625 15L7.875 12.375" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                 
+                Write your success message Label              
+              </a>
+              <div class="close-btn-wrap">
+                <a class="close-btn" href="">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 6L18.7279 18.7279" stroke="#1D2026" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6.00006 19L18.728 6.27208" stroke="#1D2026" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                  
+                </a>
+              </div>
+            </div>
+            <div class="alert-btn-item warning-octagon-alert midium-width mb-4">
+              <a class="alert-btn" href="">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M15.4173 3H8.58274C8.48425 3 8.38672 3.0194 8.29573 3.05709C8.20473 3.09478 8.12205 3.15003 8.05241 3.21967L3.21967 8.05241C3.15003 8.12205 3.09478 8.20473 3.05709 8.29573C3.0194 8.38672 3 8.48425 3 8.58274V15.4173C3 15.5158 3.0194 15.6133 3.05709 15.7043C3.09478 15.7953 3.15003 15.8779 3.21967 15.9476L8.05241 20.7803C8.12205 20.85 8.20473 20.9052 8.29573 20.9429C8.38672 20.9806 8.48425 21 8.58274 21H15.4173C15.5158 21 15.6133 20.9806 15.7043 20.9429C15.7953 20.9052 15.8779 20.85 15.9476 20.7803L20.7803 15.9476C20.85 15.8779 20.9052 15.7953 20.9429 15.7043C20.9806 15.6133 21 15.5158 21 15.4173V8.58274C21 8.48425 20.9806 8.38672 20.9429 8.29573C20.9052 8.20473 20.85 8.12205 20.7803 8.05241L15.9476 3.21967C15.8779 3.15003 15.7953 3.09478 15.7043 3.05709C15.6133 3.0194 15.5158 3 15.4173 3Z" fill="#65390C"/>
+                  <path d="M12 7.5V12.75" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M15.4173 3H8.58274C8.48425 3 8.38672 3.0194 8.29573 3.05709C8.20473 3.09478 8.12205 3.15003 8.05241 3.21967L3.21967 8.05241C3.15003 8.12205 3.09478 8.20473 3.05709 8.29573C3.0194 8.38672 3 8.48425 3 8.58274V15.4173C3 15.5158 3.0194 15.6133 3.05709 15.7043C3.09478 15.7953 3.15003 15.8779 3.21967 15.9476L8.05241 20.7803C8.12205 20.85 8.20473 20.9052 8.29573 20.9429C8.38672 20.9806 8.48425 21 8.58274 21H15.4173C15.5158 21 15.6133 20.9806 15.7043 20.9429C15.7953 20.9052 15.8779 20.85 15.9476 20.7803L20.7803 15.9476C20.85 15.8779 20.9052 15.7953 20.9429 15.7043C20.9806 15.6133 21 15.5158 21 15.4173V8.58274C21 8.48425 20.9806 8.38672 20.9429 8.29573C20.9052 8.20473 20.85 8.12205 20.7803 8.05241L15.9476 3.21967C15.8779 3.15003 15.7953 3.09478 15.7043 3.05709C15.6133 3.0194 15.5158 3 15.4173 3Z" stroke="#65390C" stroke-width="1.5" stroke-miterlimit="10"/>
+                  <path d="M12 17.25C12.6213 17.25 13.125 16.7463 13.125 16.125C13.125 15.5037 12.6213 15 12 15C11.3787 15 10.875 15.5037 10.875 16.125C10.875 16.7463 11.3787 17.25 12 17.25Z" fill="white"/>
+                  </svg>
+                  Write your warning Label             
+              </a>
+              <div class="close-btn-wrap">
+                <a class="close-btn" href="">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 6L18.7279 18.7279" stroke="#1D2026" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6.00006 19L18.728 6.27208" stroke="#1D2026" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                  
+                </a>
+              </div>
+            </div>
+            <div class="alert-btn-item warning-alert midium-width mb-4">
+              <a class="alert-btn" href="">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M10.7015 3.74857L2.45374 17.9978C2.32177 18.2259 2.25217 18.4846 2.25195 18.748C2.25174 19.0115 2.32091 19.2703 2.4525 19.4986C2.5841 19.7268 2.77348 19.9163 3.0016 20.0481C3.22971 20.1799 3.48851 20.2493 3.75196 20.2493H20.2475C20.511 20.2493 20.7697 20.1799 20.9979 20.0481C21.226 19.9163 21.4154 19.7268 21.547 19.4986C21.6786 19.2703 21.7477 19.0115 21.7475 18.748C21.7473 18.4846 21.6777 18.2258 21.5457 17.9978L13.2979 3.74857C13.1662 3.52093 12.9769 3.33193 12.749 3.20055C12.5212 3.06916 12.2628 3 11.9997 3C11.7367 3 11.4783 3.06916 11.2504 3.20055C11.0226 3.33193 10.8333 3.52093 10.7015 3.74857Z" fill="#882929"/>
+                  <path d="M12 10.5V13.5" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M10.7015 3.74857L2.45374 17.9978C2.32177 18.2258 2.25217 18.4846 2.25195 18.748C2.25174 19.0115 2.32091 19.2703 2.4525 19.4986C2.5841 19.7268 2.77348 19.9163 3.0016 20.0481C3.22971 20.1799 3.48851 20.2493 3.75196 20.2493H20.2475C20.5109 20.2493 20.7697 20.1799 20.9979 20.0481C21.226 19.9163 21.4154 19.7268 21.547 19.4986C21.6786 19.2703 21.7477 19.0115 21.7475 18.748C21.7473 18.4846 21.6777 18.2258 21.5457 17.9978L13.2979 3.74857C13.1662 3.52093 12.9769 3.33193 12.749 3.20055C12.5212 3.06916 12.2628 3 11.9997 3C11.7367 3 11.4783 3.06916 11.2504 3.20055C11.0226 3.33193 10.8333 3.52093 10.7015 3.74857V3.74857Z" stroke="#882929" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                  <path d="M12 18C12.6213 18 13.125 17.4963 13.125 16.875C13.125 16.2537 12.6213 15.75 12 15.75C11.3787 15.75 10.875 16.2537 10.875 16.875C10.875 17.4963 11.3787 18 12 18Z" fill="white"/>
+                  </svg>                
+                  Write your erorr Label            
+              </a>
+              <div class="close-btn-wrap">
+                <a class="close-btn" href="">
+                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6 6L18.7279 18.7279" stroke="#1D2026" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                    <path d="M6.00006 19L18.728 6.27208" stroke="#1D2026" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+                  </svg>                  
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+    </div>
+  </div>
+  <div class="space20"></div>
+
+
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"> </script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
   integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
@@ -3775,39 +4697,226 @@
     var faq_init2 = new faq_init2($('#faq_init2'), false);
   </script>
 
+   <!-- faq 2 -->
+   <script>
+    var faq_init3 = function (el, multiple) {
+      this.el = el || {};
+      this.multiple = multiple || false;
+      var link = this.el.find('.link');
+      link.on('click', {
+        el: this.el,
+        multiple: this.multiple
+      }, this.dropdown)
+    }
+    faq_init3.prototype.dropdown = function (e) {
+      var $el = e.data.el;
+      $this = $(this),
+        $next = $this.next();
+      $next.slideToggle();
+      $this.parent().toggleClass('open');
+      if (!e.data.multiple) {
+        $el.find('.accordion-body-text').not($next).slideUp().parent().removeClass('open');
+      }
+    }
+    var faq_init3 = new faq_init3($('#faq_init3'), false);
+  </script>
 
+<!-- copy text -->
   <script>
     function copytext() {
-      /* Get the text field */
       var copyText = document.getElementById("myInput");
-
-      /* Select the text field */
       copyText.select();
-      copyText.setSelectionRange(0, 99999); /* For mobile devices */
-
-      /* Copy the text inside the text field */
+      copyText.setSelectionRange(0, 99999);
       navigator.clipboard.writeText(copyText.value);
-
     }
-
     function copytexts() {
-      /* Get the text field */
       var copyText = document.getElementById("myInputs");
-
-      /* Select the text field */
       copyText.select();
-      copyText.setSelectionRange(0, 99999); /* For mobile devices */
-
-      /* Copy the text inside the text field */
-      navigator.clipboard.writeText(copyTexts.value);
-
+      copyText.setSelectionRange(0, 99999); 
+      navigator.clipboard.writeText(copyText.p);
     }
+
   </script>
+
   <script>
     $(".rotate").click(function () {
     $(this).toggleClass("rotate-down");
   })
   </script>
+
+
+  <!-- Calendar -->
+  <script>
+var Cal = function(divId) {
+
+//Store div id
+this.divId = divId;
+
+// Days of week, starting on Sunday
+this.DaysOfWeek = [
+  'Sun',
+  'Mon',
+  'Tue',
+  'Wed',
+  'Thu',
+  'Fri',
+  'Sat'
+];
+
+// Months, stating on January
+this.Months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December' ];
+
+// Set the current month, year
+var d = new Date();
+
+this.currMonth = d.getMonth();
+this.currYear = d.getFullYear();
+this.currDay = d.getDate();
+
+};
+
+// Goes to next month
+Cal.prototype.nextMonth = function() {
+if ( this.currMonth == 11 ) {
+  this.currMonth = 0;
+  this.currYear = this.currYear + 1;
+}
+else {
+  this.currMonth = this.currMonth + 1;
+}
+this.showcurr();
+};
+
+// Goes to previous month
+Cal.prototype.previousMonth = function() {
+if ( this.currMonth == 0 ) {
+  this.currMonth = 11;
+  this.currYear = this.currYear - 1;
+}
+else {
+  this.currMonth = this.currMonth - 1;
+}
+this.showcurr();
+};
+
+// Show current month
+Cal.prototype.showcurr = function() {
+this.showMonth(this.currYear, this.currMonth);
+};
+
+// Show month (year, month)
+Cal.prototype.showMonth = function(y, m) {
+
+var d = new Date()
+// First day of the week in the selected month
+, firstDayOfMonth = new Date(y, m, 1).getDay()
+// Last day of the selected month
+, lastDateOfMonth =  new Date(y, m+1, 0).getDate()
+// Last day of the previous month
+, lastDayOfLastMonth = m == 0 ? new Date(y-1, 11, 0).getDate() : new Date(y, m, 0).getDate();
+
+
+var html = '<table>';
+
+// Write selected month and year
+html += '<thead><tr>';
+html += '<td colspan="7">' + this.Months[m] + ' ' + y + '</td>';
+html += '</tr></thead>';
+
+
+// Write the header of the days of the week
+html += '<tr class="days">';
+for(var i=0; i < this.DaysOfWeek.length;i++) {
+  html += '<td>' + this.DaysOfWeek[i] + '</td>';
+}
+html += '</tr>';
+
+// Write the days
+var i=1;
+do {
+
+  var dow = new Date(y, m, i).getDay();
+
+  // If Sunday, start new row
+  if ( dow == 0 ) {
+    html += '<tr>';
+  }
+  // If not Sunday but first day of the month
+  // it will write the last days from the previous month
+  else if ( i == 1 ) {
+    html += '<tr>';
+    var k = lastDayOfLastMonth - firstDayOfMonth+1;
+    for(var j=0; j < firstDayOfMonth; j++) {
+      html += '<td class="not-current">' + k + '</td>';
+      k++;
+    }
+  }
+
+  // Write the current day in the loop
+  var chk = new Date();
+  var chkY = chk.getFullYear();
+  var chkM = chk.getMonth();
+  if (chkY == this.currYear && chkM == this.currMonth && i == this.currDay) {
+    html += '<td class="today">' + i + '</td>';
+  } else {
+    html += '<td class="normal">' + i + '</td>';
+  }
+  // If Saturday, closes the row
+  if ( dow == 6 ) {
+    html += '</tr>';
+  }
+  // If not Saturday, but last day of the selected month
+  // it will write the next few days from the next month
+  else if ( i == lastDateOfMonth ) {
+    var k=1;
+    for(dow; dow < 6; dow++) {
+      html += '<td class="not-current">' + k + '</td>';
+      k++;
+    }
+  }
+
+  i++;
+}while(i <= lastDateOfMonth);
+
+// Closes table
+html += '</table>';
+
+// Write HTML to the div
+document.getElementById(this.divId).innerHTML = html;
+};
+
+// On Load of the window
+window.onload = function() {
+
+// Start calendar
+var c = new Cal("divCal");			
+c.showcurr();
+
+// Bind next and previous button clicks
+getId('btnNext').onclick = function() {
+  c.nextMonth();
+};
+getId('btnPrev').onclick = function() {
+  c.previousMonth();
+};
+}
+
+// Get element by id
+function getId(id) {
+return document.getElementById(id);
+}
+
+  </script>
+
+  <!-- valendar hide and show -->
+  <script>
+    $(".course-search-icon-right").on('click', function(e){
+          event.preventDefault();
+      $(".calendar-wrapper").fadeToggle(100);
+    });
+
+  </script>
+  
 
 </body>
 

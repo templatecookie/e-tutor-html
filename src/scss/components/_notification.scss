@@ -1,8 +1,8 @@
-.notification-section-all {
+.notification-sections {
     padding: 20px;
     background-color: #fff;
 
-    .notification-section {
+    .notification-item {
         display: flex;
         padding-bottom: 12px;
         background-color: #fff;
@@ -12,7 +12,7 @@
                 height: 32px;
                 width: 32px;
                 border-radius: 50%;
-                line-height: 32px;
+                line-height: 29px;
                 text-align: center;
                 background-color: $primary-500;
                 margin-right: 12px;

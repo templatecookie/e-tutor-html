@@ -277,3 +277,43 @@
     }
     
 }
+
+.footer-bottom.footer-three{
+    box-shadow: none;
+    padding: 24px 0;
+    .copywright-text{
+        p{
+            color: #6E7485;
+            a{
+                color: #1D2026;
+            }
+        }
+    }
+    .footer-bottom-menu{
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            li{
+                display: inline-block;
+                margin: 0 10px;
+                &:first-child{
+                    margin-left: 0;
+                }
+                &:last-child{
+                    margin-right: 0;
+                }
+                a{
+                    font-family: "Inter";
+                    font-size: 14px;
+                    letter-spacing: -0.01em;
+                    color: #1D2026;
+                    transition: all 0.4s;
+                    &:hover{
+                        color: #FF6636;
+                    }
+                }
+            }
+        }
+    }
+}
