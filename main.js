@@ -89,39 +89,39 @@ $(".custom-option").on("click", function() {
 });
 
 
-animateDisplay = function(target, animationClass, displayType, timeout) {
-  // timeout should be longer than css transition
-  var doneTimedDisplay = false,
-    displaying = false;
+// animateDisplay = function(target, animationClass, displayType, timeout) {
+//   // timeout should be longer than css transition
+//   var doneTimedDisplay = false,
+//     displaying = false;
 
-  target.addEventListener('transitionend', function() {
-    if (!target.classList.contains('show')) {
-      target.style.display = 'none';
-    }
-    doneTimedDisplay = true;
-  });
-  if (!target.style.display || target.style.display === 'none') {
-    displaying = true;
-    target.style.display = displayType;
-  } else {
-    displaying = false;
-  }
+//   target.addEventListener('transitionend', function() {
+//     if (!target.classList.contains('show')) {
+//       target.style.display = 'none';
+//     }
+//     doneTimedDisplay = true;
+//   });
+//   if (!target.style.display || target.style.display === 'none') {
+//     displaying = true;
+//     target.style.display = displayType;
+//   } else {
+//     displaying = false;
+//   }
 
-  setTimeout(function() {
-    target.classList.toggle(animationClass);
-    doneTimedDisplay = false;
-  }, 10);
+//   setTimeout(function() {
+//     target.classList.toggle(animationClass);
+//     doneTimedDisplay = false;
+//   }, 10);
 
-  if (!displaying) {
-    setTimeout(function() {
-      // failsafe for transitioned not firing
-      if (!doneTimedDisplay) {
-        target.style.display = 'none';
-      }
-      doneTimedDisplay = true;
-    }, timeout);
-  }
-};
+//   if (!displaying) {
+//     setTimeout(function() {
+//       // failsafe for transitioned not firing
+//       if (!doneTimedDisplay) {
+//         target.style.display = 'none';
+//       }
+//       doneTimedDisplay = true;
+//     }, timeout);
+//   }
+// };
 
 
 
@@ -194,11 +194,70 @@ inputRight.addEventListener("mouseup", function() {
 
 
 
-/* 
-    6. Calendar
-======================== */
 
 
+//chart.js
+
+var areachartUserOption_2s = {
+  chart: {
+    height: 250,
+    type: 'area',
+    toolbar: {
+      show: false,
+    },
+  },
+  plotOptions: {
+    area: {
+      fillTo: 'origin',
+    },
+  },
+  dataLabels: {
+    enabled: false,
+  },
+  stroke: { curve: 'smooth', width: 3 },
+  series: [
+    {
+      data: [100, 95, 80, 90, 60, 85, 90],
+    },
+  ],
+  colors: ['#23BD33'],
+
+  tooltip: {
+    theme: 'dark',
+  },
+  grid: {
+    show: false,
+  },
+
+  fill: {
+    type: 'gradient',
+    colors: '#23BD33',
+    gradient: {
+      shadeIntensity: 1,
+      opacityFrom: 0.1,
+      opacityTo: 0.9,
+      stops: [0, 100, 0],
+    },
+  },
+  xaxis: {
+    categories: ['Aug 01', 'Aug 10', 'Aug 20', 'Aug 31'],
+  },
+  padding: {
+    top: 0,
+    right: 0,
+    bottom: 0,
+    left: 0,
+  },
+};
+
+if (document.getElementById('area-chart-user2')) {
+  var chart_area_2 = new ApexCharts(
+    document.querySelector('#area-chart-user2'),
+    areachartUserOption_2s
+  );
+
+  chart_area_2.render();
+}
 
 
 
