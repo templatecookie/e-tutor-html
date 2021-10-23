@@ -278,10 +278,23 @@ a.default-btn {
     letter-spacing: -0.004em;
     text-transform: capitalize;
     color: #FFFFFF;
-    margin: 0 0 20px;
+    transition: all 0.4s;
+    text-align: center;
+    &.icon-btn{
+        svg{
+            margin-left: 10px;
+        }
+    }
+}
+a.default-btn.bg-white{
+    color: #FF6636;
+    background-color: #fff;
 }
 a.default-btn.bg-orange{
     background: #FF6636;
+    &:hover{
+        background-color: #CC522B;
+    }
 }
 a.default-btn.btn-small{
     padding: 0 16px;
@@ -297,6 +310,11 @@ a.default-btn.btn-large{
     padding: 0 32px;
     font-size: 18px;
     line-height: 56px;
+    @include mq('phone-wide', max) {
+        padding: 0 25px;
+        font-size: 16px;
+        line-height: 50px;
+    }
 }
 
 a.default-btn.bg-tuscany{

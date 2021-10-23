@@ -2,18 +2,6 @@
 import './src/scss/main.scss'
 
 
-//menu js
-
-$(".menu-bar").on("click", function () {
-  $(".offcanves-menu, .offcanvas-overlay").addClass("active");
-});
-$(".close, .offcanvas-overlay").on("click", function () {
-   $(".offcanves-menu, .offcanvas-overlay").removeClass("active");
-});
-
-// End menu
-
-
 $(".accordion .accordion-head").click(function () {
     if ($(this).next("div").is(":visible")) {
         $(this).next("div").slideUp("normal");
@@ -224,7 +212,7 @@ var areachartUserOption_2s = {
     },
   },
   dataLabels: {
-    enabled: true,
+    enabled: false,
   },
   stroke: { curve: 'smooth', width: 3 },
   series: [

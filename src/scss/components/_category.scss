@@ -2,7 +2,7 @@
     display: flex;
     background-color: #EBEBFF;
     padding: 20px;
-    margin: 8px 0;
+    margin-bottom: 24px;
     transition: .5s;
 
     &:hover {
@@ -50,6 +50,7 @@
             color: #1D2026;
             margin: 0;
             display: block;
+            margin-bottom: 5px;
         }
 
         span {
@@ -60,6 +61,24 @@
             color: #6E7485;
             margin-top: 8px;
 
+        }
+    }
+}
+
+.icon-bottom-btn {
+    text-align: center;
+    p{
+        font-family: "Inter";
+        font-size: 14px;
+        letter-spacing: -0.01em;
+        color: #4E5566;
+        a{
+            color: #FF6636;
+            font-weight: 500;
+            margin-left: 10px;
+            svg{
+                margin-left: 5px;
+            }
         }
     }
 }

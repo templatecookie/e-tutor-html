@@ -93,6 +93,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  box-shadow: inset 0px -1px 0px #E9EAF0;
   @include mq('desktop', max) {
     display: none;
   }
@@ -359,11 +360,13 @@
   width: 300px;
   background: #ffffff;
   height: 100%;
-  position: absolute;
+  position: fixed;
   z-index: 111;
   margin-left: -300px;
   transition: .5s;
   padding-right: 0px;
+  height: 100vh;
+  overflow-y: scroll;
   ul{
     margin: 0 0 26px;
     padding: 0;
