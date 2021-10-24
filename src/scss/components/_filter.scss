@@ -29,6 +29,12 @@
     color: #1D2026;
     display: flex;
     align-items: center;
+    &.color-red{
+        color: #FF6636;
+        path{
+            stroke: #FF6636;
+        }
+    }
     @include mq('phone-wide', max) {
         width: 100%;
         text-align: center;
