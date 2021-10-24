@@ -145,6 +145,12 @@
     transition: all 0.4s;
     opacity: 0;
     visibility: hidden;
+    @include mq('desktop-wide', max) {
+        width: calc(100% + 65px);
+    }
+    @include mq('desktop', max) {
+        width: 100%;
+    }
     .feature-course-right-content{
         padding: 20px;
     }
@@ -159,6 +165,9 @@
         line-height: 24px;
         color: #1D2026;
         margin-bottom: 15px;
+        @include mq('desktop-wide', max) {
+            font-size: 16px;
+        }
     }
     .feature-course-mid{
         margin-bottom: 20px;
@@ -264,6 +273,9 @@
     }
     .hover-footesection {
         padding: 20px 20px 30px;
+        @include mq('desktop', max) {
+            padding: 20px 20px 10px;
+        }
         a.default-btn{
             margin-bottom: 12px;
             svg{
@@ -445,11 +457,17 @@
     a{
         display: block;
     }
+    @include mq('desktop-wide', max) {
+        flex: 0 0 23.9%;
+    }
+    @include mq('desktop', max) {
+        flex: 0 0 32.1%;
+    }
     @include mq('tablet', max) {
-        flex: 0 0 31.5%;
+        flex: 0 0 48.7%;
     }
     @include mq('tablet-small', max) {
-        flex: 0 0 48.5%;
+        flex: 0 0 48.3%;
     }
 
     &-card {
@@ -467,7 +485,7 @@
         &-img {
             overflow: hidden;
             height: 182px;
-            @include mq('tablet-small', max) {
+            @include mq('tablet', max) {
                 height: auto!important;
             }
         }
@@ -572,9 +590,14 @@ button.course-item-5-card-info-tag{
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    @include mq('phone-wide', max) {
+    @include mq('desktop-wide', max) {
+        justify-content: inherit;
+        column-gap: 14.9px;
+    }
+    @include mq('tablet-small', max) {
         display: block;
     }
+    
 }
 
 .feature-course-section {
