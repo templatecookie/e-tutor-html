@@ -14,6 +14,7 @@ $(".close, .offcanvas-overlay").on("click", function () {
 // End menu
 
 
+
 $(".accordion .accordion-head").click(function () {
     if ($(this).next("div").is(":visible")) {
         $(this).next("div").slideUp("normal");

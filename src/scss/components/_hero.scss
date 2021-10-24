@@ -4,6 +4,12 @@
         padding: 60px 0;
     }
 }
+.section-padding-bottom{
+    padding-bottom: 80px;
+    @include mq('tablet-small', max) {
+        padding-bottom: 60px;
+    }
+}
 .section-title {
     text-align: center;
     margin-bottom: 40px;
