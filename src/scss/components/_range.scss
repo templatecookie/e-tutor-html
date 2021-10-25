@@ -1,13 +1,12 @@
 .range-middle {
     position: relative;
-    width: 80%;
-    max-width: 272px;
+    width: 100%;
+    max-width: 100%;
 
     .slider {
         position: relative;
         z-index: 1;
         height: 6px;
-        margin: 0 15px;
     }
 
     .slider>.track {
@@ -95,5 +94,24 @@
         color: #000;
         text-decoration: none;
         font-size: 12px;
+    }
+}
+
+.price-field-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin: 24px 0;
+    .default-input-field {
+        flex: 0 0 48%;
+        position: relative;
+        input{
+            padding: 10px 20px 10px 35px;
+        }
+        .dollar {
+            color: #1D2026;
+            position: absolute;
+            top: 13px;
+            left: 20px;
+        }
     }
 }
