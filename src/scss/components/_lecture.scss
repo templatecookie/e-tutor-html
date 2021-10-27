@@ -12,6 +12,10 @@
     .accordion-header-content {
         font-size: 16px;
         color: #1D2026;
+        font-weight: 500;
+        @include mq('phone-wide', max) {
+            font-size: 15px;
+          }
         svg{
             margin-right: 7px;
             transition: all 0.4s;

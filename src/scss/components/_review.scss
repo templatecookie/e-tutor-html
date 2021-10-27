@@ -1,6 +1,12 @@
 .review-item {
     display: flex;
     margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #E9EAF0;
+    &:last-child{
+        border-bottom: 0;
+    }
+
     .review-thumb{
         width: 40px;
         height: 40px;
