@@ -285,6 +285,11 @@ a.default-btn {
             margin-left: 10px;
         }
     }
+    &.icon-btn-left{
+        svg{
+            margin-right: 10px;
+        }
+    }
 }
 a.default-btn.bg-white{
     color: #FF6636;

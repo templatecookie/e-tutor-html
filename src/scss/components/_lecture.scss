@@ -68,6 +68,7 @@
         background: #FFEEE8;
         label.form-check-label {
             color: #1D2026;
+            font-weight: 500;
         }
         .form-check-input {
             border: 1px solid #FF6636 !important;
@@ -95,6 +96,8 @@
         font-size: 14px;
         letter-spacing: -0.01em;
         color: #4E5566;
+        font-family: "Inter";
+
     }
     input[type=checkbox]:checked + .form-check-label {
         color: #4E5566;
