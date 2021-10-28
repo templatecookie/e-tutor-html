@@ -1,5 +1,11 @@
+.student-profile-section {
+    margin-top: -200px;
+    padding-bottom: 40px;
+}
+
 .student-profile-wrap {
     border: 1px solid #FFDDD1;
+    background-color: #fff;
     .student-profile-header {
         padding: 40px;
         display: flex;
@@ -8,6 +14,7 @@
         border-bottom: 1px solid #FFDDD1;
         @include mq('phone-wide', max) {
             padding: 17px;
+            text-align: center;
          }
         @include mq('tablet', max) {
             display: block;
@@ -29,7 +36,7 @@
                 margin-right: 24px;
                 flex: 0 0 auto;
                 @include mq('phone-wide', max) {
-                   margin: 0 0 15px;
+                   margin: 0 auto 15px;
                  }
                 img{
                     width: 100%;
@@ -98,6 +105,7 @@
         justify-content: space-between;
         @include mq('tablet', max) {
             display: block;
+            text-align: center;
           }
         li{
             display: inline-block;

@@ -1,0 +1,214 @@
+.student-breadcrumb {
+    height: 280px;
+    width: 100%;
+    background: #FFEEE8;
+}
+
+.student-title{
+    margin-bottom: 24px;
+    h2{
+        font-family: "Inter";
+        font-weight: 600;
+        font-size: 24px;
+        letter-spacing: -0.01em;
+        color: #1D2026;
+        margin: 0;
+    }
+}
+
+.lecture-slider .owl-nav {
+    position: absolute;
+    top: -64px;
+    right: -3px;
+}
+.lecture-slider .owl-next, 
+.lecture-slider .owl-prev{
+    width: 40px;
+    height: 40px;
+    left: 48px;
+    line-height: 40px;
+    margin: 0 4px;
+    background: #FFEEE8!important;
+}
+
+label{
+    float: none;
+}
+label.student-lebel {
+    float: none;
+    font-family: "Inter";
+    font-size: 12px;
+    line-height: 16px;
+    color: #6E7485;
+    display: block;
+    margin-bottom: 5px;
+}
+.student-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 40px;
+    justify-content: space-between;
+    @include mq('tablet', max) {
+        display: block;
+      }
+}
+.searchbox.student-search {
+    flex: 0 0 40%;
+    @include mq('tablet', max) {
+        margin-bottom: 20px;
+      }
+    input {
+        background-color: transparent;
+        border: 1px solid #E9EAF0;
+    }
+    .dashboard-search-icon{
+        top: 32px;
+    }
+}
+.student-header-dropdwon-wrap {
+    flex: 0 0 58%;
+    display: flex;
+    justify-content: space-between;
+    @include mq('tablet-small', max) {
+        display: block;
+      }
+    .student-header-dropdwon-item {
+        flex: 0 0 31%;
+        @include mq('tablet-small', max) {
+            margin-bottom: 20px;
+            &:last-child{
+                margin: 0;
+            }
+          }
+        .custom-select-trigger{
+            margin: 0;
+            border: 1px solid #E9EAF0;
+            line-height: 48px;
+            padding: 0 18px;
+            color: #4E5566;
+            font-size: 16px;
+            &::after{
+                border-bottom: 2px solid  #1D2026;
+                border-right: 2px solid  #1D2026;
+            }
+        }
+        .custom-select{
+            display: block;
+        }
+        .custom-select-wrapper{
+            display: block;
+        }
+    }
+}
+
+
+// student course page
+.course-student-column {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    @include mq('tablet', max) {
+        display: block;
+      }
+    .course-column4{
+        flex: 0 0 23.5%;
+        margin-bottom: 24px;
+        @include mq('desktop-wide', max) {
+            flex: 0 0 32%;
+          }
+          @include mq('desktop', max) {
+            flex: 0 0 48%;
+          }
+    }
+}
+
+.course-lecture.course-column4.tablet{
+    display: none;
+    @include mq('desktop-wide', max) {
+        display: block;
+      }
+}
+
+// student instrocutor
+.student-instructor-section{
+    .course-item-5{
+        margin-bottom: 24px;
+    }
+}
+.course-item-5-card-img.team-thumb-instructor {
+    height: 312px;
+}
+.course-lecture-footer.student-instructor {
+    padding: 0 15px 14px;
+}
+
+
+// student wishost
+
+.wishlist-body-text, .shopping-body-text {
+    .wishlist-body-bottom, .shopping-body-bottom{
+        border: 1px solid #E9EAF0;
+        
+        .faq-review-wrap {
+            padding: 24px;
+            .faq-review-item{
+                border-bottom: 1px solid #E9EAF0!important;
+                &:last-child{
+                    border-bottom: 0 !important;
+                    padding-bottom: 0;
+                }
+                .faq-review-thumb{
+                    width: 160px;
+                    height: 120px!important;
+                    overflow: hidden;
+                    @include mq('tablet', max) {
+                        margin-right: 0;
+                        margin: 0 auto 20px;
+                        width: 100%;
+                        height: auto!important;
+                      }
+                    img{
+                        object-fit: cover;
+                    }
+                }
+            }
+        }
+    } 
+}
+
+.student-wishist-header {
+    border-bottom: 1px solid #E9EAF0;
+    padding: 20px 24px;
+    display: flex;
+    @include mq('tablet', max) {
+        justify-content: space-between;
+      }
+    p{
+        font-family: "Inter";
+        font-weight: 500;
+        font-size: 14px;
+        text-transform: uppercase;
+        color: #4E5566;
+    }
+    p.one {
+        flex: 0 0 46.6%;
+        @include mq('tablet', max) {
+            flex: 0 0 auto;
+        }
+    }
+    p.two {
+        flex: 0 0 19.5%;
+        @include mq('tablet', max) {
+            flex: 0 0 auto;
+        }
+    }
+}
+
+.student-wishist-header.student-shopping-header{
+    p.one {
+        flex: 0 0 63.6%;
+        @include mq('tablet', max) {
+            flex: 0 0 auto;
+        }
+    }
+}

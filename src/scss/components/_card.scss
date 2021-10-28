@@ -288,17 +288,21 @@
 
 
 .course-item-4-footer {
-    transition: .5s;
+    transition: .4s;
 }
 
 
 .course-lecture {
-    box-shadow: inset 0px -1px 0px #E9EAF0;
+    // box-shadow: inset 0px -1px 0px #E9EAF0;
     background-color: #fff;
     position: relative;
-    transition: .5s;
-
+    transition: 0.4s;
+    border: 1px solid #E9EAF0;
     &-img {
+        height: 220px;
+        @include mq('tablet-small', max) {
+            height: auto;
+        }
         a {
             height: 100%;
             width: 100%;
@@ -353,11 +357,11 @@
 }
 
 .course-lecture-watched {
-    box-shadow: inset 0px -1px 0px #E9EAF0;
+    // box-shadow: inset 0px -1px 0px #E9EAF0;
     background-color: #fff;
-    transition: 5s;
+    transition: 0.4s;
     position: relative;
-
+    border: 1px solid #E9EAF0;
     &-img {
         a {
             height: 100%;
@@ -423,10 +427,12 @@
 }
 
 .course-lecture-watched:hover {
+    border: 1px solid transparent;
     box-shadow: 0px 12px 48px rgba(29, 32, 38, 0.12);
 }
 
 .course-lecture:hover {
+    border: 1px solid transparent;
     box-shadow: 0px 12px 48px rgba(29, 32, 38, 0.12);
 }
 
@@ -1422,3 +1428,4 @@ button.course-item-5-card-info-tag{
 .course-item-5-card-img.team-thumb {
     height: 244px;
 }
+
