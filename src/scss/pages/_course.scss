@@ -73,6 +73,9 @@
     border: 1px solid #E9EAF0;
     box-sizing: border-box;
     box-shadow: 0px 6px 16px rgb(0 0 0 / 6%);
+    @include mq('desktop', max) {
+        margin-top: 40px;
+     }
 }
 .course-right-sidebar-row {
     border-bottom: 1px solid #E9EAF0;
@@ -367,7 +370,6 @@ h4.course-sidebar-title{
         font-weight: 600;
         font-size: 24px;
         line-height: 32px;
-        margin: 0;
         letter-spacing: -0.01em;
     }
 }
@@ -415,7 +417,17 @@ h4.course-sidebar-title{
     }
 }
 
-
+.accordion-wrap-faq.lecture-wrap.course-watch .link{
+    @include mq('desktop-wide', max) {
+        display: block;
+     }
+     @include mq('desktop', max) {
+        display: flex;
+     }
+     @include mq('tablet-small', max) {
+        display: block;
+     }
+}
 .course-curriculum-section{
     margin-bottom: 40px;
     .accordion-wrap-faq.lecture-wrap .link{
@@ -425,6 +437,7 @@ h4.course-sidebar-title{
         background-color: transparent;
         border: 1px solid #E9EAF0;
         border-bottom: 1px solid #fff;
+        
     }
     .lectue-body-item{
         padding: 7px 20px;
@@ -460,11 +473,18 @@ h4.course-sidebar-title{
     border: 1px solid #E9EAF0;
     padding: 32px;
     margin-bottom: 20px;
+    @include mq('phone-wide', max) {
+       padding: 20px;
+     }
     .profile-left{
         align-items: flex-start;
         .profile-thumb{
             width: 136px;
             height: 136px;
+            @include mq('phone-wide', max) {
+                height: 110px;
+                width: 110px;
+              }
         }
         .profile-data{
             p{
@@ -702,6 +722,9 @@ align-items: flex-start;
 }
 .course-content-area{
     margin-bottom: 24px;
+    @include mq('desktop', max) {
+        margin-top: 40px;
+     }
     .course-content{
         display: flex;
         align-items: center;
@@ -739,6 +762,14 @@ align-items: flex-start;
     iframe{
         width: 100%;
         height: 690px;
+        @include mq('desktop-wide', max) {
+            height: 500px;
+         }
+         
+         @include mq('tablet-small', max) {
+            height: 300px;
+         }
+    
     }
 }
 
@@ -747,9 +778,15 @@ align-items: flex-start;
     border-bottom: 1px solid #E9EAF0;
     .withdrew-money-card-mid{
         margin: 0;
+        @include mq('phone-wide', max) {
+            display: block;
+         }
     }
     .withdrew-money-card-mid-inner{
         align-items: center;
+        @include mq('phone-wide', max) {
+            margin-bottom: 15px;
+         }
     }
     .withdrew-money-card-mid {
         img{
@@ -787,9 +824,22 @@ align-items: flex-start;
 .student-profile-menu.course-watch {
     border-bottom: 1px solid #E9EAF0;
     ul{
+        @include mq('tablet-small', max) {
+            display: block;
+         }
         li{
+            @include mq('tablet-small', max) {
+                display: block;
+             }
             a{
                 padding: 20px 30px;
+                @include mq('desktop-wide', max) {
+                    padding: 20px 0;
+                    font-size: 15px;
+                 }
+                 @include mq('desktop', max) {
+                    padding: 15px;
+                 }
             }
         }
     }

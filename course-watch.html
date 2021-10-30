@@ -337,12 +337,12 @@
                        </div>
                         <div class="student-profile-menu course-watch">
                             <ul>
-                              <li><a class="active" href="#overview">Description</a></li>
-                              <li><a href="#curriculum">Lectures Notes</a></li>
-                              <li><a href="#instructor">Attach File</a></li>
-                              <li><a href="#review">Comments</a></li>
-                              <li><a href="#review">Course Overview</a></li>
-                              <li><a href="#review">Course Instructor</a></li>
+                              <li><a class="active" href="#description">Description</a></li>
+                              <li><a href="#lectures">Lectures Notes</a></li>
+                              <li><a href="#attach">Attach File</a></li>
+                              <li><a href="#comment">Comments</a></li>
+                              <li><a href="#overview">Course Overview</a></li>
+                              <li><a href="#instructor">Course Instructor</a></li>
                               <li><a href="#review">Review</a></li>
                             </ul>
                         </div>
@@ -354,7 +354,7 @@
                                 <p>We cover everything you need to build your first website. From creating your first page through to uploading your website to the internet. We’ll use the world’s most popular (and free) web design tool called Visual Studio Code. There are exercise files you can download and then work along with me. At the end of each video I have a downloadable version of where we are in the process so that you can compare your project with mine. This will enable you to see easily where you might have a problem. We will delve into all the good stuff such as how to create your very own mobile burger menu from scratch learning some basic JavaScript and jQuery.</p>
                                 <p>If that all sounds a little too fancy - don’t worry, this course is aimed at people new to web design and who have never coded before. We’ll start right at the beginning and work our way through step by step. </p>
                             </div>
-                            <div class="overview-description">
+                            <div id="lectures" class="overview-description">
                                 <div class="course-single-title">
                                     <h3>Lecture Notes</h3>
                                     <a class="default-btn btn-medium bg-pink icon-btn-left" href="">
@@ -379,7 +379,7 @@
                                 </div>
                                 <p>Donec congue aliquam lorem nec congue. Suspendisse eu risus mattis, interdum ante sed, fringilla urna. Praesent mattis dictum sapien a lacinia. Ut scelerisque magna aliquet, <strong>blandit arcu quis</strong> , consequat purus. Suspendisse eget scelerisque felis. Integer vulputate urna laoreet purus vehicula condimentum. Donec quis luctus quam. Curabitur quis molestie ante. Nam pharetra sagittis varius. Sed ullamcorper facilisis bibendum. </p>
                             </div>
-                            <div class="course-attach-file">
+                            <div id="attach" class="course-attach-file">
                                 <div class="course-single-title">
                                     <h3>Attach Files (01)</h3>
                                 </div>
@@ -401,8 +401,7 @@
                                     </div>
                                  </div>
                             </div>
-
-                            <div class="student-comment-section">
+                            <div id="comment" class="student-comment-section">
                               <div class="course-single-title">
                                   <h3>Students Feedback</h3>
                                </div>
@@ -591,9 +590,7 @@
                                     </svg>
                               </a>
                            </div>
-
-
-                            <div class="overview-description">
+                            <div id="description" class="overview-description">
                                 <div class="course-single-title">
                                     <h3>Description</h3>
                                 </div>
@@ -603,7 +600,7 @@
                                 <p>For example, this is a Design course but I don't teach you Photoshop. Because Photoshop is needlessly complicated for Web Design. But people still teach it to web designers. I don't. I teach Figma – a simple tool that is taking over the design world. You will be designing a complete website within a week while others are still learning how to create basic layouts in Photoshop.</p>
                                 <p>Second, this is a Development course. But I don't teach you how to code. Because for Web Design coding is needlessly complicated and takes too long to learn. Instead, I teach Webflow – a tool that is taking over the web design world. You will be building complex websites within two weeks while others are still learning the basics of HTML & CSS. Third, this is a Freelancing course. But I don't just teach you how to write great proposals. I give you a winning proposal template. When you're done with the course, you will have a stunning portfolio website with portfolio pieces already in it. Buy this course now and take it whenever the time is right for you.</p>
                             </div>
-                            <div class="course-learn-section">
+                            <div id="overview" class="course-learn-section">
                                 <div class="course-single-title">
                                     <h3>What you will learn in this course</h3>
                                 </div>
@@ -845,7 +842,7 @@
                                     </div>
                                  </div>
                              </div>
-                             <div class="course-ratting-section">
+                             <div id="review" class="course-ratting-section">
                                 <div class="course-single-title">
                                     <h3>Course Reting</h3>
                                  </div>
@@ -1373,7 +1370,7 @@
                             <div class="course-progress-green"></div>
                         </div>
                     </div>
-                    <div class="accordion-wrap-faq lecture-wrap" id="faq_init3">
+                    <div class="accordion-wrap-faq lecture-wrap course-watch" id="faq_init3">
                         <div class="accordion__list2 open">
                            <div class="link">
                               <div class="accordion-header-content">

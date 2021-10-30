@@ -110,6 +110,9 @@
 }
 
 .sub-heading-meta{
+    @include mq('desktop-wide', max) {
+        margin-top: 10px;
+     }
     ul{
         margin: 0;
         padding: 0;
