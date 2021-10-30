@@ -448,6 +448,9 @@
 
             .faq-review-item:hover {
                 .cross-btn-shopping {
+                    @include mq('tablet', max) {
+                        margin-bottom: 20px;
+                     }
                     svg {
                         path {
                             stroke: #333;
@@ -456,7 +459,11 @@
                 }
 
             }
-
+            .cross-btn-shopping {
+                @include mq('tablet', max) {
+                    margin-bottom: 15px;
+                 }
+                }
             .faq-review-item:hover .move-to-wishlist a {
                 background-color: $primary-100;
                 color: $primary-600;
@@ -781,7 +788,17 @@
         }
     }
 }
-
+p.emoji-content {
+    font-family: "Inter";
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #1D2026;
+    margin-top: 35px;
+    svg{
+        margin-left: 10px;
+    }
+}
 
 .accordion-wrap-faq {
     .accordion-body-text {

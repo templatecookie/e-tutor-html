@@ -271,7 +271,8 @@ select {
     text-align: center;
     margin: 0 7px;
 }
-a.default-btn {
+a.default-btn, 
+button.default-btn {
     display: inline-block;
     font-family: "Inter";
     font-weight: 600;
@@ -280,6 +281,7 @@ a.default-btn {
     color: #FFFFFF;
     transition: all 0.4s;
     text-align: center;
+    border: navajowhite;
     &.icon-btn{
         svg{
             margin-left: 10px;
@@ -299,23 +301,27 @@ a.default-btn.bg-white{
     color: #FF6636;
     background-color: #fff;
 }
-a.default-btn.bg-orange{
+a.default-btn.bg-orange, 
+button.default-btn.bg-orange{
     background: #FF6636;
     &:hover{
         background-color: #CC522B;
     }
 }
-a.default-btn.btn-small{
+a.default-btn.btn-small, 
+button.default-btn.btn-small{
     padding: 0 16px;
     font-size: 14px;
     line-height: 40px;
 }
-a.default-btn.btn-medium{
+a.default-btn.btn-medium, 
+button.default-btn.btn-medium{
     padding: 0 24px;
     font-size: 16px;
     line-height: 48px;
 }
-a.default-btn.btn-large{
+a.default-btn.btn-large, 
+button.default-btn.btn-large{
     padding: 0 32px;
     font-size: 18px;
     line-height: 56px;

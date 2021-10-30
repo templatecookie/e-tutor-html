@@ -1,0 +1,86 @@
+.contact-us-section{
+    @include mq('tablet', max) {
+        padding-top: 60px;
+     }
+}
+
+.about-content.contact-content{
+    p{
+        font-size: 18px;
+        line-height: 24px;
+    }
+   
+}
+
+.section-title{
+    p{
+        font-family: "Inter";
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: -0.015em;
+        color: #4E5566;
+    }
+}
+
+.branches-wrap{
+    @include mq('desktop', max) {
+        margin-bottom: 24px;
+     }
+}
+.branches-thumb {
+    height: 364px;
+    position: relative;
+    @include mq('desktop', max) {
+        height: 450px;
+     }
+     @include mq('tablet-small', max) {
+        height: auto;
+     }
+    img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+.branches-data {
+    text-align: center;
+    background-color: #fff;
+    padding: 0px 31px 16px 31px;
+    position: absolute;
+    bottom: 24px;
+    width: calc(100% - 48px);
+    margin-left: 24px;
+    transition: all 0.4s;
+    &:hover{
+        padding: 16px 31px 16px 31px;
+    }
+    h5{
+        font-family: "Inter";
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 12px;
+        text-transform: uppercase;
+        color: #FF6636;
+        transition: all 0.4s;
+        opacity: 0;
+        margin: 0 0 3px;
+    }
+    &:hover h5{
+        opacity: 1;
+    }
+    h4{
+        font-family: "Inter";
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 22px;
+        color: #1D2026;
+    }
+    p{
+        font-family: "Inter";
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: -0.01em;
+        color: #6E7485;
+    }
+}
