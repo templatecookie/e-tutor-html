@@ -1,10 +1,10 @@
 .student-profile-section {
     margin-top: -200px;
-    padding-bottom: 40px;
 }
 
 .student-profile-wrap {
     border: 1px solid #FFDDD1;
+    border-bottom: none;
     background-color: #fff;
     .student-profile-header {
         padding: 40px;
@@ -149,10 +149,53 @@
             a.active{
                 color: #1D2026;
             }
-            a.active{
-                &:before{
-                    width: 100%;
-                }
+        }
+    }
+}
+
+.student-tabs-wrap{
+    .nav{
+        justify-content: space-between;
+        border: 1px solid #FFDDD1;
+        border-top: none;
+        background-color: #fff;
+        margin-bottom: 40px;
+        @include mq('tablet', max) {
+            display: block;
+            text-align: center;
+          }
+    }
+    .nav-pills .nav-link{
+        font-family: "Inter";
+        font-weight: 500;
+        font-size: 16px;
+        color: #4E5566;
+        position: relative;
+        transition: all 0.4s;
+        padding: 20px 38px;
+        margin: 0 auto;
+        border-radius: 0;
+        @include mq('desktop-wide', max) {
+            padding: 20px 25px;
+        }
+        @include mq('desktop', max) {
+            padding: 20px 18px;
+        }
+        @include mq('tablet', max) {
+            padding: 15px;
+          }
+        &.active{
+           color: #1D2026;
+           background-color: transparent; 
+            &::before{
+                content: "";
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 3px;
+                transition: all 0.4s;
+                position: absolute;
+                background-color: #FF6636;
             }
         }
     }

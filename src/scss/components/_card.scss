@@ -14,11 +14,13 @@
         .course-item-4-card-img {
             transition: .5s;
             overflow: hidden;
+            height: 228px;
 
             img {
                 height: 100%;
                 width: 100%;
                 transition: .5s;
+                object-fit: cover;
 
             }
         }
@@ -303,16 +305,15 @@
         @include mq('tablet-small', max) {
             height: auto;
         }
-        a {
+        a{
+            display: block;
+        }
+        img {
             height: 100%;
             width: 100%;
-
-            img {
-                height: 100%;
-                width: 100%;
-            }
-
+            object-fit: cover;
         }
+
     }
 
     .all-title {
@@ -324,6 +325,7 @@
         font-size: 12px;
         line-height: 16px;
         color: #6E7485;
+        margin-bottom: 10px;
     }
 
     .title-link-no {
@@ -355,6 +357,9 @@
     }
 
 }
+a.course-lecture-img{
+    display: block;
+}
 
 .course-lecture-watched {
     // box-shadow: inset 0px -1px 0px #E9EAF0;
@@ -384,6 +389,7 @@
         font-size: 12px;
         line-height: 16px;
         color: #6E7485;
+        margin-bottom: 10px;
     }
 
     .title-link-no {

@@ -275,7 +275,33 @@ if (document.getElementById('area-chart-user2')) {
 
  //image uploade
 
+const filterToggle = document.querySelector('#filter');
 
+if (filterToggle) {
+
+  filterToggle.addEventListener('click', function () {
+    const sidebar = document.querySelector('.shop-content .col-lg-3');
+    const productGallery = document.querySelector('.shop-content .col-lg-9');
+    const productContent = document.querySelectorAll(
+      '.shop__product-items .col-md-6'
+    );
+
+    sidebar.classList.toggle('d-none');
+    productGallery.classList.toggle('col-lg-12');
+
+    // it's will be on 4 column
+    productContent.forEach((item) => {
+      if (item.classList.contains('col-xl-4')) {
+        item.classList.add('col-xl-3');
+        item.classList.remove('col-xl-4');
+      } else if (item.classList.contains('col-xl-3')) {
+        item.classList.add('col-xl-4');
+        item.classList.remove('col-xl-3');
+      }
+    });
+  });
+  
+}
 
 
 
