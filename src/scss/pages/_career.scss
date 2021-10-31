@@ -1,0 +1,112 @@
+.join-team-section {
+    background: #F5F7FA;
+}
+.join-team-thumb-wrap{
+    display: flex;
+    @include mq('tablet', max) {
+        justify-content: center;
+        margin-bottom: 30px;
+     }
+     @include mq('phone-wide', max) {
+        display: block;
+     }
+    .join-team-thumb{
+        margin-right: 24px;
+        @include mq('phone-wide', max) {
+            margin: 0 0 20px;
+         }
+        &:last-child{
+            margin: 0;
+        }
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        &:nth-child(1){
+            width: 200px;
+            height: 425px;
+            @include mq('phone-wide', max) {
+                width: 100%;
+                height: auto;
+             }
+        }
+        &:nth-child(2){
+            width: 200px;
+            height: 521.83px;
+            @include mq('phone-wide', max) {
+                width: 100%;
+                height: auto;
+             }
+        }
+        &:nth-child(3){
+            width: 200px;
+            height: 448px;
+            margin-top: 74px;
+            @include mq('phone-wide', max) {
+                width: 100%;
+                height: auto;
+                margin: 0;
+             }
+        }
+    }
+    
+}
+
+.join-team-content{
+    @include mq('desktop', max) {
+        margin-left: 30px;
+     }
+    h2{
+        font-family: "Inter";
+        font-weight: 600;
+        font-size: 40px;
+        line-height: 48px;
+        letter-spacing: -0.01em;
+        color: #1D2026;
+        margin-bottom: 24px;
+        @include mq('desktop-wide', max) {
+            font-size: 36px;
+            line-height: 40px;
+            margin-bottom: 20px;
+         } 
+         @include mq('tablet-small', max) {
+            font-size: 30px;
+         }   
+    }
+    p{
+        font-family: "Inter";
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: -0.015em;
+        color: #4E5566;
+    }
+    .checkbox-field{
+        ul{
+            margin-top: 40px;
+            @include mq('desktop-wide', max) {
+                margin-top: 30px;
+             } 
+            li{
+                padding: 30px;
+                margin-bottom: 32px;
+                padding-left: 75px;
+                background-color: #fff;
+                svg{
+                    left: 30px;
+                    width: 30px;
+                    height: 30px;
+                }
+                span{
+                    font-family: "Inter";
+                    font-weight: 500;
+                    font-size: 16px;
+                    line-height: 22px;
+                    color: #1D2026;
+                    display: block;
+                    margin-bottom: 10px;
+                }
+            }
+        }
+    }
+}
