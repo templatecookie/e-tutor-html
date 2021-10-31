@@ -157,20 +157,6 @@ label.student-lebel {
                     border-bottom: 0 !important;
                     padding-bottom: 0;
                 }
-                .faq-review-thumb{
-                    width: 160px;
-                    height: 120px!important;
-                    overflow: hidden;
-                    @include mq('tablet', max) {
-                        margin-right: 0;
-                        margin: 0 auto 20px;
-                        width: 100%;
-                        height: auto!important;
-                      }
-                    img{
-                        object-fit: cover;
-                    }
-                }
             }
         }
     } 
