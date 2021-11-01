@@ -1,116 +1,113 @@
-.social-icon{
-    margin-top: 16px;
-    ul{
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        li{
-            margin: 0 2px;
-            display: inline-block;
-            &:first-child{
-                margin-left: 0;
-            }
-            &:last-child{
-                margin-right: 0;
-            }
-            a{
-                width: 48px;
-                height: 48px;
-                background: #F5F7FA;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                transition: all 0.4s;
-                font-family: "Inter";
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 20px;
-                letter-spacing: -0.01em;
-                color: #4E5566;
-                &:hover{
-                    color: #fff;
-                }
+.social-icon {
+  margin-top: 16px;
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      margin: 0 2px;
+      display: inline-block;
+      &:first-child {
+        margin-left: 0;
+      }
+      &:last-child {
+        margin-right: 0;
+      }
+      a {
+        width: 48px;
+        height: 48px;
+        background: #f5f7fa;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.4s;
 
-                @include mq('phone-wide', max) {
-                    width: 42px;
-                    height: 42px;
-                }
-                &:hover{
-                    background-color: #FF6636;
-                }
-                
-            svg{
-                transition: all 0.4s;
-            }
-            path{
-                transition: all 0.4s;
-            }
-            &:hover{
-                  path{
-                      fill: #fff;
-                  }
-              }
-              &:hover{
-                  path.youtube{
-                      fill: #272B33;
-                  }
-              }
-              
-            }
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: -0.01em;
+        color: #4e5566;
+        &:hover {
+          color: #fff;
         }
+
+        @include mq('phone-wide', max) {
+          width: 42px;
+          height: 42px;
+        }
+        &:hover {
+          background-color: #ff6636;
+        }
+
+        svg {
+          transition: all 0.4s;
+        }
+        path {
+          transition: all 0.4s;
+        }
+        &:hover {
+          path {
+            fill: #fff;
+          }
+        }
+        &:hover {
+          path.youtube {
+            fill: #272b33;
+          }
+        }
+      }
     }
+  }
 }
 
 // footer social
-.footer-social{
-    margin-top: 24px;
-    ul{
-        display: flex;
-        li{
-            margin: 0 6px;
-            a{
-                width: 46px;
-                height: 46px;
-                background-color: #272B33;
-            }
-        }
+.footer-social {
+  margin-top: 24px;
+  ul {
+    display: flex;
+    li {
+      margin: 0 6px;
+      a {
+        width: 46px;
+        height: 46px;
+        background-color: #272b33;
+      }
     }
+  }
 }
 
-.app-btn-column{
-    a.app-btn {
-        margin-bottom: 12px;
-        .app-btn-wrap {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            width: 163px;
-            height: 58px;
-            background: #272B33;
-            .app-icon{
-                svg{
-                    margin-right: 15px;
-                }
-                img{
-                    margin-right: 15px;
-                }
-            }
-            .app-data{
-                p{
-                    font-family: "Inter";
-                    font-size: 10px;
-                    color: #B7BAC7;
-                    line-height: 1;
-                    margin-bottom: 4px;
-                }
-                h5{
-                    font-family: "Inter";
-                    font-weight: 500;
-                    font-size: 16px;
-                    color: #FFFFFF;
-                    margin: 0;
-                }
-            }
+.app-btn-column {
+  a.app-btn {
+    margin-bottom: 12px;
+    .app-btn-wrap {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 163px;
+      height: 58px;
+      background: #272b33;
+      .app-icon {
+        svg {
+          margin-right: 15px;
         }
+        img {
+          margin-right: 15px;
+        }
+      }
+      .app-data {
+        p {
+          font-size: 10px;
+          color: #b7bac7;
+          line-height: 1;
+          margin-bottom: 4px;
+        }
+        h5 {
+          font-weight: 500;
+          font-size: 16px;
+          color: #ffffff;
+          margin: 0;
+        }
+      }
     }
+  }
 }

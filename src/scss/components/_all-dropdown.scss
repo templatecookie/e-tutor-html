@@ -1,24 +1,23 @@
-.dropdown-menu{
-    min-width: 170px;
-    background: #FFFFFF;
-    border: 1px solid #CED1D9;
-    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.06);
-    a{
-        font-family: "Inter";
-        font-size: 14px;
-        line-height: 1;
-        letter-spacing: -0.01em;
-        color: #4E5566;
-        padding: 10px 18px;
-        background-color: #fff;
-        &:hover{
-            color: #fff;
-            background-color: #FF6636;
-        }
+.dropdown-menu {
+  min-width: 170px;
+  background: #ffffff;
+  border: 1px solid #ced1d9;
+  box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.06);
+  a {
+    font-size: 14px;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    color: #4e5566;
+    padding: 10px 18px;
+    background-color: #fff;
+    &:hover {
+      color: #fff;
+      background-color: #ff6636;
     }
+  }
 }
 
 del.less-price {
-    font-size: 14px;
-    color: #A1A5B3;
+  font-size: 14px;
+  color: #a1a5b3;
 }

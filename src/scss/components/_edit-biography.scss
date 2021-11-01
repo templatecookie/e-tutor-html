@@ -1,339 +1,316 @@
 .edit-biography {
-    background-color: #111033;
+  background-color: #111033;
 
-    &-content {
-        padding: 40px 0;
-        display: flex;
-        justify-content: space-between;
+  &-content {
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
 
-        .edit-biography-left {
-            display: flex;
+    .edit-biography-left {
+      display: flex;
 
-            img {
-                height: 80px;
-                width: 80px;
-                border-radius: 50%;
-                cursor: pointer;
-                margin-right: 24px;
-            }
+      img {
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        cursor: pointer;
+        margin-right: 24px;
+      }
 
-            button {
-                border: 0;
-                background-color: transparent;
-            }
+      button {
+        border: 0;
+        background-color: transparent;
+      }
 
-            span {
-                color: rgb(255 255 255 / 50%);
-                font-size: 14px;
-                font-family: 'Inter';
-                font-weight: 300;
-                margin-top: 6px;
-                display: block;
-                line-height: 22px;
-            }
+      span {
+        color: rgb(255 255 255 / 50%);
+        font-size: 14px;
+        font-family: 'Inter';
+        font-weight: 300;
+        margin-top: 6px;
+        display: block;
+        line-height: 22px;
+      }
 
-            p {
-                color: #fff;
-                font-size: 20px;
-                font-family: 'Inter';
-                font-weight: 600;
-                margin: 0;
-                line-height: 26px;
-            }
-        }
-
-        .edit-biography-mid {
-            display: flex;
-            flex-wrap: wrap;
-
-            span {
-                color: rgb(255 255 255 / 50%);
-                font-size: 14px;
-                font-family: 'Inter';
-                font-weight: 300;
-                align-self: center;
-
-            }
-
-            p {
-                color: #fff;
-                font-size: 16px;
-                font-family: 'Inter';
-                font-weight: 600;
-                margin: 0;
-                align-self: center;
-            }
-
-            progress {
-                vertical-align: baseline;
-                height: 16px !important;
-                width: 312px;
-                border-radius: 0;
-                margin: 0 24px;
-                background: rgb(255 255 255 / 20%);
-                align-self: center;
-            }
-
-            /* For Chrome or Safari */
-            progress::-webkit-progress-bar {
-                background-color: rgba(17 16 51 / 20%);
-            }
-
-            progress::-webkit-progress-value {
-                background: #23BD33;
-            }
-
-            progress::-moz-progress-bar {
-                background: #23BD33;
-            }
-
-        }
-
-        .edit-biography-right {
-            display: flex;
-            align-self: center;
-
-            .edit-btn {
-                background: #FF6636;
-                padding: 0 24px 0 24px;
-                font-weight: 500;
-                font-size: 16px;
-                /* line-height: 48px; */
-                color: #FFFFFF;
-                font-family: "Inter";
-                height: 48px;
-                line-height: 48px;
-
-            }
-
-            .notification {
-                background: rgba(255, 255, 255, 0.05);
-                height: 48px;
-                width: 48px;
-                text-align: center;
-                line-height: 48px;
-                margin: 0 16px;
-                cursor: pointer;
-                label{
-                    cursor: pointer;
-                }
-            }
-
-            button {
-                border: 0;
-            }
-
-            svg {
-                cursor: pointer;
-            }
-
-        }
+      p {
+        color: #fff;
+        font-size: 20px;
+        font-family: 'Inter';
+        font-weight: 600;
+        margin: 0;
+        line-height: 26px;
+      }
     }
+
+    .edit-biography-mid {
+      display: flex;
+      flex-wrap: wrap;
+
+      span {
+        color: rgb(255 255 255 / 50%);
+        font-size: 14px;
+        font-family: 'Inter';
+        font-weight: 300;
+        align-self: center;
+      }
+
+      p {
+        color: #fff;
+        font-size: 16px;
+        font-family: 'Inter';
+        font-weight: 600;
+        margin: 0;
+        align-self: center;
+      }
+
+      progress {
+        vertical-align: baseline;
+        height: 16px !important;
+        width: 312px;
+        border-radius: 0;
+        margin: 0 24px;
+        background: rgb(255 255 255 / 20%);
+        align-self: center;
+      }
+
+      /* For Chrome or Safari */
+      progress::-webkit-progress-bar {
+        background-color: rgba(17 16 51 / 20%);
+      }
+
+      progress::-webkit-progress-value {
+        background: #23bd33;
+      }
+
+      progress::-moz-progress-bar {
+        background: #23bd33;
+      }
+    }
+
+    .edit-biography-right {
+      display: flex;
+      align-self: center;
+
+      .edit-btn {
+        background: #ff6636;
+        padding: 0 24px 0 24px;
+        font-weight: 500;
+        font-size: 16px;
+        /* line-height: 48px; */
+        color: #ffffff;
+
+        height: 48px;
+        line-height: 48px;
+      }
+
+      .notification {
+        background: rgba(255, 255, 255, 0.05);
+        height: 48px;
+        width: 48px;
+        text-align: center;
+        line-height: 48px;
+        margin: 0 16px;
+        cursor: pointer;
+        label {
+          cursor: pointer;
+        }
+      }
+
+      button {
+        border: 0;
+      }
+
+      svg {
+        cursor: pointer;
+      }
+    }
+  }
 }
 
 .edit-biography-contents {
-    border-top: 1px solid rgb(255 255 255 / 10%);
+  border-top: 1px solid rgb(255 255 255 / 10%);
 }
 
 .edit-biography-content {
+  background-color: #111033;
+  // border-top: 1px solid #f1f1f1;
+  display: flex;
+  flex-wrap: wrap;
 
-    background-color: #111033;
-    // border-top: 1px solid #f1f1f1;
+  &-all {
     display: flex;
-    flex-wrap: wrap;
+    margin-bottom: 24px;
+  }
 
-    &-all {
-        display: flex;
-        margin-bottom: 24px;
-
+  &-left {
+    &-icon {
+      margin-right: 20px;
+      height: 56px;
+      width: 56px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 56px;
+      background-color: #23bd33;
+      color: #fff;
+      background-color: rgba(255, 255, 255, 0.05);
     }
 
-    &-left {
-        &-icon {
-            margin-right: 20px;
-            height: 56px;
-            width: 56px;
-            border-radius: 50%;
-            text-align: center;
-            line-height: 56px;
-            background-color: #23BD33;
-            color: #fff;
-            background-color: rgba(255, 255, 255, 0.05);
-        }
+    &-icon-color {
+      background-color: #23bd33;
+    }
+  }
 
-        &-icon-color {
-            background-color: #23BD33;
+  &-right {
+    &-content {
+      a {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        color: #ffffff;
+        text-decoration: none;
+      }
 
-
-        }
+      p {
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: -0.01em;
+        color: #6e7485;
+        margin: 0;
+      }
     }
 
-    &-right {
-        &-content {
-            a {
-                font-family: "Inter";
-                font-style: normal;
-                font-weight: 500;
-                font-size: 18px;
-                line-height: 24px;
-                color: #FFFFFF;
-                text-decoration: none;
-            }
+    &-contents {
+      a {
+        color: rgba(255, 255, 255, 0.5);
+        font-weight: 400;
+        pointer-events: none;
+      }
 
-            p {
-                font-family: "Inter";
-                font-size: 14px;
-                line-height: 22px;
-                letter-spacing: -0.01em;
-                color: #6E7485;
-                margin: 0;
-            }
-
-        }
-
-        &-contents {
-            a {
-                color: rgba(255, 255, 255, 0.5);
-                font-weight: 400;
-                pointer-events: none;
-            }
-
-            p {
-                color: rgba(110, 116, 133, 0.5);
-                margin: 0;
-            }
-
-        }
+      p {
+        color: rgba(110, 116, 133, 0.5);
+        margin: 0;
+      }
     }
+  }
 }
 
 .heretheclass {
-    display: none;
+  display: none;
 }
 
-
 .item-3 {
-    display: block;
-    margin: 20px 0 0;
-    border-bottom: 1px solid green;
-    cursor: pointer;
+  display: block;
+  margin: 20px 0 0;
+  border-bottom: 1px solid green;
+  cursor: pointer;
 }
 
 .edit-bio-btn input {
-    position: absolute;
-    left: -999em;
+  position: absolute;
+  left: -999em;
 }
 
 .edit-bio-content-change {
-    height: 100%;
-    opacity: 1;
-    overflow: hidden;
-    transition: all .5s linear, margin 0s linear 0s;
+  height: 100%;
+  opacity: 1;
+  overflow: hidden;
+  transition: all 0.5s linear, margin 0s linear 0s;
 }
 
-
-input[type="checkbox"]:checked+.edit-bio-content-change {
-    height: 0;
-    opacity: 0;
-    display: block;
+input[type='checkbox']:checked + .edit-bio-content-change {
+  height: 0;
+  opacity: 0;
+  display: block;
 }
-
 
 @include mq('tablet', max) {
-    .edit-biography-content {
-        .edit-biography-mid {
-            padding: 20px 0;
+  .edit-biography-content {
+    .edit-biography-mid {
+      padding: 20px 0;
 
-            progress {
-                height: 16px !important;
-                margin: 0 24px;
+      progress {
+        height: 16px !important;
+        margin: 0 24px;
+      }
 
-            }
-
-            span {
-
-                margin-right: 15px;
-            }
-
-        }
+      span {
+        margin-right: 15px;
+      }
     }
+  }
 
-    .edit-biography-content .edit-biography-mid progress {
-        margin: 10px 0px;
+  .edit-biography-content .edit-biography-mid progress {
+    margin: 10px 0px;
+  }
 
+  .edit-biography-content .edit-biography-left img {
+    height: 60px;
+    width: 60px;
+    margin-right: 10px;
+  }
+
+  .edit-biography-content .edit-biography-right .edit-btn {
+    background: #ff6636;
+    padding: 0 18px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #ffffff;
+
+    height: 40px;
+    line-height: 40px;
+  }
+
+  .edit-biography-content .edit-biography-right .notification {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    margin: 0 10px;
+
+    svg {
+      height: 18px;
+      width: 18px;
     }
-
-    .edit-biography-content .edit-biography-left img {
-        height: 60px;
-        width: 60px;
-        margin-right: 10px;
-    }
-
-    .edit-biography-content .edit-biography-right .edit-btn {
-        background: #FF6636;
-        padding: 0 18px;
-        font-weight: 500;
-        font-size: 14px;
-        color: #FFFFFF;
-        font-family: "Inter";
-        height: 40px;
-        line-height: 40px;
-    }
-
-    .edit-biography-content .edit-biography-right .notification {
-        height: 40px;
-        width: 40px;
-        line-height: 40px;
-        margin: 0 10px;
-
-        svg {
-            height: 18px;
-            width: 18px;
-        }
-
-    }
+  }
 }
 
 @include mq('phone', max) {
-    .edit-biography-content .edit-biography-mid {
-        flex-wrap: wrap-reverse;
-        padding: 20px 0;
-        flex-direction: column-reverse;
+  .edit-biography-content .edit-biography-mid {
+    flex-wrap: wrap-reverse;
+    padding: 20px 0;
+    flex-direction: column-reverse;
+  }
 
+  .edit-biography-content .edit-biography-mid progress {
+    margin: 10px 0px;
+  }
+
+  .edit-biography-content .edit-biography-left img {
+    height: 60px;
+    width: 60px;
+    margin-right: 10px;
+  }
+
+  .edit-biography-content .edit-biography-right .edit-btn {
+    background: #ff6636;
+    padding: 0 18px;
+    font-weight: 500;
+    font-size: 14px;
+    color: #ffffff;
+
+    height: 40px;
+    line-height: 40px;
+  }
+
+  .edit-biography-content .edit-biography-right .notification {
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    margin: 0 10px;
+
+    svg {
+      height: 18px;
+      width: 18px;
     }
-
-    .edit-biography-content .edit-biography-mid progress {
-        margin: 10px 0px;
-
-    }
-
-    .edit-biography-content .edit-biography-left img {
-        height: 60px;
-        width: 60px;
-        margin-right: 10px;
-    }
-
-    .edit-biography-content .edit-biography-right .edit-btn {
-        background: #FF6636;
-        padding: 0 18px;
-        font-weight: 500;
-        font-size: 14px;
-        color: #FFFFFF;
-        font-family: "Inter";
-        height: 40px;
-        line-height: 40px;
-    }
-
-    .edit-biography-content .edit-biography-right .notification {
-        height: 40px;
-        width: 40px;
-        line-height: 40px;
-        margin: 0 10px;
-
-        svg {
-            height: 18px;
-            width: 18px;
-        }
-
-    }
+  }
 }

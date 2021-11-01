@@ -1,119 +1,115 @@
 .cat-section {
-    background: #F5F7FA;
-    padding: 80px 0 320px;
+  background: #f5f7fa;
+  padding: 80px 0 320px;
 }
 
 .cta-left {
-    padding: 40px;
-    position: relative;
-    background: url(.png), linear-gradient(90deg, #CC522B 0%, #FF6636 100%);
+  padding: 40px;
+  position: relative;
+  background: url(.png), linear-gradient(90deg, #cc522b 0%, #ff6636 100%);
+  @include mq('tablet-small', max) {
+    padding: 30px;
+  }
+  .cat-thumb {
+    position: absolute;
+    bottom: 0;
+    right: 37px;
+    img {
+      height: 100%;
+    }
     @include mq('tablet-small', max) {
-        padding: 30px;
+      display: none;
     }
-    .cat-thumb {
-        position: absolute;
-        bottom: 0;
-        right: 37px;
-        img{
-            height: 100%;
-        }
-        @include mq('tablet-small', max) {
-            display: none;
-        }
+  }
+  h4 {
+    font-weight: 600;
+    font-size: 32px;
+    letter-spacing: -0.01em;
+    color: #ffffff;
+    margin-bottom: 10px;
+    @include mq('tablet-small', max) {
+      font-size: 26px;
     }
-    h4{
-        font-family: "Inter";
-        font-weight: 600;
-        font-size: 32px;
-        letter-spacing: -0.01em;
-        color: #FFFFFF;
-        margin-bottom: 10px;
-        @include mq('tablet-small', max) {
-            font-size: 26px;
-        }
+  }
+  p {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.01em;
+    color: #ffffff;
+    margin-right: 239px;
+    margin-bottom: 24px;
+    @include mq('tablet-small', max) {
+      margin-right: 0;
     }
-    p{
-        font-family: "Inter";
-        font-size: 14px;
-        line-height: 22px;
-        letter-spacing: -0.01em;
-        color: #FFFFFF;
-        margin-right: 239px;
-        margin-bottom: 24px;
-        @include mq('tablet-small', max) {
-            margin-right: 0;
-        }
-    }
+  }
 }
 
 .cta-right {
-    background-color: #fff;
-    padding: 38px;
+  background-color: #fff;
+  padding: 38px;
+  @include mq('tablet-small', max) {
+    padding: 30px;
+  }
+  h3 {
+    font-weight: 600;
+    font-size: 32px;
+    letter-spacing: -0.01em;
+    color: #1d2026;
+    margin-bottom: 15px;
     @include mq('tablet-small', max) {
-        padding: 30px;
+      font-size: 26px;
     }
-    h3{
-        font-family: "Inter";
-        font-weight: 600;
-        font-size: 32px;
-        letter-spacing: -0.01em;
-        color: #1D2026;
-        margin-bottom: 15px;
-        @include mq('tablet-small', max) {
-            font-size: 26px;
-        }
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    @include mq('tablet-small', max) {
+      display: block;
     }
-    ul{
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        display: flex;
-        flex-wrap: wrap;
-        @include mq('tablet-small', max) {
-            display: block;
-        }
-        li{
-            display: inline-block;
-            font-family: "Inter";
-            font-size: 16px;
-            line-height: 24px;
-            color: #1D2026;
-            margin: 10px 0;
-            flex:  0 0 50%;
-            span {
-                display: inline-block;
-                width: 52px;
-                height: 52px;
-                text-align: center;
-                line-height: 52px;
-                border-radius: 100%;
-                margin-right: 10px;
-                font-size: 24px;
-                font-weight: 600;
-                @include mq('desktop-wide', max) {
-                    width: 45px;
-                    height: 45px;
-                    line-height: 45px;
-                    margin-right: 5px;
-                }
-            }
-            span.color-1{
-                color: #564FFD;
-                background-color: #EBEBFF;
-            }
-            span.color-2{
-                color: #FF6636;
-                background: #FFF0F0;
-            }
-            span.color-3{
-                color: #E34444;
-                background: #FFF0F0;
-            }
-            span.color-4{
-                color: #23BD33;
-                background: #E1F7E3;
-            }
+    li {
+      display: inline-block;
 
+      font-size: 16px;
+      line-height: 24px;
+      color: #1d2026;
+      margin: 10px 0;
+      flex: 0 0 50%;
+      span {
+        display: inline-block;
+        width: 52px;
+        height: 52px;
+        text-align: center;
+        line-height: 52px;
+        border-radius: 100%;
+        margin-right: 10px;
+        font-size: 24px;
+        font-weight: 600;
+        @include mq('desktop-wide', max) {
+          width: 45px;
+          height: 45px;
+          line-height: 45px;
+          margin-right: 5px;
         }
+      }
+      span.color-1 {
+        color: #564ffd;
+        background-color: #ebebff;
+      }
+      span.color-2 {
+        color: #ff6636;
+        background: #fff0f0;
+      }
+      span.color-3 {
+        color: #e34444;
+        background: #fff0f0;
+      }
+      span.color-4 {
+        color: #23bd33;
+        background: #e1f7e3;
+      }
     }
+  }
 }

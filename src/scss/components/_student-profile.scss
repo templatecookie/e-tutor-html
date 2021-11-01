@@ -1,202 +1,197 @@
 .student-profile-section {
-    margin-top: -200px;
+  margin-top: -200px;
 }
 
 .student-profile-wrap {
-    border: 1px solid #FFDDD1;
-    border-bottom: none;
-    background-color: #fff;
-    .student-profile-header {
-        padding: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        border-bottom: 1px solid #FFDDD1;
+  border: 1px solid #ffddd1;
+  border-bottom: none;
+  background-color: #fff;
+  .student-profile-header {
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #ffddd1;
+    @include mq('phone-wide', max) {
+      padding: 17px;
+      text-align: center;
+    }
+    @include mq('tablet', max) {
+      display: block;
+    }
+    .student-profile-left {
+      display: flex;
+      align-items: center;
+      @include mq('tablet', max) {
+        margin-bottom: 30px;
+      }
+      @include mq('phone-wide', max) {
+        display: block;
+      }
+      .student-thumb {
+        width: 110px;
+        height: 110px;
+        overflow: hidden;
+        border-radius: 100%;
+        margin-right: 24px;
+        flex: 0 0 auto;
         @include mq('phone-wide', max) {
-            padding: 17px;
-            text-align: center;
-         }
-        @include mq('tablet', max) {
-            display: block;
+          margin: 0 auto 15px;
         }
-        .student-profile-left {
-            display: flex;
-            align-items: center;
-            @include mq('tablet', max) {
-               margin-bottom: 30px;
-            }
-            @include mq('phone-wide', max) {
-                display: block;
-             }
-            .student-thumb{
-                width: 110px;
-                height: 110px;
-                overflow: hidden;
-                border-radius: 100%;
-                margin-right: 24px;
-                flex: 0 0 auto;
-                @include mq('phone-wide', max) {
-                   margin: 0 auto 15px;
-                 }
-                img{
-                    width: 100%;
-                    height: 100%;
-                    object-fit: cover;
-                }
-                
-            }
-            .student-data{
-                h3{
-                    font-family: "Inter";
-                    font-weight: 600;
-                    font-size: 24px;
-                    line-height: 32px;
-                    letter-spacing: -0.01em;
-                    color: #1D2026;
-                    margin-bottom: 14px;
-                }
-                p{
-                    font-family: "Inter";
-                    font-size: 16px;
-                    line-height: 24px;
-                    color: #6E7485;
-                }
-            }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
         }
-        .student-profile-right{
-            a.become-instructor-btn{
-                background: #FFEEE8;
-                font-family:"Inter";
-                font-weight: 600;
-                font-size: 18px;
-                line-height: 56px;
-                letter-spacing: -0.01em;
-                text-transform: capitalize;
-                color: #FF6636;
-                padding: 0 31px;
-                transition: all 0.4s;
-                &:hover{
-                    color: #fff;
-                    background-color: #FF6636;
-                }
-                svg{
-                    margin-left: 10px;
-                    transition: all 0.4s;
-                }
-                path{
-                    transition: all 0.4s;
-                }
-                &:hover {
-                    path{
-                        stroke: #fff;
-                    }
-                }
-            }
+      }
+      .student-data {
+        h3 {
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 32px;
+          letter-spacing: -0.01em;
+          color: #1d2026;
+          margin-bottom: 14px;
         }
+        p {
+          font-size: 16px;
+          line-height: 24px;
+          color: #6e7485;
+        }
+      }
     }
+    .student-profile-right {
+      a.become-instructor-btn {
+        background: #ffeee8;
+        font-family: 'Inter';
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 56px;
+        letter-spacing: -0.01em;
+        text-transform: capitalize;
+        color: #ff6636;
+        padding: 0 31px;
+        transition: all 0.4s;
+        &:hover {
+          color: #fff;
+          background-color: #ff6636;
+        }
+        svg {
+          margin-left: 10px;
+          transition: all 0.4s;
+        }
+        path {
+          transition: all 0.4s;
+        }
+        &:hover {
+          path {
+            stroke: #fff;
+          }
+        }
+      }
+    }
+  }
 }
 
-.student-profile-menu{
-    ul{
-        margin: 0;
-        padding: 0;
-        list-style: none;
-        display: flex;
-        justify-content: space-between;
-        @include mq('tablet', max) {
-            display: block;
-            text-align: center;
-          }
-        li{
-            display: inline-block;
-            @include mq('phone-wide', max) {
-                display: block;
-              }
-            a{
-                font-family: "Inter";
-                font-weight: 500;
-                font-size: 16px;
-                color: #4E5566;
-                position: relative;
-                transition: all 0.4s;
-                padding: 20px 38px;
-                @include mq('desktop-wide', max) {
-                    padding: 20px 25px;
-                }
-                @include mq('desktop', max) {
-                    padding: 20px 18px;
-                }
-                @include mq('tablet', max) {
-                    padding: 15px;
-                  }
-                &:hover{
-                    color: #1D2026;
-                }
-                &::before{
-                    content: "";
-                    left: 0;
-                    bottom: 0;
-                    width: 0;
-                    height: 3px;
-                    transition: all 0.4s;
-                    position: absolute;
-                    background-color: #FF6636;
-                }
-                &:hover::before{
-                    width: 100%;
-                }
-            }
-            a.active{
-                color: #1D2026;
-            }
-        }
+.student-profile-menu {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    @include mq('tablet', max) {
+      display: block;
+      text-align: center;
     }
-}
-
-.student-tabs-wrap{
-    .nav{
-        justify-content: space-between;
-        border: 1px solid #FFDDD1;
-        border-top: none;
-        background-color: #fff;
-        margin-bottom: 40px;
-        @include mq('tablet', max) {
-            display: block;
-            text-align: center;
-          }
-    }
-    .nav-pills .nav-link{
-        font-family: "Inter";
+    li {
+      display: inline-block;
+      @include mq('phone-wide', max) {
+        display: block;
+      }
+      a {
         font-weight: 500;
         font-size: 16px;
-        color: #4E5566;
+        color: #4e5566;
         position: relative;
         transition: all 0.4s;
         padding: 20px 38px;
-        margin: 0 auto;
-        border-radius: 0;
         @include mq('desktop-wide', max) {
-            padding: 20px 25px;
+          padding: 20px 25px;
         }
         @include mq('desktop', max) {
-            padding: 20px 18px;
+          padding: 20px 18px;
         }
         @include mq('tablet', max) {
-            padding: 15px;
-          }
-        &.active{
-           color: #1D2026;
-           background-color: transparent; 
-            &::before{
-                content: "";
-                left: 0;
-                bottom: 0;
-                width: 100%;
-                height: 3px;
-                transition: all 0.4s;
-                position: absolute;
-                background-color: #FF6636;
-            }
+          padding: 15px;
         }
+        &:hover {
+          color: #1d2026;
+        }
+        &::before {
+          content: '';
+          left: 0;
+          bottom: 0;
+          width: 0;
+          height: 3px;
+          transition: all 0.4s;
+          position: absolute;
+          background-color: #ff6636;
+        }
+        &:hover::before {
+          width: 100%;
+        }
+      }
+      a.active {
+        color: #1d2026;
+      }
     }
+  }
+}
+
+.student-tabs-wrap {
+  .nav {
+    justify-content: space-between;
+    border: 1px solid #ffddd1;
+    border-top: none;
+    background-color: #fff;
+    margin-bottom: 40px;
+    @include mq('tablet', max) {
+      display: block;
+      text-align: center;
+    }
+  }
+  .nav-pills .nav-link {
+    font-weight: 500;
+    font-size: 16px;
+    color: #4e5566;
+    position: relative;
+    transition: all 0.4s;
+    padding: 20px 38px;
+    margin: 0 auto;
+    border-radius: 0;
+    @include mq('desktop-wide', max) {
+      padding: 20px 25px;
+    }
+    @include mq('desktop', max) {
+      padding: 20px 18px;
+    }
+    @include mq('tablet', max) {
+      padding: 15px;
+    }
+    &.active {
+      color: #1d2026;
+      background-color: transparent;
+      &::before {
+        content: '';
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        height: 3px;
+        transition: all 0.4s;
+        position: absolute;
+        background-color: #ff6636;
+      }
+    }
+  }
 }
