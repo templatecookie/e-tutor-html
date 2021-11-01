@@ -133,12 +133,13 @@
   }
 }
 
-    .title-link {
-        font-family: 'Inter';
-        font-size: 12px;
-        line-height: 16px;
-        color: #6E7485;
-        margin-bottom: 2px;
+.title-link {
+    font-family: 'Inter';
+    font-size: 12px;
+    line-height: 16px;
+    color: #6E7485;
+    margin-bottom: 2px;
+}
 .course-item-4 {
   &:hover .course-hover-detalis {
     opacity: 1;
@@ -838,6 +839,7 @@ button.course-item-5-card-info-tag {
   }
 }
 
+}
 .tag-color4 {
   color: #1d2026;
   background: #f5f7fa;
@@ -1409,4 +1411,3 @@ button.course-item-5-card-info-tag {
 .course-item-5-card-img.team-thumb {
   height: 244px;
 }
-} }
