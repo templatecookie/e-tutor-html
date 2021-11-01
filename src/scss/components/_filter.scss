@@ -13,25 +13,29 @@
 }
 
 .actions-filter {
-  border: 1px solid #ffddd1;
   padding: 0 24px;
   line-height: 48px;
+  align-items: center;
   width: 167px;
   margin-right: 24px;
   cursor: pointer;
   text-align: center;
-
   font-weight: 600;
   font-size: 16px;
-  letter-spacing: -0.008em;
-  text-transform: capitalize;
   color: #1d2026;
   display: flex;
-  align-items: center;
-  &.color-red {
+  letter-spacing: -0.008em;
+  border: 1px solid #ffddd1;
+  background-color: transparent;
+  text-transform: capitalize;
+  &.active {
     color: #ff6636;
     path {
       stroke: #ff6636;
+    }
+    span {
+      color: #fff;
+      background-color: #ff6636;
     }
   }
   @include mq('phone-wide', max) {

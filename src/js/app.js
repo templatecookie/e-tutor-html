@@ -253,10 +253,9 @@ if (filterToggle) {
   filterToggle.addEventListener('click', function () {
     const sidebar = document.querySelector('.shop-content .col-xl-3');
     const productGallery = document.querySelector('.shop-content .col-xl-9');
-    // const productContent = document.querySelectorAll('.shop__product-items .col-xl-4');
-
-    console.log('clicked');
+    const productContent = document.querySelectorAll('.shop__product-items .col-xl-4');
     sidebar.classList.toggle('d-none');
     productGallery.classList.toggle('col-xl-12');
+    filterToggle.classList.toggle('active');
   });
 }
