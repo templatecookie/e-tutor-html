@@ -61,6 +61,10 @@
   top: -40px;
   position: absolute;
   right: 40px;
+
+  &:hover {
+    color: #ff6636;
+  }
 }
 .row2-slider button.slide-arrow.prev-arrow.slick-arrow {
   right: 0;
