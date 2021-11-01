@@ -1,814 +1,779 @@
 .accordion-wrap-faq {
-    .accordion__list2 {
-        margin-bottom: 20px;
+  .accordion__list2 {
+    margin-bottom: 20px;
 
-        .link {
-            background: #FFFFFF;
-            border: 1px solid #E9EAF0;
-            padding: 18px 24px;
-            cursor: pointer;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            transition: all 0.5s;
-            @include mq('tablet-small', max) {
-                padding: 15px;
-            } 
-            @include mq('phone-wide', max) {
-                display: block;
-            } 
+    .link {
+      background: #ffffff;
+      border: 1px solid #e9eaf0;
+      padding: 18px 24px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      transition: all 0.5s;
+      @include mq('tablet-small', max) {
+        padding: 15px;
+      }
+      @include mq('phone-wide', max) {
+        display: block;
+      }
 
-            &:hover {
-                border: 1px solid transparent;
-                box-shadow: 0px 12px 32px rgba(29, 32, 38, 0.1)
-            }
+      &:hover {
+        border: 1px solid transparent;
+        box-shadow: 0px 12px 32px rgba(29, 32, 38, 0.1);
+      }
 
-            &:hover .accordion-svg {
-                background: #1D2026;
-                box-shadow: 0px 6px 20px rgba(54, 59, 71, 0.5);
-            }
+      &:hover .accordion-svg {
+        background: #1d2026;
+        box-shadow: 0px 6px 20px rgba(54, 59, 71, 0.5);
+      }
 
-            &:hover .accordion-svg {
-                path {
-                    stroke: #fff;
-                }
-            }
+      &:hover .accordion-svg {
+        path {
+          stroke: #fff;
         }
-
+      }
     }
+  }
 }
-.faq-review-thumb{
-    width: 160px;
-    height: 120px!important;
-    margin-right: 20px;
-    overflow: hidden;
-    @include mq('tablet', max) {
-        margin-right: 0;
-        margin: 0 auto 20px;
-        width: 100%;
-        height: auto!important;
-    }
-    img{
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-    }
+.faq-review-thumb {
+  width: 160px;
+  height: 120px !important;
+  margin-right: 20px;
+  overflow: hidden;
+  @include mq('tablet', max) {
+    margin-right: 0;
+    margin: 0 auto 20px;
+    width: 100%;
+    height: auto !important;
+  }
+  img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
 }
 
 .accordion-header-content {
-    font-family: 'Inter';
-    font-size: 18px;
-    @include mq('phone-wide', max) {
-        font-size: 16px;
-    } 
+  font-family: 'Inter';
+  font-size: 18px;
+  @include mq('phone-wide', max) {
+    font-size: 16px;
+  }
 
-    ul {
-        margin: 8px 0 0;
-        padding: 0;
-        list-style: none;
-        line-height: 1;
+  ul {
+    margin: 8px 0 0;
+    padding: 0;
+    list-style: none;
+    line-height: 1;
 
-        li {
-            display: inline-block;
-            font-family: "Inter";
-            font-size: 14px;
-            letter-spacing: -0.01em;
-            color: #4E5566;
-            margin-right: 10px;
+    li {
+      display: inline-block;
 
-            svg {
-                margin-right: 2px;
-            }
+      font-size: 14px;
+      letter-spacing: -0.01em;
+      color: #4e5566;
+      margin-right: 10px;
 
-        }
+      svg {
+        margin-right: 2px;
+      }
     }
-
+  }
 }
 
 .accordion-svg {
-    width: 48px;
-    height: 48px;
-    background-color: #F5F7FA;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.4s;
-    @include mq('tablet-small', max) {
-        height: 40px;
-        width: 40px;
-    }
-    @include mq('phone-wide', max) {
-        height: 34px;
-        width: 34px;
-        margin-top: 20px;
-    } 
+  width: 48px;
+  height: 48px;
+  background-color: #f5f7fa;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s;
+  @include mq('tablet-small', max) {
+    height: 40px;
+    width: 40px;
+  }
+  @include mq('phone-wide', max) {
+    height: 34px;
+    width: 34px;
+    margin-top: 20px;
+  }
 }
 
 .accordion-body-text {
-    .accrodion-body-bottom {
-        .faq-review-wrap {
-            .faq-review-item {
-                display: flex;
-                align-items: center;
-                margin-bottom: 24px;
-                @include mq('phone-wide', max) {
-                    display: block;
-                    text-align: center;
-                } 
-                &:last-child {
-                    margin-bottom: 0;
-                }
-                .faq-review-thumb {
-                    margin-right: 20px;
-                    flex: 0 0 auto;
-                    a{
-                        display: block;
-                    }
-                    @include mq('tablet-small', max) {
-                        display: block;
-                    }
-                    @include mq('phone-wide', max) {
-                        margin: 0;
-                        margin-bottom: 15px;
-                    }  
-                    img {
-                        width: 100%;
-                        height: 100%;
-                        object-fit: cover;
-                    }
-                }
-
-                .faq-review-data {
-                    min-height: 120px;
-                    display: flex;
-                    flex: 0 0 50%;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    @include mq('desktop-wide', max) {
-                        flex: 0 0 42%;
-                    } 
-                    @include mq('phone-wide', max) {
-                        min-height: inherit;
-                        display: block;
-                    } 
-
-                    h5 {
-                        font-size: 14px;
-                        font-weight: 500;
-                        letter-spacing: -0.01em;
-                        color: #1D2026;
-                        font-family: 'Inter';
-                        margin-bottom: 8px;
-
-                        span {
-                            font-weight: normal;
-                            color: #8C94A3;
-                        }
-
-                        svg {
-                            width: 17px;
-                            height: 17px;
-                            margin-right: 5px;
-                        }
-                    }
-
-                    a {
-                        font-family: 'Inter';
-                        font-weight: 500;
-                        font-size: 16px;
-                        line-height: 22px;
-                        color: #1D2026;
-
-                    }
-
-                    h4 {
-                        font-family: 'Inter';
-                        font-weight: 500;
-                        font-size: 16px;
-                        line-height: 22px;
-                        color: #1D2026;
-
-                    }
-
-                    p {
-                        color: #A1A5B3;
-
-                        span {
-                            color: #4E5566;
-                            margin-left: 7px;
-                        }
-                    }
-                }
-
-                .amount {
-                    font-family: 'Inter';
-                    font-weight: 500;
-                    font-size: 20px;
-                    color: #FF6636;
-                    flex: 0 0 19%;
-                    text-align: right;
-                    @include mq('phone-wide', max) {
-                        text-align: center;
-                    } 
-
-                    a {
-                        text-decoration: line-through;
-                        color: #8C94A3;
-                        font-size: 18px;
-                    }
-                }
-            }
+  .accrodion-body-bottom {
+    .faq-review-wrap {
+      .faq-review-item {
+        display: flex;
+        align-items: center;
+        margin-bottom: 24px;
+        @include mq('phone-wide', max) {
+          display: block;
+          text-align: center;
         }
-        .faq-body-right {
+        &:last-child {
+          margin-bottom: 0;
+        }
+        .faq-review-thumb {
+          margin-right: 20px;
+          flex: 0 0 auto;
+          a {
+            display: block;
+          }
+          @include mq('tablet-small', max) {
+            display: block;
+          }
+          @include mq('phone-wide', max) {
+            margin: 0;
+            margin-bottom: 15px;
+          }
+          img {
             width: 100%;
-            border-left: 1px solid #E9EAF0;
             height: 100%;
-            display: flex;
-            align-items: center;
-            padding-left: 50px;
-            margin-left: 100px;
-            @include mq('desktop-wide', max) {
-                padding-left: 30px;
-                margin-left: 30px;
-            }
-            @include mq('desktop', max) {
-                padding-left: 20px;
-                margin-left: 0;
-            } 
-            @include mq('tablet', max) {
-                padding: 0;
-                margin-left: 0;
-                margin-top: 20px;
-                border-left:  none;
-                display: block;
-            } 
-            @include mq('phone-wide', max) {
-                text-align: center;
-            } 
-
-            .accrdion-body-text-header {
-                padding: 0;
-                display: block;
-                border: none;
-
-                .accordion-header-content {
-                    font-family: "Inter";
-                    font-weight: 600;
-                    font-size: 24px;
-                    letter-spacing: -0.01em;
-                    color: #1D2026;
-                    margin-bottom: 25px;
-                    @include mq('desktop', max) {
-                        font-size: 19px;
-                    } 
-                    
-
-                }
-
-                .payment-info {
-                    ul {
-                        margin: 0;
-                        padding: 0;
-                        list-style: none;
-
-                        li {
-                            display: inline-block;
-                            font-family: "inter";
-                            font-weight: normal;
-                            font-size: 14px;
-                            letter-spacing: -0.01em;
-                            color: #1D2026;
-                            margin: 0 20px;
-                            @include mq('desktop', max) {
-                                margin: 0 10px;
-                            } 
-                            @include mq('desktop', max) {
-                                margin: 0 5px;
-                            }
-                            @include mq('phone-wide', max) {
-                                display: block;
-                                margin: 0 0 5px;
-                            }  
-                            &:first-child {
-                                margin-left: 0;
-                            }
-
-                            &:last-child {
-                                margin-right: 0;
-                                margin-left: 105px;
-                                @include mq('desktop-wide', max) {
-                                    margin-left: 75px;
-                                } 
-                                @include mq('desktop', max) {
-                                    margin-left: 13px;
-                                } 
-                            }
-                            span {
-                                font-size: 18px;
-                                color: #1D2026;
-                                @include mq('desktop', max) {
-                                   font-size: 16px;
-                                } 
-                            }
-                        }
-                    }
-                }
-            }
+            object-fit: cover;
+          }
         }
+
+        .faq-review-data {
+          min-height: 120px;
+          display: flex;
+          flex: 0 0 50%;
+          flex-direction: column;
+          justify-content: space-between;
+          @include mq('desktop-wide', max) {
+            flex: 0 0 42%;
+          }
+          @include mq('phone-wide', max) {
+            min-height: inherit;
+            display: block;
+          }
+
+          h5 {
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: -0.01em;
+            color: #1d2026;
+            font-family: 'Inter';
+            margin-bottom: 8px;
+
+            span {
+              font-weight: normal;
+              color: #8c94a3;
+            }
+
+            svg {
+              width: 17px;
+              height: 17px;
+              margin-right: 5px;
+            }
+          }
+
+          a {
+            font-family: 'Inter';
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22px;
+            color: #1d2026;
+          }
+
+          h4 {
+            font-family: 'Inter';
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22px;
+            color: #1d2026;
+          }
+
+          p {
+            color: #a1a5b3;
+
+            span {
+              color: #4e5566;
+              margin-left: 7px;
+            }
+          }
+        }
+
+        .amount {
+          font-family: 'Inter';
+          font-weight: 500;
+          font-size: 20px;
+          color: #ff6636;
+          flex: 0 0 19%;
+          text-align: right;
+          @include mq('phone-wide', max) {
+            text-align: center;
+          }
+
+          a {
+            text-decoration: line-through;
+            color: #8c94a3;
+            font-size: 18px;
+          }
+        }
+      }
     }
+    .faq-body-right {
+      width: 100%;
+      border-left: 1px solid #e9eaf0;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      padding-left: 50px;
+      margin-left: 100px;
+      @include mq('desktop-wide', max) {
+        padding-left: 30px;
+        margin-left: 30px;
+      }
+      @include mq('desktop', max) {
+        padding-left: 20px;
+        margin-left: 0;
+      }
+      @include mq('tablet', max) {
+        padding: 0;
+        margin-left: 0;
+        margin-top: 20px;
+        border-left: none;
+        display: block;
+      }
+      @include mq('phone-wide', max) {
+        text-align: center;
+      }
+
+      .accrdion-body-text-header {
+        padding: 0;
+        display: block;
+        border: none;
+
+        .accordion-header-content {
+          font-weight: 600;
+          font-size: 24px;
+          letter-spacing: -0.01em;
+          color: #1d2026;
+          margin-bottom: 25px;
+          @include mq('desktop', max) {
+            font-size: 19px;
+          }
+        }
+
+        .payment-info {
+          ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+
+            li {
+              display: inline-block;
+
+              font-weight: normal;
+              font-size: 14px;
+              letter-spacing: -0.01em;
+              color: #1d2026;
+              margin: 0 20px;
+              @include mq('desktop', max) {
+                margin: 0 10px;
+              }
+              @include mq('desktop', max) {
+                margin: 0 5px;
+              }
+              @include mq('phone-wide', max) {
+                display: block;
+                margin: 0 0 5px;
+              }
+              &:first-child {
+                margin-left: 0;
+              }
+
+              &:last-child {
+                margin-right: 0;
+                margin-left: 105px;
+                @include mq('desktop-wide', max) {
+                  margin-left: 75px;
+                }
+                @include mq('desktop', max) {
+                  margin-left: 13px;
+                }
+              }
+              span {
+                font-size: 18px;
+                color: #1d2026;
+                @include mq('desktop', max) {
+                  font-size: 16px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 .shopping-body-text {
-    .shopping-body-bottom {
-        .faq-review-wrap {
-            .faq-review-item {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                background-color: #fff;
-                transition: .5s;
-                padding: 24px 0;
-                // margin:0 26px;
-                border-bottom: 1px solid #E9EAF0;
+  .shopping-body-bottom {
+    .faq-review-wrap {
+      .faq-review-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #fff;
+        transition: 0.5s;
+        padding: 24px 0;
+        // margin:0 26px;
+        border-bottom: 1px solid #e9eaf0;
 
-                &:last-child {
-
-                    border-bottom: 0px solid transparent;
-                }
-
-                // margin-bottom: 24px;
-                &:last-child {
-                    margin-bottom: 0;
-                }
-
-                svg {
-                    path {
-                        transition: .5s;
-                    }
-                }
-
-                &-content {
-                    display: flex;
-                    flex: 0 0 57%;
-
-                    svg {
-                        margin-right: 23px;
-                    }
-
-                    button {
-                        border: 0;
-                        background-color: transparent;
-                    }
-                }
-
-                .faq-review-thumb {
-                    // flex: 0 0 27%;
-                    margin-right: 20px;
-                    a{
-                        display: block;
-                    }
-
-                    img {
-                        width: 100%;
-                        height: 100%;
-                    }
-                }
-
-                .faq-review-data {
-                    min-height: 120px;
-                    display: flex;
-                    flex: 0 0 50%;
-                    flex-direction: column;
-                    justify-content: space-between;
-
-                    h5 {
-                        font-size: 14px;
-                        font-weight: 500;
-                        letter-spacing: -0.01em;
-                        color: #1D2026;
-                        font-family: 'Inter';
-                        margin-bottom: 8px;
-
-                        span {
-                            font-weight: normal;
-                            color: #8C94A3;
-
-                        }
-
-                        svg {
-                            width: 17px;
-                            height: 17px;
-                            margin-right: 5px;
-                        }
-                    }
-
-                    a {
-                        font-family: 'Inter';
-                        font-weight: 500;
-                        font-size: 16px;
-                        line-height: 22px;
-                        color: #1D2026;
-
-                    }
-
-                    p {
-                        color: #A1A5B3;
-                        font-size: 14px;
-
-                        span {
-                            color: #4E5566;
-                            margin-left: 7px;
-                            font-size: 14px;
-                        }
-                    }
-                }
-
-                .amount {
-                    font-family: 'Inter';
-                    font-weight: 500;
-                    font-size: 20px;
-                    color: #FF6636;
-                    // flex: 0 0 19%;
-                    text-align: right;
-
-                    span {
-                        text-decoration: line-through;
-                        color: #8C94A3;
-                        font-size: 18px;
-                    }
-                }
-
-                .move-to-wishlist {
-                    transition: .5s;
-
-                    a {
-                        font-family: "Inter";
-                        font-style: normal;
-                        font-weight: 600;
-                        font-size: 14px;
-                        line-height: 40px;
-                        letter-spacing: -0.004em;
-                        text-transform: capitalize;
-                        color: $primary-500;
-                        padding: 0 16px;
-                        transition: .5s;
-                    }
-
-                }
-
-                .move-to-wishlist a:hover {
-                    background-color: $primary-100;
-                    color: $primary-600;
-                }
-            }
-
-            .faq-review-item:hover {
-                .cross-btn-shopping {
-                    @include mq('tablet', max) {
-                        margin-bottom: 20px;
-                     }
-                    svg {
-                        path {
-                            stroke: #333;
-                        }
-                    }
-                }
-
-            }
-            .cross-btn-shopping {
-                @include mq('tablet', max) {
-                    margin-bottom: 15px;
-                 }
-                }
-            .faq-review-item:hover .move-to-wishlist a {
-                background-color: $primary-100;
-                color: $primary-600;
-            }
-
-            .all-btn {
-                display: flex;
-                column-gap: 12px;
-
-                button {
-                    background-color: $primary-100;
-                    border: 0;
-                    height: 48px;
-                    width: 48px;
-                    line-height: 48px;
-                    text-align: center;
-                }
-
-                .wishlist-btn {
-                    font-family: 'Inter';
-                    font-weight: 600;
-                    font-size: 16px;
-                    line-height: 48px;
-                    letter-spacing: -0.008em;
-                    text-transform: capitalize;
-                    color: #1D2026;
-                    width: 176px;
-                    line-height: 48px;
-
-                    text-align: center;
-                }
-
-                .wishlist-buy {
-
-                    background: #F5F7FA;
-
-                    a {
-                        color: #1D2026;
-                    }
-
-                }
-
-                .wishlist-add {
-                    background-color: $primary-500;
-
-                    a {
-                        color: #fff;
-                    }
-                }
-            }
-
+        &:last-child {
+          border-bottom: 0px solid transparent;
         }
-    }
 
+        // margin-bottom: 24px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        svg {
+          path {
+            transition: 0.5s;
+          }
+        }
+
+        &-content {
+          display: flex;
+          flex: 0 0 57%;
+
+          svg {
+            margin-right: 23px;
+          }
+
+          button {
+            border: 0;
+            background-color: transparent;
+          }
+        }
+
+        .faq-review-thumb {
+          // flex: 0 0 27%;
+          margin-right: 20px;
+          a {
+            display: block;
+          }
+
+          img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+
+        .faq-review-data {
+          min-height: 120px;
+          display: flex;
+          flex: 0 0 50%;
+          flex-direction: column;
+          justify-content: space-between;
+
+          h5 {
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: -0.01em;
+            color: #1d2026;
+            font-family: 'Inter';
+            margin-bottom: 8px;
+
+            span {
+              font-weight: normal;
+              color: #8c94a3;
+            }
+
+            svg {
+              width: 17px;
+              height: 17px;
+              margin-right: 5px;
+            }
+          }
+
+          a {
+            font-family: 'Inter';
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22px;
+            color: #1d2026;
+          }
+
+          p {
+            color: #a1a5b3;
+            font-size: 14px;
+
+            span {
+              color: #4e5566;
+              margin-left: 7px;
+              font-size: 14px;
+            }
+          }
+        }
+
+        .amount {
+          font-family: 'Inter';
+          font-weight: 500;
+          font-size: 20px;
+          color: #ff6636;
+          // flex: 0 0 19%;
+          text-align: right;
+
+          span {
+            text-decoration: line-through;
+            color: #8c94a3;
+            font-size: 18px;
+          }
+        }
+
+        .move-to-wishlist {
+          transition: 0.5s;
+
+          a {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 40px;
+            letter-spacing: -0.004em;
+            text-transform: capitalize;
+            color: $primary-500;
+            padding: 0 16px;
+            transition: 0.5s;
+          }
+        }
+
+        .move-to-wishlist a:hover {
+          background-color: $primary-100;
+          color: $primary-600;
+        }
+      }
+
+      .faq-review-item:hover {
+        .cross-btn-shopping {
+          @include mq('tablet', max) {
+            margin-bottom: 20px;
+          }
+          svg {
+            path {
+              stroke: #333;
+            }
+          }
+        }
+      }
+      .cross-btn-shopping {
+        @include mq('tablet', max) {
+          margin-bottom: 15px;
+        }
+      }
+      .faq-review-item:hover .move-to-wishlist a {
+        background-color: $primary-100;
+        color: $primary-600;
+      }
+
+      .all-btn {
+        display: flex;
+        column-gap: 12px;
+
+        button {
+          background-color: $primary-100;
+          border: 0;
+          height: 48px;
+          width: 48px;
+          line-height: 48px;
+          text-align: center;
+        }
+
+        .wishlist-btn {
+          font-family: 'Inter';
+          font-weight: 600;
+          font-size: 16px;
+          line-height: 48px;
+          letter-spacing: -0.008em;
+          text-transform: capitalize;
+          color: #1d2026;
+          width: 176px;
+          line-height: 48px;
+
+          text-align: center;
+        }
+
+        .wishlist-buy {
+          background: #f5f7fa;
+
+          a {
+            color: #1d2026;
+          }
+        }
+
+        .wishlist-add {
+          background-color: $primary-500;
+
+          a {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
 }
 
 .wishlist-body-text {
-    .wishlist-body-bottom {
-        .faq-review-wrap {
-            .faq-review-item {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                background-color: #fff;
-                transition: .5s;
-                padding: 24px 0;
-                border-bottom: 1px solid #E9EAF0;
-                &:last-child {
-
-                    border-bottom: 0px solid transparent;
-                }
-
-                // margin-bottom: 24px;
-                &:last-child {
-                    margin-bottom: 0;
-                }
-
-                svg {
-                    path {
-                        transition: .5s;
-                    }
-                }
-
-                &-content {
-                    display: flex;
-
-                    svg {
-                        margin-right: 23px;
-                    }
-
-                    button {
-                        border: 0;
-                        background-color: transparent;
-                    }
-                }
-
-
-                .faq-review-data-inner {
-                    min-height: 120px;
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: space-between;
-                    max-width: 300px;
-
-                    h5 {
-                        font-size: 14px;
-                        font-weight: 500;
-                        letter-spacing: -0.01em;
-                        color: #1D2026;
-                        font-family: 'Inter';
-                        margin-bottom: 8px;
-
-                        span {
-                            font-weight: normal;
-                            color: #8C94A3;
-
-                        }
-
-                        svg {
-                            width: 17px;
-                            height: 17px;
-                            margin-right: 5px;
-                        }
-                    }
-
-                    a {
-                        font-family: 'Inter';
-                        font-weight: 500;
-                        font-size: 16px;
-                        line-height: 22px;
-                        color: #1D2026;
-
-                    }
-
-                    p {
-                        color: #A1A5B3;
-                        font-size: 14px;
-
-                        span {
-                            color: #4E5566;
-                            margin-left: 7px;
-                            font-size: 14px;
-                        }
-                    }
-                }
-
-                .amount {
-                    font-family: 'Inter';
-                    font-weight: 500;
-                    font-size: 20px;
-                    color: #FF6636;
-                    // flex: 0 0 19%;
-                    text-align: right;
-
-                    span {
-                        text-decoration: line-through;
-                        color: #8C94A3;
-                        font-size: 18px;
-                    }
-                }
-
-                .move-to-wishlist {
-                    transition: .5s;
-
-                    a {
-                        font-family: "Inter";
-                        font-style: normal;
-                        font-weight: 600;
-                        font-size: 14px;
-                        line-height: 40px;
-                        letter-spacing: -0.004em;
-                        text-transform: capitalize;
-                        color: $primary-500;
-                        padding: 0 16px;
-                        transition: .5s;
-                    }
-
-                }
-
-                .move-to-wishlist a:hover {
-                    background-color: $primary-100;
-                    color: $primary-600;
-                }
-            }
-
-           
-
-            .faq-review-item:hover .move-to-wishlist a {
-                background-color: $primary-100;
-                color: $primary-600;
-            }
-
-            .all-btn {
-                display: flex;
-                column-gap: 12px;
-
-                button {
-                    background-color: $primary-100;
-                    border: 0;
-                    height: 48px;
-                    width: 48px;
-                    line-height: 48px;
-                    text-align: center;
-
-                    svg {
-                        path {
-                            stroke: none;
-                        }
-                    }
-                }
-
-                button:hover {
-                    background-color: $primary-600;
-                    transition: all 0.4s;
-                    &:hover{
-                        background-color: #FF6636;
-                    }
-
-                    svg {
-                        path {
-                            stroke: none;
-                            fill: #fff;
-                        }
-                    }
-                }
-
-                .wishlist-btn {
-                    a {
-
-                        font-family: 'Inter';
-                        font-weight: 600;
-                        font-size: 16px;
-                        line-height: 48px;
-                        letter-spacing: -0.008em;
-                        text-transform: capitalize;
-                        color: #1D2026;
-                        width: 176px;
-                        line-height: 48px;
-                        text-align: center;
-                        transition: .5s;
-                    }
-                }
-
-                .wishlist-buy {
-
-                    background: #F5F7FA;
-                    transition: .5s;
-                    &:hover{
-                        background-color: #FF6636;
-                    }
-
-                    a {
-                        color: #1D2026;
-                    }
-
-                }
-
-                .wishlist-add {
-                    background-color: $primary-500;
-                    transition: .5s;
-                    &:hover{
-                        background-color: $primary-600;
-                    }
-
-                    a {
-                        color: #fff;
-                    }
-                }
-
-                .wishlist-btn a:hover {
-                    color: #fff !important;
-                }
-
-            }
-
+  .wishlist-body-bottom {
+    .faq-review-wrap {
+      .faq-review-item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: #fff;
+        transition: 0.5s;
+        padding: 24px 0;
+        border-bottom: 1px solid #e9eaf0;
+        &:last-child {
+          border-bottom: 0px solid transparent;
         }
-    }
 
+        // margin-bottom: 24px;
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        svg {
+          path {
+            transition: 0.5s;
+          }
+        }
+
+        &-content {
+          display: flex;
+
+          svg {
+            margin-right: 23px;
+          }
+
+          button {
+            border: 0;
+            background-color: transparent;
+          }
+        }
+
+        .faq-review-data-inner {
+          min-height: 120px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-between;
+          max-width: 300px;
+
+          h5 {
+            font-size: 14px;
+            font-weight: 500;
+            letter-spacing: -0.01em;
+            color: #1d2026;
+            font-family: 'Inter';
+            margin-bottom: 8px;
+
+            span {
+              font-weight: normal;
+              color: #8c94a3;
+            }
+
+            svg {
+              width: 17px;
+              height: 17px;
+              margin-right: 5px;
+            }
+          }
+
+          a {
+            font-family: 'Inter';
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 22px;
+            color: #1d2026;
+          }
+
+          p {
+            color: #a1a5b3;
+            font-size: 14px;
+
+            span {
+              color: #4e5566;
+              margin-left: 7px;
+              font-size: 14px;
+            }
+          }
+        }
+
+        .amount {
+          font-family: 'Inter';
+          font-weight: 500;
+          font-size: 20px;
+          color: #ff6636;
+          // flex: 0 0 19%;
+          text-align: right;
+
+          span {
+            text-decoration: line-through;
+            color: #8c94a3;
+            font-size: 18px;
+          }
+        }
+
+        .move-to-wishlist {
+          transition: 0.5s;
+
+          a {
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 40px;
+            letter-spacing: -0.004em;
+            text-transform: capitalize;
+            color: $primary-500;
+            padding: 0 16px;
+            transition: 0.5s;
+          }
+        }
+
+        .move-to-wishlist a:hover {
+          background-color: $primary-100;
+          color: $primary-600;
+        }
+      }
+
+      .faq-review-item:hover .move-to-wishlist a {
+        background-color: $primary-100;
+        color: $primary-600;
+      }
+
+      .all-btn {
+        display: flex;
+        column-gap: 12px;
+
+        button {
+          background-color: $primary-100;
+          border: 0;
+          height: 48px;
+          width: 48px;
+          line-height: 48px;
+          text-align: center;
+
+          svg {
+            path {
+              stroke: none;
+            }
+          }
+        }
+
+        button:hover {
+          background-color: $primary-600;
+          transition: all 0.4s;
+          &:hover {
+            background-color: #ff6636;
+          }
+
+          svg {
+            path {
+              stroke: none;
+              fill: #fff;
+            }
+          }
+        }
+
+        .wishlist-btn {
+          a {
+            font-family: 'Inter';
+            font-weight: 600;
+            font-size: 16px;
+            line-height: 48px;
+            letter-spacing: -0.008em;
+            text-transform: capitalize;
+            color: #1d2026;
+            width: 176px;
+            line-height: 48px;
+            text-align: center;
+            transition: 0.5s;
+          }
+        }
+
+        .wishlist-buy {
+          background: #f5f7fa;
+          transition: 0.5s;
+          &:hover {
+            background-color: #ff6636;
+          }
+
+          a {
+            color: #1d2026;
+          }
+        }
+
+        .wishlist-add {
+          background-color: $primary-500;
+          transition: 0.5s;
+          &:hover {
+            background-color: $primary-600;
+          }
+
+          a {
+            color: #fff;
+          }
+        }
+
+        .wishlist-btn a:hover {
+          color: #fff !important;
+        }
+      }
+    }
+  }
 }
 
-
-
 .accordion-wrap-faq {
-    .accordion__list2.open {
-        .link {
-            color: #FF6636;
-            &:hover {
-                box-shadow: none;
-                border: 1px solid #E9EAF0;
-            }
-            .accordion-svg {
-                background: #FF6636;
-                box-shadow: none;
-            }
+  .accordion__list2.open {
+    .link {
+      color: #ff6636;
+      &:hover {
+        box-shadow: none;
+        border: 1px solid #e9eaf0;
+      }
+      .accordion-svg {
+        background: #ff6636;
+        box-shadow: none;
+      }
 
-            .accordion-svg {
-                svg {
-                    -webkit-transform: rotate(180deg);
-                    -moz-transform: rotate(180deg);
-                    -ms-transform: rotate(180deg);
-                    -o-transform: rotate(180deg);
-                    transform: rotate(180deg);
-                }
-
-                path {
-                    stroke: #fff;
-                }
-            }
+      .accordion-svg {
+        svg {
+          -webkit-transform: rotate(180deg);
+          -moz-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+          -o-transform: rotate(180deg);
+          transform: rotate(180deg);
         }
+
+        path {
+          stroke: #fff;
+        }
+      }
     }
+  }
 }
 p.emoji-content {
-    font-family: "Inter";
-    font-size: 16px;
-    line-height: 24px;
-    text-align: center;
-    color: #1D2026;
-    margin-top: 35px;
-    svg{
-        margin-left: 10px;
-    }
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #1d2026;
+  margin-top: 35px;
+  svg {
+    margin-left: 10px;
+  }
 }
 
 .accordion-wrap-faq {
-    .accordion-body-text {
-        display: none;
-        border: 1px solid #E9EAF0;
-        border-top: none;
-        box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.06);
-    }
+  .accordion-body-text {
+    display: none;
+    border: 1px solid #e9eaf0;
+    border-top: none;
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.06);
+  }
 }

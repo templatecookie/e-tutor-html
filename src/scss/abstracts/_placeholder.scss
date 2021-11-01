@@ -1,0 +1,30 @@
+%input {
+  width: 100%;
+  height: 48px;
+  font-size: 16px;
+  color: #4e4e4e;
+  line-height: 24px;
+  padding: 12px 18px;
+  text-transform: capitalize;
+  transition: all 0.3s linear;
+  border: 1px solid #e9eaf0;
+  &::placeholder {
+    color: #8c94a3;
+  }
+  &:hover {
+    border: 3px solid #ffddd1;
+  }
+  &:active,
+  &:focus {
+    border: 1px solid #ff6636;
+  }
+}
+
+%label-text {
+  font-size: 14px;
+  color: #1d2026;
+  line-height: 22px;
+  margin-bottom: 6px;
+  letter-spacing: -0.01em;
+  text-transform: capitalize;
+}

@@ -1,8 +1,4 @@
 // Font Import
-@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
-$font: 'Open Sans', sans-serif;
-
-h1, h2, h3 {
-    font-weight: 700;
-}
+$font-primary: 'Inter', sans-serif;

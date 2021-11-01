@@ -1,119 +1,112 @@
-
 .accordion__list {
-    margin-bottom: 20px;
-    .link {
-        background: #FFFFFF;
-        border: 1px solid #E9EAF0;
-        padding: 18px 24px;
-        cursor: pointer;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        font-family: "Inter";
-        font-weight: 500;
-        font-size: 16px;
-        transition: all 0.5s;
-        @include mq('tablet-small', max) {
-            font-size: 15px;
-            padding: 10px 15px;
-        } 
-        &:hover{
-            border: 1px solid #E9EAF0;
-            box-shadow: 0px 12px 32px rgba(29, 32, 38, 0.1)
-        }
-        svg{
-            transition: all 0.4s;
-            path{
-                
-                transition: all 0.4s;
-            }
-        }
-        &:hover svg{
-            path{
-                stroke: #FF6636;
-            }
-        }
-        span.link__title{
-            @include mq('phone-wide', max) {
-                flex: 0 0 85%;
-            } 
-        }
+  margin-bottom: 20px;
+  .link {
+    background: #ffffff;
+    border: 1px solid #e9eaf0;
+    padding: 18px 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    font-weight: 500;
+    font-size: 16px;
+    transition: all 0.5s;
+    @include mq('tablet-small', max) {
+      font-size: 15px;
+      padding: 10px 15px;
     }
-    
+    &:hover {
+      border: 1px solid #e9eaf0;
+      box-shadow: 0px 12px 32px rgba(29, 32, 38, 0.1);
+    }
+    svg {
+      transition: all 0.4s;
+      path {
+        transition: all 0.4s;
+      }
+    }
+    &:hover svg {
+      path {
+        stroke: #ff6636;
+      }
+    }
+    span.link__title {
+      @include mq('phone-wide', max) {
+        flex: 0 0 85%;
+      }
+    }
+  }
 }
-.accordion__list.open{
-    .link{
-        color: #fff;
-        background-color: #1D2026;
-        svg{
-            path{
-                stroke: #fff;
-            }
-        }
+.accordion__list.open {
+  .link {
+    color: #fff;
+    background-color: #1d2026;
+    svg {
+      path {
+        stroke: #fff;
+      }
     }
+  }
 }
 
 .accordion-wrap {
-    .open{
-        svg{
-            -webkit-transform: rotate(180deg);
-            -moz-transform: rotate(180deg);
-            -ms-transform: rotate(180deg);
-            -o-transform: rotate(180deg);
-            transform: rotate(180deg);
-        }
+  .open {
+    svg {
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      transform: rotate(180deg);
     }
+  }
 }
 
-.accordion-body-text{
-    display: none;
-    padding: 24px;
-    box-shadow: 0px 12px 32px rgba(29, 32, 38, 0.1);
-    @include mq('tablet-small', max) {
-        padding: 20px;
-    }
-    p{
-        font-family: "Inter";
+.accordion-body-text {
+  display: none;
+  padding: 24px;
+  box-shadow: 0px 12px 32px rgba(29, 32, 38, 0.1);
+  @include mq('tablet-small', max) {
+    padding: 20px;
+  }
+  p {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.01em;
+    color: #4e5566;
+  }
+  .faq-description1,
+  .faq-description2 {
+    ul {
+      margin: 0;
+      padding: 20px 0;
+      list-style: none;
+      li {
         font-weight: normal;
         font-size: 14px;
         line-height: 22px;
         letter-spacing: -0.01em;
-        color: #4E5566;
+        color: #4e5566;
+      }
     }
-    .faq-description1, 
-    .faq-description2{
-        ul{
-            margin: 0;
-            padding: 20px 0;
-            list-style: none;
-            li{
-                font-family: "Inter";
-                font-weight: normal;
-                font-size: 14px;
-                line-height: 22px;
-                letter-spacing: -0.01em;
-                color: #4E5566;
-            }
+  }
+  .faq-description2 {
+    ul {
+      li {
+        padding-left: 12px;
+        position: relative;
+        &:before {
+          content: '';
+          left: 0;
+          top: 8px;
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          position: absolute;
+          background-color: #4e5566;
         }
+      }
     }
-    .faq-description2{
-        ul{
-            li{
-                padding-left: 12px;
-                position: relative;
-                &:before{
-                    content: "";
-                    left: 0;
-                    top: 8px;
-                    width: 5px;
-                    height: 5px;
-                    border-radius: 50%;
-                    position: absolute;
-                    background-color: #4E5566;
-    
-                }
-            }
-        }
-       
-    }
+  }
 }

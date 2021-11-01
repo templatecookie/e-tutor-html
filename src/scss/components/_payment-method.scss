@@ -1,27 +1,26 @@
-
-.plans .plan input[type="radio"] {
-    position: absolute;
-    opacity: 0;
-    width: 0;
+.plans .plan input[type='radio'] {
+  position: absolute;
+  opacity: 0;
+  width: 0;
 }
 
 .plans {
-  .plan{
+  .plan {
     cursor: pointer;
     margin-bottom: 24px;
   }
-  .plan-content{
+  .plan-content {
     display: flex;
     height: 48px;
-    border: 1px solid #E9EAF0;
+    border: 1px solid #e9eaf0;
     position: relative;
     padding: 15px 18px;
     align-items: center;
-    font-family: "Inter";
+
     font-size: 14px;
     line-height: 22px;
     letter-spacing: -0.01em;
-    color: #4E5566;
+    color: #4e5566;
     transition: all 0.4s;
     @include mq('desktop-wide', max) {
       padding: 15px;
@@ -30,78 +29,76 @@
       display: block;
       text-align: center;
       height: auto;
-    } 
-    svg{
-        margin-right: 15px;
-        @include mq('desktop-wide', max) {
-          margin-right: 10px;
-        }
-        @include mq('phone-wide', max) {
-          margin: 0 0 15px;
-        }
     }
-    &:hover{
-        border: 1px solid #7BD785;
+    svg {
+      margin-right: 15px;
+      @include mq('desktop-wide', max) {
+        margin-right: 10px;
+      }
+      @include mq('phone-wide', max) {
+        margin: 0 0 15px;
+      }
     }
-    p{
-        line-height: 1;
-        margin-right: 45px;
-        font-family: Inter;
-        &:last-child{
-          margin-right: 0;
-        }
-        @include mq('phone-wide', max) {
-          margin: 0 0 15px;
-        }
+    &:hover {
+      border: 1px solid #7bd785;
     }
-    h3{
-        font-family: "Inter";
-        font-weight: normal;
-        font-size: 12px;
-        line-height: 16px;
-        color: #8C94A3;
-        margin: 0;
-        transition: all 0.4s;
+    p {
+      line-height: 1;
+      margin-right: 45px;
+      font-family: Inter;
+      &:last-child {
+        margin-right: 0;
+      }
+      @include mq('phone-wide', max) {
+        margin: 0 0 15px;
+      }
+    }
+    h3 {
+      font-weight: normal;
+      font-size: 12px;
+      line-height: 16px;
+      color: #8c94a3;
+      margin: 0;
+      transition: all 0.4s;
     }
   }
 }
 
-
-.plans .plan input[type="radio"]:checked + .plan-content {
-    &:after{
-        transform: scale(1);
-    }
+.plans .plan input[type='radio']:checked + .plan-content {
+  &:after {
+    transform: scale(1);
+  }
 }
 
 .plans .plan .plan-content {
-    &:after{
-        content: "";
-        height: 25px;
-        width: 25px;
-        top: 10px;
-        right: 15px;
-        transition: all 0.4s;
-        transform: scale(0);
-        background-repeat: no-repeat;
-        position: absolute;
-        background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z' fill='%2323BD33' stroke='%2323BD33' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M16.125 9.75L10.625 15L7.875 12.375' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
-        @include mq('desktop-wide', max) {
-          right: 5px;
-          top: 12px;
-          background-size: 20px;
-        }
+  &:after {
+    content: '';
+    height: 25px;
+    width: 25px;
+    top: 10px;
+    right: 15px;
+    transition: all 0.4s;
+    transform: scale(0);
+    background-repeat: no-repeat;
+    position: absolute;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z' fill='%2323BD33' stroke='%2323BD33' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M16.125 9.75L10.625 15L7.875 12.375' stroke='white' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    @include mq('desktop-wide', max) {
+      right: 5px;
+      top: 12px;
+      background-size: 20px;
     }
+  }
 }
 
-.plans .plan input[type="radio"]:checked + .plan-content {
-  border: 1px solid #7BD785;
- -webkit-transition: ease-in 0.3s;
+.plans .plan input[type='radio']:checked + .plan-content {
+  border: 1px solid #7bd785;
+  -webkit-transition: ease-in 0.3s;
   -o-transition: ease-in 0.3s;
   transition: ease-in 0.3s;
-  p{
-    color: #1D2026;
+  p {
+    color: #1d2026;
   }
-  h3{
-    color: #1D2026;
+  h3 {
+    color: #1d2026;
   }
 }

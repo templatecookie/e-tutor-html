@@ -1,609 +1,743 @@
-.searchbox {
+.form {
+  &-searchbox {
     position: relative;
-
+    overflow: hidden;
+    .icon {
+      top: 50%;
+      left: 20px;
+      position: absolute;
+      transform: translateY(-50%);
+    }
     input {
-        background-color: #F5F7FA;
-        padding: 0px 0 0px 54px;
-        border: 1px solid transparent;
-        height: 48px;
-        width: 100%;
-        transition: .5s;
-
+      @extend %input;
+      padding-left: 55px;
     }
+  }
 
-    ::-webkit-input-placeholder {
-        /* Chrome/Opera/Safari */
-        color: #8C94A3;
-        font-size: 16px;
-        font-family: 'Inter';
-        font-weight: 400;
+  &-field {
+    label {
+      @extend %label-text;
     }
+    .field-wrapper {
+      overflow: hidden;
+      position: relative;
+      input {
+        @extend %input;
+      }
 
-    ::-moz-placeholder {
-        /* Firefox 19+ */
-        color: #8C94A3;
-        font-size: 16px;
-        font-family: 'Inter';
-        font-weight: 400;
-    }
-
-    :-ms-input-placeholder {
-        /* IE 10+ */
-        color: #8C94A3;
-        font-size: 16px;
-        font-family: 'Inter';
-        font-weight: 400;
-    }
-
-    :-moz-placeholder {
-        /* Firefox 18- */
-        color: #8C94A3;
-        font-size: 16px;
-        font-family: 'Inter';
-        font-weight: 400;
-    }
-
-    .dashboard-search-icon {
+      .icon {
+        top: 50%;
+        right: 18px;
         position: absolute;
-        top: 11px;
-        left: 21px;
+        transform: translateY(100%);
+        transition: all 0.1s ease-in;
+      }
     }
 
-    input:focus {
-        border: 1px solid $primary-500;
+    &--success {
+      .field-wrapper {
+        input {
+          border-color: #7bd785;
+          background: linear-gradient(
+              0deg,
+              rgba(223, 242, 225, 0.5),
+              rgba(223, 242, 225, 0.5)
+            ),
+            linear-gradient(0deg, #ffffff, #ffffff);
+        }
+        .icon--success {
+          transform: translateY(-50%);
+        }
+      }
     }
 
-
-    input:hover {
-        border: 1px solid #FFDDD1;
+    &--warning {
+      .field-wrapper {
+        input {
+          border-color: #ee8f8f;
+          background: linear-gradient(
+              0deg,
+              rgba(249, 234, 234, 0.5),
+              rgba(249, 234, 234, 0.5)
+            ),
+            linear-gradient(0deg, #ffffff, #ffffff);
+        }
+        .icon--warning {
+          transform: translateY(-50%);
+        }
+      }
     }
+  }
 
+  &-field-social {
+    label {
+      @extend %label-text;
+    }
+    .field-wrapper {
+      position: relative;
+      .icon {
+        top: 50%;
+        left: 18px;
+        position: absolute;
+        padding-right: 12px;
+        transform: translateY(-50%);
+        border-right: 1px solid #e9eaf0;
+      }
+      input {
+        @extend %input;
+        padding: 8px 18px;
+        padding-left: 62px;
+      }
+    }
+  }
+
+  &-field-price {
+    label {
+      @extend %label-text;
+    }
+    .field-wrapper {
+      position: relative;
+      .icon,
+      .text-currencies {
+        top: 50%;
+        position: absolute;
+        transform: translateY(-50%);
+      }
+      .icon {
+        left: 18px;
+        padding-right: 8px;
+      }
+      .text-currencies {
+        right: 18px;
+        @extend %label-text;
+        color: #4e5566;
+      }
+
+      input {
+        @extend %input;
+        padding-left: 45px;
+      }
+    }
+  }
+  &-field-reply {
+    label {
+      @extend %label-text;
+    }
+    .field-wrapper {
+      position: relative;
+      .icon {
+        top: 50%;
+        position: absolute;
+        transform: translateY(-50%);
+      }
+      .icon {
+        left: 18px;
+        padding-right: 8px;
+      }
+
+      input {
+        @extend %input;
+        padding-left: 55px;
+      }
+    }
+  }
 }
+
+// .searchbox {
+//     position: relative;
+
+//     input {
+//         background-color: #F5F7FA;
+//         padding: 0px 0 0px 54px;
+//         border: 1px solid transparent;
+//         height: 48px;
+//         width: 100%;
+//         transition: .5s;
+
+//     }
+
+//     ::-webkit-input-placeholder {
+//         /* Chrome/Opera/Safari */
+//         color: #8C94A3;
+//         font-size: 16px;
+//         font-family: 'Inter';
+//         font-weight: 400;
+//     }
+
+//     ::-moz-placeholder {
+//         /* Firefox 19+ */
+//         color: #8C94A3;
+//         font-size: 16px;
+//         font-family: 'Inter';
+//         font-weight: 400;
+//     }
+
+//     :-ms-input-placeholder {
+//         /* IE 10+ */
+//         color: #8C94A3;
+//         font-size: 16px;
+//         font-family: 'Inter';
+//         font-weight: 400;
+//     }
+
+//     :-moz-placeholder {
+//         /* Firefox 18- */
+//         color: #8C94A3;
+//         font-size: 16px;
+//         font-family: 'Inter';
+//         font-weight: 400;
+//     }
+
+//     .dashboard-search-icon {
+//         position: absolute;
+//         top: 11px;
+//         left: 21px;
+//     }
+
+//     input:focus {
+//         border: 1px solid $primary-500;
+//     }
+
+//     input:hover {
+//         border: 1px solid #FFDDD1;
+//     }
+
+// }
 
 .searchbox-course {
-    position: relative;
+  position: relative;
 
-    input {
-        padding: 0px 52px 0px 48px;
-        border: 1px solid #E9EAF0;
-        height: 48px;
-        width: 100%;
-        transition: .5s;
-    }
+  input {
+    padding: 0px 52px 0px 48px;
+    border: 1px solid #e9eaf0;
+    height: 48px;
+    width: 100%;
+    transition: 0.5s;
+  }
 
-    .course-search-icon-left {
-        position: absolute;
-        top: 13px;
-        left: 21px;
+  .course-search-icon-left {
+    position: absolute;
+    top: 13px;
+    left: 21px;
+  }
 
-    }
-
-    .course-search-icon-right {
-        position: absolute;
-        top: 11px;
-        right: 21px;
-        margin-top: 3px;
-        font-family: 'Inter';
-        font-size: 14px;
-        line-height: 22px;
-        letter-spacing: -0.01em;
-        color: #4E5566;
-        cursor: pointer;
-    }
-
-    ::-webkit-input-placeholder {
-        /* Chrome/Opera/Safari */
-        color: #8C94A3;
-        font-size: 16px;
-        font-family: 'Inter';
-        font-weight: 400;
-    }
-
-    ::-moz-placeholder {
-        /* Firefox 19+ */
-        color: #8C94A3;
-        font-size: 16px;
-        font-family: 'Inter';
-        font-weight: 400;
-    }
-
-    :-ms-input-placeholder {
-        /* IE 10+ */
-        color: #8C94A3;
-        font-size: 16px;
-        font-family: 'Inter';
-        font-weight: 400;
-    }
-
-    :-moz-placeholder {
-        /* Firefox 18- */
-        color: #8C94A3;
-        font-size: 16px;
-        font-family: 'Inter';
-        font-weight: 400;
-    }
-
-    input:focus {
-        border: 1px solid $primary-500;
-    }
-
-    input:hover {
-        border: 1px solid #FFDDD1;
-    }
-}
-
-.course-searchbox-input {
-    position: relative;
-    display: flex;
-
-    input {
-        padding: 0px 0 0px 54px;
-        border: 1px solid #E9EAF0;
-        height: 48px;
-        width: 100%;
-        transition: .5s;
-        margin-right: 10px;
-    }
-
-    .course-search-icon-left {
-        position: absolute;
-        top: 13px;
-        left: 21px;
-
-    }
-
-    .course-search-icon-right {
-        position: absolute;
-        top: 11px;
-        right: 21px;
-        margin-top: 3px;
-        font-family: 'Inter';
-        font-size: 14px;
-        line-height: 22px;
-        letter-spacing: -0.01em;
-        color: #4E5566;
-        cursor: pointer;
-    }
-
-    ::-webkit-input-placeholder {
-        /* Chrome/Opera/Safari */
-        color: #8C94A3;
-        font-size: 16px;
-        font-family: 'Inter';
-        font-weight: 400;
-    }
-
-    ::-moz-placeholder {
-        /* Firefox 19+ */
-        color: #8C94A3;
-        font-size: 16px;
-        font-family: 'Inter';
-        font-weight: 400;
-    }
-
-    :-ms-input-placeholder {
-        /* IE 10+ */
-        color: #8C94A3;
-        font-size: 16px;
-        font-family: 'Inter';
-        font-weight: 400;
-    }
-
-    :-moz-placeholder {
-        /* Firefox 18- */
-        color: #8C94A3;
-        font-size: 16px;
-        font-family: 'Inter';
-        font-weight: 400;
-    }
-
-    input:focus {
-        border: 1px solid $primary-500;
-    }
-
-    input:hover {
-        border: 1px solid #FFDDD1;
-    }
-}
-
-.searchbox-input-card {
-    padding: 0px 52px 0px 21px !important;
-}
-
-.course-searchbox-success {
-    position: relative;
-    input {
-        padding: 0px 0 0px 48px;
-        border: 1px solid #7BD785;
-        height: 48px;
-        width: 100%;
-        transition: .5s;
-        background: linear-gradient(0deg, rgba(223, 242, 225, 0.5), rgba(223, 242, 225, 0.5)), #FFFFFF;
-
-    }
-
-    .course-search-icon-left {
-        position: absolute;
-        top: 13px;
-        left: 21px;
-
-    }
-
-    .course-search-icon-right {
-        position: absolute;
-        top: 8px;
-        right: 21px;
-        margin-top: 3px;
-        font-family: 'Inter';
-        font-size: 14px;
-        line-height: 22px;
-        letter-spacing: -0.01em;
-        color: #4E5566;
-        cursor: pointer;
-    }
-
-    ::-webkit-input-placeholder {
-        /* Chrome/Opera/Safari */
-        color: #8C94A3;
-        font-size: 16px;
-        font-family: 'Inter';
-        font-weight: 400;
-    }
-
-    ::-moz-placeholder {
-        /* Firefox 19+ */
-        color: #8C94A3;
-        font-size: 16px;
-        font-family: 'Inter';
-        font-weight: 400;
-    }
-
-    :-ms-input-placeholder {
-        /* IE 10+ */
-        color: #8C94A3;
-        font-size: 16px;
-        font-family: 'Inter';
-        font-weight: 400;
-    }
-
-    :-moz-placeholder {
-        /* Firefox 18- */
-        color: #8C94A3;
-        font-size: 16px;
-        font-family: 'Inter';
-        font-weight: 400;
-    }
-
-    input:focus {
-        border: 1px solid #7BD785;
-    }
-
-    input:hover {
-        border: 1px solid #7BD785;
-    }
-}
-
-.course-searchbox-warning {
-    position: relative;
-
-    input {
-        padding: 0px 0 0px 48px;
-        border: 1px solid #F9EAEA;
-        height: 48px;
-        width: 100%;
-        transition: .5s;
-        background: linear-gradient(0deg, rgba(249, 234, 234, 0.5), rgba(249, 234, 234, 0.5)), #FFFFFF;
-
-    }
-
-    .course-search-icon-left {
-        position: absolute;
-        top: 13px;
-        left: 21px;
-
-    }
-
-    .course-search-icon-right {
-        position: absolute;
-        top: 8px;
-        right: 21px;
-        margin-top: 3px;
-        font-family: 'Inter';
-        font-size: 14px;
-        line-height: 22px;
-        letter-spacing: -0.01em;
-        color: #4E5566;
-        cursor: pointer;
-    }
-
-    ::-webkit-input-placeholder {
-        /* Chrome/Opera/Safari */
-        color: #8C94A3;
-        font-size: 16px;
-        font-family: 'Inter';
-        font-weight: 400;
-    }
-
-    ::-moz-placeholder {
-        /* Firefox 19+ */
-        color: #8C94A3;
-        font-size: 16px;
-        font-family: 'Inter';
-        font-weight: 400;
-    }
-
-    :-ms-input-placeholder {
-        /* IE 10+ */
-        color: #8C94A3;
-        font-size: 16px;
-        font-family: 'Inter';
-        font-weight: 400;
-    }
-
-    :-moz-placeholder {
-        /* Firefox 18- */
-        color: #8C94A3;
-        font-size: 16px;
-        font-family: 'Inter';
-        font-weight: 400;
-    }
-
-    input:focus {
-        border: 1px solid #EE8F8F;
-    }
-
-    input:hover {
-        border: 1px solid #EE8F8F;
-    }
-}
-
-
-//check box
-input[type="checkbox"]:focus {
-
-    box-shadow: none;
-    outline: 0 none;
-}
-
-input[type="checkbox"]:checked+.form-check-label {
-
-    color: $primary-500;
-}
-
-input[type="checkbox"]:checked+.checkbox-box.form-check-right {
-    color: #4E5566!important;
-}
-
-.checkbox-box {
-    display: flex;
-    justify-content: space-between;
-    .form-check-right {
-        font-family: 'Inter';
-        font-size: 12px;
-        line-height: 16px;
-        color: #8C94A3;
-    }
-}
-
-
-.form-check-input[type=checkbox] {
-    border-radius: 0px;
-    // background-color: #FF6636;
-    border: 1px solid #FF6636;
-
-}
-
-.form-check-label label {
+  .course-search-icon-right {
+    position: absolute;
+    top: 11px;
+    right: 21px;
+    margin-top: 3px;
     font-family: 'Inter';
     font-size: 14px;
     line-height: 22px;
     letter-spacing: -0.01em;
-    color: #1D2026;
+    color: #4e5566;
     cursor: pointer;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none !important;
+  }
+
+  ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #8c94a3;
+    font-size: 16px;
+    font-family: 'Inter';
+    font-weight: 400;
+  }
+
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #8c94a3;
+    font-size: 16px;
+    font-family: 'Inter';
+    font-weight: 400;
+  }
+
+  :-ms-input-placeholder {
+    /* IE 10+ */
+    color: #8c94a3;
+    font-size: 16px;
+    font-family: 'Inter';
+    font-weight: 400;
+  }
+
+  :-moz-placeholder {
+    /* Firefox 18- */
+    color: #8c94a3;
+    font-size: 16px;
+    font-family: 'Inter';
+    font-weight: 400;
+  }
+
+  input:focus {
+    border: 1px solid $primary-500;
+  }
+
+  input:hover {
+    border: 1px solid #ffddd1;
+  }
 }
 
-input[type=checkbox]:checked {
-    background-color: #FF6636;
-    color: #ffffff !important;
+.course-searchbox-input {
+  position: relative;
+  display: flex;
+
+  input {
+    padding: 0px 0 0px 54px;
+    border: 1px solid #e9eaf0;
+    height: 48px;
+    width: 100%;
+    transition: 0.5s;
+    margin-right: 10px;
+  }
+
+  .course-search-icon-left {
+    position: absolute;
+    top: 13px;
+    left: 21px;
+  }
+
+  .course-search-icon-right {
+    position: absolute;
+    top: 11px;
+    right: 21px;
+    margin-top: 3px;
+    font-family: 'Inter';
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.01em;
+    color: #4e5566;
     cursor: pointer;
+  }
+
+  ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #8c94a3;
+    font-size: 16px;
+    font-family: 'Inter';
+    font-weight: 400;
+  }
+
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #8c94a3;
+    font-size: 16px;
+    font-family: 'Inter';
+    font-weight: 400;
+  }
+
+  :-ms-input-placeholder {
+    /* IE 10+ */
+    color: #8c94a3;
+    font-size: 16px;
+    font-family: 'Inter';
+    font-weight: 400;
+  }
+
+  :-moz-placeholder {
+    /* Firefox 18- */
+    color: #8c94a3;
+    font-size: 16px;
+    font-family: 'Inter';
+    font-weight: 400;
+  }
+
+  input:focus {
+    border: 1px solid $primary-500;
+  }
+
+  input:hover {
+    border: 1px solid #ffddd1;
+  }
+}
+
+.searchbox-input-card {
+  padding: 0px 52px 0px 21px !important;
+}
+
+.course-searchbox-success {
+  position: relative;
+  input {
+    padding: 0px 0 0px 48px;
+    border: 1px solid #7bd785;
+    height: 48px;
+    width: 100%;
+    transition: 0.5s;
+    background: linear-gradient(0deg, rgba(223, 242, 225, 0.5), rgba(223, 242, 225, 0.5)),
+      #ffffff;
+  }
+
+  .course-search-icon-left {
+    position: absolute;
+    top: 13px;
+    left: 21px;
+  }
+
+  .course-search-icon-right {
+    position: absolute;
+    top: 8px;
+    right: 21px;
+    margin-top: 3px;
+    font-family: 'Inter';
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.01em;
+    color: #4e5566;
+    cursor: pointer;
+  }
+
+  ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #8c94a3;
+    font-size: 16px;
+    font-family: 'Inter';
+    font-weight: 400;
+  }
+
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #8c94a3;
+    font-size: 16px;
+    font-family: 'Inter';
+    font-weight: 400;
+  }
+
+  :-ms-input-placeholder {
+    /* IE 10+ */
+    color: #8c94a3;
+    font-size: 16px;
+    font-family: 'Inter';
+    font-weight: 400;
+  }
+
+  :-moz-placeholder {
+    /* Firefox 18- */
+    color: #8c94a3;
+    font-size: 16px;
+    font-family: 'Inter';
+    font-weight: 400;
+  }
+
+  input:focus {
+    border: 1px solid #7bd785;
+  }
+
+  input:hover {
+    border: 1px solid #7bd785;
+  }
+}
+
+.course-searchbox-warning {
+  position: relative;
+
+  input {
+    padding: 0px 0 0px 48px;
+    border: 1px solid #f9eaea;
+    height: 48px;
+    width: 100%;
+    transition: 0.5s;
+    background: linear-gradient(0deg, rgba(249, 234, 234, 0.5), rgba(249, 234, 234, 0.5)),
+      #ffffff;
+  }
+
+  .course-search-icon-left {
+    position: absolute;
+    top: 13px;
+    left: 21px;
+  }
+
+  .course-search-icon-right {
+    position: absolute;
+    top: 8px;
+    right: 21px;
+    margin-top: 3px;
+    font-family: 'Inter';
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.01em;
+    color: #4e5566;
+    cursor: pointer;
+  }
+
+  ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #8c94a3;
+    font-size: 16px;
+    font-family: 'Inter';
+    font-weight: 400;
+  }
+
+  ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #8c94a3;
+    font-size: 16px;
+    font-family: 'Inter';
+    font-weight: 400;
+  }
+
+  :-ms-input-placeholder {
+    /* IE 10+ */
+    color: #8c94a3;
+    font-size: 16px;
+    font-family: 'Inter';
+    font-weight: 400;
+  }
+
+  :-moz-placeholder {
+    /* Firefox 18- */
+    color: #8c94a3;
+    font-size: 16px;
+    font-family: 'Inter';
+    font-weight: 400;
+  }
+
+  input:focus {
+    border: 1px solid #ee8f8f;
+  }
+
+  input:hover {
+    border: 1px solid #ee8f8f;
+  }
+}
+
+//check box
+input[type='checkbox']:focus {
+  box-shadow: none;
+  outline: 0 none;
+}
+
+input[type='checkbox']:checked + .form-check-label {
+  color: $primary-500;
+}
+
+input[type='checkbox']:checked + .checkbox-box.form-check-right {
+  color: #4e5566 !important;
+}
+
+.checkbox-box {
+  display: flex;
+  justify-content: space-between;
+  .form-check-right {
+    font-family: 'Inter';
+    font-size: 12px;
+    line-height: 16px;
+    color: #8c94a3;
+  }
+}
+
+.form-check-input[type='checkbox'] {
+  border-radius: 0px;
+  // background-color: #FF6636;
+  border: 1px solid #ff6636;
+}
+
+.form-check-label label {
+  font-family: 'Inter';
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: -0.01em;
+  color: #1d2026;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none !important;
+}
+
+input[type='checkbox']:checked {
+  background-color: #ff6636;
+  color: #ffffff !important;
+  cursor: pointer;
 }
 
 .dropdown-select {
-    border: 1px solid #E9EAF0;
+  border: 1px solid #e9eaf0;
 }
 
 .create-course-label {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 2px solid $primary-500;
-    padding: 21px;
-    margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid $primary-500;
+  padding: 21px;
+  margin-bottom: 10px;
 
-    h4 {
-        font-family: 'Inter';
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 22px;
-        color: #1D2026;
-        margin: 0;
+  h4 {
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1d2026;
+    margin: 0;
 
-        svg {
-            margin-right: 8px;
-        }
+    svg {
+      margin-right: 8px;
     }
+  }
 
-    span {
-        font-family: 'Inter';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 12px;
-        line-height: 16px;
-        text-align: right;
-        color: #23BD33;
-        align-self: center;
-    }
+  span {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+    color: #23bd33;
+    align-self: center;
+  }
 }
 
-.create-course-label.course-label-one{
-    border: none;
-    h4{
-        color: #6E7485;
-        svg{
-            path{
-                stroke:#6E7485;
-                
-            }
-            path.gray-color{
-                fill: #6E7485;
-            }
-        }
+.create-course-label.course-label-one {
+  border: none;
+  h4 {
+    color: #6e7485;
+    svg {
+      path {
+        stroke: #6e7485;
+      }
+      path.gray-color {
+        fill: #6e7485;
+      }
     }
+  }
 }
 
-.create-course-label.course-label-two{
-    border: none;
-    h4{
-        color: #1D2026;
-        svg{
-            path{
-                stroke:#1D2026;
-                
-            }
-            path.color-black{
-                fill: #1D2026;
-            }
-        }
+.create-course-label.course-label-two {
+  border: none;
+  h4 {
+    color: #1d2026;
+    svg {
+      path {
+        stroke: #1d2026;
+      }
+      path.color-black {
+        fill: #1d2026;
+      }
     }
+  }
 }
-
 
 // all input field
 
-.default-input-field{
-    position: relative;
-    margin-bottom: 20px;
-    label{
-        font-size: 14px;
-        letter-spacing: -0.01em;
-        color: #1D2026;
-        display: block;
-        margin-bottom: 6px;
-        font-family: "Inter";
-    }
-    textarea{
-        height: 112px!important;
-        resize: none;
-    }
-    input, 
-    textarea{
-        width: 100%;
-        height: 48px;
-        font-size: 16px;
-        font-family: 'Inter';
-        font-weight: 400;
-        padding: 10px 50px 10px 18px;
-        transition: all 0.4s;
-        border: 1px solid #E9EAF0;
-        transition: all 0.4s;
-       
-        &:hover{
-            border: 1px solid #FFDDD1;
-        }
-        &:focus {
-            border: 1px solid #EE8F8F;
-        }
-        &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
-            color:    #8C94A3;
-            opacity: 1;
-        }
-        &:-moz-placeholder{ /* Mozilla Firefox 4 to 18 */
-           color:    #8C94A3;
-           opacity:  1;
-        }
-        &::-moz-placeholder{ /* Mozilla Firefox 19+ */
-           color:    #8C94A3;
-           opacity:  1;
-        }
-        &:-ms-input-placeholder{ /* Internet Explorer 10-11 */
-           color:    #8C94A3;
-           opacity: 1;
-        }
-        &::-ms-input-placeholder{ /* Microsoft Edge */
-           color:    #8C94A3;
-           opacity: 1;
-        }
-        &::placeholder{ /* Most modern browsers support this now. */
-           color:    #8C94A3;
-           opacity: 1;
-        }
-    }
-    
-    .select-box {
-        position: absolute;
-        top: 40px;
-        right: 0;
-        .custom-select-trigger {
-            min-width: 71px;
-            color: #4E5566;
-            margin: 0;
-        }
-    }
-}
-
-
-span.default-input-field-content {
-    font-family: Inter;
+.default-input-field {
+  position: relative;
+  margin-bottom: 20px;
+  label {
     font-size: 14px;
     letter-spacing: -0.01em;
-    color: #4E5566;
+    color: #1d2026;
+    display: block;
+    margin-bottom: 6px;
+    font-family: 'Inter';
+  }
+  textarea {
+    height: 112px !important;
+    resize: none;
+  }
+  input,
+  textarea {
+    width: 100%;
+    height: 48px;
+    font-size: 16px;
+    font-family: 'Inter';
+    font-weight: 400;
+    padding: 10px 50px 10px 18px;
+    transition: all 0.4s;
+    border: 1px solid #e9eaf0;
+    transition: all 0.4s;
+
+    &:hover {
+      border: 1px solid #ffddd1;
+    }
+    &:focus {
+      border: 1px solid #ee8f8f;
+    }
+    &::-webkit-input-placeholder {
+      /* WebKit, Blink, Edge */
+      color: #8c94a3;
+      opacity: 1;
+    }
+    &:-moz-placeholder {
+      /* Mozilla Firefox 4 to 18 */
+      color: #8c94a3;
+      opacity: 1;
+    }
+    &::-moz-placeholder {
+      /* Mozilla Firefox 19+ */
+      color: #8c94a3;
+      opacity: 1;
+    }
+    &:-ms-input-placeholder {
+      /* Internet Explorer 10-11 */
+      color: #8c94a3;
+      opacity: 1;
+    }
+    &::-ms-input-placeholder {
+      /* Microsoft Edge */
+      color: #8c94a3;
+      opacity: 1;
+    }
+    &::placeholder {
+      /* Most modern browsers support this now. */
+      color: #8c94a3;
+      opacity: 1;
+    }
+  }
+
+  .select-box {
     position: absolute;
     top: 40px;
-    right: 18px;
-    cursor: pointer;
+    right: 0;
+    .custom-select-trigger {
+      min-width: 71px;
+      color: #4e5566;
+      margin: 0;
+    }
+  }
 }
 
-
-.default-input-field.input-dropdown{
-    input{
-        padding-right: 75px;
-    }
+span.default-input-field-content {
+  font-family: Inter;
+  font-size: 14px;
+  letter-spacing: -0.01em;
+  color: #4e5566;
+  position: absolute;
+  top: 40px;
+  right: 18px;
+  cursor: pointer;
 }
 
-.default-input-field.icon-field{
-    input{
-        padding: 5px 0 5px 65px;
-    }
+.default-input-field.input-dropdown {
+  input {
+    padding-right: 75px;
+  }
+}
+
+.default-input-field.icon-field {
+  input {
+    padding: 5px 0 5px 65px;
+  }
 }
 span.default-input-field-icon {
-    position: absolute;
-    left: 20px;
-    border-right: 1px solid #E9EAF0;
-    padding: 4px 10px 7px 0px;
-    top: 33px;
+  position: absolute;
+  left: 20px;
+  border-right: 1px solid #e9eaf0;
+  padding: 4px 10px 7px 0px;
+  top: 33px;
 }
 
-
-
-.searchbox.searchbox-course.default-field{
-    label{
-        font-size: 14px;
-        letter-spacing: -0.01em;
-        color: #1D2026;
-        display: block;
-        margin-bottom: 6px;
-        font-family: "Inter";
-    }
-    input{
-        background-color: transparent;
-    }
-    span.course-search-icon-right{
-        top: 38px;
-    }
-    svg.course-search-icon-left{
-        top: 39px;
-    }
+.searchbox.searchbox-course.default-field {
+  label {
+    font-size: 14px;
+    letter-spacing: -0.01em;
+    color: #1d2026;
+    display: block;
+    margin-bottom: 6px;
+    font-family: 'Inter';
+  }
+  input {
+    background-color: transparent;
+  }
+  span.course-search-icon-right {
+    top: 38px;
+  }
+  svg.course-search-icon-left {
+    top: 39px;
+  }
 }

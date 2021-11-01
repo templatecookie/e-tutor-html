@@ -1,124 +1,120 @@
 .review-item {
-    display: flex;
-    margin-bottom: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #E9EAF0;
-    &:last-child{
-        border-bottom: 0;
-    }
+  display: flex;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #e9eaf0;
+  &:last-child {
+    border-bottom: 0;
+  }
 
-    .review-thumb{
-        width: 40px;
-        height: 40px;
-        overflow: hidden;
-        border-radius: 100%;
-        flex: 0 0 auto;
-        margin-right: 16px;
-        img{
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-        }
+  .review-thumb {
+    width: 40px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 100%;
+    flex: 0 0 auto;
+    margin-right: 16px;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
-    .review-data{
-        h5{
-            font-family:"Inter";
-            font-style: normal;
-            font-weight: 500;
-            font-size: 14px;
-            letter-spacing: -0.01em;
-            color: #1D2026;
-            margin-bottom: 4px;
-            line-height: 1;
-            span{
-                font-size: 12px;
-                color: #6E7485;
-                margin-left: 20px;
-                position: relative;
-                &::before{
-                    content: "";
-                    left: -13px;
-                    top: 6px;
-                    width: 4px;
-                    height: 4px;
-                    border-radius: 50%;
-                    position: absolute;
-                    background-color: #6E7485;
-                }
-            }
-
+  }
+  .review-data {
+    h5 {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      letter-spacing: -0.01em;
+      color: #1d2026;
+      margin-bottom: 4px;
+      line-height: 1;
+      span {
+        font-size: 12px;
+        color: #6e7485;
+        margin-left: 20px;
+        position: relative;
+        &::before {
+          content: '';
+          left: -13px;
+          top: 6px;
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          position: absolute;
+          background-color: #6e7485;
         }
-        .review{
-            margin-bottom: 12px;
-            ul{
-                margin: 0;
-                padding: 0;
-                list-style: none;
-                li{
-                    display: inline-block;
-                }
-            }
-        }
-        p{
-            font-family: "Inter";
-            font-size: 14px;
-            line-height: 22px;
-            letter-spacing: -0.01em;
-            color: #4E5566;
-        }
+      }
     }
+    .review {
+      margin-bottom: 12px;
+      ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        li {
+          display: inline-block;
+        }
+      }
+    }
+    p {
+      font-size: 14px;
+      line-height: 22px;
+      letter-spacing: -0.01em;
+      color: #4e5566;
+    }
+  }
 }
 
 .student-comment-section {
-    margin-bottom: 40px;
+  margin-bottom: 40px;
 }
 
-.student-cmment-wrap{
-    .review-item{
-        border-bottom: 0;
-        padding: 0;
-        .review-data{
-            h5{
-                margin-bottom: 12px;
-            }
-            p{
-                margin-bottom: 12px;
-            }
-            small{
-                font-weight: 500;
-                color: #fff;
-                font-size: 10px;
-                padding: 4px 6px;
-                background: #564FFD;
-            }
-        }
-        a.replay-btn {
-            font-family: "Inter";
-            font-style: normal;
-            font-weight: 500;
-            font-size: 14px;
-            line-height: 20px;
-            letter-spacing: -0.01em;
-            color: #8C94A3;
-            text-transform: uppercase;
-            display: flex;
-            transition: all 0.4s;
-            &:hover{
-                color: #FF6636;
-            }
-            svg{
-                margin-right: 10px;
-            }
-            path{
-                transition: all 0.4s;
-            }
-            &:hover path{
-                stroke: #FF6636;
-            }
-
-        }
-        &.user-comment{
-            margin-left: 50px;
-        }
+.student-cmment-wrap {
+  .review-item {
+    border-bottom: 0;
+    padding: 0;
+    .review-data {
+      h5 {
+        margin-bottom: 12px;
+      }
+      p {
+        margin-bottom: 12px;
+      }
+      small {
+        font-weight: 500;
+        color: #fff;
+        font-size: 10px;
+        padding: 4px 6px;
+        background: #564ffd;
+      }
     }
+    a.replay-btn {
+      font-style: normal;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 20px;
+      letter-spacing: -0.01em;
+      color: #8c94a3;
+      text-transform: uppercase;
+      display: flex;
+      transition: all 0.4s;
+      &:hover {
+        color: #ff6636;
+      }
+      svg {
+        margin-right: 10px;
+      }
+      path {
+        transition: all 0.4s;
+      }
+      &:hover path {
+        stroke: #ff6636;
+      }
+    }
+    &.user-comment {
+      margin-left: 50px;
+    }
+  }
 }

@@ -1,251 +1,237 @@
-.about-section{
-    border-bottom: 1px solid #E9EAF0;
+.about-section {
+  border-bottom: 1px solid #e9eaf0;
 }
-.about-content{
-    margin-right: 100px;
+.about-content {
+  margin-right: 100px;
+  @include mq('desktop', max) {
+    margin-right: 15px;
+  }
+  @include mq('tablet', max) {
+    margin: 0 0 24px;
+  }
+  h3 {
+    font-weight: 600;
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: -0.02em;
+    color: #e9eaf0;
+    margin-bottom: 15px;
+    @include mq('desktop-wide', max) {
+      font-size: 60px;
+    }
+    @include mq('desktop-wide', max) {
+      font-size: 50px;
+    }
+    @include mq('tablet', max) {
+      font-size: 45px;
+      line-height: 40px;
+    }
+    @include mq('phone-wide', max) {
+      font-size: 40px;
+    }
+  }
+  h2 {
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 52px;
+    letter-spacing: -0.02em;
+    color: #1d2026;
+    margin-bottom: 30px;
+    @include mq('desktop-wide', max) {
+      font-size: 44px;
+    }
     @include mq('desktop', max) {
-        margin-right: 15px;
-     }
-     @include mq('tablet', max) {
-        margin: 0 0 24px;
-      }
-    h3{
-        font-family: "Inter";
-        font-weight: 600;
-        font-size: 80px;
-        line-height: 80px;
-        letter-spacing: -0.02em;
-        color: #E9EAF0;
-        margin-bottom: 15px;
-        @include mq('desktop-wide', max) {
-            font-size: 60px;
-         }
-         @include mq('desktop-wide', max) {
-            font-size: 50px;
-         }
-         @include mq('tablet', max) {
-           font-size: 45px;
-           line-height: 40px;
-         }
-         @include mq('phone-wide', max) {
-            font-size: 40px;
-          }
+      font-size: 36px;
+      line-height: 40px;
+      margin-bottom: 15px;
     }
-    h2{
-        font-family: "Inter";
-        font-weight: 600;
-        font-size: 48px;
-        line-height: 52px;
-        letter-spacing: -0.02em;
-        color: #1D2026;
-        margin-bottom: 30px;
-        @include mq('desktop-wide', max) {
-            font-size: 44px;
-         }
-         @include mq('desktop', max) {
-            font-size: 36px;
-            line-height: 40px;
-            margin-bottom: 15px;
-         }
-          @include mq('phone-wide', max) {
-            font-size: 30px;
-            line-height: 38px;
-          }
-        
+    @include mq('phone-wide', max) {
+      font-size: 30px;
+      line-height: 38px;
     }
-    p{
-        font-family: "Inter";
-        font-size: 20px;
-        line-height: 32px;
-        color: #6E7485;
-        @include mq('desktop-wide', max) {
-            font-size: 18px;
-         }
-         @include mq('tablet-small', max) {
-            font-size: 16px;
-            line-height: 28px;
-          }
+  }
+  p {
+    font-size: 20px;
+    line-height: 32px;
+    color: #6e7485;
+    @include mq('desktop-wide', max) {
+      font-size: 18px;
     }
+    @include mq('tablet-small', max) {
+      font-size: 16px;
+      line-height: 28px;
+    }
+  }
 }
 
 // counter secttion
 
 .counter-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  @include mq('tablet-small', max) {
+    justify-content: center;
+  }
+  .counter-item {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    @include mq('tablet-small', max) {
-        justify-content: center;
-     }
-    .counter-item {
-        display: flex;
-        flex-wrap: wrap;
-        @include mq('tablet', max) {
-            display: block;
-            text-align: center;
-         }
-         @include mq('tablet-small', max) {
-            flex: 0 0 33%;
-            margin-bottom: 24px;
-         }
-         @include mq('phone-wide', max) {
-            flex: 0 0 50%;
-         }
-        .counter-icon {
-            margin-right: 16px;
-            @include mq('tablet', max) {
-                margin: 0 0 15px;
-             }
-        }
-        .counter-data{
-            h4{
-                font-family: "Inter";
-                font-weight: 600;
-                font-size: 32px;
-                line-height: 40px;
-                letter-spacing: -0.01em;
-                color: #1D2026;
-                @include mq('tablet-small', max) {
-                    font-size: 26px;
-                 }
-             }
-             p{
-                font-family: "Inter";
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 20px;                
-                letter-spacing: -0.01em;
-                color: #4E5566;
-                
-             }
-        }
+    @include mq('tablet', max) {
+      display: block;
+      text-align: center;
     }
+    @include mq('tablet-small', max) {
+      flex: 0 0 33%;
+      margin-bottom: 24px;
+    }
+    @include mq('phone-wide', max) {
+      flex: 0 0 50%;
+    }
+    .counter-icon {
+      margin-right: 16px;
+      @include mq('tablet', max) {
+        margin: 0 0 15px;
+      }
+    }
+    .counter-data {
+      h4 {
+        font-weight: 600;
+        font-size: 32px;
+        line-height: 40px;
+        letter-spacing: -0.01em;
+        color: #1d2026;
+        @include mq('tablet-small', max) {
+          font-size: 26px;
+        }
+      }
+      p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: -0.01em;
+        color: #4e5566;
+      }
+    }
+  }
 }
-
 
 // our mission section
 
 .our-mission-section {
-    background: #FFEEE8;
+  background: #ffeee8;
 }
-.our-mission-content{
-    @include mq('tablet', max) {
-        padding-top: 60px;
-     }
-    h5{
-        font-family: "Inter";
-        font-style: normal;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 22px;
-        color: #FF6636;
+.our-mission-content {
+  @include mq('tablet', max) {
+    padding-top: 60px;
+  }
+  h5 {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #ff6636;
+  }
+  h2 {
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.01em;
+    color: #1d2026;
+    margin-bottom: 24px;
+    @include mq('desktop-wide', max) {
+      font-size: 36px;
+      margin-bottom: 15px;
+      line-height: 44px;
     }
-    h2{
-        font-family: "Inter";
-        font-weight: 600;
-        font-size: 40px;
-        line-height: 48px;
-        letter-spacing: -0.01em;
-        color: #1D2026;
-        margin-bottom: 24px;
-        @include mq('desktop-wide', max) {
-            font-size: 36px;
-            margin-bottom: 15px;
-            line-height: 44px;
-         }
-         @include mq('desktop', max) {
-            font-size: 32px;
-            line-height: 38px;
-         }
-         @include mq('phone-wide', max) {
-            font-size: 28px;
-            line-height: 36px;
-         }
+    @include mq('desktop', max) {
+      font-size: 32px;
+      line-height: 38px;
     }
-    p{
-        font-family: "Inter";
-        font-size: 16px;
-        line-height: 24px;
-        color: #4E5566;
-        @include mq('desktop', max) {
-            font-size: 15px;
-            line-height: 22px;
-         }
+    @include mq('phone-wide', max) {
+      font-size: 28px;
+      line-height: 36px;
     }
+  }
+  p {
+    font-size: 16px;
+    line-height: 24px;
+    color: #4e5566;
+    @include mq('desktop', max) {
+      font-size: 15px;
+      line-height: 22px;
+    }
+  }
 }
 
 // gallery section
 .gallery-thumb {
-    margin-left: 100px;
-    @include mq('desktop', max) {
-        margin-left: 40px;
-     }
-     @include mq('tablet', max) {
-         margin: 0;
-        margin-top: 30px;
-     }
+  margin-left: 100px;
+  @include mq('desktop', max) {
+    margin-left: 40px;
+  }
+  @include mq('tablet', max) {
+    margin: 0;
+    margin-top: 30px;
+  }
 }
 
 .testimonial-content {
-    background: #F5F7FA;
-    padding: 80px 24px;
-    text-align: center;
-    position: relative;
-    .quote1 {
-        position: absolute;
-        top: 35px;
-        left: 35px;
-    }
-    .quote2 {
-        position: absolute;
-        bottom: 35px;
-        right: 35px;
-    }
-    &:before{
-        content: "";
-        width: 0;
-        height: 0;
-        position: absolute;
-        bottom: -22px;
-        left: 50%;
-        transform: translateX(-50%);
-        border-left: 16px solid transparent;
-        border-right: 16px solid transparent;
-        border-top: 24px solid #F5F7FA;
-    }
-    p{
-        font-family: "Inter";
-        font-size: 18px;
-        line-height: 24px;
-        letter-spacing: -0.015em;
-        color: #1D2026;
-    }
+  background: #f5f7fa;
+  padding: 80px 24px;
+  text-align: center;
+  position: relative;
+  .quote1 {
+    position: absolute;
+    top: 35px;
+    left: 35px;
+  }
+  .quote2 {
+    position: absolute;
+    bottom: 35px;
+    right: 35px;
+  }
+  &:before {
+    content: '';
+    width: 0;
+    height: 0;
+    position: absolute;
+    bottom: -22px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-left: 16px solid transparent;
+    border-right: 16px solid transparent;
+    border-top: 24px solid #f5f7fa;
+  }
+  p {
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: -0.015em;
+    color: #1d2026;
+  }
 }
 
-.testimonial-data{
-    text-align: center;
-    margin-top: 35px;
-    h5{
-        font-family: "Inter";
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 22px;
-        color: #1D2026;
+.testimonial-data {
+  text-align: center;
+  margin-top: 35px;
+  h5 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 22px;
+    color: #1d2026;
+  }
+  p {
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.01em;
+    color: #6e7485;
+    a {
+      color: #564ffd;
     }
-    p{
-        font-family: "Inter";
-        font-size: 14px;
-        line-height: 22px;
-        letter-spacing: -0.01em;
-        color: #6E7485;
-        a{
-            color: #564FFD;
-        }
-    }
+  }
 }
 
-.testimonial-wrap{
-    @include mq('tablet', max) {
-        margin-bottom: 24px;
-     }
+.testimonial-wrap {
+  @include mq('tablet', max) {
+    margin-bottom: 24px;
+  }
 }

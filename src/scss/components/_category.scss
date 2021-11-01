@@ -1,84 +1,82 @@
 .category-content {
-    display: flex;
-    background-color: #EBEBFF;
-    padding: 20px;
-    margin-bottom: 24px;
-    transition: .5s;
+  display: flex;
+  background-color: #ebebff;
+  padding: 20px;
+  margin-bottom: 24px;
+  transition: 0.5s;
 
-    &:hover {
-        box-shadow: 0px 12px 32px rgba(29, 32, 38, 0.1);
-        background-color: #fff;
+  &:hover {
+    box-shadow: 0px 12px 32px rgba(29, 32, 38, 0.1);
+    background-color: #fff;
+  }
+
+  &:hover .category-content-left {
+    background-color: $primary-500;
+
+    svg {
+      path {
+        stroke: #fff;
+      }
+    }
+  }
+
+  &-left {
+    height: 64px;
+    width: 64px;
+    line-height: 64px;
+    text-align: center;
+    margin-right: 20px;
+    background-color: #fff;
+    cursor: pointer;
+    transition: 0.5s;
+
+    svg {
+      transition: 0.5s;
+
+      path {
+        transition: 0.5s;
+      }
+    }
+  }
+
+  &-right {
+    align-self: center;
+
+    a {
+      font-family: 'Inter';
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 22px;
+      color: #1d2026;
+      margin: 0;
+      display: block;
+      margin-bottom: 5px;
     }
 
-    &:hover .category-content-left {
-        background-color: $primary-500;
-
-        svg {
-            path {
-                stroke: #fff;
-            }
-        }
+    span {
+      font-family: 'Inter';
+      font-size: 14px;
+      line-height: 22px;
+      letter-spacing: -0.01em;
+      color: #6e7485;
+      margin-top: 8px;
     }
-
-    &-left {
-        height: 64px;
-        width: 64px;
-        line-height: 64px;
-        text-align: center;
-        margin-right: 20px;
-        background-color: #fff;
-        cursor: pointer;
-        transition: .5s;
-
-        svg {
-            transition: .5s;
-
-            path {
-                transition: .5s;
-            }
-        }
-    }
-
-    &-right {
-        align-self: center;
-
-        a {
-            font-family: 'Inter';
-            font-weight: 500;
-            font-size: 16px;
-            line-height: 22px;
-            color: #1D2026;
-            margin: 0;
-            display: block;
-            margin-bottom: 5px;
-        }
-
-        span {
-            font-family: 'Inter';
-            font-size: 14px;
-            line-height: 22px;
-            letter-spacing: -0.01em;
-            color: #6E7485;
-            margin-top: 8px;
-
-        }
-    }
+  }
 }
 
 .icon-bottom-btn {
-    text-align: center;
-    p{
-        font-family: "Inter";
-        font-size: 14px;
-        letter-spacing: -0.01em;
-        color: #4E5566;
-        a{
-            color: #FF6636;
-            font-weight: 500;
-            margin-left: 10px;
-            svg{
-                margin-left: 5px;
-            }
-        }
+  text-align: center;
+  p {
+    font-size: 14px;
+    letter-spacing: -0.01em;
+    color: #4e5566;
+    a {
+      color: #ff6636;
+      font-weight: 500;
+      margin-left: 10px;
+      svg {
+        margin-left: 5px;
+      }
     }
+  }
 }

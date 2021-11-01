@@ -1,132 +1,129 @@
 .profile-wrap {
-    border: 1px solid #FFDDD1;
-    padding: 40px;
+  border: 1px solid #ffddd1;
+  padding: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include mq('desktop', max) {
+    display: block;
+  }
+  @include mq('tablet', max) {
+    padding: 25px;
+  }
+  .profile-left {
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    @include mq('desktop', max) {
-        display: block;
-    } 
-    @include mq('tablet', max) {
-        padding: 25px;
-    } 
-    .profile-left{
+    @include mq('tablet-small', max) {
+      display: block;
+    }
+    .profile-thumb {
+      width: 200px;
+      height: 200px;
+      overflow: hidden;
+      border-radius: 100%;
+      margin-right: 24px;
+      flex: 0 0 auto;
+      @include mq('tablet', max) {
+        width: 175px;
+        height: 175px;
+        margin-right: 20px;
+      }
+      @include mq('tablet-small', max) {
+        margin-bottom: 30px;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .profile-data {
+      h3 {
+        font-weight: 600;
+        font-size: 32px;
+        letter-spacing: -0.01em;
+        color: #1d2026;
         display: flex;
         align-items: center;
-        @include mq('tablet-small', max) {
+        margin-bottom: 9px;
+        @include mq('phone-wide', max) {
+          font-size: 22px;
+        }
+        span {
+          font-weight: 600;
+          font-size: 14px;
+          line-height: 20px;
+          letter-spacing: -0.01em;
+          color: #ff6636;
+          background: #ffeee8;
+          padding: 8px 12px;
+          margin-left: 10px;
+          @include mq('phone-wide', max) {
+            font-size: 12px;
+          }
+          svg {
+            margin-right: 2px;
+          }
+        }
+      }
+      p {
+        font-size: 16px;
+        line-height: 24px;
+        color: #6e7485;
+      }
+      .profile-review {
+        margin-top: 22px;
+        ul {
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          display: flex;
+          @include mq('phone-wide', max) {
             display: block;
-         } 
-        .profile-thumb {
-            width: 200px;
-            height: 200px;
-            overflow: hidden;
-            border-radius: 100%;
-            margin-right: 24px;
-            flex: 0 0 auto;
-            @include mq('tablet', max) {
-               width: 175px;
-               height: 175px;
-               margin-right: 20px;
-            } 
-            @include mq('tablet-small', max) {
-               margin-bottom: 30px;
-             } 
-            img{
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
-            }
-        }
-        .profile-data{
-            h3{
-                font-family: "Inter";
-                font-weight: 600;
-                font-size: 32px;
-                letter-spacing: -0.01em;
-                color: #1D2026;
-                display: flex;
-                align-items: center;
-                margin-bottom: 9px;
-                @include mq('phone-wide', max) {
-                    font-size: 22px;
-                  } 
-                span{
-                    font-weight: 600;
-                    font-size: 14px;
-                    line-height: 20px;
-                    letter-spacing: -0.01em;
-                    color: #FF6636;
-                    background: #FFEEE8;
-                    padding: 8px 12px;
-                    margin-left: 10px;
-                    @include mq('phone-wide', max) {
-                        font-size: 12px;
-                      } 
-                    svg{
-                        margin-right: 2px;
-                    }
-                }
-            }
-            p{
-                font-family: "Inter";
-                font-size: 16px;
-                line-height: 24px;
-                color: #6E7485;
-            }
-            .profile-review{
-                margin-top: 22px;
-                ul{
-                    margin: 0;
-                    padding: 0;
-                    list-style: none;
-                    display: flex;
-                    @include mq('phone-wide', max) {
-                        display: block;
-                      }
-                    li{
-                        display: inline-flex;
-                        font-family: "Inter";
-                        font-size: 14px;
-                        line-height: 22px;
-                        letter-spacing: -0.01em;
-                        color: #6E7485;
-                        margin-right: 17px;
-                        @include mq('phone-wide', max) {
-                            display: block;
-                            margin-bottom: 5px;
-                        }
-                        &:last-child{
-                            margin-right: 0;
-                        }
-                        span{
-                            font-weight: 500;
-                            color: #1D2026;;
-                            font-size: 16px;
-                            margin-right: 4px;
-                        }
-                        svg{
-                            margin-right: 5px;
-                        }
-                    }
-                }
-            }
-        }
-    }
-    .profile-right{
-        text-align: right;
-        @include mq('desktop', max) {
-            text-align: left;
-            margin-top: 30px;
-        } 
-        a.website-link{
-            font-family: "Inter";
-            font-weight: 500;
+          }
+          li {
+            display: inline-flex;
+
             font-size: 14px;
+            line-height: 22px;
             letter-spacing: -0.01em;
-            color: #564FFD;
-            svg{
-                margin-right: 2px;
+            color: #6e7485;
+            margin-right: 17px;
+            @include mq('phone-wide', max) {
+              display: block;
+              margin-bottom: 5px;
             }
+            &:last-child {
+              margin-right: 0;
+            }
+            span {
+              font-weight: 500;
+              color: #1d2026;
+              font-size: 16px;
+              margin-right: 4px;
+            }
+            svg {
+              margin-right: 5px;
+            }
+          }
         }
+      }
     }
+  }
+  .profile-right {
+    text-align: right;
+    @include mq('desktop', max) {
+      text-align: left;
+      margin-top: 30px;
+    }
+    a.website-link {
+      font-weight: 500;
+      font-size: 14px;
+      letter-spacing: -0.01em;
+      color: #564ffd;
+      svg {
+        margin-right: 2px;
+      }
+    }
+  }
 }
