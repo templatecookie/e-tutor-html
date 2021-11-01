@@ -79,7 +79,7 @@ select {
     font-weight: 400;
     color: #6E7485;
     background-color:transparent ;
-    border-radius: 3px;
+    border-radius: 0;
     cursor: pointer;
     font-family: 'Inter';
     font-size: 14px;
@@ -118,8 +118,8 @@ select {
     right: 0;
     width: 100%;
     margin: 15px 0;
-    padding: 8px;
-    border-radius: 5px;
+    border-radius: 0;
+    padding: 10px 0;
     box-sizing: border-box;
     background: #fff;
     transition: all 0.2s ease-in-out;
@@ -128,15 +128,19 @@ select {
     pointer-events: none;
     transform: translateY(-15px);
     border: 0;
-    box-shadow: 1px 0px 8px #f1f1f1;
     z-index: 99999;
+    border: 1px solid #E9EAF0;
+    border-top: none;
+    box-shadow: 0px 6px 16px rgba(0, 0, 0, 0.06);
+    
+
 }
 
 .custom-select.opened .custom-options {
     opacity: 1;
     visibility: visible;
     pointer-events: all;
-    transform: translateY(-8px);
+    transform: translateY(0x);
 }
 
 .option-hover:before {
@@ -146,17 +150,21 @@ select {
 .custom-option {
     position: relative;
     display: block;
-    padding: 0 15px;
-    font: 13px/1.5 "Roboto", sans-serif;
     font-weight: 400;
-    color: #b5b5b5;
     line-height: 30px;
     cursor: pointer;
     transition: all 0.05s ease-in-out;
+    font-family: "Inter";
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.01em;
+    color: #4E5566;
+    transition: all 0.4s;
+    padding: 5px 18px;
+    
 }
 .custom-option:hover {
     color:$primary-500 !important;
-    font-weight: 500;
 }
 
 .custom-option:first-of-type {

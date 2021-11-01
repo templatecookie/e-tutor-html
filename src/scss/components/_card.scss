@@ -326,7 +326,7 @@
         font-size: 12px;
         line-height: 16px;
         color: #6E7485;
-        margin-bottom: 10px;
+        margin-bottom: 2px;
     }
 
     .title-link-no {
@@ -390,7 +390,7 @@ a.course-lecture-img{
         font-size: 12px;
         line-height: 16px;
         color: #6E7485;
-        margin-bottom: 10px;
+        margin-bottom: 2px;
     }
 
     .title-link-no {
@@ -461,6 +461,9 @@ a.course-lecture-img{
         padding: 60px 0 320px;
     }
 }
+.course-section.bg-gray{
+    background: #F5F7FA;
+}
 
 .course-item-5 {
     max-width: 100%;
@@ -498,6 +501,9 @@ a.course-lecture-img{
             overflow: hidden;
             height: 182px;
             @include mq('tablet', max) {
+                height: 240px;
+            }
+            @include mq('phone-wide', max) {
                 height: auto!important;
             }
         }
@@ -668,10 +674,15 @@ button.course-item-5-card-info-tag{
 
     &-left {
         overflow: hidden;
-
+        a.feature-course-img{
+            display: block;
+        }
         .feature-course-img {
             height: 203px;
             width: 220px;
+            @include mq('tablet-small', max) {
+                width: 100%;
+            }
         }
     }
 

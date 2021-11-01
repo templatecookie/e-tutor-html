@@ -111,7 +111,7 @@ label.student-lebel {
         display: block;
       }
     .course-column4{
-        flex: 0 0 23.5%;
+        flex: 0 0 23.7%;
         margin-bottom: 24px;
         @include mq('desktop-wide', max) {
             flex: 0 0 32%;
@@ -137,6 +137,9 @@ label.student-lebel {
 }
 .course-item-5-card-img.team-thumb-instructor {
     height: 312px;
+    @include mq('phone-wide', max) {
+        height: auto;
+      }
 }
 .course-lecture-footer.student-instructor {
     padding: 0 15px 14px;
