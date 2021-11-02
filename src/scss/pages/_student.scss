@@ -51,7 +51,7 @@ label.student-lebel {
     display: block;
   }
 }
-.searchbox.student-search {
+.student-search {
   flex: 0 0 40%;
   @include mq('tablet', max) {
     margin-bottom: 20px;
@@ -105,7 +105,7 @@ label.student-lebel {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    @include mq('tablet', max) {
+    @include mq('tablet-small', max) {
         display: block;
       }
     .course-column4{
@@ -138,9 +138,6 @@ label.student-lebel {
 }
 .course-item-5-card-img.team-thumb-instructor {
     height: 312px;
-    @include mq('phone-wide', max) {
-        height: auto;
-      }
 }
 .course-lecture-footer.student-instructor {
   padding: 0 15px 14px;

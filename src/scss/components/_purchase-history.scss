@@ -38,14 +38,14 @@
 }
 .faq-review-thumb {
   width: 160px;
-  height: 120px !important;
+  height: 120px;
   margin-right: 20px;
   overflow: hidden;
   @include mq('tablet', max) {
     margin-right: 0;
     margin: 0 auto 20px;
     width: 100%;
-    height: auto !important;
+    height: 250px;
   }
   img {
     object-fit: cover;
@@ -109,7 +109,7 @@
         display: flex;
         align-items: center;
         margin-bottom: 24px;
-        @include mq('phone-wide', max) {
+        @include mq('tablet', max) {
           display: block;
           text-align: center;
         }
@@ -117,7 +117,6 @@
           margin-bottom: 0;
         }
         .faq-review-thumb {
-          margin-right: 20px;
           flex: 0 0 auto;
           a {
             display: block;
@@ -145,7 +144,7 @@
           @include mq('desktop-wide', max) {
             flex: 0 0 42%;
           }
-          @include mq('phone-wide', max) {
+          @include mq('tablet', max) {
             min-height: inherit;
             display: block;
           }
@@ -203,7 +202,7 @@
           color: #ff6636;
           flex: 0 0 19%;
           text-align: right;
-          @include mq('phone-wide', max) {
+          @include mq('tablet', max) {
             text-align: center;
           }
 
@@ -237,10 +236,9 @@
         margin-top: 20px;
         border-left: none;
         display: block;
-      }
-      @include mq('phone-wide', max) {
         text-align: center;
       }
+   
 
       .accrdion-body-text-header {
         padding: 0;
