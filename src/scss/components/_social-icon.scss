@@ -79,6 +79,10 @@
 .app-btn-column {
   a.app-btn {
     margin-bottom: 12px;
+    @include max(767px) {
+      margin: 0px;
+      margin-right: 12px;
+    }
     .app-btn-wrap {
       display: flex;
       align-items: center;
