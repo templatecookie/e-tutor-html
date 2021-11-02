@@ -82,11 +82,11 @@
     }
 
     .title-link {
-        font-family: 'Inter';
-        font-size: 12px;
-        line-height: 16px;
-        color: #6E7485;
-        margin-bottom: 2px;
+      font-family: 'Inter';
+      font-size: 12px;
+      line-height: 16px;
+      color: #6e7485;
+      margin-bottom: 2px;
     }
     &-footer {
       display: flex;
@@ -134,11 +134,11 @@
 }
 
 .title-link {
-    font-family: 'Inter';
-    font-size: 12px;
-    line-height: 16px;
-    color: #6E7485;
-    margin-bottom: 2px;
+  font-family: 'Inter';
+  font-size: 12px;
+  line-height: 16px;
+  color: #6e7485;
+  margin-bottom: 2px;
 }
 .course-item-4 {
   &:hover .course-hover-detalis {
@@ -454,8 +454,8 @@ a.course-lecture-img {
     padding: 60px 0 320px;
   }
 }
-.course-section.bg-gray{
-    background: #F5F7FA;
+.course-section.bg-gray {
+  background: #f5f7fa;
 }
 
 .course-item-5 {
@@ -512,16 +512,16 @@ a.course-lecture-img {
         background-color: none;
       }
 
-        &-img {
-            overflow: hidden;
-            height: 182px;
-            @include mq('tablet', max) {
-                height: 240px;
-            }
-            @include mq('phone-wide', max) {
-                height: auto!important;
-            }
+      &-img {
+        overflow: hidden;
+        height: 182px;
+        @include mq('tablet', max) {
+          height: 240px;
         }
+        @include mq('phone-wide', max) {
+          height: auto !important;
+        }
+      }
       &-tag {
         font-family: 'Inter';
         font-weight: 600;
@@ -645,6 +645,7 @@ button.course-item-5-card-info-tag {
   transition: 0.5s;
   flex-wrap: wrap;
   margin-bottom: 24px;
+
   img {
     width: 220px;
     height: 100%;
@@ -653,193 +654,190 @@ button.course-item-5-card-info-tag {
     overflow: hidden;
   }
 
-  &:hover img {
-    transform: scale(1.08);
-  }
-
   &:hover {
     box-shadow: 0px 12px 32px rgba(29, 32, 38, 0.1);
-  }
 
-  &:hover .feature-course-head {
-    color: $primary-500;
-  }
-
-  &:hover .feature-course-mid h5 {
-    color: #333;
+    img {
+      transform: scale(1.08);
+    }
+    .feature-course-head {
+      color: $primary-500;
+    }
+    .feature-course-mid h5 {
+      color: #333;
+    }
   }
 
   &-left {
     overflow: hidden;
+  }
+  .feature-course-img {
+    height: 203px;
+    width: 220px;
+  }
 
+  &-left {
+    overflow: hidden;
+    a.feature-course-img {
+      display: block;
+    }
     .feature-course-img {
       height: 203px;
       width: 220px;
-    }
-  }
-
-    &-left {
-        overflow: hidden;
-        a.feature-course-img{
-            display: block;
-        }
-        .feature-course-img {
-            height: 203px;
-            width: 220px;
-            @include mq('tablet-small', max) {
-                width: 100%;
-            }
-        }
-  &-right {
-    flex: 1;
-
-    &-content-header {
-      padding: 18px 13px 18px 20px;
-    }
-  }
-
-  &-info {
-    display: flex;
-    justify-content: space-between;
-
-    button {
-      border: none;
-      background-color: none;
-    }
-
-    &-tag {
-      font-family: 'Inter';
-      font-weight: 600;
-      font-size: 10px;
-      line-height: 24px;
-      text-transform: uppercase;
-      color: #15711f;
-      padding: 0px 6px;
-      background: #e1f7e3;
-    }
-
-    &-price {
-      font-family: 'Inter';
-      font-size: 18px;
-      line-height: 24px;
-      letter-spacing: -0.015em;
-      color: #1d2026;
-
-      span {
-        font-family: 'Inter';
-        font-size: 14px;
-        line-height: 24px;
-        text-decoration-line: line-through;
-        color: #a1a5b3;
+      @include mq('tablet-small', max) {
+        width: 100%;
       }
     }
-  }
+    &-right {
+      flex: 1;
 
-  .feature-course-head {
-    font-family: 'Inter';
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 22px;
-    color: #1d2026;
-    padding: 10px 0 17px 0;
-    margin: 0;
-    transition: 0.5s;
-  }
+      &-content-header {
+        padding: 18px 13px 18px 20px;
+      }
+    }
 
-  .feature-course-footer {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-
-  &-mid {
-    display: flex;
-    justify-content: space-between;
-
-    div {
+    &-info {
       display: flex;
+      justify-content: space-between;
+
+      button {
+        border: none;
+        background-color: none;
+      }
+
+      &-tag {
+        font-family: 'Inter';
+        font-weight: 600;
+        font-size: 10px;
+        line-height: 24px;
+        text-transform: uppercase;
+        color: #15711f;
+        padding: 0px 6px;
+        background: #e1f7e3;
+      }
+
+      &-price {
+        font-family: 'Inter';
+        font-size: 18px;
+        line-height: 24px;
+        letter-spacing: -0.015em;
+        color: #1d2026;
+
+        span {
+          font-family: 'Inter';
+          font-size: 14px;
+          line-height: 24px;
+          text-decoration-line: line-through;
+          color: #a1a5b3;
+        }
+      }
     }
 
-    img {
-      height: 28px;
-      width: 28px;
-      border-radius: 50%;
-    }
-
-    h5 {
+    .feature-course-head {
       font-family: 'Inter';
-      font-weight: 400;
-      font-size: 14px;
+      font-weight: 500;
+      font-size: 16px;
       line-height: 22px;
-      letter-spacing: -0.01em;
-      color: #4e5566;
-      align-self: center;
+      color: #1d2026;
+      padding: 10px 0 17px 0;
       margin: 0;
-      padding-left: 12px;
-      display: inline-block;
       transition: 0.5s;
     }
 
-    p {
-      font-family: 'DM Sans';
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 20px;
-      letter-spacing: -0.01em;
-      color: #1d2026;
-      margin-left: 6px;
-      align-self: center;
+    .feature-course-footer {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    &-mid {
+      display: flex;
+      justify-content: space-between;
+
+      div {
+        display: flex;
+      }
+
+      img {
+        height: 28px;
+        width: 28px;
+        border-radius: 50%;
+      }
+
+      h5 {
+        font-family: 'Inter';
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: -0.01em;
+        color: #4e5566;
+        align-self: center;
+        margin: 0;
+        padding-left: 12px;
+        display: inline-block;
+        transition: 0.5s;
+      }
+
+      p {
+        font-family: 'DM Sans';
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: -0.01em;
+        color: #1d2026;
+        margin-left: 6px;
+        align-self: center;
+
+        span {
+          font-family: 'Inter';
+          font-size: 14px;
+          line-height: 24px;
+          color: #a1a5b3;
+          font-weight: 400;
+        }
+      }
+    }
+
+    &-footer {
+      display: flex;
+      justify-content: space-between;
+      border-top: 1px solid #e9eaf0;
+      padding: 20px 24px;
+
+      p {
+        display: inline-block;
+        font-family: 'Inter';
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: -0.01em;
+        color: #4e5566;
+      }
 
       span {
         font-family: 'Inter';
         font-size: 14px;
-        line-height: 24px;
-        color: #a1a5b3;
+        line-height: 22px;
+        letter-spacing: -0.01em;
+        color: #8c94a3;
         font-weight: 400;
+      }
+
+      svg {
+        margin-right: 6px;
+      }
+
+      .p-color {
+        font-family: 'Inter';
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: -0.01em;
+        color: #4e5566;
       }
     }
   }
-
-  &-footer {
-    display: flex;
-    justify-content: space-between;
-    border-top: 1px solid #e9eaf0;
-    padding: 20px 24px;
-
-    p {
-      display: inline-block;
-      font-family: 'Inter';
-      font-size: 14px;
-      line-height: 22px;
-      letter-spacing: -0.01em;
-      color: #4e5566;
-    }
-
-    span {
-      font-family: 'Inter';
-      font-size: 14px;
-      line-height: 22px;
-      letter-spacing: -0.01em;
-      color: #8c94a3;
-      font-weight: 400;
-    }
-
-    svg {
-      margin-right: 6px;
-    }
-
-    .p-color {
-      font-family: 'Inter';
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 20px;
-      letter-spacing: -0.01em;
-      color: #4e5566;
-    }
-  }
 }
 
-}
 .tag-color4 {
   color: #1d2026;
   background: #f5f7fa;
