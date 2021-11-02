@@ -111,7 +111,7 @@
         margin-bottom: 24px;
         @include mq('tablet', max) {
           display: block;
-          text-align: center;
+          text-align: left;
         }
         &:last-child {
           margin-bottom: 0;
@@ -203,7 +203,7 @@
           flex: 0 0 19%;
           text-align: right;
           @include mq('tablet', max) {
-            text-align: center;
+            text-align: left;
           }
 
           a {
@@ -236,7 +236,7 @@
         margin-top: 20px;
         border-left: none;
         display: block;
-        text-align: center;
+        text-align: left;
       }
    
 
