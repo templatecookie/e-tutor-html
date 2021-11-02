@@ -92,10 +92,10 @@
     }
   }
 }
-.student-profile-menu.course-watch{
-    ul{
-        display: block;
-    }
+.student-profile-menu.course-watch {
+  ul {
+    display: block;
+  }
 }
 
 .student-profile-menu {
@@ -156,14 +156,20 @@
 
 .student-tabs-wrap {
   .nav {
-    justify-content: space-between;
-    border: 1px solid #ffddd1;
     border-top: none;
-    background-color: #fff;
     margin-bottom: 40px;
-    @include mq('tablet', max) {
-      display: block;
-      text-align: center;
+    background-color: #fff;
+    border: 1px solid #ffddd1;
+    justify-content: space-between;
+    // @include mq('tablet', max) {
+    //   display: block;
+    //   text-align: center;
+    // }
+    @include max(991px) {
+      max-width: 700px;
+      overflow: hidden;
+      overflow-x: scroll;
+      flex-wrap: nowrap;
     }
   }
   .nav-pills .nav-link {
@@ -175,14 +181,9 @@
     padding: 20px 38px;
     margin: 0 auto;
     border-radius: 0;
-    @include mq('desktop-wide', max) {
-      padding: 20px 25px;
-    }
-    @include mq('desktop', max) {
-      padding: 20px 18px;
-    }
-    @include mq('tablet', max) {
-      padding: 15px;
+    white-space: nowrap;
+    @include max(1200px) {
+      padding: 20px 16px;
     }
     &.active {
       color: #1d2026;

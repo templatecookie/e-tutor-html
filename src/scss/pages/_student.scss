@@ -20,6 +20,7 @@
   top: -64px;
   right: -3px;
 }
+
 .lecture-slider .owl-next,
 .lecture-slider .owl-prev {
   width: 40px;
@@ -33,6 +34,7 @@
 label {
   float: none;
 }
+
 label.student-lebel {
   float: none;
 
@@ -42,6 +44,7 @@ label.student-lebel {
   display: block;
   margin-bottom: 5px;
 }
+
 .student-header {
   display: flex;
   align-items: center;
@@ -102,26 +105,26 @@ label.student-lebel {
 
 // student course page
 .course-student-column {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    @include mq('tablet-small', max) {
-        display: block;
-      }
-    .course-column4{
-        flex: 0 0 23.7%;
-        margin-bottom: 24px;
-        @include mq('desktop-wide', max) {
-            flex: 0 0 32%;
-          }
-          @include mq('desktop', max) {
-            flex: 0 0 48%;
-          }
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  @include mq('tablet-small', max) {
+    display: block;
+  }
+  .course-column4 {
+    flex: 0 0 23.7%;
+    margin-bottom: 24px;
+    @include mq('desktop-wide', max) {
+      flex: 0 0 32%;
     }
     @include mq('desktop', max) {
       flex: 0 0 48%;
     }
   }
+  @include mq('desktop', max) {
+    flex: 0 0 48%;
+  }
+}
 
 .course-lecture.course-column4.tablet {
   display: none;
@@ -137,7 +140,7 @@ label.student-lebel {
   }
 }
 .course-item-5-card-img.team-thumb-instructor {
-    height: 312px;
+  height: 312px;
 }
 .course-lecture-footer.student-instructor {
   padding: 0 15px 14px;
@@ -379,6 +382,7 @@ label.student-lebel {
   padding-bottom: 40px;
   margin-bottom: 40px;
 }
+
 .change-password-wrap {
   padding-right: 70px;
   @include mq('desktop', max) {
