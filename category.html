@@ -11,8 +11,8 @@
      <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon/32px.png" />
      <link rel="icon" type="image/png" sizes="16x16" href="src/images/favicon/16px.png" />
 
+     <link href="src/css/owl.carousel.min.css" rel="stylesheet">
 
-      <link href="src/css/slick.css" rel="stylesheet">
    </head>
    <body>
 
@@ -387,7 +387,7 @@
               <div class="section-title text-left">
                   <h3>Popular tools</h3>
               </div>
-              <div class="popular-tools-wrap row2-slider">
+              <div class="popular-tools-wrap tools-slider owl-carousel">
                   <div class="popular-tools-items">
                       <h5>HTML 5</h5>
                       <p>2,736 Courses</p>
@@ -1319,8 +1319,8 @@
           </div>
       </div>
     </div>
-  </div>
-  <!--End course-section -->
+    </div>
+    <!--End course-section -->
 
     <div class="footer-section">
         <div class="footer-header">
@@ -1649,51 +1649,42 @@
          integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
          integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-         <script src="src/js/slick.min.js"></script>
+         <script src="src/js/owl.carousel.min.js"></script>
       <script type="module" src="/main.js"></script>
 
       <script>
-          $(document).ready(function(){
-            $('.row2-slider').slick({
+          
+          $(document).ready(function() {
+            $('.tools-slider').owlCarousel({
+                loop:true,
+                margin: 20,
+                nav:true,
                 dots: false,
-                navs: false,
-                infinite: false,
-                speed: 300,
-                rows: 1,
-                slidesToShow: 6,
-                slidesToScroll: 2,
-                prevArrow: '<button class="slide-arrow prev-arrow"><img src="./src/images/svg-icon/slider-arrow-right.svg" alt=""></button>',
-                nextArrow: '<button class="slide-arrow next-arrow"><img src="./src/images/svg-icon/slider-arrow-left.svg" alt=""></button>',
-                responsive: [
-                    {
-                    breakpoint: 1024,
-                    settings: {
-                        slidesToShow: 3,
-                        slidesToScroll: 3,
-                        infinite: true,
-                        dots: true
-                    }
+                items: 6,
+                navText: ["<img src=\"src/images/svg-icon/slider-arrow-left.svg\"/>",
+                        "<img src=\"src/images/svg-icon/slider-arrow-right.svg\"/>"],
+                responsive:{
+                    0:{
+                        items:1,
+                        nav: false
                     },
-                    {
-                    breakpoint: 600,
-                    settings: {
-                        slidesToShow: 2,
-                        slidesToScroll: 2
-                    }
+                    500:{
+                        items:2
                     },
-                    {
-                    breakpoint: 480,
-                    settings: {
-                        slidesToShow: 1,
-                        slidesToScroll: 1
-                    }
-                    }
-                    // You can unslick at a given breakpoint now by adding:
-                    // settings: "unslick"
-                    // instead of a settings object
-                ]
-                });
-          });
+                    756:{
+                        items:3
+                    },
+                    1000:{
+                        items:4
+                    },
+                    1380:{
+                        items:6
+                    },
+                    
+                }
+            })
+
+        });//end document.ready
   
       </script>
    </body>

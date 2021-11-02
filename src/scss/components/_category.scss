@@ -27,7 +27,6 @@
     text-align: center;
     margin-right: 20px;
     background-color: #fff;
-    cursor: pointer;
     transition: 0.5s;
 
     svg {
@@ -42,7 +41,7 @@
   &-right {
     align-self: center;
 
-    a {
+    h4 {
       font-family: 'Inter';
       font-weight: 500;
       font-size: 16px;

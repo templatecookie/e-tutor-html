@@ -307,9 +307,7 @@
   border: 1px solid #e9eaf0;
   &-img {
     height: 220px;
-    @include mq('tablet-small', max) {
-      height: auto;
-    }
+   
     a {
       display: block;
     }
@@ -493,9 +491,6 @@ a.course-lecture-img {
     &-img {
       overflow: hidden;
       height: 182px;
-      @include mq('tablet', max) {
-        height: auto !important;
-      }
     }
 
     &:hover img {
@@ -517,9 +512,6 @@ a.course-lecture-img {
             height: 182px;
             @include mq('tablet', max) {
                 height: 240px;
-            }
-            @include mq('phone-wide', max) {
-                height: auto!important;
             }
         }
       &-tag {
@@ -670,26 +662,18 @@ button.course-item-5-card-info-tag {
   }
 
   &-left {
-    overflow: hidden;
-
-    .feature-course-img {
-      height: 203px;
-      width: 220px;
+      overflow: hidden;
+      a.feature-course-img{
+          display: block;
+      }
+      .feature-course-img {
+          height: 203px;
+          width: 220px;
+          @include mq('tablet-small', max) {
+              width: 100%;
+          }
+      }
     }
-  }
-
-    &-left {
-        overflow: hidden;
-        a.feature-course-img{
-            display: block;
-        }
-        .feature-course-img {
-            height: 203px;
-            width: 220px;
-            @include mq('tablet-small', max) {
-                width: 100%;
-            }
-        }
   &-right {
     flex: 1;
 
@@ -735,16 +719,7 @@ button.course-item-5-card-info-tag {
     }
   }
 
-  .feature-course-head {
-    font-family: 'Inter';
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 22px;
-    color: #1d2026;
-    padding: 10px 0 17px 0;
-    margin: 0;
-    transition: 0.5s;
-  }
+
 
   .feature-course-footer {
     display: flex;
@@ -837,8 +812,18 @@ button.course-item-5-card-info-tag {
       color: #4e5566;
     }
   }
+
 }
 
+.feature-course-head {
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1d2026;
+  padding: 10px 0 17px 0;
+  margin: 0;
+  transition: 0.5s;
 }
 .tag-color4 {
   color: #1d2026;
