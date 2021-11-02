@@ -1,5 +1,6 @@
 .company-content {
   @include mq('tablet', max) {
+    text-align: center;
     margin-bottom: 30px;
   }
   h3 {

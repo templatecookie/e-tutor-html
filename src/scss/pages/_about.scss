@@ -6,9 +6,12 @@
   @include mq('desktop', max) {
     margin-right: 15px;
   }
-  @include mq('tablet', max) {
-    margin: 0 0 24px;
+
+  @include max(991px) {
+    margin-left: 0px;
+    margin-top: 30px;
   }
+
   h3 {
     font-weight: 600;
     font-size: 80px;
@@ -70,20 +73,21 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  @include mq('tablet-small', max) {
-    justify-content: center;
-  }
+
   .counter-item {
     display: flex;
     flex-wrap: wrap;
+
     @include mq('tablet', max) {
       display: block;
       text-align: center;
     }
+
     @include mq('tablet-small', max) {
       flex: 0 0 33%;
       margin-bottom: 24px;
     }
+
     @include mq('phone-wide', max) {
       flex: 0 0 50%;
     }
@@ -102,6 +106,7 @@
         color: #1d2026;
         @include mq('tablet-small', max) {
           font-size: 26px;
+          margin-bottom: 0px;
         }
       }
       p {
@@ -121,9 +126,6 @@
   background: #ffeee8;
 }
 .our-mission-content {
-  @include mq('tablet', max) {
-    padding-top: 60px;
-  }
   h5 {
     font-style: normal;
     font-weight: 500;
