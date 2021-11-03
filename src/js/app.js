@@ -137,7 +137,6 @@ function setLeftValue() {
   thumbLeft.style.left = percent + '%';
   range.style.left = percent + '%';
 }
-setLeftValue();
 
 function setRightValue() {
   var _this = inputRight,
@@ -151,36 +150,42 @@ function setRightValue() {
   thumbRight.style.right = 100 - percent + '%';
   range.style.right = 100 - percent + '%';
 }
-setRightValue();
 
-inputLeft.addEventListener('input', setLeftValue);
-inputRight.addEventListener('input', setRightValue);
+if (inputLeft) {
+  inputLeft.addEventListener('input', setLeftValue);
 
-inputLeft.addEventListener('mouseover', function () {
-  thumbLeft.classList.add('hover');
-});
-inputLeft.addEventListener('mouseout', function () {
-  thumbLeft.classList.remove('hover');
-});
-inputLeft.addEventListener('mousedown', function () {
-  thumbLeft.classList.add('active');
-});
-inputLeft.addEventListener('mouseup', function () {
-  thumbLeft.classList.remove('active');
-});
+  inputLeft.addEventListener('mouseover', function () {
+    thumbLeft.classList.add('hover');
+  });
+  inputLeft.addEventListener('mouseout', function () {
+    thumbLeft.classList.remove('hover');
+  });
+  inputLeft.addEventListener('mousedown', function () {
+    thumbLeft.classList.add('active');
+  });
+  inputLeft.addEventListener('mouseup', function () {
+    thumbLeft.classList.remove('active');
+  });
 
-inputRight.addEventListener('mouseover', function () {
-  thumbRight.classList.add('hover');
-});
-inputRight.addEventListener('mouseout', function () {
-  thumbRight.classList.remove('hover');
-});
-inputRight.addEventListener('mousedown', function () {
-  thumbRight.classList.add('active');
-});
-inputRight.addEventListener('mouseup', function () {
-  thumbRight.classList.remove('active');
-});
+  setLeftValue();
+}
+
+if (inputRight) {
+  inputRight.addEventListener('input', setRightValue);
+  inputRight.addEventListener('mouseover', function () {
+    thumbRight.classList.add('hover');
+  });
+  inputRight.addEventListener('mouseout', function () {
+    thumbRight.classList.remove('hover');
+  });
+  inputRight.addEventListener('mousedown', function () {
+    thumbRight.classList.add('active');
+  });
+  inputRight.addEventListener('mouseup', function () {
+    thumbRight.classList.remove('active');
+  });
+  setRightValue();
+}
 
 //chart.js
 
@@ -257,5 +262,17 @@ if (filterToggle) {
     sidebar.classList.toggle('d-none');
     productGallery.classList.toggle('col-xl-12');
     filterToggle.classList.toggle('active');
+  });
+}
+
+// Modals Rating
+const ratingStar = document.querySelector('.my-rating');
+if (ratingStar) {
+  $('.my-rating').starRating({
+    starSize: 40,
+    activeColor: '#FD8E1F',
+    hoverColor: '#FD8E1F',
+    ratedColors: ['#FD8E1F', '#FD8E1F', '#FD8E1F', '#FD8E1F', '#FD8E1F'],
+    starShape: 'rounded',
   });
 }
