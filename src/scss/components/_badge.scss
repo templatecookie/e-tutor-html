@@ -1,24 +1,65 @@
 .badge-color-1{
     background-color: #EBEBFF;
+    &:hover{
+        .category-content-left{
+            background-color: #564FFD;
+        }
+    }
+    
 }
 .badge-color-2{
     background-color: #E1F7E3;
+    &:hover{
+        .category-content-left{
+            background-color: #23BD33;
+        }
+    }
 }
 .badge-color-3{
     background-color: #FFF2E5;
+    &:hover{
+        .category-content-left{
+            background-color: #FD8E1F;
+        }
+    }
 }
 .badge-color-4{
     background-color: #FFF0F0;
+    &:hover{
+        .category-content-left{
+            background-color: #E34444;
+        }
+    }
 }
 .badge-color-5{
     background-color: #F5F7FA;
+    &:hover{
+        .category-content-left{
+            background-color: #564FFD;
+        }
+    }
 }
 .badge-color-6{
     background-color: #F5F7FA;
+    &:hover{
+        .category-content-left{
+            background-color: #8C94A3;
+        }
+    }
 }
 .badge-color7{
     background-color: #FFEEE8;
+    &:hover{
+        .category-content-left{
+            background-color: #564FFD;
+        }
+    }
 }
 .badge-color-8{
     background-color: #F5F7FA;
+    &:hover{
+        .category-content-left{
+            background-color: #564FFD;
+        }
+    }
 }
