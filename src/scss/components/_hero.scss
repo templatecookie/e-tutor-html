@@ -66,7 +66,7 @@
     height: 100%;
     z-index: -1;
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: rgba(255, 255, 255, 0.8);
     @include mq('tablet', max) {
       content: '';
     }
@@ -99,6 +99,9 @@
   }
 }
 .hero-content {
+  @include max(991px) {
+    text-align: center;
+  }
   h1 {
     font-weight: 600;
     font-size: 72px;
@@ -106,21 +109,14 @@
     color: #1d2026;
     margin-bottom: 40px;
     line-height: 74px;
-    @include mq('desktop-wide', max) {
-      font-size: 55px;
-      line-height: 60px;
-    }
-    @include mq('desktop', max) {
-      font-size: 50px;
-    }
-    @include mq('tablet-small', max) {
-      font-size: 40px;
-      line-height: 50px;
-    }
-    @include mq('phone-wide', max) {
-      font-size: 36px;
-      line-height: 40px;
+    @include max(1200px) {
+      font-size: 48px;
+      line-height: 62px;
       margin-bottom: 20px;
+    }
+    @include max(575px) {
+      font-size: 36px;
+      line-height: 42px;
     }
   }
   p {
@@ -128,16 +124,9 @@
     line-height: 32px;
     color: #4e5566;
     margin-bottom: 40px;
-    @include mq('desktop-wide', max) {
-      font-size: 20px;
-    }
-    @include mq('tablet-small', max) {
-      font-size: 18px;
-    }
-    @include mq('tablet', max) {
-      color: #1d2026;
-    }
-    @include mq('phone-wide', max) {
+    @include max(1200px) {
+      font-size: 16px;
+      line-height: 26px;
       margin-bottom: 20px;
     }
   }
