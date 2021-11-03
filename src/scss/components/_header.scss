@@ -599,6 +599,7 @@ header.header-section.header-four {
   display: flex;
   padding: 24px 0;
   justify-content: space-between;
+  box-shadow: none;
   @include mq('desktop', max) {
     display: flex;
   }
