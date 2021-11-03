@@ -65,3 +65,10 @@ input::-webkit-inner-spin-button {
 input[type='number'] {
   -moz-appearance: textfield;
 }
+
+button {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  border: 0;
+}
