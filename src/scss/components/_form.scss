@@ -1,4 +1,29 @@
 .form {
+  &-group {
+    margin-bottom: 18px;
+    &--2 {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      @include max(575px) {
+        flex-direction: column;
+      }
+      & > div {
+        width: 50%;
+        @include max(575px) {
+          width: 100%;
+        }
+        &:nth-child(1) {
+          margin-right: 18px;
+          @include max(575px) {
+            margin: 0px;
+            margin-bottom: 18px;
+          }
+        }
+      }
+    }
+  }
+
   &-searchbox {
     position: relative;
     overflow: hidden;
@@ -23,6 +48,10 @@
       position: relative;
       input {
         @extend %input;
+
+        &[type='password'] {
+          padding-right: 60px;
+        }
       }
 
       .icon {
@@ -31,6 +60,20 @@
         position: absolute;
         transform: translateY(100%);
         transition: all 0.1s ease-in;
+
+        &--eye {
+          transform: translateY(-50%);
+          cursor: pointer;
+        }
+      }
+    }
+
+    &--success,
+    &--warning {
+      .field-wrapper {
+        .icon--eye {
+          transform: translateY(100%);
+        }
       }
     }
 
@@ -44,6 +87,9 @@
               rgba(223, 242, 225, 0.5)
             ),
             linear-gradient(0deg, #ffffff, #ffffff);
+          &:hover {
+            border: 3px solid #7bd785;
+          }
         }
         .icon--success {
           transform: translateY(-50%);
@@ -61,6 +107,9 @@
               rgba(249, 234, 234, 0.5)
             ),
             linear-gradient(0deg, #ffffff, #ffffff);
+          &:hover {
+            border: 3px solid #ee8f8f;
+          }
         }
         .icon--warning {
           transform: translateY(-50%);
@@ -182,68 +231,97 @@
       }
     }
   }
+
+  &-agrement {
+    display: flex;
+    align-items: center;
+    input {
+      width: 22px;
+      height: 22px;
+      flex-shrink: 0;
+      margin-right: 10px;
+      border: 1px solid #ced1d9;
+    }
+    label,
+    p {
+      margin: 0;
+      font-size: 14px;
+      color: #6e7485;
+      line-height: 22px;
+      white-space: nowrap;
+      letter-spacing: -1%;
+      text-transform: capitalize;
+
+      a {
+        color: #564ffd;
+        &:hover {
+          color: inherit;
+        }
+      }
+    }
+  }
 }
 
-// .searchbox {
-//     position: relative;
+.register {
+  &-title {
+    font-size: 40px;
+    font-weight: 600;
+    color: #1d2026;
+    line-height: 48px;
+    text-align: center;
+    margin-bottom: 40px;
+    letter-spacing: -1%;
+    text-transform: capitalize;
+    @include max(575px) {
+      font-size: 32px;
+      line-height: 42px;
+    }
+  }
 
-//     input {
-//         background-color: #F5F7FA;
-//         padding: 0px 0 0px 54px;
-//         border: 1px solid transparent;
-//         height: 48px;
-//         width: 100%;
-//         transition: .5s;
+  .form {
+    &-group {
+      &:nth-last-child(1) {
+        margin-top: 40px;
+        margin-bottom: 0px;
+      }
+    }
 
-//     }
+    &-signup {
+      margin-top: 32px;
+      h6 {
+        font-size: 14px;
+        color: #8c94a3;
+        line-height: 14px;
+        position: relative;
+        text-align: center;
+        margin-bottom: 24px;
+        text-transform: uppercase;
+        &::after,
+        &::before {
+          content: '';
+          top: 50%;
+          height: 1px;
+          position: absolute;
+          width: calc(50% - 70px);
+          transform: translateY(-50%);
+          background-color: #e9eaf0;
+        }
+        &::after {
+          right: 0px;
+        }
+        &::before {
+          left: 0px;
+        }
+      }
 
-//     ::-webkit-input-placeholder {
-//         /* Chrome/Opera/Safari */
-//         color: #8C94A3;
-//         font-size: 16px;
-//         font-family: 'Inter';
-//         font-weight: 400;
-//     }
-
-//     ::-moz-placeholder {
-//         /* Firefox 19+ */
-//         color: #8C94A3;
-//         font-size: 16px;
-//         font-family: 'Inter';
-//         font-weight: 400;
-//     }
-
-//     :-ms-input-placeholder {
-//         /* IE 10+ */
-//         color: #8C94A3;
-//         font-size: 16px;
-//         font-family: 'Inter';
-//         font-weight: 400;
-//     }
-
-//     :-moz-placeholder {
-//         /* Firefox 18- */
-//         color: #8C94A3;
-//         font-size: 16px;
-//         font-family: 'Inter';
-//         font-weight: 400;
-//     }
-
-//     .dashboard-search-icon {
-//         position: absolute;
-//         top: 11px;
-//         left: 21px;
-//     }
-
-//     input:focus {
-//         border: 1px solid $primary-500;
-//     }
-
-//     input:hover {
-//         border: 1px solid #FFDDD1;
-//     }
-
-// }
+      &__wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+      }
+    }
+  }
+}
 
 .searchbox-course {
   position: relative;
