@@ -1,261 +1,233 @@
 .payment-card-visa {
-    background-image: radial-gradient(#453FCA, #342F98);
-    padding: 24px;
-    position: relative;
-    overflow: hidden;
-    width: 386px;
+  background-image: radial-gradient(#453fca, #342f98);
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+  width: 386px;
+  z-index: 1;
+
+  svg {
     z-index: 1;
+  }
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 28px;
 
     svg {
+      z-index: 1;
+    }
+
+    button {
+      background-color: transparent;
+      border: 0;
+    }
+  }
+
+  &-mid {
+    display: flex;
+    padding-bottom: 24px;
+
+    input {
+      background: transparent;
+      border: 0;
+
+      font-size: 24px;
+      line-height: 32px;
+      color: #fff;
+      padding-right: 27px;
+      z-index: 1;
+      width: 252px;
+    }
+
+    p {
+      font-size: 24px;
+      line-height: 32px;
+      color: #fff;
+      padding-right: 27px;
+      z-index: 1;
+    }
+
+    svg {
+      z-index: 1;
+    }
+
+    button {
+      background-color: transparent;
+      border: 0;
+    }
+  }
+
+  svg {
+    z-index: 9999;
+  }
+
+  &-footer {
+    display: flex;
+
+    &-left {
+      padding-right: 144px;
+    }
+
+    &-info {
+      span {
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 12px;
+        text-transform: uppercase;
+        color: #ffffffad;
         z-index: 1;
+      }
+
+      p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: -0.01em;
+        color: #fff;
+        z-index: 1;
+      }
     }
-
-    &-header {
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 28px;
-
-        svg {
-            z-index: 1;
-        }
-
-        button {
-            background-color: transparent;
-            border: 0;
-        }
-
-    }
-
-    &-mid {
-        display: flex;
-        padding-bottom: 24px;
-
-        input {
-            background: transparent;
-            border: 0;
-            font-family: 'Inter';
-            font-size: 24px;
-            line-height: 32px;
-            color: #FFFFFF;
-            padding-right: 27px;
-            z-index: 1;
-            width: 252px;
-        }
-
-        p {
-            font-family: 'Inter';
-            font-size: 24px;
-            line-height: 32px;
-            color: #FFFFFF;
-            padding-right: 27px;
-            z-index: 1;
-
-        }
-
-        svg {
-            z-index: 1;
-        }
-
-        button {
-            background-color: transparent;
-            border: 0;
-        }
-
-    }
-
-    svg {
-        z-index: 9999;
-    }
-
-    &-footer {
-        display: flex;
-
-        &-left {
-            padding-right: 144px;
-        }
-
-        &-info {
-            span {
-                font-family: 'Inter';
-                font-weight: 300;
-                font-size: 10px;
-                line-height: 12px;
-                text-transform: uppercase;
-                color: #ffffffad;
-                z-index: 1;
-
-            }
-
-            p {
-                font-family: 'Inter';
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 20px;
-                letter-spacing: -0.01em;
-                color: #FFFFFF;
-                z-index: 1;
-
-            }
-
-        }
-
-
-
-    }
+  }
 }
 
 .payment-card-visa::after {
-    position: absolute;
-    content: " ";
-    bottom: -96px;
-    right: -60px;
-    height: 250px;
-    width: 250px;
-    border-radius: 50%;
-    background-color: #ffffff0d;
-    z-index: -1;
-
-
+  position: absolute;
+  content: ' ';
+  bottom: -96px;
+  right: -60px;
+  height: 250px;
+  width: 250px;
+  border-radius: 50%;
+  background-color: #ffffff0d;
+  z-index: -1;
 }
 
 .payment-card-visa:before {
-    position: absolute;
-    content: " ";
-    top: -43px;
-    left: 18px;
-    height: 90px;
-    width: 90px;
-    border-radius: 50%;
-    background-color: #ffffff0d;
-
-
+  position: absolute;
+  content: ' ';
+  top: -43px;
+  left: 18px;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  background-color: #ffffff0d;
 }
 
 .payment-card-visa-2 {
-    background-image: radial-gradient(#B63636, #882929);
-    padding: 24px;
-    position: relative;
-    overflow: hidden;
-    width: 386px;
+  background-image: radial-gradient(#b63636, #882929);
+  padding: 24px;
+  position: relative;
+  overflow: hidden;
+  width: 386px;
+  z-index: 1;
+
+  svg {
     z-index: 1;
+  }
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
 
     svg {
+      z-index: 1;
+    }
+
+    button {
+      background-color: transparent;
+      border: 0;
+    }
+  }
+
+  &-mid {
+    display: flex;
+    padding-bottom: 20px;
+
+    input {
+      background: transparent;
+      border: 0;
+
+      font-size: 24px;
+      line-height: 32px;
+      color: #fff;
+      padding-right: 27px;
+      z-index: 1;
+      width: 252px;
+    }
+
+    p {
+      font-size: 24px;
+      line-height: 32px;
+      color: #fff;
+      padding-right: 27px;
+      z-index: 1;
+    }
+
+    svg {
+      z-index: 1;
+    }
+
+    button {
+      background-color: transparent;
+      border: 0;
+    }
+  }
+
+  svg {
+    z-index: 9999;
+  }
+
+  &-footer {
+    display: flex;
+
+    &-left {
+      padding-right: 144px;
+    }
+
+    &-info {
+      span {
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 12px;
+        text-transform: uppercase;
+        color: #ffffffad;
         z-index: 1;
+      }
+
+      p {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: -0.01em;
+        color: #fff;
+        z-index: 1;
+      }
     }
-
-    &-header {
-        display: flex;
-        justify-content: space-between;
-        padding-bottom: 20px;
-
-        svg {
-            z-index: 1;
-        }
-
-        button {
-            background-color: transparent;
-            border: 0;
-        }
-
-    }
-
-    &-mid {
-        display: flex;
-        padding-bottom: 20px;
-
-        input {
-            background: transparent;
-            border: 0;
-            font-family: 'Inter';
-            font-size: 24px;
-            line-height: 32px;
-            color: #FFFFFF;
-            padding-right: 27px;
-            z-index: 1;
-            width: 252px;
-        }
-
-        p {
-            font-family: 'Inter';
-            font-size: 24px;
-            line-height: 32px;
-            color: #FFFFFF;
-            padding-right: 27px;
-            z-index: 1;
-
-        }
-
-        svg {
-            z-index: 1;
-        }
-
-        button {
-            background-color: transparent;
-            border: 0;
-        }
-
-    }
-
-    svg {
-        z-index: 9999;
-    }
-
-    &-footer {
-        display: flex;
-
-        &-left {
-            padding-right: 144px;
-        }
-
-        &-info {
-            span {
-                font-family: 'Inter';
-                font-weight: 300;
-                font-size: 10px;
-                line-height: 12px;
-                text-transform: uppercase;
-                color: #ffffffad;
-                z-index: 1;
-
-            }
-
-            p {
-                font-family: 'Inter';
-                font-weight: 500;
-                font-size: 14px;
-                line-height: 20px;
-                letter-spacing: -0.01em;
-                color: #FFFFFF;
-                z-index: 1;
-
-            }
-
-        }
-
-    }
+  }
 }
 
 .payment-card-visa-2::after {
-    position: absolute;
-    content: " ";
-    top: -96px;
-    right: -5px;
-    height: 236px;
-    width: 236px;
-    border-radius: 50%;
-    background-color: #ffffff0d;
-    z-index: -1;
-
+  position: absolute;
+  content: ' ';
+  top: -96px;
+  right: -5px;
+  height: 236px;
+  width: 236px;
+  border-radius: 50%;
+  background-color: #ffffff0d;
+  z-index: -1;
 }
 
 .payment-card-visa-2:before {
-    position: absolute;
-    content: " ";
-    bottom: -7px;
-    left: -32px;
-    height: 90px;
-    width: 90px;
-    border-radius: 50%;
-    background-color: #ffffff0d;
-
+  position: absolute;
+  content: ' ';
+  bottom: -7px;
+  left: -32px;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  background-color: #ffffff0d;
 }

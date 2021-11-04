@@ -1,81 +1,80 @@
 .dashedboard-menu-wrap {
-    background: #1D2026;
-    box-shadow: inset 0px -1px 0px #363b47;
-    .dashedboard-menu-header{
-        border-bottom: 1px solid #363B47;
-        margin-bottom: 16px;
-        ul{
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            li{
-                color: #fff;
-                font-weight: 600;
-                font-size: 23.9581px;
-                padding: 16px 27px;
-                font-family: 'Inter';
-                img{
-                    margin-right: 8px;
-                }
-            }
+  background: #1d2026;
+  box-shadow: inset 0px -1px 0px #363b47;
+  .dashedboard-menu-header {
+    border-bottom: 1px solid #363b47;
+    margin-bottom: 16px;
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li {
+        color: #fff;
+        font-weight: 600;
+        font-size: 23.9581px;
+        padding: 16px 27px;
+
+        img {
+          margin-right: 8px;
         }
+      }
     }
-    .dashedboard-menu-body {
-        ul{
-            margin: 0;
-            padding: 0;
-            list-style: none;
-            li {
-                a{
-                    display: block;
-                    font-weight: 500;
-                    font-size: 14px;
-                    color: #8C94A3;
-                    padding: 15px 27px;
-                    transition: 0.5s;
-                    font-family: 'Inter';
-                    span{
-                        display: block;
-                        width: 24px;
-                        height: 24px;
-                        line-height: 24px;
-                        background: #FF6636;
-                        border-radius: 20px;
-                        color: #fff;
-                        float: right;
-                        text-align: center;
-                        transition: all 0.4s;
-                    }
-                    &:hover span{
-                        color: #FF6636;
-                        background-color: #fff;
-                    }
-                   
-                    &:hover{
-                        color: #fff;
-                        background-color: #FF6636;
-                    }
-                    &:hover svg {
-                        path {
-                            stroke: #fff;
-                            transition: 0.5s;
-                        }
-                    }
-                }
-                &:last-child a{
-                    margin-top: 400px;
-                    padding: 27px;
-                    background-color: #1D2026;
-                }
-                
-            }
-        }
-        svg {
-            margin-right: 10px;
+  }
+  .dashedboard-menu-body {
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li {
+        a {
+          display: block;
+          font-weight: 500;
+          font-size: 14px;
+          color: #8c94a3;
+          padding: 15px 27px;
+          transition: 0.5s;
+
+          span {
+            display: block;
+            width: 24px;
+            height: 24px;
+            line-height: 24px;
+            background: #ff6636;
+            border-radius: 20px;
+            color: #fff;
+            float: right;
+            text-align: center;
+            transition: all 0.4s;
+          }
+          &:hover span {
+            color: #ff6636;
+            background-color: #fff;
+          }
+
+          &:hover {
+            color: #fff;
+            background-color: #ff6636;
+          }
+          &:hover svg {
             path {
-                stroke: #8C94A3;
-                transition: 0.5s;
+              stroke: #fff;
+              transition: 0.5s;
             }
+          }
         }
+        &:last-child a {
+          margin-top: 400px;
+          padding: 27px;
+          background-color: #1d2026;
+        }
+      }
     }
+    svg {
+      margin-right: 10px;
+      path {
+        stroke: #8c94a3;
+        transition: 0.5s;
+      }
+    }
+  }
 }

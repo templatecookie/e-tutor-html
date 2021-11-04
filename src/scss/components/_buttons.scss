@@ -78,7 +78,7 @@ select {
   background-color: transparent;
   border-radius: 3px;
   cursor: pointer;
-  font-family: 'Inter';
+
   font-size: 14px;
   margin-left: 20px;
   transition: all 0.2s ease-in-out;
@@ -147,7 +147,7 @@ select {
   line-height: 30px;
   cursor: pointer;
   transition: all 0.05s ease-in-out;
-  font-family: 'Inter';
+
   font-size: 14px;
   line-height: 22px;
   letter-spacing: -0.01em;
@@ -184,7 +184,6 @@ select {
   color: #fff;
 }
 .input-btn {
-  font-family: 'Inter';
   font-weight: 500;
   font-size: 16px;
   line-height: 48px;
@@ -223,7 +222,7 @@ select {
 .visa-btn {
   color: #1d2026;
   width: 100%;
-  font-family: 'Inter';
+
   text-align: center;
   font-weight: 500;
   padding: 36px 0;
@@ -274,7 +273,7 @@ button.default-btn {
   font-weight: 600;
   letter-spacing: -0.004em;
   text-transform: capitalize;
-  color: #ffffff;
+  color: #fff;
   transition: all 0.4s;
   text-align: center;
   border: navajowhite;
@@ -367,6 +366,7 @@ a.default-btn.color-pink {
   font-size: 14px;
   line-height: 40px;
   padding: 0px 16px;
+  white-space: nowrap;
   display: inline-block;
   letter-spacing: -0.04em;
   text-transform: capitalize;

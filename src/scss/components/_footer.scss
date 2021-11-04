@@ -30,7 +30,7 @@
       font-size: 40px;
       line-height: 48px;
       letter-spacing: -0.01em;
-      color: #ffffff;
+      color: #fff;
       margin-bottom: 30px;
       @include max(991px) {
         font-size: 36px;
@@ -50,7 +50,7 @@
       line-height: 48px;
       letter-spacing: -0.008em;
       text-transform: capitalize;
-      color: #ffffff;
+      color: #fff;
       padding: 0 24px;
       margin-right: 12px;
       transition: all 0.4s;
@@ -97,7 +97,7 @@
         font-size: 40px;
         line-height: 48px;
         letter-spacing: -0.01em;
-        color: #ffffff;
+        color: #fff;
         margin-bottom: 12px;
         @include max(991px) {
           font-size: 28px;
@@ -188,7 +188,7 @@
         font-weight: 500;
         font-size: 14px;
         text-transform: uppercase;
-        color: #ffffff;
+        color: #fff;
         margin: 0;
       }
     }

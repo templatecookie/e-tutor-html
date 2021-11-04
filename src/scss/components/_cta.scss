@@ -33,7 +33,7 @@
     font-weight: 600;
     font-size: 32px;
     letter-spacing: -0.01em;
-    color: #ffffff;
+    color: #fff;
     margin-bottom: 10px;
     @include mq('tablet-small', max) {
       font-size: 26px;
@@ -43,7 +43,7 @@
     font-size: 14px;
     line-height: 22px;
     letter-spacing: -0.01em;
-    color: #ffffff;
+    color: #fff;
     margin-right: 239px;
     margin-bottom: 24px;
     @include mq('tablet-small', max) {

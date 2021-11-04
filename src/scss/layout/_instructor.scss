@@ -241,8 +241,9 @@
 
   //   Dashboard
   &-features {
-    display: grid;
     gap: 24px;
+    display: grid;
+    margin-bottom: 24px;
     grid-template-columns: repeat(4, 1fr);
     @include max(1480px) {
       grid-template-columns: repeat(3, 1fr);
@@ -253,5 +254,9 @@
     @include max(767px) {
       grid-template-columns: 1fr;
     }
+  }
+
+  &-biodata {
+    margin-bottom: 24px;
   }
 }

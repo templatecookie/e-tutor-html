@@ -1,67 +1,64 @@
 .pag {
-    .pag-arrow {
-        height: 48px;
-        width: 48px;
-        border-radius: 50%;
-        margin-right: 8px;
-        text-align: center;
-        line-height: 48px;
-        background-color: $primary-100;
-        display: inline-block;
-    }
+  .pag-arrow {
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    margin-right: 8px;
+    text-align: center;
+    line-height: 48px;
+    background-color: $primary-100;
+    display: inline-block;
+  }
 
-    .pag-arrow-right {
-        margin-left: 16px;
+  .pag-arrow-right {
+    margin-left: 16px;
+    cursor: pointer;
+  }
+
+  .pag-arrow-left {
+    margin-right: 16px;
+    cursor: pointer;
+  }
+
+  .pag-content {
+    display: inline-block;
+  }
+
+  ul {
+    display: flex;
+    padding: 0;
+
+    li {
+      height: 48px;
+      width: 48px;
+      border-radius: 50%;
+      text-align: center;
+      line-height: 48px;
+      transition: 0.5s;
+
+      a {
+        font-weight: 500;
+        font-size: 14px;
+        color: #1d2026;
+        transition: 0.5s;
         cursor: pointer;
+      }
     }
 
-    .pag-arrow-left {
-        margin-right: 16px;
-        cursor: pointer;
+    li:hover a {
+      color: $primary-500;
     }
 
-    .pag-content {
-        display: inline-block;
+    li:hover {
+      background-color: $primary-100;
     }
 
-    ul {
-        display: flex;
-        padding: 0;
+    .active {
+      background-color: $primary-500;
 
-        li {
-            height: 48px;
-            width: 48px;
-            border-radius: 50%;
-            text-align: center;
-            line-height: 48px;
-            transition: .5s;
-
-            a {
-
-                font-family: 'Inter';
-                font-weight: 500;
-                font-size: 14px;
-                color: #1D2026;
-                transition: .5s;
-                cursor: pointer;
-            }
-
-        }
-
-        li:hover a {
-            color: $primary-500;
-        }
-
-        li:hover {
-            background-color: $primary-100;
-        }
-
-        .active {
-            background-color: $primary-500;
-
-            a {
-                color: #FFFFFF;
-            }
-        }
+      a {
+        color: #fff;
+      }
     }
+  }
 }

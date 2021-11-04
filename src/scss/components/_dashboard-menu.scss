@@ -1,82 +1,79 @@
 .dashboard {
-    background-color: #fff;
+  background-color: #fff;
 
-    &-content {
-        padding: 16px 0;
-        display: flex;
-        justify-content: space-between;
+  &-content {
+    padding: 16px 0;
+    display: flex;
+    justify-content: space-between;
 
-        .dashboard-left {
-            span {
-                color: #6E7485;
-                font-size: 14px;
-                font-family: 'Inter';
-                font-weight: 400;
-                margin-top: 6px;
-                line-height: 22px;
-            }
+    .dashboard-left {
+      span {
+        color: #6e7485;
+        font-size: 14px;
 
-            p {
-                color: #1D2026;
-                font-size: 20px;
-                font-family: 'Inter';
-                font-weight: 600;
-                margin: 0;
-                line-height: 26px;
-            }
-        }
+        font-weight: 400;
+        margin-top: 6px;
+        line-height: 22px;
+      }
 
-        .dashboard-right {
-            display: flex;
-            justify-content: space-between;
+      p {
+        color: #1d2026;
+        font-size: 20px;
 
-           
-            .notification {
-                background: #F5F7FA;
-                padding: 12px;
-                margin: 0 16px;
-                cursor: pointer;
-            }
-
-            img {
-                height: 48px;
-                width: 48px;
-                border-radius: 50%;
-                cursor: pointer;
-            }
-
-            button {
-                border: 0;
-                background-color: transparent;
-            }
+        font-weight: 600;
+        margin: 0;
+        line-height: 26px;
+      }
     }
-}
 
-.bg {
+    .dashboard-right {
+      display: flex;
+      justify-content: space-between;
+
+      .notification {
+        background: #f5f7fa;
+        padding: 12px;
+        margin: 0 16px;
+        cursor: pointer;
+      }
+
+      img {
+        height: 48px;
+        width: 48px;
+        border-radius: 50%;
+        cursor: pointer;
+      }
+
+      button {
+        border: 0;
+        background-color: transparent;
+      }
+    }
+  }
+
+  .bg {
     background-color: #ffff;
     padding: 10px;
-}
+  }
 
-@include mq('phone-wide', max) {
+  @include mq('phone-wide', max) {
     .dashboard {
-        &-content {
-            .dashboard-right {
-                flex-wrap: wrap-reverse;
-                justify-content: end;
+      &-content {
+        .dashboard-right {
+          flex-wrap: wrap-reverse;
+          justify-content: end;
 
-                .searchbox {
-                    display: none;
-                }
-                .notification {
-                    background: #F5F7FA;
-                    padding: 12px;
-                    margin: 0 8px;
-                    cursor: pointer;
-                }
-            }
+          .searchbox {
+            display: none;
+          }
+          .notification {
+            background: #f5f7fa;
+            padding: 12px;
+            margin: 0 8px;
+            cursor: pointer;
+          }
         }
-
+      }
     }
-
-}
+  }
 }

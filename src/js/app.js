@@ -7,13 +7,19 @@
 'use strict';
 
 //menu js
+const menuBar = document.querySelector('.menu-bar');
+const closeBar = document.querySelector('.offcanvas-overlay');
+if (menuBar) {
+  $('.menu-bar').on('click', function () {
+    $('.offcanves-menu, .offcanvas-overlay').addClass('active');
+  });
+}
 
-$('.menu-bar').on('click', function () {
-  $('.offcanves-menu, .offcanvas-overlay').addClass('active');
-});
-$('.close, .offcanvas-overlay').on('click', function () {
-  $('.offcanves-menu, .offcanvas-overlay').removeClass('active');
-});
+if (closeBar) {
+  $('.close, .offcanvas-overlay').on('click', function () {
+    $('.offcanves-menu, .offcanvas-overlay').removeClass('active');
+  });
+}
 
 // End menu
 
