@@ -232,6 +232,9 @@
       margin-right: 16px;
       letter-spacing: -1%;
       text-transform: capitalize;
+      @include max(575px) {
+        display: none;
+      }
     }
 
     &.modal {
@@ -613,19 +616,8 @@ header.header-section.header-four {
 .header-bottom.header-four {
   display: flex;
   padding: 24px 0;
+  align-items: center;
   justify-content: space-between;
-  @include mq('desktop', max) {
-    display: flex;
-  }
-  @include mq('tablet-small', max) {
-    display: block;
-    text-align: center;
-  }
-  .main-logo {
-    @include mq('tablet-small', max) {
-      margin-bottom: 20px;
-    }
-  }
   .header-bottom-right {
     flex: 0 0 auto;
     display: block;
