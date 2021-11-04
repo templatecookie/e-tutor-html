@@ -166,6 +166,9 @@
 }
 
 // gallery section
+.gallery-section.gray-bg{
+    background: #F5F7FA;
+  }
 .gallery-thumb {
   margin-left: 100px;
   @include mq('desktop', max) {
