@@ -11,10 +11,11 @@
 @import 'base/reset';
 
 // layout
-@import 'layout/header';
 @import 'layout/nav';
-@import 'layout/breadcrumb';
 @import 'layout/footer';
+@import 'layout/header';
+@import 'layout/register';
+@import 'layout/breadcrumb';
 
 // components
 @import 'components/hero';

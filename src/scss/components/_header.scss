@@ -98,7 +98,6 @@
   display: flex;
   // flex-wrap: wrap;
   align-items: center;
-  box-shadow: inset 0px -1px 0px #e9eaf0;
   @include mq('desktop', max) {
     display: none;
   }
@@ -226,11 +225,22 @@
     flex: 0 0 50%;
   }
   .header-btn-wrap {
-    .button {
-      &:nth-child(1) {
-        color: #ff6636;
-        background-color: #fff;
-        margin-right: 12px;
+    p {
+      font-size: 14px;
+      color: #4e5566;
+      line-height: 22px;
+      margin-right: 16px;
+      letter-spacing: -1%;
+      text-transform: capitalize;
+    }
+
+    &.modal {
+      .button {
+        &:nth-child(1) {
+          color: #ff6636;
+          background-color: #fff;
+          margin-right: 12px;
+        }
       }
     }
     a.header-btn {
@@ -595,6 +605,11 @@ a.header-arrow {
 header.header-section.header-four {
   background-color: #fff;
 }
+
+.header-four {
+  box-shadow: inset 0px -1px 0px #e9eaf0;
+}
+
 .header-bottom.header-four {
   display: flex;
   padding: 24px 0;
