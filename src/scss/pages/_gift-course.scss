@@ -52,6 +52,14 @@
   }
 }
 .amunt-detalis {
+  h4{
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #1D2026;
+    margin-bottom: 15px;
+  }
   ul {
     margin: 0;
     padding: 0;
@@ -82,6 +90,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @include mq('phone-wide', max) {
+      font-size: 20px;
+    }
     span {
       color: #202029;
       font-weight: normal;
@@ -92,12 +103,23 @@
 
 .amount-sidebar {
   border: 1px solid #E9EAF0;
+  
   .course-details-wrap {
+      padding: 24px;
+      border-bottom: 1px solid #E9EAF0;
+      h4{
+        font-family: "Inter";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        color: #1D2026;
+        margin-bottom: 15px;
+      }
+    .course-details-item{
       display: flex;
       align-items: center;
-      padding: 24px;
       margin-bottom: 16px;
-      border-bottom: 1px solid #E9EAF0;
       @include mq('phone-wide', max) {
         display: block;
         text-align: center;
@@ -149,46 +171,57 @@
         color: #FF6636;
       }
     }
+    }
+      
   }
   .about-sidebar-wrap {
-      padding: 8px 24px 24px;
+      padding: 24px;
   }
 }
 
-// .coupon-code {
-//   padding-top: 24px;
-//   h4 {
-//     font-weight: 500;
-//     font-size: 14px;
-//     letter-spacing: -0.01em;
-//     color: #1d2026;
-//     margin-bottom: 15px;
-//   }
-//   .searchbox {
-//     input {
-//       background-color: transparent;
-//       border: 1px solid #e9eaf0;
-//       padding: 20px;
-//     }
-//   }
-//   button#coupon-apply {
-//     border: none;
+.amount-sidebar.public-shopping-cart{
+  border: none;
+  .about-sidebar-wrap{
+    padding: 0;
+  }
+  .amaunt-confirm-button{
+    .default-btn{
+      @include mq('desktop-wide', max) {
+       padding: 0 18px;
+      }
+    }
+  }
+  
+}
 
-//     font-style: normal;
-//     font-weight: 600;
-//     font-size: 14px;
-//     line-height: 36px;
-//     letter-spacing: -0.004em;
-//     text-transform: capitalize;
-//     color: #ffffff;
-//     background: #1d2026;
-//     padding: 0 16px;
-//     position: absolute;
-//     top: 6px;
-//     right: 5px;
-//     transition: all 0.4s;
-//     &:hover {
-//       background-color: #ff6636;
-//     }
-//   }
-// }
+.coupon-code {
+  padding-top: 24px;
+  margin-top: 24px;
+  border-top: 1px solid #E9EAF0;
+  h4 {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: -0.01em;
+    color: #1d2026;
+    margin-bottom: 15px;
+  }
+  button#coupon-apply {
+    border: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 36px;
+    letter-spacing: -0.004em;
+    text-transform: capitalize;
+    color: #ffffff;
+    background: #1d2026;
+    padding: 0 16px;
+    position: absolute;
+    top: 6px;
+    right: 5px;
+    transition: all 0.4s;
+    &:hover {
+      background-color: #ff6636;
+    }
+  }
+}

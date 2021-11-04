@@ -3,7 +3,9 @@
 }
 .about-content {
   margin-right: 100px;
-
+  @include mq('desktop-wide', max) {
+    margin-right: 0;
+  }
   @include max(991px) {
     margin-left: 0px;
     margin-top: 30px;

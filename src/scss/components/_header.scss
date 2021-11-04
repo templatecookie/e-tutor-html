@@ -618,6 +618,19 @@ header.header-section.header-four {
   padding: 24px 0;
   align-items: center;
   justify-content: space-between;
+  box-shadow: none;
+  @include mq('desktop', max) {
+    display: flex;
+  }
+  @include mq('tablet-small', max) {
+    display: block;
+    text-align: center;
+  }
+  .main-logo {
+    @include mq('tablet-small', max) {
+      margin-bottom: 20px;
+    }
+  }
   .header-bottom-right {
     flex: 0 0 auto;
     display: block;
