@@ -26,6 +26,7 @@
       width: 20%;
     }
   }
+
   &-content {
     width: 85%;
     @include max(1200px) {
@@ -34,9 +35,9 @@
     @include max(991px) {
       width: 90%;
     }
-    @include max(767px) {
-      width: 80%;
-    }
+    // @include max(767px) {
+    //   width: 80%;
+    // }
   }
 
   //   sidebar
@@ -150,6 +151,92 @@
     &:hover {
       color: #fff;
       background-color: #ff6636;
+    }
+  }
+
+  //   header
+
+  &-header {
+    padding: 24px 0px;
+    position: relative;
+    margin-bottom: 40px;
+    background-color: #fff;
+    @include max(767px) {
+      padding-bottom: 90px;
+    }
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .right {
+      display: flex;
+      align-items: center;
+      & > div {
+        margin-right: 16px;
+        &:nth-last-child(1) {
+          margin: 0px;
+        }
+      }
+    }
+
+    .form-searchbox {
+      @include max(767px) {
+        top: 50%;
+        left: 50%;
+        width: 75%;
+        margin-top: 40px;
+        position: absolute;
+        transform: translate(-50%, -50%);
+        z-index: 9;
+      }
+      @include max(575px) {
+        width: 95%;
+      }
+      input {
+        color: #8c94a3;
+        background-color: #f5f7fa;
+      }
+    }
+  }
+
+  //   Notification
+  &-notification {
+    padding: 12px;
+    cursor: pointer;
+    position: relative;
+    background-color: #f5f7fa;
+  }
+
+  //   user
+  &-user {
+    cursor: pointer;
+    .image {
+      width: 48px;
+      height: 48px;
+      overflow: hidden;
+      border-radius: 50%;
+      img {
+        width: inherit;
+        height: inherit;
+        object-fit: cover;
+      }
+    }
+    .greeting {
+      font-size: 14px;
+      color: #6e7485;
+      font-weight: 500;
+      line-height: 20px;
+      margin-bottom: 6px;
+      letter-spacing: -0.01em;
+      text-transform: capitalize;
+    }
+    .username {
+      font-size: 20px;
+      color: #1d2026;
+      font-weight: 600;
+      line-height: 26px;
+      text-transform: capitalize;
     }
   }
 }
