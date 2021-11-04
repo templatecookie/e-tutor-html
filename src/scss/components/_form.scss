@@ -48,6 +48,10 @@
       position: relative;
       input {
         @extend %input;
+
+        &[type='password'] {
+          padding-right: 60px;
+        }
       }
 
       .icon {

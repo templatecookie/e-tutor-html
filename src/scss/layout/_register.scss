@@ -63,6 +63,12 @@
       margin-left: 0px;
     }
 
+    .form {
+      @include max(575px) {
+        width: inherit;
+      }
+    }
+
     .button {
       @include max(575px) {
         width: 100%;
