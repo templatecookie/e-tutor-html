@@ -1,0 +1,85 @@
+.instructor-profile-section {
+  padding: 40px 0 80px;
+}
+
+.instructor-about-content {
+  border: 1px solid #E9EAF0;
+  padding: 24px;
+  h4{
+    font-family: "Inter";
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 100%;
+    text-transform: uppercase;
+    color: #1D2026;
+    margin-bottom: 15px;
+  }
+  p{
+    font-family: "Inter";
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.01em;
+    color: #6E7485;
+    margin-bottom: 20px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+  }
+}
+
+.student-tabs-wrap.instructor-tabs-wrap{
+  .nav{
+    justify-content: flex-start;
+    border: none;
+    border-bottom: 1px solid #E9EAF0;
+  }
+  .nav-pills .nav-link{
+    width: 200px;
+  }
+}
+
+.course-item-4.instructor-profile{
+  .course-item-5-card-img{
+    height: 312px;
+  }
+  .course-item-5-card-info-tag{
+    font-size: 12px;
+  }
+  .course-item-5-card-info-price{
+    font-size: 24px;
+    font-weight: 600;
+  }
+  .course-item-5-card-head {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .course-item-5-card-info {
+    padding: 20px 20px 0 20px;
+  }
+  .course-item-5-card-head{
+    padding: 12px 20px 16px;
+  }
+  .course-item-5-card-footer-review{
+    font-size: 16px;
+    svg{
+      width: 20px;
+      height: 20px;
+    }
+  }
+  .feature-course-footer {
+    border: none;
+    padding: 0;
+}
+.feature-course-footer {
+  p.p-color{
+    font-size: 16px;
+  }
+  span{
+    font-size: 16px;
+  }
+}
+.course-item-5-card-footer{
+  padding: 20px;
+}
+
+}

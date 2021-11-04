@@ -2,6 +2,7 @@
   border: 1px solid #ffddd1;
   padding: 40px;
   display: flex;
+  background-color: #fff;
   align-items: center;
   justify-content: space-between;
   @include mq('desktop', max) {
