@@ -237,7 +237,7 @@
       }
     }
 
-    &.modal {
+    &.modal-btn {
       .button {
         &:nth-child(1) {
           color: #ff6636;
@@ -246,6 +246,7 @@
         }
       }
     }
+
     a.header-btn {
       display: inline-block;
       padding: 0 24px;
@@ -262,6 +263,7 @@
         margin-right: 0;
       }
     }
+
     .header-btn.orange-btn {
       background: #ffeee8;
       &:hover {
@@ -269,6 +271,7 @@
         background-color: $primary-600;
       }
     }
+
     .header-btn.div-orange-btn {
       color: #fff;
       background-color: #ff6636;
