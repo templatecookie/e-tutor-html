@@ -247,12 +247,14 @@
 .edit-bio-content-change {
   height: 0;
   opacity: 0;
+  padding: 0;
   display: block;
 }
 
 input[type='checkbox']:checked + .edit-bio-content-change {
   opacity: 1;
   height: 100%;
+  padding: 40px;
   overflow: hidden;
   transition: all 0.3s linear;
 }
