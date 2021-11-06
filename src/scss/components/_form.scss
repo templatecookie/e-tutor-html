@@ -345,7 +345,7 @@
     top: 11px;
     right: 21px;
     margin-top: 3px;
-    font-family: 'Inter';
+
     font-size: 14px;
     line-height: 22px;
     letter-spacing: -0.01em;
@@ -357,7 +357,7 @@
     /* Chrome/Opera/Safari */
     color: #8c94a3;
     font-size: 16px;
-    font-family: 'Inter';
+
     font-weight: 400;
   }
 
@@ -365,7 +365,7 @@
     /* Firefox 19+ */
     color: #8c94a3;
     font-size: 16px;
-    font-family: 'Inter';
+
     font-weight: 400;
   }
 
@@ -373,7 +373,7 @@
     /* IE 10+ */
     color: #8c94a3;
     font-size: 16px;
-    font-family: 'Inter';
+
     font-weight: 400;
   }
 
@@ -381,7 +381,7 @@
     /* Firefox 18- */
     color: #8c94a3;
     font-size: 16px;
-    font-family: 'Inter';
+
     font-weight: 400;
   }
 
@@ -418,7 +418,7 @@
     top: 11px;
     right: 21px;
     margin-top: 3px;
-    font-family: 'Inter';
+
     font-size: 14px;
     line-height: 22px;
     letter-spacing: -0.01em;
@@ -430,7 +430,7 @@
     /* Chrome/Opera/Safari */
     color: #8c94a3;
     font-size: 16px;
-    font-family: 'Inter';
+
     font-weight: 400;
   }
 
@@ -438,7 +438,7 @@
     /* Firefox 19+ */
     color: #8c94a3;
     font-size: 16px;
-    font-family: 'Inter';
+
     font-weight: 400;
   }
 
@@ -446,7 +446,7 @@
     /* IE 10+ */
     color: #8c94a3;
     font-size: 16px;
-    font-family: 'Inter';
+
     font-weight: 400;
   }
 
@@ -454,7 +454,7 @@
     /* Firefox 18- */
     color: #8c94a3;
     font-size: 16px;
-    font-family: 'Inter';
+
     font-weight: 400;
   }
 
@@ -494,7 +494,7 @@
     top: 8px;
     right: 21px;
     margin-top: 3px;
-    font-family: 'Inter';
+
     font-size: 14px;
     line-height: 22px;
     letter-spacing: -0.01em;
@@ -506,7 +506,7 @@
     /* Chrome/Opera/Safari */
     color: #8c94a3;
     font-size: 16px;
-    font-family: 'Inter';
+
     font-weight: 400;
   }
 
@@ -514,7 +514,7 @@
     /* Firefox 19+ */
     color: #8c94a3;
     font-size: 16px;
-    font-family: 'Inter';
+
     font-weight: 400;
   }
 
@@ -522,7 +522,7 @@
     /* IE 10+ */
     color: #8c94a3;
     font-size: 16px;
-    font-family: 'Inter';
+
     font-weight: 400;
   }
 
@@ -530,7 +530,7 @@
     /* Firefox 18- */
     color: #8c94a3;
     font-size: 16px;
-    font-family: 'Inter';
+
     font-weight: 400;
   }
 
@@ -567,7 +567,7 @@
     top: 8px;
     right: 21px;
     margin-top: 3px;
-    font-family: 'Inter';
+
     font-size: 14px;
     line-height: 22px;
     letter-spacing: -0.01em;
@@ -579,7 +579,7 @@
     /* Chrome/Opera/Safari */
     color: #8c94a3;
     font-size: 16px;
-    font-family: 'Inter';
+
     font-weight: 400;
   }
 
@@ -587,7 +587,7 @@
     /* Firefox 19+ */
     color: #8c94a3;
     font-size: 16px;
-    font-family: 'Inter';
+
     font-weight: 400;
   }
 
@@ -595,7 +595,7 @@
     /* IE 10+ */
     color: #8c94a3;
     font-size: 16px;
-    font-family: 'Inter';
+
     font-weight: 400;
   }
 
@@ -603,7 +603,7 @@
     /* Firefox 18- */
     color: #8c94a3;
     font-size: 16px;
-    font-family: 'Inter';
+
     font-weight: 400;
   }
 
@@ -634,7 +634,6 @@ input[type='checkbox']:checked + .checkbox-box.form-check-right {
   display: flex;
   justify-content: space-between;
   .form-check-right {
-    font-family: 'Inter';
     font-size: 12px;
     line-height: 16px;
     color: #8c94a3;
@@ -648,7 +647,6 @@ input[type='checkbox']:checked + .checkbox-box.form-check-right {
 }
 
 .form-check-label label {
-  font-family: 'Inter';
   font-size: 14px;
   line-height: 22px;
   letter-spacing: -0.01em;
@@ -678,7 +676,6 @@ input[type='checkbox']:checked {
   margin-bottom: 10px;
 
   h4 {
-    font-family: 'Inter';
     font-weight: 500;
     font-size: 16px;
     line-height: 22px;
@@ -691,7 +688,6 @@ input[type='checkbox']:checked {
   }
 
   span {
-    font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
     font-size: 12px;
@@ -743,7 +739,6 @@ input[type='checkbox']:checked {
     color: #1d2026;
     display: block;
     margin-bottom: 6px;
-    font-family: 'Inter';
   }
   textarea {
     height: 112px !important;
@@ -754,7 +749,7 @@ input[type='checkbox']:checked {
     width: 100%;
     height: 48px;
     font-size: 16px;
-    font-family: 'Inter';
+
     font-weight: 400;
     padding: 10px 50px 10px 18px;
     transition: all 0.4s;
@@ -848,7 +843,6 @@ span.default-input-field-icon {
     color: #1d2026;
     display: block;
     margin-bottom: 6px;
-    font-family: 'Inter';
   }
   input {
     background-color: transparent;

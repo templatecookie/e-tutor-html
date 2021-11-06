@@ -29,15 +29,14 @@
 
   &-content {
     width: 85%;
+    height: 100%;
+    overflow-y: scroll;
     @include max(1200px) {
       width: 75%;
     }
     @include max(991px) {
       width: 90%;
     }
-    // @include max(767px) {
-    //   width: 80%;
-    // }
   }
 
   //   sidebar
@@ -69,7 +68,8 @@
     padding: 0;
     padding-top: 16px;
     li {
-      &:hover {
+      &:hover,
+      &.active {
         a {
           color: #fff;
           background-color: #ff6636;
@@ -154,8 +154,7 @@
     }
   }
 
-  //   header
-
+  // header
   &-header {
     padding: 24px 0px;
     position: relative;
@@ -185,10 +184,10 @@
         top: 50%;
         left: 50%;
         width: 75%;
+        z-index: 9;
         margin-top: 40px;
         position: absolute;
         transform: translate(-50%, -50%);
-        z-index: 9;
       }
       @include max(575px) {
         width: 95%;
@@ -200,7 +199,7 @@
     }
   }
 
-  //   Notification
+  // Notification
   &-notification {
     padding: 12px;
     cursor: pointer;
@@ -208,7 +207,7 @@
     background-color: #f5f7fa;
   }
 
-  //   user
+  // user
   &-user {
     cursor: pointer;
     .image {
@@ -238,5 +237,26 @@
       line-height: 26px;
       text-transform: capitalize;
     }
+  }
+
+  //   Dashboard
+  &-features {
+    gap: 24px;
+    display: grid;
+    margin-bottom: 24px;
+    grid-template-columns: repeat(4, 1fr);
+    @include max(1480px) {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    @include max(1200px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    @include max(767px) {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  &-biodata {
+    margin-bottom: 24px;
   }
 }

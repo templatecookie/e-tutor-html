@@ -1,65 +1,67 @@
-.badge-color-1{
-    background-color: #EBEBFF;
-    &:hover{
-        .category-content-left{
-            background-color: #564FFD;
-        }
+.badge-color-1 {
+  background-color: #ebebff;
+  .category-content-left {
+    color: #ebebff;
+  }
+  &:hover {
+    .category-content-left {
+      background-color: #564ffd;
     }
-    
+  }
 }
-.badge-color-2{
-    background-color: #E1F7E3;
-    &:hover{
-        .category-content-left{
-            background-color: #23BD33;
-        }
+.badge-color-2 {
+  background-color: #e1f7e3;
+  &:hover {
+    .category-content-left {
+      background-color: #23bd33;
     }
+  }
 }
-.badge-color-3{
-    background-color: #FFF2E5;
-    &:hover{
-        .category-content-left{
-            background-color: #FD8E1F;
-        }
+.badge-color-3 {
+  background-color: #fff2e5;
+  &:hover {
+    .category-content-left {
+      background-color: #fd8e1f;
     }
+  }
 }
-.badge-color-4{
-    background-color: #FFF0F0;
-    &:hover{
-        .category-content-left{
-            background-color: #E34444;
-        }
+.badge-color-4 {
+  background-color: #fff0f0;
+  &:hover {
+    .category-content-left {
+      background-color: #e34444;
     }
+  }
 }
-.badge-color-5{
-    background-color: #F5F7FA;
-    &:hover{
-        .category-content-left{
-            background-color: #564FFD;
-        }
+.badge-color-5 {
+  background-color: #f5f7fa;
+  &:hover {
+    .category-content-left {
+      background-color: #564ffd;
     }
+  }
 }
-.badge-color-6{
-    background-color: #F5F7FA;
-    &:hover{
-        .category-content-left{
-            background-color: #8C94A3;
-        }
+.badge-color-6 {
+  background-color: #e9eaf0;
+  &:hover {
+    .category-content-left {
+      background-color: #8c94a3;
     }
+  }
 }
-.badge-color7{
-    background-color: #FFEEE8;
-    &:hover{
-        .category-content-left{
-            background-color: #564FFD;
-        }
+.badge-color7 {
+  background-color: #ffeee8;
+  &:hover {
+    .category-content-left {
+      background-color: #564ffd;
     }
+  }
 }
-.badge-color-8{
-    background-color: #F5F7FA;
-    &:hover{
-        .category-content-left{
-            background-color: #564FFD;
-        }
+.badge-color-8 {
+  background-color: #f5f7fa;
+  &:hover {
+    .category-content-left {
+      background-color: #564ffd;
     }
+  }
 }
