@@ -83,6 +83,13 @@
       margin: 0px;
       margin-right: 12px;
     }
+    @include max(480px) {
+      width: 100%;
+      margin-bottom: 12px;
+      &:nth-last-child(1) {
+        margin: 0;
+      }
+    }
     .app-btn-wrap {
       display: flex;
       align-items: center;
@@ -90,6 +97,9 @@
       width: 163px;
       height: 58px;
       background: #272b33;
+      @include max(480px) {
+        width: 100%;
+      }
       .app-icon {
         svg {
           margin-right: 15px;

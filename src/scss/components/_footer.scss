@@ -160,6 +160,9 @@
   @include mq('desktop', max) {
     padding: 70px 0 40px;
   }
+  @include max(767px) {
+    padding-bottom: 10px;
+  }
   .footer-textarea {
     margin-right: 90px;
     @include mq('desktop', max) {
@@ -178,6 +181,9 @@
     }
   }
   .footer-widget {
+    @include max(767px) {
+      margin-bottom: 30px;
+    }
     .footer-menu-title {
       margin-bottom: 30px;
       @include mq('desktop', max) {
