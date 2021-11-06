@@ -330,6 +330,7 @@
       </div>
       <!--End company-section -->
       <div class="counter-section section-padding-bottom">
+         <div id="etutor-counter"></div>
          <div class="container">
             <div class="counter-wrap">
                <div class="counter-item">
@@ -343,7 +344,7 @@
                      </svg>
                   </div>
                   <div class="counter-data">
-                     <h4>67.1k</h4>
+                     <h2 class="counter-number"><span data-percentage="67.1" class="etutor-counter"></span>k</h2>
                      <p>Students</p>
                   </div>
                </div>
@@ -358,7 +359,7 @@
                      </svg>
                   </div>
                   <div class="counter-data">
-                     <h4>26k</h4>
+                     <h2 class="counter-number"><span data-percentage="26" class="etutor-counter"></span>k</h2>
                      <p>Certified Instructor</p>
                   </div>
                </div>
@@ -374,7 +375,7 @@
                      </svg>
                   </div>
                   <div class="counter-data">
-                     <h4>72</h4>
+                     <h2 class="counter-number"><span data-percentage="72" class="etutor-counter"></span></h2>
                      <p>Country Language</p>
                   </div>
                </div>
@@ -387,7 +388,7 @@
                      </svg>
                   </div>
                   <div class="counter-data">
-                     <h4>99.9%</h4>
+                     <h2 class="counter-number"><span data-percentage="99.9" class="etutor-counter"></span>%</h2>
                      <p>Success Rate</p>
                   </div>
                </div>
@@ -401,7 +402,7 @@
                      </svg>
                   </div>
                   <div class="counter-data">
-                     <h4>57</h4>
+                     <h2 class="counter-number"><span data-percentage="57" class="etutor-counter"></span></h2>
                      <p>Trusted Companies</p>
                   </div>
                </div>
@@ -858,36 +859,8 @@
       <script src="src/js/lirbrary/bootstrap.bundle.min.js"></script>
       <script src="src/js/lirbrary/isotope.pkgd.min.js"></script>
       <script src="src/js/lirbrary/owl.carousel.min.js"></script>
+      <script src="src/js/app.js"></script>
       <script type="module" src="/main.js"></script> 
-      <script>
-         // popup video
-         $(document).ready(function() {
-         $('.testimonial-slider').owlCarousel({
-            loop:true,
-            margin:20,
-            nav: false,
-            dots: false,
-            autoplay: true,
-            items: 3,
-            responsive:{
-                0:{
-                    items:1,
-                    nav: false
-                },
-                600:{
-                    items:1
-                },
-                755:{
-                    items:2
-                },
-                1000:{
-                    items:3
-                }
-                
-            }
-         })
-         
-         });//end document.ready
-      </script>
+
    </body>
 </html>
