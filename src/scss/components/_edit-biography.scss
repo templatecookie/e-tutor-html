@@ -141,7 +141,9 @@
         cursor: pointer;
         line-height: 48px;
         text-align: center;
+        transform: rotate(0deg);
         background: rgba(255, 255, 255, 0.05);
+
         label {
           cursor: pointer;
         }
@@ -243,18 +245,31 @@
 }
 
 .edit-bio-content-change {
+  height: 0;
+  opacity: 0;
+  display: block;
+}
+
+input[type='checkbox']:checked + .edit-bio-content-change {
   opacity: 1;
   height: 100%;
   overflow: hidden;
   transition: all 0.3s linear;
 }
 
-input[type='checkbox']:checked + .edit-bio-content-change {
-  height: 0;
-  padding: 0;
-  opacity: 0;
-  display: block;
-}
+// .edit-bio-content-change {
+//   opacity: 1;
+//   height: 100%;
+//   overflow: hidden;
+//   transition: all 0.3s linear;
+// }
+
+// input[type='checkbox']:checked + .edit-bio-content-change {
+//   height: 0;
+//   padding: 0;
+//   opacity: 0;
+//   display: block;
+// }
 
 @include mq('tablet', max) {
   .edit-biography-content {
@@ -273,17 +288,17 @@ input[type='checkbox']:checked + .edit-bio-content-change {
     background: #ff6636;
   }
 
-  .edit-biography-content .edit-biography-right .notification {
-    width: 40px;
-    height: 40px;
-    margin: 0 10px;
-    line-height: 40px;
+  // .edit-biography-content .edit-biography-right .notification {
+  //   width: 40px;
+  //   height: 40px;
+  //   margin: 0 10px;
+  //   line-height: 40px;
 
-    svg {
-      height: 18px;
-      width: 18px;
-    }
-  }
+  //   svg {
+  //     height: 18px;
+  //     width: 18px;
+  //   }
+  // }
 }
 
 @include mq('phone', max) {
