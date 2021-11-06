@@ -269,14 +269,13 @@ select {
 a.default-btn,
 button.default-btn {
   display: inline-block;
-
   font-weight: 600;
   letter-spacing: -0.004em;
   text-transform: capitalize;
   color: #fff;
   transition: all 0.4s;
   text-align: center;
-  border: navajowhite;
+  border: none;
   &.icon-btn {
     svg {
       margin-left: 10px;

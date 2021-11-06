@@ -1,0 +1,56 @@
+.coming-soon-section {
+  min-height: 800px;
+  display: flex;
+  align-items: center;
+}
+
+.coming-soon-content{
+  h4{
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FF6636;
+    margin-bottom: 15px;
+  }
+  h2{
+    font-weight: 600;
+    font-size: 64px;
+    line-height: 68px;
+    letter-spacing: -0.02em;
+    color: #1D2026;
+  }
+}
+
+.countdown-wrap {
+  max-width: 550px;
+  display: flex;
+  margin-top: 40px;
+  justify-content: space-between;
+  .countdown-item {
+    width: 116px;
+    height: 108px;
+    left: 0px;
+    top: 0px;
+    background: #F5F7FA;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .number{
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 40px;
+      text-align: center;
+      letter-spacing: -0.01em;
+      color: #1D2026;
+      margin-bottom: 6px;
+    }
+      span.time_content {
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        letter-spacing: -0.01em;
+        color: #1D2026;
+    }
+  }
+}

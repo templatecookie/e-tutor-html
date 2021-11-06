@@ -323,8 +323,9 @@
 }
 
 // testimonial owl carousel
-
-$('.testimonial-slider').owlCarousel({
+var testimonial_slider = $('.testimonial-slider');
+  if(testimonial_slider.is_exist()){
+  testimonial_slider.owlCarousel({
   loop:true,
   margin:20,
   nav: false,
@@ -348,9 +349,10 @@ $('.testimonial-slider').owlCarousel({
       
   }
 })
+  }
+//faq 1 js
 
- 
-    
+
   });/*End document ready*/
   
   

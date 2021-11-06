@@ -1,0 +1,20 @@
+.e_screenfix {
+  margin-right: calc((-100vw + 100%)/2);
+  max-width: 1618px;
+}
+.header-bottom.border_bottom{
+  border-bottom: 1px solid #E9EAF0;
+}
+.page404-section {
+  display: flex;
+  align-items: center;
+  min-height: 900px;
+  overflow: hidden;
+  @include mq('desktop-wide', max) {
+    min-height: 750px;
+  }
+}
+.thumb404 {
+  position: relative;
+  left: 7px ;
+}
