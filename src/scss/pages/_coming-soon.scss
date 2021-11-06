@@ -1,10 +1,14 @@
 .coming-soon-section {
-  min-height: 800px;
-  display: flex;
-  align-items: center;
+  padding: 150px 0 100px;
+  @include mq('desktop', max) {
+    padding: 100px 0 60px;
+  }
 }
 
 .coming-soon-content{
+  @include mq('tablet', max) {
+    margin-bottom: 30px;
+  }
   h4{
     font-weight: 600;
     font-size: 18px;
@@ -18,6 +22,22 @@
     line-height: 68px;
     letter-spacing: -0.02em;
     color: #1D2026;
+    @include mq('desktop-wide', max) {
+      font-size: 56px;
+      line-height: 60px;
+    }
+    @include mq('desktop', max) {
+      font-size: 48px;
+      line-height: 54px;
+    }
+    @include mq('tablet-small', max) {
+      font-size: 40px;
+      line-height: 48px;
+    }
+    @include mq('phone-wide', max) {
+      font-size: 30px;
+      line-height: 36px;
+    }
   }
 }
 
@@ -26,6 +46,9 @@
   display: flex;
   margin-top: 40px;
   justify-content: space-between;
+  @include mq('tablet', max) {
+    max-width: 480px;
+  }
   .countdown-item {
     width: 116px;
     height: 108px;
@@ -36,6 +59,14 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @include mq('desktop', max) {
+      width: 100px;
+      height: 100px;
+    }
+    @include mq('phone-wide', max) {
+      width: 80px;
+      height: 90px;
+    }
     .number{
       font-weight: 600;
       font-size: 32px;
@@ -44,6 +75,10 @@
       letter-spacing: -0.01em;
       color: #1D2026;
       margin-bottom: 6px;
+      @include mq('phone-wide', max) {
+       font-size: 30px;
+       margin-bottom: 0;
+      }
     }
       span.time_content {
         font-size: 14px;
@@ -53,4 +88,69 @@
         color: #1D2026;
     }
   }
+}
+
+.coming-soon-thumb {
+  text-align: center;
+}
+
+.notify-wrap {
+  background: #FFFFFF;
+  box-shadow: 0px 16px 80px rgb(0 0 0 / 12%);
+  padding: 32px;
+  margin-top: -110px;
+  z-index: 1;
+  position: relative;
+  @include mq('phone-wide', max) {
+    padding: 20px;
+   }
+  .course-searchbox-input{
+    margin-bottom: 24px;
+    @include mq('phone-wide', max) {
+      margin-bottom: 15px;
+     }
+    input{
+      height: 56px;
+      @include mq('phone-wide', max) {
+        height: 48px;
+       }
+    }
+    .course-search-icon-left{
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .input-btn{
+      height: 56px;
+      @include mq('phone-wide', max) {
+        height: 48px;
+       }
+    }
+  }
+  h4{
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: -0.01em;
+    color: #1D2026;
+    margin-bottom: 24px;
+    @include mq('phone-wide', max) {
+      font-size: 20px;
+      margin-bottom: 15px;
+     }
+  }
+  p{
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.01em;
+    color: #4E5566;
+  }
+}
+
+.copywright-text {
+  width: 100%;
+  text-align: center;
+}
+.footer-bottom-menu {
+  width: 100%;
+  text-align: center;
 }
