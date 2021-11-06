@@ -7,8 +7,7 @@
     margin-right: 0;
   }
   @include max(991px) {
-    margin-left: 0px;
-    margin-top: 30px;
+    margin: 0 0 30px;
   }
 
   h3 {
@@ -73,6 +72,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  @include mq('tablet-small', max) {
+    justify-content: inherit;
+  }
+  @include mq('phone-wide', max) {
+    display: block;
+  }
 
   .counter-item {
     display: flex;
@@ -124,8 +129,14 @@
 
 .our-mission-section {
   background: #ffeee8;
+  @include mq('tablet', max) {
+    padding-top: 60px;
+  }
 }
 .our-mission-content {
+  @include mq('tablet', max) {
+    margin-bottom: 30px;
+  }
   h5 {
     font-style: normal;
     font-weight: 500;

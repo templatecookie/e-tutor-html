@@ -1,7 +1,11 @@
+.category-section .category-content{
+  margin-bottom: 24px;
+}
 .category-content {
   display: flex;
   padding: 20px;
   transition: 0.5s;
+  
   background-color: #ebebff;
 
   &:hover {

@@ -1,7 +1,7 @@
 //student amount sidebar
 
 .course-gift-wrap {
-  margin-right: 110px;
+  margin-right: 100px;
   @include mq('desktop', max) {
     margin-bottom: 30px;
     margin-right: 50px;
@@ -161,6 +161,9 @@
           line-height: 20px;
           letter-spacing: -0.01em;
           color: #ff6636;
+          del{
+            color: #A1A5B3;
+          }
         }
       }
     }

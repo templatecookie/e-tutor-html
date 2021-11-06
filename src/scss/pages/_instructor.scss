@@ -85,11 +85,11 @@
 }
 
 // become instructor
-
-.contact-us-section.become-instructor {
-  padding: 40px 0 0;
+.join-team-content.become-instructor{
+  @include mq('tablet', max) {
+    margin: 0;
+  }
 }
-
 .about-content.become-instructor {
   margin-right: 0;
   @include mq('tablet-small', max) {
