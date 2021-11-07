@@ -10,7 +10,7 @@
   h2{
     font-weight: 600;
     font-size: 40px;
-    line-height: 48px;
+    line-height: 1;
     letter-spacing: -0.01em;
     color: #1D2026;
     @include mq('tablet', max) {
@@ -94,12 +94,32 @@
     color: #8C94A3;
     border: none;
     padding: 10px 16px;
+    &::-webkit-input-placeholder{
+      color: #8C94A3;
+    }
+    &:-moz-placeholder{
+      color: #8C94A3;
+    }
+    &::-moz-placeholder{
+      color: #8C94A3;
+    }
+    &:-ms-input-placeholder{
+      color: #8C94A3;
+    }
+    &::-ms-input-placeholder{
+      color: #8C94A3;
+    }
+    &::placeholder{
+      color: #8C94A3;
+    }
   }
   textarea{
     height: 120px;
     resize: none;
   }
 }
+
+
 
 .accordion__list {
   margin-bottom: 20px;
