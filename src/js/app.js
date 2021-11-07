@@ -1,34 +1,30 @@
+(function ($) {
+  'use strict';
 
-
-(function($) {
-  "use strict";
-  
   /*------------------------------------------------------------------
   [Table of contents]
 
   
   -------------------------------------------------------------------*/
-  
+
   /*--------------------------------------------------------------
   1.CUSTOM PRE DEFINE FUNCTION
   ------------------------------------------------------------*/
   /* is_exist() */
-  jQuery.fn.is_exist = function(){
+  jQuery.fn.is_exist = function () {
     return this.length;
-  }
-  
-  
-  $(function(){
+  };
 
+  $(function () {
     $('.menu-bar').on('click', function () {
       $('.offcanves-menu, .offcanvas-overlay').addClass('active');
     });
     $('.close, .offcanvas-overlay').on('click', function () {
       $('.offcanves-menu, .offcanvas-overlay').removeClass('active');
     });
-    
+
     // End menu
-    
+
     $('.accordion .accordion-head').click(function () {
       if ($(this).next('div').is(':visible')) {
         $(this).next('div').slideUp('normal');
@@ -42,9 +38,9 @@
         $(this).find('i').removeClass('arrow-open').addClass('arrow-close');
       }
     });
-    
+
     //this month form
-    
+
     $('.custom-select').each(function () {
       var classes = $(this).attr('class'),
         id = $(this).attr('id'),
@@ -66,7 +62,7 @@
             '</span>';
         });
       template += '</div></div>';
-    
+
       $(this).wrap('<div class="custom-select-wrapper"></div>');
       $(this).hide();
       $(this).after(template);
@@ -91,14 +87,17 @@
       $(this).parents('.custom-options').find('.custom-option').removeClass('selection');
       $(this).addClass('selection');
       $(this).parents('.custom-select').removeClass('opened');
-      $(this).parents('.custom-select').find('.custom-select-trigger').text($(this).text());
+      $(this)
+        .parents('.custom-select')
+        .find('.custom-select-trigger')
+        .text($(this).text());
     });
-    
+
     // animateDisplay = function(target, animationClass, displayType, timeout) {
     //   // timeout should be longer than css transition
     //   var doneTimedDisplay = false,
     //     displaying = false;
-    
+
     //   target.addEventListener('transitionend', function() {
     //     if (!target.classList.contains('show')) {
     //       target.style.display = 'none';
@@ -111,12 +110,12 @@
     //   } else {
     //     displaying = false;
     //   }
-    
+
     //   setTimeout(function() {
     //     target.classList.toggle(animationClass);
     //     doneTimedDisplay = false;
     //   }, 10);
-    
+
     //   if (!displaying) {
     //     setTimeout(function() {
     //       // failsafe for transitioned not firing
@@ -127,45 +126,45 @@
     //     }, timeout);
     //   }
     // };
-    
+
     // range slider
-    
+
     var inputLeft = document.getElementById('input-left');
     var inputRight = document.getElementById('input-right');
-    
+
     var thumbLeft = document.querySelector('.slider > .thumb.left');
     var thumbRight = document.querySelector('.slider > .thumb.right');
     var range = document.querySelector('.slider > .range');
-    
+
     function setLeftValue() {
       var _this = inputLeft,
         min = parseInt(_this.min),
         max = parseInt(_this.max);
-    
+
       _this.value = Math.min(parseInt(_this.value), parseInt(inputRight.value) - 1);
-    
+
       var percent = ((_this.value - min) / (max - min)) * 100;
-    
+
       thumbLeft.style.left = percent + '%';
       range.style.left = percent + '%';
     }
-    
+
     function setRightValue() {
       var _this = inputRight,
         min = parseInt(_this.min),
         max = parseInt(_this.max);
-    
+
       _this.value = Math.max(parseInt(_this.value), parseInt(inputLeft.value) + 1);
-    
+
       var percent = ((_this.value - min) / (max - min)) * 100;
-    
+
       thumbRight.style.right = 100 - percent + '%';
       range.style.right = 100 - percent + '%';
     }
-    
+
     if (inputLeft) {
       inputLeft.addEventListener('input', setLeftValue);
-    
+
       inputLeft.addEventListener('mouseover', function () {
         thumbLeft.classList.add('hover');
       });
@@ -178,10 +177,10 @@
       inputLeft.addEventListener('mouseup', function () {
         thumbLeft.classList.remove('active');
       });
-    
+
       setLeftValue();
     }
-    
+
     if (inputRight) {
       inputRight.addEventListener('input', setRightValue);
       inputRight.addEventListener('mouseover', function () {
@@ -198,9 +197,9 @@
       });
       setRightValue();
     }
-    
+
     //chart.js
-    
+
     var areachartUserOption_2s = {
       chart: {
         height: 300,
@@ -224,14 +223,14 @@
         },
       ],
       colors: ['#23BD33'],
-    
+
       tooltip: {
         theme: 'dark',
       },
       grid: {
         show: false,
       },
-    
+
       fill: {
         type: 'gradient',
         colors: '#23BD33',
@@ -252,31 +251,33 @@
         left: 0,
       },
     };
-    
+
     if (document.getElementById('area-chart-user2')) {
       var chart_area_2 = new ApexCharts(
         document.querySelector('#area-chart-user2'),
         areachartUserOption_2s,
       );
-    
+
       chart_area_2.render();
     }
-    
+
     //image uploade
-    
+
     const filterToggle = document.querySelector('.actions-filter');
-    
+
     if (filterToggle) {
       filterToggle.addEventListener('click', function () {
         const sidebar = document.querySelector('.shop-content .col-xl-3');
         const productGallery = document.querySelector('.shop-content .col-xl-9');
-        const productContent = document.querySelectorAll('.shop__product-items .col-xl-4');
+        const productContent = document.querySelectorAll(
+          '.shop__product-items .col-xl-4',
+        );
         sidebar.classList.toggle('d-none');
         productGallery.classList.toggle('col-xl-12');
         filterToggle.classList.toggle('active');
       });
     }
-    
+
     // Modals Rating
     const ratingStar = document.querySelector('.my-rating');
     if (ratingStar) {
@@ -288,74 +289,74 @@
         starShape: 'rounded',
       });
     }
-    
-    //counter js
-  var etutor_counter = $('#etutor-counter');
-  if(etutor_counter.is_exist()){
-      var a = 0;
-      $(window).scroll(function() {
 
+    //counter js
+    var etutor_counter = $('#etutor-counter');
+    if (etutor_counter.is_exist()) {
+      var a = 0;
+      $(window).scroll(function () {
         var oTop = $(etutor_counter).offset().top - window.innerHeight;
         if (a == 0 && $(window).scrollTop() > oTop) {
-          $('.etutor-counter').each(function() {
+          $('.etutor-counter').each(function () {
             var $this = $(this),
               countTo = $this.attr('data-percentage');
             $({
-              countNum: $this.text()
-            }).animate({
-                countNum: countTo
+              countNum: $this.text(),
+            }).animate(
+              {
+                countNum: countTo,
               },
               {
                 duration: 4000,
                 easing: 'swing',
-                step: function() {
+                step: function () {
                   $this.text(Math.floor(this.countNum));
                 },
-                complete: function() {
+                complete: function () {
                   $this.text(this.countNum);
-                }
-              });
+                },
+              },
+            );
           });
           a = 1;
         }
-
       });
-}
+    }
 
-// testimonial owl carousel
-var testimonial_slider = $('.testimonial-slider');
-  if(testimonial_slider.is_exist()){
-  testimonial_slider.owlCarousel({
-  loop:true,
-  margin:20,
-  nav: false,
-  dots: false,
-  autoplay: true,
-  items: 3,
-  responsive:{
-      0:{
-          items:1,
-          nav: false
-      },
-      600:{
-          items:1
-      },
-      755:{
-          items:2
-      },
-      1000:{
-          items:3
-      }
-      
-  }
-})
-  }
-//faq 1 js
+    // testimonial owl carousel
+    var testimonial_slider = $('.testimonial-slider');
+    if (testimonial_slider.is_exist()) {
+      testimonial_slider.owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: false,
+        dots: false,
+        autoplay: true,
+        items: 3,
+        responsive: {
+          0: {
+            items: 1,
+            nav: false,
+          },
+          600: {
+            items: 1,
+          },
+          755: {
+            items: 2,
+          },
+          1000: {
+            items: 3,
+          },
+        },
+      });
+    }
 
-
-  });/*End document ready*/
-  
-  
-  })(jQuery);
-  
-  
+    // bvSelectbox
+    var activity = new BVSelect({
+      selector: '#activitySelect',
+    });
+    var revenue = new BVSelect({
+      selector: '#revenueSelect',
+    });
+  }); /*End document ready*/
+})(jQuery);

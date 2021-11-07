@@ -1,3 +1,13 @@
+// texts sizes
+%text-one {
+  font-size: 14px;
+  color: #6e7485;
+  line-height: 22px;
+  letter-spacing: -0.01em;
+  text-transform: capitalize;
+}
+
+// Input field
 %input {
   width: 100%;
   height: 48px;
