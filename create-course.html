@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>E-tutor || Dashboard</title>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- Favicons -->
+        <link rel="apple-touch-icon" sizes="512x512" href="src/images/favicon/512px.png" />
+        <link rel="apple-touch-icon" sizes="192x192" href="src/images/favicon/192px.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="src/images/favicon/32px.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="src/images/favicon/16px.png" />
+
+        <!-- Library -->
+        <link rel="stylesheet" href="src/css/bvselect.css">
+        <link rel="stylesheet" href="src/css/apexcharts.css">
+
+    </head>
+    <body style="background-color: #f5f7fa;">
+        <!-- Instrcutor Dashboard Layout Start -->
+        <div class="instructor">
+            <!-- sidbear -->
+            <div class="instructor-sidebar">
+                <!-- top content  -->
+               <div>        
+                   <!-- Brand Logo  -->
+                   <div class="instructor-logo">
+                       <a href="instructor-dashboard.html">
+                           <img src="src/images/svg-icon/logo-cap.svg" alt="brand-logo">
+                           Eduguard
+                       </a>
+                   </div>
+                   <!-- Navigation Menu  -->
+                   <ul class="instructor-menu">
+                      <li>
+                        <a href="instructor-dashboard.html">
+                            <span class="icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.125 19.5V12.75H9.375" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M21.375 19.5H2.625" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9.375 19.5V8.25H14.625" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M19.875 3.75H14.625V19.5H19.875V3.75Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            Dashboard
+                        </a>
+                      </li>
+                      <li class="active">
+                        <a href="create-course.html">
+                            <span class="icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"/>
+                                    <path d="M8.25 12H15.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 8.25V15.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    
+                            </span>
+                            Create New Course
+                        </a>
+                      </li>
+                      <li>
+                        <a href="my-course.html">
+                            <span class="icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 16.5L12 21.75L21 16.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M3 12L12 17.25L21 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M3 7.5L12 12.75L21 7.5L12 2.25L3 7.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            My Courses
+                        </a>
+                      </li>
+                      <li>
+                        <a href="my-earning.html">
+                            <span class="icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 5.25H3C2.58579 5.25 2.25 5.58579 2.25 6V18C2.25 18.4142 2.58579 18.75 3 18.75H21C21.4142 18.75 21.75 18.4142 21.75 18V6C21.75 5.58579 21.4142 5.25 21 5.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15.7495 15.75H18.7495" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M11.2495 15.75H12.7495" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2.24951 9.07812H21.7495" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            Earning
+                        </a>
+                      </li>
+                      <li>
+                        <a href="instructor-message.html">
+                            <span class="icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.25895 16.5939C3.14076 14.7089 2.74916 12.4805 3.15768 10.3272C3.56621 8.1739 4.74675 6.2438 6.47764 4.89933C8.20853 3.55486 10.3707 2.8885 12.5581 3.02539C14.7455 3.16227 16.8078 4.09298 18.3575 5.64274C19.9073 7.19251 20.838 9.25472 20.9749 11.4421C21.1118 13.6296 20.4455 15.7917 19.101 17.5226C17.7565 19.2535 15.8264 20.4341 13.6732 20.8426C11.5199 21.2511 9.29149 20.8596 7.40649 19.7414L7.40651 19.7413L4.29808 20.6294C4.16947 20.6662 4.03338 20.6678 3.90391 20.6343C3.77443 20.6007 3.65628 20.5332 3.5617 20.4386C3.46713 20.344 3.39956 20.2259 3.36601 20.0964C3.33246 19.9669 3.33415 19.8308 3.37089 19.7022L4.25901 16.5938L4.25895 16.5939Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.375 12C12.375 12.2071 12.2071 12.375 12 12.375C11.7929 12.375 11.625 12.2071 11.625 12C11.625 11.7929 11.7929 11.625 12 11.625C12.2071 11.625 12.375 11.7929 12.375 12Z" fill="currentColor" stroke="currentColor" stroke-width="1.5"/>
+                                    <path d="M7.875 12C7.875 12.2071 7.70711 12.375 7.5 12.375C7.29289 12.375 7.125 12.2071 7.125 12C7.125 11.7929 7.29289 11.625 7.5 11.625C7.70711 11.625 7.875 11.7929 7.875 12Z" fill="currentColor" stroke="currentColor" stroke-width="1.5"/>
+                                    <path d="M16.875 12C16.875 12.2071 16.7071 12.375 16.5 12.375C16.2929 12.375 16.125 12.2071 16.125 12C16.125 11.7929 16.2929 11.625 16.5 11.625C16.7071 11.625 16.875 11.7929 16.875 12Z" fill="currentColor" stroke="currentColor" stroke-width="1.5"/>
+                                </svg>
+                            </span>
+                            Message
+                            <span class="count">3</span>
+                        </a>
+                      </li>
+                      <li>
+                        <a href="account-setting.html">
+                            <span class="icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.0005 16.5C14.4858 16.5 16.5005 14.4853 16.5005 12C16.5005 9.51472 14.4858 7.5 12.0005 7.5C9.51521 7.5 7.50049 9.51472 7.50049 12C7.50049 14.4853 9.51521 16.5 12.0005 16.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M11.5198 4.13757L9.75078 2.8112C9.65586 2.7398 9.54534 2.69198 9.42831 2.67167C9.31129 2.65137 9.19112 2.65917 9.0777 2.69442C8.52982 2.86599 7.99827 3.08591 7.48933 3.3516C7.38397 3.40686 7.29327 3.48638 7.22471 3.58361C7.15614 3.68083 7.11169 3.79297 7.095 3.91076L6.78228 6.09991C6.66307 6.20557 6.54637 6.31547 6.43217 6.42961C6.31801 6.54377 6.20809 6.6605 6.1024 6.7798L6.10235 6.77984L3.91359 7.09284C3.79599 7.10947 3.68402 7.1538 3.58691 7.2222C3.48981 7.29059 3.41034 7.38108 3.35507 7.48621C3.08898 7.99493 2.86863 8.5263 2.69662 9.07404C2.6612 9.18762 2.6533 9.30799 2.67356 9.42522C2.69383 9.54245 2.74168 9.65318 2.81318 9.74827L4.14001 11.5174C4.13043 11.6764 4.12562 11.8366 4.12558 11.998C4.12558 12.1595 4.13039 12.3198 4.14002 12.4789L4.14001 12.4789L2.81364 14.2479C2.74224 14.3428 2.69442 14.4534 2.67411 14.5704C2.65381 14.6874 2.66161 14.8076 2.69686 14.921C2.86843 15.4689 3.08836 16.0004 3.35404 16.5094C3.4093 16.6147 3.48882 16.7054 3.58605 16.774C3.68327 16.8426 3.79541 16.887 3.9132 16.9037L6.10235 17.2164C6.20801 17.3356 6.31791 17.4523 6.43204 17.5665C6.54621 17.6807 6.66294 17.7906 6.78224 17.8963L6.78228 17.8964L7.09528 20.0851C7.1119 20.2027 7.15624 20.3147 7.22463 20.4118C7.29303 20.5089 7.38352 20.5884 7.48865 20.6436C7.99737 20.9097 8.52874 21.1301 9.07648 21.3021C9.19006 21.3375 9.31042 21.3454 9.42765 21.3252C9.54488 21.3049 9.65561 21.257 9.7507 21.1855L11.5198 19.8587C11.6788 19.8683 11.839 19.8731 12.0005 19.8731C12.1619 19.8731 12.3222 19.8683 12.4813 19.8587L12.4814 19.8587L14.2504 21.1851C14.3453 21.2565 14.4558 21.3043 14.5728 21.3246C14.6899 21.3449 14.81 21.3371 14.9235 21.3019C15.4713 21.1303 16.0029 20.9104 16.5118 20.6447C16.6172 20.5894 16.7079 20.5099 16.7764 20.4127C16.845 20.3154 16.8895 20.2033 16.9061 20.0855L17.2189 17.8964C17.3381 17.7907 17.4548 17.6808 17.569 17.5667C17.6831 17.4525 17.7931 17.3358 17.8988 17.2165L17.8988 17.2164L20.0876 16.9034C20.2052 16.8868 20.3171 16.8425 20.4142 16.7741C20.5113 16.7057 20.5908 16.6152 20.6461 16.5101C20.9122 16.0013 21.1325 15.47 21.3045 14.9222C21.34 14.8087 21.3479 14.6883 21.3276 14.5711C21.3073 14.4538 21.2595 14.3431 21.188 14.248L19.8611 12.4789C19.8707 12.3199 19.8755 12.1597 19.8756 11.9982C19.8756 11.8368 19.8708 11.6765 19.8611 11.5174L19.8611 11.5174L21.1875 9.74834C21.2589 9.65342 21.3067 9.5429 21.327 9.42588C21.3473 9.30885 21.3395 9.18868 21.3043 9.07526C21.1327 8.52738 20.9128 7.99583 20.6471 7.48689C20.5919 7.38154 20.5123 7.29083 20.4151 7.22227C20.3179 7.15371 20.2057 7.10925 20.088 7.09256L17.8988 6.77984C17.7931 6.66064 17.6832 6.54394 17.5691 6.42974C17.4549 6.31557 17.3382 6.20565 17.2189 6.09996L17.2189 6.09991L16.9059 3.91115C16.8892 3.79354 16.8449 3.68158 16.7765 3.58447C16.7081 3.48736 16.6176 3.4079 16.5125 3.35263C16.0038 3.08654 15.4724 2.86619 14.9247 2.69418C14.8111 2.65876 14.6907 2.65086 14.5735 2.67112C14.4563 2.69139 14.3455 2.73924 14.2504 2.81074L12.4814 4.13757C12.3224 4.12799 12.1621 4.12318 12.0007 4.12314C11.8392 4.12314 11.6789 4.12795 11.5199 4.13757L11.5198 4.13757Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                            Settings
+                        </a>
+                      </li>
+                   </ul>
+               </div>
+                <!-- bottom content  -->
+                <div>
+                    <!-- sign out  -->
+                    <div class="sign-out">
+                        <span class="icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.3137 8.0625L20.2502 12L16.3137 15.9375" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.75 12H20.2472" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.75 20.25H4.5C4.30109 20.25 4.11032 20.171 3.96967 20.0303C3.82902 19.8897 3.75 19.6989 3.75 19.5V4.5C3.75 4.30109 3.82902 4.11032 3.96967 3.96967C4.11032 3.82902 4.30109 3.75 4.5 3.75H9.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+                        Sign-out
+                    </div>
+                </div>
+            </div>
+            <!-- main content -->
+            <div class="instructor-content">
+
+                <!-- Header  -->
+                <div class="instructor-header">
+                    <div class="container">
+                    <!-- left content  -->
+                    <div class="left instructor-user" >
+                        <p class="greeting">Good Morning</p>
+                        <h6 class="username">Dashboard</h6>
+                    </div>
+                    <!-- Right Content  -->
+                    <div class="right" >
+                        <!-- Search Field  -->
+                        <div class="form-searchbox">
+                            <span class="icon">
+                                <img src="src/images/svg-icon/search.svg" alt="search-icon">
+                            </span>
+                            <input type="text" placeholder="Search...">
+                        </div>
+                        <!-- notification  -->
+                        <div class="instructor-notification">
+                            <div class="icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5.26904 9.74994C5.2678 8.86045 5.44262 7.97951 5.78343 7.1579C6.12424 6.33628 6.6243 5.59025 7.25477 4.9628C7.88525 4.33535 8.63368 3.83889 9.45693 3.50204C10.2802 3.16519 11.1619 2.99461 12.0514 3.00013C15.763 3.02772 18.7317 6.11275 18.7317 9.83468V10.4999C18.7317 13.8577 19.4342 15.8061 20.0529 16.871C20.1196 16.9848 20.1551 17.1142 20.1558 17.246C20.1565 17.3779 20.1224 17.5076 20.0569 17.6221C19.9915 17.7366 19.8971 17.8318 19.7831 17.8982C19.6691 17.9645 19.5397 17.9996 19.4078 17.9999H4.59222C4.46034 17.9996 4.33087 17.9645 4.21689 17.8981C4.1029 17.8318 4.00844 17.7366 3.94301 17.622C3.87759 17.5075 3.84352 17.3778 3.84425 17.2459C3.84498 17.114 3.88048 16.9846 3.94716 16.8709C4.56622 15.8059 5.26904 13.8575 5.26904 10.4999L5.26904 9.74994Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9 18V18.75C9 19.5456 9.31607 20.3087 9.87868 20.8713C10.4413 21.4339 11.2044 21.75 12 21.75C12.7956 21.75 13.5587 21.4339 14.1213 20.8713C14.6839 20.3087 15 19.5456 15 18.75V18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                                <span class="icon-active"></span>
+                            </div>
+                            <div class="instructor-notification__dropdown"></div>
+                        </div>
+                        <!-- profile img -->
+                        <div class="instructor-user">
+                            <div class="image">
+                                <img src="src/images/users/user-01.png" alt="user-img">
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+                <!-- Instructor Main Content  -->
+                <main class="instructor-main">
+
+                </main> 
+
+            </div>
+        </div>
+        <!-- Instrcutor Dashboard Layout End  -->
+
+        <!-- Scripts Goes Here  -->
+        <script src="src/js/lirbrary/jquery.min.js"></script>
+        <script src="src/js/lirbrary/bvselect.js"></script>
+        <script src="src/js/lirbrary/apexcharts.min.js"></script>
+        <script src="src/js/lirbrary/bootstrap.bundle.min.js"></script>
+        <script type="module" src="/main.js"></script>
+
+    </body>
+</html>
