@@ -12,6 +12,8 @@
 
         <!-- Library -->
         <link rel="stylesheet" href="src/css/bvselect.css">
+        <link rel="stylesheet" href="src/css/apexcharts.css">
+
     </head>
     <body style="background-color: #f5f7fa;">
         <!-- Instrcutor Dashboard Layout Start -->
@@ -422,7 +424,7 @@
                         <div class="container">
                             <div class="row">
                                 <!-- Recent Activity -->
-                                <div class="col-xl-4">
+                                <div class="col-xl-4 col-md-6">
                                     <div class="card card-activity">
                                         <div class="card-header">
                                             <h2 class="card-title">Recent Activity</h2>
@@ -482,7 +484,7 @@
                                     </div>
                                 </div>
                                 <!-- Revenue -->
-                                <div class="col-xl-5">
+                                <div class="col-xl-5 col-md-6">
                                     <div class="card card-activity">
                                         <div class="card-header">
                                             <h2 class="card-title">Revenue</h2>
@@ -494,18 +496,245 @@
                                             </select>
                                         </div>
                                         <div class="card-body">
-                                            <!-- Activity content  -->
-                                            
+                                            <!-- revenue Chart  -->
+                                            <div id="revenueChart"></div>
                                         </div>
                                     </div>
                                 </div>
                                 <!-- Profile View -->
-                                <div class="col-xl-3"></div>
+                                <div class="col-xl-3">
+                                    <div class="card card-activity">
+                                        <div class="card-header">
+                                            <h2 class="card-title">Profile View</h2>
+                                            <select class="card-dropdown" id="viewSelect">
+                                                <option value="1"> Today </option>
+                                                <option value="2"> Yesterday </option>
+                                                <option value="3"> Current Weeks</option>
+                                                <option value="4"> Last Weeks </option>
+                                            </select>
+                                        </div>
+                                        <div class="card-body">
+                                            <!-- view Chart  -->
+                                            <div id="viewChart"></div>
+                                            <div class="chart-info">
+                                                <h6>$7,443</h6>
+                                                <p>USD Dollar you earned</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Course Rating  -->
+                                <div class="col-xl-5 col-md-6 ">
+                                    <div class="card card-activity">
+                                        <div class="card-header">
+                                            <h2 class="card-title">overall course rating</h2>
+                                            <select class="card-dropdown" id="ratingSelect">
+                                                <option value="1"> Today </option>
+                                                <option value="2"> Yesterday </option>
+                                                <option value="3"> Current Weeks</option>
+                                                <option value="4"> Last Weeks </option>
+                                            </select>
+                                        </div>
+                                        <div class="card-body p-0">
+                                            <!-- Ratings  -->
+                                            <div class="ratings">
+                                                <div class="row ratings-top">
+                                                    <div class="col-sm-5 order-2  order-sm-0 ">
+                                                        <div class="ratings-box">
+                                                            <h2>4.6</h2>
+                                                            <ul>
+                                                                <li>
+                                                                    <img src="src/images/svg-icon/star-full-icon.svg" alt="rating-icon">
+                                                                </li>
+                                                                <li>
+                                                                    <img src="src/images/svg-icon/star-full-icon.svg" alt="rating-icon">
+                                                                </li>
+                                                                <li>
+                                                                    <img src="src/images/svg-icon/star-full-icon.svg" alt="rating-icon">
+                                                                </li>
+                                                                <li>
+                                                                    <img src="src/images/svg-icon/star-full-icon.svg" alt="rating-icon">
+                                                                </li>
+                                                                <li>
+                                                                    <img src="src/images/svg-icon/star-half-icon.svg" alt="rating-icon">
+                                                                </li>
+                                                            </ul>
+                                                            <p>Overall Rating</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-7 order-1  order-sm-0  ">
+                                                        <!-- rating chart -->
+                                                        <div id="ratingChart"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="ratings-bottom">
+                                                    <ul class="ratings-progress">
+                                                        <li>
+                                                            <!-- ratings star -->
+                                                            <div class="rating-star">
+                                                                <ul>
+                                                                    <li>
+                                                                        <img src="src/images/svg-icon/star-full-icon.svg" alt="rating-icon">
+                                                                    </li>
+                                                                    <li>
+                                                                        <img src="src/images/svg-icon/star-full-icon.svg" alt="rating-icon">
+                                                                    </li>
+                                                                    <li>
+                                                                        <img src="src/images/svg-icon/star-full-icon.svg" alt="rating-icon">
+                                                                    </li>
+                                                                    <li>
+                                                                        <img src="src/images/svg-icon/star-full-icon.svg" alt="rating-icon">
+                                                                    </li>
+                                                                    <li>
+                                                                        <img src="src/images/svg-icon/star-full-icon.svg" alt="rating-icon">
+                                                                    </li>
+                                                                </ul>
+                                                                <span class="rating-star__count">5 star</span>
+                                                            </div>
+
+                                                            <!-- Rating Progress -->
+                                                            <div class="progress-box">
+                                                                <div class="progress-box-item">
+                                                                    <span class="progress-box-rate" style="width: 56%; height: inherit;"></span>
+                                                                </div>
+                                                                <span class="progress-box-percentage">56%</span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <!-- ratings star -->
+                                                            <div class="rating-star">
+                                                                <ul>
+                                                                    <li>
+                                                                        <img src="src/images/svg-icon/star-full-icon.svg" alt="rating-icon">
+                                                                    </li>
+                                                                    <li>
+                                                                        <img src="src/images/svg-icon/star-full-icon.svg" alt="rating-icon">
+                                                                    </li>
+                                                                    <li>
+                                                                        <img src="src/images/svg-icon/star-full-icon.svg" alt="rating-icon">
+                                                                    </li>
+                                                                    <li>
+                                                                        <img src="src/images/svg-icon/star-full-icon.svg" alt="rating-icon">
+                                                                    </li>
+                                                                    <li>
+                                                                        <img src="src/images/svg-icon/star-blank-icon.svg" alt="rating-icon">
+                                                                    </li>
+                                                                </ul>
+                                                                <span class="rating-star__count">4 star</span>
+                                                            </div>
+
+                                                            <!-- Rating Progress -->
+                                                            <div class="progress-box">
+                                                                <div class="progress-box-item">
+                                                                    <span class="progress-box-rate" style="width: 37%; height: inherit;"></span>
+                                                                </div>
+                                                                <span class="progress-box-percentage">37%</span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <!-- ratings star -->
+                                                            <div class="rating-star">
+                                                                <ul>
+                                                                    <li>
+                                                                        <img src="src/images/svg-icon/star-full-icon.svg" alt="rating-icon">
+                                                                    </li>
+                                                                    <li>
+                                                                        <img src="src/images/svg-icon/star-full-icon.svg" alt="rating-icon">
+                                                                    </li>
+                                                                    <li>
+                                                                        <img src="src/images/svg-icon/star-full-icon.svg" alt="rating-icon">
+                                                                    </li>
+                                                                    <li>
+                                                                        <img src="src/images/svg-icon/star-blank-icon.svg" alt="rating-icon">
+                                                                    </li>
+                                                                    <li>
+                                                                        <img src="src/images/svg-icon/star-blank-icon.svg" alt="rating-icon">
+                                                                    </li>
+                                                                </ul>
+                                                                <span class="rating-star__count">3 star</span>
+                                                            </div>
+
+                                                            <!-- Rating Progress -->
+                                                            <div class="progress-box">
+                                                                <div class="progress-box-item">
+                                                                    <span class="progress-box-rate" style="width: 8%; height: inherit;"></span>
+                                                                </div>
+                                                                <span class="progress-box-percentage">8%</span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <!-- ratings star -->
+                                                            <div class="rating-star">
+                                                                <ul>
+                                                                    <li>
+                                                                        <img src="src/images/svg-icon/star-full-icon.svg" alt="rating-icon">
+                                                                    </li>
+                                                                    <li>
+                                                                        <img src="src/images/svg-icon/star-full-icon.svg" alt="rating-icon">
+                                                                    </li>
+                                                                    <li>
+                                                                        <img src="src/images/svg-icon/star-blank-icon.svg" alt="rating-icon">
+                                                                    </li>
+                                                                    <li>
+                                                                        <img src="src/images/svg-icon/star-blank-icon.svg" alt="rating-icon">
+                                                                    </li>
+                                                                    <li>
+                                                                        <img src="src/images/svg-icon/star-blank-icon.svg" alt="rating-icon">
+                                                                    </li>
+                                                                </ul>
+                                                                <span class="rating-star__count">2 star</span>
+                                                            </div>
+
+                                                            <!-- Rating Progress -->
+                                                            <div class="progress-box">
+                                                                <div class="progress-box-item">
+                                                                    <span class="progress-box-rate" style="width: 4%; height: inherit;"></span>
+                                                                </div>
+                                                                <span class="progress-box-percentage">1%</span>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                            <!-- ratings star -->
+                                                            <div class="rating-star">
+                                                                <ul>
+                                                                    <li>
+                                                                        <img src="src/images/svg-icon/star-full-icon.svg" alt="rating-icon">
+                                                                    </li>
+                                                                    <li>
+                                                                        <img src="src/images/svg-icon/star-blank-icon.svg" alt="rating-icon">
+                                                                    </li>
+                                                                    <li>
+                                                                        <img src="src/images/svg-icon/star-blank-icon.svg" alt="rating-icon">
+                                                                    </li>
+                                                                    <li>
+                                                                        <img src="src/images/svg-icon/star-blank-icon.svg" alt="rating-icon">
+                                                                    </li>
+                                                                    <li>
+                                                                        <img src="src/images/svg-icon/star-blank-icon.svg" alt="rating-icon">
+                                                                    </li>
+                                                                </ul>
+                                                                <span class="rating-star__count">1 star</span>
+                                                            </div>
+
+                                                            <!-- Rating Progress -->
+                                                            <div class="progress-box">
+                                                                <div class="progress-box-item">
+                                                                    <span class="progress-box-rate" style="width: 1%; height: inherit;"></span>
+                                                                </div>
+                                                                <span class="progress-box-percentage"> 0% </span>
+                                                            </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
-                    
-
                 </main> 
 
             </div>
@@ -514,8 +743,9 @@
 
         <!-- Scripts Goes Here  -->
         <script src="src/js/lirbrary/jquery.min.js"></script>
-        <script src="src/js/lirbrary/bootstrap.bundle.min.js"></script>
         <script src="src/js/lirbrary/bvselect.js"></script>
+        <script src="src/js/lirbrary/apexcharts.min.js"></script>
+        <script src="src/js/lirbrary/bootstrap.bundle.min.js"></script>
         <script type="module" src="/main.js"></script>
 
     </body>
