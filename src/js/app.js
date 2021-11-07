@@ -361,6 +361,9 @@
     var view = new BVSelect({
       selector: '#viewSelect',
     });
+    var rating = new BVSelect({
+      selector: '#ratingSelect',
+    });
 
     // Apex Chart
 
@@ -393,7 +396,7 @@
           theme: 'dark',
         },
         grid: {
-          show: true,
+          show: false,
         },
 
         fill: {
@@ -446,6 +449,87 @@
       });
 
       revenueChart.render();
+    }
+
+    if (document.getElementById('ratingChart')) {
+      var ratingChart = new ApexCharts(document.querySelector('#ratingChart'), {
+        chart: {
+          height: 125,
+          type: 'area',
+          toolbar: {
+            autoSelected: 'pan',
+            show: false,
+          },
+          offsetX: 0,
+          offsetY: 0,
+          zoom: {
+            enabled: false,
+          },
+          sparkline: {
+            enabled: true,
+          },
+        },
+        plotOptions: {
+          area: {
+            fillTo: 'origin',
+          },
+        },
+        dataLabels: {
+          enabled: false,
+        },
+        stroke: { curve: 'smooth', width: 3 },
+        series: [
+          {
+            data: [70, 100, 50, 80, 70, 100, 70],
+          },
+        ],
+        colors: ['#FD8E1F'],
+
+        tooltip: {
+          theme: 'light',
+        },
+        grid: {
+          show: false,
+          padding: {
+            left: 0,
+            right: 0,
+          },
+        },
+        yaxis: {
+          show: false,
+        },
+        fill: {
+          type: 'solid',
+          opacity: [0.2, 1],
+        },
+        xaxis: {
+          low: 0,
+          offsetX: 0,
+          offsetY: 0,
+          show: false,
+          labels: {
+            low: 0,
+            offsetX: 0,
+            show: false,
+          },
+          axisBorder: {
+            low: 0,
+            offsetX: 0,
+            show: false,
+          },
+        },
+        legend: {
+          show: false,
+        },
+        padding: {
+          top: 0,
+          right: 0,
+          bottom: 0,
+          left: 0,
+        },
+      });
+
+      ratingChart.render();
     }
 
     if (document.getElementById('viewChart')) {

@@ -1,0 +1,115 @@
+.ratings {
+  //   margin: 20px;
+  overflow: hidden;
+  position: relative;
+  &-top,
+  &-bottom {
+    padding: 20px;
+  }
+  &-top {
+    align-items: flex-end;
+    padding: 20px;
+    border-bottom: 1px solid #e9eaf0;
+  }
+
+  &-box {
+    display: flex;
+    padding: 35px 0px;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff2e5;
+    h2 {
+      font-size: 40px;
+      font-weight: 600;
+      color: #1d2026;
+      line-height: 48px;
+      margin-bottom: 0px;
+      text-transform: capitalize;
+    }
+    p {
+      @extend %text-one;
+      color: #1d2026;
+      font-weight: 500;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      margin-bottom: 10px;
+      align-items: center;
+    }
+  }
+
+  &-progress {
+    & > li {
+      display: flex;
+      align-items: center;
+      margin-bottom: 12px;
+      justify-content: space-between;
+      @include min-max(768px, 1440px) {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+      @include max(620px) {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+      &:nth-last-child(1) {
+        margin-bottom: 0px;
+      }
+      .rating-star {
+        width: 50%;
+        display: flex;
+        margin-right: 30px;
+        align-items: center;
+        ul {
+          display: flex;
+          flex-shrink: 0;
+          align-items: center;
+          li {
+            flex-shrink: 0;
+            margin-right: 4px;
+            &:nth-last-child(1) {
+              margin: 0;
+            }
+          }
+        }
+
+        &__count {
+          @extend %text-one;
+          color: #4e5566;
+          margin-left: 8px;
+          line-height: 0px;
+          white-space: nowrap;
+        }
+      }
+      .progress-box {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        &-item {
+          width: inherit;
+          height: 8px;
+          position: relative;
+          display: inline-block;
+          background-color: #e9eaf0;
+        }
+
+        &-rate {
+          top: 0;
+          left: 0;
+          height: inherit;
+          position: absolute;
+          background-color: #fd8e1f;
+        }
+
+        &-percentage {
+          @extend %text-one;
+          font-weight: 500;
+          color: #1d2026;
+          margin-left: 16px;
+        }
+      }
+    }
+  }
+}
