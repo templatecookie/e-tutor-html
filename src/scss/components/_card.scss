@@ -1,8 +1,8 @@
 .card {
   // primary Card
   border: 0px;
+  // height: 100%;
   border-radius: 0px;
-  height: 100%;
   &-title {
     margin: 0;
   }
@@ -85,6 +85,31 @@
           }
         }
       }
+
+      &-body {
+        .chart-info {
+          margin-top: 24px;
+          margin-left: 10px;
+          h6 {
+            font-size: 20px;
+            color: #1d2026;
+            font-weight: 500;
+            line-height: 26px;
+            margin-bottom: 4px;
+            text-transform: capitalize;
+          }
+
+          p {
+            @extend %text-one;
+            color: #6e7485;
+          }
+        }
+      }
+    }
+
+    #viewChart,
+    #revenueChart {
+      margin-top: 20px;
     }
   }
 }

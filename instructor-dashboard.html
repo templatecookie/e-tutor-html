@@ -424,7 +424,7 @@
                         <div class="container">
                             <div class="row">
                                 <!-- Recent Activity -->
-                                <div class="col-xl-4">
+                                <div class="col-xl-4 col-md-6">
                                     <div class="card card-activity">
                                         <div class="card-header">
                                             <h2 class="card-title">Recent Activity</h2>
@@ -484,7 +484,7 @@
                                     </div>
                                 </div>
                                 <!-- Revenue -->
-                                <div class="col-xl-5">
+                                <div class="col-xl-5 col-md-6">
                                     <div class="card card-activity">
                                         <div class="card-header">
                                             <h2 class="card-title">Revenue</h2>
@@ -502,7 +502,27 @@
                                     </div>
                                 </div>
                                 <!-- Profile View -->
-                                <div class="col-xl-3"></div>
+                                <div class="col-xl-3">
+                                    <div class="card card-activity">
+                                        <div class="card-header">
+                                            <h2 class="card-title">Profile View</h2>
+                                            <select class="card-dropdown" id="viewSelect">
+                                                <option value="1"> Today </option>
+                                                <option value="2"> Yesterday </option>
+                                                <option value="3"> Current Weeks</option>
+                                                <option value="4"> Last Weeks </option>
+                                            </select>
+                                        </div>
+                                        <div class="card-body">
+                                            <!-- view Chart  -->
+                                            <div id="viewChart"></div>
+                                            <div class="chart-info">
+                                                <h6>$7,443</h6>
+                                                <p>USD Dollar you earned</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>

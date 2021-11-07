@@ -358,8 +358,12 @@
     var revenue = new BVSelect({
       selector: '#revenueSelect',
     });
+    var view = new BVSelect({
+      selector: '#viewSelect',
+    });
 
     // Apex Chart
+
     if (document.getElementById('revenueChart')) {
       var revenueChart = new ApexCharts(document.querySelector('#revenueChart'), {
         chart: {
@@ -442,6 +446,91 @@
       });
 
       revenueChart.render();
+    }
+
+    if (document.getElementById('viewChart')) {
+      var viewChart = new ApexCharts(document.querySelector('#viewChart'), {
+        chart: {
+          height: '100%',
+          type: 'bar',
+          stacked: true,
+          stackType: '100%',
+          toolbar: {
+            autoSelected: 'pan',
+            show: false,
+          },
+          offsetX: 0,
+          offsetY: 0,
+          zoom: {
+            enabled: true,
+          },
+          sparkline: {
+            enabled: true,
+          },
+        },
+        plotOptions: {
+          bar: {
+            columnWidth: '50px',
+            barHeight: '100%',
+            borderRadius: 0,
+            distributed: false,
+            rangeBarOverlap: true,
+            rangeBarGroupRows: false,
+          },
+        },
+        dataLabels: {
+          enabled: false,
+        },
+        stroke: { curve: 'smooth', width: 1 },
+        series: [
+          {
+            data: [1000, 400, 1000, 600, 700, 400, 800, 600, 800],
+          },
+          {
+            data: [900, 600, 150, 400, 450, 700, 400, 100, 300],
+          },
+        ],
+        colors: ['#23BD33', 'rgba(35, 189, 51, 0.1)'],
+
+        tooltip: {
+          theme: 'dark',
+        },
+        grid: {
+          show: false,
+          padding: {
+            left: 0,
+            right: 0,
+          },
+        },
+        yaxis: {
+          show: false,
+        },
+        fill: {
+          type: 'solid',
+          opacity: [1, 1],
+        },
+        xaxis: {
+          low: 0,
+          offsetX: 0,
+          offsetY: 0,
+          show: false,
+          labels: {
+            low: 0,
+            offsetX: 0,
+            show: false,
+          },
+          axisBorder: {
+            low: 0,
+            offsetX: 0,
+            show: false,
+          },
+        },
+        // legend: {
+        //   show: false,
+        // },
+      });
+
+      viewChart.render();
     }
   }); /*End document ready*/
 })(jQuery);
