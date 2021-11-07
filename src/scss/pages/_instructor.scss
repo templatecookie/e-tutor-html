@@ -95,9 +95,6 @@
 }
 .about-content.become-instructor {
   margin-right: 0;
-  @include mq('tablet-small', max) {
-    margin: 0 0 30px;
-  }
   p{
     font-size: 24px;
     @include mq('tablet-small', max) {
@@ -151,7 +148,7 @@
 .about-content.instructor-rules{
   margin-right: 80px;
   @include mq('tablet', max) {
-    margin: 0 0 30px;
+    margin: 0;
   }
   h2{
     margin-bottom: 20px;

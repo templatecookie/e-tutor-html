@@ -8,6 +8,9 @@
 }
 .join-team-thumb-wrap {
   display: flex;
+  img{
+    width: 100%;
+  }
   @include mq('tablet', max) {
     justify-content: center;
     margin-bottom: 30px;
@@ -58,9 +61,7 @@
 }
 
 .join-team-content {
-  @include mq('desktop', max) {
-    margin-left: 30px;
-  }
+
   h2 {
     font-weight: 600;
     font-size: 40px;
