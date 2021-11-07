@@ -3,6 +3,8 @@
   border: 0px;
   // height: 100%;
   border-radius: 0px;
+  box-sizing: border-box;
+  background-clip: border-box;
   &-title {
     margin: 0;
   }
@@ -90,6 +92,7 @@
         .chart-info {
           margin-top: 24px;
           margin-left: 10px;
+          padding-bottom: 20px;
           h6 {
             font-size: 20px;
             color: #1d2026;
@@ -285,7 +288,7 @@
     font-weight: 500;
     font-size: 18px;
     line-height: 24px;
-    color: #1d2026!important;
+    color: #1d2026 !important;
     margin-bottom: 15px;
     @include mq('desktop-wide', max) {
       font-size: 16px;
@@ -640,7 +643,7 @@ a.course-lecture-img {
       font-size: 14px;
       line-height: 20px;
       letter-spacing: -0.01em;
-      color: #1d2026!important;
+      color: #1d2026 !important;
       margin: 0;
       padding: 10px 14px 14px 14px;
     }

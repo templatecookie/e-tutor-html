@@ -260,14 +260,22 @@
     margin-bottom: 24px;
   }
 
-  // Activity card
-  .card-activity {
-    @include max(1200px) {
-      margin-bottom: 24px;
+  &-activity {
+    .row {
+      & > div {
+        margin-bottom: 24px;
+      }
     }
-    .ratings-box {
-      @include max(575px) {
-        margin-top: 16px;
+
+    // Activity card
+    .card-activity {
+      @include max(1200px) {
+        margin-bottom: 24px;
+      }
+      .ratings-box {
+        @include max(575px) {
+          margin-top: 16px;
+        }
       }
     }
   }
