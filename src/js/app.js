@@ -352,21 +352,32 @@
     }
 
     // bvSelectbox
-    var activity = new BVSelect({
-      selector: '#activitySelect',
-    });
-    var revenue = new BVSelect({
-      selector: '#revenueSelect',
-    });
-    var view = new BVSelect({
-      selector: '#viewSelect',
-    });
-    var rating = new BVSelect({
-      selector: '#ratingSelect',
-    });
-    var overview = new BVSelect({
-      selector: '#overviewSelect',
-    });
+    // if(document.getElementById()) { }
+    if (document.getElementById('activitySelect')) {
+      var activity = new BVSelect({
+        selector: '#activitySelect',
+      });
+    }
+    if (document.getElementById('revenueSelect')) {
+      var revenue = new BVSelect({
+        selector: '#revenueSelect',
+      });
+    }
+    if (document.getElementById('viewSelect')) {
+      var view = new BVSelect({
+        selector: '#viewSelect',
+      });
+    }
+    if (document.getElementById('ratingSelect')) {
+      var rating = new BVSelect({
+        selector: '#ratingSelect',
+      });
+    }
+    if (document.getElementById('overviewSelect')) {
+      var overview = new BVSelect({
+        selector: '#overviewSelect',
+      });
+    }
 
     // Apex Chart
 
