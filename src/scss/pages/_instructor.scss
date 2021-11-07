@@ -265,12 +265,12 @@
     color: #1D2026;
   }
 }
-.testimonial2-slider .owl-nav {
+.my-owl-nav {
   display: flex;
   margin-top: 32px;
 }
-.testimonial2-slider .owl-prev, 
-.testimonial2-slider .owl-next {
+.my-next-button, 
+.my-prev-button {
   width: 48px;
   height: 48px;
   cursor: pointer;
@@ -280,6 +280,20 @@
   justify-content: center;
   transition: all 0.4s;
   margin-right: 12px;
+  transition: all 0.4s;
   background: #F5F7FA!important;
+  &:hover{
+    background: #FF6636!important;
+    box-shadow: 0px 6px 20px rgba(204, 82, 43, 0.5);
+  }
+  svg{
+    path{
+      stroke: #1D2026;
+      transition: all 0.4s;
+    }
+  }
+  &:hover path{
+    stroke: #fff;
+  }
 }
 
