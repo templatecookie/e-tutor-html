@@ -605,6 +605,20 @@
                       <p>Nulla sed malesuada augue. Morbi interdum vulputate imperdiet. Pellentesque ullamcorper auctor ante, egestas interdum quam facilisis commodo. Phasellus efficitur quis ex in consectetur. Mauris tristique suscipit metus, a molestie dui dapibus vel.</p>
                   </div>
                 </div>
+                <div class="my-owl-nav">
+                    <span class="my-next-button">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M20.25 12H3.75" stroke="#FF6636" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M10.5 5.25L3.75 12L10.5 18.75" stroke="#FF6636" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                            
+                    </span>
+                    <span class="my-prev-button">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M3.75 12H20.25" stroke="#FF6636" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#FF6636" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                            
+                    </span>
+                  </div>
              </div>
           </div>
        </div>
@@ -930,7 +944,7 @@
     </div>
    <!--End footer-section -->
 
-       <script src="src/js/lirbrary/jquery.min.js"></script>
+      <script src="src/js/lirbrary/jquery.min.js"></script>
       <script src="src/js/lirbrary/bootstrap.bundle.min.js"></script>
       <script src="src/js/lirbrary/isotope.pkgd.min.js"></script>
       <script src="src/js/lirbrary/owl.carousel.min.js"></script>
@@ -942,13 +956,25 @@
             $('.testimonial2-slider').owlCarousel({
                 loop:true,
                 margin: 20,
-                nav:true,
+                nav:false,
                 dots: false,
                 items: 1,
                 navText: ["<img src=\"src/images/svg-icon/arrowleft-orange.svg\"/>",
                         "<img src=\"src/images/svg-icon/arrowright-orange.svg\"/>"],
         
                 })
+
+                var selector = $('.owl-carousel');
+
+$('.my-next-button').click(function() {
+  selector.trigger('next.owl.carousel');
+});
+
+$('.my-prev-button').click(function() {
+  selector.trigger('prev.owl.carousel');
+});
+
+                
 
         });//end document.ready
       </script>
