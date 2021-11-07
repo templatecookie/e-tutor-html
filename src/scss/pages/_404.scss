@@ -1,6 +1,9 @@
 .e_screenfix {
   margin-right: calc((-100vw + 100%)/2);
   max-width: 1618px;
+  @include max(991px) {
+    max-width: 100%;
+  }
 }
 .header-bottom.border_bottom{
   border-bottom: 1px solid #E9EAF0;
@@ -12,6 +15,9 @@
   overflow: hidden;
   @include mq('desktop-wide', max) {
     min-height: 750px;
+  }
+  @include mq('tablet-small', max) {
+    min-height: 650px;
   }
 }
 .thumb404 {

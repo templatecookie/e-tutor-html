@@ -1,15 +1,16 @@
 .about-section {
   border-bottom: 1px solid #e9eaf0;
 }
+.responsive_bottom{
+  @include max(991px) {
+    margin: 0 0 30px!important;
+  }
+}
 .about-content {
   margin-right: 100px;
   @include mq('desktop-wide', max) {
     margin-right: 0;
   }
-  @include max(991px) {
-    margin: 0 0 30px;
-  }
-
   h3 {
     font-weight: 600;
     font-size: 80px;
@@ -134,9 +135,6 @@
   }
 }
 .our-mission-content {
-  @include mq('tablet', max) {
-    margin-bottom: 30px;
-  }
   h5 {
     font-style: normal;
     font-weight: 500;
@@ -187,7 +185,6 @@
   }
   @include mq('tablet', max) {
     margin: 0;
-    margin-top: 30px;
   }
 }
 

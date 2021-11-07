@@ -409,6 +409,14 @@ a.default-btn.color-pink {
         margin-left: 15px;
       }
     }
+    &--l {
+      // display: flex;
+      // align-items: center;
+      // justify-content: center;
+      span {
+        margin-right: 15px;
+      }
+    }
   }
 
   // Disable buttons

@@ -111,19 +111,10 @@
      }
     input{
       height: 56px;
-      @include mq('phone-wide', max) {
-        height: 48px;
-       }
     }
     .course-search-icon-left{
       top: 50%;
       transform: translateY(-50%);
-    }
-    .input-btn{
-      height: 56px;
-      @include mq('phone-wide', max) {
-        height: 48px;
-       }
     }
   }
   h4{
