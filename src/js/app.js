@@ -358,5 +358,90 @@
     var revenue = new BVSelect({
       selector: '#revenueSelect',
     });
+
+    // Apex Chart
+    if (document.getElementById('revenueChart')) {
+      var revenueChart = new ApexCharts(document.querySelector('#revenueChart'), {
+        chart: {
+          height: 280,
+          type: 'area',
+          toolbar: {
+            show: false,
+          },
+        },
+        plotOptions: {
+          area: {
+            fillTo: 'origin',
+          },
+        },
+        dataLabels: {
+          enabled: false,
+        },
+        stroke: { curve: 'smooth', width: 3 },
+        series: [
+          {
+            data: [80, 105, 90, 98, 60, 120, 150, 90, 60, 30, 20, 10, 75],
+          },
+        ],
+        colors: ['#564FFD'],
+
+        tooltip: {
+          theme: 'dark',
+        },
+        grid: {
+          show: true,
+        },
+
+        fill: {
+          type: 'gradient',
+          colors: '#564FFD',
+          gradient: {
+            shadeIntensity: 1,
+            opacityFrom: 0.1,
+            opacityTo: 0.9,
+            stops: [0, 100, 0],
+          },
+        },
+        xaxis: {
+          labels: {
+            style: {
+              colors: '#A1A5B3',
+              fontSize: '12px',
+            },
+          },
+          categories: [
+            'Su',
+            'Mo',
+            'Tu',
+            'We',
+            'Th',
+            'Fr',
+            'Sa',
+            'Su',
+            'Mo',
+            'Tu',
+            'We',
+            'Th',
+            'Fr',
+          ],
+        },
+        yaxis: {
+          labels: {
+            style: {
+              colors: '#A1A5B3',
+              fontSize: '12px',
+            },
+          },
+        },
+        padding: {
+          top: 0,
+          right: 0,
+          bottom: 0,
+          left: 0,
+        },
+      });
+
+      revenueChart.render();
+    }
   }); /*End document ready*/
 })(jQuery);
