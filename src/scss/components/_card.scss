@@ -30,9 +30,11 @@
     .card {
       &-title {
         font-size: 16px;
+        overflow: hidden;
         color: #1d2026;
         font-weight: 500;
         line-height: 22px;
+        white-space: nowrap;
         text-transform: capitalize;
       }
       &-header {
@@ -40,8 +42,18 @@
         align-items: center;
         justify-content: space-between;
 
+        // Reset custom style
+        .bv_ul_mobile {
+          position: absolute !important;
+        }
+        .bv_ul_bg {
+          position: static !important;
+          display: none;
+        }
+
         .bv_mainselect {
           position: relative;
+          font-family: Inter;
           .bv_background {
             background-color: transparent;
           }
@@ -49,8 +61,8 @@
             border: 0px;
             display: flex;
             @extend %text-one;
+            white-space: nowrap;
             align-items: center;
-
             // Arrow
             .arrow {
               border-color: #6e7485;
@@ -64,20 +76,25 @@
 
           // Dropdown content
           .bv_ul_inner {
-            top: 100%;
-            right: 0px;
-            z-index: 2;
             padding: 8px 0px;
             border-radius: 0px;
+            top: 100% !important;
+            z-index: 2 !important;
+            left: auto !important;
+            right: 0px !important;
+            height: auto !important;
             width: 160px !important;
+            margin: auto !important;
             background-color: #fff;
-            border: 1px solid #e9eaf0;
+            max-height: 480px !important;
+            border: 1px solid #e9eaf0 !important;
+            position: absolute !important;
             box-shadow: 0px 6px 16px 0px #0000000f;
 
             li {
               @extend %text-one;
               color: #4e5566;
-              padding: 6px 18px;
+              padding: 6px 18px !important;
               transition: all 0.3s linear;
               &:hover {
                 color: #1d2026;
@@ -1397,7 +1414,7 @@ button.course-item-5-card-info-tag {
     flex-direction: column;
 
     .faq-review-thumb {
-      margin: 0!important;
+      margin: 0 !important;
       @include mq('tablet', max) {
         height: 300px;
       }
