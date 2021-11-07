@@ -370,7 +370,8 @@
     if (document.getElementById('revenueChart')) {
       var revenueChart = new ApexCharts(document.querySelector('#revenueChart'), {
         chart: {
-          height: 280,
+          width: '100%',
+          height: 350,
           type: 'area',
           toolbar: {
             show: false,
@@ -454,7 +455,7 @@
     if (document.getElementById('ratingChart')) {
       var ratingChart = new ApexCharts(document.querySelector('#ratingChart'), {
         chart: {
-          height: 125,
+          height: '100%',
           type: 'area',
           toolbar: {
             autoSelected: 'pan',
