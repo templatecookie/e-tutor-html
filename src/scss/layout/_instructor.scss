@@ -259,4 +259,11 @@
   &-biodata {
     margin-bottom: 24px;
   }
+
+  // Activity card
+  .card-activity {
+    @include max(1200px) {
+      margin-bottom: 24px;
+    }
+  }
 }
