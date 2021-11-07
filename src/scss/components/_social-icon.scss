@@ -21,7 +21,6 @@
         align-items: center;
         justify-content: center;
         transition: all 0.4s;
-
         font-weight: 500;
         font-size: 14px;
         line-height: 20px;
@@ -30,10 +29,9 @@
         &:hover {
           color: #fff;
         }
-
-        @include mq('phone-wide', max) {
-          width: 42px;
-          height: 42px;
+        @include mq('desktop', max) {
+          width: 44px;
+          height: 44px;
         }
         &:hover {
           background-color: #ff6636;

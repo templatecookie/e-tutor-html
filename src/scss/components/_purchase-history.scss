@@ -314,8 +314,10 @@
         background-color: #fff;
         transition: 0.5s;
         padding: 24px 0;
-        // margin:0 26px;
         border-bottom: 1px solid #e9eaf0;
+        @include mq('tablet', max) {
+          display: block;
+        }
 
         &:last-child {
           border-bottom: 0px solid transparent;
@@ -365,6 +367,12 @@
           flex: 0 0 50%;
           flex-direction: column;
           justify-content: space-between;
+          @include mq('tablet', max) {
+            display: block;
+            text-align: left;
+            min-height: inherit;
+            margin-bottom: 10px;
+          }
 
           h5 {
             font-size: 14px;
@@ -411,6 +419,9 @@
           color: #ff6636;
           // flex: 0 0 19%;
           text-align: right;
+          @include mq('tablet', max) {
+            text-align: left;
+          }
 
           span {
             text-decoration: line-through;
@@ -443,9 +454,6 @@
 
       .faq-review-item:hover {
         .cross-btn-shopping {
-          @include mq('tablet', max) {
-            margin-bottom: 20px;
-          }
           svg {
             path {
               stroke: #333;
@@ -456,6 +464,7 @@
       .cross-btn-shopping {
         @include mq('tablet', max) {
           margin-bottom: 15px;
+          text-align: right;
         }
       }
       .faq-review-item:hover .move-to-wishlist a {
@@ -520,15 +529,15 @@
         transition: 0.5s;
         padding: 24px 0;
         border-bottom: 1px solid #e9eaf0;
+        @include mq('tablet', max) {
+          display: block;
+        }
         &:last-child {
           border-bottom: 0px solid transparent;
         }
-
-        // margin-bottom: 24px;
         &:last-child {
           margin-bottom: 0;
         }
-
         svg {
           path {
             transition: 0.5s;
@@ -554,6 +563,10 @@
           flex-direction: column;
           justify-content: space-between;
           max-width: 300px;
+          @include mq('desktop-wide', max) {
+            min-height: inherit;
+            margin-bottom: 10px;
+          }
 
           h5 {
             font-size: 14px;
@@ -600,6 +613,9 @@
           color: #ff6636;
           // flex: 0 0 19%;
           text-align: right;
+          @include mq('tablet', max) {
+            text-align: left;
+          }
 
           span {
             text-decoration: line-through;
@@ -638,6 +654,10 @@
       .all-btn {
         display: flex;
         column-gap: 12px;
+        @include mq('tablet', max) {
+          margin-top: 10px;
+          justify-content: flex-start!important;
+        }
 
         button {
           background-color: $primary-100;

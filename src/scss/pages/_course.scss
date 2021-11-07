@@ -555,7 +555,7 @@ h4.course-sidebar-title {
   border: 1px solid #e9eaf0;
   margin-right: 25px;
   @include mq('tablet', max) {
-    margin: 0 auto 30px;
+    margin-bottom: 30px;
   }
   h4 {
     font-style: normal;

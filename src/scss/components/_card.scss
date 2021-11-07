@@ -1397,8 +1397,10 @@ button.course-item-5-card-info-tag {
     flex-direction: column;
 
     .faq-review-thumb {
-      margin-right: 0px !important;
-      margin-top: 20px;
+      margin: 0!important;
+      @include mq('tablet', max) {
+        height: 300px;
+      }
     }
 
     .faq-review-item-content {
@@ -1413,6 +1415,9 @@ button.course-item-5-card-info-tag {
     .move-to-wishlist {
       a {
         margin-top: 20px;
+        @include mq('tablet', max) {
+          margin-top: 10px;
+        }
       }
     }
   }
@@ -1420,10 +1425,10 @@ button.course-item-5-card-info-tag {
   .wishlist-body-text .wishlist-body-bottom .faq-review-wrap .faq-review-item {
     flex-direction: column;
 
-    .faq-review-thumb {
-      margin-right: 0px !important;
-      margin-top: 20px;
-    }
+    // .faq-review-thumb {
+    //   margin-right: 0px !important;
+    //   margin-top: 20px;
+    // }
 
     .faq-review-item-content {
       flex-direction: column;
@@ -1432,6 +1437,12 @@ button.course-item-5-card-info-tag {
 
     .faq-review-data {
       padding-top: 20px;
+      @include mq('tablet', max) {
+        margin: 0;
+        min-height: inherit;
+        padding: 0;
+        text-align: left;
+      }
     }
 
     .move-to-wishlist {

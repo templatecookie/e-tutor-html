@@ -199,9 +199,9 @@
   .sub-heading-meta{
     ul{
       display: flex;
-      @include mq('phone-wide', max) {
-        display: block;
-      }
+      // @include mq('phone-wide', max) {
+      //   display: block;
+      // }
       li{
         display: flex;
         align-items: center;
@@ -209,8 +209,7 @@
           margin: 0 4px;
         }
         @include mq('phone-wide', max) {
-          display: block;
-          margin: 0 0 8px;
+          font-size: 13px;
         }
         svg{
           margin-right: 6px;

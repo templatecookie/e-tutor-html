@@ -1,3 +1,7 @@
+.header-bottom.header-four.coming-soon{
+  background-color: transparent;
+}
+
 .coming-soon-section {
   padding: 150px 0 100px;
   @include mq('desktop', max) {
@@ -6,9 +10,6 @@
 }
 
 .coming-soon-content{
-  @include mq('tablet', max) {
-    margin-bottom: 30px;
-  }
   h4{
     font-weight: 600;
     font-size: 18px;

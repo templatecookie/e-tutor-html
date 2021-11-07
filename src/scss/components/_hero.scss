@@ -18,6 +18,8 @@
     font-size: 40px;
     letter-spacing: -0.01em;
     color: #1d2026;
+    margin: 0;
+    line-height: 1;
     @include mq('tablet-small', max) {
       font-size: 32px;
     }
