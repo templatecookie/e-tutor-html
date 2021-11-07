@@ -279,4 +279,41 @@
       }
     }
   }
+
+  // Create New Course
+  &-createcourse {
+    background-color: #fff;
+
+    // nav
+    .nav {
+      box-shadow: 0px 1px 0px 0px #e9eaf0;
+      &-item {
+        margin-right: 24px;
+
+        &:nth-last-child(1) {
+          margin: 0px;
+        }
+      }
+
+      &-link {
+        padding: 20px;
+        font-size: 16px;
+        min-width: 292px;
+        color: #6e7485;
+        font-weight: 500;
+        text-align: left;
+        line-height: 22px;
+        border-radius: 0px;
+        display: inline-block;
+        text-transform: capitalize;
+        transition: all 0.3s linear;
+        border-bottom: 1.5px solid transparent;
+        &.active {
+          color: #1d2026;
+          border-color: #ff6636;
+          background-color: transparent;
+        }
+      }
+    }
+  }
 }
