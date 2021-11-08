@@ -47,7 +47,7 @@
         name = $(this).attr('name');
       var template = '<div class="' + classes + '">';
       template +=
-        '<span class="custom-select-trigger">' + $(this).attr('placeholder') + '</span>';
+        '<span class="custom-select-trigger">' + $(this).attr('title') + '</span>';
       template += '<div class="custom-options">';
       $(this)
         .find('option')
@@ -350,6 +350,39 @@
         },
       });
     }
+
+    // category page tools slider js
+    var tools_slider = $('.tools-slider');
+    if (tools_slider.is_exist()) {
+      tools_slider.owlCarousel({
+      loop:true,
+      margin: 20,
+      nav:true,
+      dots: false,
+      items: 6,
+      navText: ["<img src=\"src/images/svg-icon/arrowleft-orange.svg\"/>",
+              "<img src=\"src/images/svg-icon/arrowright-orange.svg\"/>"],
+      responsive:{
+          0:{
+              items:1,
+              nav: false
+          },
+          500:{
+              items:2
+          },
+          756:{
+              items:3
+          },
+          1000:{
+              items:4
+          },
+          1380:{
+              items:6
+          },
+          
+      }
+  })
+}
 
     // bvSelectbox
     // if(document.getElementById()) { }
