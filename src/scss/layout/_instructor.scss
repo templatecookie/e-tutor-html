@@ -276,9 +276,6 @@
 
     // Activity card
     .card-activity {
-      // @include max(1200px) {
-      //   margin-bottom: 24px;
-      // }
       .ratings-box {
         @include max(575px) {
           margin-top: 16px;
@@ -313,7 +310,7 @@
       &-link {
         padding: 20px;
         font-size: 16px;
-        min-width: 292px;
+        min-width: 306px;
         color: #6e7485;
         font-weight: 500;
         text-align: left;
@@ -385,7 +382,6 @@
 
   &-tab-main {
     box-shadow: none;
-
     .form {
       .form-field,
       .form-group {
