@@ -1,31 +1,39 @@
 .form {
   &-group {
-    margin-bottom: 18px;
-    &--2 {
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-between;
+    display: flex;
+    align-items: flex-end;
+    // margin-bottom: 18px;
+    justify-content: space-between;
+    @include max(575px) {
+      flex-direction: column;
+    }
+    & > div {
+      width: 50%;
+      margin-right: 24px;
       @include max(575px) {
+        width: 100%;
+        margin: 0px;
+        margin-bottom: 18px;
+      }
+      &:nth-last-child(1) {
+        margin: 0;
+      }
+    }
+
+    &--3 {
+      @include max(1024px) {
         flex-direction: column;
       }
+
       & > div {
-        width: 50%;
-        margin-right: 24px;
-        @include max(575px) {
-          width: 100%;
-          margin: 0px;
-          margin-bottom: 18px;
-        }
-        &:nth-last-child(1) {
+        @include max(1024px) {
           margin: 0;
+          width: 100%;
         }
       }
     }
-    &--4 {
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-between;
 
+    &--4 {
       @include max(1200px) {
         display: grid;
         gap: 24px;

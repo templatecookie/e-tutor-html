@@ -470,4 +470,22 @@
       }
     }
   }
+
+  &-settings {
+    .card-settings {
+      margin-bottom: 24px;
+    }
+    .form {
+      .form-field,
+      .form-textarea,
+      .form-field-social {
+        margin-bottom: 18px;
+      }
+    }
+
+    .card-upload {
+      // height: 95%;
+      margin-bottom: 20px;
+    }
+  }
 }

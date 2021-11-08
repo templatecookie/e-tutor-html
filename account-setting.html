@@ -13,6 +13,8 @@
         <!-- Library -->
         <link rel="stylesheet" href="src/css/bvselect.css">
         <link rel="stylesheet" href="src/css/apexcharts.css">
+        <link rel="stylesheet" href="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.css">
+        <link rel="stylesheet" href="https://unpkg.com/filepond/dist/filepond.min.css">
 
     </head>
     <body style="background-color: #f5f7fa;">
@@ -167,7 +169,242 @@
 
                 <!-- Instructor Main Content  -->
                 <main class="instructor-main">
+                    <div class="container">
 
+
+                        <div class="instructor-settings">
+                            <div class="card-settings">
+                                <h2 class="card-settings__title">Account Settings</h2>
+                                <form action="#" class="form">
+                                    <div class="row">
+                                        <div class="col-lg-9 order-2 order-lg-0 ">
+                                            <div class="form-group form-group--2">
+                                                <div class="form-field form-field--">
+                                                    <label>Full Name</label>
+                                                    <div class="field-wrapper">
+                                                        <input type="text" placeholder="First Name...">
+                                                        <span class="icon icon--success">
+                                                            <img src="src/images/svg-icon/checkcircle.svg" alt="success-icon">
+                                                        </span>
+                                                        <span class="icon icon--warning">
+                                                            <img src="src/images/svg-icon/Warning.svg" alt="warning-icon">
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                                <div class="form-field form-field--">
+                                                    <div class="field-wrapper">
+                                                        <input type="text" placeholder="Last Name..." >
+                                                        <span class="icon icon--success">
+                                                            <img src="src/images/svg-icon/checkcircle.svg" alt="success-icon">
+                                                        </span>
+                                                        <span class="icon icon--warning">
+                                                            <img src="src/images/svg-icon/Warning.svg" alt="warning-icon">
+                                                        </span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="form-field form-field--">
+                                                <label>Full Name</label>
+                                                <div class="field-wrapper">
+                                                    <input type="text" placeholder="First Name...">
+                                                    <span class="icon icon--success">
+                                                        <img src="src/images/svg-icon/checkcircle.svg" alt="success-icon">
+                                                    </span>
+                                                    <span class="icon icon--warning">
+                                                        <img src="src/images/svg-icon/Warning.svg" alt="warning-icon">
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="form-field   form-field--">
+                                                <label>Username</label>
+                                                <div class="field-wrapper">
+                                                    <input type="number" placeholder="Enter your username...">
+                                                    <span class="icon icon--success">
+                                                        <img src="src/images/svg-icon/checkcircle.svg" alt="success-icon">
+                                                    </span>
+                                                    <span class="icon icon--warning">
+                                                        <img src="src/images/svg-icon/Warning.svg" alt="warning-icon">
+                                                    </span>
+                                                </div>
+                                            </div>
+                                            <div class="form-field form-field--number  form-field--">
+                                                <label>Phone Number</label>
+                                                <div class="field-wrapper">
+                                                    <input type="number" placeholder="Your Phone Number...">
+                                                    <span class="icon icon--success">
+                                                        <img src="src/images/svg-icon/checkcircle.svg" alt="success-icon">
+                                                    </span>
+                                                    <span class="icon icon--warning">
+                                                        <img src="src/images/svg-icon/Warning.svg" alt="warning-icon">
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 order-1 order-lg-0 d-flex align-items-end">
+                                            <div class="card-upload">
+                                                <input type="file" 
+                                                class="filepond"
+                                                accept="image/png, image/jpeg, image/gif"/>
+
+                                                <p class="card-upload__info">
+                                                    Image size should be under 1MB and image ration needs to be 1:1
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-field">
+                                        <label>Title</label>
+                                        <div class="field-wrapper">
+                                            <input type="text" placeholder="Your tittle, proffesion or small biography..." >
+                                            <span class="field-wrapper__count">0/80</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-textarea">
+                                        <label>Biography</label>
+                                       <textarea placeholder="About Your Self"></textarea>
+                                    </div>
+                                <button type="submit" class="button button--md">Save changes</button>    
+                                </form>
+                            </div>
+                            <div class="card-settings">
+                                <h2 class="card-settings__title">Social Profile</h2>
+                                <form action="#" class="form">
+                                    <div class="form-field-social">
+                                        <label>Personal Website</label>
+                                        <div class="field-wrapper">
+                                            <span class="icon">
+                                                <img src="src/images/svg-icon/globesimple.svg" alt="social-svg-icons">
+                                            </span>
+                                            <input type="text" placeholder="Personal website or portfolio url..." >
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-group--3">
+                                        <div class="form-field-social">
+                                            <label>Facebook</label>
+                                            <div class="field-wrapper">
+                                                <span class="icon">
+                                                    <img src="src/images/svg-icon/facebook.svg" alt="social-svg-icons">
+                                                </span>
+                                                <input type="text" placeholder="Username" >
+                                            </div>
+                                        </div>
+                                        <div class="form-field-social">
+                                            <label>Instagram</label>
+                                            <div class="field-wrapper">
+                                                <span class="icon">
+                                                    <img src="src/images/svg-icon/instagram.svg" alt="social-svg-icons">
+                                                </span>
+                                                <input type="text" placeholder="Username" >
+                                            </div>
+                                        </div>
+                                        <div class="form-field-social">
+                                            <label>Linkedin</label>
+                                            <div class="field-wrapper">
+                                                <span class="icon">
+                                                    <img src="src/images/svg-icon/linkedin.svg" alt="social-svg-icons">
+                                                </span>
+                                                <input type="text" placeholder="Username" >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="form-group form-group--3">
+                                        <div class="form-field-social">
+                                            <label>Twitter</label>
+                                            <div class="field-wrapper">
+                                                <span class="icon">
+                                                    <img src="src/images/svg-icon/twitter.svg" alt="social-svg-icons">
+                                                </span>
+                                                <input type="text" placeholder="Username" >
+                                            </div>
+                                        </div>
+                                        <div class="form-field-social">
+                                            <label>Whatsapp</label>
+                                            <div class="field-wrapper">
+                                                <span class="icon">
+                                                    <img src="src/images/svg-icon/whatsapp.svg" alt="social-svg-icons">
+                                                </span>
+                                                <input type="text" placeholder="Phone Number" >
+                                            </div>
+                                        </div>
+                                        <div class="form-field-social">
+                                            <label>youtube</label>
+                                            <div class="field-wrapper">
+                                                <span class="icon">
+                                                    <img src="src/images/svg-icon/youtube.svg" alt="social-svg-icons">
+                                                </span>
+                                                <input type="text" placeholder="Username" >
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="button button--md">Save changes</button>     
+                                </form>
+                            </div>
+
+                            <div class="row">
+                             <div class="col-lg-6">
+                                <div class="card-settings">
+                                    <h2 class="card-settings__title">Notifications</h2>
+                                    
+                                </div>
+                             </div>
+                             <div class="col-lg-6">
+                                 <div class="card-settings">
+                                     <h2 class="card-settings__title">Change Password</h2>
+                                     <form action="#" class="form">
+                                        <div class="form-field form-field--">
+                                            <label>Current Password</label>
+                                            <div class="field-wrapper">
+                                                <input type="password" placeholder="Password" id="currentPassword">
+                                                <span class="icon icon--success">
+                                                    <img src="src/images/svg-icon/checkcircle.svg" alt="success-icon">
+                                                </span>
+                                                <span class="icon icon--warning">
+                                                    <img src="src/images/svg-icon/Warning.svg" alt="warning-icon">
+                                                </span>
+                                                <span class="icon icon--eye" onclick="showPassword('currentPassword',this)">
+                                                    <img src="src/images/svg-icon/eye-open.svg" alt="eye-icon">
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="form-field form-field--">
+                                            <label>New Password</label>
+                                            <div class="field-wrapper">
+                                                <input type="password" placeholder="Password" id="newPassword">
+                                                <span class="icon icon--success">
+                                                    <img src="src/images/svg-icon/checkcircle.svg" alt="success-icon">
+                                                </span>
+                                                <span class="icon icon--warning">
+                                                    <img src="src/images/svg-icon/Warning.svg" alt="warning-icon">
+                                                </span>
+                                                <span class="icon icon--eye" onclick="showPassword('newPassword',this)">
+                                                    <img src="src/images/svg-icon/eye-open.svg" alt="eye-icon">
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="form-field form-field--">
+                                            <label>Confirm Password</label>
+                                            <div class="field-wrapper">
+                                                <input type="password" placeholder="Password" id="confirmPassword">
+                                                <span class="icon icon--success">
+                                                    <img src="src/images/svg-icon/checkcircle.svg" alt="success-icon">
+                                                </span>
+                                                <span class="icon icon--warning">
+                                                    <img src="src/images/svg-icon/Warning.svg" alt="warning-icon">
+                                                </span>
+                                                <span class="icon icon--eye" onclick="showPassword('confirmPassword',this)">
+                                                    <img src="src/images/svg-icon/eye-open.svg" alt="eye-icon">
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <button type="submit" class="button button--md">Save Changes</button>
+                                     </form>
+                                 </div>
+                             </div>
+                            </div>
+
+                        </div>
+
+                    </div>
                 </main> 
 
             </div>
@@ -179,7 +416,88 @@
         <script src="src/js/lirbrary/bvselect.js"></script>
         <script src="src/js/lirbrary/apexcharts.min.js"></script>
         <script src="src/js/lirbrary/bootstrap.bundle.min.js"></script>
+        <script src="https://unpkg.com/filepond-plugin-file-encode/dist/filepond-plugin-file-encode.min.js"></script>
+        <script src="https://unpkg.com/filepond-plugin-file-validate-type/dist/filepond-plugin-file-validate-type.min.js"></script>
+        <script src="https://unpkg.com/filepond-plugin-image-exif-orientation/dist/filepond-plugin-image-exif-orientation.min.js"></script>
+        <script src="https://unpkg.com/filepond-plugin-image-crop/dist/filepond-plugin-image-crop.min.js"></script>
+        <script src="https://unpkg.com/filepond-plugin-image-resize/dist/filepond-plugin-image-resize.min.js"></script>
+        <script src="https://unpkg.com/filepond-plugin-image-transform/dist/filepond-plugin-image-transform.min.js"></script>
+        <script src="https://unpkg.com/filepond-plugin-image-preview/dist/filepond-plugin-image-preview.min.js"></script>
+        <script src="https://unpkg.com/filepond/dist/filepond.min.js"></script>
         <script type="module" src="/main.js"></script>
+        <script>
+            /*
+We need to register the required plugins to do image manipulation and previewing.
+*/
+FilePond.registerPlugin(
+	// encodes the file as base64 data
+  FilePondPluginFileEncode,
+	
+	// validates files based on input type
+  FilePondPluginFileValidateType,
+	
+	// corrects mobile image orientation
+  FilePondPluginImageExifOrientation,
+	
+	// previews the image
+  FilePondPluginImagePreview,
+	
+	// crops the image to a certain aspect ratio
+  FilePondPluginImageCrop,
+	
+	// resizes the image to fit a certain size
+  FilePondPluginImageResize,
+	
+	// applies crop and resize information on the client
+  FilePondPluginImageTransform
+);
+
+// Select the file input and use create() to turn it into a pond
+// in this example we pass properties along with the create method
+// we could have also put these on the file input element itself
+FilePond.create(
+	document.querySelector('.filepond'),
+	{
+        credits: false,
+		labelIdle: `
+        <span>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M8.0625 7.68647L12 3.75L15.9375 7.68647" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M12 14.2511V3.75391" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M20.25 14.25V19.5C20.25 19.6989 20.171 19.8897 20.0303 20.0303C19.8897 20.171 19.6989 20.25 19.5 20.25H4.5C4.30109 20.25 4.11032 20.171 3.96967 20.0303C3.82902 19.8897 3.75 19.6989 3.75 19.5V14.25" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </span>
+        Upload Photo
+            `,
+    imagePreviewHeight: 200,
+    imagePreviewWidth: 200,
+    imageCropAspectRatio: '1:1',
+    imageResizeTargetWidth: 200, 
+    imageResizeTargetHeight: 200,
+    // stylePanelLayout: 'compact circle',
+    styleLoadIndicatorPosition: 'center bottom',
+    styleButtonRemoveItemPosition: 'center bottom',
+	}
+);
+
+
+        // input type changer
+        function showPassword(id, el) {
+        let x = document.getElementById(id);
+        if (x.type === 'password') {
+            x.type = 'text';
+            el.innerHTML = `<img src="src/images/svg-icon/eye-close.svg" alt="eye-icon">`;
+        } else {
+            x.type = 'password';
+            el.innerHTML = `<img src="src/images/svg-icon/eye-open.svg" alt="eye-icon">`;
+        }
+    }
+
+
+
+
+
+        </script>
 
     </body>
 </html>

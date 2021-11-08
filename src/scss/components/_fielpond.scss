@@ -1,0 +1,55 @@
+/*
+ * FilePond Custom Styles
+ */
+
+.filepond--drop-label {
+  color: #4c4e53;
+}
+
+.filepond--label-action {
+  text-decoration-color: #babdc0;
+}
+
+.filepond--panel-root {
+  background-color: #edf0f4;
+}
+
+.filepond--image-preview-wrapper {
+  border-radius: 0px;
+}
+
+.filepond--file {
+  padding: 0px;
+}
+
+.filepond--root {
+  // width: 170px;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  border-radius: 0px !important;
+}
+
+.filepond--root[data-style-panel-layout~='circle'] .filepond--image-preview-wrapper {
+  border-radius: 0px !important;
+}
+
+.filepond--file-wrapper.filepond--file-wrapper > legend {
+  display: none;
+}
+
+.filepond--item {
+  margin: 0;
+}
+
+.filepond--list-scroller[data-state='overflow'] {
+  margin: 0px;
+  width: inherit;
+  height: inherit;
+}
+
+.filepond--drop-label.filepond--drop-label label {
+  @extend %text-one;
+  color: #fff;
+  background-color: #00000080;
+}
