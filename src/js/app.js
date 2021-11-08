@@ -779,46 +779,46 @@
     }
 
     // Tabs
-    const totalTabs = $('.nav-pills li').length;
-    let currentTab = 1;
+    // const totalTabs = $('.nav-pills li').length;
+    // let currentTab = 1;
 
-    // Next Action
-    $('.button-next').click(function (e) {
-      e.preventDefault();
-      currentTab += 1;
-      showHideControls();
-      let nextTab = $('.nav-pills li').next('li').find('button');
-      if (nextTab.length > 0) {
-        nextTab.trigger('click');
-      }
-      // console.log(currentTab);
-      // console.log(totalTabs);
-    });
-    // PrevAction
-    $('.button-prev').click(function (e) {
-      e.preventDefault();
-      currentTab -= 1;
-      let prevTab = $('.nav-pills li').next('li').find('button');
-      console.log(prevTab);
-      if (prevTab.length > 0) {
-        prevTab.trigger('click');
-      }
-      console.log('click');
-      // console.log(currentTab);
-      // console.log(totalTabs);
-    });
+    // // Next Action
+    // $('.button-next').click(function (e) {
+    //   e.preventDefault();
+    //   currentTab += 1;
+    //   showHideControls();
+    //   let nextTab = $('.nav-pills li').next('li').find('button');
+    //   if (nextTab.length > 0) {
+    //     nextTab.trigger('click');
+    //   }
+    //   // console.log(currentTab);
+    //   // console.log(totalTabs);
+    // });
+    // // PrevAction
+    // $('.button-prev').click(function (e) {
+    //   e.preventDefault();
+    //   currentTab -= 1;
+    //   let prevTab = $('.nav-pills li').next('li').find('button');
+    //   console.log(prevTab);
+    //   if (prevTab.length > 0) {
+    //     prevTab.trigger('click');
+    //   }
+    //   console.log('click');
+    //   // console.log(currentTab);
+    //   // console.log(totalTabs);
+    // });
 
-    // HideControls
-    function showHideControls() {
-      if (currentTab === 1) {
-        $('.button-prev').hide();
-      } else if (currentTab === totalTabs) {
-        $('.button-next').hide();
-      } else {
-        $('.button-prev').show();
-        $('.button-next').show();
-      }
-    }
+    // // HideControls
+    // function showHideControls() {
+    //   if (currentTab === 1) {
+    //     $('.button-prev').hide();
+    //   } else if (currentTab === totalTabs) {
+    //     $('.button-next').hide();
+    //   } else {
+    //     $('.button-prev').show();
+    //     $('.button-next').show();
+    //   }
+    // }
     // let prevTab = $('.nav-pills .active').next('li').find('button');
   }); /*End document ready*/
 })(jQuery);

@@ -374,6 +374,12 @@
     & > div {
       display: flex;
       align-items: center;
+
+      .button {
+        &:nth-child(1) {
+          margin-right: 12px;
+        }
+      }
     }
   }
 
@@ -404,6 +410,9 @@
         width: 100%;
       }
       &:nth-child(1) {
+        color: #6e7485;
+        border: 1px solid #e9eaf0;
+        background-color: transparent;
         @include max(575px) {
           margin-bottom: 18px;
         }
