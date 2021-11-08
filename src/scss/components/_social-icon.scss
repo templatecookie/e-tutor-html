@@ -20,7 +20,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        transition: all 0.4s;
+        transition: all 0.3s;
         font-weight: 500;
         font-size: 14px;
         line-height: 20px;
@@ -38,10 +38,10 @@
         }
 
         svg {
-          transition: all 0.4s;
+          transition: all 0.3s;
         }
         path {
-          transition: all 0.4s;
+          transition: all 0.3s;
         }
         &:hover {
           path {

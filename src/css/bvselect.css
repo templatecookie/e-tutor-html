@@ -44,10 +44,10 @@ Developed by: Bruno Vieira
   transform: rotate(-135deg);
   -webkit-transform: rotate(-135deg);
   margin-top: 5px;
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
 }
 .down {
-  transition: all 0.2s ease;
+  transition: all 0.3s ease;
   transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
   margin-top: 2px;

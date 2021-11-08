@@ -51,7 +51,7 @@
   padding: 12px 24px;
   display: flex;
   justify-content: space-between;
-  transition: all 0.4s;
+  transition: all 0.3s;
   @include mq('phone-wide', max) {
     padding: 12px 15px;
   }
@@ -103,7 +103,7 @@
       position: absolute;
       bottom: 0;
       right: 0;
-      transition: all 0.4s;
+      transition: all 0.3s;
       border: 3px solid #fff;
     }
   }

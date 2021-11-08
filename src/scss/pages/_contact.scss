@@ -1,6 +1,6 @@
 .contact-us-section {
   padding-top: 30px;
-  border-bottom: 1px solid #FFDDD1;
+  border-bottom: 1px solid #ffddd1;
   @include mq('tablet', max) {
     padding: 60px 0;
   }
@@ -50,7 +50,7 @@
   bottom: 24px;
   width: calc(100% - 48px);
   margin-left: 24px;
-  transition: all 0.4s;
+  transition: all 0.3s;
   &:hover {
     padding: 16px 31px 16px 31px;
   }
@@ -60,7 +60,7 @@
     line-height: 12px;
     text-transform: uppercase;
     color: #ff6636;
-    transition: all 0.4s;
+    transition: all 0.3s;
     opacity: 0;
     margin: 0 0 3px;
   }

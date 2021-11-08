@@ -161,8 +161,8 @@
           line-height: 20px;
           letter-spacing: -0.01em;
           color: #ff6636;
-          del{
-            color: #A1A5B3;
+          del {
+            color: #a1a5b3;
           }
         }
       }
@@ -212,7 +212,7 @@
     position: absolute;
     top: 6px;
     right: 5px;
-    transition: all 0.4s;
+    transition: all 0.3s;
     &:hover {
       background-color: #ff6636;
     }

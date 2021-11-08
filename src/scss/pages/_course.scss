@@ -266,7 +266,7 @@ h4.course-sidebar-title {
     display: inline-block;
     text-align: center;
     line-height: 69px;
-    transition: all 0.4s;
+    transition: all 0.3s;
     @include mq('phone-wide', max) {
       width: 60px;
       height: 60px;
@@ -279,7 +279,7 @@ h4.course-sidebar-title {
       position: relative;
       left: 2px;
       path {
-        transition: all 0.4s;
+        transition: all 0.3s;
       }
     }
     &:hover path {
@@ -476,7 +476,7 @@ h4.course-sidebar-title {
           color: #6e7485;
           font-weight: 500;
           text-transform: uppercase;
-          transition: all 0.4s;
+          transition: all 0.3s;
           &:hover {
             color: #1d2026;
           }

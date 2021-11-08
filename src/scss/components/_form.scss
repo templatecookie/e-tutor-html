@@ -427,7 +427,7 @@
     border: 1px solid #e9eaf0;
     height: 48px;
     width: 100%;
-    transition: 0.5s;
+    transition: 0.3s;
   }
 
   .course-search-icon-left {
@@ -499,7 +499,7 @@
     border: 1px solid #e9eaf0;
     height: 48px;
     width: 100%;
-    transition: 0.5s;
+    transition: 0.3s;
     margin-right: 10px;
   }
 
@@ -574,7 +574,7 @@
     border: 1px solid #7bd785;
     height: 48px;
     width: 100%;
-    transition: 0.5s;
+    transition: 0.3s;
     background: linear-gradient(0deg, rgba(223, 242, 225, 0.5), rgba(223, 242, 225, 0.5)),
       #ffffff;
   }
@@ -647,7 +647,7 @@
     border: 1px solid #f9eaea;
     height: 48px;
     width: 100%;
-    transition: 0.5s;
+    transition: 0.3s;
     background: linear-gradient(0deg, rgba(249, 234, 234, 0.5), rgba(249, 234, 234, 0.5)),
       #ffffff;
   }
@@ -848,9 +848,9 @@ input[type='checkbox']:checked {
 
     font-weight: 400;
     padding: 10px 50px 10px 18px;
-    transition: all 0.4s;
+    transition: all 0.3s;
     border: 1px solid #e9eaf0;
-    transition: all 0.4s;
+    transition: all 0.3s;
 
     &:hover {
       border: 1px solid #ffddd1;

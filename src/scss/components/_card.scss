@@ -132,6 +132,53 @@
       margin-top: 20px;
     }
   }
+
+  &-instructor {
+    padding: 16px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    background-color: #f5f7fa;
+    .image {
+      width: 48px;
+      height: 48px;
+      overflow: hidden;
+      margin-right: 12px;
+      border-radius: 50%;
+      img {
+        width: inherit;
+        height: inherit;
+      }
+    }
+    .info {
+      h6 {
+        @extend %text-one;
+        margin: 0;
+        color: #1d2026;
+        font-weight: 600;
+      }
+
+      p {
+        @extend %text-one;
+        color: #6e7485;
+      }
+    }
+    .close {
+      top: 50%;
+      right: 16px;
+      color: #4e5566;
+      position: absolute;
+      transform: translateY(-50%);
+      @include max(575px) {
+        top: 12px;
+        transform: translateY(0px);
+      }
+      &:hover {
+        color: #1d2026;
+      }
+    }
+  }
 }
 
 .course-item-4 {
@@ -148,7 +195,7 @@
     border: 1px solid #e9eaf0;
 
     .course-item-4-card-img {
-      transition: 0.5s;
+      transition: 0.3s;
       overflow: hidden;
       height: 228px;
       padding: 0;
@@ -156,7 +203,7 @@
       img {
         height: 100%;
         width: 100%;
-        transition: 0.5s;
+        transition: 0.3s;
         object-fit: cover;
       }
     }
@@ -285,7 +332,7 @@
   transform: translate(-50%, -50%);
   background-color: #fff;
   z-index: 1;
-  transition: all 0.4s;
+  transition: all 0.3s;
   opacity: 0;
   visibility: hidden;
   @include mq('desktop-wide', max) {
@@ -424,14 +471,14 @@
 }
 
 .course-item-4-footer {
-  transition: 0.4s;
+  transition: 0.3s;
 }
 
 .course-lecture {
   // box-shadow: inset 0px -1px 0px #E9EAF0;
   background-color: #fff;
   position: relative;
-  transition: 0.4s;
+  transition: 0.3s;
   border: 1px solid #e9eaf0;
   &-img {
     height: 220px;
@@ -488,7 +535,7 @@ a.course-lecture-img {
 .course-lecture-watched {
   // box-shadow: inset 0px -1px 0px #E9EAF0;
   background-color: #fff;
-  transition: 0.4s;
+  transition: 0.3s;
   position: relative;
   border: 1px solid #e9eaf0;
   &-img {
@@ -607,7 +654,7 @@ a.course-lecture-img {
       height: 100%;
       width: 100%;
       object-fit: cover;
-      transition: 0.5s;
+      transition: 0.3s;
     }
 
     &-img {
@@ -751,14 +798,14 @@ button.course-item-5-card-info-tag {
   display: flex;
   overflow: hidden;
   background-color: #fff;
-  transition: 0.5s;
+  transition: 0.3s;
   flex-wrap: wrap;
   margin-bottom: 24px;
   img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    transition: 0.5s;
+    transition: 0.3s;
     overflow: hidden;
   }
 
@@ -863,7 +910,7 @@ button.course-item-5-card-info-tag {
       margin: 0;
       padding-left: 12px;
       display: inline-block;
-      transition: 0.5s;
+      transition: 0.3s;
     }
 
     p {
@@ -929,7 +976,7 @@ button.course-item-5-card-info-tag {
   color: #1d2026;
   padding: 10px 0 17px 0;
   margin: 0;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .tag-color4 {
   color: #1d2026;
@@ -956,7 +1003,7 @@ button.course-item-5-card-info-tag {
     width: 220px;
     height: 100%;
     object-fit: cover;
-    transition: 0.5s;
+    transition: 0.3s;
     overflow: hidden;
   }
 
@@ -1070,7 +1117,7 @@ button.course-item-5-card-info-tag {
       color: #4e5566;
       align-self: center;
       margin: 0;
-      transition: 0.5s;
+      transition: 0.3s;
       margin-bottom: 4px;
     }
 
@@ -1181,13 +1228,13 @@ button.course-item-5-card-info-tag {
         border: 0;
         background-color: #f5f7fa;
         margin-left: 12px;
-        transition: 0.5s;
+        transition: 0.3s;
 
         svg {
-          transition: 0.5s;
+          transition: 0.3s;
 
           path {
-            transition: 0.5s;
+            transition: 0.3s;
           }
         }
       }
@@ -1213,7 +1260,7 @@ button.course-item-5-card-info-tag {
       background-color: $primary-500;
       color: #fff;
       padding: 0 24px;
-      transition: 0.5s;
+      transition: 0.3s;
     }
 
     a:hover {

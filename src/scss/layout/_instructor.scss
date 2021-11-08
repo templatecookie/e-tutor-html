@@ -374,6 +374,12 @@
     & > div {
       display: flex;
       align-items: center;
+
+      .button {
+        &:nth-child(1) {
+          margin-right: 12px;
+        }
+      }
     }
   }
 
@@ -404,8 +410,66 @@
         width: 100%;
       }
       &:nth-child(1) {
+        color: #6e7485;
+        border: 1px solid #e9eaf0;
+        background-color: transparent;
         @include max(575px) {
           margin-bottom: 18px;
+        }
+      }
+    }
+  }
+
+  &-requirements {
+    &__header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 24px;
+      justify-content: space-between;
+      @include max(575px) {
+        align-items: flex-end;
+        flex-direction: column;
+      }
+      h2 {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 500;
+        color: #1d2026;
+        line-height: 24px;
+        text-transform: capitalize;
+        @include max(575px) {
+          width: 100%;
+        }
+      }
+
+      a {
+        @extend %text-one;
+        color: #ff6636;
+        font-weight: 500;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  &-publish {
+    margin-bottom: 40px;
+    @include max(991px) {
+      margin-bottom: 20px;
+    }
+    h2 {
+      @extend %text-two;
+      margin-bottom: 24px;
+    }
+
+    &__search-instructor {
+      margin-top: 24px;
+      .card-instructor {
+        @include max(767px) {
+          margin-bottom: 16px;
+        }
+
+        &::nth-last-child(1) {
+          margin-bottom: 0px;
         }
       }
     }

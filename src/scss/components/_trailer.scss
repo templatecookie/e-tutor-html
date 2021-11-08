@@ -17,7 +17,7 @@
 .trailer-box {
   display: flex;
   overflow: hidden;
-  transition: 0.5s;
+  transition: 0.3s;
   flex-wrap: wrap;
 
   img {
@@ -51,7 +51,7 @@
       letter-spacing: -0.008em;
       text-transform: capitalize;
       padding: 0 24px;
-      transition: 0.5s;
+      transition: 0.3s;
       width: 189px;
       cursor: pointer;
       position: relative;
@@ -68,7 +68,7 @@
       svg {
         margin-left: 8px;
         path {
-          transition: all 0.4s;
+          transition: all 0.3s;
         }
       }
     }
