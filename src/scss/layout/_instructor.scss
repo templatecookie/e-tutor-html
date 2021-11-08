@@ -254,6 +254,9 @@
     @include max(767px) {
       grid-template-columns: 1fr;
     }
+
+    &--2 {
+    }
   }
 
   &-biodata {
