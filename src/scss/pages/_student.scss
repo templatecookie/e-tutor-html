@@ -103,6 +103,26 @@ label.student-lebel {
   }
 }
 
+.student-header.my-course{
+  .form-searchbox {
+    input{
+      background-color: #fff;
+      border: 1px solid #fff;
+    }
+  }
+  span.custom-select-trigger {
+    background-color: #fff;
+    border: 1px solid #fff;
+  }
+}
+
+.course-item-4-card-info-price{
+    del{
+      font-size: 14px;
+      color: #A1A5B3;
+    }
+}
+
 // student course page
 .course-student-column {
   display: flex;
