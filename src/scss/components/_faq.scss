@@ -23,7 +23,7 @@
   }
 }
 .faq-left-sidebar {
-  margin-right: 20px;
+  margin-right: 14px;
   border: 1px solid #E9EAF0;
   padding: 8px 0;
   @include mq('desktop', max) {
@@ -63,7 +63,7 @@
 .faq-right-sidebar {
   background: #F5F7FA;
   padding: 20px;
-  margin-left: 20px;
+  margin-left: 14px;
   @include mq('desktop', max) {
     margin: 0;
   }

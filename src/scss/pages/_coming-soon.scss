@@ -1,5 +1,31 @@
+.main-logo-wrap {
+  display: flex;
+  align-items: center;
+}
+.logo-content{
+  @include mq('phone-wide', max) {
+    display: none;
+  }
+  h2{
+    font-weight: 600;
+    font-size: 32px;
+    letter-spacing: -0.03em;
+    color: #1D2026;
+    line-height: 1;
+    margin: 0;
+    margin-left: 9px;
+  }
+}
+
 .header-bottom.header-four.coming-soon{
   background-color: transparent;
+  display: flex;
+  .social-icon{
+    margin: 0;
+  }
+}
+.logo-cap {
+  flex: 0 0 auto;
 }
 
 .coming-soon-section {
