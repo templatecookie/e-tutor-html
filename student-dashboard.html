@@ -1416,352 +1416,387 @@
                             </div>
                         </div>
                         <div class="tab-pane fade" id="tabs04" role="tabpanel" aria-labelledby="tabs4">
-                            <div class="student-message-section section-padding-bottom">
-                                <div class="student-message-box">
-                                    <div class="student-message-left">
-                                        <div class="student-message-left-header">
-                                            <div class="student-message-header-title">
-                                                <h3>Message</h3>
-                                                <a class="compose-btn" href="#">Compose</a>
+                            <div class="message container container-fluid">
+                                <div class="message-sidebar">
+                                        <div class="message-sidebar__search-box">
+                                            <div class="top d-flex align-items-center justify-content-between">
+                                            
+                                                <h2 class="message-sidebar__title">Chat</h2>
+        
+                                                <button class="compose-modal button button-s-s " data-bs-toggle="modal" data-bs-target="#composeModal">
+                                                    <span class="icon">
+                                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M2.5 8H13.5" stroke="#564FFD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M8 2.5V13.5" stroke="#564FFD" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                        </svg>
+                                                    </span>
+                                                    Compose
+                                                </button> 
                                             </div>
-
-                                            <div class="form-searchbox">
-                                                <span class="icon">
-                                                    <img src="src/images/svg-icon/search.svg" alt="" />
-                                                </span>
-                                                <input type="text" placeholder="What do you want learn" />
+                                            <div class="bottom">
+                                                <form action="#" class="form">
+                                                    <div class="form-searchbox">
+                                                        <span class="icon">
+                                                            <img src="src/images/svg-icon/search.svg" alt="search-icon">
+                                                        </span>
+                                                        <input type="text" placeholder="Search..." >
+                                                    </div>
+                                                </form>
                                             </div>
                                         </div>
-                                        <div class="message-wrap">
-                                            <div class="message-item active">
-                                                <div class="message-user-wrap">
-                                                    <div class="message-user">
-                                                        <img src="src/images/team5.png" alt="" />
+                                        <div class="message-sidebar__users">
+                                            <div class="message-sidebar__users-item active">
+                                                <div class="user">
+                                                    <div class="user__img">
+                                                        <img src="src/images/users/user-lg-01.png" alt="user-img">
+                                                        <span class="user-active"></span>
                                                     </div>
-                                                    <div class="message-data">
-                                                        <h6>Jane Cooper</h6>
-                                                        <p>Yeah sure, tell me zafor</p>
-                                                    </div>
-                                                </div>
-                                                <div class="message-data">
-                                                    <p>Just now</p>
-                                                </div>
-                                            </div>
-                                            <div class="message-item">
-                                                <div class="message-user-wrap">
-                                                    <div class="message-user">
-                                                        <img src="src/images/team6.jpg" alt="" />
-                                                    </div>
-                                                    <div class="message-data">
-                                                        <h6>Jenny Wilson</h6>
-                                                        <p>Thank you so much, sir</p>
+                                                    <div class="user-info">
+                                                        <h6 class="user-name">jane Cooper</h6>
+                                                        <p class="user-last-message">Yeah sure, tell me Zafor</p>
                                                     </div>
                                                 </div>
-                                                <div class="message-data">
-                                                    <p>2 d</p>
-                                                    <div class="active-status"></div>
+                                                <div class="message-info">
+                                                    <span class="message-info__date">just now</span>
+                                                    <span class="message-info--unread"></span>
                                                 </div>
                                             </div>
-                                            <div class="message-item">
-                                                <div class="message-user-wrap">
-                                                    <div class="message-user">
-                                                        <img src="src/images/team7.jpg" alt="" />
-                                                        <div class="user-online-status"></div>
+                                            <div class="message-sidebar__users-item">
+                                                <div class="user">
+                                                    <div class="user__img">
+                                                        <img src="src/images/users/user-lg-01.png" alt="user-img">
                                                     </div>
-                                                    <div class="message-data">
-                                                        <h6>Marvin McKinney</h6>
-                                                        <p>Thank you so much, sir</p>
-                                                    </div>
-                                                </div>
-                                                <div class="message-data">
-                                                    <p>1 m</p>
-                                                    <div class="active-status"></div>
-                                                </div>
-                                            </div>
-                                            <div class="message-item">
-                                                <div class="message-user-wrap">
-                                                    <div class="message-user">
-                                                        <img src="src/images/team8.jpg" alt="" />
-                                                        <div class="user-online-status"></div>
-                                                    </div>
-                                                    <div class="message-data">
-                                                        <h6>Eleanor Pena</h6>
-                                                        <p>Thank you so much, sir</p>
+                                                    <div class="user-info">
+                                                        <h6 class="user-name">jane Cooper</h6>
+                                                        <p class="user-last-message">Yeah sure, tell me Zafor</p>
                                                     </div>
                                                 </div>
-                                                <div class="message-data">
-                                                    <p>1 m</p>
+                                                <div class="message-info">
+                                                    <span class="message-info__date">4:25 PM</span>
+                                                    <span class="message-info--unread"></span>
                                                 </div>
                                             </div>
-                                            <div class="message-item">
-                                                <div class="message-user-wrap">
-                                                    <div class="message-user">
-                                                        <img src="src/images/team9.jpg" alt="" />
+                                            <div class="message-sidebar__users-item">
+                                                <div class="user">
+                                                    <div class="user__img">
+                                                        <img src="src/images/users/user-lg-01.png" alt="user-img">
                                                     </div>
-                                                    <div class="message-data">
-                                                        <h6>Ronald Richards</h6>
-                                                        <p>Thank you so much, sir</p>
-                                                    </div>
-                                                </div>
-                                                <div class="message-data">
-                                                    <p>3 m</p>
-                                                </div>
-                                            </div>
-                                            <div class="message-item">
-                                                <div class="message-user-wrap">
-                                                    <div class="message-user">
-                                                        <img src="src/images/team10.jpg" alt="" />
-                                                        <div class="user-online-status"></div>
-                                                    </div>
-                                                    <div class="message-data">
-                                                        <h6>Kathryn Murphy</h6>
-                                                        <p>Thank you so much, sir</p>
+                                                    <div class="user-info">
+                                                        <h6 class="user-name">jane Cooper</h6>
+                                                        <p class="user-last-message">Yeah sure, tell me Zafor</p>
                                                     </div>
                                                 </div>
-                                                <div class="message-data">
-                                                    <p>5 m</p>
+                                                <div class="message-info">
+                                                    <span class="message-info__date">4:25 PM</span>
+                                                    <span class="message-info--unread"></span>
                                                 </div>
                                             </div>
-                                            <div class="message-item">
-                                                <div class="message-user-wrap">
-                                                    <div class="message-user">
-                                                        <img src="src/images/team11.jpg" alt="" />
-                                                        <div class="user-online-status"></div>
+                                            <div class="message-sidebar__users-item">
+                                                <div class="user">
+                                                    <div class="user__img">
+                                                        <img src="src/images/users/user-lg-01.png" alt="user-img">
                                                     </div>
-                                                    <div class="message-data">
-                                                        <h6>Jacob Jones</h6>
-                                                        <p>Thank you so much, sir</p>
-                                                    </div>
-                                                </div>
-                                                <div class="message-data">
-                                                    <p>7 m</p>
-                                                </div>
-                                            </div>
-                                            <div class="message-item">
-                                                <div class="message-user-wrap">
-                                                    <div class="message-user">
-                                                        <img src="src/images/team12.jpg" alt="" />
-                                                    </div>
-                                                    <div class="message-data">
-                                                        <h6>Cameron Williamson</h6>
-                                                        <p>Thank you so much, sir</p>
+                                                    <div class="user-info">
+                                                        <h6 class="user-name">jane Cooper</h6>
+                                                        <p class="user-last-message">Yeah sure, tell me Zafor</p>
                                                     </div>
                                                 </div>
-                                                <div class="message-data">
-                                                    <p>1 m</p>
+                                                <div class="message-info">
+                                                    <span class="message-info__date">4:25 PM</span>
+                                                    <span class="message-info--unread"></span>
                                                 </div>
                                             </div>
-                                            <div class="message-item">
-                                                <div class="message-user-wrap">
-                                                    <div class="message-user">
-                                                        <img src="src/images/team13.jpg" alt="" />
-                                                        <div class="user-online-status"></div>
+                                            <div class="message-sidebar__users-item">
+                                                <div class="user">
+                                                    <div class="user__img">
+                                                        <img src="src/images/users/user-lg-01.png" alt="user-img">
                                                     </div>
-                                                    <div class="message-data">
-                                                        <h6>Arlene McCoy</h6>
-                                                        <p>Thank you so much, sir</p>
-                                                    </div>
-                                                </div>
-                                                <div class="message-data">
-                                                    <p>20 m</p>
-                                                </div>
-                                            </div>
-                                            <div class="message-item">
-                                                <div class="message-user-wrap">
-                                                    <div class="message-user">
-                                                        <img src="src/images/team14.jpg" alt="" />
-                                                        <div class="user-online-status"></div>
-                                                    </div>
-                                                    <div class="message-data">
-                                                        <h6>Dianne Russell</h6>
-                                                        <p>Thank you so much, sir</p>
+                                                    <div class="user-info">
+                                                        <h6 class="user-name">jane Cooper</h6>
+                                                        <p class="user-last-message">Yeah sure, tell me Zafor</p>
                                                     </div>
                                                 </div>
-                                                <div class="message-data">
-                                                    <p>3 m</p>
+                                                <div class="message-info">
+                                                    <span class="message-info__date">4:25 PM</span>
+                                                    <span class="message-info--unread"></span>
                                                 </div>
                                             </div>
-                                            <div class="message-item">
-                                                <div class="message-user-wrap">
-                                                    <div class="message-user">
-                                                        <img src="src/images/team20.jpg" alt="" />
-                                                        <div class="user-online-status"></div>
+                                            <div class="message-sidebar__users-item">
+                                                <div class="user">
+                                                    <div class="user__img">
+                                                        <img src="src/images/users/user-lg-01.png" alt="user-img">
                                                     </div>
-                                                    <div class="message-data">
-                                                        <h6>Kristin Watson</h6>
-                                                        <p>Thank you so much, sir</p>
-                                                    </div>
-                                                </div>
-                                                <div class="message-data">
-                                                    <p>15 m</p>
-                                                </div>
-                                            </div>
-                                            <div class="message-item">
-                                                <div class="message-user-wrap">
-                                                    <div class="message-user">
-                                                        <img src="src/images/team10.jpg" alt="" />
-                                                    </div>
-                                                    <div class="message-data">
-                                                        <h6>Kathryn Murphy</h6>
-                                                        <p>Thank you so much, sir</p>
+                                                    <div class="user-info">
+                                                        <h6 class="user-name">jane Cooper</h6>
+                                                        <p class="user-last-message">Yeah sure, tell me Zafor</p>
                                                     </div>
                                                 </div>
-                                                <div class="message-data">
-                                                    <p>5 m</p>
+                                                <div class="message-info">
+                                                    <span class="message-info__date">4:25 PM</span>
+                                                    <span class="message-info--unread"></span>
                                                 </div>
                                             </div>
-                                            <div class="message-item">
-                                                <div class="message-user-wrap">
-                                                    <div class="message-user">
-                                                        <img src="src/images/team11.jpg" alt="" />
-                                                        <div class="user-online-status"></div>
+                                            <div class="message-sidebar__users-item">
+                                                <div class="user">
+                                                    <div class="user__img">
+                                                        <img src="src/images/users/user-lg-01.png" alt="user-img">
                                                     </div>
-                                                    <div class="message-data">
-                                                        <h6>Jacob Jones</h6>
-                                                        <p>Thank you so much, sir</p>
-                                                    </div>
-                                                </div>
-                                                <div class="message-data">
-                                                    <p>7 m</p>
-                                                </div>
-                                            </div>
-                                            <div class="message-item">
-                                                <div class="message-user-wrap">
-                                                    <div class="message-user">
-                                                        <img src="src/images/team12.jpg" alt="" />
-                                                        <div class="user-online-status"></div>
-                                                    </div>
-                                                    <div class="message-data">
-                                                        <h6>Cameron Williamson</h6>
-                                                        <p>Thank you so much, sir</p>
+                                                    <div class="user-info">
+                                                        <h6 class="user-name">jane Cooper</h6>
+                                                        <p class="user-last-message">Yeah sure, tell me Zafor</p>
                                                     </div>
                                                 </div>
-                                                <div class="message-data">
-                                                    <p>1 m</p>
+                                                <div class="message-info">
+                                                    <span class="message-info__date">4:25 PM</span>
+                                                    <span class="message-info--unread"></span>
                                                 </div>
                                             </div>
-                                            <div class="message-item">
-                                                <div class="message-user-wrap">
-                                                    <div class="message-user">
-                                                        <img src="src/images/team13.jpg" alt="" />
+                                            <div class="message-sidebar__users-item">
+                                                <div class="user">
+                                                    <div class="user__img">
+                                                        <img src="src/images/users/user-lg-01.png" alt="user-img">
                                                     </div>
-                                                    <div class="message-data">
-                                                        <h6>Arlene McCoy</h6>
-                                                        <p>Thank you so much, sir</p>
+                                                    <div class="user-info">
+                                                        <h6 class="user-name">jane Cooper</h6>
+                                                        <p class="user-last-message">Yeah sure, tell me Zafor</p>
                                                     </div>
                                                 </div>
-                                                <div class="message-data">
-                                                    <p>20 m</p>
+                                                <div class="message-info">
+                                                    <span class="message-info__date">4:25 PM</span>
+                                                    <span class="message-info--unread"></span>
                                                 </div>
+                                            </div>
+                                            <div class="message-sidebar__users-item">
+                                                <div class="user">
+                                                    <div class="user__img">
+                                                        <img src="src/images/users/user-lg-01.png" alt="user-img">
+                                                    </div>
+                                                    <div class="user-info">
+                                                        <h6 class="user-name">jane Cooper</h6>
+                                                        <p class="user-last-message">Yeah sure, tell me Zafor</p>
+                                                    </div>
+                                                </div>
+                                                <div class="message-info">
+                                                    <span class="message-info__date">4:25 PM</span>
+                                                    <span class="message-info--unread"></span>
+                                                </div>
+                                            </div>
+                                            <div class="message-sidebar__users-item">
+                                                <div class="user">
+                                                    <div class="user__img">
+                                                        <img src="src/images/users/user-lg-01.png" alt="user-img">
+                                                    </div>
+                                                    <div class="user-info">
+                                                        <h6 class="user-name">jane Cooper</h6>
+                                                        <p class="user-last-message">Yeah sure, tell me Zafor</p>
+                                                    </div>
+                                                </div>
+                                                <div class="message-info">
+                                                    <span class="message-info__date">4:25 PM</span>
+                                                    <span class="message-info--unread"></span>
+                                                </div>
+                                            </div>
+                                            <div class="message-sidebar__users-item">
+                                                <div class="user">
+                                                    <div class="user__img">
+                                                        <img src="src/images/users/user-lg-01.png" alt="user-img">
+                                                    </div>
+                                                    <div class="user-info">
+                                                        <h6 class="user-name">jane Cooper</h6>
+                                                        <p class="user-last-message">Yeah sure, tell me Zafor</p>
+                                                    </div>
+                                                </div>
+                                                <div class="message-info">
+                                                    <span class="message-info__date">4:25 PM</span>
+                                                    <span class="message-info--unread"></span>
+                                                </div>
+                                            </div>
+                                            <div class="message-sidebar__users-item">
+                                                <div class="user">
+                                                    <div class="user__img">
+                                                        <img src="src/images/users/user-lg-01.png" alt="user-img">
+                                                    </div>
+                                                    <div class="user-info">
+                                                        <h6 class="user-name">jane Cooper</h6>
+                                                        <p class="user-last-message">Yeah sure, tell me Zafor</p>
+                                                    </div>
+                                                </div>
+                                                <div class="message-info">
+                                                    <span class="message-info__date">4:25 PM</span>
+                                                    <span class="message-info--unread"></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                                <div class="message-inbox">
+                                    <div class="message-header">
+                                        <div class="user">
+                                            <div class="user__image">
+                                                <img src="src/images/users/user-01.png" alt="Avatar">
+                                                <span class="user-active"></span>
+                                            </div>
+                                            <div class="user__info">
+                                                <h6><a href="#">Jane Cooper</a></h6>
+                                                <p>Active Now</p>
+                                            </div>
+                                        </div>
+                                        <div class="message-header-right">
+                                            <!-- Option Content -->
+                                            <div class="options">
+                                                <span>
+                                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <path d="M12 13.525C12.8422 13.525 13.525 12.8422 13.525 12C13.525 11.1578 12.8422 10.475 12 10.475C11.1578 10.475 10.475 11.1578 10.475 12C10.475 12.8422 11.1578 13.525 12 13.525Z" fill="currentColor" stroke="currentColor" stroke-width="0.8"/>
+                                                        <path d="M19 13.525C19.8422 13.525 20.525 12.8422 20.525 12C20.525 11.1578 19.8422 10.475 19 10.475C18.1578 10.475 17.475 11.1578 17.475 12C17.475 12.8422 18.1578 13.525 19 13.525Z" fill="currentColor" stroke="currentColor" stroke-width="0.8"/>
+                                                        <path d="M5 13.525C5.84223 13.525 6.525 12.8422 6.525 12C6.525 11.1578 5.84223 10.475 5 10.475C4.15777 10.475 3.475 11.1578 3.475 12C3.475 12.8422 4.15777 13.525 5 13.525Z" fill="currentColor" stroke="currentColor" stroke-width="0.8"/>
+                                                        </svg>
+                                                        
+                                                </span>
+        
                                             </div>
                                         </div>
                                     </div>
-
-                                    <div class="student-message-right">
-                                        <div class="student-message-header">
-                                            <div class="message-user-wrap">
-                                                <div class="message-user">
-                                                    <img src="src/images/team9.jpg" alt="" />
-                                                    <div class="user-online-status"></div>
+                                    <div class="message-body">
+        
+                                        <div class="message-contents">
+                                            <h6 class="message-contents__date">Today</h6>
+                                            <div class="message-contents__users">
+        
+        
+                                                <!-- Send Primary Message  -->
+                                                <div class="user user-active">
+                                                    <div class="user-wrapper">
+                                                        <div class="user-img">
+                                                            <img src="src/images/users/user-01.png" alt="user-img">
+                                                        </div>
+                                                        <span class="time">2:53 PM</span>
+                                                    </div>
+                                                    <div class="user-sendcontent">
+                                                    
+                                                        <div class="user-sendcontent__message">
+                                                        <p>  Hello, Kevin. My name is Jodon. I saw you that you create new assignment for your school projects.</p>
+        
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div class="message-data">
-                                                    <h6>Full name</h6>
-                                                    <p>Active Now</p>
+        
+        
+                                                <!-- Send Primary Message  -->
+                                                <div class="user user-current">
+                                                    <div class="user-sendcontent">
+                                                        <span class="time">2:53 PM</span>
+                                                        <div class="user-sendcontent__message">
+                                                        <p>  Hello, Good Evening. </p>
+                                                        </div>
+                                                    </div>
                                                 </div>
+                                                <div class="user user-current">
+                                                    <div class="user-sendcontent">
+                                                        <div class="user-sendcontent__message">
+                                                        <p> I’m Zafor </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+        
+                                                <!-- Send Primary Message  -->
+                                                <div class="user user-current">
+                                                    <div class="user-sendcontent">
+                                                        <div class="user-sendcontent__message">
+                                                            <p>  I only have a small doubt about your lecture. can you give me some time for this? </p>
+                                                        </div>
+        
+                                                    </div>
+                                                </div>
+        
+                                                <!-- Send Primary Message  -->
+                                                <div class="user user-active">
+                                                    <div class="user-wrapper">
+                                                        <div class="user-img">
+                                                            <img src="src/images/users/user-01.png" alt="user-img">
+                                                        </div>
+                                                        <span class="time">2:53 PM</span>
+                                                    </div>
+                                                    <div class="user-sendcontent">
+                                                        
+                                                        <div class="user-sendcontent__message">
+                                                        <p>Yeah sure, tell me zafor </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+        
+                                                <!-- Send Primary Message  -->
+                                                <div class="user user-current">
+                                                    <div class="user-sendcontent">
+                                                        <span class="time">2:53 PM</span>
+                                                        <div class="user-sendcontent__message">
+                                                        <p>  Hello, Good Evening. </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="user user-current">
+                                                    <div class="user-sendcontent">
+                                                        <div class="user-sendcontent__message">
+                                                        <p> I’m Zafor </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+        
+                                                <!-- Send Primary Message  -->
+                                                <div class="user user-current">
+                                                    <div class="user-sendcontent">
+                                                        <div class="user-sendcontent__message">
+                                                            <p>  I only have a small doubt about your lecture. can you give me some time for this? </p>
+                                                        </div>
+        
+                                                    </div>
+                                                </div>
+        
+                                                <!-- Send Primary Message  -->
+                                                <div class="user user-active">
+                                                    <div class="user-wrapper">
+                                                        <div class="user-img">
+                                                            <img src="src/images/users/user-01.png" alt="user-img">
+                                                        </div>
+                                                        <span class="time">2:53 PM</span>
+                                                    </div>
+                                                    <div class="user-sendcontent">
+                                                        
+                                                        <div class="user-sendcontent__message">
+                                                        <p>Yeah sure, tell me zafor </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+        
                                             </div>
-                                            <a class="default-btn btn-medium bg-gray icon-btn-left" href="#">
-                                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                    <path d="M20.2495 5.25L3.74951 5.25001" stroke="#1D2026" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                    <path d="M9.75 9.75V15.75" stroke="#1D2026" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                    <path d="M14.25 9.75V15.75" stroke="#1D2026" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                    <path
-                                                        d="M18.75 5.25V19.5C18.75 19.6989 18.671 19.8897 18.5303 20.0303C18.3897 20.171 18.1989 20.25 18 20.25H6C5.80109 20.25 5.61032 20.171 5.46967 20.0303C5.32902 19.8897 5.25 19.6989 5.25 19.5V5.25"
-                                                        stroke="#1D2026"
-                                                        stroke-width="1.5"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                    />
-                                                    <path
-                                                        d="M15.75 5.25V3.75C15.75 3.35218 15.592 2.97064 15.3107 2.68934C15.0294 2.40804 14.6478 2.25 14.25 2.25H9.75C9.35218 2.25 8.97064 2.40804 8.68934 2.68934C8.40804 2.97064 8.25 3.35218 8.25 3.75V5.25"
-                                                        stroke="#1D2026"
-                                                        stroke-width="1.5"
-                                                        stroke-linecap="round"
-                                                        stroke-linejoin="round"
-                                                    />
-                                                </svg>
-                                                Delete Message
-                                            </a>
                                         </div>
-                                        <div class="student-message-body">
-                                            <div class="chat-box-card">
-                                                <div class="chat-item">
-                                                    <p><img src="src/images/photos.png" alt="" /> Time</p>
-                                                    <div class="chat-data">
-                                                        <p>
-                                                            Hello and thanks for signing up to the course. If you have any questions about<br />
-                                                            the course or Adobe XD, feel free to get in touch and I'll be happy to help 😀
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div class="chat-item">
-                                                    <p>Time</p>
-                                                    <div class="chat-data">
-                                                        <p>
-                                                            Hello and thanks for signing up to the course. If you have any questions about<br />
-                                                            the course or Adobe XD, feel free to get in touch and I'll be happy to help
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                                <div class="chat-item">
-                                                    <p><img src="src/images/photos.png" alt="" /> Time</p>
-                                                    <div class="chat-data">
-                                                        <p>Hello, Good Evening. Sani Brother</p>
-                                                        <br />
-                                                        <p>Hello, Good Evening. Sani Brother</p>
-                                                        <br />
-                                                        <p>Hello, Good Evening. Sani Brother</p>
-                                                    </div>
-                                                </div>
-                                                <div class="chat-item">
-                                                    <p>Time</p>
-                                                    <div class="chat-data">
-                                                        <p>Hello, Good Evening. My Awesome Greatest Mind_Blowing Students</p>
-                                                    </div>
-                                                </div>
-                                                <div class="chat-item">
-                                                    <div class="chat-data bg-orange">
-                                                        <p>Hello, Good Evening. My Awesome Greatest Mind_Blowing Students</p>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="student-message-body-footer">
-                                                <div class="searchbox">
-                                                    <form action="#">
-                                                        <input type="text" placeholder="Type your message" class="searchbox-input" />
-                                                        <svg class="dashboard-search-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                            <path
-                                                                d="M9 20.2499H4.5C4.30109 20.2499 4.11032 20.1709 3.96967 20.0302C3.82902 19.8896 3.75 19.6988 3.75 19.4999V15.3105C3.75 15.2121 3.7694 15.1145 3.80709 15.0235C3.84478 14.9325 3.90003 14.8499 3.96967 14.7802L15.2197 3.53022C15.3603 3.38956 15.5511 3.31055 15.75 3.31055C15.9489 3.31055 16.1397 3.38956 16.2803 3.53022L20.4697 7.71956C20.6103 7.86021 20.6893 8.05097 20.6893 8.24989C20.6893 8.4488 20.6103 8.63956 20.4697 8.78022L9 20.2499Z"
-                                                                stroke="#FF6636"
-                                                                stroke-width="1.5"
-                                                                stroke-linecap="round"
-                                                                stroke-linejoin="round"
-                                                            />
-                                                            <path d="M12.75 6L18 11.25" stroke="#FF6636" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                            <path d="M20.2501 20.2492H9.00013L3.79785 15.0469" stroke="#FF6636" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                        </svg>
-                                                        <button id="send-btn">
-                                                            Send
+        
+        
+                                        <div class="message-body-search">
+                                            <form action="#">
+                                                <div class="input-field message-body-search-field">
+                                                    <div class="input-field-wrapper">
+                                                        <span class="icon">
                                                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                                <path
-                                                                    d="M20.5816 11.3465L4.74585 2.47843C4.61262 2.40383 4.4598 2.37166 4.30781 2.38624C4.15582 2.40081 4.0119 2.46143 3.89528 2.55999C3.77866 2.65855 3.6949 2.79035 3.65519 2.93779C3.61549 3.08523 3.62173 3.24127 3.67309 3.38506L6.66006 11.7486C6.71832 11.9117 6.71832 12.09 6.66006 12.2531L3.67309 20.6166C3.62173 20.7604 3.61549 20.9165 3.65519 21.0639C3.6949 21.2113 3.77866 21.3431 3.89528 21.4417C4.0119 21.5403 4.15582 21.6009 4.30781 21.6155C4.45981 21.63 4.61263 21.5979 4.74585 21.5233L20.5816 12.6552C20.6979 12.5901 20.7948 12.4951 20.8622 12.3801C20.9296 12.2651 20.9652 12.1342 20.9652 12.0008C20.9652 11.8675 20.9296 11.7366 20.8622 11.6216C20.7948 11.5066 20.6979 11.4116 20.5816 11.3465Z"
-                                                                    fill="white"
-                                                                />
-                                                                <path d="M6.75 12H12.75" stroke="#FF6636" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
-                                                            </svg>
-                                                        </button>
-                                                    </form>
+                                                                <path d="M9 20.2518H4.5C4.30109 20.2518 4.11032 20.1728 3.96967 20.0322C3.82902 19.8915 3.75 19.7008 3.75 19.5018V15.3125C3.75 15.214 3.7694 15.1165 3.80709 15.0255C3.84478 14.9345 3.90003 14.8518 3.96967 14.7822L15.2197 3.53217C15.3603 3.39152 15.5511 3.3125 15.75 3.3125C15.9489 3.3125 16.1397 3.39152 16.2803 3.53217L20.4697 7.72151C20.6103 7.86216 20.6893 8.05293 20.6893 8.25184C20.6893 8.45075 20.6103 8.64152 20.4697 8.78217L9 20.2518Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M12.75 6L18 11.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                <path d="M20.2492 20.2492H8.99916L3.79688 15.0469" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </svg>
+                                                                
+                                                        </span>
+                                                        <textarea  placeholder="Type your messgae"></textarea>
+                                                    </div>
+                                                    <button class="message-body-search-btn button button--md button-i--r d-flex align-items-center">
+                                                        send 
+                                                        <span>
+                                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                <path d="M20.5811 11.3465L4.74536 2.47843C4.61214 2.40383 4.45932 2.37166 4.30732 2.38624C4.15533 2.40081 4.01141 2.46143 3.89479 2.55999C3.77817 2.65855 3.69441 2.79035 3.65471 2.93779C3.615 3.08523 3.62125 3.24127 3.6726 3.38506L6.65957 11.7486C6.71783 11.9117 6.71783 12.09 6.65957 12.2531L3.6726 20.6166C3.62124 20.7604 3.615 20.9165 3.65471 21.0639C3.69441 21.2113 3.77817 21.3431 3.89479 21.4417C4.01141 21.5403 4.15533 21.6009 4.30732 21.6155C4.45932 21.63 4.61214 21.5979 4.74536 21.5233L20.5811 12.6552C20.6975 12.5901 20.7943 12.4951 20.8617 12.3801C20.9291 12.2651 20.9647 12.1342 20.9647 12.0008C20.9647 11.8675 20.9291 11.7366 20.8617 11.6216C20.7943 11.5066 20.6975 11.4116 20.5811 11.3465Z" fill="white"/>
+                                                                <path d="M6.75 12H12.75" stroke="#FF6636" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </svg>
+                                                                
+                                                        </span>
+                                                        
+                                                    </button>
                                                 </div>
-                                            </div>
+                                            </form>
                                         </div>
                                     </div>
                                 </div>

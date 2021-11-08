@@ -93,6 +93,9 @@ $secondary: #474463;
         background-color: #fff;
         transition: all 0.3s linear;
         justify-content: space-between;
+        @include max(767px) {
+          justify-content: center;
+        }
         @media (max-width: 575px) {
           padding: 12px;
         }
@@ -123,6 +126,7 @@ $secondary: #474463;
           @include max(767px) {
             width: 24px;
             height: 24px;
+            margin-right: 0px;
           }
           img {
             border-radius: 50%;

@@ -160,10 +160,6 @@
     background-color: #fff;
     border: 1px solid #ffddd1;
     justify-content: space-between;
-    // @include mq('tablet', max) {
-    //   display: block;
-    //   text-align: center;
-    // }
     @include max(991px) {
       max-width: 700px;
       overflow: hidden;
@@ -197,6 +193,18 @@
         position: absolute;
         background-color: #ff6636;
       }
+    }
+  }
+
+  // messenger
+  .message {
+    margin-bottom: 80px;
+    @include max(767px) {
+      margin-bottom: 40px;
+    }
+    &-sidebar,
+    &-inbox {
+      border: 1px solid #e9eaf0;
     }
   }
 }
