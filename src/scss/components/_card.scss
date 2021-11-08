@@ -170,7 +170,10 @@
       color: #4e5566;
       position: absolute;
       transform: translateY(-50%);
-
+      @include max(575px) {
+        top: 12px;
+        transform: translateY(0px);
+      }
       &:hover {
         color: #1d2026;
       }

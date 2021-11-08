@@ -7,6 +7,23 @@
   text-transform: capitalize;
 }
 
+%text-two {
+  font-size: 18px;
+  color: #1d2026;
+  font-weight: 500;
+  line-height: 24px;
+  text-transform: capitalize;
+}
+
+%label-text {
+  font-size: 14px;
+  color: #1d2026;
+  line-height: 22px;
+  margin-bottom: 6px;
+  letter-spacing: -0.01em;
+  text-transform: capitalize;
+}
+
 // Input field
 %input {
   width: 100%;
@@ -28,13 +45,4 @@
   &:focus {
     border: 1px solid #ff6636;
   }
-}
-
-%label-text {
-  font-size: 14px;
-  color: #1d2026;
-  line-height: 22px;
-  margin-bottom: 6px;
-  letter-spacing: -0.01em;
-  text-transform: capitalize;
 }

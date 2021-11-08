@@ -450,4 +450,28 @@
       }
     }
   }
+
+  &-publish {
+    margin-bottom: 40px;
+    @include max(991px) {
+      margin-bottom: 20px;
+    }
+    h2 {
+      @extend %text-two;
+      margin-bottom: 24px;
+    }
+
+    &__search-instructor {
+      margin-top: 24px;
+      .card-instructor {
+        @include max(767px) {
+          margin-bottom: 16px;
+        }
+
+        &::nth-last-child(1) {
+          margin-bottom: 0px;
+        }
+      }
+    }
+  }
 }
