@@ -28,7 +28,7 @@
           color: #8c94a3;
           padding: 16px 20px;
           position: relative;
-          transition: all 0.4s;
+          transition: all 0.3s;
           &:hover {
             color: white;
           }
@@ -40,7 +40,7 @@
             position: absolute;
             height: 2px;
             background-color: #ff6636;
-            transition: 0.4s;
+            transition: 0.3s;
             transform: translateX(-50%);
           }
           &:hover::before {
@@ -258,7 +258,7 @@
       text-transform: capitalize;
       color: #ff6636;
       margin-right: 8px;
-      transition: all 0.4s;
+      transition: all 0.3s;
       &:last-child {
         margin-right: 0;
       }
@@ -408,7 +408,7 @@
   position: fixed;
   z-index: 111;
   margin-left: -300px;
-  transition: 0.5s;
+  transition: 0.3s;
   padding-right: 0px;
   height: 100vh;
   overflow-y: scroll;
@@ -430,7 +430,7 @@
         letter-spacing: -0.01em;
         color: #6e7485;
         padding: 14px 20px;
-        transition: all 0.4s;
+        transition: all 0.3s;
         display: block;
         &:hover {
           color: #ff6636;
@@ -488,7 +488,7 @@
   z-index: 0;
   visibility: hidden;
   opacity: 0;
-  transition: 0.5s;
+  transition: 0.3s;
 }
 .offcanvas-overlay.active {
   opacity: 0.3;

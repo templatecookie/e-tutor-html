@@ -1,11 +1,11 @@
-.category-section .category-content{
+.category-section .category-content {
   margin-bottom: 24px;
 }
 .category-content {
   display: flex;
   padding: 20px;
-  transition: 0.5s;
-  
+  transition: 0.3s;
+
   background-color: #ebebff;
 
   &:hover {
@@ -30,13 +30,13 @@
     text-align: center;
     margin-right: 20px;
     background-color: #fff;
-    transition: 0.5s;
+    transition: 0.3s;
 
     svg {
-      transition: 0.5s;
+      transition: 0.3s;
 
       path {
-        transition: 0.5s;
+        transition: 0.3s;
       }
     }
   }

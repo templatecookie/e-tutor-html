@@ -98,7 +98,7 @@
       color: #8c94a3;
       text-transform: uppercase;
       display: flex;
-      transition: all 0.4s;
+      transition: all 0.3s;
       &:hover {
         color: #ff6636;
       }
@@ -106,7 +106,7 @@
         margin-right: 10px;
       }
       path {
-        transition: all 0.4s;
+        transition: all 0.3s;
       }
       &:hover path {
         stroke: #ff6636;

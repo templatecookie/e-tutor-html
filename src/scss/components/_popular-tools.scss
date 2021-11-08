@@ -19,7 +19,7 @@
   display: flex !important;
   flex-direction: column;
   justify-content: center;
-  transition: all 0.4s;
+  transition: all 0.3s;
   background-color: #fff;
   margin: 24px 1px 40px;
   &:hover {
@@ -35,7 +35,7 @@
     font-size: 16px;
     line-height: 22px;
     color: #1d2026;
-    transition: all 0.4s;
+    transition: all 0.3s;
   }
   p {
     font-size: 12px;
@@ -43,7 +43,6 @@
     color: #8c94a3;
   }
 }
-
 
 .tools-slider .owl-nav {
   position: absolute;
@@ -95,7 +94,7 @@
         line-height: 22px;
         letter-spacing: -0.01em;
         color: #1d2026;
-        transition: all 0.4s;
+        transition: all 0.3s;
         display: block;
         text-align: center;
         &:hover {

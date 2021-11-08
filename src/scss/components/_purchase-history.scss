@@ -10,7 +10,7 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-      transition: all 0.5s;
+      transition: all 0.3s;
       @include mq('tablet-small', max) {
         padding: 15px;
       }
@@ -89,7 +89,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: all 0.4s;
+  transition: all 0.3s;
   @include mq('tablet-small', max) {
     height: 40px;
     width: 40px;
@@ -312,7 +312,7 @@
         align-items: center;
         justify-content: space-between;
         background-color: #fff;
-        transition: 0.5s;
+        transition: 0.3s;
         padding: 24px 0;
         border-bottom: 1px solid #e9eaf0;
         @include mq('tablet', max) {
@@ -330,7 +330,7 @@
 
         svg {
           path {
-            transition: 0.5s;
+            transition: 0.3s;
           }
         }
 
@@ -431,7 +431,7 @@
         }
 
         .move-to-wishlist {
-          transition: 0.5s;
+          transition: 0.3s;
 
           a {
             font-style: normal;
@@ -442,7 +442,7 @@
             text-transform: capitalize;
             color: $primary-500;
             padding: 0 16px;
-            transition: 0.5s;
+            transition: 0.3s;
           }
         }
 
@@ -526,7 +526,7 @@
         align-items: center;
         justify-content: space-between;
         background-color: #fff;
-        transition: 0.5s;
+        transition: 0.3s;
         padding: 24px 0;
         border-bottom: 1px solid #e9eaf0;
         @include mq('tablet', max) {
@@ -540,7 +540,7 @@
         }
         svg {
           path {
-            transition: 0.5s;
+            transition: 0.3s;
           }
         }
 
@@ -625,7 +625,7 @@
         }
 
         .move-to-wishlist {
-          transition: 0.5s;
+          transition: 0.3s;
 
           a {
             font-style: normal;
@@ -636,7 +636,7 @@
             text-transform: capitalize;
             color: $primary-500;
             padding: 0 16px;
-            transition: 0.5s;
+            transition: 0.3s;
           }
         }
 
@@ -656,7 +656,7 @@
         column-gap: 12px;
         @include mq('tablet', max) {
           margin-top: 10px;
-          justify-content: flex-start!important;
+          justify-content: flex-start !important;
         }
 
         button {
@@ -676,7 +676,7 @@
 
         button:hover {
           background-color: $primary-600;
-          transition: all 0.4s;
+          transition: all 0.3s;
           &:hover {
             background-color: #ff6636;
           }
@@ -700,13 +700,13 @@
             width: 176px;
             line-height: 48px;
             text-align: center;
-            transition: 0.5s;
+            transition: 0.3s;
           }
         }
 
         .wishlist-buy {
           background: #f5f7fa;
-          transition: 0.5s;
+          transition: 0.3s;
           &:hover {
             background-color: #ff6636;
           }
@@ -718,7 +718,7 @@
 
         .wishlist-add {
           background-color: $primary-500;
-          transition: 0.5s;
+          transition: 0.3s;
           &:hover {
             background-color: $primary-600;
           }

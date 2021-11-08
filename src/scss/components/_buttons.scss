@@ -230,7 +230,7 @@
 
 .edit-biography-content .edit-biography-right .edit-btn,
 .edit-biography-content .edit-biography-right .notification {
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .edit-biography-content .edit-biography-right .notification:hover {
@@ -248,7 +248,7 @@
 }
 
 .dashboard-content .dashboard-right .notification {
-  transition: 0.5s;
+  transition: 0.3s;
 }
 
 .dashboard-content .dashboard-right .notification:hover {
@@ -311,7 +311,7 @@ select {
 
   font-size: 14px;
   margin-left: 20px;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 
 .custom-select-trigger:after {
@@ -347,7 +347,7 @@ select {
   padding: 10px 0;
   box-sizing: border-box;
   background: #fff;
-  transition: all 0.2s ease-in-out;
+  transition: all 0.3s ease-in-out;
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
@@ -382,7 +382,7 @@ select {
   line-height: 22px;
   letter-spacing: -0.01em;
   color: #4e5566;
-  transition: all 0.4s;
+  transition: all 0.3s;
   padding: 5px 18px;
 }
 .custom-option:hover {
@@ -439,7 +439,7 @@ select {
   line-height: 40px;
   padding: 0 16px;
   font-weight: 600;
-  transition: 0.5s;
+  transition: 0.3s;
   text-align: center;
 }
 .lecture-card-btn:hover {
@@ -459,7 +459,7 @@ select {
   font-size: 16px;
   line-height: 22px;
   border: 1px dashed #e9eaf0;
-  transition: 0.5s;
+  transition: 0.3s;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -503,7 +503,7 @@ button.default-btn {
   letter-spacing: -0.004em;
   text-transform: capitalize;
   color: #fff;
-  transition: all 0.4s;
+  transition: all 0.3s;
   text-align: center;
   border: none;
   &.icon-btn {

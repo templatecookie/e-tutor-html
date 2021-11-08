@@ -32,7 +32,7 @@
           font-size: 14px;
           color: #8c94a3;
           padding: 15px 27px;
-          transition: 0.5s;
+          transition: 0.3s;
 
           span {
             display: block;
@@ -44,7 +44,7 @@
             color: #fff;
             float: right;
             text-align: center;
-            transition: all 0.4s;
+            transition: all 0.3s;
           }
           &:hover span {
             color: #ff6636;
@@ -58,7 +58,7 @@
           &:hover svg {
             path {
               stroke: #fff;
-              transition: 0.5s;
+              transition: 0.3s;
             }
           }
         }
@@ -73,7 +73,7 @@
       margin-right: 10px;
       path {
         stroke: #8c94a3;
-        transition: 0.5s;
+        transition: 0.3s;
       }
     }
   }

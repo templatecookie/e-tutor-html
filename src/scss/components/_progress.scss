@@ -1,7 +1,7 @@
 .progress-content {
   padding: 24px;
   text-align: center;
-  transition: 0.5s;
+  transition: 0.3s;
   background-color: #fff;
   margin-bottom: 20px;
   &:hover {
@@ -28,10 +28,10 @@
     margin-bottom: 24px;
 
     svg {
-      transition: 0.5s;
+      transition: 0.3s;
 
       path {
-        transition: 0.5s;
+        transition: 0.3s;
       }
     }
   }
