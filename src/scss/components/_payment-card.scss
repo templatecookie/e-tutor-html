@@ -3,7 +3,7 @@
   padding: 24px;
   position: relative;
   overflow: hidden;
-  width: 386px;
+  width: 100%;
   z-index: 1;
 
   svg {
@@ -120,7 +120,7 @@
   padding: 24px;
   position: relative;
   overflow: hidden;
-  width: 386px;
+  width: 100%;
   z-index: 1;
 
   svg {
@@ -230,4 +230,45 @@
   width: 90px;
   border-radius: 50%;
   background-color: #ffffff0d;
+}
+.card-body-wrap {
+  padding: 20px;
+}
+
+.payment-card-slider{
+  .owl-dots{
+    bottom: -58px;
+    position: absolute;
+    .owl-dot{
+      span{
+        width: 10px;
+        height: 10px;
+        margin: 0 3px;
+        background: #FF6636;
+        display: block;
+        transition: all 0.4s;
+        border-radius: 30px;
+      }
+    }
+    .owl-dot.active span{
+      background: #869791;
+    }
+  }
+}
+
+.card-owl-nav {
+  text-align: right;
+  margin: 30px 0;
+}
+
+.card-next-button,
+.card-prev-button{
+  cursor: pointer;
+  path{
+    stroke:#CED1D9;
+    transition: all 0.4s;
+  }
+  &:hover path{
+    stroke: #4E5566;
+  }
 }
