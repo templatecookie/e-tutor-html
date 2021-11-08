@@ -132,6 +132,50 @@
       margin-top: 20px;
     }
   }
+
+  &-instructor {
+    padding: 16px;
+    display: flex;
+    overflow: hidden;
+    position: relative;
+    align-items: center;
+    background-color: #f5f7fa;
+    .image {
+      width: 48px;
+      height: 48px;
+      overflow: hidden;
+      margin-right: 12px;
+      border-radius: 50%;
+      img {
+        width: inherit;
+        height: inherit;
+      }
+    }
+    .info {
+      h6 {
+        @extend %text-one;
+        margin: 0;
+        color: #1d2026;
+        font-weight: 600;
+      }
+
+      p {
+        @extend %text-one;
+        color: #6e7485;
+      }
+    }
+    .close {
+      top: 50%;
+      right: 16px;
+      color: #4e5566;
+      position: absolute;
+      transform: translateY(-50%);
+
+      &:hover {
+        color: #1d2026;
+      }
+    }
+  }
 }
 
 .course-item-4 {
