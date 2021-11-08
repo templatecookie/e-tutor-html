@@ -5,6 +5,10 @@
 
 .breadcrumb-menu {
   text-align: center;
+  &.text-left{
+    text-align: left;
+    margin-bottom: 16px;
+  }
   h3 {
     font-weight: 600;
     font-size: 24px;

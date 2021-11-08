@@ -948,6 +948,9 @@ button.course-item-5-card-info-tag {
   display: flex;
   overflow: hidden;
   flex-wrap: wrap;
+  padding: 24px;
+  margin-bottom: 24px;
+  background-color: #fff;
 
   img {
     width: 220px;
@@ -977,6 +980,9 @@ button.course-item-5-card-info-tag {
     .withdrew-money-card-img {
       width: 352px;
       height: 264px;
+      @include mq('tablet', max) {
+        width: 100%;
+      }
 
       img {
         width: 100%;

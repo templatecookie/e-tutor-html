@@ -166,9 +166,11 @@
 
 .copywright-text {
   width: 100%;
-  text-align: center;
 }
 .footer-bottom-menu {
   width: 100%;
-  text-align: center;
+  text-align: right;
+  @include mq('tablet-small', max) {
+    text-align: center;
+  }
 }

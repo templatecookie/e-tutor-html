@@ -256,6 +256,10 @@
     }
 
     &--2 {
+      grid-template-columns: repeat(2, 1fr);
+      @include max(767px) {
+        grid-template-columns: 1fr;
+      }
     }
   }
 
