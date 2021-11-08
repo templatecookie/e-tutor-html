@@ -419,4 +419,35 @@
       }
     }
   }
+
+  &-requirements {
+    &__header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 24px;
+      justify-content: space-between;
+      @include max(575px) {
+        align-items: flex-end;
+        flex-direction: column;
+      }
+      h2 {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 500;
+        color: #1d2026;
+        line-height: 24px;
+        text-transform: capitalize;
+        @include max(575px) {
+          width: 100%;
+        }
+      }
+
+      a {
+        @extend %text-one;
+        color: #ff6636;
+        font-weight: 500;
+        white-space: nowrap;
+      }
+    }
+  }
 }
