@@ -1,3 +1,233 @@
+// Button component
+.button {
+  color: #fff;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 40px;
+  padding: 0px 16px;
+  text-align: center;
+  white-space: nowrap;
+  display: inline-block;
+  letter-spacing: -0.04em;
+  text-transform: capitalize;
+  background-color: #ff6636;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    background-color: #cc522b;
+    box-shadow: 0px 6px 20px 0px #cc522b80;
+  }
+
+  // buttons size
+  &--md {
+    font-size: 16px;
+    line-height: 48px;
+    padding: 0px 24px;
+    letter-spacing: -0.008em;
+  }
+
+  &--lg {
+    font-size: 18px;
+    line-height: 56px;
+    padding: 0px 32px;
+    letter-spacing: -0.01em;
+  }
+
+  // icons
+  &-i {
+    // display: flex;
+    // align-items: center;
+    span {
+      margin-right: 15px;
+      display: inline-block;
+    }
+
+    &--r {
+      // display: flex;
+      // align-items: center;
+      // justify-content: center;
+      span {
+        margin-left: 15px;
+      }
+    }
+    &--l {
+      // display: flex;
+      // align-items: center;
+      // justify-content: center;
+      span {
+        margin-right: 15px;
+      }
+    }
+  }
+
+  // Disable buttons
+  &-d {
+    user-select: none;
+    pointer-events: none;
+    background: #ffddd1;
+    &:hover {
+      box-shadow: none;
+    }
+
+    // remove box shaddow
+
+    &--p-s,
+    &--p-t,
+    &--s,
+    &--s-s,
+    &--s-t,
+    &--g,
+    &--g-s,
+    &--g-t {
+      &:hover {
+        box-shadow: none;
+      }
+    }
+
+    // button primary
+    &--p-s {
+      color: #ffa386;
+      background-color: #ffeee8;
+    }
+
+    &--p-t {
+      color: #ffa386;
+      background-color: transparent;
+    }
+
+    // buttons secondary
+    &--s {
+      background-color: #cdcbfe;
+      &:hover {
+        background-color: #cdcbfe;
+      }
+    }
+
+    &--s-s {
+      color: #9a95fe;
+      background-color: #ebebff;
+      &:hover {
+        background-color: #ebebff;
+      }
+    }
+
+    &--s-t {
+      color: #9a95fe;
+      background-color: transparent;
+      &:hover {
+        background-color: transparent;
+      }
+    }
+
+    // buttons gray
+    &--g {
+      background-color: #ced1d9;
+      &:hover {
+        background-color: #ced1d9;
+      }
+    }
+
+    &--g-s {
+      color: #b7bac7;
+      background-color: #f5f7fa;
+      &:hover {
+        background-color: #f5f7fa;
+      }
+    }
+
+    &--g-t {
+      color: #b7bac7;
+      background-color: transparent;
+      &:hover {
+        background-color: #f5f7fa;
+      }
+    }
+  }
+
+  // button primary secondary
+  &-p-s {
+    color: #ff6636;
+    background-color: #ffeee8;
+    &:hover {
+      color: #cc522b;
+      background-color: #ffddd1;
+    }
+  }
+
+  // button primary transparent
+  &-p-t {
+    color: #ff6636;
+    background-color: transparent;
+    &:hover {
+      color: #cc522b;
+      background-color: #ffeee8;
+    }
+  }
+
+  // button secondary
+  &-s {
+    background: #564ffd;
+
+    &:hover {
+      background-color: #453fca;
+      box-shadow: 0px 6px 20px 0px #453fca80;
+    }
+  }
+
+  // button secondary - secondary
+  &-s-s {
+    color: #564ffd;
+    background-color: #ebebff;
+    &:hover {
+      color: #453fca;
+      box-shadow: none;
+      background-color: #cdcbfe;
+    }
+  }
+
+  // button secondar transparent
+  &-s-t {
+    color: #564ffd;
+    background-color: transparent;
+    &:hover {
+      color: #453fca;
+      box-shadow: none;
+      background-color: #ebebff;
+    }
+  }
+
+  // button gray
+  &-g {
+    background-color: #1d2026;
+    &:hover {
+      background-color: #363b47;
+      box-shadow: none;
+      box-shadow: 0px 6px 20px 0px #363b4780;
+    }
+  }
+
+  // button gray secondary
+  &-g-s {
+    color: #1d2026;
+    background-color: #f5f7fa;
+    &:hover {
+      color: #363b47;
+      box-shadow: none;
+      background-color: #e9eaf0;
+    }
+  }
+
+  // button gray transparent
+  &-g-t {
+    color: #1d2026;
+    background-color: transparent;
+    &:hover {
+      color: #1d2026;
+      box-shadow: none;
+      background-color: #f5f7fa;
+    }
+  }
+}
+
 .edit-biography-content .edit-biography-right .edit-btn,
 .edit-biography-content .edit-biography-right .notification {
   transition: 0.5s;
@@ -356,234 +586,4 @@ a.default-btn.bg-pink3 {
 }
 a.default-btn.color-pink {
   color: #ffa386;
-}
-
-// Button component
-.button {
-  color: #fff;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 40px;
-  padding: 0px 16px;
-  text-align: center;
-  white-space: nowrap;
-  display: inline-block;
-  letter-spacing: -0.04em;
-  text-transform: capitalize;
-  background-color: #ff6636;
-  transition: all 0.3s ease-in-out;
-  &:hover {
-    background-color: #cc522b;
-    box-shadow: 0px 6px 20px 0px #cc522b80;
-  }
-
-  // buttons size
-  &--md {
-    font-size: 16px;
-    line-height: 48px;
-    padding: 0px 24px;
-    letter-spacing: -0.008em;
-  }
-
-  &--lg {
-    font-size: 18px;
-    line-height: 56px;
-    padding: 0px 32px;
-    letter-spacing: -0.01em;
-  }
-
-  // icons
-  &-i {
-    // display: flex;
-    // align-items: center;
-    span {
-      margin-right: 15px;
-      display: inline-block;
-    }
-
-    &--r {
-      // display: flex;
-      // align-items: center;
-      // justify-content: center;
-      span {
-        margin-left: 15px;
-      }
-    }
-    &--l {
-      // display: flex;
-      // align-items: center;
-      // justify-content: center;
-      span {
-        margin-right: 15px;
-      }
-    }
-  }
-
-  // Disable buttons
-  &-d {
-    user-select: none;
-    pointer-events: none;
-    background: #ffddd1;
-    &:hover {
-      box-shadow: none;
-    }
-
-    // remove box shaddow
-
-    &--p-s,
-    &--p-t,
-    &--s,
-    &--s-s,
-    &--s-t,
-    &--g,
-    &--g-s,
-    &--g-t {
-      &:hover {
-        box-shadow: none;
-      }
-    }
-
-    // button primary
-    &--p-s {
-      color: #ffa386;
-      background-color: #ffeee8;
-    }
-
-    &--p-t {
-      color: #ffa386;
-      background-color: transparent;
-    }
-
-    // buttons secondary
-    &--s {
-      background-color: #cdcbfe;
-      &:hover {
-        background-color: #cdcbfe;
-      }
-    }
-
-    &--s-s {
-      color: #9a95fe;
-      background-color: #ebebff;
-      &:hover {
-        background-color: #ebebff;
-      }
-    }
-
-    &--s-t {
-      color: #9a95fe;
-      background-color: transparent;
-      &:hover {
-        background-color: transparent;
-      }
-    }
-
-    // buttons gray
-    &--g {
-      background-color: #ced1d9;
-      &:hover {
-        background-color: #ced1d9;
-      }
-    }
-
-    &--g-s {
-      color: #b7bac7;
-      background-color: #f5f7fa;
-      &:hover {
-        background-color: #f5f7fa;
-      }
-    }
-
-    &--g-t {
-      color: #b7bac7;
-      background-color: transparent;
-      &:hover {
-        background-color: #f5f7fa;
-      }
-    }
-  }
-
-  // button primary secondary
-  &-p-s {
-    color: #ff6636;
-    background-color: #ffeee8;
-    &:hover {
-      color: #cc522b;
-      background-color: #ffddd1;
-    }
-  }
-
-  // button primary transparent
-  &-p-t {
-    color: #ff6636;
-    background-color: transparent;
-    &:hover {
-      color: #cc522b;
-      background-color: #ffeee8;
-    }
-  }
-
-  // button secondary
-  &-s {
-    background: #564ffd;
-
-    &:hover {
-      background-color: #453fca;
-      box-shadow: 0px 6px 20px 0px #453fca80;
-    }
-  }
-
-  // button secondary - secondary
-  &-s-s {
-    color: #564ffd;
-    background-color: #ebebff;
-    &:hover {
-      color: #453fca;
-      box-shadow: none;
-      background-color: #cdcbfe;
-    }
-  }
-
-  // button secondar transparent
-  &-s-t {
-    color: #564ffd;
-    background-color: transparent;
-    &:hover {
-      color: #453fca;
-      box-shadow: none;
-      background-color: #ebebff;
-    }
-  }
-
-  // button gray
-  &-g {
-    background-color: #1d2026;
-    &:hover {
-      background-color: #363b47;
-      box-shadow: none;
-      box-shadow: 0px 6px 20px 0px #363b4780;
-    }
-  }
-
-  // button gray secondary
-  &-g-s {
-    color: #1d2026;
-    background-color: #f5f7fa;
-    &:hover {
-      color: #363b47;
-      box-shadow: none;
-      background-color: #e9eaf0;
-    }
-  }
-
-  // button gray transparent
-  &-g-t {
-    color: #1d2026;
-    background-color: transparent;
-    &:hover {
-      color: #1d2026;
-      box-shadow: none;
-      background-color: #f5f7fa;
-    }
-  }
 }

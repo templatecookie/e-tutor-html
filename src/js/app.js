@@ -355,34 +355,35 @@
     var tools_slider = $('.tools-slider');
     if (tools_slider.is_exist()) {
       tools_slider.owlCarousel({
-      loop:true,
-      margin: 20,
-      nav:true,
-      dots: false,
-      items: 6,
-      navText: ["<img src=\"src/images/svg-icon/arrowleft-orange.svg\"/>",
-              "<img src=\"src/images/svg-icon/arrowright-orange.svg\"/>"],
-      responsive:{
-          0:{
-              items:1,
-              nav: false
+        loop: true,
+        margin: 20,
+        nav: true,
+        dots: false,
+        items: 6,
+        navText: [
+          '<img src="src/images/svg-icon/arrowleft-orange.svg"/>',
+          '<img src="src/images/svg-icon/arrowright-orange.svg"/>',
+        ],
+        responsive: {
+          0: {
+            items: 1,
+            nav: false,
           },
-          500:{
-              items:2
+          500: {
+            items: 2,
           },
-          756:{
-              items:3
+          756: {
+            items: 3,
           },
-          1000:{
-              items:4
+          1000: {
+            items: 4,
           },
-          1380:{
-              items:6
+          1380: {
+            items: 6,
           },
-          
-      }
-  })
-}
+        },
+      });
+    }
 
     // bvSelectbox
     // if(document.getElementById()) { }
@@ -412,9 +413,45 @@
         selector: '#overviewSelect',
       });
     }
+    if (document.getElementById('categorySelect')) {
+      var category = new BVSelect({
+        selector: '#categorySelect',
+        placeholder: 'Select...',
+      });
+    }
+
+    if (document.getElementById('subCategorySelect')) {
+      var subcategory = new BVSelect({
+        selector: '#subCategorySelect',
+        placeholder: 'Select...',
+      });
+    }
+    if (document.getElementById('languageSelect')) {
+      var language = new BVSelect({
+        selector: '#languageSelect',
+        placeholder: 'Select...',
+      });
+    }
+    if (document.getElementById('sublanguageSelect')) {
+      var sublanguage = new BVSelect({
+        selector: '#sublanguageSelect',
+        placeholder: 'Select...',
+      });
+    }
+    if (document.getElementById('levelSelect')) {
+      var level = new BVSelect({
+        selector: '#levelSelect',
+        placeholder: 'Select...',
+      });
+    }
+    if (document.getElementById('durationSelect')) {
+      var duration = new BVSelect({
+        selector: '#durationSelect',
+        placeholder: 'Select...',
+      });
+    }
 
     // Apex Chart
-
     if (document.getElementById('revenueChart')) {
       var revenueChart = new ApexCharts(document.querySelector('#revenueChart'), {
         chart: {
