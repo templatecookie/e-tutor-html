@@ -67,6 +67,10 @@
       @include max(575px) {
         width: inherit;
       }
+
+      &-field {
+        width: 100%;
+      }
     }
 
     .button {
