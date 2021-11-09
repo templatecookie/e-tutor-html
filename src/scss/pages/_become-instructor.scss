@@ -1,0 +1,48 @@
+.instructor-rules {
+  &__info {
+    h2 {
+      @extend %text-four;
+      margin: 0px;
+      margin-bottom: 20px;
+      @include max(575px) {
+        font-size: 32px;
+        line-height: 42px;
+      }
+    }
+    p {
+      @extend %text-two;
+      width: 535px;
+      font-weight: 400;
+      color: #6e7485;
+      margin-bottom: 14px;
+      @include max(1200px) {
+        width: 100%;
+      }
+    }
+    ul {
+      width: 535px;
+      @include max(1200px) {
+        width: 100%;
+      }
+      li {
+        @extend %text-two;
+        font-size: 16px;
+        color: #1d2026;
+        font-weight: 400;
+        padding-left: 15px;
+        margin-bottom: 12px;
+        position: relative;
+        &::before {
+          content: '';
+          left: 0;
+          top: 10px;
+          width: 5px;
+          height: 5px;
+          border-radius: 50%;
+          position: absolute;
+          background-color: #1d2026;
+        }
+      }
+    }
+  }
+}

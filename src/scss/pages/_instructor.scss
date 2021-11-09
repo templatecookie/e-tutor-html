@@ -95,21 +95,24 @@
 .about-content.become-instructor {
   margin-right: 0;
   p {
-    font-size: 24px;
-    @include mq('tablet-small', max) {
-      font-size: 20px;
+    @extend %text-three;
+    font-weight: 400;
+    color: #4e5566;
+    letter-spacing: normal;
+    @include max(767px) {
+      font-size: 18px;
       line-height: 28px;
     }
-    @include mq('phone-wide', max) {
-      font-size: 18px;
-    }
+  }
+  .button {
+    margin-top: 35px;
   }
 }
 
 // counter section
 .counter-section.become-instructor {
+  padding: 45px 0;
   background: #ffeee8;
-  padding: 40px 0;
 }
 
 //teaching Etutor
@@ -117,11 +120,14 @@
 .join-team-content.become-instructor {
   .checkbox-field {
     ul {
-      margin-top: 30px;
+      margin-top: 26px;
       li {
         padding: 0;
         padding-left: 45px;
         margin-bottom: 24px;
+        @include max(991px) {
+          margin-bottom: 12px;
+        }
         &:last-child {
           margin-bottom: 0;
         }
@@ -129,7 +135,8 @@
           left: 0;
         }
         span {
-          font-size: 18px;
+          @extend %text-two;
+          white-space: normal;
         }
       }
     }
@@ -141,44 +148,44 @@
 }
 
 // instrucetor rule
-.about-section.instructor-rules {
-  border: none;
-}
-.about-content.instructor-rules {
-  margin-right: 80px;
-  @include mq('tablet', max) {
-    margin: 0;
-  }
-  h2 {
-    margin-bottom: 20px;
-  }
-  p {
-    font-size: 18px;
-    line-height: 24px;
-  }
-  ul {
-    margin: 24px 0 0;
-    padding: 0;
-    list-style: none;
-    li {
-      line-height: 24px;
-      color: #1d2026;
-      position: relative;
-      padding-left: 15px;
-      margin-bottom: 12px;
-      &::before {
-        content: '';
-        left: 0;
-        top: 10px;
-        width: 5px;
-        height: 5px;
-        border-radius: 50%;
-        position: absolute;
-        background-color: #1d2026;
-      }
-    }
-  }
-}
+// .about-section.instructor-rules {
+//   border: none;
+// }
+// .about-content.instructor-rules {
+//   margin-right: 80px;
+//   @include mq('tablet', max) {
+//     margin: 0;
+//   }
+//   h2 {
+//     margin-bottom: 20px;
+//   }
+//   p {
+//     font-size: 18px;
+//     line-height: 24px;
+//   }
+//   ul {
+//     margin: 24px 0 0;
+//     padding: 0;
+//     list-style: none;
+//     li {
+//       line-height: 24px;
+//       color: #1d2026;
+//       position: relative;
+//       padding-left: 15px;
+//       margin-bottom: 12px;
+//       &::before {
+//         content: '';
+//         left: 0;
+//         top: 10px;
+//         width: 5px;
+//         height: 5px;
+//         border-radius: 50%;
+//         position: absolute;
+//         background-color: #1d2026;
+//       }
+//     }
+//   }
+// }
 
 // help center sections
 
@@ -254,13 +261,16 @@
   background: #ffeee8;
   padding: 32px;
   svg {
-    margin-bottom: 30px;
+    margin-bottom: 10px;
   }
   p {
-    font-size: 18px;
-    line-height: 26px;
-    letter-spacing: -0.015em;
+    @extend %text-two;
+    font-weight: 400;
     color: #1d2026;
+    @include max(575px) {
+      font-size: 16px !important;
+      line-height: normal;
+    }
   }
 }
 .my-owl-nav {
@@ -282,7 +292,7 @@
   background: #f5f7fa !important;
   &:hover {
     background: #ff6636 !important;
-    box-shadow: 0px 6px 20px rgba(204, 82, 43, 0.5);
+    box-shadow: 0px 6px 20px 0px #cc522b80;
   }
   svg {
     path {

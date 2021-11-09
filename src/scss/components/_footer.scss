@@ -11,7 +11,6 @@
   }
   @include mq('phone-wide', max) {
     padding: 70px 0 55px;
-    text-align: center;
   }
   .footer-header-content {
     margin-right: 30px;
@@ -22,27 +21,18 @@
     @include mq('phone-wide', max) {
       margin-bottom: 15px;
     }
-    @include max(991px) {
-      text-align: center;
-    }
+
     h3 {
-      font-weight: 600;
-      font-size: 40px;
-      line-height: 48px;
-      letter-spacing: -0.01em;
+      @extend %text-four;
       color: #fff;
-      margin-bottom: 30px;
+      margin-bottom: 18px !important;
       @include max(991px) {
         font-size: 36px;
       }
-      // @include mq('tablet-small', max) {
-      //   font-size: 30px;
-      //   line-height: 40px;
-      // }
-      // @include mq('phone-wide', max) {
-      //   font-size: 26px;
-      //   line-height: 32px;
-      // }
+      @include max(575px) {
+        font-size: 32px;
+        line-height: 42px;
+      }
     }
     a.footer-btn {
       font-weight: 600;
@@ -133,10 +123,11 @@
       margin-bottom: 24px;
     }
     p {
-      font-size: 16px;
-      line-height: 24px;
+      @extend %text-one;
       color: #b7bac7;
+      font-size: 16px;
       margin-bottom: 40px;
+      letter-spacing: normal;
     }
     a.footer-btn.orange-btn {
       line-height: 64px;
@@ -170,10 +161,7 @@
       margin-bottom: 30px;
     }
     p {
-      font-family: Inter;
-      font-size: 14px;
-      line-height: 22px;
-      letter-spacing: -0.01em;
+      @extend %text-one;
       color: #8c94a3;
     }
     .footer-logo {
@@ -185,7 +173,7 @@
       margin-bottom: 30px;
     }
     .footer-menu-title {
-      margin-bottom: 30px;
+      margin-bottom: 22px;
       @include mq('desktop', max) {
         margin-bottom: 20px;
       }
@@ -207,21 +195,21 @@
         padding: 0;
         list-style: none;
         li {
-          margin: 17px 0;
-          line-height: 1;
+          margin-bottom: 6px;
+          &:nth-last-child(1) {
+            margin-bottom: 0px;
+          }
           a {
-            font-family: Inter;
-            font-size: 14px;
-            letter-spacing: -0.01em;
-            color: #8c94a3;
+            @extend %text-one;
             position: relative;
+            color: #8c94a3;
             &:hover {
               color: #fff;
             }
             &:before {
               content: '';
               left: 0;
-              bottom: -9px;
+              bottom: -5px;
               width: 0;
               height: 2px;
               transition: all 0.3s;
@@ -282,6 +270,9 @@
     font-size: 16px;
     margin-left: 0;
     border: 1px solid #363b47;
+    @include max(575px) {
+      margin-bottom: 16px;
+    }
   }
   .custom-options {
     top: -230%;

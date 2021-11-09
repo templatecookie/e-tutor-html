@@ -23,9 +23,13 @@
     width: 80px;
     line-height: 80px;
     text-align: center;
+    margin-bottom: 24px;
     display: inline-block;
     background: rgba(86, 79, 253, 0.1);
-    margin-bottom: 24px;
+
+    @include max(767px) {
+      margin-bottom: 12px;
+    }
 
     svg {
       transition: 0.3s;
@@ -40,19 +44,13 @@
     align-self: center;
 
     a {
-      font-weight: 500;
-      font-size: 18px;
-      line-height: 22px;
-      color: #1d2026;
-      margin-bottom: 12px;
-      display: block;
+      @extend %text-two;
+      margin-bottom: 6px;
+      white-space: nowrap;
     }
 
     p {
-      font-size: 14px;
-      line-height: 22px;
-      letter-spacing: -0.01em;
-      color: #6e7485;
+      @extend %text-one;
     }
   }
 }

@@ -79,6 +79,7 @@
       $(this).hide();
       $(this).after(template);
     });
+
     $('.custom-option:first-of-type').hover(
       function () {
         $(this).parents('.custom-options').addClass('option-hover');
@@ -105,45 +106,9 @@
         .text($(this).text());
     });
 
-    // animateDisplay = function(target, animationClass, displayType, timeout) {
-    //   // timeout should be longer than css transition
-    //   var doneTimedDisplay = false,
-    //     displaying = false;
-
-    //   target.addEventListener('transitionend', function() {
-    //     if (!target.classList.contains('show')) {
-    //       target.style.display = 'none';
-    //     }
-    //     doneTimedDisplay = true;
-    //   });
-    //   if (!target.style.display || target.style.display === 'none') {
-    //     displaying = true;
-    //     target.style.display = displayType;
-    //   } else {
-    //     displaying = false;
-    //   }
-
-    //   setTimeout(function() {
-    //     target.classList.toggle(animationClass);
-    //     doneTimedDisplay = false;
-    //   }, 10);
-
-    //   if (!displaying) {
-    //     setTimeout(function() {
-    //       // failsafe for transitioned not firing
-    //       if (!doneTimedDisplay) {
-    //         target.style.display = 'none';
-    //       }
-    //       doneTimedDisplay = true;
-    //     }, timeout);
-    //   }
-    // };
-
     // range slider
-
     var inputLeft = document.getElementById('input-left');
     var inputRight = document.getElementById('input-right');
-
     var thumbLeft = document.querySelector('.slider > .thumb.left');
     var thumbRight = document.querySelector('.slider > .thumb.right');
     var range = document.querySelector('.slider > .range');
@@ -211,7 +176,6 @@
     }
 
     //chart.js
-
     var areachartUserOption_2s = {
       chart: {
         height: 300,
@@ -273,8 +237,7 @@
       chart_area_2.render();
     }
 
-    //image uploade
-
+    //image upload
     const filterToggle = document.querySelector('.actions-filter');
 
     if (filterToggle) {
@@ -398,6 +361,7 @@
     }
 
     // bvSelectbox
+
     // if(document.getElementById()) { }
 
     if (document.getElementById('activitySelect')) {
@@ -796,47 +760,31 @@
       overviewChart.render();
     }
 
-    // Tabs
-    // const totalTabs = $('.nav-pills li').length;
-    // let currentTab = 1;
+    // Slider
+    // if(document.getElementById()) { }
+    // if(document.getElementsByClassName()) { }
 
-    // // Next Action
-    // $('.button-next').click(function (e) {
-    //   e.preventDefault();
-    //   currentTab += 1;
-    //   showHideControls();
-    //   let nextTab = $('.nav-pills li').next('li').find('button');
-    //   if (nextTab.length > 0) {
-    //     nextTab.trigger('click');
-    //   }
-    //   // console.log(currentTab);
-    //   // console.log(totalTabs);
-    // });
-    // // PrevAction
-    // $('.button-prev').click(function (e) {
-    //   e.preventDefault();
-    //   currentTab -= 1;
-    //   let prevTab = $('.nav-pills li').next('li').find('button');
-    //   console.log(prevTab);
-    //   if (prevTab.length > 0) {
-    //     prevTab.trigger('click');
-    //   }
-    //   console.log('click');
-    //   // console.log(currentTab);
-    //   // console.log(totalTabs);
-    // });
+    if (document.getElementsByClassName('testimonial2-slider')) {
+      $('.testimonial2-slider').owlCarousel({
+        loop: true,
+        margin: 20,
+        nav: false,
+        dots: false,
+        items: 1,
+        navText: [
+          '<img src="src/images/svg-icon/arrowleft-orange.svg"/>',
+          '<img src="src/images/svg-icon/arrowright-orange.svg"/>',
+        ],
+      });
 
-    // // HideControls
-    // function showHideControls() {
-    //   if (currentTab === 1) {
-    //     $('.button-prev').hide();
-    //   } else if (currentTab === totalTabs) {
-    //     $('.button-next').hide();
-    //   } else {
-    //     $('.button-prev').show();
-    //     $('.button-next').show();
-    //   }
-    // }
-    // let prevTab = $('.nav-pills .active').next('li').find('button');
+      var selector = $('.owl-carousel');
+      $('.my-next-button').click(function () {
+        selector.trigger('next.owl.carousel');
+      });
+
+      $('.my-prev-button').click(function () {
+        selector.trigger('prev.owl.carousel');
+      });
+    }
   }); /*End document ready*/
 })(jQuery);
