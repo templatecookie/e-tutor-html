@@ -28,9 +28,9 @@
 
     //notification
 
-      var button = document.querySelector('.notification-icon');
-      var box = document.querySelector('.card-activity');
-      button.addEventListener('click', function(event) {
+      let notification_icon = document.querySelector('.notification-icon');
+      let box = document.querySelector('.notification-box');
+      notification_icon.addEventListener('click', function(event) {
         event.preventDefault();
       box.classList.toggle('notification-visiable');
   
