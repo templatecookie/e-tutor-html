@@ -62,4 +62,21 @@
       }
     }
   }
+
+  &--newcard {
+    .form {
+      &-field,
+      .form-field-social {
+        margin-bottom: 18px;
+      }
+
+      &-group {
+        .form-field {
+          @include min(575px) {
+            margin-bottom: 0px;
+          }
+        }
+      }
+    }
+  }
 }

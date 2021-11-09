@@ -450,19 +450,19 @@ select {
   width: 100%;
 }
 .visa-btn {
-  color: #1d2026;
   width: 100%;
-
-  text-align: center;
-  font-weight: 500;
-  padding: 36px 0;
-  font-size: 16px;
-  line-height: 22px;
-  border: 1px dashed #e9eaf0;
-  transition: 0.3s;
   display: flex;
+  font-size: 16px;
+  padding: 36px 0;
+  color: #1d2026;
+  transition: 0.3s;
+  font-weight: 500;
+  line-height: 22px;
+  text-align: center;
   align-items: center;
   justify-content: center;
+  text-transform: capitalize;
+  border: 1px dashed #e9eaf0;
   svg {
     margin-right: 8px;
   }

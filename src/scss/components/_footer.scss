@@ -259,7 +259,6 @@
   .copywright-text {
     @include mq('tablet-small', max) {
       width: 100%;
-      margin-bottom: 20px;
     }
     p {
       font-size: 14px;
