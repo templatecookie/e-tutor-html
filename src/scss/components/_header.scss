@@ -462,6 +462,9 @@
   margin-left: 0px;
   z-index: 1111;
   width: 340px;
+  @include max(350px) {
+    width: 320px;
+  }
 }
 .off-menu span.menubar {
   font-size: 28px;
@@ -625,15 +628,7 @@ header.header-section.header-four {
   @include mq('desktop', max) {
     display: flex;
   }
-  @include mq('tablet-small', max) {
-    display: block;
-    text-align: center;
-  }
-  .main-logo {
-    @include mq('tablet-small', max) {
-      margin-bottom: 20px;
-    }
-  }
+
   .header-bottom-right {
     flex: 0 0 auto;
     display: block;
