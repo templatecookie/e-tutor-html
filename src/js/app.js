@@ -30,7 +30,7 @@
     var button = document.querySelector('.notification-icon');
     var box = document.querySelector('.card-activity');
     if (button) {
-        button.addEventListener('click', function (event) {
+      button.addEventListener('click', function (event) {
         event.preventDefault();
         box.classList.toggle('notification-visiable');
       });
