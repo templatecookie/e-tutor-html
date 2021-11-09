@@ -11,11 +11,8 @@
 .page404-section {
   display: flex;
   align-items: center;
-  min-height: 900px;
+  min-height: 715px;
   overflow: hidden;
-  @include mq('desktop-wide', max) {
-    min-height: 750px;
-  }
   @include mq('tablet-small', max) {
     min-height: 650px;
   }
