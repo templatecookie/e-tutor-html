@@ -650,12 +650,15 @@ header.header-section.header-four {
     right: 0;
     z-index: 1;
     opacity: 0;
+    z-index: 99;
+    visibility: hidden;
     border: 1px solid #E9EAF0;
     background-color: #fff;
     transition: all 0.4s;
     box-shadow: 0px 4px 20px rgba(29, 32, 38, 0.12);
     &.notification-visiable{
       opacity: 1;
+      visibility: visible;
       transition: all 0.4s;
     }
   .activity-item{

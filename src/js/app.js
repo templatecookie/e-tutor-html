@@ -16,7 +16,6 @@
   };
 
   $(function () {
-
     $('.menu-bar').on('click', function () {
       $('.offcanves-menu, .offcanvas-overlay').addClass('active');
     });
@@ -28,13 +27,14 @@
 
     //notification
 
-      let notification_icon = document.querySelector('.notification-icon');
-      let box = document.querySelector('.notification-box');
-      notification_icon.addEventListener('click', function(event) {
+    var button = document.querySelector('.notification-icon');
+    var box = document.querySelector('.card-activity');
+    if (button) {
+        button.addEventListener('click', function (event) {
         event.preventDefault();
-      box.classList.toggle('notification-visiable');
-  
-    });
+        box.classList.toggle('notification-visiable');
+      });
+    }
     //end notification
 
     $('.accordion .accordion-head').click(function () {
