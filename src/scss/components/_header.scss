@@ -662,6 +662,7 @@ header.header-section.header-four {
       transition: all 0.4s;
     }
   .activity-item{
+    margin: 0!important;
     display: flex!important;
   }
   p.mark-read {
@@ -670,4 +671,8 @@ header.header-section.header-four {
     letter-spacing: -0.01em;
     color: #4E5566;
   }
+}
+
+.card.card-activity.notification-box.instructor-page{
+  top: 49px;
 }
