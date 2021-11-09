@@ -669,3 +669,14 @@ header.header-section.header-four {
 .card.card-activity.notification-box.instructor-page {
   top: 49px;
 }
+<<<<<<< HEAD
+
+.header-btn-wrap{
+  button.button.button--md{
+    @include max(390px) {
+      margin: 0 0 15px;
+    }
+  }
+}
+=======
+>>>>>>> cb8fc3544af60cc5aeda5c70855ead0a4d75e5a6

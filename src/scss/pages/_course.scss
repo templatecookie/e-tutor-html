@@ -706,12 +706,18 @@ h4.course-sidebar-title {
     align-items: center;
     margin-bottom: 15px;
     justify-content: space-between;
+    @include mq('phone-wide', max) {
+      display: block;
+    }
     h3 {
       font-weight: 600;
       font-size: 24px;
       letter-spacing: -0.01em;
       color: #1d2026;
       margin: 0;
+      @include mq('phone-wide', max) {
+        margin-bottom: 15px;
+      }
     }
     h4 {
       font-weight: 600;

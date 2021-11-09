@@ -349,8 +349,10 @@
         }
 
         .faq-review-thumb {
-          // flex: 0 0 27%;
           margin-right: 20px;
+          @include max(340px) {
+           height: 250px;
+          }
           a {
             display: block;
           }
@@ -464,7 +466,7 @@
       .cross-btn-shopping {
         @include mq('tablet', max) {
           margin-bottom: 15px;
-          text-align: right;
+          text-align: left;
         }
       }
       .faq-review-item:hover .move-to-wishlist a {

@@ -29,9 +29,21 @@
       @include max(991px) {
         font-size: 36px;
       }
+<<<<<<< HEAD
       @include max(575px) {
         font-size: 32px;
         line-height: 42px;
+=======
+      @include max(480px) {
+        font-size: 26px;
+        line-height: 34px;
+      }
+    
+    }
+    a.button.button--md{
+      @include max(480px) {
+        margin-bottom: 15px;
+>>>>>>> 6e128131bf71f1f14efda48c9df4274e2012c35e
       }
     }
     a.footer-btn {
