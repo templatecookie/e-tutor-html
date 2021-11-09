@@ -205,6 +205,58 @@
   }
 }
 
+.instructor-uploads {
+  & > div {
+    display: flex;
+  }
+
+  .instructor-requirements__title {
+    margin-bottom: 16px;
+  }
+
+  &__image {
+    width: 228px;
+    height: 160px;
+    overflow: hidden;
+    margin-right: 24px;
+    position: relative;
+    background-color: #f5f7fa;
+    img,
+    video {
+      width: inherit;
+      height: inherit;
+      object-fit: contain;
+    }
+  }
+
+  &__info {
+    p {
+      width: 345px;
+      @extend %text-one;
+      color: #6e7485;
+      margin-bottom: 24px;
+      @include max(575px) {
+        width: 100%;
+      }
+      b {
+        font-weight: 500;
+        color: #1d2026;
+      }
+    }
+
+    .upload {
+      input {
+        display: none;
+      }
+      .button {
+        width: auto;
+        float: left;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
 .course-item-4 {
   position: relative;
   a {
