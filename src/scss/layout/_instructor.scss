@@ -365,16 +365,26 @@
       line-height: 32px;
       letter-spacing: -0.01em;
       @include max(767px) {
+        text-align: center;
         margin-bottom: 16px;
       }
     }
     & > div {
       display: flex;
       align-items: center;
-
+      @include max(480px) {
+        width: 100%;
+        flex-direction: column;
+      }
       .button {
+        @include max(480px) {
+          width: 100%;
+        }
         &:nth-child(1) {
           margin-right: 12px;
+          @include max(480px) {
+            margin: 0px;
+          }
         }
       }
     }
@@ -389,6 +399,14 @@
         @include max(767px) {
           margin-bottom: 18px;
         }
+      }
+    }
+
+    &--requirements {
+      padding: 0px;
+      .instructor-tab-navigation {
+        padding: 40px;
+        padding-top: 6px;
       }
     }
   }
@@ -417,7 +435,7 @@
   }
 
   &-requirements {
-    padding: 32px;
+    padding: 32px 40px;
     border-bottom: 1px solid #e9eaf0;
     @include max(767px) {
       padding: 16px;
@@ -435,6 +453,24 @@
       text-transform: capitalize;
       @include max(575px) {
         width: 100%;
+      }
+    }
+
+    &__header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 24px;
+      justify-content: space-between;
+      @include max(575px) {
+        align-items: flex-end;
+        flex-direction: column;
+      }
+
+      a {
+        @extend %text-one;
+        color: #ff6636;
+        font-weight: 500;
+        white-space: nowrap;
       }
     }
 
@@ -477,23 +513,6 @@
             width: 100%;
           }
         }
-      }
-    }
-    &__header {
-      display: flex;
-      align-items: center;
-      margin-bottom: 24px;
-      justify-content: space-between;
-      @include max(575px) {
-        align-items: flex-end;
-        flex-direction: column;
-      }
-
-      a {
-        @extend %text-one;
-        color: #ff6636;
-        font-weight: 500;
-        white-space: nowrap;
       }
     }
   }
