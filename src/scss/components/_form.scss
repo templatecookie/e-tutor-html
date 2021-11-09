@@ -387,6 +387,29 @@
         margin-top: 40px;
         margin-bottom: 0px;
       }
+
+      .form-check {
+        width: 100%;
+        margin: 0px;
+        @include max(575px) {
+          margin-bottom: 16px;
+        }
+        &-input {
+          border-color: #ced1d9;
+          &:checked {
+            border-color: transparent;
+
+            & + .form-check-label {
+              color: #1d2026;
+            }
+          }
+        }
+
+        &-label {
+          @extend %text-one;
+          color: #6e7485;
+        }
+      }
     }
 
     &-signup {
