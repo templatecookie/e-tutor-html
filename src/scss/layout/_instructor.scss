@@ -481,6 +481,20 @@
       .form-field-social {
         margin-bottom: 18px;
       }
+
+      &-checkitem {
+        margin-bottom: 20px;
+        .form-check {
+          &-input {
+            &:checked + .form-check-label {
+              color: #1d2026;
+            }
+          }
+          &-label {
+            @extend %text-one;
+          }
+        }
+      }
     }
 
     .card-upload {
