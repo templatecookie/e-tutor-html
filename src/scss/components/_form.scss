@@ -391,7 +391,9 @@
       .form-check {
         width: 100%;
         margin: 0px;
-
+        @include max(575px) {
+          margin-bottom: 16px;
+        }
         &-input {
           border-color: #ced1d9;
           &:checked {
