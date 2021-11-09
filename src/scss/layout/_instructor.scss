@@ -365,16 +365,26 @@
       line-height: 32px;
       letter-spacing: -0.01em;
       @include max(767px) {
+        text-align: center;
         margin-bottom: 16px;
       }
     }
     & > div {
       display: flex;
       align-items: center;
-
+      @include max(480px) {
+        width: 100%;
+        flex-direction: column;
+      }
       .button {
+        @include max(480px) {
+          width: 100%;
+        }
         &:nth-child(1) {
           margin-right: 12px;
+          @include max(480px) {
+            margin: 0px;
+          }
         }
       }
     }
@@ -389,6 +399,14 @@
         @include max(767px) {
           margin-bottom: 18px;
         }
+      }
+    }
+
+    &--requirements {
+      padding: 0px;
+      .instructor-tab-navigation {
+        padding: 40px;
+        padding-top: 6px;
       }
     }
   }
@@ -417,6 +435,27 @@
   }
 
   &-requirements {
+    padding: 32px 40px;
+    border-bottom: 1px solid #e9eaf0;
+    @include max(767px) {
+      padding: 16px;
+    }
+    &:nth-last-child(1) {
+      border: 0px;
+    }
+
+    &__title {
+      margin: 0;
+      font-size: 18px;
+      font-weight: 500;
+      color: #1d2026;
+      line-height: 24px;
+      text-transform: capitalize;
+      @include max(575px) {
+        width: 100%;
+      }
+    }
+
     &__header {
       display: flex;
       align-items: center;
@@ -426,23 +465,54 @@
         align-items: flex-end;
         flex-direction: column;
       }
-      h2 {
-        margin: 0;
-        font-size: 18px;
-        font-weight: 500;
-        color: #1d2026;
-        line-height: 24px;
-        text-transform: capitalize;
-        @include max(575px) {
-          width: 100%;
-        }
-      }
 
       a {
         @extend %text-one;
         color: #ff6636;
         font-weight: 500;
         white-space: nowrap;
+      }
+    }
+
+    .wrapper-upload {
+      display: grid;
+      gap: 48px;
+      grid-template-columns: repeat(2, 1fr);
+      @include max(1024px) {
+        gap: 16px;
+      }
+      @include max(991px) {
+        grid-template-columns: auto;
+      }
+      .instructor-uploads {
+        & > div {
+          @include max(1520px) {
+            flex-direction: column;
+          }
+          @include max(1024px) {
+            justify-content: center;
+          }
+        }
+        &__info {
+          @include max(1520px) {
+            margin-top: 16px;
+            width: 100%;
+          }
+          p {
+            @include max(991px) {
+              width: 100%;
+            }
+          }
+        }
+
+        &__image {
+          @include max(1520px) {
+            margin-right: 0px;
+          }
+          @include max(991px) {
+            width: 100%;
+          }
+        }
       }
     }
   }
@@ -498,7 +568,6 @@
     }
 
     .card-upload {
-      // height: 95%;
       margin-bottom: 20px;
     }
   }
