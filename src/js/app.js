@@ -16,6 +16,7 @@
   };
 
   $(function () {
+
     $('.menu-bar').on('click', function () {
       $('.offcanves-menu, .offcanvas-overlay').addClass('active');
     });
@@ -24,6 +25,17 @@
     });
 
     // End menu
+
+    //notification
+
+      var button = document.querySelector('.notification-icon');
+      var box = document.querySelector('.card-activity');
+      button.addEventListener('click', function(event) {
+        event.preventDefault();
+      box.classList.toggle('notification-visiable');
+  
+    });
+    //end notification
 
     $('.accordion .accordion-head').click(function () {
       if ($(this).next('div').is(':visible')) {
