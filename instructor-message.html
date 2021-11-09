@@ -585,6 +585,49 @@
         </div>
         <!-- Instrcutor Dashboard Layout End  -->
 
+        <!-- Compose  Modal  -->
+        <div class="modal modal--compose fade" id="composeModal" aria-hidden="true"  tabindex="-1">
+            <div class="modal-dialog modal-lg modal-md  modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="reviewModalLabel">New Message</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="#" class="form">
+                            <div class="form-selects">
+                                <label>Teacher</label>
+                                <div class="field-wrapper">
+                                    <select class="card-dropdown" id="teacherSelect">
+                                        <option value="1"> Teacher one </option>
+                                        <option value="2"> Teacher two </option>
+                                        <option value="3"> Teacher three</option>
+                                        <option value="4"> Teacher Four </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-textarea">
+                                <label>Message</label>
+                                <textarea placeholder="Write your message here..."></textarea>
+                            </div> 
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="button button--md button-g-s" data-bs-dismiss="modal" aria-label="Close" >Cancel</button>
+                        <button class="button button--md button-i--r">
+                            Send Message
+                            <span>
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20.5811 11.3455L4.74536 2.47746C4.61214 2.40285 4.45932 2.37069 4.30732 2.38526C4.15533 2.39983 4.01141 2.46045 3.89479 2.55901C3.77817 2.65757 3.69441 2.78938 3.65471 2.93681C3.615 3.08425 3.62125 3.24029 3.6726 3.38409L6.65957 11.7476C6.71783 11.9107 6.71783 12.089 6.65957 12.2521L3.6726 20.6156C3.62124 20.7594 3.615 20.9155 3.65471 21.0629C3.69441 21.2104 3.77817 21.3422 3.89479 21.4407C4.01141 21.5393 4.15533 21.5999 4.30732 21.6145C4.45932 21.629 4.61214 21.5969 4.74536 21.5223L20.5811 12.6542C20.6975 12.5891 20.7943 12.4941 20.8617 12.3791C20.9291 12.2641 20.9647 12.1332 20.9647 11.9999C20.9647 11.8665 20.9291 11.7356 20.8617 11.6206C20.7943 11.5056 20.6975 11.4106 20.5811 11.3455Z" fill="white"/>
+                                    <path d="M6.75 12H12.75" stroke="#FF6636" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- Scripts Goes Here  -->
         <script src="src/js/lirbrary/jquery.min.js"></script>
         <script src="src/js/lirbrary/bvselect.js"></script>

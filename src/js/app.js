@@ -462,6 +462,12 @@
         placeholder: 'Select...',
       });
     }
+    if (document.getElementById('teacherSelect')) {
+      var teacher = new BVSelect({
+        selector: '#teacherSelect',
+        placeholder: 'Select...',
+      });
+    }
 
     // Apex Chart
     if (document.getElementById('revenueChart')) {

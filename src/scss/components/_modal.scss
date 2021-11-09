@@ -8,6 +8,10 @@
     }
   }
 
+  &-content {
+    border-radius: 0px;
+  }
+
   &-title {
     font-size: 16px;
     font-weight: 500;
@@ -76,6 +80,14 @@
             margin-bottom: 0px;
           }
         }
+      }
+    }
+  }
+
+  &--compose {
+    .form {
+      &-selects {
+        margin-bottom: 18px;
       }
     }
   }
