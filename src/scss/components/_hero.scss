@@ -34,6 +34,9 @@
   align-items: center;
   text-align: left;
   justify-content: space-between;
+  h2{
+    margin-bottom: 15px;
+  }
   @include mq('tablet', max) {
     display: block;
     text-align: center;

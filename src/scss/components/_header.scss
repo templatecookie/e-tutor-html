@@ -671,3 +671,11 @@ header.header-section.header-four {
 .card.card-activity.notification-box.instructor-page{
   top: 49px;
 }
+
+.header-btn-wrap{
+  button.button.button--md{
+    @include max(390px) {
+      margin: 0 0 15px;
+    }
+  }
+}

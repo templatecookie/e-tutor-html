@@ -95,10 +95,17 @@
         margin-bottom: 32px;
         padding-left: 75px;
         background-color: #fff;
+        @include mq('phone-wide', max) {
+          padding: 20px;
+          padding-left: 60px;
+        }
         svg {
           left: 30px;
           width: 30px;
           height: 30px;
+          @include mq('phone-wide', max) {
+           left: 20px;
+          }
         }
         span {
           font-weight: 500;
@@ -246,6 +253,13 @@
     }
     .sub-heading-meta{
       margin-bottom: 12px;
+      ul{
+        li{
+          @include mq('phone-wide', max) {
+            font-size: 12px;
+          }
+        }
+      }
     }
     h2{
       font-family: "Inter";
@@ -263,7 +277,7 @@
         line-height: 36px;
       }
       @include mq('phone-wide', max) {
-        font-size: 28px;
+        font-size: 24px;
         line-height: 32px;
       }
     }

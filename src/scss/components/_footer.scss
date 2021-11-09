@@ -35,14 +35,16 @@
       @include max(991px) {
         font-size: 36px;
       }
-      // @include mq('tablet-small', max) {
-      //   font-size: 30px;
-      //   line-height: 40px;
-      // }
-      // @include mq('phone-wide', max) {
-      //   font-size: 26px;
-      //   line-height: 32px;
-      // }
+      @include max(480px) {
+        font-size: 26px;
+        line-height: 34px;
+      }
+    
+    }
+    a.button.button--md{
+      @include max(480px) {
+        margin-bottom: 15px;
+      }
     }
     a.footer-btn {
       font-weight: 600;
