@@ -641,6 +641,7 @@ header.header-section.header-four {
   position: absolute;
   width: 430px;
   right: 0;
+  top: 30px;
   z-index: 1;
   opacity: 0;
   z-index: 99;
@@ -667,9 +668,8 @@ header.header-section.header-four {
 }
 
 .card.card-activity.notification-box.instructor-page {
-  top: 49px;
+  top: 58px;
 }
-<<<<<<< HEAD
 
 .header-btn-wrap{
   button.button.button--md{
@@ -678,5 +678,3 @@ header.header-section.header-four {
     }
   }
 }
-=======
->>>>>>> cb8fc3544af60cc5aeda5c70855ead0a4d75e5a6

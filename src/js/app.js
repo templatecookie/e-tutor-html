@@ -274,6 +274,38 @@
     }
 
     //image uploade
+      var uploader = document.createElement('input'),
+        image = document.getElementById('img-result');
+    
+      uploader.type = 'file';
+      uploader.accept = 'image/*';
+    
+      if(image){
+        image.onclick = function() {
+          uploader.click();
+        }
+      }
+        uploader.onchange = function() {
+          var reader = new FileReader();
+          reader.onload = function(evt) {
+            image.classList.remove('no-image');
+            image.style.backgroundImage = 'url(' + evt.target.result + ')';
+            var request = {
+              itemtype: 'test 1',
+              brand: 'test 2',
+              images: [{
+                data: evt.target.result
+              }]
+            };
+            
+            document.querySelector('.show-button').style.display = 'block';
+            document.querySelector('.upload-result__content').innerHTML = JSON.stringify(request, null, '  ');
+          }
+          reader.readAsDataURL(uploader.files[0]);
+        }
+      
+
+    //actions filter
 
     const filterToggle = document.querySelector('.actions-filter');
 
@@ -838,5 +870,9 @@
     //   }
     // }
     // let prevTab = $('.nav-pills .active').next('li').find('button');
+
+
+
+    
   }); /*End document ready*/
 })(jQuery);

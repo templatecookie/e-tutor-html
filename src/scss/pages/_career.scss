@@ -95,6 +95,9 @@
         margin-bottom: 32px;
         padding-left: 75px;
         background-color: #fff;
+        &:last-child{
+          margin-bottom: 0;
+        }
         @include mq('phone-wide', max) {
           padding: 20px;
           padding-left: 60px;

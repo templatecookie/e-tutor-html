@@ -104,7 +104,7 @@
       }
     }
     .counter-data {
-      h2 {
+      .counter-number {
         font-weight: 600;
         font-size: 32px;
         line-height: 40px;
@@ -131,7 +131,7 @@
 .our-mission-section {
   background: #ffeee8;
   @include mq('tablet', max) {
-    padding-top: 60px;
+    padding: 60px 0;
   }
 }
 .our-mission-content {

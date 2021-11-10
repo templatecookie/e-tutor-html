@@ -94,13 +94,35 @@
 }
 .about-content.become-instructor {
   margin-right: 0;
+  h2{
+    font-size: 64px;
+    margin-bottom: 32px;
+    line-height: 68px;
+    @include mq('desktop-wide', max) {
+      font-size: 55px;
+      margin-bottom: 25px;
+    }
+    
+    @include mq('desktop-wide', max) {
+      font-size: 46px;
+      margin-bottom: 15px;
+    }
+    @include mq('tablet', max) {
+      font-size: 40px;
+      margin-bottom: 5px;
+    }
+    @include mq('tablet-small', max) {
+      font-size: 35px;
+    }
+  }
   p {
     font-size: 24px;
-    @include mq('tablet-small', max) {
+    margin-bottom: 40px;
+    @include mq('desktop-wide', max) {
       font-size: 20px;
       line-height: 28px;
     }
-    @include mq('phone-wide', max) {
+    @include mq('tablet-small', max) {
       font-size: 18px;
     }
   }
@@ -151,6 +173,18 @@
   }
   h2 {
     margin-bottom: 20px;
+    font-size: 40px;
+    line-height: 48px;
+    margin-right: 20px;
+    @include mq('tablet', max) {
+      font-size: 36px;
+      line-height: 40px;
+    }
+    @include mq('tablet-small', max) {
+      font-size: 30px;
+      line-height: 36px;
+    }
+   
   }
   p {
     font-size: 18px;
@@ -253,12 +287,15 @@
 .testimonial2-slider-item {
   background: #ffeee8;
   padding: 32px;
+  @include mq('tablet-small', max) {
+    padding: 25px;
+  }
   svg {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   p {
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 18px!important;
+    line-height: 26px!important;
     letter-spacing: -0.015em;
     color: #1d2026;
   }
