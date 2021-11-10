@@ -2478,32 +2478,9 @@
       <script src="src/js/lirbrary/isotope.pkgd.min.js"></script>
       <script src="src/js/lirbrary/bootstrap.bundle.min.js"></script>
       <script src="src/js/lirbrary/jquery.magnific-popup.min.js"></script>
+      <script src="src/js/lirbrary/faq.js"></script>
       <script type="module" src="/main.js"></script>
 
-
-      <script>
-         var faq_init3 = function (el, multiple) {
-            this.el = el || {};
-            this.multiple = multiple || false;
-            var link = this.el.find('.link');
-            link.on('click', {
-               el: this.el,
-               multiple: this.multiple
-            }, this.dropdown)
-         }
-         faq_init3.prototype.dropdown = function (e) {
-            var $el = e.data.el;
-            $this = $(this),
-               $next = $this.next();
-            $next.slideToggle();
-            $this.parent().toggleClass('open');
-            if (!e.data.multiple) {
-               $el.find('.accordion-body-text').not($next).slideUp().parent().removeClass('open');
-            }
-         }
-         var faq_init3 = new faq_init3($('#faq_init3'), false);
-
-      </script>
     
    </body>
 </html>

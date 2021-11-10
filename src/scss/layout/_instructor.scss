@@ -618,4 +618,14 @@
   &-messages {
     margin: 0px 12px;
   }
+
+  &-curriculum {
+    .curriculum-section {
+      margin-bottom: 32px;
+    }
+
+    &__adsection {
+      margin-bottom: 60px;
+    }
+  }
 }

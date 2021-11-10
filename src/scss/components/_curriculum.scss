@@ -1,0 +1,130 @@
+.curriculum {
+  padding: 24px;
+  background-color: #f5f7fa;
+  @include max(767px) {
+    max-width: 100%;
+    overflow-x: scroll;
+  }
+
+  &-section {
+    &-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      @include max(767px) {
+        width: 650px;
+      }
+
+      .section {
+        &-info {
+          display: flex;
+          align-items: center;
+          span {
+            cursor: pointer;
+          }
+          & > div {
+            margin-left: 12px;
+            h2 {
+              margin: 0px;
+              @extend %text-two;
+              font-size: 16px;
+              span {
+                max-width: 575px;
+                margin-left: 12px;
+                font-weight: normal;
+              }
+            }
+          }
+        }
+
+        &-action {
+          display: flex;
+          align-items: center;
+          a {
+            color: #8c94a3;
+            margin-right: 20px;
+            &:nth-last-child(1) {
+              margin-right: 0px;
+            }
+          }
+        }
+      }
+    }
+
+    &__lectures {
+      margin-top: 24px;
+      @include max(767px) {
+        width: 650px;
+      }
+    }
+  }
+
+  &-lecture {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    transition: all 0.3s linear;
+    justify-content: space-between;
+
+    &:hover {
+      .lecture-action {
+        a {
+          color: #1d2026;
+          &:nth-last-child(1) {
+            color: #e34444;
+          }
+        }
+      }
+    }
+
+    .lecture {
+      &-info {
+        display: flex;
+        align-items: center;
+        span {
+          cursor: pointer;
+        }
+        & > div {
+          margin-left: 12px;
+          h2 {
+            margin: 0px;
+            font-size: 14px;
+            color: #1d2026;
+            line-height: 22px;
+            letter-spacing: -0.01em;
+          }
+        }
+      }
+      &-action {
+        display: flex;
+        align-items: center;
+        .button {
+          transition: all 0.3s linear;
+          &:hover {
+            box-shadow: none;
+          }
+          &.show {
+            span {
+              svg {
+                transform: rotate(180deg);
+              }
+            }
+          }
+        }
+        .button,
+        a {
+          margin-right: 15px;
+          transition: all 0.3s linear;
+        }
+
+        a {
+          color: #8c94a3;
+          &:nth-last-child(1) {
+            margin: 0px;
+          }
+        }
+      }
+    }
+  }
+}
