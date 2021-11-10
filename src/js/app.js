@@ -797,8 +797,9 @@
     // if(document.getElementById()) { }
     // if(document.getElementsByClassName()) { }
 
-    if (document.getElementsByClassName('testimonial2-slider')) {
-      $('.testimonial2-slider').owlCarousel({
+    var testimonial2_slider = $('.testimonial2-slider');
+    if (testimonial2_slider.is_exist()) {
+      testimonial2_slider.owlCarousel({
         loop: true,
         margin: 20,
         nav: false,
@@ -819,6 +820,7 @@
         selector.trigger('prev.owl.carousel');
       });
     }
+    
 
     // Editor
     var hasckeditor = document.getElementById('editorDes');
