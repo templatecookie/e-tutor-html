@@ -47,11 +47,12 @@
     a {
       display: flex;
       color: #fff;
-      font-size: 24px;
+      font-size: 32px;
       font-weight: 600;
-      line-height: 30px;
+      line-height: 38px;
       align-items: center;
       letter-spacing: -0.03em;
+      text-transform: capitalize;
       transition: all 0.3s linear;
 
       @include max(991px) {
