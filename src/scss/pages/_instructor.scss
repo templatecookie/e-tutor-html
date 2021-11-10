@@ -94,18 +94,38 @@
 }
 .about-content.become-instructor {
   margin-right: 0;
+  h2{
+    font-size: 64px;
+    margin-bottom: 32px;
+    line-height: 68px;
+    @include mq('desktop-wide', max) {
+      font-size: 55px;
+      margin-bottom: 25px;
+    }
+    
+    @include mq('desktop-wide', max) {
+      font-size: 46px;
+      margin-bottom: 15px;
+    }
+    @include mq('tablet', max) {
+      font-size: 40px;
+      margin-bottom: 5px;
+    }
+    @include mq('tablet-small', max) {
+      font-size: 35px;
+    }
+  }
   p {
-    @extend %text-three;
-    font-weight: 400;
-    color: #4e5566;
-    letter-spacing: normal;
-    @include max(767px) {
+    font-size: 24px;
+    margin-bottom: 40px;
+    @include mq('desktop-wide', max) {
+      font-size: 20px;
+      line-height: 28px;
+    }
+    @include mq('tablet-small', max) {
       font-size: 18px;
       line-height: 28px;
     }
-  }
-  .button {
-    margin-top: 35px;
   }
 }
 
@@ -145,6 +165,58 @@
 
 .become-successful-instructor {
   background: #f5f7fa;
+}
+
+// instrucetor rule
+.about-section.instructor-rules {
+  border: none;
+}
+.about-content.instructor-rules {
+  margin-right: 80px;
+  @include mq('tablet', max) {
+    margin: 0;
+  }
+  h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    line-height: 48px;
+    margin-right: 20px;
+    @include mq('tablet', max) {
+      font-size: 36px;
+      line-height: 40px;
+    }
+    @include mq('tablet-small', max) {
+      font-size: 30px;
+      line-height: 36px;
+    }
+   
+  }
+  p {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  ul {
+    margin: 24px 0 0;
+    padding: 0;
+    list-style: none;
+    li {
+      line-height: 24px;
+      color: #1d2026;
+      position: relative;
+      padding-left: 15px;
+      margin-bottom: 12px;
+      &::before {
+        content: '';
+        left: 0;
+        top: 10px;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        position: absolute;
+        background-color: #1d2026;
+      }
+    }
+  }
 }
 
 // help center sections
@@ -220,12 +292,16 @@
 .testimonial2-slider-item {
   background: #ffeee8;
   padding: 32px;
+  @include mq('tablet-small', max) {
+    padding: 25px;
+  }
   svg {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
   }
   p {
-    @extend %text-two;
-    font-weight: 400;
+    font-size: 18px!important;
+    line-height: 26px!important;
+    letter-spacing: -0.015em;
     color: #1d2026;
     @include max(575px) {
       font-size: 16px !important;

@@ -1,4 +1,5 @@
 .company-content {
+  margin-right: 10px;
   @include mq('tablet', max) {
     text-align: center;
     margin-bottom: 30px;

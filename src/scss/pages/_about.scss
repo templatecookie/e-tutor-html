@@ -34,19 +34,22 @@
   }
 
   h2 {
-    font-size: 68px;
     color: #1d2026;
-    font-weight: 600;
-    line-height: 68px;
+    font-size: 48px;
+    line-height: 52px;
     margin-bottom: 24px;
-    white-space: nowrap;
+    font-weight: 600;
     letter-spacing: -0.02em;
-    @include max(1200px) {
-      font-size: 52px;
-      line-height: 1.2em;
+    @include max(991px) {
+      font-size: 40px;
+      white-space: normal;
     }
     @include max(767px) {
-      font-size: 42px;
+      font-size: 36px;
+      white-space: normal;
+    }
+    @include max(480px) {
+      font-size: 28px;
       white-space: normal;
     }
   }
@@ -99,7 +102,7 @@
       }
     }
     .counter-data {
-      h2 {
+      .counter-number {
         font-weight: 600;
         font-size: 32px;
         line-height: 40px;
@@ -127,7 +130,7 @@
 .our-mission-section {
   background: #ffeee8;
   @include mq('tablet', max) {
-    padding-top: 60px;
+    padding: 60px 0;
   }
 }
 .our-mission-content {

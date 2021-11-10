@@ -18,8 +18,6 @@
     font-size: 40px;
     letter-spacing: -0.01em;
     color: #1d2026;
-    margin: 0;
-    line-height: 1;
     @include mq('tablet-small', max) {
       font-size: 32px;
     }
@@ -34,6 +32,7 @@
   align-items: center;
   text-align: left;
   justify-content: space-between;
+  margin-bottom: 30px;
   h2{
     margin-bottom: 15px;
   }
@@ -52,6 +51,9 @@
     letter-spacing: -0.01em;
     color: #4e5566;
   }
+}
+.section-title.course-title{
+  margin-bottom: 55px;
 }
 .hero-section {
   min-height: 548px;
@@ -128,7 +130,7 @@
     font-size: 24px;
     line-height: 32px;
     color: #4e5566;
-    margin-bottom: 40px;
+    margin-bottom: 35px;
     @include max(1200px) {
       font-size: 16px;
       line-height: 26px;

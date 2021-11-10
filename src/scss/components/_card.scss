@@ -317,15 +317,7 @@
       }
     }
 
-    h4 {
-      font-weight: 500;
-      font-size: 16px;
-      line-height: 20px;
-      letter-spacing: -0.01em;
-      color: #1d2026;
-      margin: 0;
-      padding: 10px 18px 14px 18px;
-    }
+    
 
     a {
       font-weight: 500;
@@ -382,6 +374,11 @@
         }
       }
     }
+  }
+  .course-item-5-card-head {
+    font-size: 16px;
+    line-height: 22px;
+    margin: 0;
   }
 }
 
@@ -1612,11 +1609,14 @@ button.course-item-5-card-info-tag {
 .course-item-data {
   text-align: center;
   padding: 12px;
-  h5 {
+  h5, h4 {
     font-weight: 500;
     font-size: 16px;
     color: #1d2026;
     margin-bottom: 4px;
+  }
+  h4{
+    font-size: 18px;
   }
   p {
     font-size: 14px;
