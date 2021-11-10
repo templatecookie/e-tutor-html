@@ -1,17 +1,120 @@
-// vendor
+/* ------------------------------------------------------------------------------
+
+  Template Name: E-Tutor
+  Description: Education & Online Learning Management System Figma Template 
+  Author: templatecookie
+  Author URI: http://themeforest.net/user/templatecookie
+  Version: 1.0
+  
+    1.  Vendor
+
+        1.1 Bootstrap
+
+        
+    2.  Base  
+
+        2.1 typography
+        2.2 reset
+ 
+
+    3.  Abstracts
+
+        3.1 Variables
+        3.2 Functions
+        3.3 Placeholder
+
+    4.  Layout
+
+        4.1 footer
+        4.2 message
+        4.3 header
+        4.4 register
+        4.5 instructor
+        4.6 breadcrumb
+
+    5.  Components
+
+        5.1 hero
+        5.2 form
+        5.3 card
+        5.4 faq
+        5.5 cta
+        5.6 badge
+        5.7 alert
+        5.8 modal
+        5.9 footer
+        5.10 range
+        5.11 review
+        5.12 header
+        5.13 filter
+        5.14 select
+        5.15 profile
+        5.16 lecture
+        5.17 company
+        5.18 buttons
+        5.19 trailer
+        5.20 progress
+        5.21 ckeditor
+        5.22 checkbox
+        5.23 calendar
+        5.24 fielpond
+        5.25 activity
+        5.26 category
+        5.27 curriculum
+        5.28 pagination
+        5.29 breadcrumb
+        5.30 dashboard
+        5.31 social-icon
+        5.32 notification
+        5.33 payment-card
+        5.34 feature-card
+        5.35 all-dropdown
+        5.36 profileview
+        5.37 download-file
+        5.38 popular tools
+        5.39 left sidebar
+        5.40 dashboard menu
+        5.41 edit-biography
+        5.42 payment-method
+        5.43 rating-progress
+        5.44 target-audience
+        5.45 student-profile
+        5.46 purchase history
+        5.47 social media box
+
+    6. Pages
+
+        6.1 404
+        6.2 about
+        6.3 career
+        6.4 contact
+        6.5 course
+        6.6 student
+        6.7 contact
+        6.8 instructor
+        6.9 gift course 
+        6.10 coming soon
+        6.11 become instructor
+
+
+/*-------------------------------------------------------------------------------
+  1. Vendor
+-------------------------------------------------------------------------------*/
 @import 'bootstrap/scss/bootstrap.scss';
 
-// abstracts
-@import 'abstracts/functions';
-@import 'abstracts/variables';
-@import 'abstracts/placeholder';
+/*-------------------------------------------------------------------------------
+  2. Base
+-------------------------------------------------------------------------------*/
 
-// base
 @import 'base/typography';
 @import 'base/reset';
 
-// layout
-@import 'layout/nav';
+// 3. abstracts
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/placeholder';
+
+// 4. layout
 @import 'layout/footer';
 @import 'layout/message';
 @import 'layout/header';
@@ -69,19 +172,14 @@
 @import 'components/social-media-box';
 
 // pages
-@import 'pages/home';
+@import 'pages/404';
+@import 'pages/about';
+@import 'pages/career';
 @import 'pages/contact';
 @import 'pages/course';
 @import 'pages/student';
-@import 'pages/about';
 @import 'pages/contact';
-@import 'pages/career';
-@import 'pages/404';
-@import 'pages/gift-course';
 @import 'pages/instructor';
+@import 'pages/gift-course';
 @import 'pages/coming-soon';
-@import 'pages/eg-responsive';
 @import 'pages/become-instructor';
-
-// themes
-@import 'themes/theme';

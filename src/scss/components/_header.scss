@@ -156,28 +156,6 @@
       }
     }
   }
-  // .search-field {
-  //   position: relative;
-  //   margin-left: 16px;
-  //   @include mq('desktop-wide', max) {
-  //     margin: 20px;
-  //     margin-top: 0;
-  //     margin-bottom: 6px;
-  //   }
-  //   input {
-  //     width: 424px;
-  //     height: 48px;
-  //     border: 1px solid #e9eaf0;
-
-  //     font-size: 16px;
-  //     line-height: 24px;
-  //     color: #8c94a3;
-  //     padding: 10px 54px;
-  //     @include mq('desktop-wide', max) {
-  //       width: 100%;
-  //     }
-  //   }
-  // }
   button#search-btn {
     border: none;
     background-color: transparent;
@@ -363,7 +341,7 @@
       }
     }
     .mobile-user-data {
-      a{
+      a {
         display: block;
       }
       h5 {
@@ -701,7 +679,7 @@ header.header-section.header-four {
   }
 }
 
-.notification-visiable .card.card-activity.notification-box{
+.notification-visiable .card.card-activity.notification-box {
   opacity: 1;
   visibility: visible;
   transition: all 0.2s;

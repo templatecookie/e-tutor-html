@@ -1,8 +1,42 @@
-@mixin animate($value) {
-  transition: all $value ease-out;
+// ==== Responsive   ====== \\
+
+// 1
+@mixin max($size) {
+  @media (max-width: $size) {
+    @content;
+  }
 }
 
-// Responsive Breakpoints
+@mixin min($size) {
+  @media (min-width: $size) {
+    @content;
+  }
+}
+
+@mixin min-max($min, $max) {
+  @media (min-width: $min) and (max-width: $max) {
+    @content;
+  }
+}
+
+// Example
+
+// .example {
+//   @include max(575px) {
+
+//   }
+
+//   @include min(575px) {
+
+//   }
+
+//   @include min-max(320px, 575px) {
+
+//   }
+
+// }
+
+// 2
 $breakpoints: (
   'phone': 320px,
   'phone-wide': 480px,
@@ -38,22 +72,3 @@ $breakpoints: (
 //         font-size: 2.4rem;
 //     }
 // }
-
-// ==== Responsive  ====== \\
-@mixin max($size) {
-  @media (max-width: $size) {
-    @content;
-  }
-}
-
-@mixin min($size) {
-  @media (min-width: $size) {
-    @content;
-  }
-}
-
-@mixin min-max($min, $max) {
-  @media (min-width: $min) and (max-width: $max) {
-    @content;
-  }
-}

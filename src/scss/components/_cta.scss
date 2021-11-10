@@ -75,9 +75,6 @@
     display: flex;
     align-items: center;
     flex-wrap: wrap;
-    // @include mq('tablet-small', max) {
-    //   display: block;
-    // }
 
     @include max(991px) {
       display: grid;

@@ -23,9 +23,8 @@
       background-size: 1.25rem;
     }
     &:not(.collapsed) {
-      background-color: transparent;
       box-shadow: none;
-      // border-bottom: 1px solid #E9EAF0;
+      background-color: transparent;
       &:after {
         width: 1.25rem;
         height: 1.25rem;

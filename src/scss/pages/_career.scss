@@ -93,7 +93,7 @@
         margin-bottom: 32px;
         padding-left: 75px;
         background-color: #fff;
-        &:last-child{
+        &:last-child {
           margin-bottom: 0;
         }
         @include mq('phone-wide', max) {
@@ -105,7 +105,7 @@
           width: 30px;
           height: 30px;
           @include mq('phone-wide', max) {
-           left: 20px;
+            left: 20px;
           }
         }
         span {
@@ -207,9 +207,6 @@
   .sub-heading-meta {
     ul {
       display: flex;
-      // @include mq('phone-wide', max) {
-      //   display: block;
-      // }
       li {
         display: flex;
         align-items: center;
@@ -253,8 +250,8 @@
     }
     .sub-heading-meta {
       margin-bottom: 12px;
-      ul{
-        li{
+      ul {
+        li {
           @include mq('phone-wide', max) {
             font-size: 12px;
           }
