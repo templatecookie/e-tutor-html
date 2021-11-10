@@ -147,46 +147,6 @@
   background: #f5f7fa;
 }
 
-// instrucetor rule
-// .about-section.instructor-rules {
-//   border: none;
-// }
-// .about-content.instructor-rules {
-//   margin-right: 80px;
-//   @include mq('tablet', max) {
-//     margin: 0;
-//   }
-//   h2 {
-//     margin-bottom: 20px;
-//   }
-//   p {
-//     font-size: 18px;
-//     line-height: 24px;
-//   }
-//   ul {
-//     margin: 24px 0 0;
-//     padding: 0;
-//     list-style: none;
-//     li {
-//       line-height: 24px;
-//       color: #1d2026;
-//       position: relative;
-//       padding-left: 15px;
-//       margin-bottom: 12px;
-//       &::before {
-//         content: '';
-//         left: 0;
-//         top: 10px;
-//         width: 5px;
-//         height: 5px;
-//         border-radius: 50%;
-//         position: absolute;
-//         background-color: #1d2026;
-//       }
-//     }
-//   }
-// }
-
 // help center sections
 
 .help-center-section {

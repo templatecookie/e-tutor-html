@@ -407,6 +407,9 @@
       .instructor-tab-navigation {
         padding: 40px;
         padding-top: 6px;
+        @include max(767px) {
+          padding: 16px;
+        }
       }
     }
   }
@@ -513,6 +516,45 @@
             width: 100%;
           }
         }
+      }
+    }
+
+    &--description {
+      h2 {
+        margin-bottom: 16px;
+      }
+      .ck {
+        &-toolbar {
+          padding: 12px;
+          background-color: #fff;
+          border: 1px solid #e9eaf0;
+        }
+
+        &-editor__editable {
+          padding: 12px 18px;
+          min-height: 150px;
+
+          p {
+            margin: 0px;
+          }
+
+          &_inline {
+            border: 1px solid #e9eaf0 !important;
+          }
+        }
+
+        &.ck-editor__editable_inline > :last-child {
+          margin: 0px;
+        }
+      }
+
+      .ck.ck-editor__editable:not(.ck-editor__nested-editable).ck-focused {
+        box-shadow: none;
+        border-color: #ff6636;
+      }
+      .ck.ck-button.ck-on,
+      a.ck.ck-button.ck-on {
+        background-color: #f5f7fa !important;
       }
     }
   }

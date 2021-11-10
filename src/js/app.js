@@ -786,5 +786,22 @@
         selector.trigger('prev.owl.carousel');
       });
     }
+
+    // Editor
+    var hasckeditor = document.getElementById('editorDes');
+    if (hasckeditor) {
+      ClassicEditor.create(document.querySelector('#editorDes'), {
+        toolbar: [
+          'bold',
+          'italic',
+          'bulletedList',
+          'numberedList',
+          'blockQuote',
+          'underline',
+        ],
+      }).catch((error) => {
+        console.error(error);
+      });
+    }
   }); /*End document ready*/
 })(jQuery);
