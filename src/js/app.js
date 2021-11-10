@@ -848,8 +848,8 @@
 
      
 
-     if ($('.main-menu ul li a').length > 0) {
-      $('.main-menu ul li a').click(function(e){
+     if ($('.student-profile-menu ul li a').length > 0) {
+      $('.student-profile-menu ul li a').click(function(e){
       e.preventDefault();
 
       var target = $(this.getAttribute('href'));
