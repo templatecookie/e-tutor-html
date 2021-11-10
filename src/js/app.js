@@ -28,18 +28,20 @@
     //notification
 
     const $menu = $('.notification-icon');
-      $(document).mouseup(e => {
-        if (!$menu.is(e.target) // if the target of the click isn't the container...
-        && $menu.has(e.target).length === 0) // ... nor a descendant of the container
-        {
-          $menu.removeClass('notification-visiable');
-        }
-      });
+    $(document).mouseup((e) => {
+      if (
+        !$menu.is(e.target) && // if the target of the click isn't the container...
+        $menu.has(e.target).length === 0
+      ) {
+        // ... nor a descendant of the container
+        $menu.removeClass('notification-visiable');
+      }
+    });
 
-      $('.notification-icon').on('click', (event) => {
-        event.preventDefault();
-        $menu.toggleClass('notification-visiable');
-      });
+    $('.notification-icon').on('click', (event) => {
+      event.preventDefault();
+      $menu.toggleClass('notification-visiable');
+    });
     //end notification
 
     $('.accordion .accordion-head').click(function () {
@@ -243,36 +245,41 @@
     }
 
     //image uploade
-      var uploader = document.createElement('input'),
-        image = document.getElementById('img-result');
-    
-      uploader.type = 'file';
-      uploader.accept = 'image/*';
-    
-      if(image){
-        image.onclick = function() {
-          uploader.click();
-        }
-      }
-        uploader.onchange = function() {
-          var reader = new FileReader();
-          reader.onload = function(evt) {
-            image.classList.remove('no-image');
-            image.style.backgroundImage = 'url(' + evt.target.result + ')';
-            var request = {
-              itemtype: 'test 1',
-              brand: 'test 2',
-              images: [{
-                data: evt.target.result
-              }]
-            };
-            
-            document.querySelector('.show-button').style.display = 'block';
-            document.querySelector('.upload-result__content').innerHTML = JSON.stringify(request, null, '  ');
-          }
-          reader.readAsDataURL(uploader.files[0]);
-        }
-      
+    var uploader = document.createElement('input'),
+      image = document.getElementById('img-result');
+
+    uploader.type = 'file';
+    uploader.accept = 'image/*';
+
+    if (image) {
+      image.onclick = function () {
+        uploader.click();
+      };
+    }
+    uploader.onchange = function () {
+      var reader = new FileReader();
+      reader.onload = function (evt) {
+        image.classList.remove('no-image');
+        image.style.backgroundImage = 'url(' + evt.target.result + ')';
+        var request = {
+          itemtype: 'test 1',
+          brand: 'test 2',
+          images: [
+            {
+              data: evt.target.result,
+            },
+          ],
+        };
+
+        document.querySelector('.show-button').style.display = 'block';
+        document.querySelector('.upload-result__content').innerHTML = JSON.stringify(
+          request,
+          null,
+          '  ',
+        );
+      };
+      reader.readAsDataURL(uploader.files[0]);
+    };
 
     //actions filter
 
@@ -283,11 +290,20 @@
         const sidebar = document.querySelector('.shop-content .col-xl-3');
         const productGallery = document.querySelector('.shop-content .col-xl-9');
         const productContent = document.querySelectorAll(
-          '.shop__product-items .col-xl-4',
+          '.shop__product-items .col-md-6',
         );
         sidebar.classList.toggle('d-none');
         productGallery.classList.toggle('col-xl-12');
-        filterToggle.classList.toggle('active');
+        // it's will be on 4 column
+        productContent.forEach((item) => {
+          if (item.classList.contains('col-xl-4')) {
+            item.classList.add('col-xl-3');
+            item.classList.remove('col-xl-4');
+          } else if (item.classList.contains('col-xl-3')) {
+            item.classList.add('col-xl-4');
+            item.classList.remove('col-xl-3');
+          }
+        });
       });
     }
 
@@ -825,7 +841,6 @@
         selector.trigger('prev.owl.carousel');
       });
     }
-    
 
     // Editor
     var hasckeditor = document.getElementById('editorDes');
@@ -844,29 +859,30 @@
       });
     }
 
-     // body scroll single course page
+    // body scroll single course page
 
-     
+    if ($('.main-menu ul li a').length > 0) {
+      $('.main-menu ul li a').click(function (e) {
+        e.preventDefault();
 
-     if ($('.main-menu ul li a').length > 0) {
-      $('.main-menu ul li a').click(function(e){
-      e.preventDefault();
+        var target = $(this.getAttribute('href'));
 
-      var target = $(this.getAttribute('href'));
-      
-      $('body , html').animate({
-          scrollTop: target.offset().top,
-        }, 500);
-        });
+        $('body , html').animate(
+          {
+            scrollTop: target.offset().top,
+          },
+          500,
+        );
+      });
     }
 
     // single course page popup js
 
     var popup_youtube = $('.popup-youtube');
-      if (popup_youtube.is_exist()) {
-        popup_youtube.magnificPopup({
-        type: 'iframe'
-    });
+    if (popup_youtube.is_exist()) {
+      popup_youtube.magnificPopup({
+        type: 'iframe',
+      });
     }
 
     // lecture slider student dashed board
@@ -874,93 +890,145 @@
     var lecture_slider = $('.lecture-slider');
     if (lecture_slider.is_exist()) {
       lecture_slider.owlCarousel({
-      loop: true,
-      margin: 20,
-      nav: true,
-      dots: false,
-      items: 4,
-      navText: ['<img src="src/images/svg-icon/arrowleft-orange.svg"/>', 
-      '<img src="src/images/svg-icon/arrowright-orange.svg"/>'],
-      responsive: {
+        loop: true,
+        margin: 20,
+        nav: true,
+        dots: false,
+        items: 4,
+        navText: [
+          '<img src="src/images/svg-icon/arrowleft-orange.svg"/>',
+          '<img src="src/images/svg-icon/arrowright-orange.svg"/>',
+        ],
+        responsive: {
           0: {
-              items: 1,
-              nav: false,
+            items: 1,
+            nav: false,
           },
           600: {
-              items: 1,
+            items: 1,
           },
           755: {
-              items: 2,
+            items: 2,
           },
           1000: {
-              items: 3,
+            items: 3,
           },
           1380: {
-              items: 3,
+            items: 3,
           },
           1400: {
-              items: 4,
+            items: 4,
           },
-      },
-  });
+        },
+      });
     }
 
     //map js contact page
 
-    
-var google_map = $('#map');
-if(google_map.is_exist()){
-  google.maps.event.addDomListener(window, 'load', init);
-  function init() {
-    var mapOptions = {
-        zoom: 11,
-        scrollwheel: false,
-        navigationControl: false,
-        mapTypeControl: false,
-        scaleControl: false,
-        draggable: true,
-        disableDefaultUI: true,
-        center: new google.maps.LatLng(40.6700, -73.9400), 
-        styles: [
-          { featureType: "landscape.man_made", elementType: "geometry", stylers: [{ color: "#f7f1df" }] },
-          { featureType: "landscape.natural", elementType: "geometry", stylers: [{ color: "#d0e3b4" }] },
-          { featureType: "landscape.natural.terrain", elementType: "geometry", stylers: [{ visibility: "off" }] },
-          { featureType: "poi", elementType: "labels", stylers: [{ visibility: "off" }] },
-          { featureType: "poi.business", elementType: "all", stylers: [{ visibility: "off" }] },
-          { featureType: "poi.medical", elementType: "geometry", stylers: [{ color: "#fbd3da" }] },
-          { featureType: "poi.park", elementType: "geometry", stylers: [{ color: "#bde6ab" }] },
-          { featureType: "road", elementType: "geometry.stroke", stylers: [{ visibility: "off" }] },
-          { featureType: "road", elementType: "labels", stylers: [{ visibility: "off" }] },
-          { featureType: "road.highway", elementType: "geometry.fill", stylers: [{ color: "#ffe15f" }] },
-          { featureType: "road.highway", elementType: "geometry.stroke", stylers: [{ color: "#efd151" }] },
-          { featureType: "road.arterial", elementType: "geometry.fill", stylers: [{ color: "#ffffff" }] },
-          { featureType: "road.local", elementType: "geometry.fill", stylers: [{ color: "black" }] },
-          { featureType: "transit.station.airport", elementType: "geometry.fill", stylers: [{ color: "#cfb2db" }] },
-          { featureType: "water", elementType: "geometry", stylers: [{ color: "#a2daf2" }] },
-      ],
-                };
-      var mapElement = document.getElementById('map');
+    var google_map = $('#map');
+    if (google_map.is_exist()) {
+      google.maps.event.addDomListener(window, 'load', init);
+      function init() {
+        var mapOptions = {
+          zoom: 11,
+          scrollwheel: false,
+          navigationControl: false,
+          mapTypeControl: false,
+          scaleControl: false,
+          draggable: true,
+          disableDefaultUI: true,
+          center: new google.maps.LatLng(40.67, -73.94),
+          styles: [
+            {
+              featureType: 'landscape.man_made',
+              elementType: 'geometry',
+              stylers: [{ color: '#f7f1df' }],
+            },
+            {
+              featureType: 'landscape.natural',
+              elementType: 'geometry',
+              stylers: [{ color: '#d0e3b4' }],
+            },
+            {
+              featureType: 'landscape.natural.terrain',
+              elementType: 'geometry',
+              stylers: [{ visibility: 'off' }],
+            },
+            {
+              featureType: 'poi',
+              elementType: 'labels',
+              stylers: [{ visibility: 'off' }],
+            },
+            {
+              featureType: 'poi.business',
+              elementType: 'all',
+              stylers: [{ visibility: 'off' }],
+            },
+            {
+              featureType: 'poi.medical',
+              elementType: 'geometry',
+              stylers: [{ color: '#fbd3da' }],
+            },
+            {
+              featureType: 'poi.park',
+              elementType: 'geometry',
+              stylers: [{ color: '#bde6ab' }],
+            },
+            {
+              featureType: 'road',
+              elementType: 'geometry.stroke',
+              stylers: [{ visibility: 'off' }],
+            },
+            {
+              featureType: 'road',
+              elementType: 'labels',
+              stylers: [{ visibility: 'off' }],
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry.fill',
+              stylers: [{ color: '#ffe15f' }],
+            },
+            {
+              featureType: 'road.highway',
+              elementType: 'geometry.stroke',
+              stylers: [{ color: '#efd151' }],
+            },
+            {
+              featureType: 'road.arterial',
+              elementType: 'geometry.fill',
+              stylers: [{ color: '#ffffff' }],
+            },
+            {
+              featureType: 'road.local',
+              elementType: 'geometry.fill',
+              stylers: [{ color: 'black' }],
+            },
+            {
+              featureType: 'transit.station.airport',
+              elementType: 'geometry.fill',
+              stylers: [{ color: '#cfb2db' }],
+            },
+            {
+              featureType: 'water',
+              elementType: 'geometry',
+              stylers: [{ color: '#a2daf2' }],
+            },
+          ],
+        };
+        var mapElement = document.getElementById('map');
 
-      var map = new google.maps.Map(mapElement, mapOptions);
+        var map = new google.maps.Map(mapElement, mapOptions);
 
-      marker.setAnimation(google.maps.Animation.BOUNCE);
-      setTimeout(function(){ marker.setAnimation(null); }, 750);  //time it takes for one bounce   
+        marker.setAnimation(google.maps.Animation.BOUNCE);
+        setTimeout(function () {
+          marker.setAnimation(null);
+        }, 750); //time it takes for one bounce
 
-      google.maps.event.addListener(marker, 'click', function () {
+        google.maps.event.addListener(marker, 'click', function () {
           infowindow.open(map, marker);
-      });
-
+        });
+      }
     }
-
-}
-
-   
-     
-     
-  
-
   }); /*End document ready*/
 })(jQuery);
-
-
-
