@@ -5,6 +5,7 @@
     max-width: 100%;
     overflow-x: scroll;
   }
+
   &-section {
     &-content {
       display: flex;
@@ -13,6 +14,7 @@
       @include max(767px) {
         width: 650px;
       }
+
       .section {
         &-info {
           display: flex;
@@ -62,7 +64,20 @@
     display: flex;
     align-items: center;
     background-color: #fff;
+    transition: all 0.3s linear;
     justify-content: space-between;
+
+    &:hover {
+      .lecture-action {
+        a {
+          color: #1d2026;
+          &:nth-last-child(1) {
+            color: #e34444;
+          }
+        }
+      }
+    }
+
     .lecture {
       &-info {
         display: flex;
@@ -100,6 +115,7 @@
         .button,
         a {
           margin-right: 15px;
+          transition: all 0.3s linear;
         }
 
         a {
