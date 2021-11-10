@@ -1921,10 +1921,7 @@
         <script>
             // popup video
             $(document).ready(function () {
-                $(".popup-youtube").magnificPopup({
-                    type: "iframe",
-                });
-
+ 
                 //course faq
                 var faq_init3 = function (el, multiple) {
                     this.el = el || {};
@@ -1939,33 +1936,20 @@
                         this.dropdown
                     );
                 };
-                faq_init3.prototype.dropdown = function (e) {
-                    var $el = e.data.el;
-                    ($this = $(this)), ($next = $this.next());
-                    $next.slideToggle();
-                    $this.parent().toggleClass("open");
-                    if (!e.data.multiple) {
-                        $el.find(".accordion-body-text").not($next).slideUp().parent().removeClass("open");
-                    }
-                };
+                    faq_init3.prototype.dropdown = function (e) {
+                        var $el = e.data.el;
+                        ($this = $(this)), ($next = $this.next());
+                        $next.slideToggle();
+                        $this.parent().toggleClass("open");
+                        if (!e.data.multiple) {
+                            $el.find(".accordion-body-text").not($next).slideUp().parent().removeClass("open");
+                        }
+                    };
                 var faq_init3 = new faq_init3($("#faq_init3"), false);
 
                 // body scroll
 
-                if ($(".main-menu ul li a").length > 0) {
-                    $(".main-menu ul li a").click(function (e) {
-                        e.preventDefault();
-
-                        var target = $(this.getAttribute("href"));
-
-                        $("body , html").animate(
-                            {
-                                scrollTop: target.offset().top,
-                            },
-                            500
-                        );
-                    });
-                }
+        
             }); //end document.ready
         </script>
     </body>
