@@ -41,9 +41,9 @@
     &:hover {
       border: 1px solid #7bd785;
     }
-    p {
+    span {
       line-height: 1;
-      margin-right: 45px;
+      margin-right: 65px;
       font-family: Inter;
       &:last-child {
         margin-right: 0;
@@ -52,7 +52,7 @@
         margin: 0 0 15px;
       }
     }
-    h3 {
+    strong {
       font-weight: normal;
       font-size: 12px;
       line-height: 16px;
