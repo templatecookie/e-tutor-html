@@ -673,13 +673,8 @@ header.header-section.header-four {
   visibility: hidden;
   border: 1px solid #e9eaf0;
   background-color: #fff;
-  transition: all 0.4s;
+  transition: all 0.2s;
   box-shadow: 0px 4px 20px rgba(29, 32, 38, 0.12);
-  &.notification-visiable {
-    opacity: 1;
-    visibility: visible;
-    transition: all 0.4s;
-  }
   .activity-item {
     margin: 0 !important;
     display: flex !important;
@@ -690,6 +685,12 @@ header.header-section.header-four {
     letter-spacing: -0.01em;
     color: #4e5566;
   }
+}
+
+.notification-visiable .card.card-activity.notification-box{
+  opacity: 1;
+  visibility: visible;
+  transition: all 0.2s;
 }
 
 .card.card-activity.notification-box.instructor-page {

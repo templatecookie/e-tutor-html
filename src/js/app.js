@@ -27,14 +27,19 @@
 
     //notification
 
-    var button = document.querySelector('.notification-icon');
-    var box = document.querySelector('.card-activity');
-    if (button) {
-      button.addEventListener('click', function (event) {
-        event.preventDefault();
-        box.classList.toggle('notification-visiable');
+    const $menu = $('.notification-icon');
+      $(document).mouseup(e => {
+        if (!$menu.is(e.target) // if the target of the click isn't the container...
+        && $menu.has(e.target).length === 0) // ... nor a descendant of the container
+        {
+          $menu.removeClass('notification-visiable');
+        }
       });
-    }
+
+      $('.notification-icon').on('click', (event) => {
+        event.preventDefault();
+        $menu.toggleClass('notification-visiable');
+      });
     //end notification
 
     $('.accordion .accordion-head').click(function () {
