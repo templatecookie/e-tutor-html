@@ -1,9 +1,9 @@
 .about-section {
   border-bottom: 1px solid #e9eaf0;
 }
-.responsive_bottom{
+.responsive_bottom {
   @include max(991px) {
-    margin: 0 0 30px!important;
+    margin: 0 0 30px !important;
   }
 }
 .about-content {
@@ -34,23 +34,23 @@
   }
 
   h2 {
-    font-weight: 600;
+    color: #1d2026;
     font-size: 48px;
     line-height: 52px;
+    margin-bottom: 24px;
+    font-weight: 600;
     letter-spacing: -0.02em;
-    color: #1d2026;
-    margin-bottom: 30px;
-    @include mq('desktop-wide', max) {
-      font-size: 44px;
+    @include max(991px) {
+      font-size: 40px;
+      white-space: normal;
     }
-    @include mq('desktop', max) {
+    @include max(767px) {
       font-size: 36px;
-      line-height: 40px;
-      margin-bottom: 15px;
+      white-space: normal;
     }
-    @include mq('phone-wide', max) {
-      font-size: 30px;
-      line-height: 38px;
+    @include max(480px) {
+      font-size: 28px;
+      white-space: normal;
     }
   }
   p {
@@ -76,9 +76,6 @@
   @include mq('tablet-small', max) {
     justify-content: inherit;
   }
-  @include mq('phone-wide', max) {
-    display: block;
-  }
 
   .counter-item {
     display: flex;
@@ -99,8 +96,9 @@
     }
     .counter-icon {
       margin-right: 16px;
-      @include mq('tablet', max) {
-        margin: 0 0 15px;
+      @include max(991px) {
+        margin: 0px;
+        margin-bottom: 6px;
       }
     }
     .counter-data {
@@ -110,9 +108,10 @@
         line-height: 40px;
         letter-spacing: -0.01em;
         color: #1d2026;
-        @include mq('tablet-small', max) {
-          font-size: 26px;
-          margin-bottom: 0px;
+        @include max(991px) {
+          font-size: 24px;
+          line-height: 34px;
+          margin: 0px;
         }
       }
       p {
@@ -175,9 +174,9 @@
 }
 
 // gallery section
-.gallery-section.gray-bg{
-    background: #F5F7FA;
-  }
+.gallery-section.gray-bg {
+  background: #f5f7fa;
+}
 .gallery-thumb {
   margin-left: 100px;
   @include mq('desktop', max) {

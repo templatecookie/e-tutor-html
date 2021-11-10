@@ -124,14 +124,15 @@
     }
     @include mq('tablet-small', max) {
       font-size: 18px;
+      line-height: 28px;
     }
   }
 }
 
 // counter section
 .counter-section.become-instructor {
+  padding: 45px 0;
   background: #ffeee8;
-  padding: 40px 0;
 }
 
 //teaching Etutor
@@ -139,11 +140,14 @@
 .join-team-content.become-instructor {
   .checkbox-field {
     ul {
-      margin-top: 30px;
+      margin-top: 26px;
       li {
         padding: 0;
         padding-left: 45px;
         margin-bottom: 24px;
+        @include max(991px) {
+          margin-bottom: 12px;
+        }
         &:last-child {
           margin-bottom: 0;
         }
@@ -151,7 +155,8 @@
           left: 0;
         }
         span {
-          font-size: 18px;
+          @extend %text-two;
+          white-space: normal;
         }
       }
     }
@@ -298,6 +303,10 @@
     line-height: 26px!important;
     letter-spacing: -0.015em;
     color: #1d2026;
+    @include max(575px) {
+      font-size: 16px !important;
+      line-height: normal;
+    }
   }
 }
 .my-owl-nav {
@@ -319,7 +328,7 @@
   background: #f5f7fa !important;
   &:hover {
     background: #ff6636 !important;
-    box-shadow: 0px 6px 20px rgba(204, 82, 43, 0.5);
+    box-shadow: 0px 6px 20px 0px #cc522b80;
   }
   svg {
     path {

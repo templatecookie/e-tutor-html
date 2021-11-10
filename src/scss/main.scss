@@ -64,6 +64,7 @@
 @import 'components/filter';
 @import 'components/left-slidebar';
 @import 'components/modal';
+@import 'components/ckeditor';
 @import 'components/feature-card';
 
 // pages
@@ -74,11 +75,12 @@
 @import 'pages/about';
 @import 'pages/contact';
 @import 'pages/career';
+@import 'pages/404';
 @import 'pages/gift-course';
 @import 'pages/instructor';
-@import 'pages/404';
 @import 'pages/coming-soon';
 @import 'pages/eg-responsive';
+@import 'pages/become-instructor';
 
 // themes
 @import 'themes/theme';
