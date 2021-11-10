@@ -91,4 +91,26 @@
       }
     }
   }
+
+  &--lecturevideo {
+    .form-upload {
+      margin-bottom: 16px;
+    }
+    p {
+      @extend %text-one;
+      color: #8c94a3;
+      span {
+        color: #1d2026;
+        font-weight: 500;
+      }
+    }
+  }
+
+  &--cdescription {
+    .form {
+      &-textarea {
+        margin-bottom: 24px;
+      }
+    }
+  }
 }
