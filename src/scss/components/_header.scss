@@ -94,7 +94,6 @@
 
 .header-bottom {
   padding: 24px 32px;
-  // background-color: #fff;
   display: flex;
   // flex-wrap: wrap;
   align-items: center;
@@ -114,6 +113,7 @@
       align-items: center;
       .main-logo {
         margin-right: 50px;
+
         @include mq('desktop-wide', max) {
           margin-right: 20px;
         }
@@ -613,6 +613,31 @@ a.header-arrow {
 
 header.header-section.header-four {
   background-color: #fff;
+  .main-logo {
+    a {
+      display: flex;
+      align-items: center;
+      font-size: 32px;
+      font-weight: 600;
+      color: #1d2026;
+      line-height: 38px;
+      letter-spacing: -0.03em;
+      text-transform: capitalize;
+      @include max(480px) {
+        font-size: 0px;
+        line-height: 0px;
+      }
+      img {
+        margin-right: 8px;
+      }
+    }
+
+    &--white {
+      a {
+        color: #fff;
+      }
+    }
+  }
 }
 
 .header-four {

@@ -22,7 +22,7 @@
     width: 45%;
     background-color: #ebebff;
     @include max(1480px) {
-      width: 30%;
+      width: 40%;
     }
     @include max(991px) {
       display: none;
@@ -32,7 +32,7 @@
     width: 55%;
     background-color: #fff;
     @include max(1480px) {
-      width: 70%;
+      width: 60%;
       margin-left: 30px;
     }
     @include max(991px) {
