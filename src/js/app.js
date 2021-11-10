@@ -27,14 +27,19 @@
 
     //notification
 
-    var button = document.querySelector('.notification-icon');
-    var box = document.querySelector('.card-activity');
-    if (button) {
-      button.addEventListener('click', function (event) {
-        event.preventDefault();
-        box.classList.toggle('notification-visiable');
+    const $menu = $('.notification-icon');
+      $(document).mouseup(e => {
+        if (!$menu.is(e.target) // if the target of the click isn't the container...
+        && $menu.has(e.target).length === 0) // ... nor a descendant of the container
+        {
+          $menu.removeClass('notification-visiable');
+        }
       });
-    }
+
+      $('.notification-icon').on('click', (event) => {
+        event.preventDefault();
+        $menu.toggleClass('notification-visiable');
+      });
     //end notification
 
     $('.accordion .accordion-head').click(function () {
@@ -797,8 +802,9 @@
     // if(document.getElementById()) { }
     // if(document.getElementsByClassName()) { }
 
-    if (document.getElementsByClassName('testimonial2-slider')) {
-      $('.testimonial2-slider').owlCarousel({
+    var testimonial2_slider = $('.testimonial2-slider');
+    if (testimonial2_slider.is_exist()) {
+      testimonial2_slider.owlCarousel({
         loop: true,
         margin: 20,
         nav: false,
@@ -819,6 +825,7 @@
         selector.trigger('prev.owl.carousel');
       });
     }
+    
 
     // Editor
     var hasckeditor = document.getElementById('editorDes');
@@ -836,5 +843,124 @@
         console.error(error);
       });
     }
+
+     // body scroll single course page
+
+     
+
+     if ($('.main-menu ul li a').length > 0) {
+      $('.main-menu ul li a').click(function(e){
+      e.preventDefault();
+
+      var target = $(this.getAttribute('href'));
+      
+      $('body , html').animate({
+          scrollTop: target.offset().top,
+        }, 500);
+        });
+    }
+
+    // single course page popup js
+
+    var popup_youtube = $('.popup-youtube');
+      if (popup_youtube.is_exist()) {
+        popup_youtube.magnificPopup({
+        type: 'iframe'
+    });
+    }
+
+    // lecture slider student dashed board
+
+    var lecture_slider = $('.lecture-slider');
+    if (lecture_slider.is_exist()) {
+      lecture_slider.owlCarousel({
+      loop: true,
+      margin: 20,
+      nav: true,
+      dots: false,
+      items: 4,
+      navText: ['<img src="src/images/svg-icon/arrowleft-orange.svg"/>', 
+      '<img src="src/images/svg-icon/arrowright-orange.svg"/>'],
+      responsive: {
+          0: {
+              items: 1,
+              nav: false,
+          },
+          600: {
+              items: 1,
+          },
+          755: {
+              items: 2,
+          },
+          1000: {
+              items: 3,
+          },
+          1380: {
+              items: 3,
+          },
+          1400: {
+              items: 4,
+          },
+      },
+  });
+    }
+
+    //map js contact page
+
+    
+var google_map = $('#map');
+if(google_map.is_exist()){
+  google.maps.event.addDomListener(window, 'load', init);
+  function init() {
+    var mapOptions = {
+        zoom: 11,
+        scrollwheel: false,
+        navigationControl: false,
+        mapTypeControl: false,
+        scaleControl: false,
+        draggable: true,
+        disableDefaultUI: true,
+        center: new google.maps.LatLng(40.6700, -73.9400), 
+        styles: [
+          { featureType: "landscape.man_made", elementType: "geometry", stylers: [{ color: "#f7f1df" }] },
+          { featureType: "landscape.natural", elementType: "geometry", stylers: [{ color: "#d0e3b4" }] },
+          { featureType: "landscape.natural.terrain", elementType: "geometry", stylers: [{ visibility: "off" }] },
+          { featureType: "poi", elementType: "labels", stylers: [{ visibility: "off" }] },
+          { featureType: "poi.business", elementType: "all", stylers: [{ visibility: "off" }] },
+          { featureType: "poi.medical", elementType: "geometry", stylers: [{ color: "#fbd3da" }] },
+          { featureType: "poi.park", elementType: "geometry", stylers: [{ color: "#bde6ab" }] },
+          { featureType: "road", elementType: "geometry.stroke", stylers: [{ visibility: "off" }] },
+          { featureType: "road", elementType: "labels", stylers: [{ visibility: "off" }] },
+          { featureType: "road.highway", elementType: "geometry.fill", stylers: [{ color: "#ffe15f" }] },
+          { featureType: "road.highway", elementType: "geometry.stroke", stylers: [{ color: "#efd151" }] },
+          { featureType: "road.arterial", elementType: "geometry.fill", stylers: [{ color: "#ffffff" }] },
+          { featureType: "road.local", elementType: "geometry.fill", stylers: [{ color: "black" }] },
+          { featureType: "transit.station.airport", elementType: "geometry.fill", stylers: [{ color: "#cfb2db" }] },
+          { featureType: "water", elementType: "geometry", stylers: [{ color: "#a2daf2" }] },
+      ],
+                };
+      var mapElement = document.getElementById('map');
+
+      var map = new google.maps.Map(mapElement, mapOptions);
+
+      marker.setAnimation(google.maps.Animation.BOUNCE);
+      setTimeout(function(){ marker.setAnimation(null); }, 750);  //time it takes for one bounce   
+
+      google.maps.event.addListener(marker, 'click', function () {
+          infowindow.open(map, marker);
+      });
+
+    }
+
+}
+
+   
+     
+     
+  
+
   }); /*End document ready*/
 })(jQuery);
+
+
+

@@ -3833,39 +3833,7 @@
         <script type="module" src="/main.js"></script>
 
         <script>
-            // popup video
-            $(document).ready(function () {
-                $(".lecture-slider").owlCarousel({
-                    loop: true,
-                    margin: 20,
-                    nav: true,
-                    dots: false,
-                    items: 4,
-                    navText: ['<img src="src/images/svg-icon/arrowleft-orange.svg"/>', 
-                    '<img src="src/images/svg-icon/arrowright-orange.svg"/>'],
-                    responsive: {
-                        0: {
-                            items: 1,
-                            nav: false,
-                        },
-                        600: {
-                            items: 1,
-                        },
-                        755: {
-                            items: 2,
-                        },
-                        1000: {
-                            items: 3,
-                        },
-                        1380: {
-                            items: 3,
-                        },
-                        1400: {
-                            items: 4,
-                        },
-                    },
-                });
-            }); //end document.ready
+    
 
             var faq_init2 = function (el, multiple) {
                 this.el = el || {};
