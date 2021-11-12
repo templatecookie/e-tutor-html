@@ -99,19 +99,21 @@
 /*-------------------------------------------------------------------------------
   1. Vendor
 -------------------------------------------------------------------------------*/
-@import 'bootstrap/scss/bootstrap.scss';
+
 
 /*-------------------------------------------------------------------------------
   2. Base
 -------------------------------------------------------------------------------*/
 
-@import 'base/typography';
-@import 'base/reset';
-
 // 3. abstracts
 @import 'abstracts/variables';
 @import 'abstracts/functions';
 @import 'abstracts/placeholder';
+
+@import 'base/typography';
+@import 'base/reset';
+
+
 
 // 4. layout
 @import 'layout/footer';

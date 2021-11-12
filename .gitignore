@@ -3,3 +3,8 @@ node_modules
 dist
 dist-ssr
 *.local
+
+*.txt
+*.DS_Store
+*dist/**/*
+*build/**/*
