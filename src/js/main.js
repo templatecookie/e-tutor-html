@@ -923,6 +923,29 @@
       });
     }
 
+if($(".payment-card-slider").length > 0){
+  $('.payment-card-slider').owlCarousel({
+    loop:true,
+    margin: 0,
+    nav:false,
+    dots: true,
+    items: 1,
+    navText: ["<img src=\"assets/images/svg-icon/arrowleft-orange.svg\"/>",
+            "<img src=\"assets/images/svg-icon/arrowright-orange.svg\"/>"],
+
+    })
+
+    var selector = $('.owl-carousel');
+    $('.card-next-button').click(function() {
+        selector.trigger('next.owl.carousel');
+    });
+
+    $('.card-prev-button').click(function() {
+        selector.trigger('prev.owl.carousel');
+    });
+
+}
+    
     //map js contact page
 
     var google_map = $('#map');

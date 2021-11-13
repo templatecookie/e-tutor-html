@@ -10,7 +10,10 @@ const countdownHours= document.querySelector('.countdown-hours .number');
 const countdownMinutes= document.querySelector('.countdown-minutes .number');
 const countdownSeconds= document.querySelector('.countdown-seconds .number');
 
-// Update the count down every 1 second (1000 milliseconds)
+
+if(document.querySelector('.countdown-days')){
+
+  // Update the count down every 1 second (1000 milliseconds)
 setInterval(() => {    
   // Get current date and time
   const currentDate = new Date().getTime();
@@ -30,6 +33,9 @@ setInterval(() => {
   countdownMinutes.innerHTML = minutes;
   countdownSeconds.innerHTML = seconds;
 }, 1000);
+}
+
 
 
 })(jQuery);
+

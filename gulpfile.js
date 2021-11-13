@@ -194,7 +194,7 @@ function watchfiles() {
     watch([files.plugins_path], series(scriptsTask, reload));
     watch([files.image_path], series(imagetask, reload));
     watch([files.fonts_path], series(copyfonts, reload));
-    watch(['src/pages/**/*.html'], series(reload));
+    watch(['src/templates/**/*.html', 'src/pages/**/*.html'], series(nunjucks, reload));
     watch(files.output + '/*').on('change', browserSync.reload);
 }
 
