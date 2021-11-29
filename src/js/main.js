@@ -947,7 +947,6 @@ if($(".payment-card-slider").length > 0){
 }
     
     //map js contact page
-
     var google_map = $('#map');
     if (google_map.is_exist()) {
       google.maps.event.addDomListener(window, 'load', init);
@@ -1039,18 +1038,18 @@ if($(".payment-card-slider").length > 0){
             },
           ],
         };
+        
         var mapElement = document.getElementById('map');
-
         var map = new google.maps.Map(mapElement, mapOptions);
+        // let marker;
+        // marker.setAnimation(google.maps.Animation.BOUNCE);
+        // setTimeout(function () {
+        //   marker.setAnimation(null);
+        // }, 750); //time it takes for one bounce
 
-        marker.setAnimation(google.maps.Animation.BOUNCE);
-        setTimeout(function () {
-          marker.setAnimation(null);
-        }, 750); //time it takes for one bounce
-
-        google.maps.event.addListener(marker, 'click', function () {
-          infowindow.open(map, marker);
-        });
+        // google.maps.event.addListener(marker, 'click', function () {
+        //   infowindow.open(map, marker);
+        // });
       }
     }
   }); /*End document ready*/
