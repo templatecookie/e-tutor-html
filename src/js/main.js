@@ -390,8 +390,8 @@
         dots: false,
         items: 6,
         navText: [
-          '<img src="src/images/svg-icon/arrowleft-orange.svg"/>',
-          '<img src="src/images/svg-icon/arrowright-orange.svg"/>',
+          '<img src="assets/images/svg-icon/arrowleft-orange.svg"/>',
+          '<img src="assets/images/svg-icon/arrowright-orange.svg"/>',
         ],
         responsive: {
           0: {
@@ -827,8 +827,8 @@
         dots: false,
         items: 1,
         navText: [
-          '<img src="src/images/svg-icon/arrowleft-orange.svg"/>',
-          '<img src="src/images/svg-icon/arrowright-orange.svg"/>',
+          '<img src="assets/images/svg-icon/arrowleft-orange.svg"/>',
+          '<img src="assets/images/svg-icon/arrowright-orange.svg"/>',
         ],
       });
 
@@ -896,8 +896,8 @@
         dots: false,
         items: 4,
         navText: [
-          '<img src="src/images/svg-icon/arrowleft-orange.svg"/>',
-          '<img src="src/images/svg-icon/arrowright-orange.svg"/>',
+          '<img src="assets/images/svg-icon/arrowleft-orange.svg"/>',
+          '<img src="assets/images/svg-icon/arrowright-orange.svg"/>',
         ],
         responsive: {
           0: {
