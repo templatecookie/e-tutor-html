@@ -492,7 +492,7 @@
       var revenueChart = new ApexCharts(document.querySelector('#revenueChart'), {
         chart: {
           width: '100%',
-          height: 350,
+          height: 400,
           type: 'area',
           toolbar: {
             show: false,
@@ -739,6 +739,84 @@
       var overviewChart = new ApexCharts(document.querySelector('#overviewChart'), {
         chart: {
           height: 450,
+          type: 'area',
+          toolbar: {
+            autoSelected: 'pan',
+            show: false,
+          },
+          offsetX: 0,
+          offsetY: 0,
+          zoom: {
+            enabled: false,
+          },
+          sparkline: {
+            enabled: true,
+          },
+        },
+        dataLabels: {
+          enabled: false,
+        },
+        stroke: { curve: 'smooth', width: 3 },
+        series: [
+          {
+            type: 'area',
+
+            data: [400, 600, 1000, 800, 600, 1000, 800],
+          },
+          {
+            type: 'line',
+            data: [1000, 800, 600, 900, 1200, 1000, 400],
+          },
+        ],
+        colors: ['#564FFD', '#FF6636'],
+        tooltip: {
+          theme: 'dark',
+        },
+        grid: {
+          padding: {
+            left: 20,
+            right: 20,
+            bottom: 0,
+          },
+        },
+        yaxis: {
+          show: false,
+          labels: {
+            show: false,
+          },
+        },
+        fill: {
+          colors: '#564FFD',
+          type: 'gradient',
+        },
+        xaxis: {
+          categories: ['Sun', 'Mon', 'Tue', 'Wed', 'Thr', 'Fri', 'Sat'],
+          low: 0,
+          offsetX: 0,
+          offsetY: 0,
+          show: false,
+          labels: {
+            low: 0,
+            offsetX: 0,
+            show: false,
+          },
+          axisBorder: {
+            low: 0,
+            offsetX: 0,
+            show: false,
+          },
+        },
+        legend: {
+          show: false,
+        },
+      });
+
+      overviewChart.render();
+    }
+    if (document.getElementById('overviewChart2')) {
+      var overviewChart = new ApexCharts(document.querySelector('#overviewChart2'), {
+        chart: {
+          height: 340,
           type: 'area',
           toolbar: {
             autoSelected: 'pan',
