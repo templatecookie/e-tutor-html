@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>E-tutor</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="assets/images/favicon/fav.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/rt-plugins.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body class="bodybg">
+
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+
+
+
+
+
+  <!-- Instrcutor Dashboard Layout Start -->
+  <div class="instructor">
+    <!-- sidbear -->
+    <div class="instructor-sidebar">
+      <!-- top content  -->
+      <div>
+        <!-- Brand Logo  -->
+        <div class="instructor-logo">
+          <a href="instructor-dashboard.html">
+            <img src="assets/images/logo-cap.png" alt="brand-logo">
+            E-tutor
+          </a>
+        </div>
+        <!-- Navigation Menu  -->
+        <ul class="instructor-menu">
+          <li>
+            <a href="instructor-dashboard.html">
+              <span class="icon">
+                           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4.125 19.5V12.75H9.375" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M21.375 19.5H2.625" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M9.375 19.5V8.25H14.625" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M19.875 3.75H14.625V19.5H19.875V3.75Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                           </svg>
+                        </span>
+              Dashboard
+            </a>
+          </li>
+          <li>
+            <a href="create-course.html">
+              <span class="icon">
+                           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"/>
+                              <path d="M8.25 12H15.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M12 8.25V15.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                           </svg>
+                        </span>
+              Create New Course
+            </a>
+          </li>
+          <li>
+            <a href="my-course.html">
+              <span class="icon">
+                           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M3 16.5L12 21.75L21 16.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M3 12L12 17.25L21 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M3 7.5L12 12.75L21 7.5L12 2.25L3 7.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                           </svg>
+                        </span>
+              My Courses
+            </a>
+          </li>
+          <li class="active">
+            <a href="my-earning.html">
+              <span class="icon">
+                           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M21 5.25H3C2.58579 5.25 2.25 5.58579 2.25 6V18C2.25 18.4142 2.58579 18.75 3 18.75H21C21.4142 18.75 21.75 18.4142 21.75 18V6C21.75 5.58579 21.4142 5.25 21 5.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M15.7495 15.75H18.7495" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M11.2495 15.75H12.7495" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M2.24951 9.07812H21.7495" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                           </svg>
+                        </span>
+              Earning
+            </a>
+          </li>
+          <li>
+            <a href="instructor-message.html">
+              <span class="icon">
+                           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M4.25895 16.5939C3.14076 14.7089 2.74916 12.4805 3.15768 10.3272C3.56621 8.1739 4.74675 6.2438 6.47764 4.89933C8.20853 3.55486 10.3707 2.8885 12.5581 3.02539C14.7455 3.16227 16.8078 4.09298 18.3575 5.64274C19.9073 7.19251 20.838 9.25472 20.9749 11.4421C21.1118 13.6296 20.4455 15.7917 19.101 17.5226C17.7565 19.2535 15.8264 20.4341 13.6732 20.8426C11.5199 21.2511 9.29149 20.8596 7.40649 19.7414L7.40651 19.7413L4.29808 20.6294C4.16947 20.6662 4.03338 20.6678 3.90391 20.6343C3.77443 20.6007 3.65628 20.5332 3.5617 20.4386C3.46713 20.344 3.39956 20.2259 3.36601 20.0964C3.33246 19.9669 3.33415 19.8308 3.37089 19.7022L4.25901 16.5938L4.25895 16.5939Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M12.375 12C12.375 12.2071 12.2071 12.375 12 12.375C11.7929 12.375 11.625 12.2071 11.625 12C11.625 11.7929 11.7929 11.625 12 11.625C12.2071 11.625 12.375 11.7929 12.375 12Z" fill="currentColor" stroke="currentColor" stroke-width="1.5"/>
+                              <path d="M7.875 12C7.875 12.2071 7.70711 12.375 7.5 12.375C7.29289 12.375 7.125 12.2071 7.125 12C7.125 11.7929 7.29289 11.625 7.5 11.625C7.70711 11.625 7.875 11.7929 7.875 12Z" fill="currentColor" stroke="currentColor" stroke-width="1.5"/>
+                              <path d="M16.875 12C16.875 12.2071 16.7071 12.375 16.5 12.375C16.2929 12.375 16.125 12.2071 16.125 12C16.125 11.7929 16.2929 11.625 16.5 11.625C16.7071 11.625 16.875 11.7929 16.875 12Z" fill="currentColor" stroke="currentColor" stroke-width="1.5"/>
+                           </svg>
+                        </span>
+              Message
+              <span class="count">3</span>
+            </a>
+          </li>
+          <li>
+            <a href="account-setting.html">
+              <span class="icon">
+                           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M12.0005 16.5C14.4858 16.5 16.5005 14.4853 16.5005 12C16.5005 9.51472 14.4858 7.5 12.0005 7.5C9.51521 7.5 7.50049 9.51472 7.50049 12C7.50049 14.4853 9.51521 16.5 12.0005 16.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                              <path d="M11.5198 4.13757L9.75078 2.8112C9.65586 2.7398 9.54534 2.69198 9.42831 2.67167C9.31129 2.65137 9.19112 2.65917 9.0777 2.69442C8.52982 2.86599 7.99827 3.08591 7.48933 3.3516C7.38397 3.40686 7.29327 3.48638 7.22471 3.58361C7.15614 3.68083 7.11169 3.79297 7.095 3.91076L6.78228 6.09991C6.66307 6.20557 6.54637 6.31547 6.43217 6.42961C6.31801 6.54377 6.20809 6.6605 6.1024 6.7798L6.10235 6.77984L3.91359 7.09284C3.79599 7.10947 3.68402 7.1538 3.58691 7.2222C3.48981 7.29059 3.41034 7.38108 3.35507 7.48621C3.08898 7.99493 2.86863 8.5263 2.69662 9.07404C2.6612 9.18762 2.6533 9.30799 2.67356 9.42522C2.69383 9.54245 2.74168 9.65318 2.81318 9.74827L4.14001 11.5174C4.13043 11.6764 4.12562 11.8366 4.12558 11.998C4.12558 12.1595 4.13039 12.3198 4.14002 12.4789L4.14001 12.4789L2.81364 14.2479C2.74224 14.3428 2.69442 14.4534 2.67411 14.5704C2.65381 14.6874 2.66161 14.8076 2.69686 14.921C2.86843 15.4689 3.08836 16.0004 3.35404 16.5094C3.4093 16.6147 3.48882 16.7054 3.58605 16.774C3.68327 16.8426 3.79541 16.887 3.9132 16.9037L6.10235 17.2164C6.20801 17.3356 6.31791 17.4523 6.43204 17.5665C6.54621 17.6807 6.66294 17.7906 6.78224 17.8963L6.78228 17.8964L7.09528 20.0851C7.1119 20.2027 7.15624 20.3147 7.22463 20.4118C7.29303 20.5089 7.38352 20.5884 7.48865 20.6436C7.99737 20.9097 8.52874 21.1301 9.07648 21.3021C9.19006 21.3375 9.31042 21.3454 9.42765 21.3252C9.54488 21.3049 9.65561 21.257 9.7507 21.1855L11.5198 19.8587C11.6788 19.8683 11.839 19.8731 12.0005 19.8731C12.1619 19.8731 12.3222 19.8683 12.4813 19.8587L12.4814 19.8587L14.2504 21.1851C14.3453 21.2565 14.4558 21.3043 14.5728 21.3246C14.6899 21.3449 14.81 21.3371 14.9235 21.3019C15.4713 21.1303 16.0029 20.9104 16.5118 20.6447C16.6172 20.5894 16.7079 20.5099 16.7764 20.4127C16.845 20.3154 16.8895 20.2033 16.9061 20.0855L17.2189 17.8964C17.3381 17.7907 17.4548 17.6808 17.569 17.5667C17.6831 17.4525 17.7931 17.3358 17.8988 17.2165L17.8988 17.2164L20.0876 16.9034C20.2052 16.8868 20.3171 16.8425 20.4142 16.7741C20.5113 16.7057 20.5908 16.6152 20.6461 16.5101C20.9122 16.0013 21.1325 15.47 21.3045 14.9222C21.34 14.8087 21.3479 14.6883 21.3276 14.5711C21.3073 14.4538 21.2595 14.3431 21.188 14.248L19.8611 12.4789C19.8707 12.3199 19.8755 12.1597 19.8756 11.9982C19.8756 11.8368 19.8708 11.6765 19.8611 11.5174L19.8611 11.5174L21.1875 9.74834C21.2589 9.65342 21.3067 9.5429 21.327 9.42588C21.3473 9.30885 21.3395 9.18868 21.3043 9.07526C21.1327 8.52738 20.9128 7.99583 20.6471 7.48689C20.5919 7.38154 20.5123 7.29083 20.4151 7.22227C20.3179 7.15371 20.2057 7.10925 20.088 7.09256L17.8988 6.77984C17.7931 6.66064 17.6832 6.54394 17.5691 6.42974C17.4549 6.31557 17.3382 6.20565 17.2189 6.09996L17.2189 6.09991L16.9059 3.91115C16.8892 3.79354 16.8449 3.68158 16.7765 3.58447C16.7081 3.48736 16.6176 3.4079 16.5125 3.35263C16.0038 3.08654 15.4724 2.86619 14.9247 2.69418C14.8111 2.65876 14.6907 2.65086 14.5735 2.67112C14.4563 2.69139 14.3455 2.73924 14.2504 2.81074L12.4814 4.13757C12.3224 4.12799 12.1621 4.12318 12.0007 4.12314C11.8392 4.12314 11.6789 4.12795 11.5199 4.13757L11.5198 4.13757Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                           </svg>
+                        </span>
+              Settings
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- bottom content  -->
+      <div>
+        <!-- sign out  -->
+        <div class="sign-out">
+          <span class="icon">
+                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M16.3137 8.0625L20.2502 12L16.3137 15.9375" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M9.75 12H20.2472" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M9.75 20.25H4.5C4.30109 20.25 4.11032 20.171 3.96967 20.0303C3.82902 19.8897 3.75 19.6989 3.75 19.5V4.5C3.75 4.30109 3.82902 4.11032 3.96967 3.96967C4.11032 3.82902 4.30109 3.75 4.5 3.75H9.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                     </svg>
+                  </span>
+          Sign-out
+        </div>
+      </div>
+    </div>
+    <!-- main content -->
+    <div class="instructor-content">
+      <!-- Header  -->
+      <div class="instructor-header">
+        <div class="container">
+          <!-- left content  -->
+          <div class="left instructor-user">
+            <p class="greeting">Good Morning</p>
+            <h6 class="username">Dashboard</h6>
+          </div>
+          <!-- Right Content  -->
+          <div class="right">
+            <!-- Search Field  -->
+            <div class="form-searchbox">
+              <span class="icon">
+                        <img src="assets/images/svg-icon/search.svg" alt="search-icon">
+                        </span>
+              <input type="text" placeholder="Search...">
+            </div>
+            <!-- notification  -->
+            <div class="instructor-notification notification-icon">
+              <div class="icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.26904 9.74994C5.2678 8.86045 5.44262 7.97951 5.78343 7.1579C6.12424 6.33628 6.6243 5.59025 7.25477 4.9628C7.88525 4.33535 8.63368 3.83889 9.45693 3.50204C10.2802 3.16519 11.1619 2.99461 12.0514 3.00013C15.763 3.02772 18.7317 6.11275 18.7317 9.83468V10.4999C18.7317 13.8577 19.4342 15.8061 20.0529 16.871C20.1196 16.9848 20.1551 17.1142 20.1558 17.246C20.1565 17.3779 20.1224 17.5076 20.0569 17.6221C19.9915 17.7366 19.8971 17.8318 19.7831 17.8982C19.6691 17.9645 19.5397 17.9996 19.4078 17.9999H4.59222C4.46034 17.9996 4.33087 17.9645 4.21689 17.8981C4.1029 17.8318 4.00844 17.7366 3.94301 17.622C3.87759 17.5075 3.84352 17.3778 3.84425 17.2459C3.84498 17.114 3.88048 16.9846 3.94716 16.8709C4.56622 15.8059 5.26904 13.8575 5.26904 10.4999L5.26904 9.74994Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M9 18V18.75C9 19.5456 9.31607 20.3087 9.87868 20.8713C10.4413 21.4339 11.2044 21.75 12 21.75C12.7956 21.75 13.5587 21.4339 14.1213 20.8713C14.6839 20.3087 15 19.5456 15 18.75V18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span class="icon-active"></span>
+              </div>
+              <div class="card card-activity notification-box instructor-page">
+                <div class="card-header">
+                  <h2 class="card-title">Recent Activity</h2>
+                  <p class="mark-read">Mark as Read</p>
+                </div>
+                <div class="card-body">
+                  <!-- Activity content  -->
+                  <ul class="activity">
+                    <li class="activity-item">
+                      <div class="activity-icon">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2.83927 11.0622C2.09381 9.80558 1.83274 8.32 2.10509 6.88447C2.37744 5.44894 3.16447 4.16221 4.3184 3.26589C5.47232 2.36958 6.91376 1.92534 8.37204 2.0166C9.83033 2.10785 11.2051 2.72833 12.2383 3.7615C13.2715 4.79468 13.892 6.16949 13.9832 7.62777C14.0745 9.08606 13.6303 10.5275 12.734 11.6814C11.8377 12.8354 10.5509 13.6224 9.1154 13.8947C7.67988 14.1671 6.1943 13.906 4.93763 13.1606L4.93764 13.1605L2.86536 13.7526C2.77962 13.7771 2.68889 13.7782 2.60257 13.7559C2.51626 13.7335 2.43749 13.6885 2.37444 13.6254C2.31139 13.5624 2.26634 13.4836 2.24398 13.3973C2.22161 13.311 2.22273 13.2202 2.24723 13.1345L2.83931 11.0622L2.83927 11.0622Z" fill="white" />
+                          <path d="M8 8.75C8.41421 8.75 8.75 8.41421 8.75 8C8.75 7.58579 8.41421 7.25 8 7.25C7.58579 7.25 7.25 7.58579 7.25 8C7.25 8.41421 7.58579 8.75 8 8.75Z" fill="#FF6636" />
+                          <path d="M5 8.75C5.41421 8.75 5.75 8.41421 5.75 8C5.75 7.58579 5.41421 7.25 5 7.25C4.58579 7.25 4.25 7.58579 4.25 8C4.25 8.41421 4.58579 8.75 5 8.75Z" fill="#FF6636" />
+                          <path d="M11 8.75C11.4142 8.75 11.75 8.41421 11.75 8C11.75 7.58579 11.4142 7.25 11 7.25C10.5858 7.25 10.25 7.58579 10.25 8C10.25 8.41421 10.5858 8.75 11 8.75Z" fill="#FF6636" />
+                        </svg>
+                      </div>
+                      <div class="activity-info">
+                        <p> <span class="username">Kevin</span> comments on your lecture “What is ux” in “2021 ui/ux design with figma”</p>
+                        <span class="time">Just now</span>
+                      </div>
+                    </li>
+                    <li class="activity-item">
+                      <div class="activity-icon">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8.27569 11.9208L11.4279 13.9179C11.8308 14.1732 12.3311 13.7935 12.2115 13.3232L11.3008 9.74052C11.2752 9.64073 11.2782 9.53573 11.3096 9.4376C11.3409 9.33946 11.3994 9.25218 11.4781 9.18577L14.3049 6.83306C14.6763 6.52392 14.4846 5.90751 14.0074 5.87654L10.3159 5.63696C10.2165 5.62986 10.1211 5.59465 10.0409 5.53545C9.96069 5.47625 9.89896 5.39548 9.86289 5.30255L8.48612 1.83549C8.44869 1.73685 8.38215 1.65194 8.29532 1.59201C8.2085 1.53209 8.1055 1.5 8 1.5C7.89451 1.5 7.79151 1.53209 7.70468 1.59201C7.61786 1.65194 7.55131 1.73685 7.51389 1.83549L6.13712 5.30255C6.10104 5.39548 6.03932 5.47625 5.95912 5.53545C5.87892 5.59465 5.78355 5.62986 5.68412 5.63696L1.99263 5.87654C1.51544 5.90751 1.32373 6.52392 1.69515 6.83306L4.52186 9.18577C4.60063 9.25218 4.65907 9.33946 4.69044 9.4376C4.72181 9.53573 4.72485 9.64073 4.6992 9.74052L3.85459 13.063C3.71111 13.6274 4.31143 14.083 4.79495 13.7767L7.72431 11.9208C7.8067 11.8683 7.90234 11.8405 8 11.8405C8.09767 11.8405 8.19331 11.8683 8.27569 11.9208Z" fill="white" />
+                        </svg>
+                      </div>
+                      <div class="activity-info">
+                        <p> <span class="username">Kevin</span> comments on your lecture “What is ux” in “2021 ui/ux design with figma”</p>
+                        <span class="time">5 min ago</span>
+                      </div>
+                    </li>
+                    <li class="activity-item">
+                      <div class="activity-icon">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path opacity="0.2" d="M11.5007 5H2.50073C2.22459 5 2.00073 5.22386 2.00073 5.5V12.5C2.00073 12.7761 2.22459 13 2.50073 13H11.5007C11.7769 13 12.0007 12.7761 12.0007 12.5V5.5C12.0007 5.22386 11.7769 5 11.5007 5Z" fill="white" />
+                          <path d="M11.5007 5H2.50073C2.22459 5 2.00073 5.22386 2.00073 5.5V12.5C2.00073 12.7761 2.22459 13 2.50073 13H11.5007C11.7769 13 12.0007 12.7761 12.0007 12.5V5.5C12.0007 5.22386 11.7769 5 11.5007 5Z" fill="white" />
+                          <path d="M4.00073 3H13.5007C13.6333 3 13.7605 3.05268 13.8543 3.14645C13.9481 3.24021 14.0007 3.36739 14.0007 3.5V11" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                      <div class="activity-info">
+                        <p> <span class="username">Kevin</span> comments on your lecture “What is ux” in “2021 ui/ux design with figma”</p>
+                        <span class="time">6 min ago</span>
+                      </div>
+                    </li>
+                    <li class="activity-item">
+                      <div class="activity-icon">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2.83927 11.0622C2.09381 9.80558 1.83274 8.32 2.10509 6.88447C2.37744 5.44894 3.16447 4.16221 4.3184 3.26589C5.47232 2.36958 6.91376 1.92534 8.37204 2.0166C9.83033 2.10785 11.2051 2.72833 12.2383 3.7615C13.2715 4.79468 13.892 6.16949 13.9832 7.62777C14.0745 9.08606 13.6303 10.5275 12.734 11.6814C11.8377 12.8354 10.5509 13.6224 9.1154 13.8947C7.67988 14.1671 6.1943 13.906 4.93763 13.1606L4.93764 13.1605L2.86536 13.7526C2.77962 13.7771 2.68889 13.7782 2.60257 13.7559C2.51626 13.7335 2.43749 13.6885 2.37444 13.6254C2.31139 13.5624 2.26634 13.4836 2.24398 13.3973C2.22161 13.311 2.22273 13.2202 2.24723 13.1345L2.83931 11.0622L2.83927 11.0622Z" fill="white" />
+                          <path d="M8 8.75C8.41421 8.75 8.75 8.41421 8.75 8C8.75 7.58579 8.41421 7.25 8 7.25C7.58579 7.25 7.25 7.58579 7.25 8C7.25 8.41421 7.58579 8.75 8 8.75Z" fill="#FF6636" />
+                          <path d="M5 8.75C5.41421 8.75 5.75 8.41421 5.75 8C5.75 7.58579 5.41421 7.25 5 7.25C4.58579 7.25 4.25 7.58579 4.25 8C4.25 8.41421 4.58579 8.75 5 8.75Z" fill="#FF6636" />
+                          <path d="M11 8.75C11.4142 8.75 11.75 8.41421 11.75 8C11.75 7.58579 11.4142 7.25 11 7.25C10.5858 7.25 10.25 7.58579 10.25 8C10.25 8.41421 10.5858 8.75 11 8.75Z" fill="#FF6636" />
+                        </svg>
+                      </div>
+                      <div class="activity-info">
+                        <p> <span class="username">Kevin</span> comments on your lecture “What is ux” in “2021 ui/ux design with figma”</p>
+                        <span class="time">Just now</span>
+                      </div>
+                    </li>
+                    <li class="activity-item">
+                      <div class="activity-icon">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8.27569 11.9208L11.4279 13.9179C11.8308 14.1732 12.3311 13.7935 12.2115 13.3232L11.3008 9.74052C11.2752 9.64073 11.2782 9.53573 11.3096 9.4376C11.3409 9.33946 11.3994 9.25218 11.4781 9.18577L14.3049 6.83306C14.6763 6.52392 14.4846 5.90751 14.0074 5.87654L10.3159 5.63696C10.2165 5.62986 10.1211 5.59465 10.0409 5.53545C9.96069 5.47625 9.89896 5.39548 9.86289 5.30255L8.48612 1.83549C8.44869 1.73685 8.38215 1.65194 8.29532 1.59201C8.2085 1.53209 8.1055 1.5 8 1.5C7.89451 1.5 7.79151 1.53209 7.70468 1.59201C7.61786 1.65194 7.55131 1.73685 7.51389 1.83549L6.13712 5.30255C6.10104 5.39548 6.03932 5.47625 5.95912 5.53545C5.87892 5.59465 5.78355 5.62986 5.68412 5.63696L1.99263 5.87654C1.51544 5.90751 1.32373 6.52392 1.69515 6.83306L4.52186 9.18577C4.60063 9.25218 4.65907 9.33946 4.69044 9.4376C4.72181 9.53573 4.72485 9.64073 4.6992 9.74052L3.85459 13.063C3.71111 13.6274 4.31143 14.083 4.79495 13.7767L7.72431 11.9208C7.8067 11.8683 7.90234 11.8405 8 11.8405C8.09767 11.8405 8.19331 11.8683 8.27569 11.9208Z" fill="white" />
+                        </svg>
+                      </div>
+                      <div class="activity-info">
+                        <p> <span class="username">Kevin</span> comments on your lecture “What is ux” in “2021 ui/ux design with figma”</p>
+                        <span class="time">5 min ago</span>
+                      </div>
+                    </li>
+                    <li class="activity-item">
+                      <div class="activity-icon">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path opacity="0.2" d="M11.5007 5H2.50073C2.22459 5 2.00073 5.22386 2.00073 5.5V12.5C2.00073 12.7761 2.22459 13 2.50073 13H11.5007C11.7769 13 12.0007 12.7761 12.0007 12.5V5.5C12.0007 5.22386 11.7769 5 11.5007 5Z" fill="white" />
+                          <path d="M11.5007 5H2.50073C2.22459 5 2.00073 5.22386 2.00073 5.5V12.5C2.00073 12.7761 2.22459 13 2.50073 13H11.5007C11.7769 13 12.0007 12.7761 12.0007 12.5V5.5C12.0007 5.22386 11.7769 5 11.5007 5Z" fill="white" />
+                          <path d="M4.00073 3H13.5007C13.6333 3 13.7605 3.05268 13.8543 3.14645C13.9481 3.24021 14.0007 3.36739 14.0007 3.5V11" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                      <div class="activity-info">
+                        <p> <span class="username">Kevin</span> comments on your lecture “What is ux” in “2021 ui/ux design with figma”</p>
+                        <span class="time">6 min ago</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- profile img -->
+            <div class="instructor-user">
+              <div class="image">
+                <img src="assets/images/users/user-01.png" alt="user-img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Instructor Main Content  -->
+      <main class="instructor-main">
+        <div class="container">
+          <!-- Instructor featrues -->
+          <div class="instructor-features container">
+            <div class="instructor-features__item">
+              <div class="features-card features-card--type-orange">
+                <div class="icon">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.2" d="M16 4C13.6266 4 11.3066 4.70379 9.33316 6.02236C7.35977 7.34094 5.8217 9.21509 4.91345 11.4078C4.0052 13.6005 3.76756 16.0133 4.23058 18.3411C4.6936 20.6689 5.83649 22.8071 7.51472 24.4853C9.19295 26.1635 11.3312 27.3064 13.6589 27.7694C15.9867 28.2324 18.3995 27.9948 20.5922 27.0866C22.7849 26.1783 24.6591 24.6402 25.9776 22.6668C27.2962 20.6935 28 18.3734 28 16C28 14.4241 27.6896 12.8637 27.0866 11.4078C26.4835 9.95189 25.5996 8.62901 24.4853 7.51471C23.371 6.40041 22.0481 5.51649 20.5922 4.91344C19.1363 4.31038 17.5759 4 16 4V4ZM14 20V12L20 16L14 20Z" fill="currentColor" />
+                    <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" />
+                    <path d="M20 16L14 12V20L20 16Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+                <div class="info">
+                  <h6>$13,804.00</h6>
+                  <p>Total Revenue</p>
+                </div>
+              </div>
+            </div>
+            <div class="instructor-features__item">
+              <div class="features-card features-card--type-blue">
+                <div class="icon">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.2" d="M5.5 5.5V24.5L7.5 26.5H26.5V5.5H5.5Z" fill="currentColor" />
+                    <path d="M5.5 17.9091V6.5C5.5 6.23478 5.60536 5.98043 5.79289 5.79289C5.98043 5.60536 6.23478 5.5 6.5 5.5H25.5C25.7652 5.5 26.0196 5.60536 26.2071 5.79289C26.3946 5.98043 26.5 6.23478 26.5 6.5V25.5C26.5 25.7652 26.3946 26.0196 26.2071 26.2071C26.0196 26.3946 25.7652 26.5 25.5 26.5H16.9545" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M16 19L8 27L4 23" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+                <div class="info">
+                  <h6>$16,593.00</h6>
+                  <p>Current Balance</p>
+                </div>
+              </div>
+            </div>
+            <div class="instructor-features__item">
+              <div class="features-card features-card--type-yellow">
+                <div class="icon">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.2" d="M11 20C14.5899 20 17.5 17.0899 17.5 13.5C17.5 9.91015 14.5899 7 11 7C7.41015 7 4.5 9.91015 4.5 13.5C4.5 17.0899 7.41015 20 11 20Z" fill="currentColor" />
+                    <path d="M11 20C14.5899 20 17.5 17.0899 17.5 13.5C17.5 9.91015 14.5899 7 11 7C7.41015 7 4.5 9.91015 4.5 13.5C4.5 17.0899 7.41015 20 11 20Z" stroke="currentColor" stroke-width="2" stroke-miterlimit="10" />
+                    <path d="M19.4268 7.24361C20.3208 6.99172 21.2584 6.93434 22.1765 7.07533C23.0945 7.21632 23.9717 7.55241 24.749 8.06096C25.5262 8.56952 26.1855 9.23873 26.6823 10.0235C27.1791 10.8083 27.502 11.6904 27.6292 12.6105C27.7564 13.5306 27.685 14.4673 27.4197 15.3574C27.1544 16.2475 26.7014 17.0705 26.0913 17.7709C25.4812 18.4712 24.7281 19.0327 23.8827 19.4175C23.0373 19.8022 22.1193 20.0014 21.1905 20.0015" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M1.99951 24.6746C3.01468 23.2306 4.36238 22.052 5.92882 21.2384C7.49527 20.4248 9.23448 20.0001 10.9996 20C12.7648 19.9999 14.504 20.4246 16.0705 21.238C17.637 22.0515 18.9848 23.23 20.0001 24.6739" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M21.1899 20C22.9552 19.9987 24.6949 20.4228 26.2615 21.2364C27.8281 22.05 29.1757 23.2291 30.19 24.6739" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+                <div class="info">
+                  <h6>$13,184.00</h6>
+                  <p>Total Withdrawals</p>
+                </div>
+              </div>
+            </div>
+            <div class="instructor-features__item">
+              <div class="features-card features-card--type-green">
+                <div class="icon">
+                  <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path opacity="0.2" d="M7 7V13.887C7 18.8496 10.9693 22.963 15.9318 22.9997C17.1194 23.0088 18.297 22.7826 19.3968 22.3344C20.4966 21.8861 21.4968 21.2246 22.3398 20.388C23.1828 19.5514 23.8518 18.5563 24.3084 17.4599C24.7649 16.3635 25 15.1876 25 14V7C25 6.73478 24.8946 6.48043 24.7071 6.29289C24.5196 6.10536 24.2652 6 24 6H8C7.73478 6 7.48043 6.10536 7.29289 6.29289C7.10536 6.48043 7 6.73478 7 7Z" fill="currentColor" />
+                    <path d="M7 7V13.887C7 18.8496 10.9693 22.963 15.9318 22.9997C17.1194 23.0088 18.297 22.7826 19.3968 22.3344C20.4966 21.8861 21.4968 21.2246 22.3398 20.388C23.1828 19.5514 23.8518 18.5563 24.3084 17.4599C24.7649 16.3635 25 15.1876 25 14V7C25 6.73478 24.8946 6.48043 24.7071 6.29289C24.5196 6.10536 24.2652 6 24 6H8C7.73478 6 7.48043 6.10536 7.29289 6.29289C7.10536 6.48043 7 6.73478 7 7Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M12 28H20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M16 23V28" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M24.7769 16H25.9999C27.0608 16 28.0782 15.5786 28.8283 14.8284C29.5785 14.0783 29.9999 13.0609 29.9999 12V10C29.9999 9.73478 29.8945 9.48043 29.707 9.29289C29.5195 9.10536 29.2651 9 28.9999 9H24.9999" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    <path d="M7.24576 16H5.98438C4.92351 16 3.90609 15.5786 3.15595 14.8284C2.4058 14.0783 1.98438 13.0609 1.98438 12V10C1.98438 9.73478 2.08973 9.48043 2.27727 9.29289C2.4648 9.10536 2.71916 9 2.98438 9H6.98438" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                </div>
+                <div class="info">
+                  <h6>$162.00</h6>
+                  <p>Today Revenue</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="instructor-activity">
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-8 col-lg-6">
+                <div class="card card-activity">
+                  <div class="card-header">
+                    <h2 class="card-title">Statistic</h2>
+                    <select class="card-dropdown" id="overviewSelect">
+                      <option value="1"> Today </option>
+                      <option value="2"> Yesterday </option>
+                      <option value="3"> Current Weeks</option>
+                      <option value="4"> Last Weeks </option>
+                    </select>
+                  </div>
+                  <div class="card-body">
+                    <!-- revenue Chart  -->
+                    <div id="revenueChart"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-4 col-lg-6">
+                <div class="card card-activity">
+                  <div class="card-header">
+                    <h2 class="card-title">Revenue</h2>
+                    <select class="card-dropdown" id="revenueSelect">
+                      <option value="1"> Today </option>
+                      <option value="2"> Yesterday </option>
+                      <option value="3"> Current Weeks</option>
+                      <option value="4"> Last Weeks </option>
+                    </select>
+                  </div>
+                  <div class="card-body">
+                    <div class="card-body-wrap">
+                      <div class="payment-card-slider owl-carousel">
+                        <div class="payment-card-visa">
+                          <div class="payment-card-visa-header">
+                            <svg width="84" height="28" viewBox="0 0 84 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M29.5606 27.5333H36.4148L40.6993 0.483344H33.8444L29.5606 27.5333ZM17.2599 19.0885L23.7944 0.483344H31.1711L20.2662 27.534H13.1246L7.16972 4.03318C3.30352 1.64757 0 0.941364 0 0.941364L0.000686537 0.938883C0.0690115 0.953567 5.22535 2.07188 10.1725 6.18679C14.8595 10.0838 16.4376 14.9258 16.4861 15.0773L16.4873 15.0835L16.4866 15.0821L17.2599 19.0885ZM84 27.5333H77.7063L76.9035 23.5153H68.1901L66.7613 27.5333H59.6162L69.8387 2.49849C69.8387 2.49849 70.4585 0.482621 73.0028 0.482621H78.5127L84 27.5333ZM73.7655 7.84205L70.1641 17.9648H75.7915L73.7655 7.84205ZM61.1303 1.17942L60.1521 6.98824C57.219 5.32765 50.5437 4.93475 50.543 7.99328C50.543 9.20834 52.0533 10.044 53.8737 11.0511C56.6345 12.5786 60.1085 14.5006 60.1085 18.739C60.1085 25.5116 53.0521 28 48.3746 28C43.6986 28 40.638 26.4725 40.638 26.4725L41.657 20.3989C44.4634 22.7136 52.9669 23.3713 52.9669 19.7006C52.9669 18.1582 51.2929 17.2486 49.3518 16.1938C46.6735 14.7384 43.4866 13.0066 43.4866 8.95491C43.4866 1.52746 51.5641 0 54.9655 0C58.112 0 61.1303 1.17942 61.1303 1.17942Z" fill="white" />
+                              <path opacity="0.5" d="M16.5185 14.7055L14.2078 2.84366C14.2078 2.84366 13.9284 0.46875 10.9502 0.46875H0.127L0 0.915369C0 0.915369 5.20206 1.99346 10.1918 6.03279C14.9627 9.89362 16.5185 14.7055 16.5185 14.7055Z" fill="white" />
+                            </svg>
+                            <button data-bs-toggle="dropdown">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 13.525C12.8422 13.525 13.525 12.8422 13.525 12C13.525 11.1578 12.8422 10.475 12 10.475C11.1578 10.475 10.475 11.1578 10.475 12C10.475 12.8422 11.1578 13.525 12 13.525Z" fill="#ffffff73" stroke="#ffffff73" stroke-width="0.8" />
+                                <path d="M19 13.525C19.8422 13.525 20.525 12.8422 20.525 12C20.525 11.1578 19.8422 10.475 19 10.475C18.1578 10.475 17.475 11.1578 17.475 12C17.475 12.8422 18.1578 13.525 19 13.525Z" fill="#ffffff73" stroke="#ffffff73" stroke-width="0.8" />
+                                <path d="M5 13.525C5.84223 13.525 6.525 12.8422 6.525 12C6.525 11.1578 5.84223 10.475 5 10.475C4.15777 10.475 3.475 11.1578 3.475 12C3.475 12.8422 4.15777 13.525 5 13.525Z" fill="#ffffff73" stroke="#ffffff73" stroke-width="0.8" />
+                              </svg>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">View Details</a></li>
+                              <li><a class="dropdown-item" href="#">Edit Course</a></li>
+                              <li><a class="dropdown-item" href="#">Delete Course</a></li>
+                            </ul>
+                          </div>
+                          <div class="payment-card-visa-mid">
+                            <input type="text" value="4855 **** **** ****" id="myinputTwo" />
+                            <button onclick="copytexts()" type="submit">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.75 15.7493H20.25V3.74934H8.25V8.24934" stroke="#ffffff73" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M15.75 8.24945H3.75V20.2495H15.75V8.24945Z" stroke="#ffffff73" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+                            </button>
+                          </div>
+                          <div class="payment-card-visa-footer">
+                            <div class="payment-card-visa-footer-left payment-card-visa-footer-info">
+                              <span>Expires</span>
+                              <p>04/24</p>
+                            </div>
+                            <div class="payment-card-visa-footer-right payment-card-visa-footer-info">
+                              <span>Card name</span>
+                              <p>Vako Shvili</p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="payment-card-visa">
+                          <div class="payment-card-visa-header">
+                            <svg width="84" height="28" viewBox="0 0 84 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M29.5606 27.5333H36.4148L40.6993 0.483344H33.8444L29.5606 27.5333ZM17.2599 19.0885L23.7944 0.483344H31.1711L20.2662 27.534H13.1246L7.16972 4.03318C3.30352 1.64757 0 0.941364 0 0.941364L0.000686537 0.938883C0.0690115 0.953567 5.22535 2.07188 10.1725 6.18679C14.8595 10.0838 16.4376 14.9258 16.4861 15.0773L16.4873 15.0835L16.4866 15.0821L17.2599 19.0885ZM84 27.5333H77.7063L76.9035 23.5153H68.1901L66.7613 27.5333H59.6162L69.8387 2.49849C69.8387 2.49849 70.4585 0.482621 73.0028 0.482621H78.5127L84 27.5333ZM73.7655 7.84205L70.1641 17.9648H75.7915L73.7655 7.84205ZM61.1303 1.17942L60.1521 6.98824C57.219 5.32765 50.5437 4.93475 50.543 7.99328C50.543 9.20834 52.0533 10.044 53.8737 11.0511C56.6345 12.5786 60.1085 14.5006 60.1085 18.739C60.1085 25.5116 53.0521 28 48.3746 28C43.6986 28 40.638 26.4725 40.638 26.4725L41.657 20.3989C44.4634 22.7136 52.9669 23.3713 52.9669 19.7006C52.9669 18.1582 51.2929 17.2486 49.3518 16.1938C46.6735 14.7384 43.4866 13.0066 43.4866 8.95491C43.4866 1.52746 51.5641 0 54.9655 0C58.112 0 61.1303 1.17942 61.1303 1.17942Z" fill="white" />
+                              <path opacity="0.5" d="M16.5185 14.7055L14.2078 2.84366C14.2078 2.84366 13.9284 0.46875 10.9502 0.46875H0.127L0 0.915369C0 0.915369 5.20206 1.99346 10.1918 6.03279C14.9627 9.89362 16.5185 14.7055 16.5185 14.7055Z" fill="white" />
+                            </svg>
+                            <button data-bs-toggle="dropdown">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M12 13.525C12.8422 13.525 13.525 12.8422 13.525 12C13.525 11.1578 12.8422 10.475 12 10.475C11.1578 10.475 10.475 11.1578 10.475 12C10.475 12.8422 11.1578 13.525 12 13.525Z" fill="#ffffff73" stroke="#ffffff73" stroke-width="0.8" />
+                                <path d="M19 13.525C19.8422 13.525 20.525 12.8422 20.525 12C20.525 11.1578 19.8422 10.475 19 10.475C18.1578 10.475 17.475 11.1578 17.475 12C17.475 12.8422 18.1578 13.525 19 13.525Z" fill="#ffffff73" stroke="#ffffff73" stroke-width="0.8" />
+                                <path d="M5 13.525C5.84223 13.525 6.525 12.8422 6.525 12C6.525 11.1578 5.84223 10.475 5 10.475C4.15777 10.475 3.475 11.1578 3.475 12C3.475 12.8422 4.15777 13.525 5 13.525Z" fill="#ffffff73" stroke="#ffffff73" stroke-width="0.8" />
+                              </svg>
+                            </button>
+                            <ul class="dropdown-menu">
+                              <li><a class="dropdown-item" href="#">View Details</a></li>
+                              <li><a class="dropdown-item" href="#">Edit Course</a></li>
+                              <li><a class="dropdown-item" href="#">Delete Course</a></li>
+                            </ul>
+                          </div>
+                          <div class="payment-card-visa-mid">
+                            <input type="text" value="4855 **** **** ****" id="myinputOne" />
+                            <button onclick="copytexts()" type="submit">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M15.75 15.7493H20.25V3.74934H8.25V8.24934" stroke="#ffffff73" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M15.75 8.24945H3.75V20.2495H15.75V8.24945Z" stroke="#ffffff73" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+                            </button>
+                          </div>
+                          <div class="payment-card-visa-footer">
+                            <div class="payment-card-visa-footer-left payment-card-visa-footer-info">
+                              <span>Expires</span>
+                              <p>04/24</p>
+                            </div>
+                            <div class="payment-card-visa-footer-right payment-card-visa-footer-info">
+                              <span>Card name</span>
+                              <p>Vako Shvili</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card-owl-nav">
+                        <span class="card-next-button">
+                                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M20.25 12H3.75" stroke="#FF6636" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                             <path d="M10.5 5.25L3.75 12L10.5 18.75" stroke="#FF6636" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          </svg>
+                                       </span>
+                        <span class="card-prev-button">
+                                          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M3.75 12H20.25" stroke="#FF6636" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                             <path d="M13.5 5.25L20.25 12L13.5 18.75" stroke="#FF6636" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                          </svg>
+                                       </span>
+                      </div>
+                      <a class="visa-btn" href="#" data-bs-toggle="modal" data-bs-target="#newCard">
+                        <span>
+                                          <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                             <path d="M16 28C22.6274 28 28 22.6274 28 16C28 9.37258 22.6274 4 16 4C9.37258 4 4 9.37258 4 16C4 22.6274 9.37258 28 16 28Z" stroke="#FF6636" stroke-width="1.5" stroke-miterlimit="10"></path>
+                                             <path d="M11 16H21" stroke="#FF6636" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                             <path d="M16 11V21" stroke="#FF6636" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                          </svg>
+                                       </span>
+                        Add new card
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-5 col-lg-6">
+                <div class="card card-activity">
+                  <div class="card-header">
+                    <h2 class="card-title">Withdraw your money</h2>
+                  </div>
+                  <div class="card-body">
+                    <div class="my-payment-method">
+                      <h5>Payment method:</h5>
+                      <div class="plans">
+                        <div class="plan complete-plan">
+                          <input type="radio" id="one" name="plan">
+                          <label class="plan-content" for="one">
+                            <svg width="32" height="12" viewBox="0 0 32 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path fill-rule="evenodd" clip-rule="evenodd" d="M11.2612 11.1555H13.8723L15.5045 0.850799H12.8931L11.2612 11.1555ZM6.57518 7.93848L9.06452 0.850799H11.8747L7.72046 11.1558H4.99987L2.73132 2.20312C1.25848 1.29431 0 1.02528 0 1.02528L0.000270457 1.02431C0.0267351 1.02999 1.99082 1.4561 3.87524 3.02351C5.66033 4.50773 6.26165 6.35174 6.28042 6.41032L6.28089 6.41278L6.28062 6.41223L6.57518 7.93848ZM32 11.1555H29.6024L29.2966 9.62488H25.9772L25.4329 11.1555H22.7109L26.6052 1.61847C26.6052 1.61847 26.8413 0.850524 27.8106 0.850524H29.9096L32 11.1555ZM28.1011 3.65412L26.7292 7.5104H28.873L28.1011 3.65412ZM23.2877 1.11597L22.9151 3.32885C21.7977 2.69625 19.2547 2.54657 19.2545 3.71173C19.2545 4.17461 19.8298 4.49295 20.5233 4.87663C21.5751 5.45852 22.8985 6.19071 22.8985 7.80534C22.8985 10.3854 20.2103 11.3333 18.4284 11.3333C16.6471 11.3333 15.4812 10.7514 15.4812 10.7514L15.8693 8.43767C16.9384 9.31947 20.1779 9.57003 20.1779 8.17168C20.1779 7.58408 19.5402 7.23756 18.8007 6.83573C17.7804 6.2813 16.5663 5.62158 16.5663 4.07806C16.5663 1.24856 19.6435 0.666668 20.9392 0.666668C22.1379 0.666668 23.2877 1.11597 23.2877 1.11597Z" fill="#2566AF"></path>
+                              <path d="M6.29275 6.26841L5.41249 1.7496C5.41249 1.7496 5.30605 0.844868 4.17151 0.844868H0.048381L0 1.01501C0 1.01501 1.98174 1.42571 3.88257 2.9645C5.70008 4.43529 6.29275 6.26841 6.29275 6.26841Z" fill="#E6A540"></path>
+                            </svg>
+                            <p>4855 **** **** ****</p>
+                            <p>04/24</p>
+                            <p>Vako Shvili</p>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="plans">
+                        <div class="plan complete-plan">
+                          <input type="radio" id="two" name="plan">
+                          <label class="plan-content" for="two">
+                            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M20.3312 23.7849H11.6797V8.24498H20.3314L20.3312 23.7849Z" fill="#FF5F00"></path>
+                              <path d="M12.2247 16.0131C12.2247 12.8609 13.7015 10.0528 16.001 8.24318C14.2604 6.87136 12.1075 6.12683 9.89079 6.1301C4.43028 6.1301 0.00390625 10.5548 0.00390625 16.0131C0.00390625 21.4715 4.43028 25.8962 9.89079 25.8962C12.1075 25.8995 14.2605 25.155 16.0012 23.7831C13.7018 21.9738 12.2247 19.1656 12.2247 16.0131Z" fill="#EB001B"></path>
+                              <path d="M31.9981 16.0131C31.9981 21.4715 27.5717 25.8962 22.1112 25.8962C19.8942 25.8994 17.741 25.1549 16 23.7831C18.3002 21.9735 19.7769 19.1656 19.7769 16.0131C19.7769 12.8607 18.3002 10.0528 16 8.24318C17.741 6.8714 19.8941 6.12688 22.1111 6.1301C27.5716 6.1301 31.998 10.5548 31.998 16.0131" fill="#F79E1B"></path>
+                            </svg>
+                            <p>4855 **** **** ****</p>
+                            <p>04/24</p>
+                            <p>Vako Shvili</p>
+                          </label>
+                        </div>
+                      </div>
+                      <div class="plans">
+                        <div class="plan complete-plan">
+                          <input type="radio" id="three" name="plan">
+                          <label class="plan-content paypal-column" for="three">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M7.62336 23.1723L8.03906 20.5318L7.11307 20.5104H2.69141L5.76424 1.02657C5.77339 0.96704 5.80362 0.912778 5.84944 0.873677C5.89525 0.834575 5.95359 0.813239 6.01382 0.813556H13.4694C15.9445 0.813556 17.6526 1.32861 18.5444 2.3452C18.9625 2.82211 19.2287 3.32047 19.3575 3.86891C19.4926 4.44437 19.495 5.1319 19.3631 5.97045L19.3535 6.03165V6.56896L19.7716 6.80582C20.0908 6.96752 20.3777 7.18626 20.6181 7.45123C20.9758 7.85898 21.2071 8.37721 21.3048 8.99162C21.4058 9.62352 21.3724 10.3754 21.2071 11.2267C21.0163 12.2059 20.7079 13.0588 20.2914 13.7567C19.924 14.3818 19.4299 14.9233 18.8409 15.3463C18.2877 15.739 17.6303 16.037 16.8872 16.2278C16.167 16.4154 15.346 16.51 14.4454 16.51H13.8652C13.4503 16.51 13.0473 16.6594 12.731 16.9273C12.4151 17.198 12.2055 17.572 12.1396 17.9828L12.0959 18.2205L11.3615 22.8742L11.3281 23.0451C11.3193 23.0992 11.3042 23.1262 11.282 23.1445C11.2604 23.1621 11.2335 23.1719 11.2057 23.1723H7.62336Z" fill="#253B80"></path>
+                              <path d="M20.1663 6.09395C20.144 6.23622 20.1186 6.38168 20.09 6.53111C19.1068 11.5791 15.743 13.323 11.4469 13.323H9.25954C8.73415 13.323 8.29143 13.7045 8.20956 14.2227L7.08964 21.3254L6.7725 23.3387C6.75986 23.4186 6.76469 23.5002 6.78664 23.578C6.80858 23.6559 6.84714 23.728 6.89964 23.7895C6.95214 23.851 7.01734 23.9004 7.09075 23.9342C7.16417 23.9681 7.24406 23.9857 7.32491 23.9857H11.2045C11.6639 23.9857 12.0542 23.6519 12.1265 23.1988L12.1647 23.0017L12.8951 18.3662L12.942 18.1119C13.0135 17.6572 13.4046 17.3234 13.864 17.3234H14.4443C18.203 17.3234 21.1455 15.7973 22.0055 11.3812C22.3648 9.53638 22.1788 7.99599 21.2282 6.91263C20.9269 6.5775 20.567 6.30007 20.1663 6.09395Z" fill="#179BD7"></path>
+                              <path d="M19.1391 5.68342C18.8252 5.5926 18.5058 5.52172 18.1829 5.4712C17.5449 5.37315 16.9001 5.32611 16.2547 5.33051H10.411C10.1886 5.33034 9.97353 5.40974 9.80458 5.55435C9.63563 5.69896 9.52398 5.89924 9.48983 6.11899L8.24671 13.9926L8.21094 14.2223C8.24966 13.9717 8.37682 13.7432 8.56941 13.5781C8.762 13.4131 9.00729 13.3225 9.26091 13.3226H11.4483C15.7444 13.3226 19.1081 11.5779 20.0913 6.53072C20.1207 6.38129 20.1454 6.23583 20.1676 6.09356C19.9082 5.9575 19.6378 5.84344 19.3593 5.75257C19.2863 5.72835 19.2129 5.70529 19.1391 5.68342Z" fill="#222D65"></path>
+                              <path d="M9.48914 6.11944C9.523 5.89963 9.63459 5.69925 9.80363 5.55471C9.97267 5.41018 10.1879 5.33107 10.4104 5.33176H16.254C16.9463 5.33176 17.5925 5.37706 18.1823 5.47244C18.5814 5.53517 18.9749 5.62898 19.3594 5.75302C19.6495 5.8492 19.919 5.96286 20.1678 6.09401C20.4603 4.22853 20.1654 2.95838 19.1567 1.80825C18.0448 0.542078 16.0378 0 13.4697 0H6.01411C5.48952 0 5.04203 0.381521 4.96096 0.900549L1.85553 20.5847C1.84107 20.676 1.84657 20.7695 1.87166 20.8585C1.89676 20.9476 1.94084 21.0302 2.00089 21.1006C2.06094 21.171 2.13552 21.2275 2.21951 21.2663C2.3035 21.3052 2.3949 21.3253 2.48743 21.3254H7.09032L8.24601 13.9931L9.48914 6.11944Z" fill="#253B80"></path>
+                            </svg>
+                            <p class=" mola">
+                              You will be redirected to the PayPal site after reviewing your order.
+                            </p>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="withdrew-money-card my-payment-method">
+                      <div class="withdrew-money-card-footer">
+                        <div class="withdrew-money-card-footer-item">
+                          <div class="item-box-all">
+                            <div class="item-box">
+                              <p>$16,593.00</p>
+                              <span>Current Balance</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="withdrew-money-card-footer-item">
+                          <a class="button button--md" href="#">withdrew money</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-xl-7 col-lg-6">
+                <div class="card card-activity">
+                  <div class="card-header">
+                    <h2 class="card-title">Withdraw your money</h2>
+                  </div>
+                  <div class="card-body">
+                    <div class="withdraw-history-table">
+                      <table>
+                        <thead>
+                          <tr>
+                            <th>Date</th>
+                            <th>Method</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>21 Sep, 2021 at 2:14 AM</td>
+                            <td>Mastercards</td>
+                            <td>American Express</td>
+                            <td class="color-green">
+                              <div class="table-dropdown-wrap">
+                                Pending
+                                <button type="button" class="three-dots" id="dropdownMenuButton1" data-bs-toggle="dropdown">
+                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 13.125C12.6213 13.125 13.125 12.6213 13.125 12C13.125 11.3787 12.6213 10.875 12 10.875C11.3787 10.875 10.875 11.3787 10.875 12C10.875 12.6213 11.3787 13.125 12 13.125Z" fill="#A1A5B3" />
+                                    <path d="M18 13.125C18.6213 13.125 19.125 12.6213 19.125 12C19.125 11.3787 18.6213 10.875 18 10.875C17.3787 10.875 16.875 11.3787 16.875 12C16.875 12.6213 17.3787 13.125 18 13.125Z" fill="#A1A5B3" />
+                                    <path d="M6 13.125C6.62132 13.125 7.125 12.6213 7.125 12C7.125 11.3787 6.62132 10.875 6 10.875C5.37868 10.875 4.875 11.3787 4.875 12C4.875 12.6213 5.37868 13.125 6 13.125Z" fill="#A1A5B3" />
+                                  </svg>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                  <li><a class="dropdown-item" href="#">Cancel Withdraw</a></li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>21 Sep, 2021 at 2:14 AM</td>
+                            <td>Visa</td>
+                            <td>American Express</td>
+                            <td class="color-orange">
+                              <div class="table-dropdown-wrap">
+                                Pending
+                                <button type="button" class="three-dots" id="dropdownMenuButton2" data-bs-toggle="dropdown">
+                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 13.125C12.6213 13.125 13.125 12.6213 13.125 12C13.125 11.3787 12.6213 10.875 12 10.875C11.3787 10.875 10.875 11.3787 10.875 12C10.875 12.6213 11.3787 13.125 12 13.125Z" fill="#A1A5B3" />
+                                    <path d="M18 13.125C18.6213 13.125 19.125 12.6213 19.125 12C19.125 11.3787 18.6213 10.875 18 10.875C17.3787 10.875 16.875 11.3787 16.875 12C16.875 12.6213 17.3787 13.125 18 13.125Z" fill="#A1A5B3" />
+                                    <path d="M6 13.125C6.62132 13.125 7.125 12.6213 7.125 12C7.125 11.3787 6.62132 10.875 6 10.875C5.37868 10.875 4.875 11.3787 4.875 12C4.875 12.6213 5.37868 13.125 6 13.125Z" fill="#A1A5B3" />
+                                  </svg>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton2">
+                                  <li><a class="dropdown-item" href="#">Cancel Withdraw</a></li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>21 Sep, 2021 at 2:14 AM</td>
+                            <td>Visa</td>
+                            <td>American Express</td>
+                            <td class="color-orange">
+                              <div class="table-dropdown-wrap">
+                                Pending
+                                <button type="button" class="three-dots" id="dropdownMenuButton3" data-bs-toggle="dropdown">
+                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 13.125C12.6213 13.125 13.125 12.6213 13.125 12C13.125 11.3787 12.6213 10.875 12 10.875C11.3787 10.875 10.875 11.3787 10.875 12C10.875 12.6213 11.3787 13.125 12 13.125Z" fill="#A1A5B3" />
+                                    <path d="M18 13.125C18.6213 13.125 19.125 12.6213 19.125 12C19.125 11.3787 18.6213 10.875 18 10.875C17.3787 10.875 16.875 11.3787 16.875 12C16.875 12.6213 17.3787 13.125 18 13.125Z" fill="#A1A5B3" />
+                                    <path d="M6 13.125C6.62132 13.125 7.125 12.6213 7.125 12C7.125 11.3787 6.62132 10.875 6 10.875C5.37868 10.875 4.875 11.3787 4.875 12C4.875 12.6213 5.37868 13.125 6 13.125Z" fill="#A1A5B3" />
+                                  </svg>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton3">
+                                  <li><a class="dropdown-item" href="#">Cancel Withdraw</a></li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>21 Sep, 2021 at 2:14 AM</td>
+                            <td>Mastercards</td>
+                            <td>American Express</td>
+                            <td class="color-green">
+                              <div class="table-dropdown-wrap">
+                                Completed
+                                <button type="button" class="three-dots" id="dropdownMenuButton4" data-bs-toggle="dropdown">
+                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 13.125C12.6213 13.125 13.125 12.6213 13.125 12C13.125 11.3787 12.6213 10.875 12 10.875C11.3787 10.875 10.875 11.3787 10.875 12C10.875 12.6213 11.3787 13.125 12 13.125Z" fill="#A1A5B3" />
+                                    <path d="M18 13.125C18.6213 13.125 19.125 12.6213 19.125 12C19.125 11.3787 18.6213 10.875 18 10.875C17.3787 10.875 16.875 11.3787 16.875 12C16.875 12.6213 17.3787 13.125 18 13.125Z" fill="#A1A5B3" />
+                                    <path d="M6 13.125C6.62132 13.125 7.125 12.6213 7.125 12C7.125 11.3787 6.62132 10.875 6 10.875C5.37868 10.875 4.875 11.3787 4.875 12C4.875 12.6213 5.37868 13.125 6 13.125Z" fill="#A1A5B3" />
+                                  </svg>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton4">
+                                  <li><a class="dropdown-item" href="#">Cancel Withdraw</a></li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>21 Sep, 2021 at 2:14 AM</td>
+                            <td>Visa</td>
+                            <td>American Express</td>
+                            <td class="color-red">
+                              <div class="table-dropdown-wrap">
+                                Canceled
+                                <button type="button" class="three-dots" data-bs-toggle="dropdown">
+                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 13.125C12.6213 13.125 13.125 12.6213 13.125 12C13.125 11.3787 12.6213 10.875 12 10.875C11.3787 10.875 10.875 11.3787 10.875 12C10.875 12.6213 11.3787 13.125 12 13.125Z" fill="#A1A5B3" />
+                                    <path d="M18 13.125C18.6213 13.125 19.125 12.6213 19.125 12C19.125 11.3787 18.6213 10.875 18 10.875C17.3787 10.875 16.875 11.3787 16.875 12C16.875 12.6213 17.3787 13.125 18 13.125Z" fill="#A1A5B3" />
+                                    <path d="M6 13.125C6.62132 13.125 7.125 12.6213 7.125 12C7.125 11.3787 6.62132 10.875 6 10.875C5.37868 10.875 4.875 11.3787 4.875 12C4.875 12.6213 5.37868 13.125 6 13.125Z" fill="#A1A5B3" />
+                                  </svg>
+                                </button>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" href="#">Cancel Withdraw</a></li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>21 Sep, 2021 at 2:14 AM</td>
+                            <td>Mastercards</td>
+                            <td>American Express</td>
+                            <td class="color-green">
+                              <div class="table-dropdown-wrap">
+                                Completed
+                                <button type="button" class="three-dots" id="dropdownMenuButton6" data-bs-toggle="dropdown">
+                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 13.125C12.6213 13.125 13.125 12.6213 13.125 12C13.125 11.3787 12.6213 10.875 12 10.875C11.3787 10.875 10.875 11.3787 10.875 12C10.875 12.6213 11.3787 13.125 12 13.125Z" fill="#A1A5B3" />
+                                    <path d="M18 13.125C18.6213 13.125 19.125 12.6213 19.125 12C19.125 11.3787 18.6213 10.875 18 10.875C17.3787 10.875 16.875 11.3787 16.875 12C16.875 12.6213 17.3787 13.125 18 13.125Z" fill="#A1A5B3" />
+                                    <path d="M6 13.125C6.62132 13.125 7.125 12.6213 7.125 12C7.125 11.3787 6.62132 10.875 6 10.875C5.37868 10.875 4.875 11.3787 4.875 12C4.875 12.6213 5.37868 13.125 6 13.125Z" fill="#A1A5B3" />
+                                  </svg>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton6">
+                                  <li><a class="dropdown-item" href="#">Cancel Withdraw</a></li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>21 Sep, 2021 at 2:14 AM</td>
+                            <td>Mastercards</td>
+                            <td>American Express</td>
+                            <td class="color-green">
+                              <div class="table-dropdown-wrap">
+                                Completed
+                                <button type="button" class="three-dots" id="dropdownMenuButton7" data-bs-toggle="dropdown">
+                                  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 13.125C12.6213 13.125 13.125 12.6213 13.125 12C13.125 11.3787 12.6213 10.875 12 10.875C11.3787 10.875 10.875 11.3787 10.875 12C10.875 12.6213 11.3787 13.125 12 13.125Z" fill="#A1A5B3" />
+                                    <path d="M18 13.125C18.6213 13.125 19.125 12.6213 19.125 12C19.125 11.3787 18.6213 10.875 18 10.875C17.3787 10.875 16.875 11.3787 16.875 12C16.875 12.6213 17.3787 13.125 18 13.125Z" fill="#A1A5B3" />
+                                    <path d="M6 13.125C6.62132 13.125 7.125 12.6213 7.125 12C7.125 11.3787 6.62132 10.875 6 10.875C5.37868 10.875 4.875 11.3787 4.875 12C4.875 12.6213 5.37868 13.125 6 13.125Z" fill="#A1A5B3" />
+                                  </svg>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton7">
+                                  <li><a class="dropdown-item" href="#">Cancel Withdraw</a></li>
+                                </ul>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom footer-three">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 col-md-6 d-flex align-items-center">
+                <div class="copywright-text">
+                  <p>© 2021 - Etutor. Designed by <a href="#">Templatecookie.</a> All rights reserved</p>
+                </div>
+              </div>
+              <div class="col-lg-6 col-md-6 d-flex justify-content-end">
+                <div class="footer-bottom-menu">
+                  <ul>
+                    <li><a href="#">FAQs</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Terms &amp; Condition</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+  </div>
+  <!-- Instrcutor Dashboard Layout End  -->
+
+  <!-- Car New Modal  -->
+  <div class="modal modal--newcard fade" id="newCard" aria-hidden="true" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-md  modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="reviewModalLabel">New Payment Card</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="#" class="form">
+            <div class="form-field form-field--">
+              <label>Name</label>
+              <div class="field-wrapper">
+                <input type="text" placeholder="Name on card">
+                <span class="icon icon--success">
+                             <img src="assets/images/svg-icon/checkcircle.svg" alt="success-icon">
+                         </span>
+                <span class="icon icon--warning">
+                             <img src="assets/images/svg-icon/Warning.svg" alt="warning-icon">
+                         </span>
+              </div>
+            </div>
+            <div class="form-field-social">
+              <label>Card Number</label>
+              <div class="field-wrapper">
+                <span class="icon">
+                          <img src="assets/images/svg-icon/slack.svg" alt="social-svg-icons">
+                      </span>
+                <input type="text" placeholder="Label">
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="form-field form-field--">
+                <label>MM / YY</label>
+                <div class="field-wrapper">
+                  <input type="text" placeholder="MM / YY">
+                  <span class="icon icon--success">
+                                <img src="assets/images/svg-icon/checkcircle.svg" alt="success-icon">
+                            </span>
+                  <span class="icon icon--warning">
+                                <img src="assets/images/svg-icon/Warning.svg" alt="warning-icon">
+                            </span>
+                </div>
+              </div>
+              <div class="form-field form-field--">
+                <label>CVC</label>
+                <div class="field-wrapper">
+                  <input type="number" placeholder="Security Code">
+                  <span class="icon icon--success">
+                             <img src="assets/images/svg-icon/checkcircle.svg" alt="success-icon">
+                         </span>
+                  <span class="icon icon--warning">
+                             <img src="assets/images/svg-icon/Warning.svg" alt="warning-icon">
+                         </span>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="button button--md button-g-s" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+          <button class="button button--md button-i--r">
+            Send Message
+            <span>
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                           <path d="M20.5811 11.3455L4.74536 2.47746C4.61214 2.40285 4.45932 2.37069 4.30732 2.38526C4.15533 2.39983 4.01141 2.46045 3.89479 2.55901C3.77817 2.65757 3.69441 2.78938 3.65471 2.93681C3.615 3.08425 3.62125 3.24029 3.6726 3.38409L6.65957 11.7476C6.71783 11.9107 6.71783 12.089 6.65957 12.2521L3.6726 20.6156C3.62124 20.7594 3.615 20.9155 3.65471 21.0629C3.69441 21.2104 3.77817 21.3422 3.89479 21.4407C4.01141 21.5393 4.15533 21.5999 4.30732 21.6145C4.45932 21.629 4.61214 21.5969 4.74536 21.5223L20.5811 12.6542C20.6975 12.5891 20.7943 12.4941 20.8617 12.3791C20.9291 12.2641 20.9647 12.1332 20.9647 11.9999C20.9647 11.8665 20.9291 11.7356 20.8617 11.6206C20.7943 11.5056 20.6975 11.4106 20.5811 11.3455Z" fill="white"/>
+                           <path d="M6.75 12H12.75" stroke="#FF6636" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                  </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/rt-plugins.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>E-tutor</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" href="assets/images/favicon/fav.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/rt-plugins.css">
+  <link rel="stylesheet" href="assets/css/main.css">
+</head>
+
+<body class="bodybg">
+
+  <!--[if IE]>
+    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+  <![endif]-->
+
+
+
+
+
+
+
+  <!-- Instrcutor Dashboard Layout Start -->
+  <div class="instructor">
+    <!-- sidbear -->
+    <div class="instructor-sidebar">
+      <!-- top content  -->
+      <div>
+        <!-- Brand Logo  -->
+        <div class="instructor-logo">
+          <a href="instructor-dashboard.html">
+            <img src="assets/images/logo-cap.png" alt="brand-logo">
+            E-tutor
+          </a>
+        </div>
+        <!-- Navigation Menu  -->
+        <ul class="instructor-menu">
+          <li>
+            <a href="instructor-dashboard.html">
+              <span class="icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.125 19.5V12.75H9.375" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M21.375 19.5H2.625" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M9.375 19.5V8.25H14.625" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M19.875 3.75H14.625V19.5H19.875V3.75Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+              Dashboard
+            </a>
+          </li>
+          <li class="active">
+            <a href="create-course.html">
+              <span class="icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"/>
+                                    <path d="M8.25 12H15.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12 8.25V15.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    
+                            </span>
+              Create New Course
+            </a>
+          </li>
+          <li>
+            <a href="my-course.html">
+              <span class="icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 16.5L12 21.75L21 16.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M3 12L12 17.25L21 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M3 7.5L12 12.75L21 7.5L12 2.25L3 7.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+              My Courses
+            </a>
+          </li>
+          <li>
+            <a href="my-earning.html">
+              <span class="icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M21 5.25H3C2.58579 5.25 2.25 5.58579 2.25 6V18C2.25 18.4142 2.58579 18.75 3 18.75H21C21.4142 18.75 21.75 18.4142 21.75 18V6C21.75 5.58579 21.4142 5.25 21 5.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M15.7495 15.75H18.7495" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M11.2495 15.75H12.7495" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M2.24951 9.07812H21.7495" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+              Earning
+            </a>
+          </li>
+          <li>
+            <a href="instructor-message.html">
+              <span class="icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M4.25895 16.5939C3.14076 14.7089 2.74916 12.4805 3.15768 10.3272C3.56621 8.1739 4.74675 6.2438 6.47764 4.89933C8.20853 3.55486 10.3707 2.8885 12.5581 3.02539C14.7455 3.16227 16.8078 4.09298 18.3575 5.64274C19.9073 7.19251 20.838 9.25472 20.9749 11.4421C21.1118 13.6296 20.4455 15.7917 19.101 17.5226C17.7565 19.2535 15.8264 20.4341 13.6732 20.8426C11.5199 21.2511 9.29149 20.8596 7.40649 19.7414L7.40651 19.7413L4.29808 20.6294C4.16947 20.6662 4.03338 20.6678 3.90391 20.6343C3.77443 20.6007 3.65628 20.5332 3.5617 20.4386C3.46713 20.344 3.39956 20.2259 3.36601 20.0964C3.33246 19.9669 3.33415 19.8308 3.37089 19.7022L4.25901 16.5938L4.25895 16.5939Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M12.375 12C12.375 12.2071 12.2071 12.375 12 12.375C11.7929 12.375 11.625 12.2071 11.625 12C11.625 11.7929 11.7929 11.625 12 11.625C12.2071 11.625 12.375 11.7929 12.375 12Z" fill="currentColor" stroke="currentColor" stroke-width="1.5"/>
+                                    <path d="M7.875 12C7.875 12.2071 7.70711 12.375 7.5 12.375C7.29289 12.375 7.125 12.2071 7.125 12C7.125 11.7929 7.29289 11.625 7.5 11.625C7.70711 11.625 7.875 11.7929 7.875 12Z" fill="currentColor" stroke="currentColor" stroke-width="1.5"/>
+                                    <path d="M16.875 12C16.875 12.2071 16.7071 12.375 16.5 12.375C16.2929 12.375 16.125 12.2071 16.125 12C16.125 11.7929 16.2929 11.625 16.5 11.625C16.7071 11.625 16.875 11.7929 16.875 12Z" fill="currentColor" stroke="currentColor" stroke-width="1.5"/>
+                                </svg>
+                            </span>
+              Message
+              <span class="count">3</span>
+            </a>
+          </li>
+          <li>
+            <a href="account-setting.html">
+              <span class="icon">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12.0005 16.5C14.4858 16.5 16.5005 14.4853 16.5005 12C16.5005 9.51472 14.4858 7.5 12.0005 7.5C9.51521 7.5 7.50049 9.51472 7.50049 12C7.50049 14.4853 9.51521 16.5 12.0005 16.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    <path d="M11.5198 4.13757L9.75078 2.8112C9.65586 2.7398 9.54534 2.69198 9.42831 2.67167C9.31129 2.65137 9.19112 2.65917 9.0777 2.69442C8.52982 2.86599 7.99827 3.08591 7.48933 3.3516C7.38397 3.40686 7.29327 3.48638 7.22471 3.58361C7.15614 3.68083 7.11169 3.79297 7.095 3.91076L6.78228 6.09991C6.66307 6.20557 6.54637 6.31547 6.43217 6.42961C6.31801 6.54377 6.20809 6.6605 6.1024 6.7798L6.10235 6.77984L3.91359 7.09284C3.79599 7.10947 3.68402 7.1538 3.58691 7.2222C3.48981 7.29059 3.41034 7.38108 3.35507 7.48621C3.08898 7.99493 2.86863 8.5263 2.69662 9.07404C2.6612 9.18762 2.6533 9.30799 2.67356 9.42522C2.69383 9.54245 2.74168 9.65318 2.81318 9.74827L4.14001 11.5174C4.13043 11.6764 4.12562 11.8366 4.12558 11.998C4.12558 12.1595 4.13039 12.3198 4.14002 12.4789L4.14001 12.4789L2.81364 14.2479C2.74224 14.3428 2.69442 14.4534 2.67411 14.5704C2.65381 14.6874 2.66161 14.8076 2.69686 14.921C2.86843 15.4689 3.08836 16.0004 3.35404 16.5094C3.4093 16.6147 3.48882 16.7054 3.58605 16.774C3.68327 16.8426 3.79541 16.887 3.9132 16.9037L6.10235 17.2164C6.20801 17.3356 6.31791 17.4523 6.43204 17.5665C6.54621 17.6807 6.66294 17.7906 6.78224 17.8963L6.78228 17.8964L7.09528 20.0851C7.1119 20.2027 7.15624 20.3147 7.22463 20.4118C7.29303 20.5089 7.38352 20.5884 7.48865 20.6436C7.99737 20.9097 8.52874 21.1301 9.07648 21.3021C9.19006 21.3375 9.31042 21.3454 9.42765 21.3252C9.54488 21.3049 9.65561 21.257 9.7507 21.1855L11.5198 19.8587C11.6788 19.8683 11.839 19.8731 12.0005 19.8731C12.1619 19.8731 12.3222 19.8683 12.4813 19.8587L12.4814 19.8587L14.2504 21.1851C14.3453 21.2565 14.4558 21.3043 14.5728 21.3246C14.6899 21.3449 14.81 21.3371 14.9235 21.3019C15.4713 21.1303 16.0029 20.9104 16.5118 20.6447C16.6172 20.5894 16.7079 20.5099 16.7764 20.4127C16.845 20.3154 16.8895 20.2033 16.9061 20.0855L17.2189 17.8964C17.3381 17.7907 17.4548 17.6808 17.569 17.5667C17.6831 17.4525 17.7931 17.3358 17.8988 17.2165L17.8988 17.2164L20.0876 16.9034C20.2052 16.8868 20.3171 16.8425 20.4142 16.7741C20.5113 16.7057 20.5908 16.6152 20.6461 16.5101C20.9122 16.0013 21.1325 15.47 21.3045 14.9222C21.34 14.8087 21.3479 14.6883 21.3276 14.5711C21.3073 14.4538 21.2595 14.3431 21.188 14.248L19.8611 12.4789C19.8707 12.3199 19.8755 12.1597 19.8756 11.9982C19.8756 11.8368 19.8708 11.6765 19.8611 11.5174L19.8611 11.5174L21.1875 9.74834C21.2589 9.65342 21.3067 9.5429 21.327 9.42588C21.3473 9.30885 21.3395 9.18868 21.3043 9.07526C21.1327 8.52738 20.9128 7.99583 20.6471 7.48689C20.5919 7.38154 20.5123 7.29083 20.4151 7.22227C20.3179 7.15371 20.2057 7.10925 20.088 7.09256L17.8988 6.77984C17.7931 6.66064 17.6832 6.54394 17.5691 6.42974C17.4549 6.31557 17.3382 6.20565 17.2189 6.09996L17.2189 6.09991L16.9059 3.91115C16.8892 3.79354 16.8449 3.68158 16.7765 3.58447C16.7081 3.48736 16.6176 3.4079 16.5125 3.35263C16.0038 3.08654 15.4724 2.86619 14.9247 2.69418C14.8111 2.65876 14.6907 2.65086 14.5735 2.67112C14.4563 2.69139 14.3455 2.73924 14.2504 2.81074L12.4814 4.13757C12.3224 4.12799 12.1621 4.12318 12.0007 4.12314C11.8392 4.12314 11.6789 4.12795 11.5199 4.13757L11.5198 4.13757Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </span>
+              Settings
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- bottom content  -->
+      <div>
+        <!-- sign out  -->
+        <div class="sign-out">
+          <span class="icon">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.3137 8.0625L20.2502 12L16.3137 15.9375" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.75 12H20.2472" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.75 20.25H4.5C4.30109 20.25 4.11032 20.171 3.96967 20.0303C3.82902 19.8897 3.75 19.6989 3.75 19.5V4.5C3.75 4.30109 3.82902 4.11032 3.96967 3.96967C4.11032 3.82902 4.30109 3.75 4.5 3.75H9.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                        </span>
+          Sign-out
+        </div>
+      </div>
+    </div>
+    <!-- main content -->
+    <div class="instructor-content">
+
+      <!-- Header  -->
+      <div class="instructor-header">
+        <div class="container">
+          <!-- left content  -->
+          <div class="left instructor-user">
+            <p class="greeting">Good Morning</p>
+            <h6 class="username">Dashboard</h6>
+          </div>
+          <!-- Right Content  -->
+          <div class="right">
+            <!-- Search Field  -->
+            <div class="form-searchbox">
+              <span class="icon">
+                                <img src="assets/images/svg-icon/search.svg" alt="search-icon">
+                            </span>
+              <input type="text" placeholder="Search...">
+            </div>
+            <!-- notification  -->
+            <div class="instructor-notification notification-icon">
+              <div class="icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M5.26904 9.74994C5.2678 8.86045 5.44262 7.97951 5.78343 7.1579C6.12424 6.33628 6.6243 5.59025 7.25477 4.9628C7.88525 4.33535 8.63368 3.83889 9.45693 3.50204C10.2802 3.16519 11.1619 2.99461 12.0514 3.00013C15.763 3.02772 18.7317 6.11275 18.7317 9.83468V10.4999C18.7317 13.8577 19.4342 15.8061 20.0529 16.871C20.1196 16.9848 20.1551 17.1142 20.1558 17.246C20.1565 17.3779 20.1224 17.5076 20.0569 17.6221C19.9915 17.7366 19.8971 17.8318 19.7831 17.8982C19.6691 17.9645 19.5397 17.9996 19.4078 17.9999H4.59222C4.46034 17.9996 4.33087 17.9645 4.21689 17.8981C4.1029 17.8318 4.00844 17.7366 3.94301 17.622C3.87759 17.5075 3.84352 17.3778 3.84425 17.2459C3.84498 17.114 3.88048 16.9846 3.94716 16.8709C4.56622 15.8059 5.26904 13.8575 5.26904 10.4999L5.26904 9.74994Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                  <path d="M9 18V18.75C9 19.5456 9.31607 20.3087 9.87868 20.8713C10.4413 21.4339 11.2044 21.75 12 21.75C12.7956 21.75 13.5587 21.4339 14.1213 20.8713C14.6839 20.3087 15 19.5456 15 18.75V18" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span class="icon-active"></span>
+              </div>
+              <div class="card card-activity notification-box instructor-page">
+                <div class="card-header">
+                  <h2 class="card-title">Recent Activity</h2>
+                  <p class="mark-read">Mark as Read</p>
+                </div>
+                <div class="card-body">
+                  <!-- Activity content  -->
+                  <ul class="activity">
+                    <li class="activity-item">
+                      <div class="activity-icon">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2.83927 11.0622C2.09381 9.80558 1.83274 8.32 2.10509 6.88447C2.37744 5.44894 3.16447 4.16221 4.3184 3.26589C5.47232 2.36958 6.91376 1.92534 8.37204 2.0166C9.83033 2.10785 11.2051 2.72833 12.2383 3.7615C13.2715 4.79468 13.892 6.16949 13.9832 7.62777C14.0745 9.08606 13.6303 10.5275 12.734 11.6814C11.8377 12.8354 10.5509 13.6224 9.1154 13.8947C7.67988 14.1671 6.1943 13.906 4.93763 13.1606L4.93764 13.1605L2.86536 13.7526C2.77962 13.7771 2.68889 13.7782 2.60257 13.7559C2.51626 13.7335 2.43749 13.6885 2.37444 13.6254C2.31139 13.5624 2.26634 13.4836 2.24398 13.3973C2.22161 13.311 2.22273 13.2202 2.24723 13.1345L2.83931 11.0622L2.83927 11.0622Z" fill="white" />
+                          <path d="M8 8.75C8.41421 8.75 8.75 8.41421 8.75 8C8.75 7.58579 8.41421 7.25 8 7.25C7.58579 7.25 7.25 7.58579 7.25 8C7.25 8.41421 7.58579 8.75 8 8.75Z" fill="#FF6636" />
+                          <path d="M5 8.75C5.41421 8.75 5.75 8.41421 5.75 8C5.75 7.58579 5.41421 7.25 5 7.25C4.58579 7.25 4.25 7.58579 4.25 8C4.25 8.41421 4.58579 8.75 5 8.75Z" fill="#FF6636" />
+                          <path d="M11 8.75C11.4142 8.75 11.75 8.41421 11.75 8C11.75 7.58579 11.4142 7.25 11 7.25C10.5858 7.25 10.25 7.58579 10.25 8C10.25 8.41421 10.5858 8.75 11 8.75Z" fill="#FF6636" />
+                        </svg>
+                      </div>
+                      <div class="activity-info">
+                        <p> <span class="username">Kevin</span> comments on your lecture “What is ux” in “2021 ui/ux design with figma”</p>
+                        <span class="time">Just now</span>
+                      </div>
+                    </li>
+                    <li class="activity-item">
+                      <div class="activity-icon">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8.27569 11.9208L11.4279 13.9179C11.8308 14.1732 12.3311 13.7935 12.2115 13.3232L11.3008 9.74052C11.2752 9.64073 11.2782 9.53573 11.3096 9.4376C11.3409 9.33946 11.3994 9.25218 11.4781 9.18577L14.3049 6.83306C14.6763 6.52392 14.4846 5.90751 14.0074 5.87654L10.3159 5.63696C10.2165 5.62986 10.1211 5.59465 10.0409 5.53545C9.96069 5.47625 9.89896 5.39548 9.86289 5.30255L8.48612 1.83549C8.44869 1.73685 8.38215 1.65194 8.29532 1.59201C8.2085 1.53209 8.1055 1.5 8 1.5C7.89451 1.5 7.79151 1.53209 7.70468 1.59201C7.61786 1.65194 7.55131 1.73685 7.51389 1.83549L6.13712 5.30255C6.10104 5.39548 6.03932 5.47625 5.95912 5.53545C5.87892 5.59465 5.78355 5.62986 5.68412 5.63696L1.99263 5.87654C1.51544 5.90751 1.32373 6.52392 1.69515 6.83306L4.52186 9.18577C4.60063 9.25218 4.65907 9.33946 4.69044 9.4376C4.72181 9.53573 4.72485 9.64073 4.6992 9.74052L3.85459 13.063C3.71111 13.6274 4.31143 14.083 4.79495 13.7767L7.72431 11.9208C7.8067 11.8683 7.90234 11.8405 8 11.8405C8.09767 11.8405 8.19331 11.8683 8.27569 11.9208Z" fill="white" />
+                        </svg>
+                      </div>
+                      <div class="activity-info">
+                        <p> <span class="username">Kevin</span> comments on your lecture “What is ux” in “2021 ui/ux design with figma”</p>
+                        <span class="time">5 min ago</span>
+                      </div>
+                    </li>
+                    <li class="activity-item">
+                      <div class="activity-icon">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path opacity="0.2" d="M11.5007 5H2.50073C2.22459 5 2.00073 5.22386 2.00073 5.5V12.5C2.00073 12.7761 2.22459 13 2.50073 13H11.5007C11.7769 13 12.0007 12.7761 12.0007 12.5V5.5C12.0007 5.22386 11.7769 5 11.5007 5Z" fill="white" />
+                          <path d="M11.5007 5H2.50073C2.22459 5 2.00073 5.22386 2.00073 5.5V12.5C2.00073 12.7761 2.22459 13 2.50073 13H11.5007C11.7769 13 12.0007 12.7761 12.0007 12.5V5.5C12.0007 5.22386 11.7769 5 11.5007 5Z" fill="white" />
+                          <path d="M4.00073 3H13.5007C13.6333 3 13.7605 3.05268 13.8543 3.14645C13.9481 3.24021 14.0007 3.36739 14.0007 3.5V11" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                      <div class="activity-info">
+                        <p> <span class="username">Kevin</span> comments on your lecture “What is ux” in “2021 ui/ux design with figma”</p>
+                        <span class="time">6 min ago</span>
+                      </div>
+                    </li>
+                    <li class="activity-item">
+                      <div class="activity-icon">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2.83927 11.0622C2.09381 9.80558 1.83274 8.32 2.10509 6.88447C2.37744 5.44894 3.16447 4.16221 4.3184 3.26589C5.47232 2.36958 6.91376 1.92534 8.37204 2.0166C9.83033 2.10785 11.2051 2.72833 12.2383 3.7615C13.2715 4.79468 13.892 6.16949 13.9832 7.62777C14.0745 9.08606 13.6303 10.5275 12.734 11.6814C11.8377 12.8354 10.5509 13.6224 9.1154 13.8947C7.67988 14.1671 6.1943 13.906 4.93763 13.1606L4.93764 13.1605L2.86536 13.7526C2.77962 13.7771 2.68889 13.7782 2.60257 13.7559C2.51626 13.7335 2.43749 13.6885 2.37444 13.6254C2.31139 13.5624 2.26634 13.4836 2.24398 13.3973C2.22161 13.311 2.22273 13.2202 2.24723 13.1345L2.83931 11.0622L2.83927 11.0622Z" fill="white" />
+                          <path d="M8 8.75C8.41421 8.75 8.75 8.41421 8.75 8C8.75 7.58579 8.41421 7.25 8 7.25C7.58579 7.25 7.25 7.58579 7.25 8C7.25 8.41421 7.58579 8.75 8 8.75Z" fill="#FF6636" />
+                          <path d="M5 8.75C5.41421 8.75 5.75 8.41421 5.75 8C5.75 7.58579 5.41421 7.25 5 7.25C4.58579 7.25 4.25 7.58579 4.25 8C4.25 8.41421 4.58579 8.75 5 8.75Z" fill="#FF6636" />
+                          <path d="M11 8.75C11.4142 8.75 11.75 8.41421 11.75 8C11.75 7.58579 11.4142 7.25 11 7.25C10.5858 7.25 10.25 7.58579 10.25 8C10.25 8.41421 10.5858 8.75 11 8.75Z" fill="#FF6636" />
+                        </svg>
+                      </div>
+                      <div class="activity-info">
+                        <p> <span class="username">Kevin</span> comments on your lecture “What is ux” in “2021 ui/ux design with figma”</p>
+                        <span class="time">Just now</span>
+                      </div>
+                    </li>
+                    <li class="activity-item">
+                      <div class="activity-icon">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M8.27569 11.9208L11.4279 13.9179C11.8308 14.1732 12.3311 13.7935 12.2115 13.3232L11.3008 9.74052C11.2752 9.64073 11.2782 9.53573 11.3096 9.4376C11.3409 9.33946 11.3994 9.25218 11.4781 9.18577L14.3049 6.83306C14.6763 6.52392 14.4846 5.90751 14.0074 5.87654L10.3159 5.63696C10.2165 5.62986 10.1211 5.59465 10.0409 5.53545C9.96069 5.47625 9.89896 5.39548 9.86289 5.30255L8.48612 1.83549C8.44869 1.73685 8.38215 1.65194 8.29532 1.59201C8.2085 1.53209 8.1055 1.5 8 1.5C7.89451 1.5 7.79151 1.53209 7.70468 1.59201C7.61786 1.65194 7.55131 1.73685 7.51389 1.83549L6.13712 5.30255C6.10104 5.39548 6.03932 5.47625 5.95912 5.53545C5.87892 5.59465 5.78355 5.62986 5.68412 5.63696L1.99263 5.87654C1.51544 5.90751 1.32373 6.52392 1.69515 6.83306L4.52186 9.18577C4.60063 9.25218 4.65907 9.33946 4.69044 9.4376C4.72181 9.53573 4.72485 9.64073 4.6992 9.74052L3.85459 13.063C3.71111 13.6274 4.31143 14.083 4.79495 13.7767L7.72431 11.9208C7.8067 11.8683 7.90234 11.8405 8 11.8405C8.09767 11.8405 8.19331 11.8683 8.27569 11.9208Z" fill="white" />
+                        </svg>
+                      </div>
+                      <div class="activity-info">
+                        <p> <span class="username">Kevin</span> comments on your lecture “What is ux” in “2021 ui/ux design with figma”</p>
+                        <span class="time">5 min ago</span>
+                      </div>
+                    </li>
+                    <li class="activity-item">
+                      <div class="activity-icon">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path opacity="0.2" d="M11.5007 5H2.50073C2.22459 5 2.00073 5.22386 2.00073 5.5V12.5C2.00073 12.7761 2.22459 13 2.50073 13H11.5007C11.7769 13 12.0007 12.7761 12.0007 12.5V5.5C12.0007 5.22386 11.7769 5 11.5007 5Z" fill="white" />
+                          <path d="M11.5007 5H2.50073C2.22459 5 2.00073 5.22386 2.00073 5.5V12.5C2.00073 12.7761 2.22459 13 2.50073 13H11.5007C11.7769 13 12.0007 12.7761 12.0007 12.5V5.5C12.0007 5.22386 11.7769 5 11.5007 5Z" fill="white" />
+                          <path d="M4.00073 3H13.5007C13.6333 3 13.7605 3.05268 13.8543 3.14645C13.9481 3.24021 14.0007 3.36739 14.0007 3.5V11" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                      </div>
+                      <div class="activity-info">
+                        <p> <span class="username">Kevin</span> comments on your lecture “What is ux” in “2021 ui/ux design with figma”</p>
+                        <span class="time">6 min ago</span>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- profile img -->
+            <div class="instructor-user">
+              <div class="image">
+                <img src="assets/images/users/user-01.png" alt="user-img">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Instructor Main Content  -->
+      <main class="instructor-main">
+        <div class="container">
+          <!-- Instructor Create Course   -->
+          <div class="instructor-createcourse">
+            <ul class="nav nav-pills" id="pills-tab" role="tablist">
+              <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="basic-tab" data-bs-toggle="pill" data-bs-target="#basic" type="button" role="tab" aria-controls="basic" aria-selected="true">
+                  <span class="icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path opacity="0.2" d="M3 7.5L12 12.75L21 7.5L12 2.25L3 7.5Z" fill="currentColor"/>
+                                            <path d="M3 16.5L12 21.75L21 16.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M3 12L12 17.25L21 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M3 7.5L12 12.75L21 7.5L12 2.25L3 7.5Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>                                            
+                                      </span>
+                  Basic Information
+                </button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="advance-tab" data-bs-toggle="pill" data-bs-target="#advance" type="button" role="tab" aria-controls="advance" aria-selected="false">
+                  <span class="icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path opacity="0.2" d="M15 3.75C15.488 4.39855 15.7512 5.18842 15.75 6V6.75H8.25V6C8.24877 5.18842 8.51205 4.39855 8.99995 3.75H5.25C5.15151 3.75 5.05398 3.76939 4.96298 3.80708C4.87199 3.84477 4.78931 3.90002 4.71966 3.96966C4.65002 4.03931 4.59477 4.12199 4.55708 4.21298C4.51939 4.30398 4.5 4.40151 4.5 4.5V20.25C4.5 20.3485 4.51939 20.446 4.55708 20.537C4.59477 20.628 4.65002 20.7107 4.71966 20.7803C4.78931 20.85 4.87199 20.9052 4.96298 20.9429C5.05398 20.9806 5.15151 21 5.25 21H18.75C18.8485 21 18.946 20.9806 19.037 20.9429C19.128 20.9052 19.2107 20.85 19.2803 20.7803C19.35 20.7107 19.4052 20.628 19.4429 20.537C19.4806 20.446 19.5 20.3485 19.5 20.25V4.5C19.5 4.40151 19.4806 4.30398 19.4429 4.21298C19.4052 4.12199 19.35 4.03931 19.2803 3.96966C19.2107 3.90002 19.128 3.84477 19.037 3.80708C18.946 3.76939 18.8485 3.75 18.75 3.75H15Z" fill="currentColor"/>
+                                            <path d="M9 14.25H15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M9 11.25H15" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15.0002 3.75H18.75C18.9489 3.75 19.1397 3.82902 19.2803 3.96967C19.421 4.11032 19.5 4.30109 19.5 4.5V20.25C19.5 20.4489 19.421 20.6397 19.2803 20.7803C19.1397 20.921 18.9489 21 18.75 21H5.25C5.05109 21 4.86032 20.921 4.71967 20.7803C4.57902 20.6397 4.5 20.4489 4.5 20.25V4.5C4.5 4.30109 4.57902 4.11032 4.71967 3.96967C4.86032 3.82902 5.05109 3.75 5.25 3.75H8.9998" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M8.25 6.75V6C8.25 5.00544 8.64509 4.05161 9.34835 3.34835C10.0516 2.64509 11.0054 2.25 12 2.25C12.9946 2.25 13.9484 2.64509 14.6517 3.34835C15.3549 4.05161 15.75 5.00544 15.75 6V6.75H8.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            </svg>
+                                            
+                                    </span>
+                  Advance Information</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="curriculum-tab" data-bs-toggle="pill" data-bs-target="#curriculum" type="button" role="tab" aria-controls="curriculum" aria-selected="false">
+                  <span class="icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path opacity="0.2" d="M19.5 4.5H4.5C4.10218 4.5 3.72065 4.65804 3.43934 4.93934C3.15804 5.22065 3 5.60218 3 6V16.5C3 16.8978 3.15804 17.2794 3.43934 17.5607C3.72065 17.842 4.10218 18 4.5 18H19.5C19.8978 18 20.2794 17.842 20.5607 17.5607C20.842 17.2794 21 16.8978 21 16.5V6C21 5.60218 20.842 5.22065 20.5607 4.93934C20.2794 4.65804 19.8978 4.5 19.5 4.5ZM10.5 14.25V8.25L15 11.25L10.5 14.25Z" fill="currentColor"/>
+                                            <path d="M4.5 18L19.5 18C20.3284 18 21 17.3284 21 16.5V6C21 5.17157 20.3284 4.5 19.5 4.5L4.5 4.5C3.67157 4.5 3 5.17157 3 6V16.5C3 17.3284 3.67157 18 4.5 18Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15 21H9" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M15 11.25L10.5 8.25V14.25L15 11.25Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                            
+                                    </span>
+                  Curriculum</button>
+              </li>
+              <li class="nav-item" role="presentation">
+                <button class="nav-link" id="publish-tab" data-bs-toggle="pill" data-bs-target="#publish" type="button" role="tab" aria-controls="publish" aria-selected="false">
+                  <span class="icon">
+                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path opacity="0.2" d="M12 3C10.22 3 8.47991 3.52784 6.99987 4.51677C5.51983 5.50571 4.36628 6.91131 3.68509 8.55585C3.0039 10.2004 2.82567 12.01 3.17294 13.7558C3.5202 15.5016 4.37737 17.1053 5.63604 18.364C6.89472 19.6226 8.49836 20.4798 10.2442 20.8271C11.99 21.1743 13.7996 20.9961 15.4442 20.3149C17.0887 19.6337 18.4943 18.4802 19.4832 17.0001C20.4722 15.5201 21 13.78 21 12C21 10.8181 20.7672 9.64778 20.3149 8.55585C19.8626 7.46391 19.1997 6.47176 18.364 5.63603C17.5282 4.8003 16.5361 4.13737 15.4442 3.68508C14.3522 3.23279 13.1819 3 12 3ZM10.5 15V9L15 12L10.5 15Z" fill="currentColor"/>
+                                            <path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="currentColor" stroke-width="1.5" stroke-miterlimit="10"/>
+                                            <path d="M15 12L10.5 9V15L15 12Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </span>
+                  Publish Course
+                </button>
+              </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+              <!-- basic Information -->
+              <div class="tab-pane fade show active " id="basic" role="tabpanel" aria-labelledby="basic-tab">
+
+                <!-- tab Header  -->
+                <div class="instructor-tab-header">
+                  <h2>Basic Information</h2>
+                  <div>
+                    <button class="button button--md button-p-s">Save</button>
+                    <button class="button button--md button-p-t">Save & Preview</button>
+                  </div>
+                </div>
+
+                <!-- Tab Main Content  -->
+                <div class="instructor-tab-main">
+                  <form action="#" class="form">
+
+                    <div class="form-field">
+                      <label>title</label>
+                      <div class="field-wrapper">
+                        <input type="text" placeholder="What you will teach in this course...">
+                        <span class="field-wrapper__count">0/80</span>
+                      </div>
+                    </div>
+                    <div class="form-field">
+                      <label>Subtitle</label>
+                      <div class="field-wrapper">
+                        <input type="text" placeholder="Course Sub Title...">
+                        <span class="field-wrapper__count">0/80</span>
+                      </div>
+                    </div>
+                    <div class="form-group form-group--2">
+                      <div class="form-selects">
+                        <label>Course topic</label>
+                        <div class="field-wrapper">
+                          <select class="card-dropdown" id="categorySelect">
+                            <option value="1"> course topic one </option>
+                            <option value="2"> course topic two </option>
+                            <option value="3"> course topic three</option>
+                            <option value="4"> course topic Four </option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-selects">
+                        <label>Course Sub-Category</label>
+                        <div class="field-wrapper">
+                          <select class="card-dropdown" id="subCategorySelect">
+                            <option value="1"> course topic one </option>
+                            <option value="2"> course topic two </option>
+                            <option value="3"> course topic three</option>
+                            <option value="4"> course topic Four </option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-field">
+                      <label>Course Topic</label>
+                      <div class="field-wrapper">
+                        <input type="text" placeholder="What is primarily taught in your course...">
+                        <span class="field-wrapper__count">0/80</span>
+                      </div>
+                    </div>
+                    <div class="form-group form-group--4">
+                      <div class="form-selects">
+                        <label>Course Language</label>
+                        <div class="field-wrapper">
+                          <select class="card-dropdown" id="languageSelect">
+                            <option value="1"> course language one </option>
+                            <option value="2"> course language two </option>
+                            <option value="3"> course language three</option>
+                            <option value="4"> course language Four </option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-selects">
+                        <label>Subtitle language (optional)</label>
+                        <div class="field-wrapper">
+                          <select class="card-dropdown" id="sublanguageSelect">
+                            <option value="1"> course language one </option>
+                            <option value="2"> course language two </option>
+                            <option value="3"> course language three</option>
+                            <option value="4"> course language Four </option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-selects">
+                        <label>Course Level</label>
+                        <div class="field-wrapper">
+                          <select class="card-dropdown" id="levelSelect">
+                            <option value="1"> course level one </option>
+                            <option value="2"> course level two </option>
+                            <option value="3"> course level three</option>
+                            <option value="4"> course level Four </option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="form-selects">
+                        <label>Durations</label>
+                        <div class="field-wrapper">
+                          <select class="card-dropdown" id="durationSelect">
+                            <option value="1"> course duration one </option>
+                            <option value="2"> course duration two </option>
+                            <option value="3"> course duration three</option>
+                            <option value="4"> course duration Four </option>
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- navigation  -->
+                    <div class="instructor-tab-navigation">
+                      <button class="button button--lg button-g-s button-cancel">Cancel</button>
+                      <button class="button button--lg  button-next">Save & Next</button>
+                    </div>
+                  </form>
+                </div>
+
+
+              </div>
+              <!-- Advance Information -->
+              <div class="tab-pane fade" id="advance" role="tabpanel" aria-labelledby="advance-tab">
+
+                <!-- tab Header  -->
+                <div class="instructor-tab-header">
+                  <h2>Advance Informations</h2>
+                  <div>
+                    <button class="button button--md button-p-s">Save</button>
+                    <button class="button button--md button-p-t">Save & Preview</button>
+                  </div>
+                </div>
+
+                <!-- Tab Main Content  -->
+                <div class="instructor-tab-main instructor-tab-main--requirements">
+                  <form action="#" class="form">
+
+                    <!-- Upload Contents -->
+                    <div class="instructor-requirements">
+                      <div class="wrapper-upload">
+                        <div>
+                          <div class="instructor-uploads">
+                            <h2 class="instructor-requirements__title">Course Thumbnail</h2>
+                            <div>
+                              <div class="instructor-uploads__image">
+                                <img src="assets/images/thumbnail.png" alt="upload-img">
+                              </div>
+                              <div class="instructor-uploads__info">
+                                <p>Upload your course Thumbnail here. <b>Important guidelines:</b> 1200x800 pixels or 12:8 Ratio. Supported format: <b>.jpg, .jpeg, or .png</b> </p>
+                                <div class="upload">
+                                  <input type="file" id="img" accept="image/*">
+                                  <label class="button button--md button-p-s button-i--r" for="img">
+                                    Upload image
+                                    <span>
+                                                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                <path d="M8.0625 7.68647L12 3.75L15.9375 7.68647" stroke="#FF6636" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                                <path d="M12 14.2511V3.75391" stroke="#FF6636" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                                <path d="M20.25 14.25V19.5C20.25 19.6989 20.171 19.8897 20.0303 20.0303C19.8897 20.171 19.6989 20.25 19.5 20.25H4.5C4.30109 20.25 4.11032 20.171 3.96967 20.0303C3.82902 19.8897 3.75 19.6989 3.75 19.5V14.25" stroke="#FF6636" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                            </svg>
+                                                                        </span>
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <div class="instructor-uploads">
+                            <h2 class="instructor-requirements__title">Course Trailer</h2>
+                            <div>
+                              <div class="instructor-uploads__image">
+                                <img src="assets/images/play-circle.png" alt="upload-img">
+
+                              </div>
+                              <div class="instructor-uploads__info">
+                                <p>Upload your course Thumbnail here. <b>Important guidelines:</b> 1200x800 pixels or 12:8 Ratio. Supported format: <b>.jpg, .jpeg, or .png</b> </p>
+                                <div class="upload">
+                                  <input type="file" id="video" accept="video/*">
+                                  <label class="button button--md button-p-s button-i--r" for="video">
+                                    Upload image
+                                    <span>
+                                                                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                <path d="M8.0625 7.68647L12 3.75L15.9375 7.68647" stroke="#FF6636" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                                <path d="M12 14.2511V3.75391" stroke="#FF6636" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                                <path d="M20.25 14.25V19.5C20.25 19.6989 20.171 19.8897 20.0303 20.0303C19.8897 20.171 19.6989 20.25 19.5 20.25H4.5C4.30109 20.25 4.11032 20.171 3.96967 20.0303C3.82902 19.8897 3.75 19.6989 3.75 19.5V14.25" stroke="#FF6636" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                            </svg>
+                                                                        </span>
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- Course Descriptions -->
+                    <div class="instructor-requirements instructor-requirements--description">
+                      <h2 class="instructor-requirements__title"> Course Descriptions</h2>
+                      <textarea id="editorDes" placeholder="Enter you course descriptions"></textarea>
+                    </div>
+
+
+                    <div class="instructor-requirements">
+                      <div class="instructor-requirements__header">
+                        <h2 class="instructor-requirements__title">What you will teach in this course (4/8)</h2>
+                        <a href="#">
+                          <span class="icon">
+                                                        <img src="assets/images/svg-icon/plus.svg" alt="plus-icon">
+                                                    </span>
+                          Add new
+                        </a>
+                      </div>
+                      <div class="form-field">
+                        <label>01</label>
+                        <div class="field-wrapper">
+                          <input type="text" placeholder="What you will teach in this course...">
+                          <span class="field-wrapper__count">0/80</span>
+                        </div>
+                      </div>
+                      <div class="form-field">
+                        <label>02</label>
+                        <div class="field-wrapper">
+                          <input type="text" placeholder="What you will teach in this course...">
+                          <span class="field-wrapper__count">0/80</span>
+                        </div>
+                      </div>
+                      <div class="form-field">
+                        <label>03</label>
+                        <div class="field-wrapper">
+                          <input type="text" placeholder="What you will teach in this course...">
+                          <span class="field-wrapper__count">0/80</span>
+                        </div>
+                      </div>
+                      <div class="form-field">
+                        <label>04</label>
+                        <div class="field-wrapper">
+                          <input type="text" placeholder="What you will teach in this course...">
+                          <span class="field-wrapper__count">0/80</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="instructor-requirements">
+                      <div class="instructor-requirements__header">
+                        <h2 class="instructor-requirements__title">Target Audience (4/8)</h2>
+                        <a href="#">
+                          <span class="icon">
+                                                        <img src="assets/images/svg-icon/plus.svg" alt="plus-icon">
+                                                    </span>
+                          Add new
+                        </a>
+                      </div>
+                      <div class="form-field">
+                        <label>01</label>
+                        <div class="field-wrapper">
+                          <input type="text" placeholder="Who this course is for...">
+                          <span class="field-wrapper__count">0/80</span>
+                        </div>
+                      </div>
+                      <div class="form-field">
+                        <label>02</label>
+                        <div class="field-wrapper">
+                          <input type="text" placeholder="Who this course is for...">
+                          <span class="field-wrapper__count">0/80</span>
+                        </div>
+                      </div>
+                      <div class="form-field">
+                        <label>03</label>
+                        <div class="field-wrapper">
+                          <input type="text" placeholder="Who this course is for...">
+                          <span class="field-wrapper__count">0/80</span>
+                        </div>
+                      </div>
+                      <div class="form-field">
+                        <label>04</label>
+                        <div class="field-wrapper">
+                          <input type="text" placeholder="Who this course is for...">
+                          <span class="field-wrapper__count">0/80</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="instructor-requirements border-0 pb-0">
+                      <div class="instructor-requirements__header">
+                        <h2 class="instructor-requirements__title">Course requirements (4/8)</h2>
+                        <a href="#">
+                          <span class="icon">
+                                                        <img src="assets/images/svg-icon/plus.svg" alt="plus-icon">
+                                                    </span>
+                          Add new
+                        </a>
+                      </div>
+                      <div class="form-field">
+                        <label>01</label>
+                        <div class="field-wrapper">
+                          <input type="text" placeholder="What is you course requirements...">
+                          <span class="field-wrapper__count">0/80</span>
+                        </div>
+                      </div>
+                      <div class="form-field">
+                        <label>02</label>
+                        <div class="field-wrapper">
+                          <input type="text" placeholder="What is you course requirements...">
+                          <span class="field-wrapper__count">0/80</span>
+                        </div>
+                      </div>
+                      <div class="form-field">
+                        <label>03</label>
+                        <div class="field-wrapper">
+                          <input type="text" placeholder="What is you course requirements...">
+                          <span class="field-wrapper__count">0/80</span>
+                        </div>
+                      </div>
+                      <div class="form-field">
+                        <label>04</label>
+                        <div class="field-wrapper">
+                          <input type="text" placeholder="What is you course requirements...">
+                          <span class="field-wrapper__count">0/80</span>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <!-- navigation  -->
+                    <div class="instructor-tab-navigation">
+                      <button class="button button--lg button-g-s button-cancel">Previous</button>
+                      <button class="button button--lg  button-next">Save & Next</button>
+                    </div>
+                  </form>
+                </div>
+
+              </div>
+              <!-- Curriculum  -->
+              <div class="tab-pane fade" id="curriculum" role="tabpanel" aria-labelledby="curriculum-tab">
+
+                <!-- tab Header  -->
+                <div class="instructor-tab-header">
+                  <h2>Course Curriculum</h2>
+                  <div>
+                    <button class="button button--md button-p-s">Save</button>
+                    <button class="button button--md button-p-t">Save & Preview</button>
+                  </div>
+                </div>
+
+                <!-- Tab Main Content  -->
+                <div class="instructor-tab-main">
+                  <form action="#" class="form">
+
+                    <!-- Instructor curriculum  -->
+                    <div class="instructor-curriculum">
+                      <!-- Section   -->
+                      <div class="curriculum curriculum-section">
+                        <!-- Section content  -->
+                        <div class="curriculum-section-content">
+                          <!-- Section info  -->
+                          <div class="section-info">
+                            <span>
+                                                                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M4 10H16" stroke="#1D2026" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    <path d="M4 5H16" stroke="#1D2026" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    <path d="M4 15H16" stroke="#1D2026" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                </svg>
+                                                            </span>
+                            <!-- Section Title -->
+                            <div>
+                              <h2>Sections 01 : <span>Section Name</span> </h2>
+                            </div>
+                          </div>
+                          <!-- Section action -->
+                          <div class="section-action">
+                            <!-- Add lecture -->
+                            <a href="#">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.75 12H20.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12 3.75V20.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+                            </a>
+                            <!-- Edit  -->
+                            <a href="#" data-bs-toggle="modal" data-bs-target="#section">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9 20.2518H4.5C4.30109 20.2518 4.11032 20.1728 3.96967 20.0322C3.82902 19.8915 3.75 19.7008 3.75 19.5018V15.3125C3.75 15.214 3.7694 15.1165 3.80709 15.0255C3.84478 14.9345 3.90003 14.8518 3.96967 14.7822L15.2197 3.53217C15.3603 3.39152 15.5511 3.3125 15.75 3.3125C15.9489 3.3125 16.1397 3.39152 16.2803 3.53217L20.4697 7.72151C20.6103 7.86216 20.6893 8.05293 20.6893 8.25184C20.6893 8.45075 20.6103 8.64152 20.4697 8.78217L9 20.2518Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M12.75 6L18 11.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M20.2501 20.2492H9.00013L3.79785 15.0469" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+
+                            </a>
+                            <!-- Delete  -->
+                            <a href="#">
+                              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.25 5.25L3.75 5.25001" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M9.75 9.75V15.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M14.25 9.75V15.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M18.75 5.25V19.5C18.75 19.6989 18.671 19.8897 18.5303 20.0303C18.3897 20.171 18.1989 20.25 18 20.25H6C5.80109 20.25 5.61032 20.171 5.46967 20.0303C5.32902 19.8897 5.25 19.6989 5.25 19.5V5.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                <path d="M15.75 5.25V3.75C15.75 3.35218 15.592 2.97064 15.3107 2.68934C15.0294 2.40804 14.6478 2.25 14.25 2.25H9.75C9.35218 2.25 8.97064 2.40804 8.68934 2.68934C8.40804 2.97064 8.25 3.35218 8.25 3.75V5.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                              </svg>
+
+                            </a>
+                          </div>
+                        </div>
+
+                        <!-- Section Lecture content  -->
+                        <div class="curriculum-section__lectures">
+                          <div class="curriculum-lecture">
+                            <!-- Section info  -->
+                            <div class="lecture-info">
+                              <span>
+                                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M4 10H16" stroke="#1D2026" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        <path d="M4 5H16" stroke="#1D2026" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        <path d="M4 15H16" stroke="#1D2026" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                    </svg>
+                                                                </span>
+                              <!-- Section Title -->
+                              <div>
+                                <h2> lecture name</h2>
+                              </div>
+                            </div>
+                            <!-- Section action -->
+                            <div class="lecture-action">
+                              <!-- uplods -->
+                              <button class="button button-p-s button--md button-i--r " data-bs-toggle="dropdown">
+                                Contents
+                                <span>
+                                                                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                        <path d="M13 6L8 11L3 6" stroke="#FF6636" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        </svg>
+                                                                        
+                                                                  </span>
+                              </button>
+                              <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#lecture">Video</a></li>
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#attach">Attach File</a></li>
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#caption">Captions</a></li>
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#description">Description</a></li>
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#cdescription">Lecture Notes</a></li>
+                              </ul>
+                              <!-- Edit  -->
+                              <a href="#" data-bs-toggle="modal" data-bs-target="#section">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M9 20.2518H4.5C4.30109 20.2518 4.11032 20.1728 3.96967 20.0322C3.82902 19.8915 3.75 19.7008 3.75 19.5018V15.3125C3.75 15.214 3.7694 15.1165 3.80709 15.0255C3.84478 14.9345 3.90003 14.8518 3.96967 14.7822L15.2197 3.53217C15.3603 3.39152 15.5511 3.3125 15.75 3.3125C15.9489 3.3125 16.1397 3.39152 16.2803 3.53217L20.4697 7.72151C20.6103 7.86216 20.6893 8.05293 20.6893 8.25184C20.6893 8.45075 20.6103 8.64152 20.4697 8.78217L9 20.2518Z" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                  <path d="M12.75 6L18 11.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                  <path d="M20.2501 20.2492H9.00013L3.79785 15.0469" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+
+                              </a>
+                              <!-- Delete  -->
+                              <a href="#">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                  <path d="M20.25 5.25L3.75 5.25001" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                  <path d="M9.75 9.75V15.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                  <path d="M14.25 9.75V15.75" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                  <path d="M18.75 5.25V19.5C18.75 19.6989 18.671 19.8897 18.5303 20.0303C18.3897 20.171 18.1989 20.25 18 20.25H6C5.80109 20.25 5.61032 20.171 5.46967 20.0303C5.32902 19.8897 5.25 19.6989 5.25 19.5V5.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                  <path d="M15.75 5.25V3.75C15.75 3.35218 15.592 2.97064 15.3107 2.68934C15.0294 2.40804 14.6478 2.25 14.25 2.25H9.75C9.35218 2.25 8.97064 2.40804 8.68934 2.68934C8.40804 2.97064 8.25 3.35218 8.25 3.75V5.25" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- Add Section Content  -->
+                      <button class=" instructor-curriculum__adsection button button-p-s button--md w-100">add Sections</button>
+                    </div>
+
+                    <!-- navigation  -->
+                    <div class="instructor-tab-navigation">
+                      <button class="button button--lg button-g-s button-cancel">Previous</button>
+                      <button class="button button--lg  button-next">Save & Next</button>
+                    </div>
+                  </form>
+                </div>
+
+              </div>
+              <!-- Publish Course  -->
+              <div class="tab-pane fade" id="publish" role="tabpanel" aria-labelledby="publish-tab">
+                <!-- tab Header  -->
+                <div class="instructor-tab-header">
+                  <h2>Publish Course</h2>
+                  <div>
+                    <button class="button button--md button-p-s">Save</button>
+                    <button class="button button--md button-p-t">Save & Preview</button>
+                  </div>
+                </div>
+
+                <!-- Tab Main Content  -->
+                <div class="instructor-tab-main">
+                  <form action="#" class="form">
+
+                    <!-- publish -->
+                    <div class="instructor-publish">
+                      <h2>Message</h2>
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div class="form-textarea">
+                            <label>Welcome Message</label>
+                            <textarea placeholder="Enter course starting message here..."></textarea>
+                          </div>
+                        </div>
+                        <div class="col-lg-6">
+                          <div class="form-textarea">
+                            <label>Welcome Message</label>
+                            <textarea placeholder="Enter course starting message here..."></textarea>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="instructor-publish">
+                      <h2>Add Instructor (02)</h2>
+                      <div class="row">
+                        <div class="col-xl-6">
+                          <div class="form-searchbox">
+                            <span class="icon">
+                                                                <img src="assets/images/svg-icon/search.svg" alt="search-icon">
+                                                            </span>
+                            <input type="text" placeholder="What do you want learn">
+                          </div>
+                          <div class="instructor-publish__search-instructor row">
+                            <div class="col-md-6">
+                              <div class="card-instructor">
+                                <div class="image">
+                                  <img src="assets/images/user.png" alt="user-img">
+                                </div>
+                                <div class="info">
+                                  <h6>Username</h6>
+                                  <p>Ui/UX Designer</p>
+                                </div>
+                                <span class="close">
+                                                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M12.5 3.5L3.5 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                            <path d="M12.5 12.5L3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        </svg>
+                                                                    </span>
+                              </div>
+                            </div>
+                            <div class="col-md-6">
+                              <div class="card-instructor">
+                                <div class="image">
+                                  <img src="assets/images/user.png" alt="user-img">
+                                </div>
+                                <div class="info">
+                                  <h6>Username</h6>
+                                  <p>Ui/UX Designer</p>
+                                </div>
+                                <span class="close">
+                                                                        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M12.5 3.5L3.5 12.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                            <path d="M12.5 12.5L3.5 3.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                                        </svg>
+                                                                    </span>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <!-- navigation  -->
+                    <div class="instructor-tab-navigation">
+                      <button class="button button--lg button-g-s button-cancel">Previous</button>
+                      <button class="button button--lg  button-next">Save & Next</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Footer -->
+          <footer class="footer-bottom footer-three">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 d-flex align-items-center">
+                  <div class="copywright-text">
+                    <p>© 2021 - Etutor. Designed by <a href="#">Templatecookie.</a> All rights reserved</p>
+                  </div>
+                </div>
+                <div class="col-lg-6 col-md-6 d-flex justify-content-end">
+                  <div class="footer-bottom-menu">
+                    <ul>
+                      <li><a href="#">FAQs</a></li>
+                      <li><a href="#">Privacy Policy</a></li>
+                      <li><a href="#">Terms &amp; Condition</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </main>
+
+    </div>
+  </div>
+  <!-- Instrcutor Dashboard Layout End  -->
+
+
+  <!-- Section Modal  -->
+  <div class="modal fade modal-section " id="section" aria-hidden="true" aria-labelledby="sectionLabel" tabindex="-1">
+    <div class="modal-dialog modal-lg  modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="sectionLabel">Edit Section Name</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="#" class="form">
+            <div class="form-field form-field--">
+              <label for="labelSection">section</label>
+              <div class="field-wrapper">
+                <input type="text" placeholder="Write your section name here.." id="labelSection">
+                <span class="icon icon--success">
+                                    <img src="assets/images/svg-icon/checkcircle.svg" alt="success-icon">
+                                </span>
+                <span class="icon icon--warning">
+                                    <img src="assets/images/svg-icon/Warning.svg" alt="warning-icon">
+                                </span>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="button button--md button-g-s" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+          <button class="button button--md ">
+            Save Changes
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Lecture Modal  -->
+  <div class="modal fade modal--lecturevideo " id="lecture" aria-hidden="true" aria-labelledby="lectureLabel" tabindex="-1">
+    <div class="modal-dialog modal-md  modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="lectureLabel">Lecture Video</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="#" class="form">
+            <div class="form-upload">
+              <input type="file" id="uploadLecture">
+              <label class="button button--md button-g-s" for="uploadLecture">Upload File</label>
+            </div>
+            <p> <span>Note: </span> All files should be at least 720p and less than 4.0 GB.</p>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="button button--md button-g-s" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+          <button class="button button--md ">
+            Save Changes
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Attach Modal  -->
+  <div class="modal fade modal--attach " id="attach" aria-hidden="true" aria-labelledby="attachLabel" tabindex="-1">
+    <div class="modal-dialog modal-md  modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="attachLabel">Attach File</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="#" class="form">
+            <div class="form-attach">
+              <input type="file" id="attachFile">
+              <label for="attachFile">
+                <span class="title" >Attach File</span>
+                <span class="cap" >Drag an drop a file or browse file</span>
+              </label>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="button button--md button-g-s" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+          <button class="button button--md ">
+            Save Changes
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- curriculum caption Modal  -->
+  <div class="modal fade modal-caption " id="caption" aria-hidden="true" aria-labelledby="captionLabel" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="captionLabel">Add Lecture Caption</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="#" class="form">
+            <div class="form-textarea">
+              <label for="lCaption">Caption</label>
+              <textarea id="lCaption" placeholder="Write your lecture caption here..."></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="button button--md button-g-s" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+          <button class="button button--md ">
+            Save Changes
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Description Modal  -->
+  <div class="modal fade modal-description " id="description" aria-hidden="true" aria-labelledby="descriptionLabel" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="descriptionLabel">Add Lecture Description</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="#" class="form">
+            <div class="form-textarea">
+              <label for="lDescription">Description</label>
+              <textarea id="lDescription" placeholder="Write your lecture description here..."></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="button button--md button-g-s" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+          <button class="button button--md ">
+            Save Changes
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Description curriculum Modal  -->
+  <div class="modal fade modal--cdescription " id="cdescription" aria-hidden="true" aria-labelledby="cdescriptionLabel" tabindex="-1">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="cdescriptionLabel">Add Lecture Notes </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form action="#" class="form">
+            <div class="form-textarea">
+              <label for="notes">Notes</label>
+              <textarea id="notes" placeholder="Write your lecture Notes here..."></textarea>
+            </div>
+            <div class="form-attach">
+              <input type="file" id="uploadAttatch">
+              <label for="uploadAttatch">
+                <span class="title" >Upload Notes</span>
+                <span class="cap" >Drag an drop a file or browse file</span>
+              </label>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="button button--md button-g-s" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+          <button class="button button--md ">
+            Save Changes
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
+
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/rt-plugins.js"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
