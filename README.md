@@ -1,17 +1,16 @@
-# [templatecookie.com](https://templatecookie.com)
-FREE UI & HTML Templates for Designer and Developer. Echotemplate is a place where a team of design & developers create beautiful templates. Visit [templatecookie.com](https://templatecookie.com) for more updates.
+# [Templatecookie](https://templatecookie.com)
+Templatecookie.com creates quality templates and php scripts. Templatecookie has many free HTML & Figma templates available for professional use. Templatecookie is famous for its premium PHP Scripts available on [Codeanyon Marketplace](https://codecanyon.net/user/templatecookie). Browse [Templatecookie](https://templatecookie.com) today and discover awesome digital products.
 
-# [Appkite App Landing Page](https://appkite-html.netlify.app/)
+# [Edugard elearning HTML Template](https://www.templatecookie.com/products)
 
-> App landing html template based on bootstrap framework
+> Edugard elearning HTML Template for elearning, course management.
 
-This project is a bootstrap version [Appkite App Landing Page](https://jobpilot-html.netlify.app/) designed with HTML & CSS.
+Check the [Live Demo here](https://eduguard-html.netlify.app/).
 
-Check the [Live Demo here](https://jobpilot-html.netlify.app/).
-
+![](screenshot.png)
 
 ## Credits
-- Design & coded by [Zakir Hossen](https://github.com/devzakir)
+- Design & Developed by [Templatecookie](https://templatecookie.com)
 
 ## License
 The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
