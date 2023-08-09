@@ -9,6 +9,21 @@ Check the [Live Demo here](https://e-tutor-html.netlify.app/).
 
 ![](screenshot.png)
 
+## Pages List
+- Home (Landing Page)
+- Course List
+- Course Details
+- About
+- Contact
+- Become an Instructor
+- Authentication
+
+## Framework & Technologies
+- bootstrap
+- scss
+- jQuery
+- slick
+
 ## Credits
 - Design & Developed by [Templatecookie](https://templatecookie.com)
 
